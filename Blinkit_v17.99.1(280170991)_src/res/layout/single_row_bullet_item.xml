@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    android:id="@id/container_bullet_item"
+    android:layout_width="fill_parent"
+    android:layout_height="wrap_content"
+    xmlns:android="http://schemas.android.com/apk/res/android">
+    <com.blinkit.consumerapp.deprecated.TextViewLightFont
+        android:textSize="@dimen/font_size_small"
+        android:textColor="@color/sushi_grey_500"
+        android:paddingLeft="6.0dip"
+        android:paddingRight="6.0dip"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/bullet" />
+    <com.blinkit.consumerapp.deprecated.TextViewLightFont
+        android:textSize="@dimen/font_size_small"
+        android:textColor="@color/sushi_grey_500"
+        android:id="@id/text"
+        android:layout_width="0.0dip"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="6.0dip"
+        android:layout_weight="1.0" />
+</LinearLayout>

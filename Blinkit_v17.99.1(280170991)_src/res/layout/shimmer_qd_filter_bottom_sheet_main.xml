@@ -1,0 +1,115 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    android:orientation="vertical"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:layout_marginLeft="@dimen/dimen_16"
+    android:layout_marginTop="@dimen/dimen_12"
+    android:layout_marginRight="@dimen/size_12"
+    android:elevation="@dimen/size_52"
+    xmlns:android="http://schemas.android.com/apk/res/android">
+    <include
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        layout="@layout/shimmer_qd_search" />
+    <LinearLayout
+        android:orientation="horizontal"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/size28"
+        android:weightSum="1.0"
+        xmlns:app="http://schemas.android.com/apk/res-auto">
+        <include
+            android:layout_width="0.0dip"
+            android:layout_height="wrap_content"
+            android:layout_marginRight="@dimen/size_80"
+            android:layout_weight="0.8"
+            app:layout_constraintHorizontal_weight="1.0"
+            app:layout_constraintVertical_weight="1.0"
+            layout="@layout/shimmer_qd_rounded_corner_rectangle" />
+        <include
+            android:layout_width="0.0dip"
+            android:layout_height="wrap_content"
+            android:layout_weight="0.2"
+            app:layout_constraintHorizontal_weight="1.0"
+            app:layout_constraintVertical_weight="1.0"
+            layout="@layout/shimmer_qd_rounded_corner_rectangle" />
+    </LinearLayout>
+    <LinearLayout
+        android:orientation="horizontal"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/size28"
+        android:weightSum="1.0"
+        xmlns:app="http://schemas.android.com/apk/res-auto">
+        <include
+            android:layout_width="0.0dip"
+            android:layout_height="wrap_content"
+            android:layout_marginRight="@dimen/dimen_40"
+            android:layout_weight="0.8"
+            layout="@layout/shimmer_qd_rounded_corner_rectangle" />
+        <include
+            android:layout_width="0.0dip"
+            android:layout_height="wrap_content"
+            android:layout_weight="0.2"
+            layout="@layout/shimmer_qd_rounded_corner_rectangle" />
+    </LinearLayout>
+    <LinearLayout
+        android:orientation="horizontal"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/size28"
+        android:weightSum="1.0"
+        xmlns:app="http://schemas.android.com/apk/res-auto">
+        <include
+            android:layout_width="0.0dip"
+            android:layout_height="wrap_content"
+            android:layout_marginRight="@dimen/size_100"
+            android:layout_weight="0.8"
+            layout="@layout/shimmer_qd_rounded_corner_rectangle" />
+        <include
+            android:layout_width="0.0dip"
+            android:layout_height="wrap_content"
+            android:layout_weight="0.2"
+            layout="@layout/shimmer_qd_rounded_corner_rectangle" />
+    </LinearLayout>
+    <LinearLayout
+        android:orientation="horizontal"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/size28"
+        android:weightSum="1.0"
+        xmlns:app="http://schemas.android.com/apk/res-auto">
+        <include
+            android:layout_width="0.0dip"
+            android:layout_height="wrap_content"
+            android:layout_marginRight="@dimen/size_70"
+            android:layout_weight="0.8"
+            layout="@layout/shimmer_qd_rounded_corner_rectangle" />
+        <include
+            android:layout_width="0.0dip"
+            android:layout_height="wrap_content"
+            android:layout_weight="0.2"
+            app:layout_constraintHorizontal_weight="1.0"
+            app:layout_constraintVertical_weight="1.0"
+            layout="@layout/shimmer_qd_rounded_corner_rectangle" />
+    </LinearLayout>
+    <LinearLayout
+        android:orientation="horizontal"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/size28"
+        android:weightSum="1.0">
+        <include
+            android:layout_width="0.0dip"
+            android:layout_height="wrap_content"
+            android:layout_marginRight="@dimen/size_100"
+            android:layout_weight="0.8"
+            layout="@layout/shimmer_qd_rounded_corner_rectangle" />
+        <include
+            android:layout_width="0.0dip"
+            android:layout_height="wrap_content"
+            android:layout_weight="0.2"
+            layout="@layout/shimmer_qd_rounded_corner_rectangle" />
+    </LinearLayout>
+</LinearLayout>

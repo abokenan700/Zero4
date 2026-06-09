@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout
+    android:background="@android:color/transparent"
+    android:padding="8.0dip"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+    <com.zomato.ui.atomiclib.atom.ZRoundedImageView
+        android:id="@id/marker"
+        android:layout_width="@dimen/size_40"
+        android:layout_height="@dimen/size_40"
+        android:scaleType="centerInside"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+    <com.blinkit.commons.ui.base.gms.PreviewPinView
+        android:id="@id/custom_marker_container"
+        android:visibility="gone"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+    <include
+        android:id="@id/info_window"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="@dimen/sushi_spacing_micro"
+        app:layout_constraintBottom_toBottomOf="@id/marker"
+        app:layout_constraintStart_toEndOf="@id/marker"
+        app:layout_constraintTop_toTopOf="@id/marker"
+        layout="@layout/qd_layout_image_text_info_window" />
+    <View
+        android:layout_gravity="center"
+        android:id="@id/triangle_view"
+        android:visibility="gone"
+        android:layout_width="@dimen/dimen_24"
+        android:layout_height="@dimen/size_8"
+        android:translationY="-0.75dip"
+        app:color="?attr_7f040498"
+        app:layout_constraintBottom_toTopOf="@id/marker"
+        app:layout_constraintEnd_toEndOf="@id/info_window"
+        app:layout_constraintStart_toStartOf="@id/info_window"
+        app:layout_constraintTop_toBottomOf="@id/info_window" />
+</androidx.constraintlayout.widget.ConstraintLayout>

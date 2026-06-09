@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="utf-8"?>
+<merge
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+    <com.zomato.ui.atomiclib.atom.ZRoundedImageView
+        android:id="@id/item_image"
+        android:visibility="gone"
+        android:layout_width="@dimen/size_56"
+        android:layout_height="@dimen/size_56"
+        android:scaleType="centerCrop"
+        app:cornerRadius="@dimen/sushi_spacing_base" />
+    <com.zomato.ui.atomiclib.atom.ZRoundedImageView
+        android:layout_gravity="end|center|top"
+        android:id="@id/top_right_image"
+        android:visibility="gone"
+        android:layout_width="@dimen/dimen_20"
+        android:layout_height="@dimen/dimen_20"
+        android:layout_marginTop="-8.0dip"
+        android:layout_marginEnd="-8.0dip"
+        app:cornerRadius="@dimen/sushi_spacing_base" />
+    <View
+        android:id="@id/black_overlay"
+        android:background="#55000000"
+        android:visibility="gone"
+        android:layout_width="@dimen/size_56"
+        android:layout_height="@dimen/size_56" />
+    <ProgressBar
+        android:layout_gravity="center"
+        android:id="@id/progress_bar"
+        android:visibility="gone"
+        android:layout_width="@dimen/dimen_10"
+        android:layout_height="@dimen/dimen_10" />
+</merge>

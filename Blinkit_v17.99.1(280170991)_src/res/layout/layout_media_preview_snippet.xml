@@ -1,0 +1,93 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout
+    android:id="@id/container"
+    android:clipChildren="false"
+    android:clipToPadding="false"
+    android:layout_width="fill_parent"
+    android:layout_height="wrap_content"
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+    <com.blinkit.commons.ui.ui.customviews.BShapeableImageView
+        android:id="@id/image"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        app:layout_constraintBottom_toTopOf="@id/title"
+        app:layout_constraintEnd_toEndOf="@id/container"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toStartOf="@id/container"
+        app:layout_constraintTop_toTopOf="@id/container"
+        app:layout_constraintVertical_chainStyle="packed" />
+    <View
+        android:gravity="center"
+        android:id="@id/overlay_layer"
+        android:layout_width="0.0dip"
+        android:layout_height="0.0dip"
+        app:layout_constraintBottom_toBottomOf="@id/image"
+        app:layout_constraintEnd_toEndOf="@id/image"
+        app:layout_constraintStart_toStartOf="@id/image"
+        app:layout_constraintTop_toTopOf="@id/image" />
+    <com.blinkit.commons.ui.ui.customviews.viewstub.blinkittext.BlinkitIconViewStub
+        android:gravity="center"
+        android:id="@id/overlay_icon"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:layout_constraintBottom_toTopOf="@id/overlay_title"
+        app:layout_constraintEnd_toEndOf="@id/image"
+        app:layout_constraintStart_toStartOf="@id/image"
+        app:layout_constraintTop_toTopOf="@id/image"
+        app:layout_constraintVertical_chainStyle="packed" />
+    <com.blinkit.commons.ui.ui.customviews.viewstub.text.ZTextViewStub
+        android:gravity="center"
+        android:id="@id/overlay_title"
+        android:visibility="invisible"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/sushi_spacing_micro"
+        android:textAlignment="center"
+        app:layout_constraintBottom_toBottomOf="@id/image"
+        app:layout_constraintEnd_toEndOf="@id/image"
+        app:layout_constraintStart_toStartOf="@id/image"
+        app:layout_constraintTop_toBottomOf="@id/overlay_icon"
+        app:layout_constraintVertical_chainStyle="packed" />
+    <com.blinkit.commons.ui.ui.customviews.viewstub.ProgressBarViewStub
+        android:id="@id/loader"
+        android:visibility="gone"
+        android:layout_width="@dimen/size_20"
+        android:layout_height="@dimen/size_20"
+        app:layout_constraintBottom_toBottomOf="@id/image"
+        app:layout_constraintEnd_toEndOf="@id/image"
+        app:layout_constraintStart_toStartOf="@id/image"
+        app:layout_constraintTop_toTopOf="@id/image" />
+    <com.blinkit.blink.elements.ui.atoms.icon.BlinkitIconView
+        android:gravity="center"
+        android:id="@id/top_right_icon"
+        android:layout_width="@dimen/dimen_16"
+        android:layout_height="@dimen/dimen_16"
+        android:translationX="@dimen/sushi_spacing_micro"
+        android:translationY="@dimen/sushi_spacing_micro_negative"
+        app:layout_constraintEnd_toEndOf="@id/image"
+        app:layout_constraintTop_toTopOf="@id/image" />
+    <com.blinkit.commons.ui.ui.customviews.viewstub.blinkittext.BlinkitIconViewStub
+        android:id="@id/left_icon"
+        android:visibility="gone"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:layout_constraintBottom_toBottomOf="@id/title"
+        app:layout_constraintEnd_toStartOf="@id/title"
+        app:layout_constraintStart_toStartOf="@id/container"
+        app:layout_constraintTop_toTopOf="@id/title"
+        app:layout_constraintVertical_chainStyle="packed" />
+    <com.blinkit.commons.ui.ui.customviews.viewstub.text.ZTextViewStub
+        android:gravity="center"
+        android:id="@id/title"
+        android:visibility="gone"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:textAlignment="center"
+        android:translationZ="@dimen/elevation_1dp"
+        app:layout_constraintBottom_toBottomOf="@id/container"
+        app:layout_constraintEnd_toEndOf="@id/container"
+        app:layout_constraintStart_toEndOf="@id/left_icon"
+        app:layout_constraintTop_toBottomOf="@id/image"
+        app:layout_constraintVertical_chainStyle="packed" />
+</androidx.constraintlayout.widget.ConstraintLayout>

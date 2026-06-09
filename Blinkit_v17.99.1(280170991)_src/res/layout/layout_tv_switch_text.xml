@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    android:orientation="horizontal"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:layout_marginLeft="@dimen/sushi_spacing_page_side"
+    android:layout_marginRight="@dimen/sushi_spacing_page_side"
+    android:layout_marginHorizontal="@dimen/sushi_spacing_page_side"
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+    <com.zomato.ui.lib.atom.ZTvSwitch
+        android:id="@id/tv_switch"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content" />
+    <View
+        android:visibility="visible"
+        android:layout_width="0.0dip"
+        android:layout_height="@dimen/sushi_spacing_pico"
+        android:layout_weight="1.0" />
+    <com.zomato.ui.atomiclib.atom.ZButton
+        android:gravity="center"
+        android:layout_gravity="center"
+        android:id="@id/tv_switch_end_button"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:buttonType="text" />
+</LinearLayout>

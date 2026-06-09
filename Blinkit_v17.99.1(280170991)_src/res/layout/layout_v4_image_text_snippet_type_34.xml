@@ -1,0 +1,57 @@
+<?xml version="1.0" encoding="utf-8"?>
+<merge
+    android:layout_width="fill_parent"
+    android:layout_height="wrap_content"
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+    <com.zomato.ui.atomiclib.atom.ZRoundedImageView
+        android:id="@id/top_image"
+        android:visibility="gone"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+    <com.zomato.ui.lib.snippets.CustomPillScrollView
+        android:id="@id/custom_pill_scroll_view"
+        android:paddingTop="@dimen/sushi_spacing_loose"
+        android:paddingBottom="@dimen/sushi_spacing_loose"
+        android:visibility="gone"
+        android:clipChildren="false"
+        android:clipToPadding="false"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:paddingVertical="@dimen/sushi_spacing_loose"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/top_image" />
+    <com.zomato.ui.atomiclib.atom.ZSeparator
+        android:id="@id/bottom_separator"
+        android:visibility="gone"
+        android:layout_width="0.0dip"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="@dimen/sushi_spacing_base"
+        android:layout_marginRight="@dimen/sushi_spacing_base"
+        android:layout_marginHorizontal="@dimen/sushi_spacing_base"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/custom_pill_scroll_view"
+        app:zseparator_color="?attr_7f040299"
+        app:zseparator_type="DASHED" />
+    <com.zomato.ui.atomiclib.atom.staticviews.StaticTextView
+        android:textColor="?attr_7f040475"
+        android:gravity="center"
+        android:id="@id/bottom_title"
+        android:visibility="gone"
+        android:layout_width="0.0dip"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="@dimen/sushi_spacing_base"
+        android:layout_marginTop="@dimen/sushi_spacing_extra"
+        android:layout_marginRight="@dimen/sushi_spacing_base"
+        android:layout_marginBottom="@dimen/sushi_spacing_extra"
+        android:layout_marginHorizontal="@dimen/sushi_spacing_base"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/bottom_separator" />
+</merge>

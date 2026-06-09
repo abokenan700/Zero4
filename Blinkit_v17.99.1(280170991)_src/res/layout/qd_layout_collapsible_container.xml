@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout
+    android:orientation="vertical"
+    android:id="@id/root_layout"
+    android:layout_width="fill_parent"
+    android:layout_height="wrap_content"
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+    <LinearLayout
+        android:orientation="vertical"
+        android:id="@id/child_layout"
+        android:paddingLeft="@dimen/sushi_spacing_base"
+        android:paddingRight="@dimen/sushi_spacing_base"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:paddingHorizontal="@dimen/sushi_spacing_base"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+    <LinearLayout
+        android:gravity="center_vertical"
+        android:orientation="horizontal"
+        android:id="@id/header_section"
+        android:paddingLeft="@dimen/sushi_spacing_base"
+        android:paddingRight="@dimen/sushi_spacing_base"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:paddingHorizontal="@dimen/sushi_spacing_base"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/child_layout">
+        <com.zomato.ui.atomiclib.atom.ZTextView
+            android:id="@id/header_title"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" />
+        <com.zomato.ui.atomiclib.atom.ZIconFontTextView
+            android:textSize="@dimen/dimen_16"
+            android:id="@id/state_icon"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" />
+    </LinearLayout>
+</androidx.constraintlayout.widget.ConstraintLayout>

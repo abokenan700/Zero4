@@ -1,0 +1,52 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout
+    android:layout_width="fill_parent"
+    android:layout_height="wrap_content"
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+    <com.zomato.ui.atomiclib.animation.ZLottieAnimationView
+        android:id="@id/lottieAnimationBackground"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:scaleType="fitCenter"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+    <com.zomato.ui.atomiclib.atom.ZRoundedImageView
+        android:id="@id/imageBackground"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:scaleType="fitCenter"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+    <com.zomato.ui.atomiclib.atom.ZTextView
+        android:ellipsize="end"
+        android:id="@id/title"
+        android:paddingTop="@dimen/circular_icon_padding_medium"
+        android:layout_width="0.0dip"
+        android:layout_height="wrap_content"
+        android:maxLines="1"
+        android:includeFontPadding="false"
+        android:paddingStart="@dimen/sushi_spacing_base"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintWidth_percent="0.7"
+        app:textViewType="MEDIUM_200" />
+    <com.zomato.ui.atomiclib.atom.ZTextView
+        android:ellipsize="end"
+        android:id="@id/subtitle"
+        android:paddingBottom="@dimen/circular_icon_padding_medium"
+        android:layout_width="0.0dip"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/sushi_spacing_micro_negative"
+        android:maxLines="1"
+        android:includeFontPadding="false"
+        android:paddingStart="@dimen/sushi_spacing_base"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/title"
+        app:layout_constraintWidth_percent="0.7"
+        app:textViewType="SEMIBOLD_600" />
+</androidx.constraintlayout.widget.ConstraintLayout>

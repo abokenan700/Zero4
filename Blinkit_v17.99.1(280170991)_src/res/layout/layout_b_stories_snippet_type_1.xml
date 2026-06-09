@@ -1,0 +1,146 @@
+<?xml version="1.0" encoding="utf-8"?>
+<merge
+    android:layout_width="fill_parent"
+    android:layout_height="wrap_content"
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+    <FrameLayout
+        android:id="@id/bg_media_container"
+        android:layout_width="0.0dip"
+        android:layout_height="0.0dip"
+        android:transitionName="@string/shared_element_root_view_transition_name"
+        app:layout_constraintBottom_toBottomOf="@id/bottom_guideline"
+        app:layout_constraintEnd_toEndOf="@id/end_guideline"
+        app:layout_constraintStart_toStartOf="@id/start_guideline"
+        app:layout_constraintTop_toTopOf="@id/top_guideline">
+        <com.blinkit.commons.ui.ui.customviews.BShapeableImageView
+            android:id="@id/bg_image"
+            android:layout_width="wrap_content"
+            android:layout_height="fill_parent"
+            android:scaleType="centerCrop" />
+        <com.blinkit.commons.ui.ui.customviews.viewstub.image.BLottieAnimationViewStub
+            android:id="@id/bg_lottie"
+            android:layout_width="wrap_content"
+            android:layout_height="fill_parent"
+            android:scaleType="centerCrop" />
+    </FrameLayout>
+    <FrameLayout
+        android:id="@id/primary_bottom_image_container"
+        android:layout_width="0.0dip"
+        android:layout_height="0.0dip"
+        android:transitionName="@string/shared_element_foreground_image_transition_name"
+        app:layout_constraintBottom_toBottomOf="@id/bottom_guideline"
+        app:layout_constraintEnd_toEndOf="@id/end_guideline"
+        app:layout_constraintStart_toStartOf="@id/start_guideline"
+        app:layout_constraintTop_toTopOf="@id/top_guideline">
+        <com.blinkit.commons.ui.ui.customviews.BShapeableImageView
+            android:id="@id/primary_bottom_image"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content" />
+    </FrameLayout>
+    <FrameLayout
+        android:id="@id/secondary_bottom_image_container"
+        android:layout_width="0.0dip"
+        android:layout_height="0.0dip"
+        app:layout_constraintBottom_toBottomOf="@id/bottom_guideline"
+        app:layout_constraintEnd_toEndOf="@id/end_guideline"
+        app:layout_constraintStart_toStartOf="@id/start_guideline"
+        app:layout_constraintTop_toTopOf="@id/top_guideline">
+        <com.blinkit.commons.ui.ui.customviews.viewstub.image.BShapeableImageViewStub
+            android:id="@id/secondary_bottom_image"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content" />
+    </FrameLayout>
+    <com.blinkit.blink.elements.ui.atoms.text.BlinkitTextView
+        android:gravity="center_horizontal"
+        android:id="@id/title"
+        android:layout_width="0.0dip"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="@dimen/dimen_10"
+        android:layout_marginTop="@dimen/dimen_20"
+        android:layout_marginRight="@dimen/dimen_10"
+        android:layout_marginHorizontal="@dimen/dimen_10"
+        app:layout_constraintEnd_toEndOf="@id/end_guideline"
+        app:layout_constraintStart_toStartOf="@id/start_guideline"
+        app:layout_constraintTop_toBottomOf="@id/top_guideline" />
+    <com.blinkit.commons.ui.ui.customviews.BShapeableImageView
+        android:id="@id/top_image"
+        android:visibility="gone"
+        android:layout_width="0.0dip"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="@dimen/dimen_10"
+        android:layout_marginTop="@dimen/sushi_spacing_macro"
+        android:layout_marginRight="@dimen/dimen_10"
+        android:layout_marginHorizontal="@dimen/dimen_10"
+        app:layout_constraintEnd_toEndOf="@id/end_guideline"
+        app:layout_constraintStart_toStartOf="@id/start_guideline"
+        app:layout_constraintTop_toBottomOf="@id/top_guideline" />
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:id="@id/center_overlay_text_container"
+        android:layout_width="0.0dip"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="@dimen/qd_margin_1"
+        android:layout_marginRight="@dimen/qd_margin_1"
+        android:layout_marginHorizontal="@dimen/qd_margin_1"
+        app:layout_constraintBottom_toBottomOf="@id/bottom_guideline"
+        app:layout_constraintEnd_toEndOf="@id/end_guideline"
+        app:layout_constraintStart_toStartOf="@id/start_guideline"
+        app:layout_constraintTop_toTopOf="@id/top_guideline">
+        <com.blinkit.blink.elements.ui.atoms.text.BlinkitTextView
+            android:layout_gravity="center"
+            android:id="@id/center_overlay_text"
+            android:paddingLeft="@dimen/padding_regular"
+            android:paddingTop="@dimen/radius_2dp"
+            android:paddingRight="@dimen/padding_regular"
+            android:paddingBottom="@dimen/radius_2dp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textAlignment="center"
+            android:paddingHorizontal="@dimen/padding_regular"
+            android:paddingVertical="@dimen/radius_2dp"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+        <com.zomato.ui.atomiclib.atom.AnimatedShimmerFrameLayout
+            android:layout_gravity="center"
+            android:id="@id/shimmer"
+            android:layout_width="0.0dip"
+            android:layout_height="0.0dip"
+            android:elevation="6.0dip"
+            app:layout_constraintBottom_toBottomOf="@id/center_overlay_text"
+            app:layout_constraintEnd_toEndOf="@id/center_overlay_text"
+            app:layout_constraintStart_toStartOf="@id/center_overlay_text"
+            app:layout_constraintTop_toTopOf="@id/center_overlay_text"
+            app:shimmer_auto_start="false">
+            <View
+                android:id="@id/shimmer_facade_child"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content" />
+        </com.zomato.ui.atomiclib.atom.AnimatedShimmerFrameLayout>
+    </androidx.constraintlayout.widget.ConstraintLayout>
+    <androidx.constraintlayout.widget.Guideline
+        android:orientation="vertical"
+        android:id="@id/start_guideline"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:layout_constraintGuide_begin="@dimen/sushi_spacing_micro" />
+    <androidx.constraintlayout.widget.Guideline
+        android:orientation="vertical"
+        android:id="@id/end_guideline"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:layout_constraintGuide_end="@dimen/sushi_spacing_micro" />
+    <androidx.constraintlayout.widget.Guideline
+        android:orientation="horizontal"
+        android:id="@id/top_guideline"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:layout_constraintGuide_begin="@dimen/sushi_spacing_micro" />
+    <androidx.constraintlayout.widget.Guideline
+        android:orientation="horizontal"
+        android:id="@id/bottom_guideline"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:layout_constraintGuide_end="@dimen/sushi_spacing_micro" />
+</merge>

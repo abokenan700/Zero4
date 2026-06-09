@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.zomato.ui.atomiclib.molecules.FlowLayout
+    android:id="@id/flowLayout"
+    android:layout_width="fill_parent"
+    android:layout_height="wrap_content"
+    app:fl_horizontalSpacing="@dimen/sushi_spacing_micro"
+    app:fl_verticalSpacing="@dimen/sushi_spacing_mini"
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+    <com.zomato.ui.atomiclib.atom.ZIconFontTextView
+        android:textSize="@dimen/sushi_textsize_400"
+        android:id="@id/icon"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content" />
+    <com.zomato.ui.atomiclib.snippets.RatingSnippetItem
+        android:id="@id/ratingSnippet"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content" />
+    <com.zomato.ui.atomiclib.atom.ZTag
+        android:id="@id/tag"
+        android:paddingLeft="@dimen/sushi_spacing_micro"
+        android:paddingTop="@dimen/dimen_point_five"
+        android:paddingRight="@dimen/sushi_spacing_micro"
+        android:paddingBottom="@dimen/dimen_point_five"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:translationY="0.8000001dip"
+        app:tagSize="tiny"
+        app:tagType="rounded_outline" />
+</com.zomato.ui.atomiclib.molecules.FlowLayout>

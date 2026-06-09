@@ -1,0 +1,55 @@
+<?xml version="1.0" encoding="utf-8"?>
+<merge
+    android:orientation="vertical"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+    <com.zomato.ui.atomiclib.atom.staticviews.StaticTextView
+        android:id="@id/amount_text"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content" />
+    <com.zomato.ui.atomiclib.molecules.ZTextInputField
+        android:textColorHint="@color/sushi_grey_400"
+        android:ellipsize="start"
+        android:gravity="center_vertical"
+        android:id="@id/amount_field"
+        android:scrollbars="vertical"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/sushi_spacing_micro"
+        android:inputType="textNoSuggestions"
+        app:boxCornerRadiusBottomEnd="@dimen/sushi_spacing_macro"
+        app:boxCornerRadiusBottomStart="@dimen/sushi_spacing_macro"
+        app:boxCornerRadiusTopEnd="@dimen/sushi_spacing_macro"
+        app:boxCornerRadiusTopStart="@dimen/sushi_spacing_macro"
+        app:boxStrokeColor="?attr_7f040475"
+        app:editTextType="MEDIUM_300"
+        app:hintEnabled="true"
+        app:maxLines="1"
+        style="@style/OrderTextInputLayout" />
+    <com.zomato.ui.atomiclib.atom.staticviews.StaticTextView
+        android:id="@id/threshold_text"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/sushi_spacing_loose" />
+    <com.zomato.ui.atomiclib.molecules.ZTextInputField
+        android:textColorHint="@color/sushi_grey_400"
+        android:ellipsize="start"
+        android:gravity="center_vertical"
+        android:id="@id/threshold_field"
+        android:scrollbars="vertical"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/sushi_spacing_micro"
+        android:inputType="textNoSuggestions"
+        app:boxCornerRadiusBottomEnd="@dimen/sushi_spacing_macro"
+        app:boxCornerRadiusBottomStart="@dimen/sushi_spacing_macro"
+        app:boxCornerRadiusTopEnd="@dimen/sushi_spacing_macro"
+        app:boxCornerRadiusTopStart="@dimen/sushi_spacing_macro"
+        app:boxStrokeColor="?attr_7f040475"
+        app:editTextType="MEDIUM_300"
+        app:hintEnabled="true"
+        app:maxLines="1"
+        style="@style/OrderTextInputLayout" />
+</merge>

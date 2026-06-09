@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout
+    android:paddingLeft="@dimen/qd_margin_12"
+    android:paddingRight="@dimen/qd_margin_12"
+    android:layout_width="fill_parent"
+    android:layout_height="?actionBarSize"
+    android:paddingHorizontal="@dimen/qd_margin_12"
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+    <com.zomato.ui.atomiclib.molecules.ShimmerChildView
+        android:id="@id/back_arrow_shimmer"
+        android:layout_width="@dimen/size_32"
+        android:layout_height="@dimen/size_32"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:shimmer_corner_radius="@dimen/dimen_16" />
+    <com.zomato.ui.atomiclib.molecules.ShimmerChildView
+        android:id="@id/title_shimmer"
+        android:layout_width="120.0dip"
+        android:layout_height="@dimen/dimen_24"
+        android:layout_marginStart="@dimen/qd_margin_12"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintStart_toEndOf="@id/back_arrow_shimmer"
+        app:layout_constraintTop_toTopOf="parent"
+        app:shimmer_corner_radius="@dimen/radius_2dp" />
+    <com.zomato.ui.atomiclib.molecules.ShimmerChildView
+        android:id="@id/right_button_shimmer"
+        android:layout_width="@dimen/size_72"
+        android:layout_height="@dimen/size_32"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:shimmer_corner_radius="@dimen/sushi_spacing_mini" />
+    <com.zomato.ui.atomiclib.molecules.ShimmerChildView
+        android:id="@id/right_icon_shimmer"
+        android:layout_width="@dimen/size_32"
+        android:layout_height="@dimen/size_32"
+        android:layout_marginEnd="@dimen/qd_margin_12"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toStartOf="@id/right_button_shimmer"
+        app:layout_constraintTop_toTopOf="parent"
+        app:shimmer_corner_radius="@dimen/dimen_16" />
+</androidx.constraintlayout.widget.ConstraintLayout>

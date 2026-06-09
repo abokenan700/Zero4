@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="utf-8"?>
+<selector
+    xmlns:android="http://schemas.android.com/apk/res/android">
+    <item
+        android:state_checked="true">
+        <shape
+            android:shape="rectangle">
+            <solid
+                android:color="@color/sushi_green_600" />
+            <corners
+                android:radius="@dimen/dimen_16" />
+            <size
+                android:height="@dimen/size_20"
+                android:width="@dimen/size_34" />
+            <stroke
+                android:width="1.0dip"
+                android:color="@color/sushi_black" />
+        </shape>
+    </item>
+    <item
+        android:state_checked="false">
+        <shape
+            android:shape="rectangle">
+            <solid
+                android:color="@color/sushi_grey_300" />
+            <corners
+                android:radius="@dimen/dimen_16" />
+            <size
+                android:height="@dimen/size_20"
+                android:width="@dimen/size_34" />
+            <stroke
+                android:width="1.0dip"
+                android:color="@color/sushi_black" />
+        </shape>
+    </item>
+</selector>

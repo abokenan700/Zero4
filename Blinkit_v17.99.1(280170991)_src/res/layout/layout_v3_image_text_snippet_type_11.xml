@@ -1,0 +1,62 @@
+<?xml version="1.0" encoding="utf-8"?>
+<merge
+    android:orientation="horizontal"
+    android:layout_width="fill_parent"
+    android:layout_height="wrap_content"
+    android:stateListAnimator="@animator/scale_animator"
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+    <FrameLayout
+        android:id="@id/image_container"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginEnd="@dimen/sushi_spacing_base">
+        <com.zomato.ui.atomiclib.atom.ZRoundedImageView
+            android:id="@id/imageView"
+            android:layout_width="@dimen/size_36"
+            android:layout_height="wrap_content"
+            android:adjustViewBounds="true" />
+    </FrameLayout>
+    <LinearLayout
+        android:layout_gravity="center_vertical"
+        android:orientation="vertical"
+        android:clipToPadding="false"
+        android:layout_width="0.0dip"
+        android:layout_height="wrap_content"
+        android:layout_weight="1.0">
+        <com.zomato.ui.atomiclib.atom.ZTextView
+            android:id="@id/tv_title"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content" />
+        <com.zomato.ui.atomiclib.atom.ZTextView
+            android:id="@id/tv_subtitle"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/sushi_spacing_nano" />
+    </LinearLayout>
+    <LinearLayout
+        android:layout_gravity="center_vertical"
+        android:orientation="vertical"
+        android:clipToPadding="false"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="@dimen/sushi_spacing_macro">
+        <com.zomato.ui.atomiclib.atom.ZTextView
+            android:layout_gravity="end|center"
+            android:id="@id/tv_right_title"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" />
+        <com.zomato.ui.atomiclib.atom.ZTextView
+            android:layout_gravity="end|center"
+            android:id="@id/subtitle2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/sushi_spacing_nano" />
+    </LinearLayout>
+    <com.zomato.ui.atomiclib.atom.ZIconFontTextView
+        android:layout_gravity="center_vertical"
+        android:id="@id/iftv_right"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:paddingStart="@dimen/sushi_spacing_macro" />
+</merge>

@@ -1,0 +1,60 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout
+    android:background="?attr_7f0403d7"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+    <com.zomato.ui.atomiclib.atom.ZTextView
+        android:textSize="@dimen/font_icon_size_36"
+        android:textColor="?attr_7f040466"
+        android:id="@id/tv_balance"
+        android:paddingLeft="@dimen/dimen_12"
+        android:paddingRight="@dimen/dimen_12"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/dimen_12"
+        android:fontFamily="@font/okra_extrabold"
+        android:paddingHorizontal="@dimen/dimen_12"
+        app:layout_constraintTop_toTopOf="parent" />
+    <com.zomato.ui.atomiclib.atom.ZTextView
+        android:textSize="@dimen/font_icon_size_13"
+        android:textColor="?attr_7f04047c"
+        android:id="@id/tv_avail_balance"
+        android:paddingLeft="@dimen/dimen_12"
+        android:paddingRight="@dimen/dimen_12"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:fontFamily="@font/okra_medium"
+        android:paddingHorizontal="@dimen/dimen_12"
+        app:layout_constraintTop_toBottomOf="@id/tv_balance" />
+    <View
+        android:id="@id/separator"
+        android:background="?attr_7f040295"
+        android:layout_width="fill_parent"
+        android:layout_height="1.0dip"
+        android:layout_marginTop="@dimen/margin_20"
+        app:layout_constraintTop_toBottomOf="@id/tv_avail_balance" />
+    <androidx.recyclerview.widget.RecyclerView
+        android:id="@id/rv_wallet"
+        android:background="@color/sushi_white"
+        android:paddingLeft="@dimen/dimen_12"
+        android:paddingRight="@dimen/dimen_12"
+        android:visibility="visible"
+        android:clipChildren="false"
+        android:clipToPadding="false"
+        android:layout_width="fill_parent"
+        android:layout_height="@dimen/dimen_0"
+        android:paddingHorizontal="@dimen/dimen_12"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/separator" />
+    <com.blinkit.commons.ui.ui.customviews.loadingErrorOverlay.LoadingErrorOverlay
+        android:id="@id/loading_error_overlay"
+        android:visibility="gone"
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+</androidx.constraintlayout.widget.ConstraintLayout>

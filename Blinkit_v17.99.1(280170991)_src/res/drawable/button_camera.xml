@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layer-list
+    xmlns:android="http://schemas.android.com/apk/res/android">
+    <item>
+        <shape
+            android:shape="oval">
+            <solid
+                android:color="@color/sushi_white" />
+        </shape>
+    </item>
+    <item>
+        <shape
+            android:shape="oval">
+            <stroke
+                android:width="@dimen/sushi_spacing_base"
+                android:color="@color/color_transparent" />
+            <solid
+                android:color="@color/sushi_black" />
+            <size
+                android:height="@dimen/size_64"
+                android:width="@dimen/size_64" />
+        </shape>
+    </item>
+    <item>
+        <shape
+            android:shape="oval">
+            <stroke
+                android:width="@dimen/sushi_spacing_extra"
+                android:color="@color/color_transparent" />
+            <solid
+                android:color="@color/sushi_white" />
+        </shape>
+    </item>
+</layer-list>

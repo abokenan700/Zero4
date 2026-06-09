@@ -1,0 +1,205 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout
+    android:id="@id/location_container_root"
+    android:clipChildren="false"
+    android:clipToPadding="false"
+    android:layout_width="fill_parent"
+    android:layout_height="wrap_content"
+    android:paddingStart="@dimen/sushi_spacing_base"
+    android:paddingEnd="@dimen/sushi_spacing_base"
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+    <androidx.constraintlayout.widget.Guideline
+        android:orientation="vertical"
+        android:id="@id/end_guideline"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintGuide_percent="0.9"
+        app:layout_constraintStart_toStartOf="parent" />
+    <androidx.constraintlayout.widget.Barrier
+        android:id="@id/end_barrier"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:barrierDirection="start"
+        app:constraint_referenced_ids="end_guideline,right_container" />
+    <androidx.constraintlayout.widget.Barrier
+        android:id="@id/top_barrier"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:barrierDirection="top"
+        app:constraint_referenced_ids="location_container,right_container" />
+    <androidx.constraintlayout.widget.Barrier
+        android:id="@id/bottom_barrier"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:barrierDirection="bottom"
+        app:constraint_referenced_ids="location_container,right_container" />
+    <include
+        android:id="@id/location_container"
+        android:layout_width="0.0dip"
+        android:layout_height="wrap_content"
+        app:layout_constraintBottom_toBottomOf="@id/bottom_barrier"
+        app:layout_constraintEnd_toStartOf="@id/end_barrier"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="@id/top_barrier"
+        layout="@layout/location_header" />
+    <LinearLayout
+        android:gravity="center_vertical"
+        android:orientation="horizontal"
+        android:id="@id/right_container"
+        android:paddingTop="@dimen/sushi_spacing_nano"
+        android:paddingBottom="@dimen/sushi_spacing_nano"
+        android:clipToPadding="false"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:layout_constraintBottom_toBottomOf="@id/bottom_barrier"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toTopOf="@id/top_barrier">
+        <FrameLayout
+            android:layout_gravity="center"
+            android:id="@id/start_right_pill"
+            android:paddingLeft="@dimen/dimen_10"
+            android:paddingTop="@dimen/sushi_spacing_mini"
+            android:paddingRight="@dimen/dimen_10"
+            android:paddingBottom="@dimen/sushi_spacing_mini"
+            android:visibility="gone"
+            android:layout_width="wrap_content"
+            android:layout_height="@dimen/size_36"
+            android:layout_marginEnd="@dimen/sushi_spacing_micro"
+            android:paddingHorizontal="@dimen/dimen_10"
+            android:paddingVertical="@dimen/sushi_spacing_mini" />
+        <include
+            android:id="@id/action_3"
+            android:visibility="gone"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="@dimen/sushi_spacing_macro"
+            layout="@layout/layout_icon_font_with_count_badge" />
+        <FrameLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content">
+            <include
+                android:id="@id/action_2"
+                android:visibility="gone"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="@dimen/sushi_spacing_macro"
+                layout="@layout/layout_icon_font_with_count_badge" />
+            <View
+                android:layout_gravity="end|center|top"
+                android:id="@id/chat_highlight"
+                android:visibility="gone"
+                android:layout_width="@dimen/sushi_spacing_base"
+                android:layout_height="@dimen/sushi_spacing_base" />
+        </FrameLayout>
+        <FrameLayout
+            android:id="@id/button_container"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="@dimen/sushi_spacing_macro">
+            <com.zomato.ui.atomiclib.atom.ZButton
+                android:id="@id/change_language_btn"
+                android:padding="@dimen/sushi_spacing_mini"
+                android:visibility="gone"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                app:buttonDimension="small"
+                app:buttonType="outline"
+                app:strokeColor="@color/sushi_grey_200" />
+        </FrameLayout>
+        <com.zomato.ui.atomiclib.animation.ZLottieAnimationView
+            android:id="@id/language_lottie"
+            android:visibility="gone"
+            android:layout_width="@dimen/size_12"
+            android:layout_height="@dimen/size_12"
+            android:layout_marginStart="@dimen/size_34"
+            android:layout_marginEnd="@dimen/dimen_20"
+            app:lottie_autoPlay="true" />
+        <com.zomato.ui.atomiclib.atom.AnimatedShimmerFrameLayout
+            android:id="@id/shimmer_lang_btn_container"
+            android:visibility="gone"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content">
+            <com.zomato.ui.atomiclib.atom.ZButton
+                android:id="@id/shimmer_change_language_btn"
+                android:padding="@dimen/sushi_spacing_macro"
+                android:visibility="visible"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="@dimen/sushi_spacing_macro"
+                app:buttonDimension="small"
+                app:buttonType="outline"
+                app:strokeColor="@color/sushi_grey_200" />
+        </com.zomato.ui.atomiclib.atom.AnimatedShimmerFrameLayout>
+        <View
+            android:layout_gravity="start|center|top"
+            android:id="@id/lang_notification_dot"
+            android:visibility="gone"
+            android:layout_width="@dimen/sushi_spacing_base"
+            android:layout_height="@dimen/sushi_spacing_base"
+            android:layout_marginTop="@dimen/sushi_spacing_nano_negative"
+            android:layout_marginStart="@dimen/sushi_spacing_macro_negative" />
+        <include
+            android:id="@id/action_1"
+            android:visibility="visible"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="@dimen/sushi_spacing_macro"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toStartOf="@id/action_0"
+            app:layout_constraintStart_toEndOf="@id/action_2"
+            app:layout_constraintTop_toTopOf="parent"
+            layout="@layout/layout_icon_font_with_count_badge" />
+        <LinearLayout
+            android:gravity="center"
+            android:layout_gravity="center"
+            android:orientation="horizontal"
+            android:id="@id/right_pill"
+            android:visibility="gone"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="@dimen/sushi_spacing_micro" />
+        <FrameLayout
+            android:id="@id/profile_container"
+            android:visibility="gone"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content">
+            <com.zomato.ui.atomiclib.atom.ZCircularImageView
+                android:layout_gravity="start|center"
+                android:id="@id/profile_image"
+                android:layout_width="@dimen/size_32"
+                android:layout_height="@dimen/size_32"
+                android:foreground="@drawable/feedback_ripple_white_overlay"
+                android:layout_marginStart="@dimen/sushi_spacing_macro" />
+            <com.zomato.ui.atomiclib.atom.ZTextView
+                android:gravity="center"
+                android:layout_gravity="start|center"
+                android:id="@id/profile_text_icon"
+                android:visibility="gone"
+                android:layout_width="@dimen/size_32"
+                android:layout_height="@dimen/size_32"
+                android:foreground="@drawable/feedback_ripple_white_overlay"
+                android:layout_marginStart="@dimen/sushi_spacing_macro" />
+            <com.zomato.ui.atomiclib.animation.ZLottieAnimationView
+                android:id="@id/profile_animation"
+                android:visibility="gone"
+                android:layout_width="@dimen/size_32"
+                android:layout_height="@dimen/size_32"
+                android:layout_marginStart="@dimen/sushi_spacing_macro" />
+            <View
+                android:layout_gravity="end|center|top"
+                android:id="@id/highlight"
+                android:visibility="gone"
+                android:layout_width="@dimen/sushi_spacing_base"
+                android:layout_height="@dimen/sushi_spacing_base" />
+        </FrameLayout>
+    </LinearLayout>
+    <Space
+        android:id="@id/bottomSpace"
+        android:layout_width="fill_parent"
+        android:layout_height="@dimen/sushi_spacing_nano"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/bottom_barrier" />
+</androidx.constraintlayout.widget.ConstraintLayout>

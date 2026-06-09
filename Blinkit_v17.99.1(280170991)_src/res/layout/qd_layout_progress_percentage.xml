@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="utf-8"?>
+<merge
+    android:id="@id/container"
+    android:layout_width="fill_parent"
+    android:layout_height="wrap_content"
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+    <com.blinkit.blink.elements.ui.atoms.text.BlinkitTextView
+        android:id="@id/title"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+    <com.blinkit.blink.elements.ui.atoms.text.BlinkitTextView
+        android:gravity="center"
+        android:id="@id/tv_progress_percentage"
+        android:background="@drawable/qd_green_circle_white_border"
+        android:paddingLeft="@dimen/dimen_5"
+        android:paddingTop="@dimen/sushi_spacing_micro"
+        android:paddingRight="@dimen/dimen_5"
+        android:paddingBottom="@dimen/sushi_spacing_micro"
+        android:layout_width="@dimen/qd_stepper_height_micro"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/sushi_spacing_base"
+        android:layout_centerVertical="true"
+        android:elevation="@dimen/elevation_huge"
+        android:outlineProvider="none"
+        android:paddingHorizontal="@dimen/dimen_5"
+        android:paddingVertical="@dimen/sushi_spacing_micro"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/title" />
+    <com.zomato.ui.atomiclib.atom.ZProgressBar
+        android:id="@id/progressBar"
+        android:layout_width="fill_parent"
+        android:layout_height="@dimen/sushi_spacing_base"
+        android:progressDrawable="@drawable/horizontal_progressbar_v2_drawable"
+        android:layout_centerVertical="true"
+        android:progressTint="?attr_7f04032d"
+        app:layout_constraintBottom_toBottomOf="@id/tv_progress_percentage"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="@id/tv_progress_percentage"
+        style="?android:progressBarStyleHorizontal" />
+</merge>

@@ -1,0 +1,191 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout
+    android:id="@id/container"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+    <com.blinkit.quickdelivery.common.custom.ZoomView
+        android:id="@id/image"
+        android:layout_width="fill_parent"
+        android:layout_height="0.0dip"
+        android:scaleType="fitCenter"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:zoom_autoResetMode="UNDER"
+        app:zoom_maxScale="6.0"
+        app:zoom_minScale="0.6"
+        app:zoom_zoomable="true" />
+    <tag
+        android:value="ZoomableViewTag"
+        android:id="@id/zoomable" />
+    <com.blinkit.commons.ui.ui.customviews.viewstub.video.PlayerViewContainerViewStub
+        android:id="@id/player_view_container"
+        android:visibility="gone"
+        android:layout_width="0.0dip"
+        android:layout_height="0.0dip"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintDimensionRatio="1"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+    <View
+        android:id="@id/overlay_image"
+        android:background="@color/black_transparent_30"
+        android:layout_width="0.0dip"
+        android:layout_height="0.0dip"
+        app:layout_constraintBottom_toBottomOf="@id/player_view_container"
+        app:layout_constraintEnd_toEndOf="@id/player_view_container"
+        app:layout_constraintStart_toStartOf="@id/player_view_container"
+        app:layout_constraintTop_toTopOf="@id/player_view_container" />
+    <com.blinkit.commons.ui.ui.customviews.viewstub.PdfRendererViewStub
+        android:id="@id/pdf_view"
+        android:layout_width="0.0dip"
+        android:layout_height="0.0dip"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:pdfView_backgroundColor="@color/sushi_indigo_050"
+        app:pdfView_paddingVertical="100.0dip"
+        app:pdfView_showDivider="false" />
+    <com.blinkit.commons.ui.ui.customviews.viewstub.text.ZIconFontTextViewStub
+        android:textSize="@dimen/dimen_20"
+        android:textColor="@color/sushi_white"
+        android:gravity="center"
+        android:id="@id/pause_play_button"
+        android:background="@drawable/bg_video_control_button"
+        android:visibility="gone"
+        android:layout_width="@dimen/size_56"
+        android:layout_height="@dimen/size_56"
+        android:backgroundTint="@color/color_black_alpha_forty_four"
+        app:layout_constraintBottom_toBottomOf="@id/player_view_container"
+        app:layout_constraintEnd_toEndOf="@id/player_view_container"
+        app:layout_constraintStart_toStartOf="@id/player_view_container"
+        app:layout_constraintTop_toTopOf="@id/player_view_container" />
+    <androidx.constraintlayout.widget.Group
+        android:id="@id/player_controls_group"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:constraint_referenced_ids="seekbar,pause_play_button,overlay_image,remaining_time,current_time" />
+    <com.blinkit.commons.ui.ui.customviews.viewstub.blinkittext.BlinkitTextViewStub
+        android:textColor="@color/sushi_white"
+        android:gravity="center"
+        android:id="@id/current_time"
+        android:visibility="gone"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:minWidth="@dimen/size_56"
+        android:paddingStart="@dimen/sushi_spacing_nano"
+        app:layout_constraintBottom_toBottomOf="@id/seekbar"
+        app:layout_constraintEnd_toStartOf="@id/seekbar"
+        app:layout_constraintStart_toStartOf="@id/player_view_container"
+        app:layout_constraintTop_toTopOf="@id/seekbar"
+        app:layout_goneMarginEnd="@dimen/sushi_spacing_mini"
+        app:textViewType="REGULAR_400" />
+    <com.zomato.ui.lib.organisms.snippets.video.customViews.ZExoSeekbar
+        android:id="@id/seekbar"
+        android:paddingTop="@dimen/sushi_spacing_nano"
+        android:visibility="gone"
+        android:layout_width="0.0dip"
+        android:layout_height="wrap_content"
+        app:actualBarHeight="@dimen/zexoseekbar_height"
+        app:actualBufferedColor="@color/color_transparent"
+        app:actualUnplayedColor="@color/sushi_grey_600"
+        app:bar_height="@dimen/zexoseekbar_big_height"
+        app:buffered_color="@color/sushi_grey_600"
+        app:layout_constraintBottom_toBottomOf="@id/player_view_container"
+        app:layout_constraintEnd_toStartOf="@id/remaining_time"
+        app:layout_constraintStart_toEndOf="@id/current_time"
+        app:layout_constraintTop_toTopOf="@id/player_view_container"
+        app:layout_constraintVertical_bias="0.98"
+        app:played_color="@color/sushi_white"
+        app:scrubber_color="@color/sushi_white"
+        app:scrubber_disabled_size="@dimen/zexoseekbar_scrubber_small_size"
+        app:scrubber_dragged_size="@dimen/zexoseekbar_scrubber_huge_size"
+        app:scrubber_enabled_size="@dimen/zexoseekbar_scrubber_big_size"
+        app:unplayed_color="@color/sushi_grey_600" />
+    <com.blinkit.commons.ui.ui.customviews.viewstub.blinkittext.BlinkitTextViewStub
+        android:textColor="@color/sushi_white"
+        android:gravity="center"
+        android:id="@id/remaining_time"
+        android:visibility="gone"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:minWidth="@dimen/size_56"
+        android:paddingStart="@dimen/sushi_spacing_nano"
+        app:layout_constraintBottom_toBottomOf="@id/seekbar"
+        app:layout_constraintEnd_toEndOf="@id/player_view_container"
+        app:layout_constraintStart_toEndOf="@id/seekbar"
+        app:layout_constraintTop_toTopOf="@id/seekbar"
+        app:layout_constraintWidth_min="@dimen/size_56"
+        app:layout_goneMarginEnd="@dimen/sushi_spacing_mini"
+        app:textViewType="REGULAR_400" />
+    <com.blinkit.commons.ui.ui.customviews.viewstub.text.ZIconFontTextViewStub
+        android:textSize="@dimen/dimen_20"
+        android:textColor="@color/sushi_white"
+        android:gravity="center"
+        android:id="@id/mute_button"
+        android:visibility="gone"
+        android:layout_width="@dimen/size_40"
+        android:layout_height="@dimen/size_40"
+        android:layout_marginBottom="@dimen/sushi_spacing_macro"
+        android:translationZ="@dimen/sushi_spacing_mini"
+        app:layout_constraintBottom_toTopOf="@id/seekbar"
+        app:layout_constraintEnd_toEndOf="@id/remaining_time"
+        app:layout_constraintStart_toStartOf="@id/remaining_time"
+        app:layout_constraintVertical_chainStyle="packed" />
+    <com.zomato.ui.atomiclib.animation.ZLottieAnimationView
+        android:id="@id/lottie_animation_view"
+        android:visibility="gone"
+        android:layout_width="fill_parent"
+        android:layout_height="100.0dip"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+    <androidx.constraintlayout.widget.Guideline
+        android:orientation="vertical"
+        android:id="@id/left_guideline"
+        android:layout_width="wrap_content"
+        android:layout_height="fill_parent"
+        app:layout_constraintGuide_percent="0.15" />
+    <androidx.constraintlayout.widget.Guideline
+        android:orientation="vertical"
+        android:id="@id/right_guideline"
+        android:layout_width="wrap_content"
+        android:layout_height="fill_parent"
+        app:layout_constraintGuide_percent="0.85" />
+    <View
+        android:id="@id/left_swipe"
+        android:layout_width="0.0dip"
+        android:layout_height="fill_parent"
+        android:translationZ="@dimen/qd_margin_20"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="@id/left_guideline"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+    <View
+        android:id="@id/right_swipe"
+        android:layout_width="0.0dip"
+        android:layout_height="fill_parent"
+        android:translationZ="@dimen/qd_margin_20"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toEndOf="@id/right_guideline"
+        app:layout_constraintTop_toTopOf="parent" />
+    <androidx.constraintlayout.widget.Group
+        android:id="@id/swipe_view"
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        app:constraint_referenced_ids="right_swipe,left_swipe" />
+    <com.blinkit.commons.ui.ui.customviews.loadingErrorOverlay.LoadingErrorOverlay
+        android:id="@id/loading_error_overlay"
+        android:visibility="gone"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+</androidx.constraintlayout.widget.ConstraintLayout>

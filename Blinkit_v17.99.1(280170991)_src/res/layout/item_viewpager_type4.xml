@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout
+    android:paddingTop="@dimen/sushi_spacing_macro"
+    android:layout_width="fill_parent"
+    android:layout_height="wrap_content"
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+    <com.zomato.ui.atomiclib.atom.ZRoundedImageView
+        android:id="@id/viewPagerType4Image"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:scaleType="center"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+    <androidx.constraintlayout.widget.Barrier
+        android:id="@id/barrier2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:barrierDirection="start"
+        app:constraint_referenced_ids="viewPagerType4Image" />
+    <com.zomato.ui.atomiclib.atom.ZTextView
+        android:textColor="?attr_7f040475"
+        android:id="@id/viewPagerType4Title"
+        android:layout_width="0.0dip"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/sushi_spacing_macro"
+        app:layout_constraintEnd_toStartOf="@id/barrier2"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:textViewType="SEMIBOLD_600" />
+    <com.zomato.ui.atomiclib.atom.ZTextView
+        android:textColor="?attr_7f040490"
+        android:id="@id/viewPagerType4Subtitle"
+        android:layout_width="0.0dip"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/sushi_spacing_between_large"
+        android:layout_marginBottom="@dimen/sushi_spacing_macro"
+        app:layout_constraintEnd_toStartOf="@id/barrier2"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/viewPagerType4Title"
+        app:textViewType="REGULAR_200" />
+</androidx.constraintlayout.widget.ConstraintLayout>

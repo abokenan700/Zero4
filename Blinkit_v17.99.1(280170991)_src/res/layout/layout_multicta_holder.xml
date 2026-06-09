@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    android:orientation="horizontal"
+    android:layout_width="fill_parent"
+    android:layout_height="wrap_content"
+    android:baselineAligned="false"
+    xmlns:android="http://schemas.android.com/apk/res/android">
+    <include
+        android:id="@id/leftButton"
+        android:layout_width="0.0dip"
+        android:layout_height="wrap_content"
+        android:layout_weight="1.0"
+        layout="@layout/layout_multiline_action_button" />
+    <include
+        android:id="@id/rightButton"
+        android:layout_width="0.0dip"
+        android:layout_height="wrap_content"
+        android:layout_weight="1.0"
+        layout="@layout/layout_multiline_action_button" />
+</LinearLayout>

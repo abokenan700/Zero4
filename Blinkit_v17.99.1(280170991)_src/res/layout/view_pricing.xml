@@ -1,0 +1,100 @@
+<?xml version="1.0" encoding="utf-8"?>
+<merge
+    android:layout_width="fill_parent"
+    android:layout_height="wrap_content"
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+    <com.blinkit.blink.elements.ui.atoms.text.BlinkitTextView
+        android:id="@id/mrp"
+        android:layout_width="0.0dip"
+        android:layout_height="wrap_content"
+        app:layout_constraintBottom_toBottomOf="@id/stepper_container_overlay"
+        app:layout_constraintEnd_toStartOf="@id/stepper"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/price"
+        app:layout_constraintWidth_default="wrap" />
+    <com.blinkit.blink.elements.ui.atoms.text.BlinkitTextView
+        android:id="@id/price"
+        android:layout_width="0.0dip"
+        android:layout_height="wrap_content"
+        app:layout_constraintBottom_toTopOf="@id/mrp"
+        app:layout_constraintEnd_toStartOf="@id/stepper"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/offer"
+        app:layout_constraintWidth_default="wrap" />
+    <com.blinkit.commons.ui.ui.customviews.productCard.FlipperView
+        android:id="@id/offer"
+        android:paddingTop="@dimen/sushi_spacing_micro"
+        android:layout_width="0.0dip"
+        android:layout_height="wrap_content"
+        app:layout_constraintBottom_toTopOf="@id/price"
+        app:layout_constraintEnd_toStartOf="@id/stepper"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintWidth_default="wrap" />
+    <View
+        android:id="@id/stepper_bottom_fix_view"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/offer"
+        app:layout_constraintVertical_bias="1.0" />
+    <View
+        android:id="@id/stepper_container_overlay"
+        android:layout_width="0.0dip"
+        android:layout_height="wrap_content"
+        app:layout_constraintEnd_toEndOf="@id/stepper"
+        app:layout_constraintStart_toStartOf="@id/stepper"
+        app:layout_constraintTop_toTopOf="@id/stepper_bottom_fix_view" />
+    <com.blinkit.commons.ui.ui.customviews.stepper.Stepper
+        android:id="@id/stepper"
+        android:visibility="gone"
+        android:clipChildren="false"
+        android:clipToPadding="false"
+        android:layout_width="@dimen/size_72"
+        android:layout_height="wrap_content"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toTopOf="@id/stepper_bottom_fix_view"
+        app:layout_constraintWidth_default="wrap" />
+    <com.blinkit.commons.ui.ui.customviews.viewstub.blinkittext.BlinkitTextViewStub
+        android:gravity="center"
+        android:id="@id/custom_button_cta"
+        android:paddingTop="@dimen/sushi_spacing_mini"
+        android:paddingBottom="@dimen/sushi_spacing_mini"
+        android:visibility="gone"
+        android:clipChildren="false"
+        android:clipToPadding="false"
+        android:layout_width="@dimen/qd_stepper_width_micro"
+        android:layout_height="@dimen/qd_stepper_height_micro"
+        android:maxLines="1"
+        android:textAlignment="center"
+        android:paddingVertical="@dimen/sushi_spacing_mini"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toTopOf="@id/stepper_bottom_fix_view" />
+    <com.blinkit.commons.ui.ui.customviews.viewstub.blinkittext.BlinkitTextViewStub
+        android:ellipsize="end"
+        android:gravity="center"
+        android:id="@id/stateful_button"
+        android:paddingTop="@dimen/sushi_spacing_macro"
+        android:paddingBottom="@dimen/sushi_spacing_macro"
+        android:visibility="gone"
+        android:clipChildren="false"
+        android:clipToPadding="false"
+        android:layout_width="@dimen/qd_stateful_button_width_small"
+        android:layout_height="@dimen/qd_stateful_button_height_small"
+        android:maxLines="1"
+        android:textAlignment="center"
+        android:paddingVertical="@dimen/sushi_spacing_macro"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toTopOf="@id/stepper_bottom_fix_view" />
+    <com.blinkit.commons.ui.ui.customviews.viewstub.NotifyMeViewStub
+        android:id="@id/notify_me"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toTopOf="@id/stepper_bottom_fix_view" />
+</merge>

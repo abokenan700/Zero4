@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="utf-8"?>
+<merge
+    android:background="@color/sushi_white"
+    android:layout_width="fill_parent"
+    android:layout_height="wrap_content"
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+    <com.google.android.material.textfield.TextInputLayout
+        android:gravity="center_vertical"
+        android:id="@id/edit_text"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        app:boxCornerRadiusBottomEnd="@dimen/sushi_spacing_macro"
+        app:boxCornerRadiusBottomStart="@dimen/sushi_spacing_macro"
+        app:boxCornerRadiusTopEnd="@dimen/sushi_spacing_macro"
+        app:boxCornerRadiusTopStart="@dimen/sushi_spacing_macro"
+        app:boxStrokeColor="@color/sushi_black"
+        style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox.ExposedDropdownMenu">
+        <com.google.android.material.textfield.MaterialAutoCompleteTextView
+            android:textSize="@dimen/sushi_textsize_400"
+            android:id="@id/dropdown"
+            android:paddingTop="@dimen/sushi_spacing_femto"
+            android:paddingBottom="@dimen/sushi_spacing_femto"
+            android:focusable="true"
+            android:focusableInTouchMode="false"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:inputType="none"
+            android:paddingVertical="@dimen/sushi_spacing_femto" />
+    </com.google.android.material.textfield.TextInputLayout>
+</merge>

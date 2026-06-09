@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="utf-8"?>
+<merge
+    android:layout_width="fill_parent"
+    android:layout_height="@dimen/size_180"
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+    <com.zomato.ui.atomiclib.molecules.ShimmerChildView
+        android:id="@id/child_1"
+        android:layout_width="0.0dip"
+        android:layout_height="@dimen/sushi_spacing_base"
+        android:layout_marginBottom="@dimen/sushi_spacing_base"
+        app:bgColor="@color/color_white_trans_ninety"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:shimmer_corner_radius="@dimen/sushi_spacing_macro" />
+    <com.zomato.ui.atomiclib.molecules.ShimmerChildView
+        android:layout_width="0.0dip"
+        android:layout_height="@dimen/sushi_spacing_base"
+        android:layout_marginBottom="@dimen/sushi_spacing_base"
+        app:bgColor="@color/color_white_trans_ninety"
+        app:layout_constraintBottom_toTopOf="@id/child_1"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:shimmer_corner_radius="@dimen/sushi_spacing_macro" />
+</merge>

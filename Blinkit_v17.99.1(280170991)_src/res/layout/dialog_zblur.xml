@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout
+    android:background="@color/color_transparent"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+    <eightbitlab.com.blurview.BlurView
+        android:id="@id/blurView"
+        android:focusable="true"
+        android:clickable="true"
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        app:blurOverlayColor="@color/blur_view_background">
+        <LinearLayout
+            android:layout_gravity="center"
+            android:orientation="vertical"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content">
+            <androidx.recyclerview.widget.RecyclerView
+                android:id="@id/rv"
+                android:background="@color/sushi_white"
+                android:paddingTop="@dimen/sushi_spacing_base"
+                android:paddingBottom="@dimen/sushi_spacing_base"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="@dimen/sushi_spacing_loose" />
+            <com.zomato.ui.atomiclib.atom.ZIconFontTextView
+                android:textSize="@dimen/sushi_textsize_900"
+                android:textColor="@color/sushi_white"
+                android:gravity="center"
+                android:layout_gravity="bottom|center"
+                android:id="@id/iconCross"
+                android:layout_width="@dimen/size_50"
+                android:layout_height="@dimen/size_50"
+                android:text="@string/icon_font_cross" />
+        </LinearLayout>
+    </eightbitlab.com.blurview.BlurView>
+</FrameLayout>

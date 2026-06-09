@@ -1,0 +1,52 @@
+<?xml version="1.0" encoding="utf-8"?>
+<merge
+    android:gravity="center"
+    android:layout_gravity="center"
+    android:orientation="vertical"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+    <LinearLayout
+        android:gravity="center"
+        android:layout_gravity="center"
+        android:orientation="horizontal"
+        android:id="@id/ratingContainer"
+        android:padding="@dimen/sushi_spacing_micro"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:minWidth="@dimen/size_37"
+        android:minHeight="@dimen/size_20">
+        <com.zomato.ui.atomiclib.atom.staticviews.StaticTextView
+            android:textColor="@color/sushi_white"
+            android:gravity="center"
+            android:layout_gravity="center"
+            android:id="@id/ratingText"
+            android:visibility="gone"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:includeFontPadding="false"
+            android:paddingStart="@dimen/sushi_spacing_femto"
+            android:paddingEnd="@dimen/sushi_spacing_micro"
+            app:textViewType="SEMIBOLD_300" />
+        <com.zomato.ui.atomiclib.atom.staticviews.StaticIconView
+            android:textSize="@dimen/sushi_textsize_200"
+            android:textColor="@color/sushi_white"
+            android:gravity="center"
+            android:layout_gravity="center"
+            android:id="@id/ratingIcon"
+            android:visibility="gone"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="0.30000007dip"
+            android:includeFontPadding="false" />
+    </LinearLayout>
+    <com.zomato.ui.atomiclib.atom.staticviews.StaticTextView
+        android:gravity="center"
+        android:layout_gravity="center"
+        android:id="@id/bottom_title"
+        android:visibility="gone"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/sushi_spacing_nano" />
+</merge>

@@ -1,0 +1,51 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    android:gravity="center"
+    android:layout_gravity="center"
+    android:orientation="horizontal"
+    android:id="@id/ratingContainer"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+    <LinearLayout
+        android:gravity="center"
+        android:orientation="horizontal"
+        android:id="@id/stars_container"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content">
+        <com.blinkit.commons.ui.ui.customviews.starRating.BRatingItem
+            android:id="@id/one"
+            android:layout_width="@dimen/star_rating_size_large"
+            android:layout_height="@dimen/star_rating_size_large"
+            android:layout_marginEnd="@dimen/sushi_spacing_nano" />
+        <com.blinkit.commons.ui.ui.customviews.starRating.BRatingItem
+            android:id="@id/two"
+            android:layout_width="@dimen/star_rating_size_large"
+            android:layout_height="@dimen/star_rating_size_large"
+            android:layout_marginEnd="@dimen/sushi_spacing_nano" />
+        <com.blinkit.commons.ui.ui.customviews.starRating.BRatingItem
+            android:id="@id/three"
+            android:layout_width="@dimen/star_rating_size_large"
+            android:layout_height="@dimen/star_rating_size_large"
+            android:layout_marginEnd="@dimen/sushi_spacing_nano" />
+        <com.blinkit.commons.ui.ui.customviews.starRating.BRatingItem
+            android:id="@id/four"
+            android:layout_width="@dimen/star_rating_size_large"
+            android:layout_height="@dimen/star_rating_size_large"
+            android:layout_marginEnd="@dimen/sushi_spacing_nano" />
+        <com.blinkit.commons.ui.ui.customviews.starRating.BRatingItem
+            android:id="@id/five"
+            android:layout_width="@dimen/star_rating_size_large"
+            android:layout_height="@dimen/star_rating_size_large" />
+    </LinearLayout>
+    <com.blinkit.blink.elements.ui.atoms.text.BlinkitTextView
+        android:gravity="center"
+        android:id="@id/ratingText"
+        android:visibility="gone"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:includeFontPadding="false"
+        android:layout_marginStart="@dimen/sushi_spacing_micro"
+        app:textViewType="MEDIUM_100" />
+</LinearLayout>

@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="utf-8"?>
+<merge
+    android:id="@id/imageTag"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+    <LinearLayout
+        android:gravity="center"
+        android:orientation="vertical"
+        android:paddingTop="@dimen/sushi_spacing_micro"
+        android:paddingBottom="@dimen/sushi_spacing_micro"
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent">
+        <com.zomato.ui.atomiclib.atom.staticviews.StaticTextView
+            android:textColor="@color/sushi_green_500"
+            android:ellipsize="none"
+            android:gravity="center_horizontal"
+            android:id="@id/imageTagTitle"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:singleLine="true"
+            app:textViewType="SEMIBOLD_300" />
+        <com.zomato.ui.atomiclib.atom.staticviews.StaticTextView
+            android:textColor="?attr_7f040475"
+            android:ellipsize="none"
+            android:gravity="center_horizontal"
+            android:id="@id/imageTagSubtitle"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="-4.0dip"
+            android:singleLine="true"
+            app:textViewType="MEDIUM_100" />
+    </LinearLayout>
+</merge>

@@ -1,0 +1,60 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout
+    android:layout_width="fill_parent"
+    android:layout_height="wrap_content"
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+    <View
+        android:id="@id/left_shadow"
+        android:background="@color/sushi_grey_100"
+        android:layout_width="0.0dip"
+        android:layout_height="0.0dip"
+        android:translationX="@dimen/size_3"
+        android:translationY="@dimen/size_5"
+        app:layout_constraintBottom_toBottomOf="@id/left_edit_text"
+        app:layout_constraintEnd_toEndOf="@id/left_edit_text"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+    <com.blinkit.commons.ui.ui.snippets.autoSizeEditTextSnippet.AutoSizeEditTextVH
+        android:id="@id/left_edit_text"
+        android:layout_width="0.0dip"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="@dimen/dimen_4"
+        android:layout_marginTop="@dimen/sushi_spacing_mini"
+        android:layout_marginBottom="@dimen/sushi_spacing_mini"
+        android:inputType="textNoSuggestions"
+        android:layout_marginVertical="@dimen/sushi_spacing_mini"
+        app:layout_constraintBottom_toTopOf="@id/tv_counter"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toLeftOf="@id/right_edit_text"
+        app:layout_constraintTop_toTopOf="parent" />
+    <View
+        android:id="@id/right_shadow"
+        android:background="@color/sushi_grey_100"
+        android:layout_width="0.0dip"
+        android:layout_height="0.0dip"
+        android:translationY="@dimen/size_5"
+        app:layout_constraintBottom_toBottomOf="@id/left_shadow"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="@id/right_edit_text"
+        app:layout_constraintTop_toTopOf="@id/left_shadow" />
+    <com.blinkit.commons.ui.ui.snippets.autoSizeEditTextSnippet.AutoSizeEditTextVH
+        android:id="@id/right_edit_text"
+        android:layout_width="0.0dip"
+        android:layout_height="wrap_content"
+        android:layout_marginRight="@dimen/dimen_4"
+        android:inputType="textNoSuggestions"
+        app:layout_constraintBottom_toBottomOf="@id/left_edit_text"
+        app:layout_constraintLeft_toRightOf="@id/left_edit_text"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toTopOf="@id/left_edit_text" />
+    <com.zomato.ui.atomiclib.atom.ZTextView
+        android:gravity="center_horizontal"
+        android:id="@id/tv_counter"
+        android:visibility="gone"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/size_12"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/left_edit_text" />
+</androidx.constraintlayout.widget.ConstraintLayout>

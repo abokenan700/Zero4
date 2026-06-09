@@ -1,0 +1,68 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:animateLayoutChanges="true"
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+    <FrameLayout
+        android:id="@id/map_fragment"
+        android:tag="CrystalMapFragment"
+        android:layout_width="0.0dip"
+        android:layout_height="0.0dip"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        class="com.blinkit.commons.ui.base.gms.CrystalMapFragment" />
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:id="@id/directions_button"
+        android:paddingTop="5.0dip"
+        android:paddingBottom="5.0dip"
+        android:visibility="gone"
+        android:layout_width="wrap_content"
+        android:layout_height="@dimen/size_36"
+        android:paddingStart="7.0dip"
+        android:paddingEnd="7.0dip"
+        android:layout_marginEnd="@dimen/sushi_spacing_page_side"
+        android:translationZ="@dimen/sushi_spacing_nano"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent">
+        <com.zomato.ui.atomiclib.atom.ZIconFontTextView
+            android:textSize="@dimen/size_20"
+            android:id="@id/directions_button_prefix_icon"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            app:layout_constraintBottom_toBottomOf="@id/directions_button_text"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="@id/directions_button_text" />
+        <com.zomato.ui.atomiclib.atom.ZTextView
+            android:id="@id/directions_button_text"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="@dimen/sushi_spacing_micro"
+            android:layout_marginEnd="@dimen/sushi_spacing_micro"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toEndOf="@id/directions_button_prefix_icon"
+            app:layout_constraintTop_toTopOf="parent" />
+    </androidx.constraintlayout.widget.ConstraintLayout>
+    <com.zomato.ui.atomiclib.atom.ZIconFontTextView
+        android:textSize="19.0dip"
+        android:textColor="?themeColor500"
+        android:gravity="center"
+        android:id="@id/reset_button"
+        android:background="@drawable/qd_grey_circle"
+        android:focusable="true"
+        android:clickable="true"
+        android:layout_width="@dimen/size_36"
+        android:layout_height="@dimen/size_36"
+        android:text="@string/icon_font_current_location"
+        android:layout_marginStart="@dimen/sushi_spacing_macro"
+        android:layout_marginEnd="@dimen/sushi_spacing_page_side"
+        android:translationZ="@dimen/sushi_spacing_nano"
+        android:backgroundTint="@color/sushi_white"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toStartOf="@id/directions_button"
+        app:layout_constraintHorizontal_chainStyle="packed" />
+</androidx.constraintlayout.widget.ConstraintLayout>

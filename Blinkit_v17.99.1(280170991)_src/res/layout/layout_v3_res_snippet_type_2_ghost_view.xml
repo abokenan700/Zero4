@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="utf-8"?>
+<merge
+    android:orientation="vertical"
+    android:layout_width="fill_parent"
+    android:layout_height="wrap_content"
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+    <com.zomato.ui.atomiclib.molecules.ShimmerChildView
+        android:layout_gravity="center"
+        android:layout_width="fill_parent"
+        android:layout_height="@dimen/size_170"
+        app:bgColor="?attr_7f0403d3"
+        app:shimmer_corner_radius="@dimen/sushi_spacing_base" />
+    <FrameLayout
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content">
+        <LinearLayout
+            android:orientation="vertical"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content">
+            <com.zomato.ui.atomiclib.molecules.ShimmerChildView
+                android:layout_gravity="start|center|top"
+                android:id="@id/title_shimmer_1"
+                android:layout_width="@dimen/size_100"
+                android:layout_height="@dimen/sushi_spacing_extra"
+                android:layout_marginTop="@dimen/sushi_spacing_base"
+                app:bgColor="?attr_7f0403d3"
+                app:shimmer_corner_radius="@dimen/sushi_spacing_macro" />
+            <com.zomato.ui.atomiclib.molecules.ShimmerChildView
+                android:layout_gravity="start|center|top"
+                android:id="@id/animated_vertical_subtitles_shimmer_1"
+                android:layout_width="@dimen/size_150"
+                android:layout_height="@dimen/sushi_spacing_extra"
+                android:layout_marginTop="@dimen/sushi_spacing_base"
+                app:bgColor="?attr_7f0403d3"
+                app:shimmer_corner_radius="@dimen/sushi_spacing_macro" />
+            <com.zomato.ui.atomiclib.molecules.ShimmerChildView
+                android:layout_gravity="start|center|top"
+                android:id="@id/vertical_subtitles_shimmer_1"
+                android:layout_width="fill_parent"
+                android:layout_height="@dimen/sushi_spacing_extra"
+                android:layout_marginTop="@dimen/sushi_spacing_base"
+                app:bgColor="?attr_7f0403d3"
+                app:shimmer_corner_radius="@dimen/sushi_spacing_macro" />
+        </LinearLayout>
+    </FrameLayout>
+</merge>

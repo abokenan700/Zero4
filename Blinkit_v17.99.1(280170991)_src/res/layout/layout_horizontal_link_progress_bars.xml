@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="utf-8"?>
+<merge
+    android:paddingLeft="@dimen/sushi_spacing_base"
+    android:paddingRight="@dimen/sushi_spacing_base"
+    android:layout_width="fill_parent"
+    android:layout_height="wrap_content"
+    android:paddingHorizontal="@dimen/sushi_spacing_base"
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+    <androidx.recyclerview.widget.RecyclerView
+        android:orientation="horizontal"
+        android:id="@id/horizontal_recycler_view"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content" />
+</merge>

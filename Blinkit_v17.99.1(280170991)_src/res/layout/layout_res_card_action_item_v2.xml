@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    android:layout_gravity="center"
+    android:orientation="horizontal"
+    android:id="@id/outer_right_action"
+    android:paddingLeft="@dimen/size_5"
+    android:paddingTop="@dimen/dimen_3"
+    android:paddingRight="@dimen/size_5"
+    android:paddingBottom="@dimen/dimen_3"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:paddingHorizontal="@dimen/size_5"
+    android:paddingVertical="@dimen/dimen_3"
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+    <com.zomato.ui.atomiclib.atom.staticviews.StaticTextView
+        android:textColor="@color/sushi_grey_900"
+        android:ellipsize="end"
+        android:gravity="center"
+        android:layout_gravity="center"
+        android:id="@id/top_tag_container_title"
+        android:layout_width="0.0dip"
+        android:layout_height="wrap_content"
+        android:singleLine="true"
+        android:layout_weight="1.0"
+        app:textViewType="SEMIBOLD_200" />
+    <com.zomato.ui.atomiclib.atom.staticviews.StaticTextView
+        android:textColor="@color/sushi_grey_900"
+        android:layout_gravity="center"
+        android:id="@id/top_tag_container_right_title"
+        android:visibility="gone"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:singleLine="true"
+        app:textViewType="SEMIBOLD_200" />
+</LinearLayout>

@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout
+    android:layout_width="fill_parent"
+    android:layout_height="wrap_content"
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+    <com.zomato.ui.atomiclib.atom.ZTextView
+        android:textColor="@color/sushi_black"
+        android:gravity="start"
+        android:id="@id/title"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="7.0dip"
+        android:layout_marginTop="@dimen/sushi_spacing_micro"
+        android:layout_marginBottom="@dimen/sushi_spacing_micro"
+        android:text="@string/qd_green_capsicum"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_goneMarginTop="@dimen/sushi_spacing_macro"
+        app:textViewType="SEMIBOLD_600" />
+</androidx.constraintlayout.widget.ConstraintLayout>

@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ripple
+    android:color="@color/disabled_grey_fifty"
+    xmlns:android="http://schemas.android.com/apk/res/android">
+    <item
+        android:id="@android:id/mask">
+        <shape
+            android:shape="rectangle">
+            <corners
+                android:radius="@dimen/sushi_corner_radius" />
+            <solid
+                android:color="@color/light_grey_with_alpha" />
+        </shape>
+    </item>
+    <item>
+        <shape
+            android:shape="rectangle">
+            <corners
+                android:radius="@dimen/sushi_corner_radius" />
+            <stroke
+                android:width="@dimen/dimen_point_five"
+                android:color="@color/sushi_grey_300" />
+            <solid
+                android:color="@color/sushi_white" />
+        </shape>
+    </item>
+</ripple>

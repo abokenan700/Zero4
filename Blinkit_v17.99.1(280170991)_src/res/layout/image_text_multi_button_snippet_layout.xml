@@ -1,0 +1,54 @@
+<?xml version="1.0" encoding="utf-8"?>
+<merge
+    android:layout_width="fill_parent"
+    android:layout_height="wrap_content"
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+    <com.blinkit.commons.ui.ui.customviews.viewstub.image.BShapeableImageViewStub
+        android:id="@id/left_image_view_stub"
+        android:visibility="gone"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:scaleType="centerCrop"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toStartOf="@id/title_view"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+    <com.blinkit.blink.elements.ui.atoms.text.BlinkitTextView
+        android:id="@id/title_view"
+        android:layout_width="0.0dip"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="@dimen/sushi_spacing_mini"
+        android:layout_marginEnd="@dimen/sushi_spacing_mini"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toStartOf="@id/left_button_view_stub"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toEndOf="@id/left_image_view_stub"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintWidth_default="wrap" />
+    <com.blinkit.commons.ui.ui.customviews.viewstub.blinkitbutton.BlinkitButtonViewStub
+        android:id="@id/left_button_view_stub"
+        android:padding="@dimen/padding_bit_small"
+        android:visibility="gone"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginEnd="@dimen/sushi_spacing_mini"
+        app:layout_constrainedWidth="true"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toStartOf="@id/right_button_view_stub"
+        app:layout_constraintHorizontal_bias="1.0"
+        app:layout_constraintStart_toEndOf="@id/title_view"
+        app:layout_constraintTop_toTopOf="parent" />
+    <com.blinkit.commons.ui.ui.customviews.viewstub.blinkitbutton.BlinkitButtonViewStub
+        android:id="@id/right_button_view_stub"
+        android:padding="@dimen/padding_bit_small"
+        android:visibility="gone"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:layout_constrainedWidth="true"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="1.0"
+        app:layout_constraintStart_toEndOf="@id/left_button_view_stub"
+        app:layout_constraintTop_toTopOf="parent" />
+</merge>

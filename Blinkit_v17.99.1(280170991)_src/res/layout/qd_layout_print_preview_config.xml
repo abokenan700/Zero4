@@ -1,0 +1,232 @@
+<?xml version="1.0" encoding="utf-8"?>
+<merge
+    android:id="@id/parent_container"
+    android:layout_width="fill_parent"
+    android:layout_height="wrap_content"
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+    <include
+        android:id="@id/stepper"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="@dimen/qd_margin_10"
+        app:layout_constraintBottom_toTopOf="@id/custom_section1"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        layout="@layout/qd_print_settings_card" />
+    <include
+        android:id="@id/custom_section1"
+        android:visibility="gone"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="10.0dip"
+        app:layout_constraintBottom_toTopOf="@id/custom_section2"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/stepper"
+        layout="@layout/image_text_right_button" />
+    <include
+        android:id="@id/custom_section2"
+        android:visibility="gone"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="10.0dip"
+        app:layout_constraintBottom_toTopOf="@id/section_1"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/custom_section1"
+        layout="@layout/image_text_right_button" />
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:id="@id/section_1"
+        android:background="@drawable/bg_rounded_surface_primary"
+        android:paddingTop="@dimen/sushi_spacing_macro"
+        android:paddingBottom="@dimen/sushi_spacing_micro"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        app:layout_constraintBottom_toTopOf="@id/bottom_container"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/custom_section2">
+        <com.blinkit.blink.elements.ui.atoms.text.BlinkitTextView
+            android:id="@id/setting_feature2"
+            android:visibility="gone"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="@dimen/sushi_spacing_mini"
+            android:layout_marginStart="@dimen/sushi_spacing_base"
+            app:layout_constraintBottom_toTopOf="@id/bottom_section_color1"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+        <androidx.constraintlayout.widget.Guideline
+            android:orientation="vertical"
+            android:id="@id/guideline"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            app:layout_constraintGuide_percent="0.5" />
+        <include
+            android:id="@id/bottom_section_color1"
+            android:visibility="gone"
+            android:layout_width="0.0dip"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="@dimen/sushi_spacing_base"
+            android:layout_marginEnd="@dimen/sushi_spacing_macro"
+            app:layout_constraintBottom_toTopOf="@id/bottom_separator3"
+            app:layout_constraintEnd_toStartOf="@id/guideline"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/setting_feature2"
+            layout="@layout/qd_print_selection" />
+        <include
+            android:id="@id/bottom_section_color2"
+            android:visibility="gone"
+            android:layout_width="0.0dip"
+            android:layout_height="wrap_content"
+            android:layout_marginEnd="@dimen/sushi_spacing_base"
+            app:layout_constraintBottom_toBottomOf="@id/bottom_section_color1"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toEndOf="@id/guideline"
+            app:layout_constraintTop_toTopOf="@id/bottom_section_color1"
+            layout="@layout/qd_print_selection" />
+        <com.zomato.ui.atomiclib.atom.ZSeparator
+            android:id="@id/bottom_separator3"
+            android:visibility="gone"
+            android:layout_width="fill_parent"
+            android:layout_height="@dimen/dimen_point_five"
+            android:layout_margin="@dimen/sushi_spacing_micro"
+            app:layout_constraintBottom_toTopOf="@id/setting_feature3"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/bottom_section_color1"
+            app:zseparator_color="@color/sushi_grey_100" />
+        <com.blinkit.blink.elements.ui.atoms.text.BlinkitTextView
+            android:id="@id/setting_feature3"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="@dimen/sushi_spacing_mini"
+            android:layout_marginStart="@dimen/sushi_spacing_base"
+            app:layout_constraintBottom_toTopOf="@id/bottom_section_size1"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/bottom_separator3" />
+        <include
+            android:id="@id/bottom_section_size1"
+            android:visibility="gone"
+            android:layout_width="0.0dip"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="@dimen/sushi_spacing_macro"
+            android:layout_weight="1.0"
+            android:layout_marginStart="@dimen/sushi_spacing_base"
+            android:layout_marginEnd="@dimen/sushi_spacing_micro"
+            app:layout_constraintBottom_toTopOf="@id/bottom_section_size4"
+            app:layout_constraintEnd_toStartOf="@id/bottom_section_size2"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/setting_feature3"
+            layout="@layout/qd_print_selection" />
+        <include
+            android:id="@id/bottom_section_size2"
+            android:visibility="gone"
+            android:layout_width="0.0dip"
+            android:layout_height="0.0dip"
+            android:layout_weight="1.0"
+            android:layout_marginStart="@dimen/sushi_spacing_micro"
+            android:layout_marginEnd="@dimen/sushi_spacing_base"
+            app:layout_constraintBottom_toBottomOf="@id/bottom_section_size1"
+            app:layout_constraintEnd_toStartOf="@id/bottom_section_size3"
+            app:layout_constraintStart_toEndOf="@id/bottom_section_size1"
+            app:layout_constraintTop_toTopOf="@id/bottom_section_size1"
+            layout="@layout/qd_print_selection" />
+        <include
+            android:id="@id/bottom_section_size3"
+            android:visibility="gone"
+            android:layout_width="0.0dip"
+            android:layout_height="0.0dip"
+            android:layout_weight="1.0"
+            android:layout_marginStart="@dimen/sushi_spacing_micro_negative"
+            android:layout_marginEnd="@dimen/sushi_spacing_macro"
+            app:layout_constraintBottom_toBottomOf="@id/bottom_section_size1"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toEndOf="@id/bottom_section_size2"
+            app:layout_constraintTop_toTopOf="@id/bottom_section_size1"
+            layout="@layout/qd_print_selection" />
+        <include
+            android:id="@id/bottom_section_size4"
+            android:visibility="gone"
+            android:layout_width="0.0dip"
+            android:layout_height="0.0dip"
+            android:layout_marginBottom="@dimen/sushi_spacing_base"
+            android:layout_weight="1.0"
+            android:layout_marginStart="@dimen/sushi_spacing_base"
+            android:layout_marginEnd="@dimen/sushi_spacing_micro"
+            app:layout_constraintBottom_toTopOf="@id/feature_toggle_separator"
+            app:layout_constraintEnd_toStartOf="@id/bottom_section_size5"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/bottom_section_size1"
+            layout="@layout/qd_print_selection" />
+        <include
+            android:id="@id/bottom_section_size5"
+            android:visibility="gone"
+            android:layout_width="0.0dip"
+            android:layout_height="wrap_content"
+            android:layout_weight="1.0"
+            android:layout_marginStart="@dimen/sushi_spacing_micro"
+            android:layout_marginEnd="@dimen/sushi_spacing_base"
+            app:layout_constraintBottom_toBottomOf="@id/bottom_section_size4"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toEndOf="@id/bottom_section_size4"
+            app:layout_constraintTop_toTopOf="@id/bottom_section_size4"
+            layout="@layout/qd_print_selection" />
+        <com.zomato.ui.atomiclib.atom.ZSeparator
+            android:id="@id/feature_toggle_separator"
+            android:visibility="gone"
+            android:layout_width="fill_parent"
+            android:layout_height="@dimen/dimen_point_five"
+            app:layout_constraintBottom_toTopOf="@id/switch_view"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/bottom_section_size4"
+            app:zseparator_color="@color/sushi_grey_100" />
+        <com.blinkit.blink.elements.ui.atoms.text.BlinkitTextView
+            android:id="@id/toggle_title"
+            android:layout_width="0.0dip"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="@dimen/sushi_spacing_base"
+            app:layout_constraintBottom_toBottomOf="@id/switch_view"
+            app:layout_constraintEnd_toStartOf="@id/switch_view"
+            app:layout_constraintHorizontal_bias="0.0"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="@id/switch_view" />
+        <com.zomato.ui.atomiclib.molecules.ZSwitch
+            android:theme="@style/QdTheme.Switch"
+            android:id="@id/switch_view"
+            android:background="@null"
+            android:layout_width="wrap_content"
+            android:layout_height="@dimen/sushi_action_item_drawable_size"
+            android:layout_marginTop="@dimen/sushi_spacing_micro"
+            android:layout_marginBottom="@dimen/sushi_spacing_micro"
+            android:layout_marginEnd="@dimen/sushi_spacing_base"
+            android:layout_marginVertical="@dimen/sushi_spacing_micro"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toEndOf="@id/toggle_title"
+            app:layout_constraintTop_toBottomOf="@id/feature_toggle_separator" />
+        <androidx.constraintlayout.widget.Group
+            android:id="@id/toggle_group"
+            android:visibility="gone"
+            android:layout_width="0.0dip"
+            android:layout_height="0.0dip"
+            app:constraint_referenced_ids="switch_view,toggle_title,feature_toggle_separator" />
+    </androidx.constraintlayout.widget.ConstraintLayout>
+    <include
+        android:id="@id/bottom_container"
+        android:visibility="invisible"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        app:layout_constrainedHeight="true"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/section_1"
+        app:layout_constraintVertical_bias="1.0"
+        layout="@layout/image_text_right_button" />
+</merge>

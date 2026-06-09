@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="utf-8"?>
+<merge
+    android:orientation="horizontal"
+    android:padding="@dimen/dimen_10"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    xmlns:android="http://schemas.android.com/apk/res/android">
+    <FrameLayout
+        android:layout_gravity="center_vertical"
+        android:id="@id/image_lottie_container"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content">
+        <com.zomato.ui.atomiclib.atom.ZRoundedImageView
+            android:id="@id/image"
+            android:visibility="gone"
+            android:layout_width="@dimen/sushi_spacing_loose"
+            android:layout_height="@dimen/sushi_spacing_loose" />
+        <com.zomato.ui.atomiclib.animation.ZLottieAnimationView
+            android:id="@id/lottie"
+            android:visibility="gone"
+            android:layout_width="@dimen/sushi_spacing_loose"
+            android:layout_height="@dimen/sushi_spacing_loose" />
+    </FrameLayout>
+    <com.zomato.ui.atomiclib.atom.staticviews.StaticTextView
+        android:textColor="?attr_7f040268"
+        android:layout_gravity="center_vertical"
+        android:id="@id/title"
+        android:visibility="gone"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="@dimen/sushi_spacing_macro" />
+</merge>

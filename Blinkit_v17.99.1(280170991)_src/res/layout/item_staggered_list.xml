@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout
+    android:id="@id/root"
+    android:clipChildren="false"
+    android:clipToPadding="false"
+    android:layout_width="fill_parent"
+    android:layout_height="wrap_content"
+    android:importantForAccessibility="no"
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+    <com.zomato.ui.atomiclib.atom.ZRoundedImageView
+        android:id="@id/bg_image"
+        android:layout_width="@dimen/sushi_spacing_femto"
+        android:layout_height="@dimen/sushi_spacing_femto"
+        android:scaleType="fitXY"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+    <com.zomato.ui.atomiclib.utils.video.toro.widget.Container
+        android:id="@id/recyclerView"
+        android:paddingLeft="@dimen/sushi_spacing_macro"
+        android:paddingRight="@dimen/sushi_spacing_macro"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:nestedScrollingEnabled="false"
+        android:paddingHorizontal="@dimen/sushi_spacing_macro"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+</androidx.constraintlayout.widget.ConstraintLayout>

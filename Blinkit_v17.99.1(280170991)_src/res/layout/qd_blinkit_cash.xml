@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    android:gravity="center_vertical"
+    android:orientation="horizontal"
+    android:id="@id/container"
+    android:paddingLeft="@dimen/dimen_12"
+    android:paddingTop="@dimen/dimen_16"
+    android:paddingRight="@dimen/dimen_12"
+    android:paddingBottom="@dimen/dimen_16"
+    android:layout_width="fill_parent"
+    android:layout_height="wrap_content"
+    android:paddingHorizontal="@dimen/dimen_12"
+    android:paddingVertical="@dimen/dimen_16"
+    xmlns:android="http://schemas.android.com/apk/res/android">
+    <FrameLayout
+        android:id="@id/blinkit_cash_image_container"
+        android:padding="@dimen/dimen_12"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content">
+        <ImageView
+            android:id="@id/blinkit_cash_img"
+            android:layout_width="@dimen/size_26"
+            android:layout_height="@dimen/size_26" />
+    </FrameLayout>
+    <com.zomato.ui.atomiclib.atom.ZTextView
+        android:layout_gravity="center_vertical"
+        android:id="@id/blinkit_cash_text"
+        android:layout_width="0.0dip"
+        android:layout_height="wrap_content"
+        android:layout_weight="1.0"
+        android:layout_marginStart="@dimen/qd_margin_12" />
+    <CheckBox
+        android:id="@id/blinkit_cash_checkbox"
+        android:layout_width="@dimen/size_26"
+        android:layout_height="@dimen/size_26"
+        android:layout_marginLeft="@dimen/size_4"
+        android:layout_marginRight="@dimen/size_4"
+        android:buttonTint="?attr_7f040361"
+        android:layout_marginHorizontal="@dimen/size_4" />
+</LinearLayout>

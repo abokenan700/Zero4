@@ -1,0 +1,87 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout
+    android:id="@id/parent_layout"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+    <LinearLayout
+        android:orientation="vertical"
+        android:id="@id/root_view"
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent">
+        <com.google.android.material.appbar.AppBarLayout
+            android:id="@id/appBarLayout"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content">
+            <androidx.appcompat.widget.Toolbar
+                android:id="@id/appbar_layout_tool_bar"
+                android:layout_width="fill_parent"
+                android:layout_height="?actionBarSize"
+                app:layout_scrollFlags="scroll|enterAlways|snap" />
+        </com.google.android.material.appbar.AppBarLayout>
+        <com.zomato.chatsdk.chatuikit.snippets.ChatSDKNoContentView
+            android:id="@id/retry_layout"
+            android:layout_width="fill_parent"
+            android:layout_height="fill_parent" />
+        <ScrollView
+            android:layout_width="fill_parent"
+            android:layout_height="0.0dip"
+            android:layout_weight="1.0">
+            <LinearLayout
+                android:orientation="vertical"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content">
+                <com.zomato.chatsdk.chatuikit.snippets.ExpandableBanner
+                    android:id="@id/top_expandable_banner"
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginBottom="@dimen/sushi_spacing_loose" />
+                <com.zomato.chatsdk.chatuikit.snippets.ChatDynamicFormView
+                    android:id="@id/form_view"
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="@dimen/sushi_spacing_extra"
+                    android:layout_marginRight="@dimen/sushi_spacing_extra"
+                    android:layout_marginHorizontal="@dimen/sushi_spacing_extra" />
+            </LinearLayout>
+        </ScrollView>
+        <com.zomato.ui.atomiclib.atom.ZSeparator
+            android:id="@id/footer_separator"
+            android:layout_width="fill_parent"
+            android:layout_height="@dimen/border_stroke_width"
+            app:zseparator_color="@color/sushi_grey_200" />
+        <LinearLayout
+            android:orientation="horizontal"
+            android:paddingLeft="@dimen/sushi_spacing_macro"
+            android:paddingRight="@dimen/sushi_spacing_macro"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/sushi_spacing_base"
+            android:layout_marginBottom="@dimen/sushi_spacing_base"
+            android:layout_marginVertical="@dimen/sushi_spacing_base"
+            android:paddingHorizontal="@dimen/sushi_spacing_macro">
+            <com.zomato.ui.atomiclib.atom.ZButton
+                android:id="@id/footer_left_button"
+                android:layout_width="@dimen/dimen_0"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="@dimen/sushi_spacing_micro"
+                android:layout_marginRight="@dimen/sushi_spacing_micro"
+                android:layout_weight="1.0"
+                android:layout_marginHorizontal="@dimen/sushi_spacing_micro" />
+            <com.zomato.ui.atomiclib.atom.ZButton
+                android:id="@id/footer_right_bottom"
+                android:layout_width="@dimen/dimen_0"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="@dimen/sushi_spacing_micro"
+                android:layout_marginRight="@dimen/sushi_spacing_micro"
+                android:layout_weight="1.0"
+                android:layout_marginHorizontal="@dimen/sushi_spacing_micro" />
+        </LinearLayout>
+    </LinearLayout>
+    <FrameLayout
+        android:id="@id/fragment_container"
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:elevation="@dimen/sushi_spacing_macro" />
+</FrameLayout>

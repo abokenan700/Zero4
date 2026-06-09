@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ProgressBar
+    android:id="@id/storyProgressView"
+    android:layout_width="fill_parent"
+    android:layout_height="@dimen/sushi_spacing_nano"
+    android:max="1000000"
+    android:secondaryProgress="0"
+    android:progressDrawable="@drawable/zstory_progress_bar"
+    android:secondaryProgressTint="@color/color_transparent"
+    style="@style/Base.Widget.AppCompat.ProgressBar.Horizontal"
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto" />

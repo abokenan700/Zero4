@@ -1,0 +1,164 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout
+    android:layout_gravity="center"
+    android:orientation="vertical"
+    android:id="@id/root"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+    <LinearLayout
+        android:gravity="center"
+        android:orientation="vertical"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content">
+        <FrameLayout
+            android:layout_gravity="center_horizontal"
+            android:id="@id/imageWrapper"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/sushi_spacing_micro">
+            <com.zomato.ui.atomiclib.atom.ZCircularImageView
+                android:layout_gravity="center_horizontal"
+                android:id="@id/image"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_margin="@dimen/sushi_spacing_pico"
+                android:scaleType="fitCenter"
+                android:elevation="@dimen/sushi_spacing_nano" />
+        </FrameLayout>
+        <com.zomato.ui.atomiclib.atom.ZTextView
+            android:textColor="?attr_7f040475"
+            android:ellipsize="end"
+            android:gravity="center_horizontal"
+            android:id="@id/title"
+            android:paddingTop="@dimen/sushi_spacing_macro"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:maxLines="2"
+            android:textAlignment="center"
+            app:textViewType="MEDIUM_300" />
+        <LinearLayout
+            android:gravity="center"
+            android:layout_gravity="center"
+            android:orientation="horizontal"
+            android:id="@id/subtitleContainer"
+            android:paddingTop="@dimen/sushi_spacing_nano"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content">
+            <com.zomato.ui.atomiclib.atom.ZCircularImageView
+                android:id="@id/subtitle_image"
+                android:layout_width="@dimen/size_12"
+                android:layout_height="@dimen/size_12"
+                android:layout_marginEnd="@dimen/sushi_spacing_micro" />
+            <com.zomato.ui.atomiclib.atom.ZTextView
+                android:textColor="?attr_7f040490"
+                android:gravity="center_horizontal"
+                android:id="@id/subtitle"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textAlignment="center"
+                app:textViewType="REGULAR_200" />
+        </LinearLayout>
+        <com.zomato.ui.atomiclib.atom.ZTextView
+            android:textColor="?attr_7f040475"
+            android:gravity="center_horizontal"
+            android:id="@id/optional"
+            android:paddingTop="@dimen/sushi_spacing_micro"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:maxLines="1"
+            android:textAlignment="center"
+            app:textViewType="REGULAR_300" />
+    </LinearLayout>
+    <LinearLayout
+        android:gravity="center"
+        android:orientation="vertical"
+        android:visibility="invisible"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content">
+        <FrameLayout
+            android:layout_gravity="center_horizontal"
+            android:id="@id/imageDummyWrapper"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/sushi_spacing_micro">
+            <com.zomato.ui.atomiclib.atom.ZCircularImageView
+                android:layout_gravity="center_horizontal"
+                android:id="@id/imageDummy"
+                android:visibility="invisible"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_margin="@dimen/sushi_spacing_pico"
+                android:scaleType="fitCenter"
+                android:elevation="@dimen/sushi_spacing_nano" />
+        </FrameLayout>
+        <com.zomato.ui.atomiclib.atom.ZTextView
+            android:textColor="?attr_7f040475"
+            android:ellipsize="end"
+            android:gravity="center_horizontal"
+            android:id="@id/titleDummy"
+            android:paddingTop="@dimen/sushi_spacing_macro"
+            android:visibility="invisible"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:maxLines="2"
+            android:textAlignment="center"
+            app:textViewType="MEDIUM_300" />
+        <LinearLayout
+            android:gravity="center"
+            android:layout_gravity="center"
+            android:orientation="horizontal"
+            android:id="@id/dummySubtitleContainer"
+            android:paddingTop="@dimen/sushi_spacing_nano"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content">
+            <com.zomato.ui.atomiclib.atom.ZCircularImageView
+                android:id="@id/subtitle_image_dummy"
+                android:visibility="invisible"
+                android:layout_width="@dimen/size_12"
+                android:layout_height="@dimen/size_12"
+                android:layout_marginEnd="@dimen/sushi_spacing_micro" />
+            <com.zomato.ui.atomiclib.atom.ZTextView
+                android:textColor="?attr_7f040490"
+                android:gravity="center_horizontal"
+                android:id="@id/subtitleDummy"
+                android:visibility="invisible"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textAlignment="center"
+                app:textViewType="REGULAR_200" />
+        </LinearLayout>
+        <com.zomato.ui.atomiclib.atom.ZTextView
+            android:textColor="?attr_7f040475"
+            android:gravity="center_horizontal"
+            android:id="@id/optionalDummy"
+            android:paddingTop="@dimen/sushi_spacing_micro"
+            android:visibility="invisible"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:maxLines="1"
+            android:textAlignment="center"
+            app:textViewType="REGULAR_300" />
+    </LinearLayout>
+    <com.zomato.ui.lib.snippets.ZFontExtraMarginTagView
+        android:gravity="center"
+        android:layout_gravity="center_horizontal"
+        android:id="@id/bottomTag"
+        android:paddingTop="@dimen/sushi_spacing_nano"
+        android:paddingBottom="@dimen/sushi_spacing_nano"
+        android:visibility="gone"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:paddingStart="@dimen/sushi_spacing_macro"
+        android:paddingEnd="@dimen/sushi_spacing_macro"
+        android:paddingVertical="@dimen/sushi_spacing_nano" />
+    <com.zomato.ui.atomiclib.atom.ZRoundedImageView
+        android:gravity="center"
+        android:layout_gravity="center_horizontal"
+        android:id="@id/topImage"
+        android:visibility="gone"
+        android:layout_width="wrap_content"
+        android:layout_height="@dimen/dimen_12"
+        app:cornerRadius="@dimen/sushi_spacing_femto" />
+</FrameLayout>

@@ -1,0 +1,90 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout
+    android:theme="@style/AppTheme"
+    android:id="@id/container"
+    android:background="?attr_7f040180"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:minHeight="@dimen/size_200"
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+    <LinearLayout
+        android:orientation="vertical"
+        android:id="@id/content_layout"
+        android:focusable="true"
+        android:focusableInTouchMode="true"
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent">
+        <LinearLayout
+            android:orientation="horizontal"
+            android:id="@id/header_container"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/sushi_spacing_mini"
+            android:layout_marginBottom="@dimen/sushi_spacing_mini">
+            <com.zomato.ui.atomiclib.atom.ZIconFontTextView
+                android:textSize="20.0sp"
+                android:textColor="@color/sushi_grey_900"
+                android:id="@id/toolbar_arrow_back"
+                android:background="?android:selectableItemBackgroundBorderless"
+                android:padding="@dimen/sushi_spacing_base"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/icon_font_chevron_left" />
+            <com.zomato.ui.atomiclib.atom.ZTextView
+                android:textColor="@color/sushi_grey_900"
+                android:id="@id/header_title"
+                android:layout_width="0.0dip"
+                android:layout_height="wrap_content"
+                android:text="Order Summary"
+                android:layout_weight="1.0"
+                app:textViewType="SEMIBOLD_500" />
+            <com.zomato.ui.atomiclib.atom.ZButton
+                android:layout_gravity="center_vertical"
+                android:id="@id/button"
+                android:visibility="visible"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:drawablePadding="@dimen/sushi_spacing_macro"
+                android:layout_marginEnd="@dimen/sushi_spacing_base"
+                app:buttonDimension="medium"
+                app:buttonType="text" />
+        </LinearLayout>
+        <com.zomato.ui.atomiclib.atom.ZTouchInterceptRecyclerView
+            android:id="@id/recyclerView"
+            android:paddingLeft="@dimen/sushi_spacing_base"
+            android:paddingRight="@dimen/sushi_spacing_base"
+            android:paddingBottom="@dimen/size_60"
+            android:clipToPadding="false"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_weight="1.0"
+            android:paddingHorizontal="@dimen/sushi_spacing_base" />
+        <FrameLayout
+            android:layout_gravity="bottom"
+            android:id="@id/bottom_button_layout"
+            android:background="?attr_7f04017d"
+            android:padding="@dimen/sushi_spacing_base"
+            android:visibility="gone"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:animateLayoutChanges="true"
+            android:elevation="@dimen/dimen_10">
+            <com.zomato.ui.atomiclib.atom.ZButton
+                android:id="@id/shareBottomButton"
+                android:visibility="gone"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content" />
+        </FrameLayout>
+    </LinearLayout>
+    <ProgressBar
+        android:layout_gravity="center"
+        android:id="@id/pbGiftOrder"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content" />
+    <com.zomato.android.zcommons.nocontentview.NoContentView
+        android:id="@id/ncvGiftCard"
+        android:visibility="gone"
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent" />
+</FrameLayout>

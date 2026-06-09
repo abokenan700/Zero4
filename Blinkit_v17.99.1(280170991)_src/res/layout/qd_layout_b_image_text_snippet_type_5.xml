@@ -1,0 +1,82 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout
+    android:id="@id/cl_container"
+    android:layout_width="fill_parent"
+    android:layout_height="wrap_content"
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+    <androidx.constraintlayout.widget.Guideline
+        android:orientation="horizontal"
+        android:id="@id/gl_image"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        app:layout_constraintGuide_percent="0.3" />
+    <View
+        android:id="@id/bg_view"
+        android:layout_width="0.0dip"
+        android:layout_height="0.0dip"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="@id/gl_image" />
+    <com.blinkit.commons.ui.ui.customviews.BShapeableImageView
+        android:id="@id/bg_image"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:scaleType="fitXY"
+        android:adjustViewBounds="true"
+        android:elevation="@dimen/elevation_0.5"
+        app:layout_constraintBottom_toTopOf="@id/bottom_barrier"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.0" />
+    <androidx.constraintlayout.widget.Barrier
+        android:id="@id/bottom_barrier"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:barrierDirection="top"
+        app:constraint_referenced_ids="left_image,tv_title,tv_subtitle" />
+    <com.blinkit.commons.ui.ui.customviews.BShapeableImageView
+        android:id="@id/left_image"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="@dimen/sushi_spacing_extra"
+        android:layout_marginTop="@dimen/sushi_spacing_extra"
+        android:layout_marginBottom="@dimen/sushi_spacing_extra"
+        android:layout_marginVertical="@dimen/sushi_spacing_extra"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toStartOf="@id/left_barrier"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/bottom_barrier" />
+    <androidx.constraintlayout.widget.Barrier
+        android:id="@id/left_barrier"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginRight="@dimen/sushi_spacing_extra"
+        app:barrierDirection="left"
+        app:constraint_referenced_ids="tv_title,tv_subtitle" />
+    <com.zomato.ui.atomiclib.atom.ZTextView
+        android:id="@id/tv_title"
+        android:layout_width="0.0dip"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="@dimen/sushi_spacing_base"
+        android:layout_marginEnd="@dimen/sushi_spacing_extra"
+        app:layout_constraintBottom_toTopOf="@id/tv_subtitle"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toEndOf="@id/left_image"
+        app:layout_constraintTop_toTopOf="@id/left_image"
+        app:layout_constraintVertical_chainStyle="packed" />
+    <com.zomato.ui.atomiclib.atom.ZTextView
+        android:id="@id/tv_subtitle"
+        android:layout_width="0.0dip"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/sushi_spacing_nano"
+        android:layout_marginRight="@dimen/sushi_spacing_extra"
+        app:layout_constraintBottom_toBottomOf="@id/left_image"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="@id/tv_title"
+        app:layout_constraintTop_toBottomOf="@id/tv_title" />
+</androidx.constraintlayout.widget.ConstraintLayout>

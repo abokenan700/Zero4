@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    android:orientation="vertical"
+    android:id="@id/separator_root"
+    android:background="@color/sushi_grey_100"
+    android:layout_width="fill_parent"
+    android:layout_height="wrap_content"
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+    <com.zomato.ui.atomiclib.atom.ZSeparator
+        android:id="@id/top_separator"
+        android:layout_width="fill_parent"
+        android:layout_height="@dimen/dimen_point_five"
+        app:separator_color="@color/sushi_grey_200" />
+    <com.zomato.ui.atomiclib.atom.ZSeparator
+        android:id="@id/bottom_separator"
+        android:layout_width="fill_parent"
+        android:layout_height="@dimen/dimen_point_five"
+        android:layout_marginTop="@dimen/sushi_spacing_base"
+        app:separator_color="@color/sushi_grey_200" />
+    <View
+        android:id="@id/separator"
+        android:visibility="gone"
+        android:layout_width="fill_parent"
+        android:layout_height="@dimen/sushi_spacing_base"
+        android:backgroundTint="@color/sushi_grey_200" />
+    <View
+        android:id="@id/thick_v2_16_separator"
+        android:visibility="gone"
+        android:layout_width="fill_parent"
+        android:layout_height="@dimen/sushi_spacing_extra"
+        android:backgroundTint="@color/sushi_grey_200" />
+    <View
+        android:id="@id/gradient_separator"
+        android:background="@drawable/qd_horizontal_gradient"
+        android:visibility="gone"
+        android:layout_width="fill_parent"
+        android:layout_height="@dimen/sushi_spacing_base" />
+</LinearLayout>

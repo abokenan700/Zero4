@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="utf-8"?>
+<merge
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+    <com.zomato.ui.atomiclib.atom.ZSeparator
+        android:layout_width="fill_parent"
+        android:layout_height="@dimen/border_stroke_width"
+        app:zseparator_color="@color/sushi_grey_100" />
+    <androidx.recyclerview.widget.RecyclerView
+        android:id="@id/recyclerView"
+        android:fadingEdge="horizontal"
+        android:fadingEdgeLength="@dimen/size22"
+        android:clipToPadding="true"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:requiresFadingEdge="horizontal"
+        android:paddingStart="@dimen/sushi_spacing_mini" />
+</merge>

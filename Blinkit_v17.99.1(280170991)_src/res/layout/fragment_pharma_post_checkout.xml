@@ -1,0 +1,80 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout
+    android:background="?attr_7f04017d"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+    <androidx.constraintlayout.widget.Group
+        android:id="@id/group"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:constraint_referenced_ids="title,subtitle,subtitle2,line_animation" />
+    <com.blinkit.commons.ui.ui.customviews.BLottieAnimationView
+        android:id="@id/lottie"
+        android:layout_width="@dimen/size_108"
+        android:layout_height="@dimen/size_108"
+        app:layout_constraintBottom_toBottomOf="@id/guideline_center"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="@id/guideline_center" />
+    <com.blinkit.blink.elements.ui.atoms.text.BlinkitTextView
+        android:gravity="center_horizontal"
+        android:id="@id/title"
+        android:paddingTop="@dimen/sushi_spacing_base"
+        android:layout_width="0.0dip"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="@dimen/sushi_spacing_base"
+        android:layout_marginRight="@dimen/sushi_spacing_base"
+        android:layout_marginHorizontal="@dimen/sushi_spacing_base"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/lottie"
+        app:textViewType="BOLD_300" />
+    <androidx.constraintlayout.widget.Guideline
+        android:orientation="horizontal"
+        android:id="@id/guideline_center"
+        android:layout_width="0.0dip"
+        android:layout_height="0.0dip"
+        app:layout_constraintGuide_percent="0.5" />
+    <com.blinkit.blink.elements.ui.atoms.text.BlinkitTextView
+        android:gravity="center_horizontal"
+        android:id="@id/subtitle"
+        android:paddingBottom="@dimen/sushi_spacing_micro"
+        android:layout_width="0.0dip"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="@dimen/sushi_spacing_base"
+        android:layout_marginTop="@dimen/qd_margin_20"
+        android:layout_marginRight="@dimen/sushi_spacing_base"
+        android:maxLines="1"
+        android:layout_marginHorizontal="@dimen/sushi_spacing_base"
+        app:layout_constrainedWidth="true"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/guideline_center"
+        app:layout_constraintWidth="wrap_content"
+        app:textViewType="BOLD_700" />
+    <com.blinkit.commons.ui.ui.customviews.LineAnimationView
+        android:id="@id/line_animation"
+        android:layout_width="0.0dip"
+        android:layout_height="@dimen/sushi_spacing_nano"
+        android:layout_marginLeft="@dimen/sushi_spacing_micro"
+        android:layout_marginRight="@dimen/sushi_spacing_micro"
+        android:layout_marginHorizontal="@dimen/sushi_spacing_micro"
+        app:layout_constraintEnd_toEndOf="@id/subtitle"
+        app:layout_constraintStart_toStartOf="@id/subtitle"
+        app:layout_constraintTop_toBottomOf="@id/subtitle" />
+    <com.blinkit.blink.elements.ui.atoms.text.BlinkitTextView
+        android:gravity="center_horizontal"
+        android:id="@id/subtitle2"
+        android:paddingTop="@dimen/sushi_spacing_micro"
+        android:layout_width="0.0dip"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="@dimen/sushi_spacing_base"
+        android:layout_marginRight="@dimen/sushi_spacing_base"
+        android:layout_marginHorizontal="@dimen/sushi_spacing_base"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/line_animation"
+        app:textViewType="MEDIUM_300" />
+</androidx.constraintlayout.widget.ConstraintLayout>

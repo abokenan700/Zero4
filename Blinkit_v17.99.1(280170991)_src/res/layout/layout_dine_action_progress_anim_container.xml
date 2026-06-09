@@ -1,0 +1,51 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    android:layout_gravity="center_vertical"
+    android:orientation="horizontal"
+    android:background="@color/color_black_alpha_fifty"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+    <LinearLayout
+        android:layout_gravity="bottom"
+        android:background="?attr_7f04017d"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content">
+        <LinearLayout
+            android:orientation="vertical"
+            android:layout_width="0.0dip"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/sushi_spacing_page_side"
+            android:layout_marginBottom="@dimen/sushi_spacing_extra"
+            android:layout_weight="1.0"
+            android:layout_marginStart="@dimen/sushi_spacing_page_side"
+            android:layout_marginEnd="@dimen/sushi_spacing_loose">
+            <com.zomato.ui.atomiclib.atom.ZTextView
+                android:textColor="?attr_7f040475"
+                android:id="@id/dineActionProgressTitle"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                app:textViewType="MEDIUM_500" />
+            <com.zomato.ui.atomiclib.atom.ZProgressBar
+                android:id="@id/dineActionProgressBar"
+                android:layout_width="fill_parent"
+                android:layout_height="@dimen/sushi_spacing_base"
+                android:layout_marginTop="@dimen/sushi_spacing_macro"
+                android:layout_marginBottom="@dimen/sushi_spacing_macro"
+                android:progressDrawable="@drawable/dine_progress_drawable"
+                style="?android:progressBarStyleHorizontal" />
+        </LinearLayout>
+        <com.zomato.ui.atomiclib.atom.ZButton
+            android:layout_gravity="center"
+            android:id="@id/dineActionProgressCancel"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/sushi_spacing_macro"
+            android:layout_marginEnd="@dimen/sushi_spacing_page_side"
+            app:buttonDimension="small"
+            app:buttonType="outline"
+            app:cornerRadius="@dimen/corner_radius_large"
+            app:textFontWeight="medium" />
+    </LinearLayout>
+</LinearLayout>

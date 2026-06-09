@@ -1,0 +1,106 @@
+<?xml version="1.0" encoding="utf-8"?>
+<merge
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+    <View
+        android:id="@id/bg_shadow"
+        android:layout_width="0.0dip"
+        android:layout_height="0.0dip"
+        app:layout_constraintBottom_toTopOf="@id/content_bg"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="@id/shadow_top_reference" />
+    <Space
+        android:id="@id/shadow_top_reference"
+        android:layout_width="wrap_content"
+        android:layout_height="1.0dip"
+        app:layout_constraintBottom_toBottomOf="@id/title"
+        app:layout_constraintTop_toTopOf="@id/title"
+        app:layout_constraintVertical_bias="0.75" />
+    <View
+        android:id="@id/content_bg"
+        android:background="@color/white"
+        android:focusable="true"
+        android:clickable="true"
+        android:layout_width="0.0dip"
+        android:layout_height="0.0dip"
+        android:elevation="@dimen/elevation_medium"
+        android:outlineSpotShadowColor="@color/color_transparent"
+        android:outlineAmbientShadowColor="@color/color_transparent"
+        app:layout_constraintBottom_toBottomOf="@id/item_preview_container"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/title" />
+    <com.blinkit.blink.elements.ui.atoms.text.BlinkitTextView
+        android:layout_gravity="center_horizontal"
+        android:id="@id/title"
+        android:background="@color/white"
+        android:paddingLeft="@dimen/sushi_spacing_alone"
+        android:paddingTop="@dimen/sushi_spacing_macro"
+        android:paddingRight="@dimen/sushi_spacing_alone"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:maxLines="1"
+        android:elevation="@dimen/elevation_medium"
+        android:paddingHorizontal="@dimen/sushi_spacing_alone"
+        android:outlineSpotShadowColor="@color/black"
+        android:outlineAmbientShadowColor="@color/black"
+        app:layout_constraintEnd_toStartOf="@id/overlay_text_right_view"
+        app:layout_constraintStart_toEndOf="@id/overlay_text_left_view"
+        app:layout_constraintTop_toTopOf="parent" />
+    <com.blinkit.commons.ui.ui.customviews.viewstub.blinkittext.BlinkitTextViewStub
+        android:gravity="center_horizontal"
+        android:id="@id/subtitle"
+        android:paddingTop="@dimen/sushi_spacing_micro"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/title" />
+    <View
+        android:id="@id/overlay_text_left_view"
+        android:background="@drawable/preview_header_bottom_curve"
+        android:layout_width="@dimen/dimen_14"
+        android:layout_height="@dimen/dimen_14"
+        android:rotationY="-180.0"
+        android:layout_marginStart="@dimen/elevation_regular"
+        android:elevation="@dimen/elevation_medium"
+        android:outlineSpotShadowColor="@color/black"
+        android:outlineAmbientShadowColor="@color/black"
+        app:layout_constraintBottom_toBottomOf="@id/title"
+        app:layout_constraintEnd_toStartOf="@id/title"
+        app:layout_constraintHorizontal_chainStyle="packed"
+        app:layout_constraintStart_toStartOf="parent" />
+    <View
+        android:id="@id/overlay_text_right_view"
+        android:background="@drawable/preview_header_bottom_curve"
+        android:layout_width="@dimen/dimen_14"
+        android:layout_height="@dimen/dimen_14"
+        android:layout_marginEnd="@dimen/elevation_regular"
+        android:elevation="@dimen/elevation_medium"
+        android:outlineSpotShadowColor="@color/black"
+        android:outlineAmbientShadowColor="@color/black"
+        app:layout_constraintBottom_toBottomOf="@id/title"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_chainStyle="packed"
+        app:layout_constraintStart_toEndOf="@id/title" />
+    <LinearLayout
+        android:gravity="center_horizontal"
+        android:orientation="horizontal"
+        android:id="@id/item_preview_container"
+        android:paddingTop="@dimen/sushi_spacing_base"
+        android:paddingBottom="@dimen/sushi_spacing_base"
+        android:focusable="true"
+        android:clickable="true"
+        android:clipChildren="false"
+        android:clipToPadding="false"
+        android:layout_width="0.0dip"
+        android:layout_height="wrap_content"
+        android:elevation="@dimen/elevation_medium"
+        android:paddingVertical="@dimen/sushi_spacing_base"
+        android:outlineSpotShadowColor="@color/color_transparent"
+        android:outlineAmbientShadowColor="@color/color_transparent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/subtitle" />
+</merge>

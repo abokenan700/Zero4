@@ -1,0 +1,81 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout
+    android:id="@id/doc_bubble"
+    android:layout_width="fill_parent"
+    android:layout_height="wrap_content"
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+    <com.zomato.ui.atomiclib.atom.ZRoundedImageView
+        android:id="@id/icon_view"
+        android:layout_width="@dimen/size_20"
+        android:layout_height="@dimen/size_24"
+        android:layout_margin="@dimen/dimen_10"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+    <com.zomato.ui.atomiclib.atom.ZTextView
+        android:ellipsize="end"
+        android:id="@id/pdf_name"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="@dimen/dimen_10"
+        android:layout_marginTop="@dimen/dimen_10"
+        android:layout_marginRight="@dimen/dimen_10"
+        android:maxLines="1"
+        android:layout_marginHorizontal="@dimen/dimen_10"
+        app:layout_constrainedWidth="true"
+        app:layout_constraintEnd_toStartOf="@id/play_icon_container"
+        app:layout_constraintStart_toEndOf="@id/icon_view"
+        app:layout_constraintTop_toTopOf="parent" />
+    <com.zomato.ui.atomiclib.atom.ZTextView
+        android:ellipsize="end"
+        android:id="@id/pdf_details"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="@dimen/dimen_10"
+        android:layout_marginTop="@dimen/sushi_spacing_nano"
+        android:layout_marginRight="@dimen/dimen_10"
+        android:layout_marginBottom="@dimen/dimen_10"
+        android:maxLines="1"
+        android:layout_marginHorizontal="@dimen/dimen_10"
+        app:layout_constrainedWidth="true"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toStartOf="@id/play_icon_container"
+        app:layout_constraintStart_toEndOf="@id/icon_view"
+        app:layout_constraintTop_toBottomOf="@id/pdf_name" />
+    <FrameLayout
+        android:id="@id/play_icon_container"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_margin="@dimen/sushi_spacing_macro"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
+        <com.zomato.ui.atomiclib.atom.ZIconFontTextView
+            android:textSize="@dimen/size_24"
+            android:textColor="@color/sushi_grey_300"
+            android:gravity="center"
+            android:layout_gravity="center"
+            android:id="@id/download_button"
+            android:visibility="gone"
+            android:layout_width="@dimen/size_28"
+            android:layout_height="@dimen/size_28"
+            android:text="@string/icon_font_down_arrow_circle" />
+        <com.zomato.ui.atomiclib.atom.ZIconFontTextView
+            android:textColor="@color/sushi_grey_300"
+            android:gravity="center"
+            android:layout_gravity="center"
+            android:id="@id/stop"
+            android:visibility="gone"
+            android:layout_width="@dimen/dimen_10"
+            android:layout_height="@dimen/dimen_10"
+            android:text="@string/icon_font_square_box" />
+        <ProgressBar
+            android:gravity="center"
+            android:layout_gravity="center"
+            android:id="@id/play_progress_bar"
+            android:visibility="gone"
+            android:layout_width="@dimen/size_28"
+            android:layout_height="@dimen/size_28" />
+    </FrameLayout>
+</androidx.constraintlayout.widget.ConstraintLayout>

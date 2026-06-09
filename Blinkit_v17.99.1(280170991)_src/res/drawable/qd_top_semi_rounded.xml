@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layer-list
+    xmlns:android="http://schemas.android.com/apk/res/android">
+    <item>
+        <shape>
+            <solid
+                android:color="@color/black_semi_transparent" />
+            <padding
+                android:top="@dimen/sushi_spacing_mini"
+                android:bottom="@dimen/sushi_spacing_mini" />
+        </shape>
+    </item>
+</layer-list>

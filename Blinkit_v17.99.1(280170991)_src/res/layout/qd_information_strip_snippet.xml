@@ -1,0 +1,95 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout
+    android:id="@id/bottom_promo_strip"
+    android:visibility="gone"
+    android:layout_width="fill_parent"
+    android:layout_height="wrap_content"
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+    <View
+        android:id="@id/shadow"
+        android:background="@drawable/qd_bg_shadow"
+        android:layout_width="fill_parent"
+        android:layout_height="@dimen/dimen_12"
+        android:layout_marginLeft="@dimen/dimen_5"
+        android:layout_marginRight="@dimen/dimen_5"
+        android:translationY="@dimen/dimen_5"
+        android:layout_marginHorizontal="@dimen/dimen_5"
+        app:layout_constraintBottom_toTopOf="@id/view_data" />
+    <View
+        android:id="@id/notch_stroke"
+        android:layout_width="@dimen/stepper_title_width"
+        android:layout_height="@dimen/stepper_title_width"
+        android:layout_marginLeft="@dimen/size_8"
+        android:layout_marginRight="@dimen/size_8"
+        android:layout_marginBottom="@dimen/dimen_2"
+        android:layout_marginHorizontal="@dimen/size_8"
+        app:cornerRadius="@dimen/stepper_textview_width"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintStart_toStartOf="parent" />
+    <View
+        android:id="@id/view_data"
+        android:focusable="true"
+        android:clickable="true"
+        android:layout_width="fill_parent"
+        android:layout_height="@dimen/dimen_0"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="@id/title" />
+    <View
+        android:id="@id/notch_bg"
+        android:focusable="true"
+        android:clickable="true"
+        android:layout_width="@dimen/dimen_0"
+        android:layout_height="@dimen/dimen_0"
+        android:layout_margin="@dimen/dimen_point_five"
+        app:cornerRadius="@dimen/size_22"
+        app:layout_constraintBottom_toBottomOf="@id/notch_stroke"
+        app:layout_constraintEnd_toEndOf="@id/notch_stroke"
+        app:layout_constraintStart_toStartOf="@id/notch_stroke"
+        app:layout_constraintTop_toTopOf="@id/notch_stroke" />
+    <com.zomato.ui.atomiclib.animation.ZLottieAnimationView
+        android:id="@id/left_lottie"
+        android:visibility="gone"
+        android:layout_width="@dimen/dimen_0"
+        android:layout_height="@dimen/dimen_0"
+        app:layout_constraintBottom_toBottomOf="@id/left_image"
+        app:layout_constraintEnd_toEndOf="@id/left_image"
+        app:layout_constraintStart_toStartOf="@id/left_image"
+        app:layout_constraintTop_toTopOf="@id/left_image"
+        app:lottie_autoPlay="true"
+        app:lottie_loop="false" />
+    <com.zomato.ui.atomiclib.atom.ZRoundedImageView
+        android:layout_gravity="center_vertical"
+        android:id="@id/left_image"
+        android:visibility="gone"
+        android:layout_width="@dimen/dimen_0"
+        android:layout_height="@dimen/dimen_0"
+        app:layout_constraintBottom_toBottomOf="@id/notch_stroke"
+        app:layout_constraintEnd_toEndOf="@id/notch_stroke"
+        app:layout_constraintStart_toStartOf="@id/notch_stroke"
+        app:layout_constraintTop_toTopOf="@id/notch_stroke" />
+    <androidx.constraintlayout.widget.Barrier
+        android:id="@id/icon_barrier"
+        android:layout_width="wrap_content"
+        android:layout_height="fill_parent"
+        app:barrierDirection="end"
+        app:constraint_referenced_ids="notch_bg,notch_stroke,left_image" />
+    <com.zomato.ui.atomiclib.atom.ZTextView
+        android:textSize="@dimen/size_8"
+        android:ellipsize="end"
+        android:id="@id/title"
+        android:paddingTop="@dimen/qd_padding_8"
+        android:paddingBottom="@dimen/qd_padding_8"
+        android:layout_width="@dimen/dimen_0"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="@dimen/size_8"
+        android:layout_marginRight="@dimen/size_8"
+        android:lines="1"
+        android:layout_marginHorizontal="@dimen/size_8"
+        android:paddingVertical="@dimen/qd_padding_8"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toEndOf="@id/icon_barrier" />
+</androidx.constraintlayout.widget.ConstraintLayout>

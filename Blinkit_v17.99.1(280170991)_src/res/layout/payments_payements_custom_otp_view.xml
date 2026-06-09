@@ -1,0 +1,103 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    android:layout_width="fill_parent"
+    android:layout_height="wrap_content"
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+    <LinearLayout
+        android:gravity="center_horizontal"
+        android:id="@id/otp_container"
+        android:focusable="false"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content">
+        <com.zomato.ui.atomiclib.molecules.ZTextInputField
+            android:gravity="center"
+            android:id="@id/et1"
+            android:background="@drawable/payments_button_grey_stroke"
+            android:padding="0.0dip"
+            android:focusable="false"
+            android:layout_width="@dimen/sushi_spacing_alone"
+            android:layout_height="wrap_content"
+            android:cursorVisible="false"
+            android:maxLength="1"
+            android:textAlignment="center"
+            android:layout_marginEnd="@dimen/sushi_spacing_macro" />
+        <com.zomato.ui.atomiclib.molecules.ZTextInputField
+            android:gravity="center"
+            android:id="@id/et2"
+            android:background="@drawable/payments_button_grey_stroke"
+            android:padding="0.0dip"
+            android:focusable="false"
+            android:layout_width="@dimen/sushi_spacing_alone"
+            android:layout_height="wrap_content"
+            android:cursorVisible="false"
+            android:maxLength="1"
+            android:textAlignment="center"
+            android:layout_marginEnd="@dimen/sushi_spacing_macro" />
+        <com.zomato.ui.atomiclib.molecules.ZTextInputField
+            android:gravity="center"
+            android:id="@id/et3"
+            android:background="@drawable/payments_button_grey_stroke"
+            android:padding="0.0dip"
+            android:focusable="false"
+            android:layout_width="@dimen/sushi_spacing_alone"
+            android:layout_height="wrap_content"
+            android:cursorVisible="false"
+            android:maxLength="1"
+            android:textAlignment="center"
+            android:layout_marginEnd="@dimen/sushi_spacing_macro" />
+        <com.zomato.ui.atomiclib.molecules.ZTextInputField
+            android:gravity="center"
+            android:id="@id/et4"
+            android:background="@drawable/payments_button_grey_stroke"
+            android:padding="0.0dip"
+            android:focusable="false"
+            android:layout_width="@dimen/sushi_spacing_alone"
+            android:layout_height="wrap_content"
+            android:cursorVisible="false"
+            android:maxLength="1"
+            android:textAlignment="center"
+            android:layout_marginEnd="@dimen/sushi_spacing_macro" />
+        <com.zomato.ui.atomiclib.molecules.ZTextInputField
+            android:gravity="center"
+            android:id="@id/et5"
+            android:background="@drawable/payments_button_grey_stroke"
+            android:padding="0.0dip"
+            android:focusable="false"
+            android:layout_width="@dimen/sushi_spacing_alone"
+            android:layout_height="wrap_content"
+            android:cursorVisible="false"
+            android:maxLength="1"
+            android:textAlignment="center"
+            android:layout_marginEnd="@dimen/sushi_spacing_macro" />
+        <com.zomato.ui.atomiclib.molecules.ZTextInputField
+            android:gravity="center"
+            android:id="@id/et6"
+            android:background="@drawable/payments_button_grey_stroke"
+            android:padding="0.0dip"
+            android:focusable="false"
+            android:layout_width="@dimen/sushi_spacing_alone"
+            android:layout_height="wrap_content"
+            android:cursorVisible="false"
+            android:maxLength="1"
+            android:textAlignment="center"
+            android:layout_marginEnd="@dimen/sushi_spacing_macro" />
+    </LinearLayout>
+    <com.zomato.ui.atomiclib.molecules.ZTextInputField
+        android:theme="@style/TextInputLayoutStyle"
+        android:textColor="@android:color/transparent"
+        android:textColorHint="@color/color_transparent"
+        android:id="@id/et0"
+        android:background="@android:color/transparent"
+        android:focusable="true"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:cursorVisible="false"
+        android:maxLines="1"
+        android:maxLength="6"
+        android:layout_alignTop="@id/otp_container"
+        android:layout_alignBottom="@id/otp_container"
+        app:hintAnimationEnabled="false"
+        app:hintEnabled="false"
+        style="@style/TextInputLayoutStyle" />
+</RelativeLayout>

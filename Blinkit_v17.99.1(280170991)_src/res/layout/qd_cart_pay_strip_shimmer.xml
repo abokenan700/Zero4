@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    android:orientation="horizontal"
+    android:id="@id/cart_button_container"
+    android:paddingTop="@dimen/qd_padding_12"
+    android:paddingBottom="@dimen/qd_padding_7"
+    android:layout_width="fill_parent"
+    android:layout_height="@dimen/size_72"
+    android:weightSum="3.0"
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+    <LinearLayout
+        android:orientation="vertical"
+        android:layout_width="0.0dip"
+        android:layout_height="wrap_content"
+        android:layout_weight="1.0"
+        android:layout_marginStart="@dimen/sushi_spacing_page_side">
+        <com.zomato.ui.atomiclib.molecules.ShimmerChildView
+            android:layout_width="@dimen/size_104"
+            android:layout_height="@dimen/size_20"
+            app:shimmer_corner_radius="@dimen/radius_2dp" />
+        <Space
+            android:layout_width="fill_parent"
+            android:layout_height="@dimen/qd_shimmer_10" />
+        <com.zomato.ui.atomiclib.molecules.ShimmerChildView
+            android:layout_width="@dimen/qd_shimmer_78"
+            android:layout_height="@dimen/size_20"
+            app:shimmer_corner_radius="@dimen/radius_2dp" />
+    </LinearLayout>
+    <com.zomato.ui.atomiclib.molecules.ShimmerChildView
+        android:layout_width="0.0dip"
+        android:layout_height="@dimen/size_54"
+        android:layout_weight="2.0"
+        android:layout_marginStart="@dimen/sushi_spacing_alone"
+        android:layout_marginEnd="@dimen/sushi_spacing_page_side"
+        app:shimmer_corner_radius="@dimen/radius_8dp" />
+</LinearLayout>

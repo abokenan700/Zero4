@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    android:orientation="vertical"
+    android:layout_width="fill_parent"
+    android:layout_height="wrap_content"
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+    <com.zomato.ui.atomiclib.atom.ZTextView
+        android:gravity="center"
+        android:layout_gravity="center"
+        android:id="@id/chat_closing_banner_text"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="@dimen/sushi_spacing_alone"
+        android:layout_marginTop="@dimen/sushi_spacing_extra"
+        android:layout_marginRight="@dimen/sushi_spacing_alone"
+        android:layout_marginBottom="@dimen/sushi_spacing_extra"
+        android:layout_marginHorizontal="@dimen/sushi_spacing_alone"
+        android:layout_marginVertical="@dimen/sushi_spacing_extra" />
+    <com.google.android.flexbox.FlexboxLayout
+        android:id="@id/chat_closing_buttons_container"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="@dimen/sushi_spacing_extra"
+        android:layout_marginRight="@dimen/sushi_spacing_extra"
+        android:layout_marginBottom="@dimen/sushi_spacing_extra"
+        android:layout_marginHorizontal="@dimen/sushi_spacing_extra"
+        app:alignItems="center"
+        app:flexWrap="wrap"
+        app:justifyContent="center" />
+</LinearLayout>

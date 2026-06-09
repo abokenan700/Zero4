@@ -1,0 +1,66 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    android:orientation="vertical"
+    android:id="@id/holder_container"
+    android:layout_width="fill_parent"
+    android:layout_height="wrap_content"
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+    <payments.zomato.paymentkit.paymentspagev5.snippets.PaymentSnippetType1View
+        android:id="@id/top_container_view"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content" />
+    <LinearLayout
+        android:orientation="vertical"
+        android:id="@id/expanded_container"
+        android:padding="@dimen/sushi_spacing_extra"
+        android:visibility="gone"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content">
+        <FrameLayout
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content">
+            <com.zomato.ui.atomiclib.molecules.ZTextInputField
+                android:textColorHint="?attr_7f04048a"
+                android:gravity="center_vertical"
+                android:id="@id/text_input_field"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:imeOptions="actionDone"
+                android:translationZ="10.0dip"
+                android:elevation="@dimen/sushi_spacing_pico"
+                app:boxCornerRadiusBottomEnd="@dimen/dimen_12"
+                app:boxCornerRadiusBottomStart="@dimen/dimen_12"
+                app:boxCornerRadiusTopEnd="@dimen/dimen_12"
+                app:boxCornerRadiusTopStart="@dimen/dimen_12"
+                app:boxStrokeColor="?attr_7f040299"
+                app:editTextType="REGULAR_400"
+                app:hintEnabled="true"
+                app:prefixTextAppearance="@style/PaymentsOutlinedBoxTextInputLayout"
+                app:prefixTextColor="?attr_7f04048a"
+                style="@style/PaymentsOutlinedBoxTextInputLayout" />
+            <com.zomato.ui.atomiclib.atom.ZIconFontTextView
+                android:textColor="@color/sushi_grey_400"
+                android:layout_gravity="end|center"
+                android:id="@id/cross_icon"
+                android:padding="@dimen/size_4"
+                android:visibility="gone"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/dimen_2"
+                android:text="@string/icon_cross_filled"
+                android:layout_marginEnd="@dimen/dimen_12" />
+        </FrameLayout>
+        <com.zomato.ui.atomiclib.atom.ZTextView
+            android:id="@id/error_text"
+            android:visibility="gone"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/sushi_spacing_base" />
+        <com.zomato.ui.atomiclib.atom.ZButton
+            android:id="@id/button"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/sushi_spacing_extra" />
+    </LinearLayout>
+</LinearLayout>

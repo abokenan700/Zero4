@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="utf-8"?>
+<merge
+    android:id="@id/rootContainer"
+    android:layout_width="fill_parent"
+    android:layout_height="wrap_content"
+    android:stateListAnimator="@animator/scale_animator"
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+    <com.zomato.ui.atomiclib.atom.ZRoundedImageView
+        android:id="@id/bgImage"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:minHeight="@dimen/height_dessert_snippet_28"
+        app:cornerRadius="@dimen/corner_radius_base"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+    <com.zomato.ui.atomiclib.atom.ZTextView
+        android:textSize="@dimen/sushi_textsize_500"
+        android:textColor="@color/sushi_white"
+        android:id="@id/title"
+        android:layout_width="0.0dip"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/sushi_spacing_macro"
+        android:layout_marginStart="@dimen/sushi_spacing_base"
+        app:layout_constraintBottom_toBottomOf="@id/bgImage"
+        app:layout_constraintEnd_toStartOf="@id/subtitle"
+        app:layout_constraintStart_toStartOf="@id/bgImage"
+        app:layout_constraintTop_toTopOf="parent"
+        app:textViewType="BOLD_400" />
+    <com.zomato.ui.atomiclib.atom.ZTextView
+        android:textSize="@dimen/sushi_textsize_100"
+        android:textColor="@color/sushi_white"
+        android:gravity="end"
+        android:id="@id/subtitle"
+        android:layout_width="0.0dip"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/sushi_spacing_macro"
+        android:layout_marginEnd="@dimen/sushi_spacing_base"
+        app:layout_constraintBottom_toBottomOf="@id/bgImage"
+        app:layout_constraintEnd_toEndOf="@id/bgImage"
+        app:layout_constraintTop_toTopOf="parent"
+        app:textViewType="REGULAR_100" />
+</merge>

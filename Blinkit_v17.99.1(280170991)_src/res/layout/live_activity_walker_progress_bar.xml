@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ProgressBar
+    android:layout_gravity="center"
+    android:id="@id/progress_bar"
+    android:layout_width="fill_parent"
+    android:layout_height="@dimen/sushi_spacing_extra"
+    android:secondaryProgress="100"
+    android:progressDrawable="@drawable/la_progress_drawable_with_walker"
+    style="@style/Widget.AppCompat.ProgressBar.Horizontal"
+    xmlns:android="http://schemas.android.com/apk/res/android" />

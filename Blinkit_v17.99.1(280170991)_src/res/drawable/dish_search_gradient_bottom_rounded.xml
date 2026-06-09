@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="utf-8"?>
+<selector
+    xmlns:android="http://schemas.android.com/apk/res/android">
+    <item>
+        <shape>
+            <gradient
+                android:startColor="@color/color_transparent"
+                android:endColor="@color/color_bottom_scrim"
+                android:angle="270.0"
+                android:type="linear"
+                android:centerY="@android:integer/config_longAnimTime" />
+            <corners
+                android:topLeftRadius="@dimen/corner_radius_base"
+                android:topRightRadius="@dimen/corner_radius_base"
+                android:bottomLeftRadius="@dimen/corner_radius_base"
+                android:bottomRightRadius="@dimen/corner_radius_base" />
+        </shape>
+    </item>
+</selector>

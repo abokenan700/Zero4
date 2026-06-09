@@ -1,0 +1,85 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    android:orientation="vertical"
+    android:background="?attr_7f04017d"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+    <LinearLayout
+        android:orientation="vertical"
+        android:id="@id/renameddata_container"
+        android:visibility="visible"
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:layout_marginStart="@dimen/sushi_spacing_base"
+        android:layout_marginEnd="@dimen/sushi_spacing_base">
+        <com.zomato.ui.atomiclib.atom.ZTextView
+            android:textSize="@dimen/sushi_textsize_200"
+            android:textColor="?attr_7f040496"
+            android:id="@id/renamedntv_page_desc"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            app:textFontWeight="medium" />
+        <RelativeLayout
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content">
+            <com.zomato.ui.atomiclib.molecules.ZTextInputField
+                android:gravity="center"
+                android:id="@id/renamedzetf_enter_otp_general"
+                android:visibility="gone"
+                android:layout_width="@dimen/size_100"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/size_20"
+                android:maxLength="10"
+                android:layout_centerHorizontal="true"
+                android:inputType="number" />
+        </RelativeLayout>
+        <androidx.constraintlayout.widget.ConstraintLayout
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/size_20">
+            <com.zomato.ui.atomiclib.atom.ZButton
+                android:id="@id/renamedzukb_first_action"
+                android:layout_width="0.0dip"
+                android:layout_height="wrap_content"
+                android:layout_marginEnd="@dimen/sushi_spacing_extra"
+                app:buttonType="outline"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintEnd_toStartOf="@id/renamedzukb_second_action"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent" />
+            <com.zomato.ui.atomiclib.atom.ZButton
+                android:id="@id/renamedzukb_second_action"
+                android:layout_width="0.0dip"
+                android:layout_height="wrap_content"
+                app:buttonType="outline"
+                app:layout_constraintBottom_toBottomOf="@id/renamedzukb_first_action"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toEndOf="@id/renamedzukb_first_action"
+                app:layout_constraintTop_toTopOf="@id/renamedzukb_first_action" />
+        </androidx.constraintlayout.widget.ConstraintLayout>
+    </LinearLayout>
+    <RelativeLayout
+        android:gravity="center"
+        android:orientation="vertical"
+        android:id="@id/renamedprogress_bar_container"
+        android:background="?attr_7f04017d"
+        android:visibility="gone"
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:alpha="0.5">
+        <ProgressBar
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:progressTint="?colorAccent"
+            android:indeterminateTint="?colorAccent"
+            style="?android:progressBarStyleInverse" />
+    </RelativeLayout>
+    <payments.zomato.paymentkit.ui.emptyStates.RenamedNoContentView
+        android:id="@id/renamedno_content_view"
+        android:background="?attr_7f04017d"
+        android:visibility="gone"
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent" />
+</LinearLayout>

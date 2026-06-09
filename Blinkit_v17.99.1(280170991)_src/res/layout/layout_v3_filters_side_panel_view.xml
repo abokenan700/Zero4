@@ -1,0 +1,87 @@
+<?xml version="1.0" encoding="utf-8"?>
+<merge
+    android:layout_width="fill_parent"
+    android:layout_height="wrap_content"
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+    <FrameLayout
+        android:layout_gravity="center"
+        android:id="@id/sidePanelImageContainer"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/sushi_spacing_macro"
+        android:layout_marginBottom="@dimen/sushi_spacing_micro"
+        app:layout_constraintBottom_toTopOf="@id/sidePanelTitleView"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
+        <com.zomato.ui.atomiclib.atom.ZIconFontTextView
+            android:textSize="@dimen/sushi_textsize_500"
+            android:textColor="?attr_7f040302"
+            android:gravity="center"
+            android:id="@id/sidePanelIconView"
+            android:padding="@dimen/sushi_spacing_micro"
+            android:visibility="gone"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="@dimen/sushi_spacing_macro"
+            android:layout_marginTop="@dimen/sushi_spacing_macro"
+            android:layout_marginRight="@dimen/sushi_spacing_macro"
+            android:layout_marginBottom="@dimen/sushi_spacing_nano"
+            android:layout_marginHorizontal="@dimen/sushi_spacing_macro" />
+        <com.zomato.ui.atomiclib.atom.ZRoundedImageView
+            android:layout_gravity="center"
+            android:id="@id/image"
+            android:visibility="gone"
+            android:layout_width="@dimen/sushi_spacing_extra"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="@dimen/sushi_spacing_macro"
+            android:layout_marginTop="@dimen/sushi_spacing_macro"
+            android:layout_marginRight="@dimen/sushi_spacing_macro"
+            android:layout_marginBottom="@dimen/sushi_spacing_nano"
+            android:adjustViewBounds="true"
+            android:layout_marginHorizontal="@dimen/sushi_spacing_macro" />
+        <com.zomato.ui.atomiclib.atom.ZTag
+            android:textColor="?themeColor500"
+            android:layout_gravity="end|center|top"
+            android:id="@id/sidePanelTopRightTag"
+            android:paddingLeft="@dimen/sushi_spacing_mini"
+            android:paddingTop="@dimen/sushi_spacing_nano"
+            android:paddingRight="@dimen/sushi_spacing_mini"
+            android:paddingBottom="@dimen/sushi_spacing_nano"
+            android:visibility="gone"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:paddingHorizontal="@dimen/sushi_spacing_mini"
+            android:paddingVertical="@dimen/sushi_spacing_nano"
+            app:tagColor="?attr_7f0403db"
+            app:tagSize="tiny"
+            app:tagType="rounded" />
+    </FrameLayout>
+    <com.zomato.ui.atomiclib.atom.ZTextView
+        android:ellipsize="end"
+        android:gravity="center"
+        android:layout_gravity="center"
+        android:id="@id/sidePanelTitleView"
+        android:paddingLeft="@dimen/sushi_spacing_mini"
+        android:paddingRight="@dimen/sushi_spacing_mini"
+        android:visibility="gone"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="@dimen/sushi_spacing_extra"
+        android:maxLines="2"
+        android:paddingHorizontal="@dimen/sushi_spacing_mini"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/sidePanelImageContainer"
+        app:textViewType="MEDIUM_300" />
+    <View
+        android:id="@id/sidePanelIndicatorView"
+        android:background="?attr_7f04029a"
+        android:layout_width="@dimen/size_3"
+        android:layout_height="0.0dip"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+</merge>

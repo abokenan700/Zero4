@@ -1,0 +1,58 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+    <com.blinkit.commonwidgetized.ui.ui.view.pagelevel.toolbar.CwToolbar
+        android:id="@id/toolbar"
+        android:visibility="gone"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+    <FrameLayout
+        android:id="@id/fl_search_bar"
+        android:focusable="true"
+        android:clickable="true"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/toolbar">
+        <com.blinkit.commons.ui.ui.snippets.searchBar.QdSearchBar
+            android:id="@id/qd_search_bar"
+            android:visibility="gone"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="@dimen/sushi_spacing_mini"
+            android:layout_marginRight="@dimen/sushi_spacing_mini"
+            android:outlineProvider="none"
+            android:layout_marginHorizontal="@dimen/sushi_spacing_mini"
+            app:is_disabled="false"
+            app:layout_constraintTop_toTopOf="parent" />
+    </FrameLayout>
+    <View
+        android:id="@id/search_bar_shadow_view"
+        android:background="@color/color_black_trans_ten"
+        android:layout_width="fill_parent"
+        android:layout_height="0.5dip"
+        app:layout_constraintTop_toBottomOf="@id/fl_search_bar" />
+    <FrameLayout
+        android:id="@id/fl_container"
+        android:layout_width="0.0dip"
+        android:layout_height="0.0dip"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/search_bar_shadow_view" />
+    <com.blinkit.commons.ui.ui.customviews.loadingErrorOverlay.LoadingErrorOverlay
+        android:id="@id/loading_error_overlay"
+        android:visibility="gone"
+        android:layout_width="0.0dip"
+        android:layout_height="0.0dip"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/search_bar_shadow_view" />
+</androidx.constraintlayout.widget.ConstraintLayout>

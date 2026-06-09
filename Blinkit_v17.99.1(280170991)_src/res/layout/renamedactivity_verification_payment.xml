@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout
+    android:id="@id/container_fl"
+    android:background="?attr_7f04017d"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    xmlns:android="http://schemas.android.com/apk/res/android">
+    <LinearLayout
+        android:layout_gravity="center"
+        android:orientation="vertical"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content">
+        <com.zomato.ui.atomiclib.atom.progress.progressView.ZProgressView
+            android:layout_gravity="center_horizontal"
+            android:id="@id/renamedprogress_view"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:progressTint="?themeColor500"
+            android:indeterminateTint="?themeColor500" />
+        <com.zomato.ui.atomiclib.atom.ZTextView
+            android:textSize="@dimen/sushi_textsize_200"
+            android:textColor="?attr_7f040475"
+            android:gravity="center"
+            android:id="@id/renamedverification_loading_msg"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/sushi_spacing_base"
+            android:layout_marginStart="@dimen/sushi_spacing_base"
+            android:layout_marginEnd="@dimen/sushi_spacing_base" />
+    </LinearLayout>
+</FrameLayout>

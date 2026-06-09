@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    android:orientation="vertical"
+    android:id="@id/activity_container"
+    android:focusable="true"
+    android:focusableInTouchMode="true"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+    <androidx.appcompat.widget.Toolbar
+        android:id="@id/toolbar"
+        android:background="?attr_7f04017d"
+        android:layout_width="fill_parent"
+        android:layout_height="?actionBarSize">
+        <com.zomato.ui.atomiclib.atom.ZTextView
+            android:textSize="@dimen/sushi_textsize_400"
+            android:textColor="?attr_7f040475"
+            android:id="@id/BackButton"
+            android:background="?selectableItemBackgroundBorderless"
+            android:padding="@dimen/size_5"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            app:drawableStart="@string/icon_font_back" />
+        <com.zomato.ui.atomiclib.atom.ZTextView
+            android:textSize="@dimen/sushi_textsize_600"
+            android:textColor="?attr_7f040475"
+            android:id="@id/PageTitle"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:paddingStart="@dimen/sushi_spacing_extra"
+            android:paddingEnd="@dimen/sushi_spacing_extra" />
+        <com.zomato.ui.atomiclib.atom.ZButton
+            android:layout_gravity="right"
+            android:id="@id/right_button"
+            android:padding="@dimen/sushi_spacing_between"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/sushi_spacing_nano"
+            android:layout_marginRight="@dimen/sushi_spacing_macro"
+            app:buttonType="text" />
+    </androidx.appcompat.widget.Toolbar>
+    <FrameLayout
+        android:id="@id/activity_content"
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent" />
+</LinearLayout>

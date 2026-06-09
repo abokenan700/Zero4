@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    android:orientation="vertical"
+    android:id="@id/renamedroot_page_header"
+    android:layout_width="fill_parent"
+    android:layout_height="wrap_content"
+    android:layout_marginTop="@dimen/sushi_spacing_base"
+    android:layout_marginBottom="@dimen/sushi_spacing_macro"
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+    <LinearLayout
+        android:orientation="horizontal"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content">
+        <com.zomato.ui.atomiclib.atom.ZRoundedImageView
+            android:layout_gravity="center_vertical"
+            android:id="@id/renamedimage"
+            android:visibility="gone"
+            android:layout_width="@dimen/sushi_spacing_loose"
+            android:layout_height="@dimen/sushi_spacing_loose"
+            android:layout_marginEnd="@dimen/sushi_spacing_micro" />
+        <RelativeLayout
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content">
+            <com.zomato.ui.atomiclib.atom.ZTextView
+                android:textSize="20.0sp"
+                android:textColor="?attr_7f040475"
+                android:id="@id/renamedsection_title"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentStart="true" />
+        </RelativeLayout>
+    </LinearLayout>
+    <com.zomato.ui.atomiclib.atom.ZTextView
+        android:id="@id/renamedsection_subtitle"
+        android:visibility="gone"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content" />
+    <com.zomato.ui.atomiclib.atom.ZSeparator
+        android:id="@id/renamedsection_subtitle_separator"
+        android:visibility="gone"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/sushi_spacing_micro"
+        app:zseparator_color="@color/sushi_grey_200" />
+</LinearLayout>

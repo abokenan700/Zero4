@@ -1,0 +1,64 @@
+<?xml version="1.0" encoding="utf-8"?>
+<merge
+    android:id="@id/root_layout"
+    android:layout_width="fill_parent"
+    android:layout_height="wrap_content"
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+    <androidx.constraintlayout.widget.Guideline
+        android:orientation="vertical"
+        android:id="@id/guideline_start"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:layout_constraintGuide_begin="0.0dip" />
+    <androidx.constraintlayout.widget.Guideline
+        android:orientation="vertical"
+        android:id="@id/guideline_end"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:layout_constraintGuide_end="0.0dip" />
+    <androidx.constraintlayout.widget.Guideline
+        android:orientation="horizontal"
+        android:id="@id/guideline_top"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:layout_constraintGuide_begin="0.0dip" />
+    <androidx.constraintlayout.widget.Guideline
+        android:orientation="horizontal"
+        android:id="@id/guideline_bottom"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:layout_constraintGuide_end="0.0dip" />
+    <com.zomato.ui.atomiclib.molecules.ZTextInputField
+        android:textColorHint="@color/sushi_grey_400"
+        android:id="@id/edit_text_input_field"
+        android:layout_width="0.0dip"
+        android:layout_height="wrap_content"
+        android:inputType="textNoSuggestions"
+        android:translationZ="10.0dip"
+        android:elevation="@dimen/sushi_spacing_pico"
+        app:boxCornerRadiusBottomEnd="@dimen/sushi_spacing_macro"
+        app:boxCornerRadiusBottomStart="@dimen/sushi_spacing_macro"
+        app:boxCornerRadiusTopEnd="@dimen/sushi_spacing_macro"
+        app:boxCornerRadiusTopStart="@dimen/sushi_spacing_macro"
+        app:drawablePadding="@dimen/sushi_spacing_macro"
+        app:editTextType="MEDIUM_400"
+        app:errorEnabled="true"
+        app:hintEnabled="true"
+        app:layout_constraintBottom_toTopOf="@id/tv_counter"
+        app:layout_constraintEnd_toEndOf="@id/guideline_end"
+        app:layout_constraintStart_toStartOf="@id/guideline_start"
+        app:layout_constraintTop_toTopOf="@id/guideline_top"
+        app:prefixTextAppearance="@style/TextInputLayoutPrefixStyle"
+        style="@style/TextInputLayoutV3" />
+    <com.blinkit.blink.elements.ui.atoms.text.BlinkitTextView
+        android:textColor="@color/sushi_grey_800"
+        android:id="@id/tv_counter"
+        android:visibility="gone"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:layout_constraintBottom_toBottomOf="@id/guideline_bottom"
+        app:layout_constraintRight_toRightOf="@id/edit_text_input_field"
+        app:layout_constraintTop_toBottomOf="@id/edit_text_input_field"
+        app:textViewType="REGULAR_50" />
+</merge>

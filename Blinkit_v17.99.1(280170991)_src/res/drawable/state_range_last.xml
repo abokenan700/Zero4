@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="utf-8"?>
+<vector
+    android:height="24.0dip"
+    android:width="24.0dip"
+    android:viewportWidth="48.0"
+    android:viewportHeight="48.0"
+    xmlns:android="http://schemas.android.com/apk/res/android">
+    <path
+        android:fillColor="@color/dateRangePickerSelectedDayBg"
+        android:pathData="M24,4 h-24 v40 h24z" />
+    <path
+        android:fillColor="@color/dateRangePickerSelectedDayBg"
+        android:pathData="M 24,4 a 16,16 0 1 1 0,40z" />
+    <path
+        android:fillColor="@color/dateRangePickerSelectedDayBgDark"
+        android:pathData="M 24,24 m -16, 0 a 16,16 0 1,0 32,0 a 16,16 0 1,0 -32,0" />
+</vector>

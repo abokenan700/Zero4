@@ -1,0 +1,61 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout
+    android:id="@id/filters"
+    android:paddingTop="@dimen/sushi_spacing_micro"
+    android:paddingBottom="@dimen/sushi_spacing_mini"
+    android:layout_width="fill_parent"
+    android:layout_height="wrap_content"
+    android:paddingEnd="@dimen/sushi_spacing_page_side"
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+    <androidx.constraintlayout.widget.Barrier
+        android:id="@id/startBarrier"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:barrierDirection="start"
+        app:constraint_referenced_ids="veg_and_egg_filter_container, pure_veg_container" />
+    <LinearLayout
+        android:gravity="center_vertical"
+        android:orientation="horizontal"
+        android:id="@id/veg_and_egg_filter_container"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/sushi_spacing_micro"
+        android:layout_marginBottom="@dimen/sushi_spacing_micro"
+        android:layout_marginVertical="@dimen/sushi_spacing_micro"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+    <LinearLayout
+        android:gravity="center_vertical"
+        android:orientation="horizontal"
+        android:id="@id/pure_veg_container"
+        android:paddingTop="@dimen/sushi_spacing_nano"
+        android:paddingBottom="@dimen/sushi_spacing_nano"
+        android:visibility="gone"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/sushi_spacing_between"
+        android:layout_marginBottom="@dimen/sushi_spacing_between"
+        android:paddingStart="@dimen/sushi_spacing_micro"
+        android:paddingEnd="@dimen/sushi_spacing_micro"
+        android:layout_marginStart="@dimen/sushi_spacing_extra"
+        android:paddingVertical="@dimen/sushi_spacing_nano"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
+        <ImageView
+            android:layout_gravity="center_vertical"
+            android:id="@id/veg_image"
+            android:layout_width="@dimen/size_20"
+            android:layout_height="@dimen/size_20"
+            android:src="@drawable/ic_pure_veg"
+            android:layout_marginEnd="@dimen/sushi_spacing_macro" />
+        <com.zomato.ui.atomiclib.atom.ZTextView
+            android:textColor="@color/sushi_grey_900"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/order_pure_veg"
+            app:textViewType="SEMIBOLD_300" />
+    </LinearLayout>
+</androidx.constraintlayout.widget.ConstraintLayout>

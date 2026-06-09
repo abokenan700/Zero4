@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layoutAnimation
+    android:interpolator="@android:interpolator/bounce"
+    android:delay="10.000002%"
+    android:animation="@anim/item_animation_crystal_offers"
+    android:animationOrder="random"
+    xmlns:android="http://schemas.android.com/apk/res/android" />

@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout
+    android:id="@id/bank_options_container"
+    android:background="?attr_7f04017d"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+    <androidx.appcompat.widget.SearchView
+        android:id="@id/bank_search"
+        android:background="@drawable/payments_search_background"
+        android:layout_width="0.0dip"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="@dimen/sushi_spacing_base"
+        android:inputType="text"
+        android:iconifiedByDefault="false"
+        android:layout_marginStart="@dimen/sushi_spacing_base"
+        android:layout_marginEnd="@dimen/sushi_spacing_base"
+        app:iconifiedByDefault="false"
+        app:layout_constraintBottom_toTopOf="@id/banks_view_data"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:queryBackground="@android:color/transparent"
+        app:queryHint="@string/payments_search_bank_hint" />
+    <androidx.recyclerview.widget.RecyclerView
+        android:id="@id/banks_view_data"
+        android:layout_width="0.0dip"
+        android:layout_height="0.0dip"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/bank_search" />
+    <payments.zomato.paymentkit.ui.molecules.PaymentsNoContentView
+        android:id="@id/payments_no_content"
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent" />
+</androidx.constraintlayout.widget.ConstraintLayout>

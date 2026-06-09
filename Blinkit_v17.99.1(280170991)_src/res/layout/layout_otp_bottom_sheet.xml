@@ -1,0 +1,83 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    android:orientation="vertical"
+    android:layout_width="fill_parent"
+    android:layout_height="wrap_content"
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+    <include
+        android:id="@id/crossButtonContainer"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        layout="@layout/layout_bottom_sheet_close_btn" />
+    <LinearLayout
+        android:orientation="vertical"
+        android:id="@id/dataContainer"
+        android:background="@color/sushi_white"
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent">
+        <com.zomato.ui.atomiclib.atom.ZTextView
+            android:textSize="@dimen/sushi_textsize_500"
+            android:gravity="center"
+            android:layout_gravity="center"
+            android:id="@id/title"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="@dimen/sushi_spacing_extra"
+            android:layout_marginTop="@dimen/sushi_spacing_loose"
+            android:layout_marginRight="@dimen/sushi_spacing_extra"
+            android:layout_marginHorizontal="@dimen/sushi_spacing_extra" />
+        <com.zomato.ui.atomiclib.atom.ZTextView
+            android:textSize="@dimen/sushi_textsize_200"
+            android:gravity="center"
+            android:id="@id/subtitle"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="@dimen/sushi_spacing_extra"
+            android:layout_marginTop="@dimen/sushi_spacing_macro"
+            android:layout_marginRight="@dimen/sushi_spacing_extra"
+            android:textAllCaps="false"
+            android:layout_marginHorizontal="@dimen/sushi_spacing_extra" />
+        <com.zomato.ui.lib.atom.ZOtpEditText
+            android:textSize="@dimen/sushi_textsize_600"
+            android:id="@id/otp_edit_text"
+            android:paddingLeft="@dimen/sushi_spacing_micro"
+            android:paddingRight="@dimen/sushi_spacing_micro"
+            android:layout_width="fill_parent"
+            android:layout_height="@dimen/size50"
+            android:layout_marginLeft="@dimen/sushi_spacing_extra"
+            android:layout_marginTop="@dimen/sushi_spacing_loose"
+            android:layout_marginRight="@dimen/sushi_spacing_extra"
+            android:maxLength="6"
+            android:digits="\ 1234567890"
+            android:inputType="text"
+            android:layout_marginHorizontal="@dimen/sushi_spacing_extra"
+            android:paddingHorizontal="@dimen/sushi_spacing_micro"
+            app:zotp_background_color="?attr_7f0403d7"
+            app:zotp_border_color="@color/sushi_grey_300"
+            app:zotp_focused_border_color="?attr_7f040475"
+            app:zotp_item_border_width="@dimen/border_stroke_width"
+            app:zotp_item_corner_radius="@dimen/corner_radius"
+            app:zotp_item_height="@dimen/size_44"
+            app:zotp_item_spacing="@dimen/sushi_spacing_extra"
+            app:zotp_item_width="@dimen/size_38" />
+        <com.zomato.ui.atomiclib.atom.ZButtonWithLoader
+            android:textColor="@color/sushi_grey_900"
+            android:gravity="center"
+            android:layout_gravity="center"
+            android:id="@id/resendOTPButton"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/dimen_14" />
+        <com.zomato.ui.atomiclib.atom.ZButtonWithLoader
+            android:layout_gravity="bottom"
+            android:id="@id/confirmButton"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="@dimen/sushi_spacing_extra"
+            android:layout_marginTop="@dimen/size_30"
+            android:layout_marginRight="@dimen/sushi_spacing_extra"
+            android:layout_marginBottom="@dimen/sushi_spacing_extra"
+            android:layout_marginHorizontal="@dimen/sushi_spacing_extra" />
+    </LinearLayout>
+</LinearLayout>

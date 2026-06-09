@@ -1,0 +1,143 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout
+    android:background="@color/black_20"
+    android:clipChildren="false"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+    <com.blinkit.commons.ui.ui.customviews.BLottieAnimationView
+        android:id="@id/bg_lottie"
+        android:layout_width="0.0dip"
+        android:layout_height="0.0dip"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+    <com.blinkit.commons.ui.ui.customviews.bmediaview.BMediaView
+        android:id="@id/header_media"
+        android:paddingLeft="@dimen/dimen_56"
+        android:paddingRight="@dimen/dimen_56"
+        android:layout_width="0.0dip"
+        android:layout_height="0.0dip"
+        android:paddingHorizontal="@dimen/dimen_56"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintDimensionRatio="245:60"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.135" />
+    <com.blinkit.quickdelivery.ui.screens.stories.spinwheel.views.LayoutsWheelView
+        android:id="@id/wheel_view"
+        android:clipChildren="false"
+        android:layout_width="0.0dip"
+        android:layout_height="0.0dip"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintDimensionRatio="1"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintWidth_percent="0.9" />
+    <com.blinkit.commons.ui.ui.customviews.CouponViewType2
+        android:id="@id/offer_details_view_stub"
+        android:visibility="gone"
+        android:layout_width="0.0dip"
+        android:layout_height="wrap_content"
+        android:animateLayoutChanges="true"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.54"
+        app:layout_constraintWidth_percent="0.66" />
+    <com.blinkit.quickdelivery.ui.screens.stories.spinwheel.views.ThreeDGlowingButton
+        android:id="@id/btn_spin"
+        android:layout_width="0.0dip"
+        android:layout_height="wrap_content"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/wheel_view"
+        app:layout_constraintVertical_bias="0.5"
+        app:layout_constraintVertical_chainStyle="packed"
+        app:layout_constraintWidth_percent="0.6" />
+    <com.blinkit.blink.elements.ui.atoms.text.BlinkitTextView
+        android:id="@id/secondary_button"
+        android:visibility="gone"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="@dimen/activity_vertical_margin"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/btn_spin"
+        app:textViewType="MEDIUM_400" />
+    <com.blinkit.commons.ui.ui.customviews.viewstub.image.BShapeableImageViewStub
+        android:id="@id/center_image"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.5" />
+    <com.blinkit.commons.ui.ui.customviews.BLottieAnimationView
+        android:id="@id/confetti_lottie_view"
+        android:visibility="gone"
+        android:layout_width="0.0dip"
+        android:layout_height="0.0dip"
+        app:layout_constraintBottom_toBottomOf="@id/wheel_view"
+        app:layout_constraintDimensionRatio="1:1"
+        app:layout_constraintEnd_toEndOf="@id/wheel_view"
+        app:layout_constraintStart_toStartOf="@id/wheel_view"
+        app:layout_constraintTop_toTopOf="@id/header_media"
+        app:layout_constraintVertical_bias="0.2"
+        app:lottie_autoPlay="true"
+        app:lottie_loop="false" />
+    <View
+        android:id="@id/left_icon_bg"
+        android:layout_width="@dimen/size50"
+        android:layout_height="0.0dip"
+        android:layout_marginTop="@dimen/size_36"
+        android:layout_marginStart="@dimen/size_30"
+        app:layout_constraintDimensionRatio="1"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+    <com.blinkit.blink.elements.ui.atoms.icon.BlinkitIconView
+        android:gravity="center"
+        android:id="@id/left_icon"
+        android:layout_width="30.0dip"
+        android:layout_height="30.0dip"
+        app:layout_constraintBottom_toBottomOf="@id/left_icon_bg"
+        app:layout_constraintEnd_toEndOf="@id/left_icon_bg"
+        app:layout_constraintStart_toStartOf="@id/left_icon_bg"
+        app:layout_constraintTop_toTopOf="@id/left_icon_bg" />
+    <View
+        android:id="@id/right_icon_bg"
+        android:layout_width="@dimen/size50"
+        android:layout_height="0.0dip"
+        android:layout_marginTop="@dimen/size_36"
+        android:layout_marginEnd="@dimen/size_30"
+        app:layout_constraintDimensionRatio="1"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+    <com.blinkit.blink.elements.ui.atoms.icon.BlinkitIconView
+        android:gravity="center"
+        android:id="@id/right_icon"
+        android:layout_width="30.0dip"
+        android:layout_height="30.0dip"
+        app:layout_constraintBottom_toBottomOf="@id/right_icon_bg"
+        app:layout_constraintEnd_toEndOf="@id/right_icon_bg"
+        app:layout_constraintStart_toStartOf="@id/right_icon_bg"
+        app:layout_constraintTop_toTopOf="@id/right_icon_bg" />
+    <androidx.constraintlayout.widget.Group
+        android:id="@id/right_icon_group"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:constraint_referenced_ids="right_icon,right_icon_bg" />
+    <androidx.constraintlayout.widget.Group
+        android:id="@id/left_icon_group"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:constraint_referenced_ids="left_icon,left_icon_bg" />
+</androidx.constraintlayout.widget.ConstraintLayout>

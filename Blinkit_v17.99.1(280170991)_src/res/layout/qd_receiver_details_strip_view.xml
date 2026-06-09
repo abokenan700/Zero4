@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="utf-8"?>
+<merge
+    android:paddingLeft="@dimen/sushi_spacing_macro"
+    android:paddingTop="@dimen/sushi_spacing_micro"
+    android:paddingRight="@dimen/sushi_spacing_macro"
+    android:paddingBottom="@dimen/sushi_spacing_micro"
+    android:layout_width="fill_parent"
+    android:layout_height="wrap_content"
+    android:paddingHorizontal="@dimen/sushi_spacing_macro"
+    android:paddingVertical="@dimen/sushi_spacing_micro"
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+    <com.blinkit.commons.ui.ui.customviews.BShapeableImageView
+        android:id="@id/image"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="@dimen/sushi_spacing_micro"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+    <com.blinkit.blink.elements.ui.atoms.text.BlinkitTextView
+        android:id="@id/bottom_strip_title"
+        android:layout_width="0.0dip"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="@dimen/sushi_spacing_micro"
+        app:layout_constraintBottom_toBottomOf="@id/image"
+        app:layout_constraintEnd_toStartOf="@id/bottom_strip_right_cta"
+        app:layout_constraintHorizontal_chainStyle="spread_inside"
+        app:layout_constraintStart_toEndOf="@id/image"
+        app:layout_constraintTop_toTopOf="@id/image" />
+    <com.zomato.ui.atomiclib.atom.ZTextView
+        android:id="@id/bottom_strip_right_cta"
+        android:layout_width="0.0dip"
+        android:layout_height="wrap_content"
+        app:layout_constraintBottom_toBottomOf="@id/bottom_strip_title"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_chainStyle="spread_inside"
+        app:layout_constraintTop_toTopOf="@id/bottom_strip_title" />
+</merge>

@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="utf-8"?>
+<merge
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    xmlns:android="http://schemas.android.com/apk/res/android">
+    <com.blinkit.commons.ui.ui.customviews.viewstub.image.ZLottieAnimationViewStub
+        android:id="@id/prefix_lottie"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:scaleType="centerCrop"
+        android:layout_marginEnd="@dimen/sushi_spacing_nano" />
+    <com.blinkit.commons.ui.ui.customviews.viewstub.image.BShapeableImageViewStub
+        android:id="@id/prefix_image"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginEnd="@dimen/sushi_spacing_nano" />
+    <com.blinkit.blink.elements.ui.atoms.text.BlinkitTextView
+        android:ellipsize="end"
+        android:id="@id/title"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:lines="1" />
+    <com.blinkit.commons.ui.ui.customviews.viewstub.image.ZLottieAnimationViewStub
+        android:id="@id/suffix_lottie"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:scaleType="centerCrop"
+        android:layout_marginStart="@dimen/sushi_spacing_nano" />
+    <com.blinkit.commons.ui.ui.customviews.viewstub.image.BShapeableImageViewStub
+        android:id="@id/suffix_image"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="@dimen/sushi_spacing_nano" />
+</merge>

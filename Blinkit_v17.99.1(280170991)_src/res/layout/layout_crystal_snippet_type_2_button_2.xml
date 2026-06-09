@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    android:orientation="horizontal"
+    android:layout_width="fill_parent"
+    android:layout_height="wrap_content"
+    android:paddingStart="@dimen/sushi_spacing_base"
+    android:paddingEnd="@dimen/sushi_spacing_base"
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+    <com.zomato.ui.atomiclib.atom.ZButton
+        android:id="@id/first_button"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:lines="1"
+        android:layout_weight="1.0"
+        android:layout_marginEnd="@dimen/sushi_spacing_mini"
+        app:buttonColor="@color/sushi_grey_500" />
+    <View
+        android:id="@id/vertical_separator"
+        android:background="@color/sushi_grey_200"
+        android:visibility="visible"
+        android:layout_width="@dimen/dimen_point_five"
+        android:layout_height="fill_parent" />
+    <com.zomato.ui.atomiclib.atom.ZButton
+        android:id="@id/middle_button"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:lines="1"
+        android:layout_weight="1.0"
+        android:layout_marginStart="@dimen/sushi_spacing_mini"
+        android:layout_marginEnd="@dimen/sushi_spacing_mini"
+        app:buttonColor="@color/sushi_grey_500" />
+    <View
+        android:id="@id/vertical_separator_2"
+        android:background="@color/sushi_grey_200"
+        android:visibility="visible"
+        android:layout_width="@dimen/dimen_point_five"
+        android:layout_height="fill_parent" />
+    <com.zomato.ui.atomiclib.atom.ZButton
+        android:id="@id/second_button"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:lines="1"
+        android:layout_weight="1.0"
+        android:layout_marginStart="@dimen/sushi_spacing_mini"
+        app:buttonColor="@color/sushi_grey_500" />
+</LinearLayout>

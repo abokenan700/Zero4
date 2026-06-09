@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="utf-8"?>
+<merge
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+    <com.zomato.ui.lib.organisms.navigation.ZTabsLayout
+        android:id="@id/tabLayout"
+        android:background="@color/color_transparent"
+        android:clipToPadding="true"
+        android:layout_width="@dimen/sushi_spacing_femto"
+        android:layout_height="@dimen/size_36"
+        android:layout_marginTop="@dimen/sushi_spacing_base"
+        android:layout_marginStart="@dimen/sushi_spacing_micro"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:tabIndicatorColor="@color/sushi_white"
+        app:tabIndicatorHeight="@dimen/spacing_between_2dp"
+        app:tabMode="scrollable"
+        app:tabSelectedTextColor="@color/sushi_white"
+        app:tabTextAppearance="@style/TextAppearance.ZMenuTabLayoutStyleRelaxed"
+        app:tabTextColor="@color/sushi_white" />
+    <com.zomato.ui.lib.organisms.navigation.WrapContentViewPager
+        android:id="@id/viewPager"
+        android:layout_width="@dimen/sushi_spacing_femto"
+        android:layout_height="wrap_content"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/tabLayout" />
+    <View
+        android:id="@id/dummy_view_for_spacing"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+</merge>

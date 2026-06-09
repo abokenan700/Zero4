@@ -1,0 +1,72 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    android:gravity="center"
+    android:id="@id/renamedno_content_layout"
+    android:background="@color/sushi_white"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+    <androidx.appcompat.widget.AppCompatImageView
+        android:gravity="center"
+        android:id="@id/renamedemptycase_no_content_image"
+        android:layout_width="@dimen/size210"
+        android:layout_height="wrap_content"
+        android:scaleType="fitCenter"
+        android:adjustViewBounds="true"
+        android:maxHeight="@dimen/size210"
+        android:layout_above="@id/renamedll_rootview"
+        android:layout_centerHorizontal="true" />
+    <LinearLayout
+        android:orientation="vertical"
+        android:id="@id/renamedll_rootview"
+        android:padding="@dimen/size_20"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true">
+        <com.zomato.ui.atomiclib.atom.IconFont
+            android:textSize="@dimen/size_150"
+            android:textColor="@color/sushi_color_dark_grey"
+            android:gravity="center"
+            android:layout_gravity="center"
+            android:id="@id/renamedemptycase_no_iconfont"
+            android:visibility="gone"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="@dimen/dimen_15" />
+        <com.zomato.ui.atomiclib.atom.ZTextView
+            android:gravity="center"
+            android:id="@id/renamedemptycase_no_content_title"
+            android:visibility="gone"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="@dimen/sushi_spacing_base" />
+        <com.zomato.ui.atomiclib.atom.ZTextView
+            android:textColor="@color/sushi_grey_800"
+            android:gravity="center"
+            android:id="@id/renamedemptycases_no_content_text"
+            android:visibility="gone"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content" />
+        <com.zomato.ui.atomiclib.atom.ZButton
+            android:gravity="center"
+            android:layout_gravity="center"
+            android:id="@id/renamedrefresh_button"
+            android:padding="@dimen/dimen_10"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/renameddata_kit_try_again"
+            app:buttonDimension="small"
+            app:buttonType="text" />
+        <com.zomato.ui.atomiclib.atom.ZTextView
+            android:textColor="@color/color_light_grey_with_alpha"
+            android:gravity="center"
+            android:id="@id/renamedcustom_button"
+            android:visibility="gone"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/sushi_spacing_base"
+            android:layout_marginBottom="@dimen/sushi_spacing_extra"
+            android:foreground="@drawable/renamedfeedback_ripple_white_overlay" />
+    </LinearLayout>
+</RelativeLayout>

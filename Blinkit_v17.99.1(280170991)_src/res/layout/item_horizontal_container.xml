@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.zomato.ui.lib.organisms.snippets.video.toro.widget.NestedContainer
+    android:id="@id/rv"
+    android:clipToPadding="false"
+    android:layout_width="fill_parent"
+    android:layout_height="wrap_content"
+    android:paddingEnd="@dimen/sushi_spacing_page_side"
+    xmlns:android="http://schemas.android.com/apk/res/android" />

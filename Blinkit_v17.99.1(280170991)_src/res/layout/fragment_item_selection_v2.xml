@@ -1,0 +1,82 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    android:orientation="vertical"
+    android:id="@id/root_layout"
+    android:background="@color/sushi_white"
+    android:focusable="true"
+    android:clickable="true"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+    <com.google.android.material.appbar.AppBarLayout
+        android:id="@id/item_selection_appbar_layout"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content">
+        <androidx.appcompat.widget.Toolbar
+            android:id="@id/item_selection_tool_bar"
+            android:background="?attr_7f040180"
+            android:layout_width="fill_parent"
+            android:layout_height="?actionBarSize"
+            app:contentInsetStart="@dimen/dimen_0"
+            app:layout_scrollFlags="scroll|enterAlways|snap">
+            <com.zomato.ui.atomiclib.atom.ZIconFontTextView
+                android:layout_gravity="start"
+                android:id="@id/item_selection_back_arrow"
+                android:padding="@dimen/sushi_spacing_micro"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="@dimen/sushi_spacing_macro"
+                android:layout_marginRight="@dimen/sushi_spacing_macro"
+                android:layout_marginHorizontal="@dimen/sushi_spacing_macro" />
+            <com.zomato.ui.atomiclib.atom.ZTextView
+                android:ellipsize="end"
+                android:layout_gravity="start"
+                android:id="@id/item_selection_title"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:maxLines="1" />
+        </androidx.appcompat.widget.Toolbar>
+    </com.google.android.material.appbar.AppBarLayout>
+    <com.zomato.ui.atomiclib.atom.ZTextView
+        android:id="@id/item_selection_page_title"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="@dimen/sushi_spacing_base"
+        android:layout_marginTop="@dimen/sushi_spacing_extra"
+        android:layout_marginRight="@dimen/sushi_spacing_base"
+        android:layout_marginBottom="@dimen/sushi_spacing_extra"
+        android:layout_marginHorizontal="@dimen/sushi_spacing_base"
+        android:layout_marginVertical="@dimen/sushi_spacing_extra" />
+    <FrameLayout
+        android:layout_width="fill_parent"
+        android:layout_height="0.0dip"
+        android:layout_weight="1.0">
+        <androidx.recyclerview.widget.RecyclerView
+            android:id="@id/item_selection_recycler_view"
+            android:paddingBottom="@dimen/nitro_dummy_bottom_space"
+            android:clipToPadding="false"
+            android:layout_width="fill_parent"
+            android:layout_height="fill_parent"
+            android:layout_marginLeft="@dimen/sushi_spacing_base"
+            android:layout_marginTop="@dimen/sushi_spacing_base"
+            android:layout_marginRight="@dimen/sushi_spacing_base"
+            android:layout_marginHorizontal="@dimen/sushi_spacing_base" />
+        <com.zomato.ui.atomiclib.atom.ZButton
+            android:layout_gravity="bottom"
+            android:id="@id/item_selection_submit_button"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="@dimen/sushi_spacing_base"
+            android:layout_marginTop="@dimen/sushi_spacing_extra"
+            android:layout_marginRight="@dimen/sushi_spacing_base"
+            android:layout_marginBottom="@dimen/sushi_spacing_extra"
+            android:layout_marginHorizontal="@dimen/sushi_spacing_base"
+            android:layout_marginVertical="@dimen/sushi_spacing_extra" />
+        <com.zomato.chatsdk.chatuikit.snippets.ChatSDKNoContentView
+            android:id="@id/item_selection_no_content_view"
+            android:visibility="gone"
+            android:layout_width="fill_parent"
+            android:layout_height="fill_parent" />
+    </FrameLayout>
+</LinearLayout>

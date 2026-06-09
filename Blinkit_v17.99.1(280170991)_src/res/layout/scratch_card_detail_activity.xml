@@ -1,0 +1,90 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout
+    android:background="@color/color_black_trans_fifty"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:animateLayoutChanges="true"
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+    <LinearLayout
+        android:gravity="center"
+        android:orientation="vertical"
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent">
+        <androidx.cardview.widget.CardView
+            android:id="@id/scratchcardview"
+            android:layout_width="@dimen/size_330"
+            android:layout_height="@dimen/size_330"
+            app:cardCornerRadius="@dimen/sushi_spacing_extra"
+            app:cardElevation="@dimen/elevation_micro">
+            <FrameLayout
+                android:id="@id/scratch_card_layout"
+                android:layout_width="fill_parent"
+                android:layout_height="fill_parent" />
+            <com.zomato.ui.atomiclib.atom.ZRoundedImageView
+                android:layout_gravity="center"
+                android:id="@id/scratchimageview"
+                android:layout_width="fill_parent"
+                android:layout_height="fill_parent"
+                android:scaleType="fitXY"
+                android:adjustViewBounds="true" />
+        </androidx.cardview.widget.CardView>
+        <com.zomato.ui.atomiclib.atom.ZTextView
+            android:textSize="@dimen/sushi_textsize_300"
+            android:textColor="@color/color_white"
+            android:gravity="center"
+            android:id="@id/offer_detail"
+            android:paddingLeft="@dimen/sushi_spacing_extra"
+            android:paddingRight="@dimen/sushi_spacing_extra"
+            android:visibility="invisible"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/size_12" />
+        <com.zomato.ui.atomiclib.atom.ZButton
+            android:textSize="@dimen/sushi_textsize_300"
+            android:textColor="@color/color_white"
+            android:id="@id/share"
+            android:visibility="invisible"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/size_32"
+            app:buttonColor="?themeColor500"
+            app:buttonType="solid"
+            app:textFontWeight="bold" />
+        <com.zomato.ui.atomiclib.atom.ZTextView
+            android:textSize="@dimen/sushi_textsize_100"
+            android:textColor="@color/color_white"
+            android:gravity="center"
+            android:id="@id/share_content"
+            android:paddingLeft="@dimen/sushi_spacing_extra"
+            android:paddingRight="@dimen/sushi_spacing_extra"
+            android:visibility="invisible"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/dimen_11" />
+    </LinearLayout>
+    <com.zomato.ui.atomiclib.animation.ZLottieAnimationView
+        android:id="@id/animatedImage"
+        android:visibility="invisible"
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        app:lottie_autoPlay="true"
+        app:lottie_loop="true"
+        app:lottie_repeatMode="restart" />
+    <LinearLayout
+        android:gravity="center"
+        android:layout_gravity="bottom"
+        android:padding="@dimen/size_20"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content">
+        <com.zomato.ui.atomiclib.atom.ZIconFontTextView
+            android:textSize="@dimen/sushi_textsize_600"
+            android:textColor="?attr_7f040475"
+            android:id="@id/iconCross"
+            android:background="@drawable/white_circle"
+            android:padding="@dimen/sushi_spacing_micro"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/icon_font_cross" />
+    </LinearLayout>
+</FrameLayout>

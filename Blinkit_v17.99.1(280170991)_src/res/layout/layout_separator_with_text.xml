@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="utf-8"?>
+<merge
+    android:layout_width="fill_parent"
+    android:layout_height="wrap_content"
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+    <com.zomato.ui.atomiclib.atom.ZSeparator
+        android:layout_gravity="center_vertical"
+        android:id="@id/left_separator"
+        android:layout_width="@dimen/sushi_spacing_femto"
+        android:layout_height="@dimen/sushi_spacing_pico"
+        android:minWidth="@dimen/sushi_spacing_extra"
+        android:layout_weight="1.0"
+        app:zseparator_color="@color/sushi_grey_900" />
+    <com.zomato.ui.atomiclib.atom.ZTextView
+        android:textColor="@color/sushi_grey_900"
+        android:id="@id/title"
+        android:paddingLeft="@dimen/sushi_spacing_mini"
+        android:paddingRight="@dimen/sushi_spacing_mini"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:textViewType="SEMIBOLD_300" />
+    <com.zomato.ui.atomiclib.atom.ZSeparator
+        android:layout_gravity="center_vertical"
+        android:id="@id/right_separator"
+        android:layout_width="@dimen/sushi_spacing_femto"
+        android:layout_height="@dimen/sushi_spacing_pico"
+        android:minWidth="@dimen/sushi_spacing_extra"
+        android:layout_weight="1.0"
+        app:zseparator_color="@color/sushi_grey_900" />
+</merge>

@@ -1,0 +1,54 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout
+    android:orientation="vertical"
+    android:background="@color/sushi_white"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+    <include
+        android:id="@id/filter_shimmer"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        layout="@layout/shimmer_qd_filter_horizontal_item" />
+    <include
+        android:id="@id/include"
+        android:layout_width="fill_parent"
+        android:layout_height="0.0dip"
+        android:layout_marginLeft="@dimen/sushi_spacing_extra"
+        android:layout_marginTop="@dimen/sushi_spacing_extra"
+        android:layout_marginRight="@dimen/sushi_spacing_base"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/filter_shimmer"
+        layout="@layout/shimmer_qd_plp_horizontal_item" />
+    <include
+        android:id="@id/include4"
+        android:layout_width="fill_parent"
+        android:layout_height="0.0dip"
+        android:layout_marginLeft="@dimen/sushi_spacing_extra"
+        android:layout_marginRight="@dimen/sushi_spacing_base"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/include"
+        layout="@layout/shimmer_qd_plp_horizontal_item" />
+    <include
+        android:id="@id/include5"
+        android:layout_width="fill_parent"
+        android:layout_height="0.0dip"
+        android:layout_marginLeft="@dimen/sushi_spacing_extra"
+        android:layout_marginRight="@dimen/sushi_spacing_base"
+        app:layout_constraintTop_toBottomOf="@id/include4"
+        layout="@layout/shimmer_qd_plp_horizontal_item" />
+    <include
+        android:layout_width="fill_parent"
+        android:layout_height="0.0dip"
+        android:layout_marginLeft="@dimen/sushi_spacing_extra"
+        android:layout_marginRight="@dimen/sushi_spacing_base"
+        app:layout_constraintTop_toBottomOf="@id/include5"
+        layout="@layout/shimmer_qd_plp_horizontal_item" />
+</androidx.constraintlayout.widget.ConstraintLayout>

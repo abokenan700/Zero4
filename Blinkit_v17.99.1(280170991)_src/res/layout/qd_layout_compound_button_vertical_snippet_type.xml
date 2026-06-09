@@ -1,0 +1,100 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout
+    android:id="@id/container"
+    android:paddingBottom="@dimen/sushi_spacing_base"
+    android:clipChildren="false"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+    <com.blinkit.commons.ui.ui.customviews.bmediaview.BMediaView
+        android:id="@id/media"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="@dimen/sushi_spacing_macro"
+        android:layout_marginTop="@dimen/sushi_spacing_base"
+        android:layout_marginRight="@dimen/sushi_spacing_macro"
+        android:layout_marginHorizontal="@dimen/sushi_spacing_macro"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+    <com.blinkit.blink.elements.ui.atoms.text.BlinkitTextView
+        android:id="@id/title"
+        android:layout_width="0.0dip"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="@dimen/sushi_spacing_macro"
+        android:layout_marginTop="@dimen/sushi_spacing_macro"
+        android:layout_marginRight="@dimen/sushi_spacing_macro"
+        android:textAlignment="center"
+        android:layout_marginHorizontal="@dimen/sushi_spacing_macro"
+        app:layout_constraintBottom_toTopOf="@id/subtitle"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/media" />
+    <com.blinkit.commons.ui.ui.customviews.overlayBadges.OverlayBadgeView
+        android:id="@id/overlay_view"
+        android:layout_width="0.0dip"
+        android:layout_height="0.0dip"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+    <com.blinkit.commons.ui.ui.customviews.viewstub.blinkittext.BlinkitTextViewStub
+        android:id="@id/subtitle"
+        android:layout_width="0.0dip"
+        android:layout_height="wrap_content"
+        android:textAlignment="center"
+        app:layout_constraintBottom_toTopOf="@id/stepper"
+        app:layout_constraintEnd_toEndOf="@id/media"
+        app:layout_constraintStart_toStartOf="@id/media"
+        app:layout_constraintTop_toBottomOf="@id/title" />
+    <com.blinkit.commons.ui.ui.customviews.viewstub.Stepper3DViewStub
+        android:id="@id/stepper"
+        android:clipChildren="false"
+        android:clipToPadding="false"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/sushi_spacing_base"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/subtitle"
+        app:stepper_type="MINI" />
+    <com.blinkit.commons.ui.ui.customviews.viewstub.NotifyMe3DViewStub
+        android:id="@id/notify_me"
+        android:clipChildren="false"
+        android:clipToPadding="false"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/sushi_spacing_base"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/subtitle"
+        app:stepper_type="MINI" />
+    <CheckBox
+        android:id="@id/check_box"
+        android:background="@android:color/transparent"
+        android:clickable="false"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        style="@style/CustomCheckboxStyle" />
+    <RadioButton
+        android:gravity="center_horizontal"
+        android:layout_gravity="center_horizontal"
+        android:id="@id/radio_button"
+        android:background="@android:color/transparent"
+        android:visibility="gone"
+        android:clickable="false"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/sushi_spacing_micro"
+        android:layout_marginBottom="@dimen/sushi_spacing_mini"
+        android:layout_marginStart="@dimen/sushi_spacing_mini"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/subtitle" />
+</androidx.constraintlayout.widget.ConstraintLayout>

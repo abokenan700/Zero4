@@ -1,0 +1,195 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout
+    android:id="@id/container"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent">
+        <com.zomato.ui.atomiclib.atom.ZTextView
+            android:id="@id/top_up_minimum_message"
+            android:layout_width="0.0dip"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/sushi_spacing_macro"
+            android:layout_marginStart="@dimen/sushi_spacing_extra"
+            android:layout_marginEnd="@dimen/sushi_spacing_extra"
+            app:layout_constraintBottom_toTopOf="@id/top_up_amount_field"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+        <com.zomato.ui.atomiclib.molecules.ZTextInputField
+            android:id="@id/top_up_amount_field"
+            android:layout_width="0.0dip"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/sushi_spacing_extra"
+            android:hint="@string/payments_enter_amount_hint"
+            android:inputType="number"
+            android:layout_marginStart="@dimen/sushi_spacing_extra"
+            android:layout_marginEnd="@dimen/sushi_spacing_extra"
+            app:layout_constraintBottom_toTopOf="@id/top_up_first_tile_button"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/top_up_minimum_message" />
+        <com.zomato.ui.atomiclib.atom.ZButton
+            android:id="@id/top_up_first_tile_button"
+            android:layout_width="0.0dip"
+            android:layout_height="wrap_content"
+            android:text="@string/payments_100"
+            android:layout_marginStart="@dimen/sushi_spacing_macro"
+            android:layout_marginEnd="@dimen/sushi_spacing_macro"
+            app:buttonColor="@color/sushi_green_500"
+            app:buttonDimension="medium"
+            app:buttonType="outline"
+            app:layout_constraintEnd_toStartOf="@id/top_up_second_tile_button"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/top_up_amount_field" />
+        <com.zomato.ui.atomiclib.atom.ZButton
+            android:id="@id/top_up_second_tile_button"
+            android:layout_width="0.0dip"
+            android:layout_height="wrap_content"
+            android:text="@string/payments_500"
+            android:layout_marginStart="@dimen/sushi_spacing_macro"
+            android:layout_marginEnd="@dimen/sushi_spacing_macro"
+            app:buttonColor="@color/sushi_green_500"
+            app:buttonDimension="medium"
+            app:buttonType="outline"
+            app:layout_constraintEnd_toStartOf="@id/top_up_third_tile_button"
+            app:layout_constraintStart_toEndOf="@id/top_up_first_tile_button"
+            app:layout_constraintTop_toBottomOf="@id/top_up_amount_field" />
+        <com.zomato.ui.atomiclib.atom.ZButton
+            android:id="@id/top_up_third_tile_button"
+            android:layout_width="0.0dip"
+            android:layout_height="wrap_content"
+            android:text="@string/payments_1000"
+            android:layout_marginStart="@dimen/sushi_spacing_macro"
+            android:layout_marginEnd="@dimen/sushi_spacing_macro"
+            app:buttonColor="@color/sushi_green_500"
+            app:buttonDimension="medium"
+            app:buttonType="outline"
+            app:layout_constraintEnd_toStartOf="@id/top_up_fourth_tile_button"
+            app:layout_constraintStart_toEndOf="@id/top_up_second_tile_button"
+            app:layout_constraintTop_toBottomOf="@id/top_up_amount_field" />
+        <com.zomato.ui.atomiclib.atom.ZButton
+            android:id="@id/top_up_fourth_tile_button"
+            android:layout_width="0.0dip"
+            android:layout_height="wrap_content"
+            android:text="@string/payments_2000"
+            android:layout_marginStart="@dimen/sushi_spacing_macro"
+            android:layout_marginEnd="@dimen/sushi_spacing_macro"
+            app:buttonColor="@color/sushi_green_500"
+            app:buttonDimension="medium"
+            app:buttonType="outline"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toEndOf="@id/top_up_third_tile_button"
+            app:layout_constraintTop_toBottomOf="@id/top_up_amount_field" />
+        <com.zomato.ui.atomiclib.atom.ZSeparator
+            android:id="@id/top_up_payment_method_top_separator"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/sushi_spacing_extra"
+            android:layout_marginStart="@dimen/sushi_spacing_macro"
+            android:layout_marginEnd="@dimen/sushi_spacing_macro"
+            app:layout_constraintBottom_toTopOf="@id/payment_method_title"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/top_up_second_tile_button"
+            app:zseparator_color="@color/sushi_grey_200" />
+        <com.zomato.ui.atomiclib.atom.ZTextView
+            android:id="@id/payment_method_title"
+            android:layout_width="0.0dip"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/sushi_spacing_macro"
+            android:text="@string/payments_payment_method"
+            android:fontFamily="@font/okra_medium"
+            android:layout_marginStart="@dimen/sushi_spacing_macro"
+            android:layout_marginEnd="@dimen/sushi_spacing_macro"
+            app:layout_constraintEnd_toStartOf="@id/payment_method_button_change"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/top_up_payment_method_top_separator" />
+        <com.zomato.ui.atomiclib.atom.ZTextView
+            android:id="@id/payment_method_name"
+            android:layout_width="0.0dip"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="@dimen/sushi_spacing_macro"
+            app:layout_constraintBottom_toTopOf="@id/payment_method_desc"
+            app:layout_constraintEnd_toStartOf="@id/payment_method_button_change"
+            app:layout_constraintStart_toEndOf="@id/payment_method_image_view"
+            app:layout_constraintTop_toTopOf="@id/payment_method_image_view" />
+        <com.zomato.ui.atomiclib.atom.ZTextView
+            android:id="@id/payment_method_desc"
+            android:layout_width="0.0dip"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="@dimen/sushi_spacing_macro"
+            app:layout_constraintBottom_toBottomOf="@id/payment_method_image_view"
+            app:layout_constraintEnd_toStartOf="@id/payment_method_button_change"
+            app:layout_constraintStart_toEndOf="@id/payment_method_image_view"
+            app:layout_constraintTop_toBottomOf="@id/payment_method_name" />
+        <com.zomato.ui.atomiclib.atom.ZButton
+            android:id="@id/payment_method_button_change"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/payments_change"
+            android:layout_marginEnd="@dimen/sushi_spacing_macro"
+            app:buttonType="text"
+            app:layout_constraintBottom_toTopOf="@id/top_up_payment_method_bottom_seperator"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/top_up_payment_method_top_separator" />
+        <com.zomato.ui.atomiclib.atom.ZRoundedImageView
+            android:id="@id/payment_method_image_view"
+            android:layout_width="@dimen/sushi_spacing_alone"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/sushi_spacing_macro"
+            android:layout_marginBottom="@dimen/sushi_spacing_macro"
+            android:scaleType="fitCenter"
+            android:adjustViewBounds="true"
+            android:layout_marginStart="@dimen/sushi_spacing_macro"
+            app:layout_constraintBottom_toTopOf="@id/top_up_payment_method_bottom_seperator"
+            app:layout_constraintEnd_toStartOf="@id/payment_method_name"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/payment_method_title" />
+        <com.zomato.ui.atomiclib.atom.ZSeparator
+            android:id="@id/top_up_payment_method_bottom_seperator"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/sushi_spacing_macro"
+            android:layout_marginStart="@dimen/sushi_spacing_macro"
+            android:layout_marginEnd="@dimen/sushi_spacing_macro"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/payment_method_desc" />
+        <com.zomato.ui.atomiclib.atom.ZTextView
+            android:textColor="@color/sushi_white"
+            android:gravity="center"
+            android:id="@id/error_message"
+            android:background="@drawable/payments_black_top_rounded"
+            android:layout_width="0.0dip"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/sushi_spacing_extra"
+            app:layout_constraintBottom_toTopOf="@id/submit_button"
+            app:layout_constraintEnd_toEndOf="@id/submit_button"
+            app:layout_constraintStart_toStartOf="@id/submit_button"
+            app:layout_constraintTop_toBottomOf="@id/top_up_payment_method_bottom_seperator" />
+        <com.zomato.ui.atomiclib.atom.ZButtonWithLoader
+            android:id="@id/submit_button"
+            android:layout_width="0.0dip"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="@dimen/sushi_spacing_macro"
+            android:layout_marginEnd="@dimen/sushi_spacing_macro"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/error_message"
+            app:layout_goneMarginTop="@dimen/sushi_spacing_extra" />
+        <androidx.constraintlayout.widget.Group
+            android:id="@id/payment_instrument_info"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            app:constraint_referenced_ids="payment_method_title,top_up_payment_method_bottom_seperator,payment_method_button_change,top_up_payment_method_top_separator" />
+    </androidx.constraintlayout.widget.ConstraintLayout>
+    <payments.zomato.paymentkit.ui.molecules.PaymentsNoContentView
+        android:layout_gravity="center"
+        android:id="@id/loader"
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent" />
+</FrameLayout>

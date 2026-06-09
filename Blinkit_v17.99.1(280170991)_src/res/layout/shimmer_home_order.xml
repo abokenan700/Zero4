@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    android:gravity="center"
+    android:orientation="vertical"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+    <com.zomato.ui.atomiclib.molecules.ShimmerChildTextView
+        android:gravity="center"
+        android:id="@id/title"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:paddingStart="@dimen/sushi_spacing_loose"
+        android:paddingEnd="@dimen/sushi_spacing_loose"
+        app:textViewType="MEDIUM_400" />
+    <com.zomato.ui.atomiclib.animation.ZLottieAnimationView
+        android:layout_gravity="center"
+        android:id="@id/success_image"
+        android:layout_width="@dimen/size_36"
+        android:layout_height="@dimen/size_36"
+        android:layout_marginTop="@dimen/sushi_spacing_page_side"
+        app:lottie_autoPlay="true"
+        app:lottie_fileName="home_loader.lottie"
+        app:lottie_loop="true" />
+</LinearLayout>

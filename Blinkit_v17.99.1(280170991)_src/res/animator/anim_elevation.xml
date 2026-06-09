@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="utf-8"?>
+<selector
+    xmlns:android="http://schemas.android.com/apk/res/android">
+    <item
+        android:state_enabled="true"
+        android:state_pressed="true">
+        <set
+            android:interpolator="@android:anim/decelerate_interpolator">
+            <objectAnimator
+                android:duration="@android:integer/config_shortAnimTime"
+                android:valueTo="@dimen/dimen_0"
+                android:valueType="floatType"
+                android:propertyName="translationZ" />
+        </set>
+    </item>
+    <item>
+        <set
+            android:interpolator="@android:anim/decelerate_interpolator">
+            <objectAnimator
+                android:duration="@android:integer/config_shortAnimTime"
+                android:valueTo="@dimen/elevation_micro"
+                android:valueType="floatType"
+                android:propertyName="translationZ" />
+        </set>
+    </item>
+</selector>

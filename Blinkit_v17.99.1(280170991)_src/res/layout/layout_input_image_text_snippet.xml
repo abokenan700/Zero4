@@ -1,0 +1,167 @@
+<?xml version="1.0" encoding="utf-8"?>
+<merge
+    android:layout_width="fill_parent"
+    android:layout_height="wrap_content"
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+    <com.blinkit.commons.ui.ui.customviews.BShapeableImageView
+        android:id="@id/bg_image"
+        android:visibility="gone"
+        android:clipChildren="true"
+        android:layout_width="@dimen/sushi_spacing_femto"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="@dimen/sushi_spacing_pico"
+        android:layout_marginTop="@dimen/sushi_spacing_pico"
+        android:layout_marginRight="@dimen/sushi_spacing_pico"
+        android:scaleType="fitXY"
+        android:adjustViewBounds="true"
+        android:layout_marginHorizontal="@dimen/sushi_spacing_pico"
+        android:clipToOutline="true"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+    <com.blinkit.blink.elements.ui.atoms.text.BlinkitTextView
+        android:textColor="@color/sushi_grey_900"
+        android:gravity="start"
+        android:id="@id/title"
+        android:visibility="gone"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/sushi_spacing_base"
+        android:layout_marginStart="@dimen/sushi_spacing_base"
+        app:layout_constrainedWidth="true"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:textViewType="SEMIBOLD_300" />
+    <com.blinkit.blink.elements.ui.atoms.text.BlinkitTextView
+        android:textColor="@color/sushi_grey_600"
+        android:ellipsize="end"
+        android:gravity="start"
+        android:id="@id/subtitle1"
+        android:visibility="gone"
+        android:layout_width="0.0dip"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/sushi_spacing_nano"
+        android:maxLines="2"
+        app:layout_constraintStart_toStartOf="@id/title"
+        app:layout_constraintTop_toBottomOf="@id/title"
+        app:layout_constraintWidth_default="percent"
+        app:layout_constraintWidth_percent="0.7"
+        app:textViewType="MEDIUM_200" />
+    <androidx.constraintlayout.widget.Barrier
+        android:id="@id/top_option_bottom_barrier"
+        android:layout_width="fill_parent"
+        android:layout_height="0.0dip"
+        app:barrierDirection="bottom"
+        app:constraint_referenced_ids="subtitle1,title,bg_image" />
+    <com.blinkit.blink.elements.ui.atoms.text.BlinkitTextView
+        android:id="@id/subtitle2"
+        android:layout_width="0.0dip"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/sushi_spacing_pico"
+        android:layout_marginStart="@dimen/sushi_spacing_base"
+        app:layout_constraintBottom_toTopOf="@id/subtitle3"
+        app:layout_constraintEnd_toStartOf="@id/text_input_field_layout"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="@id/text_input_field_layout" />
+    <com.blinkit.blink.elements.ui.atoms.text.BlinkitTextView
+        android:id="@id/subtitle3"
+        android:paddingBottom="@dimen/sushi_spacing_micro"
+        android:visibility="gone"
+        android:layout_width="0.0dip"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/sushi_spacing_pico"
+        android:layout_marginStart="@dimen/sushi_spacing_base"
+        android:layout_marginEnd="@dimen/sushi_spacing_macro"
+        app:layout_constraintBottom_toBottomOf="@id/text_input_field_layout"
+        app:layout_constraintEnd_toStartOf="@id/text_input_field_layout"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/subtitle2" />
+    <com.zomato.ui.atomiclib.molecules.ZTextInputField
+        android:id="@id/text_input_field_layout"
+        android:padding="0.0dip"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/sushi_spacing_pico"
+        android:layout_marginBottom="@dimen/elevation_huge"
+        android:minWidth="@dimen/size_50"
+        android:minHeight="@dimen/size_30"
+        android:layout_marginEnd="@dimen/sushi_spacing_base"
+        app:boxBackgroundMode="none"
+        app:boxCornerRadiusBottomEnd="@dimen/sushi_spacing_macro"
+        app:boxCornerRadiusBottomStart="@dimen/sushi_spacing_macro"
+        app:boxCornerRadiusTopEnd="@dimen/sushi_spacing_macro"
+        app:boxCornerRadiusTopStart="@dimen/sushi_spacing_macro"
+        app:hintEnabled="false"
+        app:layout_constrainedHeight="true"
+        app:layout_constraintBottom_toBottomOf="@id/barrier"
+        app:layout_constraintEnd_toStartOf="@id/button"
+        app:layout_constraintTop_toBottomOf="@id/bg_image"
+        style="@style/OrderTextInputLayout" />
+    <com.zomato.ui.atomiclib.atom.ZButton
+        android:gravity="center"
+        android:layout_gravity="center"
+        android:id="@id/button"
+        android:visibility="gone"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginEnd="@dimen/sushi_spacing_base"
+        app:buttonType="text"
+        app:layout_constraintBottom_toBottomOf="@id/text_input_field_layout"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toTopOf="@id/text_input_field_layout" />
+    <androidx.constraintlayout.widget.Barrier
+        android:id="@id/barrier"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        app:barrierDirection="bottom"
+        app:constraint_referenced_ids="text_input_field_layout, button,title,subtitle1" />
+    <com.zomato.ui.atomiclib.atom.ZSeparator
+        android:id="@id/bottom_separator"
+        android:layout_width="fill_parent"
+        android:layout_height="@dimen/sushi_spacing_pico"
+        android:layout_marginBottom="@dimen/sushi_spacing_mini"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/barrier"
+        app:layout_constraintVertical_bias="1.0"
+        app:zseparator_color="?attr_7f040295" />
+    <CheckBox
+        android:id="@id/tip_check_box"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/sushi_spacing_mini"
+        android:layout_marginBottom="@dimen/sushi_spacing_mini"
+        android:layout_marginStart="@dimen/sushi_spacing_micro"
+        android:buttonTint="@color/checkbox_button_tint"
+        android:layout_marginVertical="@dimen/sushi_spacing_mini"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toStartOf="@id/tip_check_box_title"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/bottom_separator" />
+    <com.blinkit.blink.elements.ui.atoms.text.BlinkitTextView
+        android:id="@id/tip_check_box_title"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginEnd="@dimen/sushi_spacing_macro"
+        app:layout_constraintBottom_toBottomOf="@id/tip_check_box"
+        app:layout_constraintStart_toEndOf="@id/tip_check_box"
+        app:layout_constraintTop_toTopOf="@id/tip_check_box" />
+    <com.zomato.ui.atomiclib.atom.ZButton
+        android:layout_gravity="center"
+        android:id="@id/bottom_button"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginEnd="@dimen/sushi_spacing_base"
+        app:buttonType="text"
+        app:layout_constraintBottom_toBottomOf="@id/tip_check_box"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="1.0"
+        app:layout_constraintTop_toTopOf="@id/tip_check_box" />
+    <androidx.constraintlayout.widget.Group
+        android:id="@id/bottom_container_group"
+        android:visibility="gone"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:constraint_referenced_ids="bottom_separator,tip_check_box,tip_check_box_title, bottom_button" />
+</merge>

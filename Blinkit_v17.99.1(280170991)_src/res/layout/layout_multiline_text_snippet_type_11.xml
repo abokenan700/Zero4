@@ -1,0 +1,83 @@
+<?xml version="1.0" encoding="utf-8"?>
+<merge
+    android:layout_width="fill_parent"
+    android:layout_height="wrap_content"
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+    <com.zomato.ui.atomiclib.atom.ZRoundedImageView
+        android:id="@id/header_image"
+        android:layout_width="@dimen/size_48"
+        android:layout_height="@dimen/size_56"
+        android:layout_margin="@dimen/sushi_spacing_base"
+        android:scaleType="fitCenter"
+        app:layout_constraintBottom_toTopOf="@id/barrier"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintHorizontal_chainStyle="packed"
+        app:layout_constraintStart_toEndOf="@id/header_text_container"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+    <com.zomato.ui.atomiclib.atom.ZRoundedImageView
+        android:id="@id/header_image_right"
+        android:layout_width="@dimen/size_48"
+        android:layout_height="@dimen/size_56"
+        android:layout_margin="@dimen/sushi_spacing_base"
+        android:scaleType="fitCenter"
+        app:layout_constraintBottom_toTopOf="@id/barrier"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="1.0"
+        app:layout_constraintStart_toEndOf="@id/header_text_container"
+        app:layout_constraintTop_toTopOf="parent" />
+    <LinearLayout
+        android:orientation="vertical"
+        android:id="@id/header_text_container"
+        android:layout_width="0.0dip"
+        android:layout_height="wrap_content"
+        android:layout_margin="@dimen/sushi_spacing_base"
+        android:layout_marginStart="@dimen/sushi_spacing_macro"
+        android:layout_marginEnd="@dimen/sushi_spacing_base"
+        app:layout_constraintBottom_toTopOf="@id/barrier"
+        app:layout_constraintEnd_toStartOf="@id/icon"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toEndOf="@id/header_image"
+        app:layout_constraintTop_toTopOf="parent">
+        <com.zomato.ui.atomiclib.atom.staticviews.StaticTextView
+            android:ellipsize="end"
+            android:id="@id/title"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:maxLines="1" />
+        <com.zomato.ui.atomiclib.atom.staticviews.StaticTextView
+            android:ellipsize="end"
+            android:id="@id/subtitle"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:maxLines="1" />
+    </LinearLayout>
+    <com.zomato.ui.atomiclib.atom.ZIconFontTextView
+        android:id="@id/icon"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginEnd="@dimen/sushi_spacing_base"
+        app:layout_constraintBottom_toBottomOf="@id/header_text_container"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="1.0"
+        app:layout_constraintStart_toStartOf="@id/header_text_container"
+        app:layout_constraintTop_toTopOf="@id/header_text_container" />
+    <androidx.constraintlayout.widget.Barrier
+        android:id="@id/barrier"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        app:barrierDirection="bottom"
+        app:constraint_referenced_ids="header_image, header_text_container, icon"
+        app:layout_constraintVertical_chainStyle="packed" />
+    <LinearLayout
+        android:orientation="vertical"
+        android:id="@id/item_container"
+        android:paddingTop="@dimen/sushi_spacing_macro"
+        android:paddingBottom="@dimen/sushi_spacing_extra"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:paddingStart="@dimen/sushi_spacing_nano"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/barrier" />
+</merge>

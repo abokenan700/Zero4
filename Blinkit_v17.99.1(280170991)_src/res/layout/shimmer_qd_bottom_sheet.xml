@@ -1,0 +1,77 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout
+    android:background="@color/color_transparent"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:elevation="@dimen/size_56"
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+    <include
+        android:id="@id/include2"
+        android:layout_width="101.0dip"
+        android:layout_height="0.0dip"
+        android:layout_marginTop="@dimen/sushi_spacing_mini"
+        android:layout_marginBottom="@dimen/sushi_spacing_mini"
+        android:layout_marginVertical="@dimen/sushi_spacing_mini"
+        app:layout_constraintBottom_toTopOf="@id/bottom_horizontal_separator"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        layout="@layout/shimmer_qd_bottom_sheet_filter_type" />
+    <View
+        android:id="@id/vertical_separator"
+        android:background="@color/sushi_grey_200"
+        android:layout_width="@dimen/dimen_point_five"
+        android:layout_height="0.0dip"
+        android:layout_marginStart="4.0dip"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintBottom_toTopOf="@id/bottom_horizontal_separator"
+        app:layout_constraintStart_toEndOf="@id/include2"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.0" />
+    <include
+        android:id="@id/main_shimmer"
+        android:layout_width="0.0dip"
+        android:layout_height="0.0dip"
+        android:layout_marginLeft="@dimen/dimen_16"
+        android:layout_marginTop="@dimen/dimen_12"
+        android:layout_marginRight="@dimen/size_12"
+        app:layout_constraintBottom_toTopOf="@id/bottom_horizontal_separator"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toEndOf="@id/vertical_separator"
+        app:layout_constraintTop_toTopOf="parent"
+        layout="@layout/shimmer_qd_filter_bottom_sheet_main" />
+    <View
+        android:id="@id/bottom_horizontal_separator"
+        android:background="@color/sushi_grey_200"
+        android:layout_width="fill_parent"
+        android:layout_height="@dimen/dimen_point_five"
+        android:layout_marginBottom="@dimen/size_80"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/main_shimmer" />
+    <include
+        android:id="@id/clear_shimmer"
+        android:layout_width="0.0dip"
+        android:layout_height="wrap_content"
+        android:layout_margin="@dimen/dimen_12"
+        android:layout_marginLeft="@dimen/dimen_12"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintEnd_toStartOf="@id/apply_shimmer"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/bottom_horizontal_separator"
+        layout="@layout/shimmer_qd_search" />
+    <include
+        android:id="@id/apply_shimmer"
+        android:layout_width="0.0dip"
+        android:layout_height="wrap_content"
+        android:layout_margin="@dimen/dimen_12"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toEndOf="@id/clear_shimmer"
+        app:layout_constraintTop_toBottomOf="@id/bottom_horizontal_separator"
+        layout="@layout/shimmer_qd_search" />
+</androidx.constraintlayout.widget.ConstraintLayout>

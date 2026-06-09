@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout
+    android:orientation="vertical"
+    android:paddingLeft="@dimen/sushi_spacing_base"
+    android:paddingTop="@dimen/size_32"
+    android:paddingRight="@dimen/sushi_spacing_base"
+    android:paddingBottom="@dimen/size_32"
+    android:layout_width="fill_parent"
+    android:layout_height="wrap_content"
+    android:paddingHorizontal="@dimen/sushi_spacing_base"
+    android:paddingVertical="@dimen/size_32"
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+    <ImageView
+        android:id="@id/logo"
+        android:layout_width="0.0dip"
+        android:layout_height="wrap_content"
+        android:src="@drawable/zomato_footer_logo"
+        android:adjustViewBounds="true"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintWidth_percent="0.35" />
+    <com.zomato.ui.atomiclib.atom.ZTextView
+        android:textColor="@color/sushi_grey_400"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/sushi_spacing_macro"
+        android:text="@string/default_footer_title"
+        app:layout_constraintStart_toStartOf="@id/logo"
+        app:layout_constraintTop_toBottomOf="@id/logo"
+        app:textViewType="MEDIUM_200" />
+</androidx.constraintlayout.widget.ConstraintLayout>

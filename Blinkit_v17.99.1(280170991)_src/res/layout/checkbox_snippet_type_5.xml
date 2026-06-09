@@ -1,0 +1,104 @@
+<?xml version="1.0" encoding="utf-8"?>
+<merge
+    android:orientation="horizontal"
+    android:background="?attr_7f0403d7"
+    android:clipChildren="false"
+    android:clipToPadding="false"
+    android:layout_width="fill_parent"
+    android:layout_height="wrap_content"
+    android:paddingStart="@dimen/sushi_spacing_mini"
+    android:paddingEnd="@dimen/sushi_spacing_extra"
+    android:clipToOutline="false"
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+    <FrameLayout
+        android:id="@id/checkbox_frame"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/dimen_10"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
+        <com.zomato.ui.atomiclib.atom.ZCheckBox
+            android:id="@id/checkbox"
+            android:visibility="gone"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:scaleX="0.9"
+            android:scaleY="0.9"
+            app:controlColor="?themeColor500" />
+    </FrameLayout>
+    <androidx.constraintlayout.widget.Barrier
+        android:id="@id/end_barrier"
+        android:layout_width="wrap_content"
+        android:layout_height="fill_parent"
+        app:barrierDirection="end"
+        app:constraint_referenced_ids="checkbox_frame" />
+    <LinearLayout
+        android:orientation="vertical"
+        android:id="@id/top_container"
+        android:paddingTop="@dimen/sushi_spacing_extra"
+        android:paddingBottom="@dimen/sushi_spacing_base"
+        android:visibility="gone"
+        android:layout_width="0.0dip"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="@dimen/sushi_spacing_micro"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toEndOf="@id/end_barrier"
+        app:layout_constraintTop_toTopOf="parent">
+        <LinearLayout
+            android:gravity="center"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content">
+            <com.zomato.ui.atomiclib.atom.ZTextView
+                android:id="@id/title"
+                android:visibility="gone"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content" />
+            <com.zomato.ui.atomiclib.atom.ZIconFontTextView
+                android:layout_gravity="center_vertical"
+                android:id="@id/title_suffix_icon"
+                android:visibility="gone"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="@dimen/sushi_spacing_micro" />
+        </LinearLayout>
+        <com.zomato.ui.atomiclib.atom.ZTextView
+            android:id="@id/subtitle"
+            android:visibility="gone"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/sushi_spacing_nano" />
+    </LinearLayout>
+    <com.zomato.ui.atomiclib.atom.ZSeparator
+        android:id="@id/separator"
+        android:visibility="gone"
+        android:layout_width="0.0dip"
+        android:layout_height="wrap_content"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="@id/top_container"
+        app:layout_constraintTop_toBottomOf="@id/top_container" />
+    <FrameLayout
+        android:orientation="vertical"
+        android:id="@id/bottom_container"
+        android:paddingTop="@dimen/sushi_spacing_base"
+        android:paddingBottom="@dimen/sushi_spacing_extra"
+        android:visibility="gone"
+        android:layout_width="0.0dip"
+        android:layout_height="wrap_content"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="@id/top_container"
+        app:layout_constraintTop_toBottomOf="@id/separator">
+        <com.zomato.ui.atomiclib.atom.ZButton
+            android:id="@id/button"
+            android:visibility="gone"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            app:buttonType="text" />
+        <LinearLayout
+            android:orientation="vertical"
+            android:id="@id/bottom_container_ll"
+            android:visibility="gone"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content" />
+    </FrameLayout>
+</merge>

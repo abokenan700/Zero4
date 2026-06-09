@@ -1,0 +1,61 @@
+<?xml version="1.0" encoding="utf-8"?>
+<merge
+    android:orientation="vertical"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+    <LinearLayout
+        android:orientation="horizontal"
+        android:id="@id/container"
+        android:paddingLeft="@dimen/sushi_spacing_macro"
+        android:paddingTop="@dimen/sushi_spacing_micro"
+        android:paddingRight="@dimen/sushi_spacing_macro"
+        android:paddingBottom="@dimen/sushi_spacing_micro"
+        android:visibility="gone"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="@dimen/sushi_spacing_macro"
+        android:translationZ="@dimen/sushi_spacing_pico"
+        android:outlineProvider="none"
+        android:paddingHorizontal="@dimen/sushi_spacing_macro"
+        android:paddingVertical="@dimen/sushi_spacing_micro"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
+        <com.zomato.ui.atomiclib.atom.ZRoundedImageView
+            android:id="@id/image_view"
+            android:visibility="gone"
+            android:layout_width="@dimen/size14"
+            android:layout_height="@dimen/size14" />
+        <com.zomato.ui.atomiclib.atom.staticviews.StaticTextView
+            android:ellipsize="end"
+            android:id="@id/container_text"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:maxLines="2"
+            android:layout_marginStart="@dimen/sushi_spacing_micro" />
+    </LinearLayout>
+    <View
+        android:id="@id/triangle_view_below"
+        android:visibility="gone"
+        android:layout_width="@dimen/sushi_spacing_macro"
+        android:layout_height="@dimen/sushi_spacing_macro"
+        android:translationY="@dimen/sushi_spacing_micro_negative"
+        android:rotation="45.0"
+        app:layout_constraintEnd_toEndOf="@id/container"
+        app:layout_constraintStart_toStartOf="@id/container"
+        app:layout_constraintTop_toBottomOf="@id/container" />
+    <View
+        android:id="@id/triangle_view_above"
+        android:visibility="gone"
+        android:layout_width="@dimen/sushi_spacing_macro"
+        android:layout_height="@dimen/sushi_spacing_macro"
+        android:translationY="@dimen/sushi_spacing_mini_negative"
+        android:rotation="45.0"
+        android:translationZ="@dimen/sushi_spacing_nano"
+        android:outlineProvider="none"
+        app:layout_constraintEnd_toEndOf="@id/container"
+        app:layout_constraintStart_toStartOf="@id/container"
+        app:layout_constraintTop_toBottomOf="@id/container" />
+</merge>

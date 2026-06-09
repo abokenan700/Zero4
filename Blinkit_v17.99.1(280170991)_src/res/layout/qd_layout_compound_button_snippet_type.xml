@@ -1,0 +1,206 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout
+    android:id="@id/ll_container"
+    android:clipChildren="false"
+    android:layout_width="fill_parent"
+    android:layout_height="wrap_content"
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+    <com.blinkit.commons.ui.ui.customviews.viewstub.media.BMediaViewStub
+        android:id="@id/bg_media"
+        android:layout_width="0.0dip"
+        android:layout_height="0.0dip"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+    <com.blinkit.commons.ui.ui.customviews.BShapeableImageView
+        android:id="@id/image"
+        android:visibility="gone"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:layout_constraintBottom_toBottomOf="@id/bottom_guideline"
+        app:layout_constraintStart_toStartOf="@id/start_guideline"
+        app:layout_constraintTop_toTopOf="@id/top_guideline" />
+    <com.blinkit.commons.ui.ui.customviews.viewstub.OverlayBadgeViewStub
+        android:id="@id/image_overlay_badge"
+        android:layout_width="@dimen/dimen_0"
+        android:layout_height="@dimen/dimen_0"
+        android:layout_marginTop="@dimen/negative_ten"
+        android:layout_marginBottom="@dimen/negative_ten"
+        android:layout_marginStart="@dimen/negative_ten"
+        android:layout_marginEnd="@dimen/negative_ten"
+        app:layout_constraintBottom_toBottomOf="@id/image"
+        app:layout_constraintEnd_toEndOf="@id/image"
+        app:layout_constraintStart_toStartOf="@id/image"
+        app:layout_constraintTop_toTopOf="@id/image" />
+    <com.zomato.ui.atomiclib.atom.ZTextView
+        android:id="@id/title"
+        android:layout_width="0.0dip"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="@dimen/sushi_spacing_micro"
+        android:layout_marginStart="@dimen/sushi_spacing_macro"
+        app:layout_constraintBottom_toTopOf="@id/subtitle1"
+        app:layout_constraintEnd_toStartOf="@id/title_tag"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintHorizontal_chainStyle="packed"
+        app:layout_constraintStart_toEndOf="@id/image"
+        app:layout_constraintTop_toTopOf="@id/image"
+        app:layout_constraintVertical_chainStyle="packed"
+        app:layout_constraintWidth_default="wrap"
+        app:layout_goneMarginEnd="@dimen/sushi_spacing_extra" />
+    <com.zomato.ui.lib.snippets.ZImageTagView
+        android:ellipsize="end"
+        android:id="@id/title_tag"
+        android:visibility="gone"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/sushi_tag_rounded_corner_radius"
+        android:maxLines="1"
+        android:layout_marginEnd="@dimen/sushi_spacing_extra"
+        app:layout_constraintBottom_toBottomOf="@id/title"
+        app:layout_constraintEnd_toStartOf="@id/compound_text"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintHorizontal_chainStyle="packed"
+        app:layout_constraintStart_toEndOf="@id/title"
+        app:layout_constraintTop_toTopOf="@id/title"
+        app:layout_constraintWidth_default="wrap" />
+    <com.zomato.ui.atomiclib.atom.ZTextView
+        android:id="@id/subtitle1"
+        android:layout_width="0.0dip"
+        android:layout_height="wrap_content"
+        android:layout_marginEnd="@dimen/sushi_spacing_macro"
+        app:layout_constraintBottom_toTopOf="@id/subtitle2"
+        app:layout_constraintEnd_toStartOf="@id/compound_text"
+        app:layout_constraintStart_toStartOf="@id/title"
+        app:layout_constraintTop_toBottomOf="@id/title"
+        app:layout_constraintVertical_chainStyle="packed" />
+    <com.zomato.ui.atomiclib.atom.ZTextView
+        android:ellipsize="end"
+        android:id="@id/subtitle2"
+        android:visibility="gone"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:maxWidth="200.0dip"
+        android:maxLines="1"
+        app:layout_constraintBottom_toTopOf="@id/horizontal_tag_list"
+        app:layout_constraintEnd_toStartOf="@id/right_barrier"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="@id/title"
+        app:layout_constraintTop_toBottomOf="@id/subtitle1"
+        app:layout_constraintWidth_max="wrap"
+        app:layout_constraintWidth_min="wrap" />
+    <com.blinkit.commons.ui.ui.customviews.PrefixMediaTextView
+        android:id="@id/prefix_media"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="@dimen/sushi_spacing_mini"
+        app:layout_constraintBottom_toBottomOf="@id/subtitle2"
+        app:layout_constraintEnd_toStartOf="@id/right_barrier"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toEndOf="@id/subtitle2"
+        app:layout_constraintTop_toTopOf="@id/subtitle2" />
+    <com.blinkit.commons.ui.ui.customviews.viewstub.horizontalMediaTextView.HorizontalMediaTextViewStub
+        android:id="@id/horizontal_tag_list"
+        android:visibility="gone"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginEnd="@dimen/sushi_spacing_macro"
+        app:layout_constraintBottom_toTopOf="@id/error_title"
+        app:layout_constraintEnd_toStartOf="@id/compound_text"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="@id/title"
+        app:layout_constraintTop_toBottomOf="@id/subtitle2" />
+    <com.blinkit.commons.ui.ui.customviews.viewstub.blinkittext.BlinkitTextViewStub
+        android:id="@id/error_title"
+        android:layout_width="0.0dip"
+        android:layout_height="wrap_content"
+        app:layout_constraintBottom_toBottomOf="@id/bottom_guideline"
+        app:layout_constraintEnd_toEndOf="@id/title"
+        app:layout_constraintStart_toStartOf="@id/title"
+        app:layout_constraintTop_toBottomOf="@id/horizontal_tag_list" />
+    <com.zomato.ui.atomiclib.atom.ZTextView
+        android:id="@id/compound_text"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:layout_constraintBottom_toBottomOf="@id/bottom_guideline"
+        app:layout_constraintEnd_toStartOf="@id/right_barrier"
+        app:layout_constraintTop_toTopOf="@id/top_guideline" />
+    <com.zomato.ui.atomiclib.atom.ZButton
+        android:id="@id/right_button"
+        android:visibility="gone"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:layout_constraintBottom_toBottomOf="@id/bottom_guideline"
+        app:layout_constraintEnd_toStartOf="@id/right_barrier"
+        app:layout_constraintTop_toTopOf="@id/top_guideline" />
+    <com.zomato.ui.atomiclib.atom.ZIconFontTextView
+        android:id="@id/right_icon"
+        android:visibility="gone"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:layout_constraintBottom_toBottomOf="@id/bottom_guideline"
+        app:layout_constraintEnd_toStartOf="@id/right_barrier"
+        app:layout_constraintTop_toTopOf="@id/top_guideline" />
+    <androidx.constraintlayout.widget.Barrier
+        android:id="@id/right_barrier"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:barrierDirection="start"
+        app:constraint_referenced_ids="radio_button,check_box" />
+    <View
+        android:id="@id/disabled_checkbox_overlay"
+        android:focusable="true"
+        android:clickable="true"
+        android:layout_width="0.0dip"
+        android:layout_height="0.0dip"
+        android:elevation="@dimen/sushi_spacing_pico"
+        app:layout_constrainedWidth="true"
+        app:layout_constraintBottom_toBottomOf="@id/check_box"
+        app:layout_constraintEnd_toEndOf="@id/check_box"
+        app:layout_constraintStart_toStartOf="@id/check_box"
+        app:layout_constraintTop_toTopOf="@id/check_box" />
+    <CheckBox
+        android:id="@id/check_box"
+        android:background="@android:color/transparent"
+        android:clickable="false"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:buttonTint="?themeColor500"
+        app:layout_constraintBottom_toBottomOf="@id/bottom_guideline"
+        app:layout_constraintEnd_toEndOf="@id/end_guideline"
+        app:layout_constraintTop_toTopOf="@id/top_guideline" />
+    <RadioButton
+        android:id="@id/radio_button"
+        android:background="@android:color/transparent"
+        android:padding="@dimen/dimen_0"
+        android:clickable="false"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:scaleX="0.9"
+        android:scaleY="0.9"
+        android:buttonTint="?themeColor700"
+        app:layout_constraintBottom_toBottomOf="@id/bottom_guideline"
+        app:layout_constraintEnd_toEndOf="@id/end_guideline"
+        app:layout_constraintTop_toTopOf="@id/top_guideline" />
+    <androidx.constraintlayout.widget.Guideline
+        android:orientation="vertical"
+        android:id="@id/start_guideline"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:layout_constraintTop_toTopOf="parent" />
+    <androidx.constraintlayout.widget.Guideline
+        android:orientation="vertical"
+        android:id="@id/end_guideline"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content" />
+    <androidx.constraintlayout.widget.Guideline
+        android:orientation="horizontal"
+        android:id="@id/top_guideline"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content" />
+    <androidx.constraintlayout.widget.Guideline
+        android:orientation="horizontal"
+        android:id="@id/bottom_guideline"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content" />
+</androidx.constraintlayout.widget.ConstraintLayout>

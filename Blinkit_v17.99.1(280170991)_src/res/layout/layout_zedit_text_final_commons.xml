@@ -1,0 +1,118 @@
+<?xml version="1.0" encoding="utf-8"?>
+<merge
+    android:layout_width="fill_parent"
+    android:layout_height="wrap_content"
+    android:animateLayoutChanges="true"
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+    <com.zomato.android.zcommons.legacyViews.editText.ZTextInputLayout
+        android:textColorHint="@color/z_color_grey"
+        android:id="@id/et_final_container"
+        android:paddingBottom="@dimen/size_4"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        android:paddingStart="0.0dip"
+        android:paddingEnd="0.0dip"
+        android:layout_toStartOf="@id/container_right_action"
+        android:layout_toEndOf="@id/container_left"
+        app:hintTextAppearance="@style/FloatingLabelStyle">
+        <com.zomato.android.zcommons.legacyViews.editText.ZTextInputEditText
+            android:textSize="@dimen/textview_bodylinks"
+            android:textColor="@color/z_text_color"
+            android:textColorHint="@color/z_color_grey"
+            android:id="@id/et_final"
+            android:background="@null"
+            android:paddingTop="@dimen/nitro_padding_8"
+            android:scrollbars="horizontal"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:includeFontPadding="false"
+            android:inputType="textCapWords"
+            app:hintTextAppearance="@style/FloatingLabelStyle" />
+    </com.zomato.android.zcommons.legacyViews.editText.ZTextInputLayout>
+    <FrameLayout
+        android:layout_gravity="end"
+        android:id="@id/container_right_action"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignTop="@id/et_final_container"
+        android:layout_alignBottom="@id/et_final_container"
+        android:layout_alignParentEnd="true">
+        <com.zomato.ui.atomiclib.atom.IconFont
+            android:textSize="@dimen/iconfont_size"
+            android:textColor="@color/z_color_grey"
+            android:layout_gravity="center"
+            android:id="@id/icon_font_edit_text_final"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="@dimen/dimen_5"
+            android:text="@string/zicon_cross_fill"
+            android:paddingStart="@dimen/nitro_padding_8" />
+        <com.zomato.ui.atomiclib.atom.progress.progressView.ZProgressView
+            android:layout_gravity="center_vertical"
+            android:id="@id/progress"
+            android:visibility="gone"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            app:zprogressview_size="MINI"
+            app:zprogressview_type="circular" />
+        <ImageView
+            android:layout_gravity="bottom"
+            android:id="@id/iv_right_edit_text_final"
+            android:paddingBottom="@dimen/size_4"
+            android:visibility="gone"
+            android:layout_width="36.0dip"
+            android:layout_height="25.0dip" />
+        <com.zomato.android.zcommons.legacyViews.ZTextButton
+            android:layout_gravity="center_vertical"
+            android:id="@id/tv_right_action_edit_text_final"
+            android:paddingTop="@dimen/nitro_padding_8"
+            android:paddingBottom="@dimen/size_4"
+            android:visibility="gone"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:paddingStart="@dimen/nitro_padding_8"
+            android:paddingEnd="@dimen/nitro_padding_8" />
+    </FrameLayout>
+    <LinearLayout
+        android:orientation="horizontal"
+        android:id="@id/container_left"
+        android:visibility="gone"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/nitro_between_padding"
+        android:layout_marginBottom="@dimen/edit_text_extra_padding"
+        android:layout_alignTop="@id/et_final_container"
+        android:layout_alignBottom="@id/et_final_container"
+        android:layout_alignParentStart="true">
+        <com.zomato.ui.atomiclib.atom.IconFont
+            android:textSize="@dimen/iconfont_size"
+            android:textColor="@color/z_color_grey"
+            android:gravity="center_vertical"
+            android:layout_gravity="center_vertical"
+            android:id="@id/icon_font_left_edit_text_final"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/iconfont_search"
+            android:paddingEnd="@dimen/nitro_padding_8" />
+    </LinearLayout>
+    <View
+        android:layout_gravity="center|top"
+        android:id="@id/divider_edit_text_final"
+        android:background="@color/z_color_grey"
+        android:layout_width="fill_parent"
+        android:layout_height="@dimen/straight_separator_height"
+        android:layout_below="@id/et_final_container" />
+    <com.zomato.android.zcommons.legacyViews.NitroTextView
+        android:layout_gravity="start|center|top"
+        android:id="@id/tv_nitro_edit_text_error"
+        android:visibility="invisible"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/nitro_between_padding"
+        android:minLines="1"
+        android:layout_below="@id/divider_edit_text_final"
+        app:newztextview_type="HIGHLIGHTER_SMALL"
+        app:ztextview_color="RED" />
+</merge>

@@ -1,0 +1,80 @@
+<?xml version="1.0" encoding="utf-8"?>
+<merge
+    android:layout_width="fill_parent"
+    android:layout_height="wrap_content"
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+    <com.zomato.ui.atomiclib.atom.ZRoundedImageView
+        android:id="@id/bg_image"
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent" />
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:id="@id/snippet_48_root_container"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content">
+        <com.zomato.ui.atomiclib.atom.ZRoundedImageView
+            android:id="@id/left_image"
+            android:layout_width="@dimen/size_54"
+            android:layout_height="@dimen/size_54"
+            android:scaleType="fitCenter"
+            android:layout_marginEnd="@dimen/sushi_spacing_base"
+            app:cornerRadius="@dimen/corner_radius_base"
+            app:layout_constraintEnd_toStartOf="@id/left_icon"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+        <com.zomato.ui.atomiclib.atom.ZIconFontTextView
+            android:textSize="@dimen/iconfont_size_bit_bigger"
+            android:id="@id/left_icon"
+            android:visibility="gone"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/icon_font_double_quote_up"
+            android:layout_marginEnd="@dimen/sushi_spacing_macro"
+            app:layout_constraintEnd_toStartOf="@id/title"
+            app:layout_constraintStart_toEndOf="@id/left_image"
+            app:layout_constraintTop_toTopOf="parent" />
+        <com.zomato.ui.atomiclib.atom.ZTextView
+            android:ellipsize="end"
+            android:id="@id/title"
+            android:layout_width="0.0dip"
+            android:layout_height="wrap_content"
+            android:layout_marginEnd="@dimen/sushi_spacing_between_large"
+            app:layout_constraintEnd_toStartOf="@id/rating"
+            app:layout_constraintStart_toEndOf="@id/left_icon"
+            app:layout_constraintTop_toTopOf="@id/left_image"
+            app:layout_constraintVertical_chainStyle="packed"
+            app:textViewType="MEDIUM_500" />
+        <com.zomato.ui.atomiclib.snippets.RatingSnippetItem
+            android:id="@id/rating"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintTop_toTopOf="@id/title"
+            app:ratingType="tag_v2" />
+        <com.zomato.ui.atomiclib.atom.staticviews.StaticTextView
+            android:textColor="@color/sushi_grey_500"
+            android:ellipsize="end"
+            android:id="@id/subtitle"
+            android:layout_width="0.0dip"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/sushi_spacing_micro"
+            android:layout_marginEnd="@dimen/sushi_spacing_between_large"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="@id/title"
+            app:layout_constraintTop_toBottomOf="@id/title"
+            app:textViewType="MEDIUM_200" />
+        <com.zomato.ui.atomiclib.atom.ZTextView
+            android:textColor="@color/sushi_grey_500"
+            android:ellipsize="end"
+            android:id="@id/subtitle2"
+            android:layout_width="0.0dip"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/sushi_spacing_micro"
+            android:layout_marginEnd="@dimen/sushi_spacing_between_large"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="@id/title"
+            app:layout_constraintTop_toBottomOf="@id/subtitle"
+            app:textViewType="MEDIUM_200" />
+    </androidx.constraintlayout.widget.ConstraintLayout>
+</merge>

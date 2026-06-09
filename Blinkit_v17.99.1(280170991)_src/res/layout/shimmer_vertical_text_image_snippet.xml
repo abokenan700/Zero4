@@ -1,0 +1,49 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+    <com.blinkit.commons.ui.ui.customviews.viewstub.shimmer.ShimmerChildViewStub
+        android:id="@id/top_image_shimmer"
+        android:visibility="gone"
+        android:layout_width="0.0dip"
+        android:layout_height="120.0dip"
+        android:layout_marginTop="2.0dip"
+        app:layout_constraintBottom_toTopOf="@id/title_shimmer"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+    <com.blinkit.commons.ui.ui.customviews.viewstub.shimmer.ShimmerChildViewStub
+        android:id="@id/title_shimmer"
+        android:visibility="gone"
+        android:layout_width="0.0dip"
+        android:layout_height="12.0dip"
+        android:layout_marginTop="@dimen/dimen_12"
+        app:layout_constraintBottom_toTopOf="@id/subtitle_shimmer"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/top_image_shimmer" />
+    <com.blinkit.commons.ui.ui.customviews.viewstub.shimmer.ShimmerChildViewStub
+        android:id="@id/subtitle_shimmer"
+        android:visibility="gone"
+        android:layout_width="0.0dip"
+        android:layout_height="8.0dip"
+        android:layout_marginTop="@dimen/dimen_12"
+        app:layout_constraintBottom_toTopOf="@id/subtitle_shimmer_2"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/title_shimmer"
+        app:layout_constraintWidth_percent="0.5" />
+    <com.blinkit.commons.ui.ui.customviews.viewstub.shimmer.ShimmerChildViewStub
+        android:id="@id/subtitle_shimmer_2"
+        android:visibility="gone"
+        android:layout_width="0.0dip"
+        android:layout_height="8.0dip"
+        android:layout_marginTop="@dimen/dimen_4"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/subtitle_shimmer"
+        app:layout_constraintWidth_percent="0.5" />
+</androidx.constraintlayout.widget.ConstraintLayout>

@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    android:gravity="center"
+    android:orientation="horizontal"
+    android:background="@color/sushi_yellow_100"
+    android:layout_width="fill_parent"
+    android:layout_height="wrap_content"
+    xmlns:android="http://schemas.android.com/apk/res/android">
+    <com.zomato.ui.atomiclib.atom.ZTextView
+        android:textColor="@color/sushi_yellow_900"
+        android:id="@id/error_text"
+        android:layout_width="0.0dip"
+        android:layout_height="wrap_content"
+        android:layout_margin="@dimen/size_12"
+        android:layout_weight="1.0" />
+    <com.zomato.ui.atomiclib.atom.ZButton
+        android:id="@id/toast_submit_button"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_margin="@dimen/size_12" />
+</LinearLayout>

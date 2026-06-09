@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="utf-8"?>
+<merge
+    android:orientation="vertical"
+    android:layout_width="fill_parent"
+    android:layout_height="wrap_content"
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+    <androidx.cardview.widget.CardView
+        android:id="@id/cv_image"
+        android:layout_width="fill_parent"
+        android:layout_height="0.0dip"
+        android:elevation="@dimen/action_card_elevation"
+        app:cardCornerRadius="@dimen/sushi_spacing_base"
+        app:layout_constraintBottom_toTopOf="@id/tv_title"
+        app:layout_constraintDimensionRatio="w,1:1"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
+        <com.zomato.ui.atomiclib.atom.ZRoundedImageView
+            android:layout_gravity="center"
+            android:id="@id/image"
+            android:layout_width="wrap_content"
+            android:layout_height="@dimen/size_40"
+            android:adjustViewBounds="true" />
+    </androidx.cardview.widget.CardView>
+    <com.zomato.ui.atomiclib.atom.ZTextView
+        android:gravity="center"
+        android:layout_gravity="center_horizontal"
+        android:id="@id/tv_title"
+        android:layout_width="0.0dip"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/sushi_spacing_macro"
+        android:includeFontPadding="false"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/cv_image" />
+</merge>

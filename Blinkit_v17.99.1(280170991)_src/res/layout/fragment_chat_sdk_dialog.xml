@@ -1,0 +1,78 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    android:orientation="vertical"
+    android:paddingBottom="@dimen/sushi_spacing_loose"
+    android:layout_width="fill_parent"
+    android:layout_height="wrap_content"
+    android:layout_marginStart="@dimen/sushi_spacing_alone"
+    android:layout_marginEnd="@dimen/sushi_spacing_alone"
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+    <com.zomato.ui.atomiclib.atom.ZRoundedImageView
+        android:layout_gravity="center"
+        android:id="@id/alert_image"
+        android:visibility="gone"
+        android:layout_width="@dimen/size_80"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/sushi_spacing_loose"
+        android:scaleType="fitXY"
+        android:adjustViewBounds="true"
+        android:layout_marginStart="@dimen/sushi_spacing_extra"
+        android:layout_marginEnd="@dimen/sushi_spacing_extra" />
+    <com.zomato.ui.atomiclib.atom.ZTextView
+        android:gravity="center"
+        android:id="@id/popup_title"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/sushi_spacing_extra"
+        android:layout_marginStart="@dimen/sushi_spacing_extra"
+        android:layout_marginEnd="@dimen/sushi_spacing_extra" />
+    <com.zomato.chatsdk.chatuikit.molecules.FileUploadProgressView
+        android:id="@id/file_progress_view"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="@dimen/sushi_spacing_extra"
+        android:layout_marginTop="@dimen/sushi_spacing_extra"
+        android:layout_marginRight="@dimen/sushi_spacing_extra"
+        android:layout_marginBottom="@dimen/sushi_spacing_macro"
+        android:layout_marginHorizontal="@dimen/sushi_spacing_extra" />
+    <FrameLayout
+        android:layout_gravity="center"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/sushi_spacing_extra"
+        android:layout_weight="1.0"
+        android:layout_marginStart="@dimen/sushi_spacing_extra"
+        android:layout_marginEnd="@dimen/sushi_spacing_extra">
+        <com.zomato.ui.atomiclib.atom.ZButton
+            android:textColor="@color/sushi_red_500"
+            android:id="@id/positive_button"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            app:buttonDimension="large"
+            app:buttonType="text" />
+        <ProgressBar
+            android:layout_gravity="center"
+            android:id="@id/progress_bar"
+            android:padding="@dimen/sushi_spacing_base"
+            android:visibility="gone"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:indeterminate="true"
+            android:indeterminateTint="@color/sushi_white"
+            android:indeterminateTintMode="src_atop"
+            style="?android:progressBarStyleSmall" />
+    </FrameLayout>
+    <com.zomato.ui.atomiclib.atom.ZButton
+        android:textColor="@color/sushi_red_500"
+        android:layout_gravity="center"
+        android:id="@id/neutral_button"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/sushi_spacing_extra"
+        android:layout_weight="1.0"
+        android:layout_marginStart="@dimen/sushi_spacing_extra"
+        android:layout_marginEnd="@dimen/sushi_spacing_extra"
+        app:buttonDimension="large"
+        app:buttonType="text" />
+</LinearLayout>

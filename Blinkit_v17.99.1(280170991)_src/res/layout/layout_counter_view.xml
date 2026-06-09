@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+    <com.zomato.ui.atomiclib.atom.ZTextView
+        android:gravity="end|center"
+        android:id="@id/second_digit"
+        android:layout_width="@dimen/dimen_10"
+        android:layout_height="@dimen/size_25"
+        android:layout_marginStart="@dimen/sushi_spacing_nano"
+        app:layout_constraintBottom_toBottomOf="@id/first_digit"
+        app:layout_constraintEnd_toStartOf="@id/first_digit"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintHorizontal_chainStyle="packed"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="@id/first_digit" />
+    <com.zomato.ui.atomiclib.atom.ZTextView
+        android:gravity="start|center"
+        android:id="@id/first_digit"
+        android:layout_width="@dimen/dimen_10"
+        android:layout_height="@dimen/size_25"
+        android:layout_marginStart="@dimen/sushi_spacing_micro"
+        android:layout_marginEnd="@dimen/sushi_spacing_nano"
+        app:layout_constraintBottom_toTopOf="@id/subtext"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toEndOf="@id/second_digit"
+        app:layout_constraintTop_toTopOf="parent" />
+    <com.zomato.ui.atomiclib.atom.ZTextView
+        android:id="@id/subtext"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/sushi_spacing_nano"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/first_digit" />
+</androidx.constraintlayout.widget.ConstraintLayout>

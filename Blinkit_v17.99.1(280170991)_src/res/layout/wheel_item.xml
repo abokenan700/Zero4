@@ -1,0 +1,74 @@
+<?xml version="1.0" encoding="utf-8"?>
+<merge
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+    <com.blinkit.quickdelivery.ui.screens.stories.spinwheel.views.ClippedImageView
+        android:id="@id/bg_image"
+        android:layout_width="0.0dip"
+        android:layout_height="0.0dip"
+        android:scaleType="centerCrop"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintDimensionRatio="1"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.0" />
+    <androidx.constraintlayout.widget.Guideline
+        android:orientation="vertical"
+        android:id="@id/start_guideline"
+        android:layout_width="0.0dip"
+        android:layout_height="0.0dip"
+        app:layout_constraintGuide_percent="0.145" />
+    <androidx.constraintlayout.widget.Guideline
+        android:orientation="vertical"
+        android:id="@id/end_guideline"
+        android:layout_width="0.0dip"
+        android:layout_height="0.0dip"
+        app:layout_constraintGuide_percent="0.85" />
+    <androidx.constraintlayout.widget.Guideline
+        android:orientation="horizontal"
+        android:id="@id/top_guideline"
+        android:layout_width="0.0dip"
+        android:layout_height="0.0dip"
+        app:layout_constraintGuide_percent="0.05" />
+    <androidx.constraintlayout.widget.Guideline
+        android:orientation="horizontal"
+        android:id="@id/bottom_guideline"
+        android:layout_width="0.0dip"
+        android:layout_height="0.0dip"
+        app:layout_constraintGuide_percent="0.375" />
+    <com.blinkit.blink.elements.ui.atoms.text.BlinkitTextView
+        android:textColor="@color/white"
+        android:id="@id/title"
+        android:padding="@dimen/qd_padding_2"
+        android:layout_width="0.0dip"
+        android:layout_height="wrap_content"
+        android:textAlignment="center"
+        app:layout_constraintBottom_toTopOf="@id/subtitle"
+        app:layout_constraintEnd_toEndOf="@id/end_guideline"
+        app:layout_constraintStart_toStartOf="@id/start_guideline"
+        app:layout_constraintTop_toTopOf="@id/top_guideline"
+        app:layout_constraintVertical_bias="0.0"
+        app:layout_constraintVertical_chainStyle="packed" />
+    <com.blinkit.blink.elements.ui.atoms.text.BlinkitTextView
+        android:textColor="@color/white"
+        android:id="@id/subtitle"
+        android:layout_width="0.0dip"
+        android:layout_height="wrap_content"
+        android:textAlignment="center"
+        app:layout_constraintBottom_toTopOf="@id/logo_image"
+        app:layout_constraintEnd_toEndOf="@id/end_guideline"
+        app:layout_constraintStart_toStartOf="@id/start_guideline"
+        app:layout_constraintTop_toBottomOf="@id/title" />
+    <com.blinkit.commons.ui.ui.customviews.BShapeableImageView
+        android:id="@id/logo_image"
+        android:layout_width="50.0dip"
+        android:layout_height="0.0dip"
+        app:layout_constraintBottom_toBottomOf="@id/bottom_guideline"
+        app:layout_constraintDimensionRatio="1"
+        app:layout_constraintEnd_toEndOf="@id/end_guideline"
+        app:layout_constraintStart_toStartOf="@id/start_guideline"
+        app:layout_constraintVertical_bias="1.0" />
+</merge>

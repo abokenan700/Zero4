@@ -1,0 +1,182 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout
+    android:id="@id/container"
+    android:background="@color/color_black"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+    <ProgressBar
+        android:layout_gravity="center"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:translationZ="@dimen/sushi_spacing_nano_negative"
+        android:indeterminateTint="@color/sushi_white"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        style="?android:progressBarStyleSmall" />
+    <com.zomato.ui.atomiclib.atom.ZRoundedImageView
+        android:id="@id/bgImage"
+        android:layout_width="0.0dip"
+        android:layout_height="0.0dip"
+        android:scaleType="fitCenter"
+        android:adjustViewBounds="true"
+        app:layout_constraintBottom_toTopOf="@id/bottomContainer"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+    <androidx.media3.ui.PlayerView
+        android:id="@id/playerView"
+        android:visibility="gone"
+        android:layout_width="0.0dip"
+        android:layout_height="0.0dip"
+        android:translationZ="@dimen/sushi_spacing_pico_negative"
+        app:layout_constraintBottom_toTopOf="@id/bottomContainer"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:resize_mode="zoom"
+        app:surface_type="texture_view">
+        <ProgressBar
+            android:layout_gravity="center"
+            android:id="@id/progress_bar"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:indeterminateTint="@color/sushi_white"
+            style="?android:progressBarStyleSmall" />
+    </androidx.media3.ui.PlayerView>
+    <FrameLayout
+        android:id="@id/stickerContainer"
+        android:layout_width="0.0dip"
+        android:layout_height="0.0dip"
+        app:layout_constraintDimensionRatio="w,16:9"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+    <View
+        android:id="@id/topGradientContainer"
+        android:background="@drawable/bg_story_top"
+        android:layout_width="fill_parent"
+        android:layout_height="0.0dip"
+        app:layout_constraintBottom_toBottomOf="@id/topContainer"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+    <View
+        android:id="@id/bottomGradientContainer"
+        android:background="@drawable/bg_story_bottom"
+        android:layout_width="fill_parent"
+        android:layout_height="0.0dip"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="@id/bookmark_container" />
+    <View
+        android:id="@id/centerView"
+        android:layout_width="0.0dip"
+        android:layout_height="0.0dip"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/progressContainer" />
+    <LinearLayout
+        android:orientation="horizontal"
+        android:id="@id/progressContainer"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/sushi_spacing_loose"
+        android:layout_marginStart="@dimen/sushi_spacing_macro"
+        android:layout_marginEnd="@dimen/sushi_spacing_macro"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+    <include
+        android:id="@id/topContainer"
+        android:layout_width="0.0dip"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/sushi_spacing_macro"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/progressContainer"
+        layout="@layout/layout_top_info_story_container" />
+    <LinearLayout
+        android:gravity="center"
+        android:orientation="vertical"
+        android:id="@id/bottomContainer"
+        android:paddingTop="@dimen/sushi_spacing_micro"
+        android:paddingBottom="@dimen/dimen_12"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent">
+        <com.zomato.ui.atomiclib.atom.ZIconFontTextView
+            android:textSize="@dimen/size_24"
+            android:textColor="@color/sushi_white"
+            android:id="@id/bottomIcon"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/icon_font_chevron_up_large" />
+        <com.zomato.ui.atomiclib.atom.ZTextView
+            android:textColor="@color/sushi_white"
+            android:gravity="center"
+            android:id="@id/bottomButton"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textAlignment="center"
+            app:textViewType="MEDIUM_500" />
+    </LinearLayout>
+    <FrameLayout
+        android:layout_gravity="center"
+        android:id="@id/bookmark_container"
+        android:paddingLeft="@dimen/size_3_and_half"
+        android:paddingTop="@dimen/dimen_two_point_two"
+        android:paddingRight="@dimen/size_3_and_half"
+        android:layout_width="@dimen/size_38"
+        android:layout_height="@dimen/size_38"
+        android:layout_marginBottom="@dimen/dimen_18"
+        android:layout_marginEnd="@dimen/dimen_18"
+        android:translationZ="@dimen/sushi_spacing_nano"
+        android:paddingHorizontal="@dimen/size_3_and_half"
+        app:layout_constraintBottom_toTopOf="@id/bottom_right_share"
+        app:layout_constraintEnd_toEndOf="parent">
+        <com.zomato.ui.atomiclib.atom.ZButton
+            android:textSize="@dimen/size18"
+            android:textColor="@color/sushi_white"
+            android:layout_gravity="center"
+            android:id="@id/bottom_right_bookmark"
+            android:padding="@dimen/sushi_spacing_femto"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_margin="@dimen/sushi_spacing_femto"
+            app:buttonDimension="medium"
+            app:buttonType="text" />
+    </FrameLayout>
+    <com.zomato.ui.atomiclib.atom.ZIconFontTextView
+        android:textSize="@dimen/size18"
+        android:textColor="@color/sushi_white"
+        android:gravity="center"
+        android:id="@id/bottom_right_share"
+        android:layout_width="@dimen/size_38"
+        android:layout_height="@dimen/size_38"
+        android:layout_marginBottom="@dimen/size_48"
+        android:layout_marginEnd="@dimen/size18"
+        android:elevation="@dimen/dimen_2"
+        app:layout_constraintBottom_toTopOf="@id/bottomContainer"
+        app:layout_constraintEnd_toEndOf="parent" />
+    <com.zomato.ui.atomiclib.atom.ZIconFontTextView
+        android:textColor="@color/sushi_white"
+        android:gravity="center"
+        android:id="@id/volumeIcon"
+        android:visibility="gone"
+        android:layout_width="@dimen/size_48"
+        android:layout_height="@dimen/size_48"
+        android:text="@string/iconfont_video_sound_mute"
+        android:scaleX="1.5"
+        android:scaleY="1.5"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+</androidx.constraintlayout.widget.ConstraintLayout>

@@ -1,0 +1,136 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout
+    android:orientation="horizontal"
+    android:id="@id/ll_container"
+    android:layout_width="fill_parent"
+    android:layout_height="wrap_content"
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:id="@id/ll_main_container"
+        android:paddingTop="@dimen/sushi_spacing_page_side"
+        android:paddingBottom="@dimen/sushi_spacing_page_side"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:paddingStart="@dimen/qd_padding_8"
+        android:paddingEnd="@dimen/sushi_spacing_base"
+        android:layout_marginStart="@dimen/sushi_spacing_base"
+        android:layout_marginEnd="@dimen/sushi_spacing_base"
+        android:paddingVertical="@dimen/sushi_spacing_page_side"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
+        <RadioButton
+            android:layout_gravity="center_vertical"
+            android:id="@id/radio_button"
+            android:background="@android:color/transparent"
+            android:clickable="false"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:buttonTint="?accentColor"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+        <CheckBox
+            android:layout_gravity="center_vertical"
+            android:id="@id/check_box"
+            android:background="@android:color/transparent"
+            android:visibility="gone"
+            android:clickable="false"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:buttonTint="?accentColor"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintStart_toEndOf="@id/radio_button"
+            app:layout_constraintTop_toTopOf="parent" />
+        <com.zomato.ui.atomiclib.atom.ZTextView
+            android:layout_gravity="center_vertical"
+            android:id="@id/tv_title"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="@dimen/qd_margin_8"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintStart_toEndOf="@id/check_box"
+            app:layout_constraintTop_toTopOf="parent" />
+        <View
+            android:layout_gravity="center_vertical"
+            android:id="@id/dot_seperator"
+            android:background="@drawable/qd_cross_icon"
+            android:layout_width="@dimen/size_6"
+            android:layout_height="@dimen/size_6"
+            android:layout_marginStart="@dimen/qd_margin_8"
+            android:backgroundTint="@color/sushi_grey_600"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintStart_toEndOf="@id/tv_title"
+            app:layout_constraintTop_toTopOf="parent" />
+        <com.zomato.ui.atomiclib.atom.ZTextView
+            android:layout_gravity="center_vertical"
+            android:id="@id/tv_price"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="@dimen/qd_margin_8"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintStart_toEndOf="@id/dot_seperator"
+            app:layout_constraintTop_toTopOf="parent" />
+        <com.zomato.ui.atomiclib.atom.ZTextView
+            android:layout_gravity="center_vertical"
+            android:id="@id/tv_strike_through_price"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="@dimen/qd_margin_8"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintStart_toEndOf="@id/tv_price"
+            app:layout_constraintTop_toTopOf="parent" />
+        <com.zomato.ui.atomiclib.atom.ZTextView
+            android:textStyle="bold"
+            android:textColor="@color/sushi_white"
+            android:layout_gravity="center_vertical"
+            android:id="@id/tv_offer_tag"
+            android:padding="@dimen/qd_padding_3"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="@dimen/qd_margin_8"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintStart_toEndOf="@id/tv_strike_through_price"
+            app:layout_constraintTop_toTopOf="parent" />
+        <com.zomato.ui.atomiclib.atom.ZTextView
+            android:textStyle="bold"
+            android:textColor="@color/sushi_white"
+            android:layout_gravity="center_vertical"
+            android:id="@id/tv_tag"
+            android:padding="@dimen/qd_padding_3"
+            android:visibility="gone"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="@dimen/qd_margin_8"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintStart_toEndOf="@id/tv_offer_tag"
+            app:layout_constraintTop_toTopOf="parent" />
+    </androidx.constraintlayout.widget.ConstraintLayout>
+    <LinearLayout
+        android:orientation="vertical"
+        android:id="@id/ll_tag_top"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginEnd="-4.0dip"
+        app:layout_constraintEnd_toEndOf="@id/ll_main_container"
+        app:layout_constraintTop_toTopOf="parent">
+        <com.zomato.ui.atomiclib.atom.ZTextView
+            android:textColor="@color/sushi_white"
+            android:ellipsize="end"
+            android:id="@id/image_tag_text"
+            android:background="@drawable/bg_tag_theme_600"
+            android:padding="@dimen/sushi_spacing_nano"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:lines="1"
+            app:textViewType="MEDIUM_100" />
+        <View
+            android:layout_gravity="end"
+            android:id="@id/tag_triangle_view"
+            android:background="@drawable/ic_tag_triangle"
+            android:layout_width="@dimen/sushi_spacing_mini"
+            android:layout_height="@dimen/sushi_spacing_micro"
+            android:backgroundTint="?themeColor600" />
+    </LinearLayout>
+</androidx.constraintlayout.widget.ConstraintLayout>

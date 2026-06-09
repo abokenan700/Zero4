@@ -1,0 +1,71 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout
+    android:id="@id/cl_container"
+    android:layout_width="fill_parent"
+    android:layout_height="wrap_content"
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+    <com.zomato.ui.atomiclib.atom.ZTextView
+        android:ellipsize="end"
+        android:id="@id/floating_label"
+        android:background="?attr_7f0403d7"
+        android:paddingLeft="@dimen/qd_padding_4"
+        android:paddingRight="@dimen/qd_padding_4"
+        android:visibility="gone"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:maxLines="1"
+        android:layout_marginStart="@dimen/sushi_spacing_base"
+        android:paddingHorizontal="@dimen/qd_padding_4"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+    <com.zomato.ui.atomiclib.atom.ZTextView
+        android:textColor="?attr_7f040466"
+        android:ellipsize="end"
+        android:id="@id/tv_title"
+        android:layout_width="0.0dip"
+        android:layout_height="wrap_content"
+        android:maxLines="1"
+        android:layout_marginEnd="@dimen/sushi_spacing_extra"
+        app:layout_constraintBottom_toTopOf="@id/tv_subtitle"
+        app:layout_constraintEnd_toStartOf="@id/right_button"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:textViewType="SEMIBOLD_300" />
+    <com.zomato.ui.atomiclib.atom.ZTextView
+        android:textColor="?attr_7f04047c"
+        android:ellipsize="end"
+        android:id="@id/tv_subtitle"
+        android:layout_width="0.0dip"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/sushi_spacing_micro"
+        android:maxLines="2"
+        android:layout_marginEnd="@dimen/sushi_spacing_extra"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toStartOf="@id/right_button"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/tv_title"
+        app:textViewType="REGULAR_200" />
+    <com.zomato.ui.atomiclib.atom.ZButton
+        android:layout_gravity="center_vertical"
+        android:id="@id/right_button"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginEnd="@dimen/sushi_spacing_extra"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toStartOf="@id/right_icon"
+        app:layout_constraintTop_toTopOf="parent"
+        app:strokeColor="?attr_7f0402b5"
+        app:strokeWidth="@dimen/qd_margin_0.5" />
+    <com.zomato.ui.atomiclib.atom.ZIconFontTextView
+        android:textSize="@dimen/font_icon_size_18"
+        android:gravity="center"
+        android:layout_gravity="center_vertical"
+        android:id="@id/right_icon"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:iconfont_enable_feedback="true"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+</androidx.constraintlayout.widget.ConstraintLayout>

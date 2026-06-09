@@ -1,0 +1,126 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout
+    android:orientation="vertical"
+    android:id="@id/message_input_snippet_container"
+    android:layout_width="fill_parent"
+    android:layout_height="wrap_content"
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+    <include
+        android:id="@id/typing_container"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        app:layout_constraintBottom_toTopOf="@id/participants_container"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        layout="@layout/typing_container" />
+    <com.zomato.ui.atomiclib.atom.staticviews.StaticTextView
+        android:gravity="center"
+        android:id="@id/participants_container"
+        android:padding="@dimen/sushi_spacing_base"
+        android:visibility="gone"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        app:layout_constraintBottom_toTopOf="@id/reply_container"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_goneMarginBottom="@dimen/sushi_spacing_base" />
+    <include
+        android:id="@id/reply_container"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        app:layout_constraintBottom_toTopOf="@id/message_input_separator"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_goneMarginBottom="@dimen/sushi_spacing_micro"
+        layout="@layout/reply_container" />
+    <com.zomato.ui.atomiclib.atom.ZSeparator
+        android:id="@id/message_input_separator"
+        android:layout_width="fill_parent"
+        android:layout_height="@dimen/sushi_spacing_pico"
+        android:layout_marginBottom="@dimen/sushi_spacing_base"
+        app:layout_constraintBottom_toTopOf="@id/reply_button"
+        app:zseparator_color="@color/sushi_grey_200" />
+    <com.zomato.ui.atomiclib.atom.ZButton
+        android:id="@id/reply_button"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="@dimen/sushi_spacing_base"
+        android:layout_marginRight="@dimen/sushi_spacing_base"
+        android:layout_marginBottom="@dimen/sushi_spacing_base"
+        android:text="@string/chat_sdk_reply"
+        app:layout_constraintBottom_toTopOf="@id/input_text_area"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_goneMarginBottom="@dimen/sushi_spacing_base" />
+    <LinearLayout
+        android:orientation="vertical"
+        android:id="@id/input_text_area"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="@dimen/sushi_spacing_macro"
+        android:layout_marginStart="@dimen/sushi_spacing_macro"
+        android:layout_marginEnd="@dimen/sushi_spacing_macro"
+        app:layout_constraintBottom_toTopOf="@id/preview_layout"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent">
+        <com.zomato.chatsdk.chatuikit.atoms.ChatInputTextField
+            android:id="@id/input_text_field"
+            android:paddingTop="@dimen/sushi_spacing_nano"
+            android:paddingBottom="@dimen/sushi_spacing_nano"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:inputType="textCapSentences|textMultiLine"
+            android:paddingStart="@dimen/sushi_spacing_micro"
+            android:paddingEnd="@dimen/sushi_spacing_micro" />
+        <com.zomato.ui.atomiclib.atom.staticviews.StaticTextView
+            android:layout_gravity="end"
+            android:id="@id/char_count"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" />
+    </LinearLayout>
+    <com.zomato.chatsdk.chatuikit.molecules.ChatMediaInputField
+        android:orientation="horizontal"
+        android:id="@id/preview_layout"
+        android:paddingTop="@dimen/sushi_spacing_nano"
+        android:paddingBottom="@dimen/sushi_spacing_nano"
+        android:visibility="gone"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="@dimen/sushi_spacing_macro"
+        android:paddingStart="@dimen/sushi_spacing_micro"
+        android:paddingEnd="@dimen/sushi_spacing_micro"
+        android:layout_marginStart="@dimen/sushi_spacing_macro"
+        android:layout_marginEnd="@dimen/sushi_spacing_macro"
+        app:layout_constraintBottom_toTopOf="@id/chat_input_attachment_view"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent" />
+    <com.zomato.chatsdk.chatuikit.snippets.ChatInputAttachmentView
+        android:id="@id/chat_input_attachment_view"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="@dimen/dimen_10"
+        android:layout_marginStart="@dimen/sushi_spacing_macro"
+        android:layout_marginEnd="@dimen/sushi_spacing_macro"
+        app:layout_constraintBottom_toTopOf="@id/input_bottom_text"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent" />
+    <com.zomato.ui.atomiclib.atom.staticviews.StaticTextView
+        android:id="@id/input_bottom_text"
+        android:paddingLeft="@dimen/sushi_spacing_extra"
+        android:paddingRight="@dimen/sushi_spacing_extra"
+        android:paddingBottom="@dimen/sushi_spacing_micro"
+        android:visibility="gone"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:paddingHorizontal="@dimen/sushi_spacing_extra"
+        app:layout_constraintBottom_toTopOf="@id/bottom_guideline"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent" />
+    <androidx.constraintlayout.widget.Guideline
+        android:orientation="horizontal"
+        android:id="@id/bottom_guideline"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:layout_constraintGuide_end="@dimen/sushi_spacing_micro" />
+</androidx.constraintlayout.widget.ConstraintLayout>

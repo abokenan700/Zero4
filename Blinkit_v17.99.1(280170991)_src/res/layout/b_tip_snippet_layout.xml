@@ -1,0 +1,64 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout
+    android:id="@id/root"
+    android:paddingBottom="@dimen/sushi_spacing_macro"
+    android:layout_width="fill_parent"
+    android:layout_height="wrap_content"
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+    <com.blinkit.commons.ui.ui.customviews.recyclerview.BContainer
+        android:id="@id/pills_recycler_view"
+        android:clipChildren="false"
+        android:clipToPadding="false"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:nestedScrollingEnabled="false"
+        app:layout_behavior="@string/appbar_scrolling_view_behavior"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+    <com.blinkit.blink.elements.ui.atoms.text.BlinkitTextView
+        android:textColor="?themeColor500"
+        android:id="@id/bottom_right_button"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginEnd="@dimen/sushi_spacing_macro"
+        app:layout_constraintBottom_toBottomOf="@id/checkbox"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toTopOf="@id/checkbox" />
+    <Space
+        android:id="@id/space"
+        android:layout_width="fill_parent"
+        android:layout_height="@dimen/sushi_spacing_micro"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/pills_recycler_view" />
+    <androidx.constraintlayout.helper.widget.Layer
+        android:id="@id/checkbox_content"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:constraint_referenced_ids="checkbox, checkbox_title"
+        app:layout_constraintStart_toStartOf="@id/checkbox"
+        app:layout_constraintTop_toTopOf="@id/checkbox" />
+    <CheckBox
+        android:id="@id/checkbox"
+        android:padding="@dimen/dimen_0"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/sushi_spacing_mini"
+        android:layout_marginBottom="@dimen/sushi_spacing_micro"
+        android:layout_marginStart="@dimen/sushi_spacing_macro"
+        app:buttonTint="@color/checkbox_button_tint"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/space" />
+    <com.blinkit.blink.elements.ui.atoms.text.BlinkitTextView
+        android:textColor="@color/sushi_grey_600"
+        android:id="@id/checkbox_title"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:includeFontPadding="false"
+        app:layout_constraintBottom_toBottomOf="@id/checkbox"
+        app:layout_constraintStart_toEndOf="@id/checkbox"
+        app:layout_constraintTop_toTopOf="@id/checkbox"
+        app:textViewType="REGULAR_200" />
+</androidx.constraintlayout.widget.ConstraintLayout>

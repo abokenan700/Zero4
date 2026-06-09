@@ -1,0 +1,75 @@
+<?xml version="1.0" encoding="utf-8"?>
+<merge
+    android:id="@id/onboarding_input_type_view"
+    android:layout_width="fill_parent"
+    android:layout_height="wrap_content"
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+    <com.zomato.ui.atomiclib.atom.staticviews.StaticTextView
+        android:gravity="center"
+        android:id="@id/title"
+        android:layout_width="0.0dip"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="@dimen/dimen_12"
+        android:layout_marginTop="@dimen/dimen_12"
+        android:layout_marginRight="@dimen/dimen_12"
+        android:textAlignment="center"
+        android:layout_marginHorizontal="@dimen/dimen_12"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+    <com.zomato.ui.atomiclib.atom.staticviews.StaticTextView
+        android:gravity="center"
+        android:id="@id/subtitle"
+        android:layout_width="0.0dip"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="@dimen/dimen_12"
+        android:layout_marginTop="@dimen/dimen_12"
+        android:layout_marginRight="@dimen/dimen_12"
+        android:textAlignment="center"
+        android:layout_marginHorizontal="@dimen/dimen_12"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/title" />
+    <com.zomato.ui.lib.organisms.snippets.textbox.TextBoxSnippet
+        android:id="@id/layout_input_text_box_snippet"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="@dimen/dimen_12"
+        android:layout_marginTop="@dimen/dimen_16"
+        android:layout_marginRight="@dimen/dimen_12"
+        android:layout_marginBottom="@dimen/dimen_16"
+        android:layout_marginHorizontal="@dimen/dimen_12"
+        android:layout_marginVertical="@dimen/dimen_16"
+        app:layout_constraintBottom_toTopOf="@id/layout_input_checkbox_container"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/subtitle" />
+    <LinearLayout
+        android:orientation="vertical"
+        android:id="@id/layout_input_checkbox_container"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/dimen_2"
+        android:layout_marginBottom="@dimen/dimen_2"
+        android:layout_marginVertical="@dimen/dimen_2"
+        app:layout_constraintBottom_toTopOf="@id/bottom_button"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/layout_input_text_box_snippet" />
+    <com.zomato.ui.atomiclib.atom.ZButton
+        android:id="@id/bottom_button"
+        android:padding="@dimen/sushi_spacing_extra"
+        android:visibility="gone"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="@dimen/dimen_12"
+        android:layout_marginTop="@dimen/dimen_16"
+        android:layout_marginRight="@dimen/dimen_12"
+        android:layout_marginHorizontal="@dimen/dimen_12"
+        app:buttonType="solid"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/layout_input_checkbox_container"
+        app:textViewType="MEDIUM_500" />
+</merge>

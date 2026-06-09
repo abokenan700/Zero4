@@ -1,0 +1,59 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    android:orientation="vertical"
+    android:background="?attr_7f04017d"
+    android:paddingTop="@dimen/size_25"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+    <include
+        android:layout_width="fill_parent"
+        android:layout_height="?actionBarSize"
+        layout="@layout/qd_shimmer_cart_toolbar" />
+    <LinearLayout
+        android:orientation="vertical"
+        android:id="@id/cart_shimmer_layout"
+        android:background="?attr_7f04017d"
+        android:paddingTop="@dimen/qd_margin_10"
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent">
+        <com.zomato.ui.atomiclib.molecules.ShimmerChildView
+            android:layout_width="@dimen/qd_shimmer_126"
+            android:layout_height="@dimen/size_24"
+            android:layout_marginStart="@dimen/qd_margin_12"
+            app:shimmer_corner_radius="@dimen/radius_2dp" />
+        <include
+            android:id="@id/cart_item_1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/qd_margin_20"
+            layout="@layout/qd_cart_item_shimmer" />
+        <include
+            android:id="@id/cart_item_2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/qd_margin_24"
+            layout="@layout/qd_cart_item_shimmer" />
+        <include
+            android:id="@id/cart_item_3"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/qd_margin_24"
+            layout="@layout/qd_cart_item_shimmer" />
+        <include
+            android:id="@id/cart_item_4"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/qd_margin_24"
+            layout="@layout/qd_cart_item_shimmer" />
+        <View
+            android:background="?attr_7f0403d1"
+            android:layout_width="fill_parent"
+            android:layout_height="@dimen/qd_shimmer_2"
+            android:layout_marginLeft="@dimen/qd_margin_12"
+            android:layout_marginTop="@dimen/qd_margin_28"
+            android:layout_marginRight="@dimen/qd_margin_12"
+            android:layout_marginHorizontal="@dimen/qd_margin_12" />
+    </LinearLayout>
+</LinearLayout>

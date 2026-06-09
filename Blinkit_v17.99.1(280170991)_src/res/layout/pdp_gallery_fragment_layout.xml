@@ -1,0 +1,95 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout
+    android:id="@id/root"
+    android:background="?attr_7f04017d"
+    android:focusable="true"
+    android:clickable="true"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+    <androidx.constraintlayout.widget.Guideline
+        android:orientation="horizontal"
+        android:id="@id/vp_top_guideline"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:layout_constraintGuide_percent="0.15" />
+    <com.zomato.ui.atomiclib.atom.ZIconFontTextView
+        android:textSize="@dimen/sushi_textsize_800"
+        android:textColor="@color/color_white"
+        android:layout_gravity="center_horizontal"
+        android:id="@id/cross_button"
+        android:background="@drawable/qd_cross_icon"
+        android:paddingLeft="@dimen/sushi_spacing_macro"
+        android:paddingTop="@dimen/size_8"
+        android:paddingRight="@dimen/sushi_spacing_macro"
+        android:paddingBottom="@dimen/size_8"
+        android:visibility="gone"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_margin="@dimen/sushi_spacing_extra"
+        android:text="@string/icon_font_cross"
+        android:translationZ="@dimen/qd_margin_20"
+        android:paddingHorizontal="@dimen/sushi_spacing_macro"
+        android:paddingVertical="@dimen/size_8"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+    <androidx.viewpager2.widget.ViewPager2
+        android:id="@id/view_pager"
+        android:layout_width="fill_parent"
+        android:layout_height="0.0dip"
+        app:layout_constraintBottom_toTopOf="@id/vp_bottom_guideline"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/vp_top_guideline"
+        app:layout_constraintVertical_bias="0.0" />
+    <androidx.constraintlayout.widget.Guideline
+        android:orientation="horizontal"
+        android:id="@id/vp_bottom_guideline"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:layout_constraintGuide_percent="0.65" />
+    <androidx.appcompat.widget.AppCompatImageView
+        android:id="@id/transition_view"
+        android:layout_width="fill_parent"
+        android:layout_height="0.0dip"
+        android:scaleType="fitCenter"
+        android:transitionName="@string/shared_element_top_image_transition_name"
+        app:layout_constraintBottom_toTopOf="@id/vp_bottom_guideline"
+        app:layout_constraintTop_toBottomOf="@id/vp_top_guideline"
+        app:zoom_autoCenter="true"
+        app:zoom_minScale="0.6"
+        app:zoom_zoomable="false" />
+    <androidx.recyclerview.widget.RecyclerView
+        android:orientation="horizontal"
+        android:id="@id/recycler_view"
+        android:clipToPadding="false"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/dimen_10"
+        app:layout_constraintBottom_toTopOf="@id/separator"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/vp_bottom_guideline"
+        app:layout_constraintVertical_bias="0.0" />
+    <View
+        android:id="@id/separator"
+        android:background="@color/sushi_grey_200"
+        android:layout_width="fill_parent"
+        android:layout_height="@dimen/dimen_point_five"
+        app:layout_constraintBottom_toTopOf="@id/bottom_button"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent" />
+    <com.blinkit.commons.ui.ui.customviews.viewstub.ButtonWithLoaderViewStub
+        android:id="@id/bottom_button"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent" />
+    <androidx.constraintlayout.widget.Group
+        android:id="@id/group"
+        android:visibility="gone"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:constraint_referenced_ids="separator,bottom_button" />
+</androidx.constraintlayout.widget.ConstraintLayout>

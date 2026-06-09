@@ -1,0 +1,102 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout
+    android:orientation="vertical"
+    android:id="@id/cl_container"
+    android:padding="@dimen/sushi_spacing_base"
+    android:layout_width="fill_parent"
+    android:layout_height="wrap_content"
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+    <com.zomato.ui.atomiclib.atom.ZTextView
+        android:id="@id/title"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="@dimen/sushi_spacing_macro"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:id="@id/et_container"
+        android:paddingTop="@dimen/sushi_spacing_macro"
+        android:paddingBottom="@dimen/sushi_spacing_macro"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:paddingStart="@dimen/sushi_spacing_base"
+        android:paddingEnd="@dimen/sushi_spacing_macro"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/title">
+        <com.zomato.android.zcommons.legacyViews.editText.ZTextInputEditText
+            android:textColorHint="?attr_7f04047c"
+            android:id="@id/edit_text"
+            android:paddingBottom="0.0dip"
+            android:focusableInTouchMode="true"
+            android:scrollbars="vertical"
+            android:layout_width="0.0dip"
+            android:layout_height="0.0dip"
+            android:inputType="textMultiLine"
+            android:imeOptions="actionDone"
+            android:textIsSelectable="true"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toStartOf="@id/right_button"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+        <View
+            android:id="@id/shadow_top"
+            android:background="@drawable/bg_white_gradient"
+            android:visibility="gone"
+            android:layout_width="0.0dip"
+            android:layout_height="@dimen/qd_margin_16"
+            android:rotation="180.0"
+            app:layout_constraintEnd_toEndOf="@id/edit_text"
+            app:layout_constraintStart_toStartOf="@id/edit_text"
+            app:layout_constraintTop_toTopOf="@id/edit_text" />
+        <View
+            android:id="@id/shadow_bottom"
+            android:background="@drawable/bg_white_gradient"
+            android:visibility="gone"
+            android:layout_width="0.0dip"
+            android:layout_height="@dimen/qd_margin_16"
+            android:layout_marginBottom="@dimen/qd_padding_6"
+            app:layout_constraintBottom_toBottomOf="@id/edit_text"
+            app:layout_constraintEnd_toEndOf="@id/edit_text"
+            app:layout_constraintStart_toStartOf="@id/edit_text" />
+        <com.zomato.ui.atomiclib.atom.ZButton
+            android:id="@id/right_button"
+            android:visibility="gone"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            app:buttonDimension="medium"
+            app:layout_constraintBottom_toBottomOf="@id/edit_text"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintTop_toTopOf="@id/edit_text" />
+    </androidx.constraintlayout.widget.ConstraintLayout>
+    <com.zomato.ui.atomiclib.atom.ZTextView
+        android:textColor="@color/sushi_grey_800"
+        android:id="@id/tv_counter"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:layout_constraintBottom_toBottomOf="@id/subtitle"
+        app:layout_constraintRight_toRightOf="@id/et_container"
+        app:layout_constraintTop_toBottomOf="@id/et_container"
+        app:textViewType="REGULAR_50" />
+    <com.zomato.ui.atomiclib.atom.ZTextView
+        android:id="@id/subtitle"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/sushi_spacing_macro"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/tv_counter" />
+    <com.zomato.ui.atomiclib.atom.ZTextView
+        android:textColor="@color/sushi_red_500"
+        android:id="@id/error_text"
+        android:visibility="gone"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/sushi_spacing_macro"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/subtitle" />
+</androidx.constraintlayout.widget.ConstraintLayout>

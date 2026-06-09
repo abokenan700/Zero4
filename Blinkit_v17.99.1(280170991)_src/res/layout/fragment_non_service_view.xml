@@ -1,0 +1,75 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout
+    android:background="?attr_7f0403d7"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+    <ImageView
+        android:id="@id/no_location_image"
+        android:layout_width="fill_parent"
+        android:layout_height="0.0dip"
+        android:layout_marginTop="@dimen/size_124"
+        android:scaleType="centerInside"
+        android:contentDescription="@string/nothing_here"
+        app:layout_constraintBottom_toTopOf="@id/tv_not_available_text"
+        app:layout_constraintDimensionRatio="4:3"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+    <com.zomato.ui.atomiclib.atom.ZTextView
+        android:textColor="?attr_7f040466"
+        android:id="@id/tv_not_available_text"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/margin_16"
+        android:text="@string/not_available"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/no_location_image"
+        app:textViewType="MEDIUM_500" />
+    <com.zomato.ui.atomiclib.atom.ZTextView
+        android:textColor="?attr_7f04047c"
+        android:gravity="center"
+        android:id="@id/tv_not_available_message"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/sushi_spacing_mini"
+        android:text="@string/not_available_message"
+        android:layout_marginStart="@dimen/margin_24"
+        android:layout_marginEnd="@dimen/margin_24"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/tv_not_available_text"
+        app:textViewType="REGULAR_300" />
+    <com.zomato.ui.atomiclib.atom.ZButton
+        android:id="@id/select_location"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/margin_24"
+        android:text="@string/set_location_manually"
+        android:textAllCaps="false"
+        android:fontFamily="@font/okra_regular"
+        android:layout_marginStart="@dimen/margin_24"
+        android:layout_marginEnd="@dimen/margin_24"
+        app:buttonColor="?themeColor500"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/tv_not_available_message" />
+    <com.blinkit.blink.elements.ui.atoms.text.BlinkitTextView
+        android:gravity="center"
+        android:id="@id/select_location_tv"
+        android:visibility="gone"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/margin_24"
+        android:text="@string/set_location_manually"
+        android:textAllCaps="false"
+        android:fontFamily="@font/okra_regular"
+        android:layout_marginStart="@dimen/margin_24"
+        android:layout_marginEnd="@dimen/margin_24"
+        app:buttonColor="?themeColor700"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/tv_not_available_message" />
+</androidx.constraintlayout.widget.ConstraintLayout>

@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout
+    android:id="@id/container_root"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+    <com.zomato.android.zcommons.webview.views.ZomatoWebView
+        android:id="@id/zomato_web_view"
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+    <com.zomato.android.zcommons.overlay.BaseNitroOverlay
+        android:id="@id/nitro_overlay"
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:translationZ="100.0dip"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:overlay_size_type="FULL_SCREEN" />
+</androidx.constraintlayout.widget.ConstraintLayout>

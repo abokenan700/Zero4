@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    android:orientation="vertical"
+    android:id="@id/cart_shimmer_layout"
+    android:paddingTop="@dimen/sushi_spacing_base"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    xmlns:android="http://schemas.android.com/apk/res/android">
+    <include
+        android:id="@id/cart_item_1"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/qd_margin_32"
+        layout="@layout/qd_green_cart_item_shimmer" />
+    <include
+        android:id="@id/cart_item_2"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/qd_margin_24"
+        layout="@layout/qd_green_cart_item_shimmer" />
+    <include
+        android:id="@id/cart_item_3"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/qd_margin_24"
+        layout="@layout/qd_green_cart_item_shimmer" />
+    <include
+        android:id="@id/cart_item_4"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/qd_margin_24"
+        layout="@layout/qd_green_cart_item_shimmer" />
+</LinearLayout>

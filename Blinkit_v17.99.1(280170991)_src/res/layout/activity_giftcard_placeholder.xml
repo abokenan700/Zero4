@@ -1,0 +1,54 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    android:orientation="vertical"
+    android:id="@id/root"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+    <LinearLayout
+        android:orientation="horizontal"
+        android:id="@id/header_layout"
+        android:background="?attr_7f040268"
+        android:paddingTop="@dimen/size_12"
+        android:paddingBottom="@dimen/size_12"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:paddingVertical="@dimen/size_12">
+        <com.zomato.ui.atomiclib.atom.ZIconFontTextView
+            android:textSize="@dimen/text_size_28sp"
+            android:textColor="?attr_7f04048a"
+            android:layout_gravity="start"
+            android:id="@id/toolbar_arrow_back"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/icon_font_chevron_left"
+            android:layout_weight="0.05"
+            android:layout_marginStart="@dimen/sushi_spacing_mini" />
+        <com.zomato.ui.atomiclib.atom.ZTextView
+            android:textColor="?attr_7f04048a"
+            android:layout_gravity="center_vertical"
+            android:id="@id/header_title"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Gift card Balance"
+            android:layout_weight="0.65"
+            app:textViewType="SEMIBOLD_500" />
+        <com.zomato.ui.atomiclib.atom.ZButton
+            android:gravity="end"
+            android:layout_gravity="center_vertical"
+            android:id="@id/button"
+            android:visibility="gone"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="0.3"
+            android:layout_marginEnd="@dimen/sushi_spacing_page_side"
+            app:buttonDimension="medium"
+            app:buttonType="text" />
+    </LinearLayout>
+    <FrameLayout
+        android:id="@id/fragment_container"
+        android:layout_width="fill_parent"
+        android:layout_height="0.0dip"
+        android:layout_weight="1.0" />
+</LinearLayout>

@@ -1,0 +1,60 @@
+<?xml version="1.0" encoding="utf-8"?>
+<merge
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+    <com.zomato.ui.atomiclib.atom.staticviews.StaticTextView
+        android:gravity="center"
+        android:id="@id/title"
+        android:visibility="gone"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+    <com.zomato.ui.lib.atom.ZOtpEditText
+        android:textSize="@dimen/sushi_textsize_600"
+        android:id="@id/otpEditText"
+        android:paddingLeft="@dimen/sushi_spacing_micro"
+        android:paddingRight="@dimen/sushi_spacing_micro"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/sushi_spacing_base"
+        android:maxLength="4"
+        android:inputType="numberPassword"
+        android:paddingHorizontal="@dimen/sushi_spacing_micro"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/title"
+        app:zotp_background_color="?attr_7f0403d7"
+        app:zotp_border_color="@color/sushi_grey_300"
+        app:zotp_enable_password_transformation="true"
+        app:zotp_focused_border_color="?attr_7f040475"
+        app:zotp_item_border_width="@dimen/border_stroke_width"
+        app:zotp_item_corner_radius="@dimen/corner_radius"
+        app:zotp_item_height="@dimen/size_44"
+        app:zotp_item_spacing="@dimen/sushi_spacing_extra"
+        app:zotp_item_width="@dimen/size_38" />
+    <com.zomato.ui.atomiclib.atom.staticviews.StaticTextView
+        android:gravity="center"
+        android:id="@id/subtitle"
+        android:visibility="gone"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/sushi_spacing_base"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/otpEditText" />
+    <com.zomato.ui.atomiclib.atom.ZProgressLoader
+        android:gravity="center"
+        android:id="@id/progress"
+        android:visibility="gone"
+        android:layout_width="@dimen/size_24"
+        android:layout_height="@dimen/size_24"
+        android:layout_marginTop="@dimen/sushi_spacing_base"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/subtitle"
+        app:progressLoaderColor="@color/sushi_red_500" />
+</merge>

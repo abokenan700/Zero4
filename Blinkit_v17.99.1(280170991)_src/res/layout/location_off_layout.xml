@@ -1,0 +1,56 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout
+    android:id="@id/location_permission_prompt"
+    android:background="@drawable/qd_all_rounded_white_8dp"
+    android:padding="@dimen/padding_12"
+    android:layout_width="fill_parent"
+    android:layout_height="wrap_content"
+    app:layout_constraintTop_toBottomOf="@id/search_bar"
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+    <com.zomato.ui.atomiclib.atom.ZRoundedImageView
+        android:id="@id/location_off_icon"
+        android:layout_width="@dimen/size_32"
+        android:layout_height="@dimen/size_32"
+        android:src="@drawable/qd_ic_location_off"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+    <com.zomato.ui.atomiclib.atom.ZTextView
+        android:textSize="@dimen/font_size_mini"
+        android:textColor="?attr_7f040466"
+        android:id="@id/tv_title"
+        android:layout_width="0.0dip"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="@dimen/margin_8"
+        android:layout_marginRight="@dimen/margin_8"
+        android:text="@string/location_disabled"
+        android:maxLines="2"
+        android:layout_marginHorizontal="@dimen/margin_8"
+        app:layout_constraintBottom_toTopOf="@id/tv_subtitle"
+        app:layout_constraintEnd_toStartOf="@id/button_view"
+        app:layout_constraintStart_toEndOf="@id/location_off_icon"
+        app:layout_constraintTop_toTopOf="@id/location_off_icon"
+        app:textViewType="BOLD_300" />
+    <com.zomato.ui.atomiclib.atom.ZTextView
+        android:textSize="@dimen/font_size_mini"
+        android:textColor="?attr_7f04047c"
+        android:id="@id/tv_subtitle"
+        android:layout_width="0.0dip"
+        android:layout_height="wrap_content"
+        android:text="@string/permission_off_subtitle"
+        android:maxLines="1"
+        app:layout_constraintBottom_toBottomOf="@id/location_off_icon"
+        app:layout_constraintEnd_toEndOf="@id/tv_title"
+        app:layout_constraintStart_toStartOf="@id/tv_title"
+        app:layout_constraintTop_toBottomOf="@id/tv_title"
+        app:layout_constraintVertical_chainStyle="packed"
+        app:textViewType="REGULAR_100" />
+    <com.blinkit.blink.elements.ui.atoms.button.BlinkitButtonView
+        android:id="@id/button_view"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+</androidx.constraintlayout.widget.ConstraintLayout>

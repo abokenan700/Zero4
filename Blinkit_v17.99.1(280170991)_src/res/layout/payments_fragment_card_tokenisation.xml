@@ -1,0 +1,68 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+    <com.zomato.ui.atomiclib.atom.ZRoundedImageView
+        android:id="@id/image"
+        android:layout_width="fill_parent"
+        android:layout_height="0.0dip"
+        android:scaleType="fitXY"
+        android:adjustViewBounds="true"
+        app:layout_constraintBottom_toBottomOf="@id/subtitle"
+        app:layout_constraintTop_toTopOf="parent" />
+    <com.zomato.ui.atomiclib.atom.ZIconFontTextView
+        android:textSize="@dimen/sushi_textsize_800"
+        android:textColor="@color/white"
+        android:id="@id/icon"
+        android:background="@drawable/payments_circle_background"
+        android:padding="@dimen/sushi_spacing_micro"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/size50"
+        android:text="@string/icon_font_cross"
+        android:layout_marginStart="@dimen/sushi_spacing_base"
+        android:backgroundTint="@color/payments_color_20_percent_white"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+    <com.zomato.ui.atomiclib.atom.ZTextView
+        android:textSize="@dimen/sushi_textsize_700"
+        android:textColor="@color/white"
+        android:id="@id/title"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/size_30"
+        android:fontFamily="@font/okra_bold"
+        android:layout_marginStart="@dimen/sushi_spacing_base"
+        android:layout_marginEnd="@dimen/sushi_spacing_base"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/icon" />
+    <com.zomato.ui.atomiclib.atom.ZTextView
+        android:textSize="@dimen/sushi_textsize_300"
+        android:textColor="@color/white"
+        android:id="@id/subtitle"
+        android:paddingBottom="@dimen/sushi_spacing_base"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/sushi_spacing_nano"
+        android:fontFamily="@font/okra_medium"
+        android:layout_marginStart="@dimen/sushi_spacing_base"
+        android:layout_marginEnd="@dimen/size_60"
+        app:layout_constraintTop_toBottomOf="@id/title" />
+    <androidx.recyclerview.widget.RecyclerView
+        android:id="@id/rv"
+        android:padding="@dimen/sushi_spacing_base"
+        android:clipToPadding="false"
+        android:layout_width="fill_parent"
+        android:layout_height="0.0dip"
+        app:layoutManager="androidx.recyclerview.widget.LinearLayoutManager"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/image" />
+    <payments.zomato.paymentkit.ui.molecules.PaymentsNoContentView
+        android:id="@id/ncv"
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent" />
+</androidx.constraintlayout.widget.ConstraintLayout>

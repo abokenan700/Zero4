@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout
+    android:layout_width="@dimen/size_175"
+    android:layout_height="@dimen/size_220"
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+    <FrameLayout
+        android:id="@id/iv_shimmer"
+        android:background="@color/sushi_grey_200"
+        android:padding="@dimen/sushi_spacing_extra"
+        android:layout_width="fill_parent"
+        android:layout_height="@dimen/size_142"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+    <com.zomato.ui.atomiclib.molecules.ShimmerChildView
+        android:id="@id/title_shimmer"
+        android:layout_width="@dimen/size_120"
+        android:layout_height="@dimen/sushi_spacing_extra"
+        android:layout_marginTop="@dimen/dimen_10"
+        android:layout_marginStart="@dimen/sushi_spacing_macro"
+        app:bgColor="@color/sushi_grey_200"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/iv_shimmer"
+        app:shimmer_corner_radius="@dimen/sushi_spacing_macro" />
+    <com.zomato.ui.atomiclib.molecules.ShimmerChildView
+        android:id="@id/price_shimmer"
+        android:layout_width="@dimen/size_40"
+        android:layout_height="@dimen/dimen_16"
+        android:layout_marginStart="@dimen/sushi_spacing_macro"
+        app:bgColor="@color/sushi_grey_200"
+        app:layout_constraintBottom_toBottomOf="@id/right_shimmer"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="@id/right_shimmer"
+        app:shimmer_corner_radius="@dimen/sushi_spacing_macro" />
+    <com.zomato.ui.atomiclib.molecules.ShimmerChildView
+        android:id="@id/right_shimmer"
+        android:layout_width="@dimen/size_70"
+        android:layout_height="@dimen/size_25"
+        android:layout_marginTop="@dimen/dimen_10"
+        android:layout_marginBottom="@dimen/sushi_spacing_macro"
+        android:layout_marginEnd="@dimen/sushi_spacing_macro"
+        app:bgColor="@color/sushi_grey_200"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/title_shimmer"
+        app:shimmer_corner_radius="@dimen/sushi_spacing_macro" />
+</androidx.constraintlayout.widget.ConstraintLayout>

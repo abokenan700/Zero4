@@ -1,0 +1,1921 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <dimen name="NitroTooltip_animation_padding">4.0dip</dimen>
+    <dimen name="NitroTooltip_arrow_height">10.0dip</dimen>
+    <dimen name="NitroTooltip_arrow_width">20.0dip</dimen>
+    <dimen name="NitroTooltip_margin">4.0dip</dimen>
+    <dimen name="NitroTooltip_overlay_offset">10.0dip</dimen>
+    <dimen name="NitroTooltip_padding">8.0dip</dimen>
+    <dimen name="abc_action_bar_content_inset_material">16.0dip</dimen>
+    <dimen name="abc_action_bar_content_inset_with_nav">72.0dip</dimen>
+    <dimen name="abc_action_bar_default_height_material">56.0dip</dimen>
+    <dimen name="abc_action_bar_default_padding_end_material">0.0dip</dimen>
+    <dimen name="abc_action_bar_default_padding_start_material">0.0dip</dimen>
+    <dimen name="abc_action_bar_elevation_material">4.0dip</dimen>
+    <dimen name="abc_action_bar_icon_vertical_padding_material">16.0dip</dimen>
+    <dimen name="abc_action_bar_overflow_padding_end_material">10.0dip</dimen>
+    <dimen name="abc_action_bar_overflow_padding_start_material">6.0dip</dimen>
+    <dimen name="abc_action_bar_stacked_max_height">48.0dip</dimen>
+    <dimen name="abc_action_bar_stacked_tab_max_width">180.0dip</dimen>
+    <dimen name="abc_action_bar_subtitle_bottom_margin_material">5.0dip</dimen>
+    <dimen name="abc_action_bar_subtitle_top_margin_material">-3.0dip</dimen>
+    <dimen name="abc_action_button_min_height_material">48.0dip</dimen>
+    <dimen name="abc_action_button_min_width_material">48.0dip</dimen>
+    <dimen name="abc_action_button_min_width_overflow_material">36.0dip</dimen>
+    <dimen name="abc_alert_dialog_button_bar_height">48.0dip</dimen>
+    <dimen name="abc_alert_dialog_button_dimen">48.0dip</dimen>
+    <item type="dimen" name="abc_button_inset_horizontal_material">@dimen/abc_control_inset_material</item>
+    <dimen name="abc_button_inset_vertical_material">6.0dip</dimen>
+    <dimen name="abc_button_padding_horizontal_material">8.0dip</dimen>
+    <item type="dimen" name="abc_button_padding_vertical_material">@dimen/abc_control_padding_material</item>
+    <dimen name="abc_cascading_menus_min_smallest_width">720.0dip</dimen>
+    <dimen name="abc_config_prefDialogWidth">320.0dip</dimen>
+    <dimen name="abc_control_corner_material">2.0dip</dimen>
+    <dimen name="abc_control_inset_material">4.0dip</dimen>
+    <dimen name="abc_control_padding_material">4.0dip</dimen>
+    <dimen name="abc_dialog_corner_radius_material">2.0dip</dimen>
+    <item type="dimen" name="abc_dialog_fixed_height_major">79.99999%</item>
+    <item type="dimen" name="abc_dialog_fixed_height_minor">100.0%</item>
+    <dimen name="abc_dialog_fixed_width_major">320.0dip</dimen>
+    <dimen name="abc_dialog_fixed_width_minor">320.0dip</dimen>
+    <dimen name="abc_dialog_list_padding_bottom_no_buttons">8.0dip</dimen>
+    <dimen name="abc_dialog_list_padding_top_no_title">8.0dip</dimen>
+    <item type="dimen" name="abc_dialog_min_width_major">65.0%</item>
+    <item type="dimen" name="abc_dialog_min_width_minor">95.00001%</item>
+    <dimen name="abc_dialog_padding_material">24.0dip</dimen>
+    <dimen name="abc_dialog_padding_top_material">18.0dip</dimen>
+    <dimen name="abc_dialog_title_divider_material">8.0dip</dimen>
+    <item type="dimen" name="abc_disabled_alpha_material_dark">0.3</item>
+    <item type="dimen" name="abc_disabled_alpha_material_light">0.26</item>
+    <dimen name="abc_dropdownitem_icon_width">32.0dip</dimen>
+    <dimen name="abc_dropdownitem_text_padding_left">8.0dip</dimen>
+    <dimen name="abc_dropdownitem_text_padding_right">8.0dip</dimen>
+    <dimen name="abc_edit_text_inset_bottom_material">7.0dip</dimen>
+    <dimen name="abc_edit_text_inset_horizontal_material">4.0dip</dimen>
+    <dimen name="abc_edit_text_inset_top_material">10.0dip</dimen>
+    <dimen name="abc_floating_window_z">16.0dip</dimen>
+    <dimen name="abc_list_item_height_large_material">80.0dip</dimen>
+    <dimen name="abc_list_item_height_material">64.0dip</dimen>
+    <dimen name="abc_list_item_height_small_material">48.0dip</dimen>
+    <item type="dimen" name="abc_list_item_padding_horizontal_material">@dimen/abc_action_bar_content_inset_material</item>
+    <dimen name="abc_panel_menu_list_width">296.0dip</dimen>
+    <dimen name="abc_progress_bar_height_material">4.0dip</dimen>
+    <dimen name="abc_search_view_preferred_height">48.0dip</dimen>
+    <dimen name="abc_search_view_preferred_width">320.0dip</dimen>
+    <dimen name="abc_seekbar_track_background_height_material">2.0dip</dimen>
+    <dimen name="abc_seekbar_track_progress_height_material">2.0dip</dimen>
+    <dimen name="abc_select_dialog_padding_start_material">20.0dip</dimen>
+    <dimen name="abc_star_big">48.0dip</dimen>
+    <dimen name="abc_star_medium">36.0dip</dimen>
+    <dimen name="abc_star_small">16.0dip</dimen>
+    <dimen name="abc_switch_padding">0.0px</dimen>
+    <dimen name="abc_text_size_body_1_material">14.0sp</dimen>
+    <dimen name="abc_text_size_body_2_material">14.0sp</dimen>
+    <dimen name="abc_text_size_button_material">14.0sp</dimen>
+    <dimen name="abc_text_size_caption_material">12.0sp</dimen>
+    <dimen name="abc_text_size_display_1_material">34.0sp</dimen>
+    <dimen name="abc_text_size_display_2_material">45.0sp</dimen>
+    <dimen name="abc_text_size_display_3_material">56.0sp</dimen>
+    <dimen name="abc_text_size_display_4_material">112.0sp</dimen>
+    <dimen name="abc_text_size_headline_material">24.0sp</dimen>
+    <dimen name="abc_text_size_large_material">22.0sp</dimen>
+    <dimen name="abc_text_size_medium_material">18.0sp</dimen>
+    <dimen name="abc_text_size_menu_header_material">14.0sp</dimen>
+    <dimen name="abc_text_size_menu_material">16.0sp</dimen>
+    <dimen name="abc_text_size_small_material">14.0sp</dimen>
+    <dimen name="abc_text_size_subhead_material">16.0sp</dimen>
+    <dimen name="abc_text_size_subtitle_material_toolbar">16.0dip</dimen>
+    <dimen name="abc_text_size_title_material">20.0sp</dimen>
+    <dimen name="abc_text_size_title_material_toolbar">20.0dip</dimen>
+    <dimen name="action_bar_size">56.0dip</dimen>
+    <dimen name="action_card_corner_radius">16.0dip</dimen>
+    <dimen name="action_card_elevation">12.0dip</dimen>
+    <dimen name="action_snippet_type_1_dimension">23.0dip</dimen>
+    <item type="dimen" name="actionbar_primary_height">@dimen/size_56</item>
+    <item type="dimen" name="activity_horizontal_margin">@dimen/qd_margin_16</item>
+    <item type="dimen" name="activity_vertical_margin">@dimen/qd_margin_16</item>
+    <dimen name="adjust_default_view_checkbox_padding">-5.0dip</dimen>
+    <dimen name="adjust_default_view_padding">-4.0dip</dimen>
+    <dimen name="adjust_dish_stepper_start_padding">-60.0dip</dimen>
+    <dimen name="adjust_dish_stepper_top_padding">-18.0dip</dimen>
+    <dimen name="aerobar_action_icon_size">24.0dip</dimen>
+    <dimen name="aerobar_compound_button_min_width">112.0dip</dimen>
+    <dimen name="aerobar_default_indicator_height">12.0dip</dimen>
+    <dimen name="aerobar_height">64.0dip</dimen>
+    <dimen name="aerobar_imageview_dimentation">36.0dip</dimen>
+    <dimen name="aerobar_imageview_radius_dimentation">36.0dip</dimen>
+    <dimen name="aerobar_v3_height">52.0dip</dimen>
+    <dimen name="apay_cancel_btn_height">46.0dip</dimen>
+    <dimen name="apay_cancel_btn_margin_bottom">32.0dip</dimen>
+    <dimen name="apay_cancel_btn_margin_end">18.0dip</dimen>
+    <dimen name="apay_cancel_btn_margin_start">18.0dip</dimen>
+    <dimen name="apay_cancel_btn_margin_top">80.0dip</dimen>
+    <dimen name="apay_cancel_btn_width">150.0dip</dimen>
+    <dimen name="apay_logo_and_profile_spacing">105.0dip</dimen>
+    <dimen name="apay_logo_width">90.0dip</dimen>
+    <dimen name="apay_nav_bottom_line_height">1.5dip</dimen>
+    <dimen name="apay_nav_height">60.0dip</dimen>
+    <dimen name="apay_nav_logo_padding">10.0dip</dimen>
+    <dimen name="apay_nav_logos_height">50.0dip</dimen>
+    <dimen name="apay_profile_nav_logo_width">30.0dip</dimen>
+    <dimen name="appcompat_dialog_background_inset">16.0dip</dimen>
+    <dimen name="auto_carousel_padding_horizontal">8.0dip</dimen>
+    <dimen name="auto_carousel_padding_vertical">8.0dip</dimen>
+    <dimen name="auto_suggest_expanded_left_padding">94.0dip</dimen>
+    <dimen name="auto_suggest_search_cta_image_item_size">45.0dip</dimen>
+    <dimen name="auto_suggest_search_image_item_size_lite">44.0dip</dimen>
+    <dimen name="auto_suggest_search_image_item_size_small">32.0dip</dimen>
+    <dimen name="auto_suggest_search_image_size">60.0dip</dimen>
+    <dimen name="avatar_height">60.0dip</dimen>
+    <dimen name="avatar_width">60.0dip</dimen>
+    <dimen name="b_progressview_size_default">42.0dip</dimen>
+    <dimen name="b_progressview_size_mini">16.0dip</dimen>
+    <dimen name="b_star_rating_bar_right_margin">-6.0dip</dimen>
+    <dimen name="board_width">920.0dip</dimen>
+    <dimen name="border_stroke_width">1.0dip</dimen>
+    <dimen name="browser_actions_context_menu_max_width">500.0dip</dimen>
+    <dimen name="browser_actions_context_menu_min_padding">20.0dip</dimen>
+    <dimen name="cardview_compat_inset_shadow">1.0dip</dimen>
+    <dimen name="cardview_default_elevation">2.0dip</dimen>
+    <dimen name="cardview_default_radius">2.0dip</dimen>
+    <dimen name="cart_button_shimmer_adjust_start_padding">-58.0dip</dimen>
+    <dimen name="cart_shimmer_adjust_start_padding">-38.0dip</dimen>
+    <dimen name="cell_width">70.0dip</dimen>
+    <dimen name="chronometer_font_size">12.0sp</dimen>
+    <dimen name="circular_icon_background">25.0dip</dimen>
+    <dimen name="circular_icon_padding_large">15.0dip</dimen>
+    <dimen name="circular_icon_padding_medium">10.0dip</dimen>
+    <dimen name="circular_icon_padding_small">7.0dip</dimen>
+    <dimen name="circular_icon_padding_smaller">5.0dip</dimen>
+    <dimen name="circular_icon_textsize_large">18.0sp</dimen>
+    <dimen name="circular_icon_textsize_medium">12.0sp</dimen>
+    <dimen name="circular_icon_textsize_small">12.0sp</dimen>
+    <dimen name="circular_icon_textsize_xlarge">20.0sp</dimen>
+    <dimen name="clock_face_margin_start">64.0dip</dimen>
+    <dimen name="coin_height">11.0dip</dimen>
+    <dimen name="coin_width">11.0dip</dimen>
+    <dimen name="collapsible_back_icon_size">14.0dip</dimen>
+    <dimen name="compat_button_inset_horizontal_material">4.0dip</dimen>
+    <dimen name="compat_button_inset_vertical_material">6.0dip</dimen>
+    <dimen name="compat_button_padding_horizontal_material">8.0dip</dimen>
+    <dimen name="compat_button_padding_vertical_material">4.0dip</dimen>
+    <dimen name="compat_control_corner_material">2.0dip</dimen>
+    <dimen name="compat_notification_large_icon_max_height">320.0dip</dimen>
+    <dimen name="compat_notification_large_icon_max_width">320.0dip</dimen>
+    <dimen name="corner_radius">8.0dip</dimen>
+    <item type="dimen" name="corner_radius_base">@dimen/v15_corner_radius</item>
+    <dimen name="corner_radius_large">10.0dip</dimen>
+    <item type="dimen" name="corner_radius_micro">@dimen/sushi_spacing_micro</item>
+    <item type="dimen" name="corner_radius_nano">@dimen/sushi_spacing_nano</item>
+    <dimen name="corner_radius_small">4.0dip</dimen>
+    <dimen name="corner_radius_tiny">2.0dip</dimen>
+    <dimen name="corner_stroke_one">1.0dip</dimen>
+    <dimen name="corner_stroke_one_half">1.5dip</dimen>
+    <dimen name="crystal_collapsed_margin">-50.0dip</dimen>
+    <dimen name="crystal_toolbar_height">58.0dip</dimen>
+    <dimen name="cta_button_min_width">125.0dip</dimen>
+    <dimen name="current_location_icon_size">18.0dip</dimen>
+    <dimen name="custom_btn_padding">4.0dip</dimen>
+    <dimen name="custom_error_image_size">50.0dip</dimen>
+    <dimen name="def_drawer_elevation">10.0dip</dimen>
+    <dimen name="demarcation_shadow_depth_neg">-3.0dip</dimen>
+    <dimen name="design_appbar_elevation">4.0dip</dimen>
+    <dimen name="design_bottom_navigation_active_item_max_width">168.0dip</dimen>
+    <dimen name="design_bottom_navigation_active_item_min_width">96.0dip</dimen>
+    <dimen name="design_bottom_navigation_active_text_size">14.0sp</dimen>
+    <dimen name="design_bottom_navigation_elevation">8.0dip</dimen>
+    <dimen name="design_bottom_navigation_height">56.0dip</dimen>
+    <dimen name="design_bottom_navigation_icon_size">24.0dip</dimen>
+    <dimen name="design_bottom_navigation_item_max_width">96.0dip</dimen>
+    <dimen name="design_bottom_navigation_item_min_width">56.0dip</dimen>
+    <dimen name="design_bottom_navigation_label_padding">10.0dip</dimen>
+    <dimen name="design_bottom_navigation_margin">8.0dip</dimen>
+    <dimen name="design_bottom_navigation_shadow_height">1.0dip</dimen>
+    <dimen name="design_bottom_navigation_text_size">12.0sp</dimen>
+    <dimen name="design_bottom_sheet_elevation">8.0dip</dimen>
+    <dimen name="design_bottom_sheet_modal_elevation">16.0dip</dimen>
+    <dimen name="design_bottom_sheet_peek_height_min">64.0dip</dimen>
+    <dimen name="design_fab_border_width">0.5dip</dimen>
+    <dimen name="design_fab_elevation">6.0dip</dimen>
+    <dimen name="design_fab_image_size">24.0dip</dimen>
+    <dimen name="design_fab_size_mini">40.0dip</dimen>
+    <dimen name="design_fab_size_normal">56.0dip</dimen>
+    <dimen name="design_fab_translation_z_hovered_focused">6.0dip</dimen>
+    <dimen name="design_fab_translation_z_pressed">6.0dip</dimen>
+    <dimen name="design_navigation_elevation">16.0dip</dimen>
+    <dimen name="design_navigation_icon_padding">32.0dip</dimen>
+    <dimen name="design_navigation_icon_size">24.0dip</dimen>
+    <dimen name="design_navigation_item_horizontal_padding">16.0dip</dimen>
+    <dimen name="design_navigation_item_icon_padding">32.0dip</dimen>
+    <dimen name="design_navigation_item_vertical_padding">4.0dip</dimen>
+    <dimen name="design_navigation_max_width">280.0dip</dimen>
+    <dimen name="design_navigation_padding_bottom">8.0dip</dimen>
+    <dimen name="design_navigation_separator_vertical_padding">8.0dip</dimen>
+    <dimen name="design_snackbar_action_inline_max_width">128.0dip</dimen>
+    <item type="dimen" name="design_snackbar_action_text_color_alpha">1.0</item>
+    <dimen name="design_snackbar_background_corner_radius">0.0dip</dimen>
+    <dimen name="design_snackbar_elevation">6.0dip</dimen>
+    <dimen name="design_snackbar_extra_spacing_horizontal">0.0dip</dimen>
+    <dimen name="design_snackbar_max_width">-1.0px</dimen>
+    <dimen name="design_snackbar_min_width">-1.0px</dimen>
+    <dimen name="design_snackbar_padding_horizontal">12.0dip</dimen>
+    <dimen name="design_snackbar_padding_vertical">14.0dip</dimen>
+    <dimen name="design_snackbar_padding_vertical_2lines">16.0dip</dimen>
+    <dimen name="design_snackbar_text_size">14.0sp</dimen>
+    <dimen name="design_tab_max_width">264.0dip</dimen>
+    <dimen name="design_tab_scrollable_min_width">72.0dip</dimen>
+    <dimen name="design_tab_text_size">14.0sp</dimen>
+    <dimen name="design_tab_text_size_2line">12.0sp</dimen>
+    <dimen name="design_textinput_caption_translate_y">5.0dip</dimen>
+    <dimen name="dimen_0">0.0dip</dimen>
+    <dimen name="dimen_10">10.0dip</dimen>
+    <dimen name="dimen_11">11.0dip</dimen>
+    <dimen name="dimen_115">115.0dip</dimen>
+    <dimen name="dimen_12">12.0dip</dimen>
+    <dimen name="dimen_13">13.0dip</dimen>
+    <dimen name="dimen_13_point_nine">13.899994dip</dimen>
+    <dimen name="dimen_14">14.0dip</dimen>
+    <dimen name="dimen_15">15.0dip</dimen>
+    <dimen name="dimen_15sp">15.0sp</dimen>
+    <dimen name="dimen_16">16.0dip</dimen>
+    <dimen name="dimen_17">17.0dip</dimen>
+    <dimen name="dimen_18">18.0dip</dimen>
+    <dimen name="dimen_2">2.0dip</dimen>
+    <dimen name="dimen_20">20.0dip</dimen>
+    <dimen name="dimen_21">21.0dip</dimen>
+    <dimen name="dimen_23">23.0dip</dimen>
+    <dimen name="dimen_24">24.0dip</dimen>
+    <dimen name="dimen_3">3.0dip</dimen>
+    <dimen name="dimen_300">300.0dip</dimen>
+    <dimen name="dimen_35">35.0dip</dimen>
+    <dimen name="dimen_38">38.0dip</dimen>
+    <dimen name="dimen_4">4.0dip</dimen>
+    <dimen name="dimen_40">40.0dip</dimen>
+    <dimen name="dimen_5">5.0dip</dimen>
+    <dimen name="dimen_56">56.0dip</dimen>
+    <dimen name="dimen_60">60.0dip</dimen>
+    <dimen name="dimen_68">68.0dip</dimen>
+    <dimen name="dimen_7">7.0dip</dimen>
+    <dimen name="dimen_80">80.0dip</dimen>
+    <dimen name="dimen_collapsible_toolbar_height">60.0dip</dimen>
+    <dimen name="dimen_core_features">36.0dip</dimen>
+    <dimen name="dimen_core_features_menu">18.0dip</dimen>
+    <dimen name="dimen_eleven_point_nine">11.899994dip</dimen>
+    <dimen name="dimen_five_point_five">5.5dip</dimen>
+    <dimen name="dimen_map_pin_bottom_padding">38.0dip</dimen>
+    <dimen name="dimen_map_pin_ripple_radius">25.0dip</dimen>
+    <dimen name="dimen_map_pin_size">80.0dip</dimen>
+    <dimen name="dimen_one_point_five">1.5dip</dimen>
+    <dimen name="dimen_one_point_one">1.0dip</dimen>
+    <dimen name="dimen_one_point_two">1.1999817dip</dimen>
+    <dimen name="dimen_one_point_two_five">1.25dip</dimen>
+    <dimen name="dimen_point_five">0.5dip</dimen>
+    <dimen name="dimen_point_four">0.39999998dip</dimen>
+    <dimen name="dimen_point_four_five">0.45000005dip</dimen>
+    <dimen name="dimen_point_one">0.100000024dip</dimen>
+    <dimen name="dimen_point_one_five">0.14999998dip</dimen>
+    <dimen name="dimen_point_seven">0.70000005dip</dimen>
+    <dimen name="dimen_point_seven_five">0.75dip</dimen>
+    <dimen name="dimen_point_three">0.30000007dip</dimen>
+    <dimen name="dimen_seventeen_point_five">17.5dip</dimen>
+    <dimen name="dimen_two_point_five">2.5dip</dimen>
+    <dimen name="dimen_two_point_two">2.1999817dip</dimen>
+    <item type="dimen" name="disabled_alpha_material_dark">0.3</item>
+    <item type="dimen" name="disabled_alpha_material_light">0.26</item>
+    <dimen name="dish_image_circular_height">40.0dip</dimen>
+    <dimen name="dish_image_circular_radius">20.0dip</dimen>
+    <dimen name="dish_image_circular_width">40.0dip</dimen>
+    <dimen name="divider_view_height">0.5dip</dimen>
+    <dimen name="dotted_separator_height">4.0dip</dimen>
+    <dimen name="drawer_barSize">18.0dip</dimen>
+    <dimen name="drawer_drawableSize">24.0dip</dimen>
+    <dimen name="drawer_gapBetweenBars">3.0dip</dimen>
+    <dimen name="drawer_middleBarArrowSize">16.0dip</dimen>
+    <dimen name="drawer_thickness">2.0dip</dimen>
+    <dimen name="drawer_topBottomBarArrowSize">11.309998dip</dimen>
+    <dimen name="drawer_user_container_height">140.0dip</dimen>
+    <dimen name="edit_text_extra_padding">2.0dip</dimen>
+    <dimen name="elevation_0.5">0.5dip</dimen>
+    <dimen name="elevation_1dp">1.0dip</dimen>
+    <dimen name="elevation_big">6.0dip</dimen>
+    <dimen name="elevation_huge">10.0dip</dimen>
+    <item type="dimen" name="elevation_large">@dimen/sushi_spacing_macro</item>
+    <item type="dimen" name="elevation_medium">@dimen/sushi_spacing_mini</item>
+    <item type="dimen" name="elevation_micro">@dimen/sushi_spacing_nano</item>
+    <dimen name="elevation_regular">4.0dip</dimen>
+    <dimen name="elevation_small">2.0dip</dimen>
+    <dimen name="event_logger_font_size_10">10.0sp</dimen>
+    <dimen name="event_logger_font_size_12">12.0sp</dimen>
+    <dimen name="event_logger_font_size_14">14.0sp</dimen>
+    <dimen name="event_logger_font_size_16">16.0sp</dimen>
+    <dimen name="event_logger_font_size_18">18.0sp</dimen>
+    <dimen name="event_logger_font_size_20">20.0sp</dimen>
+    <dimen name="event_logger_font_size_22">22.0sp</dimen>
+    <dimen name="event_logger_font_size_8">8.0sp</dimen>
+    <dimen name="event_logger_margin_10">10.0dip</dimen>
+    <dimen name="event_logger_margin_12">12.0dip</dimen>
+    <dimen name="event_logger_margin_16">16.0dip</dimen>
+    <dimen name="event_logger_margin_2">2.0dip</dimen>
+    <dimen name="event_logger_margin_20">20.0dip</dimen>
+    <dimen name="event_logger_margin_24">24.0dip</dimen>
+    <dimen name="event_logger_margin_28">28.0dip</dimen>
+    <dimen name="event_logger_margin_4">4.0dip</dimen>
+    <dimen name="event_logger_margin_6">6.0dip</dimen>
+    <dimen name="event_logger_margin_8">8.0dip</dimen>
+    <dimen name="event_logger_padding_10">10.0dip</dimen>
+    <dimen name="event_logger_padding_12">12.0dip</dimen>
+    <dimen name="event_logger_padding_14">14.0dip</dimen>
+    <dimen name="event_logger_padding_16">16.0dip</dimen>
+    <dimen name="event_logger_padding_18">18.0dip</dimen>
+    <dimen name="event_logger_padding_2">2.0dip</dimen>
+    <dimen name="event_logger_padding_20">20.0dip</dimen>
+    <dimen name="event_logger_padding_24">24.0dip</dimen>
+    <dimen name="event_logger_padding_32">32.0dip</dimen>
+    <dimen name="event_logger_padding_4">4.0dip</dimen>
+    <dimen name="event_logger_padding_48">48.0dip</dimen>
+    <dimen name="event_logger_padding_6">6.0dip</dimen>
+    <dimen name="event_logger_padding_8">8.0dip</dimen>
+    <dimen name="event_logger_width_row_request_response">96.0dip</dimen>
+    <dimen name="event_logger_zero_padding">0.0dip</dimen>
+    <dimen name="events_image_height">88.0dip</dimen>
+    <dimen name="events_image_width">72.0dip</dimen>
+    <dimen name="events_list_ctl_image_height">238.0dip</dimen>
+    <dimen name="exo_error_message_height">32.0dip</dimen>
+    <dimen name="exo_error_message_margin_bottom">64.0dip</dimen>
+    <dimen name="exo_error_message_text_padding_horizontal">12.0dip</dimen>
+    <dimen name="exo_error_message_text_padding_vertical">4.0dip</dimen>
+    <dimen name="exo_error_message_text_size">14.0sp</dimen>
+    <dimen name="exo_icon_horizontal_margin">5.0dip</dimen>
+    <dimen name="exo_icon_padding">2.0dip</dimen>
+    <dimen name="exo_icon_padding_bottom">18.0dip</dimen>
+    <dimen name="exo_icon_size">52.0dip</dimen>
+    <dimen name="exo_icon_text_size">9.0dip</dimen>
+    <dimen name="exo_media_button_height">52.0dip</dimen>
+    <dimen name="exo_media_button_width">71.0dip</dimen>
+    <dimen name="exo_setting_width">150.0dip</dimen>
+    <dimen name="exo_settings_height">52.0dip</dimen>
+    <dimen name="exo_settings_icon_size">24.0dip</dimen>
+    <dimen name="exo_settings_main_text_size">14.0sp</dimen>
+    <dimen name="exo_settings_offset">8.0dip</dimen>
+    <dimen name="exo_settings_sub_text_size">12.0sp</dimen>
+    <dimen name="exo_settings_text_height">24.0dip</dimen>
+    <dimen name="exo_small_icon_height">48.0dip</dimen>
+    <dimen name="exo_small_icon_horizontal_margin">2.0dip</dimen>
+    <dimen name="exo_small_icon_padding_horizontal">12.0dip</dimen>
+    <dimen name="exo_small_icon_padding_vertical">12.0dip</dimen>
+    <dimen name="exo_small_icon_width">48.0dip</dimen>
+    <dimen name="exo_styled_bottom_bar_height">60.0dip</dimen>
+    <dimen name="exo_styled_bottom_bar_margin_top">10.0dip</dimen>
+    <dimen name="exo_styled_bottom_bar_time_padding">10.0dip</dimen>
+    <dimen name="exo_styled_controls_padding">24.0dip</dimen>
+    <dimen name="exo_styled_minimal_controls_margin_bottom">4.0dip</dimen>
+    <dimen name="exo_styled_progress_bar_height">2.0dip</dimen>
+    <dimen name="exo_styled_progress_dragged_thumb_size">14.0dip</dimen>
+    <dimen name="exo_styled_progress_enabled_thumb_size">10.0dip</dimen>
+    <dimen name="exo_styled_progress_layout_height">48.0dip</dimen>
+    <dimen name="exo_styled_progress_margin_bottom">52.0dip</dimen>
+    <dimen name="exo_styled_progress_touch_target_height">48.0dip</dimen>
+    <dimen name="expanded_image_menu_item">180.0dip</dimen>
+    <dimen name="expanded_image_menu_item_new">148.0dip</dimen>
+    <dimen name="fake_review_banner_min_dimension">48.0dip</dimen>
+    <dimen name="fastscroll_default_thickness">8.0dip</dimen>
+    <dimen name="fastscroll_margin">0.0dip</dimen>
+    <dimen name="fastscroll_minimum_range">50.0dip</dimen>
+    <dimen name="fi_bs_not_submitted_Layout_height">570.0dip</dimen>
+    <dimen name="fi_bs_submitted_Layout_height">348.0dip</dimen>
+    <dimen name="fingerprint_icon_size">64.0dip</dimen>
+    <dimen name="five_cta_icon_margin">4.0dip</dimen>
+    <dimen name="five_cta_padding">6.0dip</dimen>
+    <dimen name="flipper_height">144.0dip</dimen>
+    <item type="dimen" name="float_1">1.0</item>
+    <item type="dimen" name="float_25">25.0</item>
+    <dimen name="font_icon_size_10">10.0sp</dimen>
+    <dimen name="font_icon_size_12">12.0sp</dimen>
+    <dimen name="font_icon_size_13">13.0sp</dimen>
+    <dimen name="font_icon_size_14">14.0sp</dimen>
+    <dimen name="font_icon_size_15">15.0sp</dimen>
+    <dimen name="font_icon_size_16">16.0sp</dimen>
+    <dimen name="font_icon_size_18">18.0sp</dimen>
+    <dimen name="font_icon_size_20">20.0sp</dimen>
+    <dimen name="font_icon_size_22">22.0sp</dimen>
+    <dimen name="font_icon_size_24">24.0sp</dimen>
+    <dimen name="font_icon_size_36">36.0sp</dimen>
+    <dimen name="font_icon_size_48">48.0sp</dimen>
+    <dimen name="font_icon_size_64">64.0sp</dimen>
+    <dimen name="font_icon_size_8">8.0sp</dimen>
+    <dimen name="font_size_femto">8.0sp</dimen>
+    <dimen name="font_size_large">18.0sp</dimen>
+    <dimen name="font_size_medium">15.0sp</dimen>
+    <dimen name="font_size_mini">14.0sp</dimen>
+    <dimen name="font_size_small">13.0sp</dimen>
+    <dimen name="font_size_tiny">12.0sp</dimen>
+    <dimen name="font_size_xmedium">16.0sp</dimen>
+    <dimen name="font_size_xxlarge">21.0sp</dimen>
+    <dimen name="form_snippet_type_1_loader_height">18.0dip</dimen>
+    <dimen name="form_snippet_type_1_loader_width">18.0dip</dimen>
+    <dimen name="full_screen_video_min_height">200.0dip</dimen>
+    <dimen name="full_width_shimmer_adjust_start_padding">-80.0dip</dimen>
+    <dimen name="gold_card_left_image_height">60.0dip</dimen>
+    <dimen name="gold_card_right_image_height">60.0dip</dimen>
+    <dimen name="grid_divider">6.0dip</dimen>
+    <dimen name="half_dp">0.5dip</dimen>
+    <dimen name="header_rating_min_width">44.0dip</dimen>
+    <dimen name="height75">75.0dip</dimen>
+    <dimen name="height_dessert_snippet_28">60.0dip</dimen>
+    <dimen name="height_image_dessert_snippet_29">46.0dip</dimen>
+    <item type="dimen" name="highlight_alpha_material_colored">0.26</item>
+    <item type="dimen" name="highlight_alpha_material_dark">0.2</item>
+    <item type="dimen" name="highlight_alpha_material_light">0.12</item>
+    <item type="dimen" name="hint_alpha_material_dark">0.5</item>
+    <item type="dimen" name="hint_alpha_material_light">0.38</item>
+    <item type="dimen" name="hint_pressed_alpha_material_dark">0.7</item>
+    <item type="dimen" name="hint_pressed_alpha_material_light">0.54</item>
+    <item type="dimen" name="icon_font_shadow_dx">1.0</item>
+    <item type="dimen" name="icon_font_shadow_dy">1.0</item>
+    <item type="dimen" name="icon_font_shadow_radius">2.0</item>
+    <dimen name="icon_font_size_small">9.5dip</dimen>
+    <dimen name="icon_size">8.0dip</dimen>
+    <item type="dimen" name="iconfont_custom_notloggedin_zlogo_drawer">@dimen/size_40</item>
+    <dimen name="iconfont_emptycase_size">150.0dip</dimen>
+    <dimen name="iconfont_imageview_size">12.0dip</dimen>
+    <dimen name="iconfont_size">15.0dip</dimen>
+    <dimen name="iconfont_size_50">50.0dip</dimen>
+    <dimen name="iconfont_size_80">80.0dip</dimen>
+    <dimen name="iconfont_size_big">18.0dip</dimen>
+    <dimen name="iconfont_size_bigger">35.0dip</dimen>
+    <dimen name="iconfont_size_bit_bigger">20.0dip</dimen>
+    <dimen name="iconfont_size_bit_larger">30.0dip</dimen>
+    <dimen name="iconfont_size_drawer">37.0dip</dimen>
+    <dimen name="iconfont_size_fourdp">4.0dip</dimen>
+    <dimen name="iconfont_size_home_location">16.0dip</dimen>
+    <dimen name="iconfont_size_large">22.0dip</dimen>
+    <dimen name="iconfont_size_larger">28.0dip</dimen>
+    <dimen name="iconfont_size_largest">40.0dip</dimen>
+    <dimen name="iconfont_size_medium">12.0dip</dimen>
+    <dimen name="iconfont_size_nav_bar">17.0dip</dimen>
+    <item type="dimen" name="iconfont_size_regular">@dimen/dimen_10</item>
+    <dimen name="iconfont_size_sixdp">6.0dip</dimen>
+    <dimen name="iconfont_size_small">8.0dip</dimen>
+    <dimen name="iconfont_size_tiny">3.0dip</dimen>
+    <dimen name="iconfont_size_very_small">5.0dip</dimen>
+    <dimen name="image_emptycase_size">450.0dip</dimen>
+    <dimen name="image_text_snippet_20_image_width">110.0dip</dimen>
+    <dimen name="inapp_button_height">42.0dip</dimen>
+    <dimen name="internal_textview_fifteen">15.0dip</dimen>
+    <dimen name="internal_textview_fourteen">14.0dip</dimen>
+    <dimen name="internal_textview_sixteen">16.0dip</dimen>
+    <dimen name="internal_textview_ten">14.0dip</dimen>
+    <dimen name="internal_textview_thirteen">13.0dip</dimen>
+    <dimen name="item_rating_icon_size">10.0dip</dimen>
+    <dimen name="item_touch_helper_max_drag_scroll_per_frame">20.0dip</dimen>
+    <dimen name="item_touch_helper_swipe_escape_max_velocity">800.0dip</dimen>
+    <dimen name="item_touch_helper_swipe_escape_velocity">120.0dip</dimen>
+    <item type="dimen" name="items_new_per_screen_image_text_type_43">4.5</item>
+    <item type="dimen" name="items_per_screen_accordion_type_5">1.0</item>
+    <item type="dimen" name="items_per_screen_calorific_rail">4.8</item>
+    <item type="dimen" name="items_per_screen_cart_recommendation_rail">2.3</item>
+    <item type="dimen" name="items_per_screen_cart_recommendation_rail_v4">2.9</item>
+    <item type="dimen" name="items_per_screen_cell_snippet">3.8</item>
+    <item type="dimen" name="items_per_screen_crystal_video_type_1">1.0</item>
+    <item type="dimen" name="items_per_screen_default">1.0</item>
+    <item type="dimen" name="items_per_screen_for_v2_rail">2.5</item>
+    <item type="dimen" name="items_per_screen_group_template_1">2.2</item>
+    <item type="dimen" name="items_per_screen_group_template_with_image_1">2.3</item>
+    <item type="dimen" name="items_per_screen_image_text_type_1">3.2</item>
+    <item type="dimen" name="items_per_screen_image_text_type_10">1.8</item>
+    <item type="dimen" name="items_per_screen_image_text_type_11">1.8</item>
+    <item type="dimen" name="items_per_screen_image_text_type_17">1.2</item>
+    <item type="dimen" name="items_per_screen_image_text_type_18">2.2</item>
+    <item type="dimen" name="items_per_screen_image_text_type_21">2.6</item>
+    <item type="dimen" name="items_per_screen_image_text_type_22">2.8</item>
+    <item type="dimen" name="items_per_screen_image_text_type_23">2.2</item>
+    <item type="dimen" name="items_per_screen_image_text_type_25">2.2</item>
+    <item type="dimen" name="items_per_screen_image_text_type_29">1.5</item>
+    <item type="dimen" name="items_per_screen_image_text_type_3">3.25</item>
+    <item type="dimen" name="items_per_screen_image_text_type_31">1.0</item>
+    <item type="dimen" name="items_per_screen_image_text_type_32">2.2</item>
+    <item type="dimen" name="items_per_screen_image_text_type_33">1.9</item>
+    <item type="dimen" name="items_per_screen_image_text_type_35">1.5</item>
+    <item type="dimen" name="items_per_screen_image_text_type_36">1.4</item>
+    <item type="dimen" name="items_per_screen_image_text_type_39">1.6</item>
+    <item type="dimen" name="items_per_screen_image_text_type_4">2.6</item>
+    <item type="dimen" name="items_per_screen_image_text_type_41">3.0</item>
+    <item type="dimen" name="items_per_screen_image_text_type_42">1.4</item>
+    <item type="dimen" name="items_per_screen_image_text_type_43">3.6</item>
+    <item type="dimen" name="items_per_screen_image_text_type_5">2.2</item>
+    <item type="dimen" name="items_per_screen_image_text_type_6">1.6</item>
+    <item type="dimen" name="items_per_screen_image_text_type_8">2.5</item>
+    <item type="dimen" name="items_per_screen_image_text_type_9">2.5</item>
+    <item type="dimen" name="items_per_screen_image_text_v2_type_1">2.5</item>
+    <item type="dimen" name="items_per_screen_image_text_v2_type_10">2.0</item>
+    <item type="dimen" name="items_per_screen_image_text_v2_type_16">2.2</item>
+    <item type="dimen" name="items_per_screen_image_text_v2_type_18">1.8</item>
+    <item type="dimen" name="items_per_screen_image_text_v2_type_19">3.8</item>
+    <item type="dimen" name="items_per_screen_image_text_v2_type_2">1.0</item>
+    <item type="dimen" name="items_per_screen_image_text_v2_type_20">2.2</item>
+    <item type="dimen" name="items_per_screen_image_text_v2_type_22">1.1</item>
+    <item type="dimen" name="items_per_screen_image_text_v2_type_27">1.4</item>
+    <item type="dimen" name="items_per_screen_image_text_v2_type_3">1.2</item>
+    <item type="dimen" name="items_per_screen_image_text_v2_type_31">1.6</item>
+    <item type="dimen" name="items_per_screen_image_text_v2_type_33">3.2</item>
+    <item type="dimen" name="items_per_screen_image_text_v2_type_34">1.9</item>
+    <item type="dimen" name="items_per_screen_image_text_v2_type_37">1.0</item>
+    <item type="dimen" name="items_per_screen_image_text_v2_type_40">2.2</item>
+    <item type="dimen" name="items_per_screen_image_text_v2_type_46">2.15</item>
+    <item type="dimen" name="items_per_screen_image_text_v2_type_47">1.05</item>
+    <item type="dimen" name="items_per_screen_image_text_v2_type_52">1.2</item>
+    <item type="dimen" name="items_per_screen_image_text_v2_type_58">1.25</item>
+    <item type="dimen" name="items_per_screen_image_text_v2_type_65">1.4</item>
+    <item type="dimen" name="items_per_screen_image_text_v2_type_69">2.5</item>
+    <item type="dimen" name="items_per_screen_image_text_v2_type_7">5.0</item>
+    <item type="dimen" name="items_per_screen_image_text_v2_type_70">1.4</item>
+    <item type="dimen" name="items_per_screen_image_text_v2_type_72">1.0</item>
+    <item type="dimen" name="items_per_screen_image_text_v2_type_76">1.0</item>
+    <item type="dimen" name="items_per_screen_image_text_v2_type_77">3.2</item>
+    <item type="dimen" name="items_per_screen_image_text_v2_type_79">1.4</item>
+    <item type="dimen" name="items_per_screen_image_text_v3_type_21">1.9</item>
+    <item type="dimen" name="items_per_screen_image_text_v3_type_28">1.2</item>
+    <item type="dimen" name="items_per_screen_image_text_v3_type_32">1.3</item>
+    <item type="dimen" name="items_per_screen_image_text_v3_type_35">2.2</item>
+    <item type="dimen" name="items_per_screen_image_text_v3_type_40">1.3</item>
+    <item type="dimen" name="items_per_screen_image_text_v3_type_42">1.2</item>
+    <item type="dimen" name="items_per_screen_image_text_v3_type_46">3.2</item>
+    <item type="dimen" name="items_per_screen_image_text_v3_type_50">3.2</item>
+    <item type="dimen" name="items_per_screen_image_text_v3_type_51">2.15</item>
+    <item type="dimen" name="items_per_screen_image_text_v3_type_54">1.8</item>
+    <item type="dimen" name="items_per_screen_image_text_v3_type_58">1.2</item>
+    <item type="dimen" name="items_per_screen_image_text_v3_type_60">1.1</item>
+    <item type="dimen" name="items_per_screen_image_text_v4_type_14">3.8</item>
+    <item type="dimen" name="items_per_screen_image_text_v4_type_18">1.2</item>
+    <item type="dimen" name="items_per_screen_image_text_v4_type_4">1.0</item>
+    <item type="dimen" name="items_per_screen_image_text_v4_type_45">2.2</item>
+    <item type="dimen" name="items_per_screen_image_text_v4_type_47">1.0</item>
+    <item type="dimen" name="items_per_screen_info_rail_item">1.8</item>
+    <item type="dimen" name="items_per_screen_menu_customisation_tabs">1.5</item>
+    <item type="dimen" name="items_per_screen_multi_line_text_snippet_type_11">1.2</item>
+    <item type="dimen" name="items_per_screen_pill_snippet_type_1">2.2</item>
+    <item type="dimen" name="items_per_screen_plan_widget_snippet_type_13">2.2</item>
+    <item type="dimen" name="items_per_screen_plan_widget_snippet_type_3">2.5</item>
+    <item type="dimen" name="items_per_screen_promo_item">1.67</item>
+    <item type="dimen" name="items_per_screen_recommendation_rail">1.3</item>
+    <item type="dimen" name="items_per_screen_res_card_tag_item">1.3</item>
+    <item type="dimen" name="items_per_screen_review_item">1.1</item>
+    <item type="dimen" name="items_per_screen_text_type_10">1.0</item>
+    <item type="dimen" name="items_per_screen_ticket_snippet_type_1">1.2</item>
+    <item type="dimen" name="items_per_screen_ticket_snippet_type_11">2.2</item>
+    <item type="dimen" name="items_per_screen_ticket_snippet_type_12">1.2</item>
+    <item type="dimen" name="items_per_screen_ticket_snippet_type_2">1.0</item>
+    <item type="dimen" name="items_per_screen_ticket_snippet_type_5">1.2</item>
+    <item type="dimen" name="items_per_screen_ticket_snippet_type_6">2.2</item>
+    <item type="dimen" name="items_per_screen_ticket_snippet_type_8">2.2</item>
+    <item type="dimen" name="items_per_screen_ticket_snippet_type_9">1.2</item>
+    <item type="dimen" name="items_per_screen_v2_image_text_snippet_type_17">4.5</item>
+    <item type="dimen" name="items_per_screen_v2_image_text_type_23">1.2</item>
+    <item type="dimen" name="items_per_screen_v2_image_text_type_45">1.6</item>
+    <item type="dimen" name="items_per_screen_v2_res_snippet_type_14_carousel">1.4</item>
+    <item type="dimen" name="items_per_screen_v3_image_text_snippet_type_25">3.1</item>
+    <item type="dimen" name="items_per_screen_v3_image_text_snippet_type_33">1.1</item>
+    <item type="dimen" name="items_per_screen_v3_image_text_type_49">1.15</item>
+    <item type="dimen" name="items_per_screen_v4_image_text_snippet_type_20">1.2</item>
+    <item type="dimen" name="items_per_screen_video_type_1">1.2</item>
+    <item type="dimen" name="items_per_screen_video_type_2">1.0</item>
+    <item type="dimen" name="items_per_screen_video_type_4">2.8</item>
+    <dimen name="keyboard_height">340.0dip</dimen>
+    <item type="dimen" name="language_disclaimer_spacing">@dimen/size_72</item>
+    <dimen name="large_icon">36.0dip</dimen>
+    <dimen name="large_stepper_buttons_text_size">15.0sp</dimen>
+    <dimen name="large_stepper_text_size">13.0sp</dimen>
+    <item type="dimen" name="letter_spacing_1">0.1</item>
+    <item type="dimen" name="letter_spacing_2">0.2</item>
+    <item type="dimen" name="letter_spacing_5">0.5</item>
+    <dimen name="listing_rating_min_width">28.0dip</dimen>
+    <dimen name="loading_text_size">22.0sp</dimen>
+    <dimen name="location_shimmer_adjust_start_padding">-45.0dip</dimen>
+    <dimen name="m3_alert_dialog_action_bottom_padding">14.0dip</dimen>
+    <dimen name="m3_alert_dialog_action_top_padding">14.0dip</dimen>
+    <dimen name="m3_alert_dialog_corner_size">28.0dip</dimen>
+    <item type="dimen" name="m3_alert_dialog_elevation">@dimen/m3_sys_elevation_level3</item>
+    <dimen name="m3_alert_dialog_icon_margin">16.0dip</dimen>
+    <dimen name="m3_alert_dialog_icon_size">24.0dip</dimen>
+    <dimen name="m3_alert_dialog_title_bottom_margin">16.0dip</dimen>
+    <dimen name="m3_appbar_expanded_title_margin_bottom">16.0dip</dimen>
+    <dimen name="m3_appbar_expanded_title_margin_horizontal">16.0dip</dimen>
+    <dimen name="m3_appbar_scrim_height_trigger">96.0dip</dimen>
+    <dimen name="m3_appbar_scrim_height_trigger_large">112.0dip</dimen>
+    <dimen name="m3_appbar_scrim_height_trigger_medium">112.0dip</dimen>
+    <item type="dimen" name="m3_appbar_size_compact">@dimen/m3_comp_top_app_bar_small_container_height</item>
+    <item type="dimen" name="m3_appbar_size_large">@dimen/m3_comp_top_app_bar_large_container_height</item>
+    <item type="dimen" name="m3_appbar_size_medium">@dimen/m3_comp_top_app_bar_medium_container_height</item>
+    <dimen name="m3_badge_offset">6.0dip</dimen>
+    <item type="dimen" name="m3_badge_size">@dimen/m3_comp_badge_size</item>
+    <dimen name="m3_badge_with_text_offset">12.0dip</dimen>
+    <item type="dimen" name="m3_badge_with_text_size">@dimen/m3_comp_badge_large_size</item>
+    <item type="dimen" name="m3_bottom_nav_item_active_indicator_height">@dimen/m3_comp_navigation_bar_active_indicator_height</item>
+    <dimen name="m3_bottom_nav_item_active_indicator_margin_horizontal">4.0dip</dimen>
+    <item type="dimen" name="m3_bottom_nav_item_active_indicator_width">@dimen/m3_comp_navigation_bar_active_indicator_width</item>
+    <dimen name="m3_bottom_nav_item_padding_bottom">16.0dip</dimen>
+    <dimen name="m3_bottom_nav_item_padding_top">12.0dip</dimen>
+    <item type="dimen" name="m3_bottom_nav_min_height">@dimen/m3_comp_navigation_bar_container_height</item>
+    <dimen name="m3_bottom_sheet_drag_handle_bottom_padding">20.0dip</dimen>
+    <item type="dimen" name="m3_bottom_sheet_elevation">@dimen/m3_sys_elevation_level1</item>
+    <item type="dimen" name="m3_bottom_sheet_modal_elevation">@dimen/m3_sys_elevation_level1</item>
+    <dimen name="m3_bottomappbar_fab_cradle_margin">6.0dip</dimen>
+    <dimen name="m3_bottomappbar_fab_cradle_rounded_corner_radius">4.0dip</dimen>
+    <dimen name="m3_bottomappbar_fab_cradle_vertical_offset">12.0dip</dimen>
+    <dimen name="m3_bottomappbar_fab_end_margin">16.0dip</dimen>
+    <item type="dimen" name="m3_bottomappbar_height">@dimen/m3_comp_bottom_app_bar_container_height</item>
+    <dimen name="m3_bottomappbar_horizontal_padding">4.0dip</dimen>
+    <dimen name="m3_btn_dialog_btn_min_width">64.0dip</dimen>
+    <dimen name="m3_btn_dialog_btn_spacing">8.0dip</dimen>
+    <dimen name="m3_btn_disabled_elevation">0.0dip</dimen>
+    <dimen name="m3_btn_disabled_translation_z">0.0dip</dimen>
+    <dimen name="m3_btn_elevation">0.0dip</dimen>
+    <dimen name="m3_btn_icon_only_default_padding">10.0dip</dimen>
+    <dimen name="m3_btn_icon_only_default_size">20.0dip</dimen>
+    <dimen name="m3_btn_icon_only_icon_padding">0.0dip</dimen>
+    <dimen name="m3_btn_icon_only_min_width">20.0dip</dimen>
+    <dimen name="m3_btn_inset">4.0dip</dimen>
+    <dimen name="m3_btn_max_width">320.0dip</dimen>
+    <dimen name="m3_btn_padding_bottom">6.0dip</dimen>
+    <dimen name="m3_btn_padding_left">24.0dip</dimen>
+    <dimen name="m3_btn_padding_right">24.0dip</dimen>
+    <dimen name="m3_btn_padding_top">6.0dip</dimen>
+    <dimen name="m3_btn_text_btn_padding_left">12.0dip</dimen>
+    <dimen name="m3_btn_text_btn_padding_right">12.0dip</dimen>
+    <dimen name="m3_btn_translation_z_base">0.0dip</dimen>
+    <dimen name="m3_btn_translation_z_hovered">1.0dip</dimen>
+    <dimen name="m3_card_dragged_z">6.0dip</dimen>
+    <dimen name="m3_card_elevated_dragged_z">7.0dip</dimen>
+    <item type="dimen" name="m3_card_elevated_elevation">@dimen/m3_comp_elevated_card_container_elevation</item>
+    <dimen name="m3_card_elevated_hovered_z">2.0dip</dimen>
+    <item type="dimen" name="m3_card_elevation">@dimen/m3_sys_elevation_level0</item>
+    <dimen name="m3_card_hovered_z">1.0dip</dimen>
+    <dimen name="m3_card_stroke_width">1.0dip</dimen>
+    <dimen name="m3_carousel_debug_keyline_width">2.0dip</dimen>
+    <dimen name="m3_carousel_gone_size">1.0dip</dimen>
+    <dimen name="m3_carousel_small_item_size_max">56.0dip</dimen>
+    <dimen name="m3_carousel_small_item_size_min">40.0dip</dimen>
+    <dimen name="m3_chip_checked_hovered_translation_z">1.0dip</dimen>
+    <dimen name="m3_chip_icon_size">18.0dip</dimen>
+    <dimen name="m3_comp_assist_chip_container_height">32.0dip</dimen>
+    <item type="dimen" name="m3_comp_assist_chip_flat_container_elevation">@dimen/m3_sys_elevation_level0</item>
+    <dimen name="m3_comp_assist_chip_flat_outline_width">1.0dip</dimen>
+    <dimen name="m3_comp_assist_chip_with_icon_icon_size">18.0dip</dimen>
+    <dimen name="m3_comp_badge_large_size">16.0dip</dimen>
+    <dimen name="m3_comp_badge_size">6.0dip</dimen>
+    <item type="dimen" name="m3_comp_bottom_app_bar_container_elevation">@dimen/m3_sys_elevation_level2</item>
+    <dimen name="m3_comp_bottom_app_bar_container_height">80.0dip</dimen>
+    <item type="dimen" name="m3_comp_checkbox_selected_disabled_container_opacity">0.38</item>
+    <dimen name="m3_comp_circular_progress_indicator_active_indicator_width">4.0dip</dimen>
+    <dimen name="m3_comp_divider_thickness">1.0dip</dimen>
+    <item type="dimen" name="m3_comp_elevated_card_container_elevation">@dimen/m3_sys_elevation_level1</item>
+    <dimen name="m3_comp_elevated_card_icon_size">24.0dip</dimen>
+    <item type="dimen" name="m3_comp_extended_fab_primary_container_elevation">@dimen/m3_sys_elevation_level3</item>
+    <dimen name="m3_comp_extended_fab_primary_container_height">56.0dip</dimen>
+    <item type="dimen" name="m3_comp_extended_fab_primary_focus_container_elevation">@dimen/m3_sys_elevation_level3</item>
+    <item type="dimen" name="m3_comp_extended_fab_primary_focus_state_layer_opacity">@dimen/m3_sys_state_focus_state_layer_opacity</item>
+    <item type="dimen" name="m3_comp_extended_fab_primary_hover_container_elevation">@dimen/m3_sys_elevation_level4</item>
+    <item type="dimen" name="m3_comp_extended_fab_primary_hover_state_layer_opacity">@dimen/m3_sys_state_hover_state_layer_opacity</item>
+    <dimen name="m3_comp_extended_fab_primary_icon_size">24.0dip</dimen>
+    <item type="dimen" name="m3_comp_extended_fab_primary_pressed_container_elevation">@dimen/m3_sys_elevation_level3</item>
+    <item type="dimen" name="m3_comp_extended_fab_primary_pressed_state_layer_opacity">@dimen/m3_sys_state_pressed_state_layer_opacity</item>
+    <item type="dimen" name="m3_comp_fab_primary_container_elevation">@dimen/m3_sys_elevation_level3</item>
+    <dimen name="m3_comp_fab_primary_container_height">56.0dip</dimen>
+    <item type="dimen" name="m3_comp_fab_primary_focus_state_layer_opacity">@dimen/m3_sys_state_focus_state_layer_opacity</item>
+    <item type="dimen" name="m3_comp_fab_primary_hover_container_elevation">@dimen/m3_sys_elevation_level4</item>
+    <item type="dimen" name="m3_comp_fab_primary_hover_state_layer_opacity">@dimen/m3_sys_state_hover_state_layer_opacity</item>
+    <dimen name="m3_comp_fab_primary_icon_size">24.0dip</dimen>
+    <dimen name="m3_comp_fab_primary_large_container_height">96.0dip</dimen>
+    <dimen name="m3_comp_fab_primary_large_icon_size">36.0dip</dimen>
+    <item type="dimen" name="m3_comp_fab_primary_pressed_container_elevation">@dimen/m3_sys_elevation_level3</item>
+    <item type="dimen" name="m3_comp_fab_primary_pressed_state_layer_opacity">@dimen/m3_sys_state_pressed_state_layer_opacity</item>
+    <dimen name="m3_comp_fab_primary_small_container_height">40.0dip</dimen>
+    <dimen name="m3_comp_fab_primary_small_icon_size">24.0dip</dimen>
+    <item type="dimen" name="m3_comp_filled_autocomplete_menu_container_elevation">@dimen/m3_sys_elevation_level2</item>
+    <item type="dimen" name="m3_comp_filled_button_container_elevation">@dimen/m3_sys_elevation_level0</item>
+    <dimen name="m3_comp_filled_button_with_icon_icon_size">18.0dip</dimen>
+    <item type="dimen" name="m3_comp_filled_card_container_elevation">@dimen/m3_sys_elevation_level0</item>
+    <item type="dimen" name="m3_comp_filled_card_dragged_state_layer_opacity">@dimen/m3_sys_state_dragged_state_layer_opacity</item>
+    <item type="dimen" name="m3_comp_filled_card_focus_state_layer_opacity">@dimen/m3_sys_state_focus_state_layer_opacity</item>
+    <item type="dimen" name="m3_comp_filled_card_hover_state_layer_opacity">@dimen/m3_sys_state_hover_state_layer_opacity</item>
+    <dimen name="m3_comp_filled_card_icon_size">24.0dip</dimen>
+    <item type="dimen" name="m3_comp_filled_card_pressed_state_layer_opacity">@dimen/m3_sys_state_pressed_state_layer_opacity</item>
+    <item type="dimen" name="m3_comp_filled_text_field_disabled_active_indicator_opacity">0.38</item>
+    <item type="dimen" name="m3_comp_input_chip_container_elevation">@dimen/m3_sys_elevation_level0</item>
+    <dimen name="m3_comp_input_chip_container_height">32.0dip</dimen>
+    <dimen name="m3_comp_input_chip_unselected_outline_width">1.0dip</dimen>
+    <dimen name="m3_comp_input_chip_with_avatar_avatar_size">24.0dip</dimen>
+    <dimen name="m3_comp_linear_progress_indicator_active_indicator_height">4.0dip</dimen>
+    <item type="dimen" name="m3_comp_menu_container_elevation">@dimen/m3_sys_elevation_level2</item>
+    <dimen name="m3_comp_navigation_bar_active_indicator_height">32.0dip</dimen>
+    <dimen name="m3_comp_navigation_bar_active_indicator_width">64.0dip</dimen>
+    <item type="dimen" name="m3_comp_navigation_bar_container_elevation">@dimen/m3_sys_elevation_level2</item>
+    <dimen name="m3_comp_navigation_bar_container_height">80.0dip</dimen>
+    <item type="dimen" name="m3_comp_navigation_bar_focus_state_layer_opacity">@dimen/m3_sys_state_focus_state_layer_opacity</item>
+    <item type="dimen" name="m3_comp_navigation_bar_hover_state_layer_opacity">@dimen/m3_sys_state_hover_state_layer_opacity</item>
+    <dimen name="m3_comp_navigation_bar_icon_size">24.0dip</dimen>
+    <item type="dimen" name="m3_comp_navigation_bar_pressed_state_layer_opacity">@dimen/m3_sys_state_pressed_state_layer_opacity</item>
+    <dimen name="m3_comp_navigation_drawer_container_width">360.0dip</dimen>
+    <item type="dimen" name="m3_comp_navigation_drawer_focus_state_layer_opacity">@dimen/m3_sys_state_focus_state_layer_opacity</item>
+    <item type="dimen" name="m3_comp_navigation_drawer_hover_state_layer_opacity">@dimen/m3_sys_state_hover_state_layer_opacity</item>
+    <dimen name="m3_comp_navigation_drawer_icon_size">24.0dip</dimen>
+    <item type="dimen" name="m3_comp_navigation_drawer_modal_container_elevation">@dimen/m3_sys_elevation_level1</item>
+    <item type="dimen" name="m3_comp_navigation_drawer_pressed_state_layer_opacity">@dimen/m3_sys_state_pressed_state_layer_opacity</item>
+    <item type="dimen" name="m3_comp_navigation_drawer_standard_container_elevation">@dimen/m3_sys_elevation_level0</item>
+    <dimen name="m3_comp_navigation_rail_active_indicator_height">32.0dip</dimen>
+    <dimen name="m3_comp_navigation_rail_active_indicator_width">56.0dip</dimen>
+    <item type="dimen" name="m3_comp_navigation_rail_container_elevation">@dimen/m3_sys_elevation_level0</item>
+    <dimen name="m3_comp_navigation_rail_container_width">80.0dip</dimen>
+    <dimen name="m3_comp_navigation_rail_icon_size">24.0dip</dimen>
+    <item type="dimen" name="m3_comp_outlined_autocomplete_menu_container_elevation">@dimen/m3_sys_elevation_level2</item>
+    <dimen name="m3_comp_outlined_button_outline_width">1.0dip</dimen>
+    <item type="dimen" name="m3_comp_outlined_card_container_elevation">@dimen/m3_sys_elevation_level0</item>
+    <item type="dimen" name="m3_comp_outlined_card_disabled_outline_opacity">0.12</item>
+    <dimen name="m3_comp_outlined_card_icon_size">24.0dip</dimen>
+    <dimen name="m3_comp_outlined_card_outline_width">1.0dip</dimen>
+    <dimen name="m3_comp_outlined_icon_button_unselected_outline_width">1.0dip</dimen>
+    <item type="dimen" name="m3_comp_outlined_text_field_disabled_input_text_opacity">0.38</item>
+    <item type="dimen" name="m3_comp_outlined_text_field_disabled_label_text_opacity">0.38</item>
+    <item type="dimen" name="m3_comp_outlined_text_field_disabled_supporting_text_opacity">0.38</item>
+    <dimen name="m3_comp_outlined_text_field_focus_outline_width">2.0dip</dimen>
+    <dimen name="m3_comp_outlined_text_field_outline_width">1.0dip</dimen>
+    <item type="dimen" name="m3_comp_primary_navigation_tab_active_focus_state_layer_opacity">@dimen/m3_sys_state_focus_state_layer_opacity</item>
+    <item type="dimen" name="m3_comp_primary_navigation_tab_active_hover_state_layer_opacity">@dimen/m3_sys_state_hover_state_layer_opacity</item>
+    <dimen name="m3_comp_primary_navigation_tab_active_indicator_height">3.0dip</dimen>
+    <item type="dimen" name="m3_comp_primary_navigation_tab_active_pressed_state_layer_opacity">@dimen/m3_sys_state_pressed_state_layer_opacity</item>
+    <dimen name="m3_comp_primary_navigation_tab_divider_height">1.0dip</dimen>
+    <item type="dimen" name="m3_comp_primary_navigation_tab_inactive_focus_state_layer_opacity">@dimen/m3_sys_state_focus_state_layer_opacity</item>
+    <item type="dimen" name="m3_comp_primary_navigation_tab_inactive_hover_state_layer_opacity">@dimen/m3_sys_state_hover_state_layer_opacity</item>
+    <item type="dimen" name="m3_comp_primary_navigation_tab_inactive_pressed_state_layer_opacity">@dimen/m3_sys_state_pressed_state_layer_opacity</item>
+    <dimen name="m3_comp_primary_navigation_tab_with_icon_icon_size">24.0dip</dimen>
+    <item type="dimen" name="m3_comp_radio_button_disabled_selected_icon_opacity">0.38</item>
+    <item type="dimen" name="m3_comp_radio_button_disabled_unselected_icon_opacity">0.38</item>
+    <item type="dimen" name="m3_comp_radio_button_selected_focus_state_layer_opacity">@dimen/m3_sys_state_focus_state_layer_opacity</item>
+    <item type="dimen" name="m3_comp_radio_button_selected_hover_state_layer_opacity">@dimen/m3_sys_state_hover_state_layer_opacity</item>
+    <item type="dimen" name="m3_comp_radio_button_selected_pressed_state_layer_opacity">@dimen/m3_sys_state_pressed_state_layer_opacity</item>
+    <item type="dimen" name="m3_comp_radio_button_unselected_focus_state_layer_opacity">@dimen/m3_sys_state_focus_state_layer_opacity</item>
+    <item type="dimen" name="m3_comp_radio_button_unselected_hover_state_layer_opacity">@dimen/m3_sys_state_hover_state_layer_opacity</item>
+    <item type="dimen" name="m3_comp_radio_button_unselected_pressed_state_layer_opacity">@dimen/m3_sys_state_pressed_state_layer_opacity</item>
+    <item type="dimen" name="m3_comp_search_bar_container_elevation">@dimen/m3_sys_elevation_level3</item>
+    <dimen name="m3_comp_search_bar_container_height">56.0dip</dimen>
+    <item type="dimen" name="m3_comp_search_view_container_elevation">@dimen/m3_sys_elevation_level3</item>
+    <dimen name="m3_comp_search_view_full_screen_header_container_height">72.0dip</dimen>
+    <dimen name="m3_comp_secondary_navigation_tab_active_indicator_height">2.0dip</dimen>
+    <item type="dimen" name="m3_comp_secondary_navigation_tab_focus_state_layer_opacity">@dimen/m3_sys_state_focus_state_layer_opacity</item>
+    <item type="dimen" name="m3_comp_secondary_navigation_tab_hover_state_layer_opacity">@dimen/m3_sys_state_hover_state_layer_opacity</item>
+    <item type="dimen" name="m3_comp_secondary_navigation_tab_pressed_state_layer_opacity">@dimen/m3_sys_state_pressed_state_layer_opacity</item>
+    <dimen name="m3_comp_sheet_side_docked_container_width">256.0dip</dimen>
+    <item type="dimen" name="m3_comp_sheet_side_docked_modal_container_elevation">@dimen/m3_sys_elevation_level1</item>
+    <item type="dimen" name="m3_comp_sheet_side_docked_standard_container_elevation">@dimen/m3_sys_elevation_level0</item>
+    <item type="dimen" name="m3_comp_slider_disabled_active_track_opacity">0.38</item>
+    <item type="dimen" name="m3_comp_slider_disabled_handle_opacity">0.38</item>
+    <item type="dimen" name="m3_comp_slider_disabled_inactive_track_opacity">0.12</item>
+    <dimen name="m3_comp_slider_inactive_track_height">4.0dip</dimen>
+    <item type="dimen" name="m3_comp_snackbar_container_elevation">@dimen/m3_sys_elevation_level3</item>
+    <item type="dimen" name="m3_comp_switch_disabled_selected_handle_opacity">1.0</item>
+    <item type="dimen" name="m3_comp_switch_disabled_selected_icon_opacity">0.38</item>
+    <item type="dimen" name="m3_comp_switch_disabled_track_opacity">0.12</item>
+    <item type="dimen" name="m3_comp_switch_disabled_unselected_handle_opacity">0.38</item>
+    <item type="dimen" name="m3_comp_switch_disabled_unselected_icon_opacity">0.38</item>
+    <dimen name="m3_comp_switch_track_height">32.0dip</dimen>
+    <dimen name="m3_comp_switch_track_width">52.0dip</dimen>
+    <item type="dimen" name="m3_comp_text_button_focus_state_layer_opacity">@dimen/m3_sys_state_focus_state_layer_opacity</item>
+    <item type="dimen" name="m3_comp_text_button_hover_state_layer_opacity">@dimen/m3_sys_state_hover_state_layer_opacity</item>
+    <item type="dimen" name="m3_comp_text_button_pressed_state_layer_opacity">@dimen/m3_sys_state_pressed_state_layer_opacity</item>
+    <dimen name="m3_comp_time_input_time_input_field_focus_outline_width">2.0dip</dimen>
+    <item type="dimen" name="m3_comp_time_picker_container_elevation">@dimen/m3_sys_elevation_level3</item>
+    <item type="dimen" name="m3_comp_time_picker_period_selector_focus_state_layer_opacity">@dimen/m3_sys_state_focus_state_layer_opacity</item>
+    <item type="dimen" name="m3_comp_time_picker_period_selector_hover_state_layer_opacity">@dimen/m3_sys_state_hover_state_layer_opacity</item>
+    <dimen name="m3_comp_time_picker_period_selector_outline_width">1.0dip</dimen>
+    <item type="dimen" name="m3_comp_time_picker_period_selector_pressed_state_layer_opacity">@dimen/m3_sys_state_pressed_state_layer_opacity</item>
+    <item type="dimen" name="m3_comp_time_picker_time_selector_focus_state_layer_opacity">@dimen/m3_sys_state_focus_state_layer_opacity</item>
+    <item type="dimen" name="m3_comp_time_picker_time_selector_hover_state_layer_opacity">@dimen/m3_sys_state_hover_state_layer_opacity</item>
+    <item type="dimen" name="m3_comp_time_picker_time_selector_pressed_state_layer_opacity">@dimen/m3_sys_state_pressed_state_layer_opacity</item>
+    <dimen name="m3_comp_top_app_bar_large_container_height">152.0dip</dimen>
+    <dimen name="m3_comp_top_app_bar_medium_container_height">112.0dip</dimen>
+    <item type="dimen" name="m3_comp_top_app_bar_small_container_elevation">@dimen/m3_sys_elevation_level0</item>
+    <dimen name="m3_comp_top_app_bar_small_container_height">64.0dip</dimen>
+    <item type="dimen" name="m3_comp_top_app_bar_small_on_scroll_container_elevation">@dimen/m3_sys_elevation_level2</item>
+    <item type="dimen" name="m3_datepicker_elevation">@dimen/m3_sys_elevation_level3</item>
+    <dimen name="m3_divider_heavy_thickness">8.0dip</dimen>
+    <dimen name="m3_extended_fab_bottom_padding">8.0dip</dimen>
+    <dimen name="m3_extended_fab_end_padding">20.0dip</dimen>
+    <dimen name="m3_extended_fab_icon_padding">12.0dip</dimen>
+    <dimen name="m3_extended_fab_start_padding">16.0dip</dimen>
+    <dimen name="m3_extended_fab_top_padding">8.0dip</dimen>
+    <dimen name="m3_fab_border_width">0.0dip</dimen>
+    <item type="dimen" name="m3_fab_corner_size">29.999996%</item>
+    <item type="dimen" name="m3_menu_elevation">@dimen/m3_comp_menu_container_elevation</item>
+    <dimen name="m3_navigation_drawer_layout_corner_size">16.0dip</dimen>
+    <dimen name="m3_navigation_item_horizontal_padding">28.0dip</dimen>
+    <dimen name="m3_navigation_item_icon_padding">12.0dip</dimen>
+    <dimen name="m3_navigation_item_shape_inset_bottom">0.0dip</dimen>
+    <dimen name="m3_navigation_item_shape_inset_end">12.0dip</dimen>
+    <dimen name="m3_navigation_item_shape_inset_start">12.0dip</dimen>
+    <dimen name="m3_navigation_item_shape_inset_top">0.0dip</dimen>
+    <dimen name="m3_navigation_item_vertical_padding">4.0dip</dimen>
+    <dimen name="m3_navigation_menu_divider_horizontal_padding">28.0dip</dimen>
+    <dimen name="m3_navigation_menu_headline_horizontal_padding">28.0dip</dimen>
+    <item type="dimen" name="m3_navigation_rail_default_width">@dimen/m3_comp_navigation_rail_container_width</item>
+    <item type="dimen" name="m3_navigation_rail_elevation">@dimen/m3_comp_navigation_rail_container_elevation</item>
+    <item type="dimen" name="m3_navigation_rail_item_active_indicator_height">@dimen/m3_comp_navigation_rail_active_indicator_height</item>
+    <dimen name="m3_navigation_rail_item_active_indicator_margin_horizontal">4.0dip</dimen>
+    <item type="dimen" name="m3_navigation_rail_item_active_indicator_width">@dimen/m3_comp_navigation_rail_active_indicator_width</item>
+    <dimen name="m3_navigation_rail_item_min_height">60.0dip</dimen>
+    <dimen name="m3_navigation_rail_item_padding_bottom">8.0dip</dimen>
+    <dimen name="m3_navigation_rail_item_padding_top">4.0dip</dimen>
+    <item type="dimen" name="m3_ripple_default_alpha">@dimen/m3_sys_state_dragged_state_layer_opacity</item>
+    <item type="dimen" name="m3_ripple_focused_alpha">@dimen/m3_sys_state_focus_state_layer_opacity</item>
+    <item type="dimen" name="m3_ripple_hovered_alpha">@dimen/m3_sys_state_hover_state_layer_opacity</item>
+    <item type="dimen" name="m3_ripple_pressed_alpha">@dimen/m3_sys_state_pressed_state_layer_opacity</item>
+    <item type="dimen" name="m3_ripple_selectable_pressed_alpha">@dimen/m3_sys_state_pressed_state_layer_opacity</item>
+    <item type="dimen" name="m3_searchbar_elevation">@dimen/m3_comp_search_bar_container_elevation</item>
+    <item type="dimen" name="m3_searchbar_height">@dimen/m3_comp_search_bar_container_height</item>
+    <dimen name="m3_searchbar_margin_horizontal">16.0dip</dimen>
+    <dimen name="m3_searchbar_margin_vertical">16.0dip</dimen>
+    <dimen name="m3_searchbar_padding_start">4.0dip</dimen>
+    <dimen name="m3_searchbar_text_margin_start_no_navigation_icon">16.0dip</dimen>
+    <dimen name="m3_searchbar_text_size">16.0sp</dimen>
+    <dimen name="m3_searchview_divider_size">1.0dip</dimen>
+    <item type="dimen" name="m3_searchview_elevation">@dimen/m3_comp_search_view_container_elevation</item>
+    <item type="dimen" name="m3_searchview_height">@dimen/m3_comp_search_view_full_screen_header_container_height</item>
+    <item type="dimen" name="m3_side_sheet_modal_elevation">@dimen/m3_comp_sheet_side_docked_modal_container_elevation</item>
+    <item type="dimen" name="m3_side_sheet_standard_elevation">@dimen/m3_comp_sheet_side_docked_standard_container_elevation</item>
+    <item type="dimen" name="m3_side_sheet_width">@dimen/m3_comp_sheet_side_docked_container_width</item>
+    <item type="dimen" name="m3_simple_item_color_hovered_alpha">0.08</item>
+    <item type="dimen" name="m3_simple_item_color_selected_alpha">0.12</item>
+    <item type="dimen" name="m3_slider_inactive_track_height">@dimen/m3_comp_slider_inactive_track_height</item>
+    <dimen name="m3_slider_thumb_elevation">2.0dip</dimen>
+    <item type="dimen" name="m3_snackbar_action_text_color_alpha">1.0</item>
+    <dimen name="m3_snackbar_margin">8.0dip</dimen>
+    <dimen name="m3_sys_elevation_level0">0.0dip</dimen>
+    <dimen name="m3_sys_elevation_level1">1.0dip</dimen>
+    <dimen name="m3_sys_elevation_level2">3.0dip</dimen>
+    <dimen name="m3_sys_elevation_level3">6.0dip</dimen>
+    <dimen name="m3_sys_elevation_level4">8.0dip</dimen>
+    <dimen name="m3_sys_elevation_level5">12.0dip</dimen>
+    <item type="dimen" name="m3_sys_motion_easing_emphasized_accelerate_control_x1">0.3</item>
+    <item type="dimen" name="m3_sys_motion_easing_emphasized_accelerate_control_x2">0.8</item>
+    <item type="dimen" name="m3_sys_motion_easing_emphasized_accelerate_control_y1">0.0</item>
+    <item type="dimen" name="m3_sys_motion_easing_emphasized_accelerate_control_y2">0.2</item>
+    <item type="dimen" name="m3_sys_motion_easing_emphasized_decelerate_control_x1">0.1</item>
+    <item type="dimen" name="m3_sys_motion_easing_emphasized_decelerate_control_x2">0.1</item>
+    <item type="dimen" name="m3_sys_motion_easing_emphasized_decelerate_control_y1">0.7</item>
+    <item type="dimen" name="m3_sys_motion_easing_emphasized_decelerate_control_y2">1.0</item>
+    <item type="dimen" name="m3_sys_motion_easing_linear_control_x1">0.0</item>
+    <item type="dimen" name="m3_sys_motion_easing_linear_control_x2">1.0</item>
+    <item type="dimen" name="m3_sys_motion_easing_linear_control_y1">0.0</item>
+    <item type="dimen" name="m3_sys_motion_easing_linear_control_y2">1.0</item>
+    <item type="dimen" name="m3_sys_motion_easing_standard_accelerate_control_x1">0.3</item>
+    <item type="dimen" name="m3_sys_motion_easing_standard_accelerate_control_x2">1.0</item>
+    <item type="dimen" name="m3_sys_motion_easing_standard_accelerate_control_y1">0.0</item>
+    <item type="dimen" name="m3_sys_motion_easing_standard_accelerate_control_y2">1.0</item>
+    <item type="dimen" name="m3_sys_motion_easing_standard_control_x1">0.2</item>
+    <item type="dimen" name="m3_sys_motion_easing_standard_control_x2">0.0</item>
+    <item type="dimen" name="m3_sys_motion_easing_standard_control_y1">0.0</item>
+    <item type="dimen" name="m3_sys_motion_easing_standard_control_y2">1.0</item>
+    <item type="dimen" name="m3_sys_motion_easing_standard_decelerate_control_x1">0.0</item>
+    <item type="dimen" name="m3_sys_motion_easing_standard_decelerate_control_x2">0.0</item>
+    <item type="dimen" name="m3_sys_motion_easing_standard_decelerate_control_y1">0.0</item>
+    <item type="dimen" name="m3_sys_motion_easing_standard_decelerate_control_y2">1.0</item>
+    <item type="dimen" name="m3_sys_state_dragged_state_layer_opacity">0.32</item>
+    <item type="dimen" name="m3_sys_state_focus_state_layer_opacity">0.24</item>
+    <item type="dimen" name="m3_sys_state_hover_state_layer_opacity">0.16</item>
+    <item type="dimen" name="m3_sys_state_pressed_state_layer_opacity">0.24</item>
+    <item type="dimen" name="m3_timepicker_window_elevation">@dimen/m3_comp_time_picker_container_elevation</item>
+    <dimen name="manual_carousel_arrow">30.0dip</dimen>
+    <dimen name="map_icon_margin_big">60.0dip</dimen>
+    <dimen name="map_icon_margin_bigger">85.0dip</dimen>
+    <dimen name="map_icon_margin_biggest">135.0dip</dimen>
+    <dimen name="map_icon_margin_small">40.0dip</dimen>
+    <dimen name="margin_10">10.0dip</dimen>
+    <dimen name="margin_12">12.0dip</dimen>
+    <dimen name="margin_16">16.0dip</dimen>
+    <dimen name="margin_18">18.0dip</dimen>
+    <dimen name="margin_2">2.0dip</dimen>
+    <dimen name="margin_20">20.0dip</dimen>
+    <dimen name="margin_24">24.0dip</dimen>
+    <dimen name="margin_3">3.0dip</dimen>
+    <dimen name="margin_32">32.0dip</dimen>
+    <dimen name="margin_4">4.0dip</dimen>
+    <dimen name="margin_48">48.0dip</dimen>
+    <dimen name="margin_5">5.0dip</dimen>
+    <dimen name="margin_6">6.0dip</dimen>
+    <dimen name="margin_64_dp">64.0dip</dimen>
+    <dimen name="margin_8">8.0dip</dimen>
+    <dimen name="material_bottom_sheet_max_width">640.0dip</dimen>
+    <dimen name="material_clock_display_height">80.0dip</dimen>
+    <dimen name="material_clock_display_padding">24.0dip</dimen>
+    <dimen name="material_clock_display_width">96.0dip</dimen>
+    <dimen name="material_clock_face_margin_top">44.0dip</dimen>
+    <dimen name="material_clock_hand_center_dot_radius">4.0dip</dimen>
+    <dimen name="material_clock_hand_padding">4.0dip</dimen>
+    <dimen name="material_clock_hand_stroke_width">2.0dip</dimen>
+    <dimen name="material_clock_number_text_size">15.0sp</dimen>
+    <dimen name="material_clock_period_toggle_height">96.0dip</dimen>
+    <dimen name="material_clock_period_toggle_horizontal_gap">12.0dip</dimen>
+    <dimen name="material_clock_period_toggle_vertical_gap">12.0dip</dimen>
+    <dimen name="material_clock_period_toggle_width">52.0dip</dimen>
+    <dimen name="material_clock_size">256.0dip</dimen>
+    <dimen name="material_cursor_inset">-4.0dip</dimen>
+    <dimen name="material_cursor_width">2.0dip</dimen>
+    <dimen name="material_divider_thickness">1.0dip</dimen>
+    <item type="dimen" name="material_emphasis_disabled">0.38</item>
+    <item type="dimen" name="material_emphasis_disabled_background">0.12</item>
+    <item type="dimen" name="material_emphasis_high_type">0.87</item>
+    <item type="dimen" name="material_emphasis_medium">0.6</item>
+    <dimen name="material_filled_edittext_font_1_3_padding_bottom">12.0dip</dimen>
+    <dimen name="material_filled_edittext_font_1_3_padding_top">23.0dip</dimen>
+    <dimen name="material_filled_edittext_font_2_0_padding_bottom">8.0dip</dimen>
+    <dimen name="material_filled_edittext_font_2_0_padding_top">32.0dip</dimen>
+    <dimen name="material_font_1_3_box_collapsed_padding_top">4.0dip</dimen>
+    <dimen name="material_font_2_0_box_collapsed_padding_top">8.0dip</dimen>
+    <dimen name="material_helper_text_default_padding_top">4.0dip</dimen>
+    <dimen name="material_helper_text_font_1_3_padding_horizontal">12.0dip</dimen>
+    <dimen name="material_helper_text_font_1_3_padding_top">8.0dip</dimen>
+    <dimen name="material_input_text_to_prefix_suffix_padding">2.0dip</dimen>
+    <dimen name="material_textinput_default_width">245.0dip</dimen>
+    <dimen name="material_textinput_max_width">488.0dip</dimen>
+    <dimen name="material_textinput_min_width">56.0dip</dimen>
+    <dimen name="material_time_picker_minimum_screen_height">560.0dip</dimen>
+    <dimen name="material_time_picker_minimum_screen_width">340.0dip</dimen>
+    <dimen name="material_timepicker_dialog_buttons_margin_top">24.0dip</dimen>
+    <dimen name="maximum_header_width">300.0dip</dimen>
+    <dimen name="menu_button_shimmer_adjust_top_padding">-22.0dip</dimen>
+    <dimen name="menu_card_cart_count">24.0sp</dimen>
+    <dimen name="menu_checkout_button_height">54.0dip</dimen>
+    <dimen name="menu_checkout_button_width">233.0dip</dimen>
+    <dimen name="menu_custom_shimmer_adjust_start_padding">-38.0dip</dimen>
+    <dimen name="menu_custom_shimmer_adjust_top_padding">-18.0dip</dimen>
+    <dimen name="menu_grid_item_image_height_new">100.0dip</dimen>
+    <dimen name="menu_grid_item_image_width_new">120.0dip</dimen>
+    <dimen name="menu_new_grid_item_image_height">80.0dip</dimen>
+    <dimen name="menu_new_grid_item_image_width">80.0dip</dimen>
+    <dimen name="menu_next_shimmer_adjust_start_padding">-40.0dip</dimen>
+    <dimen name="menu_next_shimmer_adjust_top_padding">-13.0dip</dimen>
+    <dimen name="menu_separator_height">12.0dip</dimen>
+    <dimen name="menu_triangle_half_width">6.0dip</dimen>
+    <dimen name="menu_triangle_height">8.0dip</dimen>
+    <dimen name="metadata_font_size">10.0dip</dimen>
+    <dimen name="metadata_margin_x">4.0dip</dimen>
+    <dimen name="metadata_small_icon_x">16.0dip</dimen>
+    <dimen name="metadata_small_icon_y">16.0dip</dimen>
+    <dimen name="metadata_subtitle_max_width">120.0dip</dimen>
+    <dimen name="metadata_title_margin_horizontal">4.0dip</dimen>
+    <dimen name="metadata_title_margin_vertical">4.0dip</dimen>
+    <dimen name="msg_font_size">12.0sp</dimen>
+    <dimen name="msg_text_size">18.0sp</dimen>
+    <dimen name="mtrl_alert_dialog_background_inset_bottom">80.0dip</dimen>
+    <dimen name="mtrl_alert_dialog_background_inset_end">24.0dip</dimen>
+    <dimen name="mtrl_alert_dialog_background_inset_start">24.0dip</dimen>
+    <dimen name="mtrl_alert_dialog_background_inset_top">80.0dip</dimen>
+    <dimen name="mtrl_alert_dialog_picker_background_inset">24.0dip</dimen>
+    <dimen name="mtrl_badge_horizontal_edge_offset">4.0dip</dimen>
+    <dimen name="mtrl_badge_long_text_horizontal_padding">4.0dip</dimen>
+    <dimen name="mtrl_badge_size">8.0dip</dimen>
+    <dimen name="mtrl_badge_text_horizontal_edge_offset">6.0dip</dimen>
+    <dimen name="mtrl_badge_text_size">10.0sp</dimen>
+    <dimen name="mtrl_badge_toolbar_action_menu_item_horizontal_offset">12.0dip</dimen>
+    <dimen name="mtrl_badge_toolbar_action_menu_item_vertical_offset">12.0dip</dimen>
+    <dimen name="mtrl_badge_with_text_size">16.0dip</dimen>
+    <dimen name="mtrl_bottomappbar_fabOffsetEndMode">60.0dip</dimen>
+    <dimen name="mtrl_bottomappbar_fab_bottom_margin">16.0dip</dimen>
+    <dimen name="mtrl_bottomappbar_fab_cradle_margin">5.0dip</dimen>
+    <dimen name="mtrl_bottomappbar_fab_cradle_rounded_corner_radius">8.0dip</dimen>
+    <dimen name="mtrl_bottomappbar_fab_cradle_vertical_offset">0.0dip</dimen>
+    <dimen name="mtrl_bottomappbar_height">56.0dip</dimen>
+    <dimen name="mtrl_btn_corner_radius">4.0dip</dimen>
+    <dimen name="mtrl_btn_dialog_btn_min_width">64.0dip</dimen>
+    <dimen name="mtrl_btn_disabled_elevation">0.0dip</dimen>
+    <dimen name="mtrl_btn_disabled_z">0.0dip</dimen>
+    <dimen name="mtrl_btn_elevation">2.0dip</dimen>
+    <dimen name="mtrl_btn_focused_z">2.0dip</dimen>
+    <dimen name="mtrl_btn_hovered_z">2.0dip</dimen>
+    <dimen name="mtrl_btn_icon_btn_padding_left">12.0dip</dimen>
+    <dimen name="mtrl_btn_icon_padding">8.0dip</dimen>
+    <dimen name="mtrl_btn_inset">6.0dip</dimen>
+    <item type="dimen" name="mtrl_btn_letter_spacing">0.07</item>
+    <dimen name="mtrl_btn_max_width">320.0dip</dimen>
+    <dimen name="mtrl_btn_padding_bottom">4.0dip</dimen>
+    <dimen name="mtrl_btn_padding_left">16.0dip</dimen>
+    <dimen name="mtrl_btn_padding_right">16.0dip</dimen>
+    <dimen name="mtrl_btn_padding_top">4.0dip</dimen>
+    <dimen name="mtrl_btn_pressed_z">6.0dip</dimen>
+    <dimen name="mtrl_btn_snackbar_margin_horizontal">8.0dip</dimen>
+    <dimen name="mtrl_btn_stroke_size">1.0dip</dimen>
+    <dimen name="mtrl_btn_text_btn_icon_padding">4.0dip</dimen>
+    <dimen name="mtrl_btn_text_btn_padding_left">8.0dip</dimen>
+    <dimen name="mtrl_btn_text_btn_padding_right">8.0dip</dimen>
+    <dimen name="mtrl_btn_text_size">14.0sp</dimen>
+    <dimen name="mtrl_btn_z">0.0dip</dimen>
+    <dimen name="mtrl_calendar_action_confirm_button_min_width">64.0dip</dimen>
+    <dimen name="mtrl_calendar_action_height">52.0dip</dimen>
+    <dimen name="mtrl_calendar_action_padding">8.0dip</dimen>
+    <dimen name="mtrl_calendar_bottom_padding">0.0dip</dimen>
+    <dimen name="mtrl_calendar_content_padding">12.0dip</dimen>
+    <dimen name="mtrl_calendar_day_corner">15.0dip</dimen>
+    <dimen name="mtrl_calendar_day_height">32.0dip</dimen>
+    <dimen name="mtrl_calendar_day_horizontal_padding">3.0dip</dimen>
+    <dimen name="mtrl_calendar_day_today_stroke">1.0dip</dimen>
+    <dimen name="mtrl_calendar_day_vertical_padding">1.0dip</dimen>
+    <dimen name="mtrl_calendar_day_width">36.0dip</dimen>
+    <dimen name="mtrl_calendar_days_of_week_height">24.0dip</dimen>
+    <dimen name="mtrl_calendar_dialog_background_inset">16.0dip</dimen>
+    <dimen name="mtrl_calendar_header_content_padding">12.0dip</dimen>
+    <dimen name="mtrl_calendar_header_content_padding_fullscreen">4.0dip</dimen>
+    <dimen name="mtrl_calendar_header_divider_thickness">1.0dip</dimen>
+    <dimen name="mtrl_calendar_header_height">120.0dip</dimen>
+    <dimen name="mtrl_calendar_header_height_fullscreen">128.0dip</dimen>
+    <dimen name="mtrl_calendar_header_selection_line_height">32.0dip</dimen>
+    <dimen name="mtrl_calendar_header_text_padding">12.0dip</dimen>
+    <dimen name="mtrl_calendar_header_toggle_margin_bottom">8.0dip</dimen>
+    <dimen name="mtrl_calendar_header_toggle_margin_top">24.0dip</dimen>
+    <dimen name="mtrl_calendar_landscape_header_width">0.0dip</dimen>
+    <dimen name="mtrl_calendar_maximum_default_fullscreen_minor_axis">480.0dip</dimen>
+    <dimen name="mtrl_calendar_month_horizontal_padding">2.0dip</dimen>
+    <dimen name="mtrl_calendar_month_vertical_padding">0.0dip</dimen>
+    <dimen name="mtrl_calendar_navigation_bottom_padding">4.0dip</dimen>
+    <dimen name="mtrl_calendar_navigation_height">48.0dip</dimen>
+    <dimen name="mtrl_calendar_navigation_top_padding">4.0dip</dimen>
+    <dimen name="mtrl_calendar_pre_l_text_clip_padding">0.0dip</dimen>
+    <dimen name="mtrl_calendar_selection_baseline_to_top_fullscreen">104.0dip</dimen>
+    <dimen name="mtrl_calendar_selection_text_baseline_to_bottom">20.0dip</dimen>
+    <dimen name="mtrl_calendar_selection_text_baseline_to_bottom_fullscreen">24.0dip</dimen>
+    <dimen name="mtrl_calendar_selection_text_baseline_to_top">100.0dip</dimen>
+    <dimen name="mtrl_calendar_text_input_padding_top">16.0dip</dimen>
+    <dimen name="mtrl_calendar_title_baseline_to_top">28.0dip</dimen>
+    <dimen name="mtrl_calendar_title_baseline_to_top_fullscreen">68.0dip</dimen>
+    <dimen name="mtrl_calendar_year_corner">18.0dip</dimen>
+    <dimen name="mtrl_calendar_year_height">52.0dip</dimen>
+    <dimen name="mtrl_calendar_year_horizontal_padding">8.0dip</dimen>
+    <dimen name="mtrl_calendar_year_vertical_padding">8.0dip</dimen>
+    <dimen name="mtrl_calendar_year_width">88.0dip</dimen>
+    <dimen name="mtrl_card_checked_icon_margin">8.0dip</dimen>
+    <dimen name="mtrl_card_checked_icon_size">24.0dip</dimen>
+    <dimen name="mtrl_card_corner_radius">4.0dip</dimen>
+    <dimen name="mtrl_card_dragged_z">5.0dip</dimen>
+    <dimen name="mtrl_card_elevation">1.0dip</dimen>
+    <dimen name="mtrl_card_spacing">8.0dip</dimen>
+    <dimen name="mtrl_chip_pressed_translation_z">3.0dip</dimen>
+    <dimen name="mtrl_chip_text_size">14.0sp</dimen>
+    <dimen name="mtrl_exposed_dropdown_menu_popup_elevation">8.0dip</dimen>
+    <dimen name="mtrl_exposed_dropdown_menu_popup_vertical_offset">1.0dip</dimen>
+    <dimen name="mtrl_exposed_dropdown_menu_popup_vertical_padding">8.0dip</dimen>
+    <dimen name="mtrl_extended_fab_bottom_padding">12.0dip</dimen>
+    <dimen name="mtrl_extended_fab_disabled_elevation">0.0dip</dimen>
+    <dimen name="mtrl_extended_fab_disabled_translation_z">0.0dip</dimen>
+    <dimen name="mtrl_extended_fab_elevation">6.0dip</dimen>
+    <dimen name="mtrl_extended_fab_end_padding">20.0dip</dimen>
+    <dimen name="mtrl_extended_fab_end_padding_icon">20.0dip</dimen>
+    <dimen name="mtrl_extended_fab_icon_size">24.0dip</dimen>
+    <dimen name="mtrl_extended_fab_icon_text_spacing">12.0dip</dimen>
+    <dimen name="mtrl_extended_fab_min_height">48.0dip</dimen>
+    <dimen name="mtrl_extended_fab_min_width">120.0dip</dimen>
+    <dimen name="mtrl_extended_fab_start_padding">20.0dip</dimen>
+    <dimen name="mtrl_extended_fab_start_padding_icon">12.0dip</dimen>
+    <dimen name="mtrl_extended_fab_top_padding">12.0dip</dimen>
+    <dimen name="mtrl_extended_fab_translation_z_base">0.0dip</dimen>
+    <dimen name="mtrl_extended_fab_translation_z_hovered_focused">2.0dip</dimen>
+    <dimen name="mtrl_extended_fab_translation_z_pressed">6.0dip</dimen>
+    <dimen name="mtrl_fab_elevation">6.0dip</dimen>
+    <dimen name="mtrl_fab_min_touch_target">48.0dip</dimen>
+    <dimen name="mtrl_fab_translation_z_hovered_focused">2.0dip</dimen>
+    <dimen name="mtrl_fab_translation_z_pressed">6.0dip</dimen>
+    <item type="dimen" name="mtrl_high_ripple_default_alpha">0.48</item>
+    <item type="dimen" name="mtrl_high_ripple_focused_alpha">0.48</item>
+    <item type="dimen" name="mtrl_high_ripple_hovered_alpha">0.16</item>
+    <item type="dimen" name="mtrl_high_ripple_pressed_alpha">0.48</item>
+    <item type="dimen" name="mtrl_low_ripple_default_alpha">0.24</item>
+    <item type="dimen" name="mtrl_low_ripple_focused_alpha">0.24</item>
+    <item type="dimen" name="mtrl_low_ripple_hovered_alpha">0.08</item>
+    <item type="dimen" name="mtrl_low_ripple_pressed_alpha">0.24</item>
+    <dimen name="mtrl_min_touch_target_size">48.0dip</dimen>
+    <dimen name="mtrl_navigation_bar_item_default_icon_size">24.0dip</dimen>
+    <dimen name="mtrl_navigation_bar_item_default_margin">8.0dip</dimen>
+    <dimen name="mtrl_navigation_elevation">0.0dip</dimen>
+    <dimen name="mtrl_navigation_item_horizontal_padding">22.0dip</dimen>
+    <dimen name="mtrl_navigation_item_icon_padding">14.0dip</dimen>
+    <dimen name="mtrl_navigation_item_icon_size">24.0dip</dimen>
+    <dimen name="mtrl_navigation_item_shape_horizontal_margin">8.0dip</dimen>
+    <dimen name="mtrl_navigation_item_shape_vertical_margin">4.0dip</dimen>
+    <dimen name="mtrl_navigation_rail_active_text_size">14.0dip</dimen>
+    <dimen name="mtrl_navigation_rail_compact_width">56.0dip</dimen>
+    <dimen name="mtrl_navigation_rail_default_width">72.0dip</dimen>
+    <dimen name="mtrl_navigation_rail_elevation">8.0dip</dimen>
+    <dimen name="mtrl_navigation_rail_icon_margin">14.0dip</dimen>
+    <dimen name="mtrl_navigation_rail_icon_size">24.0dip</dimen>
+    <dimen name="mtrl_navigation_rail_margin">8.0dip</dimen>
+    <dimen name="mtrl_navigation_rail_text_bottom_margin">16.0dip</dimen>
+    <dimen name="mtrl_navigation_rail_text_size">12.0dip</dimen>
+    <dimen name="mtrl_progress_circular_inset">4.0dip</dimen>
+    <dimen name="mtrl_progress_circular_inset_extra_small">2.0dip</dimen>
+    <dimen name="mtrl_progress_circular_inset_medium">4.0dip</dimen>
+    <dimen name="mtrl_progress_circular_inset_small">4.0dip</dimen>
+    <dimen name="mtrl_progress_circular_radius">18.0dip</dimen>
+    <dimen name="mtrl_progress_circular_size">40.0dip</dimen>
+    <dimen name="mtrl_progress_circular_size_extra_small">20.0dip</dimen>
+    <dimen name="mtrl_progress_circular_size_medium">40.0dip</dimen>
+    <dimen name="mtrl_progress_circular_size_small">28.0dip</dimen>
+    <dimen name="mtrl_progress_circular_track_thickness_extra_small">2.5dip</dimen>
+    <dimen name="mtrl_progress_circular_track_thickness_medium">4.0dip</dimen>
+    <dimen name="mtrl_progress_circular_track_thickness_small">3.0dip</dimen>
+    <dimen name="mtrl_progress_indicator_full_rounded_corner_radius">2.0dip</dimen>
+    <dimen name="mtrl_progress_track_thickness">4.0dip</dimen>
+    <dimen name="mtrl_shape_corner_size_large_component">0.0dip</dimen>
+    <dimen name="mtrl_shape_corner_size_medium_component">4.0dip</dimen>
+    <dimen name="mtrl_shape_corner_size_small_component">4.0dip</dimen>
+    <dimen name="mtrl_slider_halo_radius">24.0dip</dimen>
+    <dimen name="mtrl_slider_label_padding">4.0dip</dimen>
+    <dimen name="mtrl_slider_label_radius">13.0dip</dimen>
+    <dimen name="mtrl_slider_label_square_side">26.0dip</dimen>
+    <dimen name="mtrl_slider_thumb_elevation">1.0dip</dimen>
+    <dimen name="mtrl_slider_thumb_radius">10.0dip</dimen>
+    <dimen name="mtrl_slider_tick_radius">1.0dip</dimen>
+    <dimen name="mtrl_slider_track_height">4.0dip</dimen>
+    <dimen name="mtrl_slider_track_side_padding">16.0dip</dimen>
+    <dimen name="mtrl_slider_widget_height">48.0dip</dimen>
+    <item type="dimen" name="mtrl_snackbar_action_text_color_alpha">0.5</item>
+    <dimen name="mtrl_snackbar_background_corner_radius">4.0dip</dimen>
+    <item type="dimen" name="mtrl_snackbar_background_overlay_color_alpha">0.8</item>
+    <dimen name="mtrl_snackbar_margin">8.0dip</dimen>
+    <dimen name="mtrl_snackbar_message_margin_horizontal">8.0dip</dimen>
+    <dimen name="mtrl_snackbar_padding_horizontal">8.0dip</dimen>
+    <dimen name="mtrl_switch_text_padding">16.0dip</dimen>
+    <dimen name="mtrl_switch_thumb_elevation">4.0dip</dimen>
+    <dimen name="mtrl_switch_thumb_size">32.0dip</dimen>
+    <item type="dimen" name="mtrl_switch_track_height">@dimen/m3_comp_switch_track_height</item>
+    <item type="dimen" name="mtrl_switch_track_width">@dimen/m3_comp_switch_track_width</item>
+    <dimen name="mtrl_textinput_box_corner_radius_medium">4.0dip</dimen>
+    <dimen name="mtrl_textinput_box_corner_radius_small">0.0dip</dimen>
+    <dimen name="mtrl_textinput_box_label_cutout_padding">4.0dip</dimen>
+    <item type="dimen" name="mtrl_textinput_box_stroke_width_default">@dimen/m3_comp_outlined_text_field_outline_width</item>
+    <item type="dimen" name="mtrl_textinput_box_stroke_width_focused">@dimen/m3_comp_outlined_text_field_focus_outline_width</item>
+    <dimen name="mtrl_textinput_counter_margin_start">16.0dip</dimen>
+    <dimen name="mtrl_textinput_end_icon_margin_start">4.0dip</dimen>
+    <dimen name="mtrl_textinput_outline_box_expanded_padding">16.0dip</dimen>
+    <dimen name="mtrl_textinput_start_icon_margin_end">4.0dip</dimen>
+    <dimen name="mtrl_toolbar_default_height">56.0dip</dimen>
+    <dimen name="mtrl_tooltip_arrowSize">14.0dip</dimen>
+    <dimen name="mtrl_tooltip_cornerSize">4.0dip</dimen>
+    <dimen name="mtrl_tooltip_minHeight">32.0dip</dimen>
+    <dimen name="mtrl_tooltip_minWidth">32.0dip</dimen>
+    <dimen name="mtrl_tooltip_padding">12.0dip</dimen>
+    <dimen name="mtrl_transition_shared_axis_slide_distance">30.0dip</dimen>
+    <dimen name="navigation_drawer_width">280.0dip</dimen>
+    <dimen name="negative_dimen_18">-18.0dip</dimen>
+    <dimen name="negative_five">-5.0dip</dimen>
+    <dimen name="negative_forty">-40.0dip</dimen>
+    <dimen name="negative_point_eight">-0.8000001dip</dimen>
+    <dimen name="negative_qd_margin_20">-20.0dip</dimen>
+    <dimen name="negative_qd_margin_24">-24.0dip</dimen>
+    <dimen name="negative_qd_margin_26">-26.0dip</dimen>
+    <dimen name="negative_ten">-10.0dip</dimen>
+    <dimen name="neo_pop_slider_height">64.0dip</dimen>
+    <dimen name="neo_pop_slider_track_height">56.0dip</dimen>
+    <dimen name="neo_pop_slider_width">110.0dip</dimen>
+    <dimen name="new_tag_padding_start">5.0dip</dimen>
+    <dimen name="nitro_between_padding">4.0dip</dimen>
+    <dimen name="nitro_between_padding_small">2.0dip</dimen>
+    <dimen name="nitro_dummy_bottom_space">88.0dip</dimen>
+    <dimen name="nitro_padding_8">8.0dip</dimen>
+    <dimen name="nitro_side_padding">12.0dip</dimen>
+    <dimen name="nitro_vertical_padding_12">12.0dip</dimen>
+    <dimen name="nitro_vertical_padding_32">32.0dip</dimen>
+    <dimen name="nitro_vertical_padding_4">4.0dip</dimen>
+    <dimen name="nitro_vertical_padding_6">6.0dip</dimen>
+    <dimen name="nitro_vertical_padding_8">8.0dip</dimen>
+    <dimen name="no_content_padding_big">20.0dip</dimen>
+    <dimen name="no_content_padding_medium">10.0dip</dimen>
+    <dimen name="no_content_padding_regular">15.0dip</dimen>
+    <item type="dimen" name="no_content_top_padding">@dimen/size28</item>
+    <dimen name="no_content_view_drawable_height">210.0dip</dimen>
+    <dimen name="no_content_view_drawable_width">210.0dip</dimen>
+    <dimen name="no_resource_image_size_small">144.0dip</dimen>
+    <dimen name="normal_lock">32.0dip</dimen>
+    <dimen name="normal_stepper_text_size">11.0sp</dimen>
+    <dimen name="notification_action_icon_size">32.0dip</dimen>
+    <dimen name="notification_action_text_size">13.0sp</dimen>
+    <dimen name="notification_badge_number">8.0sp</dimen>
+    <dimen name="notification_big_circle_margin">12.0dip</dimen>
+    <dimen name="notification_content_margin_start">0.0dip</dimen>
+    <dimen name="notification_large_icon_height">64.0dip</dimen>
+    <dimen name="notification_large_icon_width">64.0dip</dimen>
+    <dimen name="notification_main_column_padding_top">0.0dip</dimen>
+    <dimen name="notification_media_narrow_margin">12.0dip</dimen>
+    <dimen name="notification_right_icon_size">16.0dip</dimen>
+    <dimen name="notification_right_side_padding_top">4.0dip</dimen>
+    <dimen name="notification_small_icon_background_padding">3.0dip</dimen>
+    <dimen name="notification_small_icon_size_as_large">24.0dip</dimen>
+    <dimen name="notification_subtext_size">13.0sp</dimen>
+    <dimen name="notification_top_pad">10.0dip</dimen>
+    <dimen name="notification_top_pad_large_text">5.0dip</dimen>
+    <dimen name="offer_discount_image_height">22.0dip</dimen>
+    <dimen name="offer_discount_image_width">86.0dip</dimen>
+    <item type="dimen" name="offer_items_per_screen_recommendation_rail">1.5</item>
+    <dimen name="one_time_casino_icon_size">24.0dip</dimen>
+    <dimen name="padding_1">1.0dip</dimen>
+    <dimen name="padding_10">10.0dip</dimen>
+    <dimen name="padding_12">12.0dip</dimen>
+    <dimen name="padding_18">18.0dip</dimen>
+    <dimen name="padding_2">2.0dip</dimen>
+    <dimen name="padding_4">4.0dip</dimen>
+    <dimen name="padding_5">5.0dip</dimen>
+    <dimen name="padding_6">6.0dip</dimen>
+    <dimen name="padding_8">8.0dip</dimen>
+    <dimen name="padding_9">9.0dip</dimen>
+    <dimen name="padding_big">20.0dip</dimen>
+    <dimen name="padding_bigger">30.0dip</dimen>
+    <dimen name="padding_biggest">45.0dip</dimen>
+    <dimen name="padding_bit_small">4.0dip</dimen>
+    <dimen name="padding_horizontal">16.0dip</dimen>
+    <dimen name="padding_huge">60.0dip</dimen>
+    <item type="dimen" name="padding_item_banner_top_bottom">@dimen/sushi_large_capsule_tag_corner_radius</item>
+    <dimen name="padding_medium">10.0dip</dimen>
+    <dimen name="padding_micro">3.0dip</dimen>
+    <dimen name="padding_negative">-1.0dip</dimen>
+    <dimen name="padding_regular">15.0dip</dimen>
+    <item type="dimen" name="padding_side">@dimen/nitro_side_padding</item>
+    <dimen name="padding_small">8.0dip</dimen>
+    <dimen name="padding_tiny">2.0dip</dimen>
+    <dimen name="padding_vertical">4.0dip</dimen>
+    <dimen name="padding_very_small">3.0dip</dimen>
+    <dimen name="pancake_radius">7.0dip</dimen>
+    <dimen name="payment_failure_icon_font_size">100.0dip</dimen>
+    <dimen name="permission_dialog_header_height">111.0dip</dimen>
+    <dimen name="pink_separator_height">3.0dip</dimen>
+    <dimen name="pink_separator_width">50.0dip</dimen>
+    <dimen name="places_autocomplete_button_padding">16.0dip</dimen>
+    <dimen name="places_autocomplete_overlay_padding">8.0dip</dimen>
+    <dimen name="places_autocomplete_powered_by_google_height">40.0dip</dimen>
+    <dimen name="places_autocomplete_prediction_height">72.0dip</dimen>
+    <dimen name="places_autocomplete_prediction_primary_text">16.0sp</dimen>
+    <dimen name="places_autocomplete_prediction_secondary_text">14.0sp</dimen>
+    <dimen name="places_autocomplete_progress_horizontal_margin">16.0dip</dimen>
+    <dimen name="places_autocomplete_progress_size">24.0dip</dimen>
+    <dimen name="places_autocomplete_search_bar_button_padding">12.0dip</dimen>
+    <dimen name="places_autocomplete_search_bar_margin">68.0dip</dimen>
+    <dimen name="places_autocomplete_search_bar_padding">4.0dip</dimen>
+    <dimen name="places_autocomplete_search_input_padding">16.0dip</dimen>
+    <dimen name="places_autocomplete_search_input_text">20.0sp</dimen>
+    <dimen name="places_autocomplete_vertical_dropdown">8.0dip</dimen>
+    <dimen name="plan_widget_spacing">12.0dip</dimen>
+    <dimen name="plp_pull_switch_height">130.0dip</dimen>
+    <dimen name="poi_tooltip_top_margin">-6.5dip</dimen>
+    <dimen name="point_one_dp">0.100000024dip</dimen>
+    <dimen name="preview_image_width">200.0dip</dimen>
+    <dimen name="product_display_button_height">24.0dip</dimen>
+    <dimen name="product_display_margin_top">8.0dip</dimen>
+    <dimen name="progress_timer_inner_radius">19.0dip</dimen>
+    <dimen name="progress_timer_size">54.0dip</dimen>
+    <dimen name="progress_timer_thickness">6.0dip</dimen>
+    <dimen name="qd_bottom_cart_plp_negative_offset">-70.0dip</dimen>
+    <dimen name="qd_bottom_cart_plp_offset">70.0dip</dimen>
+    <dimen name="qd_bottom_cart_strip_v2_height">65.0dip</dimen>
+    <dimen name="qd_bottom_cart_strip_v2_plp_offset">69.0dip</dimen>
+    <dimen name="qd_bottom_cart_strip_v3_height">56.0dip</dimen>
+    <dimen name="qd_bottom_cart_strip_v3_height_full">120.0dip</dimen>
+    <dimen name="qd_bottom_category_fab_offset">80.0dip</dimen>
+    <dimen name="qd_btype_212_image_height">200.0dip</dimen>
+    <dimen name="qd_btype_212_image_width">188.0dip</dimen>
+    <dimen name="qd_category_side_section_width">76.0dip</dimen>
+    <dimen name="qd_information_strip_negative_offset">-40.0dip</dimen>
+    <item type="dimen" name="qd_item_screen_image_product_horizontal_card">1.0</item>
+    <item type="dimen" name="qd_item_screen_image_text_type_category_card">1.0</item>
+    <item type="dimen" name="qd_item_screen_image_text_type_category_grid">4.0</item>
+    <item type="dimen" name="qd_item_screen_image_text_type_grid_category_card">2.0</item>
+    <item type="dimen" name="qd_item_screen_image_text_type_product_card">2.0</item>
+    <item type="dimen" name="qd_item_screen_image_text_type_small_product_card">3.5</item>
+    <item type="dimen" name="qd_item_variant_snippet">5.0</item>
+    <dimen name="qd_list_fab_corner_radius">66.0dip</dimen>
+    <dimen name="qd_list_fab_height">36.0dip</dimen>
+    <dimen name="qd_list_fab_list_max_height">392.0dip</dimen>
+    <dimen name="qd_list_fab_list_width">240.0dip</dimen>
+    <dimen name="qd_list_fab_width">84.0dip</dimen>
+    <dimen name="qd_margin_0">0.0dip</dimen>
+    <dimen name="qd_margin_0.25">0.25dip</dimen>
+    <dimen name="qd_margin_0.5">0.5dip</dimen>
+    <dimen name="qd_margin_1">1.0dip</dimen>
+    <dimen name="qd_margin_10">10.0dip</dimen>
+    <dimen name="qd_margin_12">12.0dip</dimen>
+    <dimen name="qd_margin_14">14.0dip</dimen>
+    <dimen name="qd_margin_16">16.0dip</dimen>
+    <dimen name="qd_margin_168">168.0dip</dimen>
+    <dimen name="qd_margin_18">18.0dip</dimen>
+    <dimen name="qd_margin_2">2.0dip</dimen>
+    <dimen name="qd_margin_20">20.0dip</dimen>
+    <dimen name="qd_margin_22">22.0dip</dimen>
+    <dimen name="qd_margin_24">24.0dip</dimen>
+    <dimen name="qd_margin_26">26.0dip</dimen>
+    <dimen name="qd_margin_28">28.0dip</dimen>
+    <dimen name="qd_margin_3">3.0dip</dimen>
+    <dimen name="qd_margin_32">32.0dip</dimen>
+    <dimen name="qd_margin_4">4.0dip</dimen>
+    <dimen name="qd_margin_40">40.0dip</dimen>
+    <dimen name="qd_margin_48">48.0dip</dimen>
+    <dimen name="qd_margin_5">5.0dip</dimen>
+    <dimen name="qd_margin_54">54.0dip</dimen>
+    <dimen name="qd_margin_56">56.0dip</dimen>
+    <dimen name="qd_margin_6">6.0dip</dimen>
+    <dimen name="qd_margin_60">60.0dip</dimen>
+    <dimen name="qd_margin_7">7.0dip</dimen>
+    <dimen name="qd_margin_72">72.0dip</dimen>
+    <dimen name="qd_margin_78">78.0dip</dimen>
+    <dimen name="qd_margin_8">8.0dip</dimen>
+    <dimen name="qd_margin_84">84.0dip</dimen>
+    <dimen name="qd_margin_88">88.0dip</dimen>
+    <dimen name="qd_margin_9">9.0dip</dimen>
+    <dimen name="qd_margin_negative_8">-8.0dip</dimen>
+    <dimen name="qd_negative_2">-2.0dip</dimen>
+    <dimen name="qd_negative_90">-90.0dip</dimen>
+    <dimen name="qd_notify_me_height_medium">45.0dip</dimen>
+    <dimen name="qd_notify_me_height_micro">32.0dip</dimen>
+    <dimen name="qd_notify_me_height_small">28.0dip</dimen>
+    <dimen name="qd_notify_me_width_medium">120.0dip</dimen>
+    <dimen name="qd_notify_me_width_micro">48.0dip</dimen>
+    <dimen name="qd_notify_me_width_small">60.0dip</dimen>
+    <dimen name="qd_padding_0">0.0dip</dimen>
+    <dimen name="qd_padding_0.5">0.5dip</dimen>
+    <dimen name="qd_padding_0_75">0.75dip</dimen>
+    <dimen name="qd_padding_1">1.0dip</dimen>
+    <dimen name="qd_padding_10">10.0dip</dimen>
+    <dimen name="qd_padding_12">12.0dip</dimen>
+    <dimen name="qd_padding_14">14.0dip</dimen>
+    <dimen name="qd_padding_15">15.0dip</dimen>
+    <dimen name="qd_padding_16">16.0dip</dimen>
+    <dimen name="qd_padding_18">18.0dip</dimen>
+    <dimen name="qd_padding_2">2.0dip</dimen>
+    <dimen name="qd_padding_20">20.0dip</dimen>
+    <dimen name="qd_padding_24">24.0dip</dimen>
+    <dimen name="qd_padding_3">3.0dip</dimen>
+    <dimen name="qd_padding_32">32.0dip</dimen>
+    <dimen name="qd_padding_36">36.0dip</dimen>
+    <dimen name="qd_padding_4">4.0dip</dimen>
+    <dimen name="qd_padding_40">40.0dip</dimen>
+    <dimen name="qd_padding_5">5.0dip</dimen>
+    <dimen name="qd_padding_6">6.0dip</dimen>
+    <dimen name="qd_padding_7">7.0dip</dimen>
+    <dimen name="qd_padding_8">8.0dip</dimen>
+    <dimen name="qd_padding_9">9.0dip</dimen>
+    <dimen name="qd_shimmer_10">10.0dip</dimen>
+    <dimen name="qd_shimmer_126">126.0dip</dimen>
+    <dimen name="qd_shimmer_14">14.0dip</dimen>
+    <dimen name="qd_shimmer_2">2.0dip</dimen>
+    <dimen name="qd_shimmer_78">78.0dip</dimen>
+    <dimen name="qd_size_130">130.0dip</dimen>
+    <dimen name="qd_size_156">156.0dip</dimen>
+    <dimen name="qd_size_510">510.0dip</dimen>
+    <dimen name="qd_size_64">64.0dip</dimen>
+    <dimen name="qd_size_66">66.0dip</dimen>
+    <dimen name="qd_size_76">76.0dip</dimen>
+    <dimen name="qd_size_88">88.0dip</dimen>
+    <dimen name="qd_stateful_button_height_medium">45.0dip</dimen>
+    <dimen name="qd_stateful_button_height_small">34.0dip</dimen>
+    <dimen name="qd_stateful_button_width_medium">100.0dip</dimen>
+    <dimen name="qd_stateful_button_width_small">56.0dip</dimen>
+    <dimen name="qd_stepper_height_medium">45.0dip</dimen>
+    <dimen name="qd_stepper_height_micro">34.0dip</dimen>
+    <dimen name="qd_stepper_height_non_zero_micro">32.0dip</dimen>
+    <dimen name="qd_stepper_height_small">32.0dip</dimen>
+    <dimen name="qd_stepper_height_tiny">36.0dip</dimen>
+    <dimen name="qd_stepper_neo_pop_height">51.0dip</dimen>
+    <dimen name="qd_stepper_width_expanded_tiny">76.0dip</dimen>
+    <dimen name="qd_stepper_width_medium">120.0dip</dimen>
+    <dimen name="qd_stepper_width_micro">48.0dip</dimen>
+    <dimen name="qd_stepper_width_non_zero_micro">76.0dip</dimen>
+    <dimen name="qd_stepper_width_small">60.0dip</dimen>
+    <dimen name="qd_stepper_width_tiny">36.0dip</dimen>
+    <dimen name="qd_ticket_border_width">1.0dip</dimen>
+    <dimen name="quick_links_dimen_size">32.0dip</dimen>
+    <dimen name="quick_links_dimen_size_big">64.0dip</dimen>
+    <dimen name="radius_12dp">12.0dip</dimen>
+    <dimen name="radius_16dp">16.0dip</dimen>
+    <dimen name="radius_2dp">2.0dip</dimen>
+    <dimen name="radius_4dp">4.0dip</dimen>
+    <dimen name="radius_6dp">6.0dip</dimen>
+    <dimen name="radius_8dp">8.0dip</dimen>
+    <dimen name="rating_100_min_height">14.0dip</dimen>
+    <dimen name="rating_100_min_width">24.0dip</dimen>
+    <dimen name="rating_200_min_height">16.0dip</dimen>
+    <dimen name="rating_200_min_width">30.0dip</dimen>
+    <dimen name="rating_300_min_height">20.0dip</dimen>
+    <dimen name="rating_300_min_width">41.0dip</dimen>
+    <dimen name="rating_400_min_height">32.0dip</dimen>
+    <dimen name="rating_400_min_width">40.0dip</dimen>
+    <dimen name="rating_500_min_height">33.0dip</dimen>
+    <dimen name="rating_500_min_width">42.0dip</dimen>
+    <dimen name="rating_big_img">96.0dip</dimen>
+    <dimen name="rating_detail_progressbar_width">115.0dip</dimen>
+    <dimen name="rating_star">20.0dip</dimen>
+    <dimen name="rating_tag_text_size">18.0sp</dimen>
+    <dimen name="red_scroll_height">90.0dip</dimen>
+    <dimen name="res_card_corner_radius">16.0dip</dimen>
+    <dimen name="res_card_image_height">64.0dip</dimen>
+    <dimen name="res_card_image_width">64.0dip</dimen>
+    <dimen name="res_obp_image_dimen">30.0dip</dimen>
+    <dimen name="restaurant_header_height">300.0dip</dimen>
+    <dimen name="restaurant_image_small_width">70.0dip</dimen>
+    <dimen name="rippleRadius">64.0dip</dimen>
+    <dimen name="rippleStrokeWidth">2.0dip</dimen>
+    <dimen name="rounded_imageview_with_border_height">40.0dip</dimen>
+    <dimen name="rounded_imageview_with_border_width">40.0dip</dimen>
+    <dimen name="scallop_position">75.0dip</dimen>
+    <dimen name="scallop_radius">6.0dip</dimen>
+    <dimen name="search_bar_height">48.0dip</dimen>
+    <dimen name="select_media_camera_icon_size">100.0dip</dimen>
+    <dimen name="separator_bold_height">8.0dip</dimen>
+    <dimen name="separator_height">1.0dip</dimen>
+    <dimen name="separator_left_margin">16.0dip</dimen>
+    <dimen name="separator_right_margin">16.0dip</dimen>
+    <dimen name="shadow_height">5.0dip</dimen>
+    <dimen name="shadow_width">3.0dip</dimen>
+    <dimen name="showcase_image_height">150.0dip</dimen>
+    <dimen name="showcase_view_height">120.0dip</dimen>
+    <dimen name="size130">130.0dip</dimen>
+    <dimen name="size14">14.0dip</dimen>
+    <dimen name="size150">150.0dip</dimen>
+    <dimen name="size18">18.0dip</dimen>
+    <dimen name="size19">19.0dip</dimen>
+    <dimen name="size210">210.0dip</dimen>
+    <dimen name="size22">22.0dip</dimen>
+    <dimen name="size23">23.0dip</dimen>
+    <dimen name="size24">24.0dip</dimen>
+    <dimen name="size25">25.0dip</dimen>
+    <dimen name="size28">28.0dip</dimen>
+    <dimen name="size50">50.0dip</dimen>
+    <dimen name="size55">55.0dip</dimen>
+    <dimen name="size70">70.0dip</dimen>
+    <dimen name="size9">9.0dip</dimen>
+    <dimen name="size_100">100.0dip</dimen>
+    <dimen name="size_102">102.0dip</dimen>
+    <dimen name="size_104">104.0dip</dimen>
+    <dimen name="size_105">105.0dip</dimen>
+    <dimen name="size_108">108.0dip</dimen>
+    <dimen name="size_109">109.0dip</dimen>
+    <dimen name="size_10_point_five">10.5dip</dimen>
+    <dimen name="size_110">110.0dip</dimen>
+    <dimen name="size_112">112.0dip</dimen>
+    <dimen name="size_114">114.0dip</dimen>
+    <dimen name="size_116">116.0dip</dimen>
+    <dimen name="size_118">118.0dip</dimen>
+    <dimen name="size_12">12.0dip</dimen>
+    <dimen name="size_120">120.0dip</dimen>
+    <dimen name="size_124">124.0dip</dimen>
+    <dimen name="size_129">129.0dip</dimen>
+    <dimen name="size_132">132.0dip</dimen>
+    <dimen name="size_133">133.0dip</dimen>
+    <dimen name="size_135">135.0dip</dimen>
+    <dimen name="size_136">136.0dip</dimen>
+    <dimen name="size_140">140.0dip</dimen>
+    <dimen name="size_142">142.0dip</dimen>
+    <dimen name="size_150">150.0dip</dimen>
+    <dimen name="size_152">152.0dip</dimen>
+    <dimen name="size_154">154.0dip</dimen>
+    <dimen name="size_160">160.0dip</dimen>
+    <dimen name="size_164">164.0dip</dimen>
+    <dimen name="size_167">167.0dip</dimen>
+    <dimen name="size_169">169.0dip</dimen>
+    <dimen name="size_170">170.0dip</dimen>
+    <dimen name="size_175">175.0dip</dimen>
+    <dimen name="size_177">177.0dip</dimen>
+    <dimen name="size_178">178.0dip</dimen>
+    <dimen name="size_180">180.0dip</dimen>
+    <dimen name="size_18_negative">-18.0dip</dimen>
+    <dimen name="size_19">19.0dip</dimen>
+    <dimen name="size_190">190.0dip</dimen>
+    <dimen name="size_193">193.0dip</dimen>
+    <dimen name="size_2">2.0dip</dimen>
+    <dimen name="size_20">20.0dip</dimen>
+    <dimen name="size_200">200.0dip</dimen>
+    <dimen name="size_205">205.0dip</dimen>
+    <dimen name="size_20_negative">-20.0dip</dimen>
+    <dimen name="size_21">21.0dip</dimen>
+    <dimen name="size_214">214.0dip</dimen>
+    <dimen name="size_22">22.0dip</dimen>
+    <dimen name="size_220">220.0dip</dimen>
+    <dimen name="size_230">230.0dip</dimen>
+    <dimen name="size_24">24.0dip</dimen>
+    <dimen name="size_240">240.0dip</dimen>
+    <dimen name="size_243">243.0dip</dimen>
+    <dimen name="size_244">244.0dip</dimen>
+    <dimen name="size_25">25.0dip</dimen>
+    <dimen name="size_250">250.0dip</dimen>
+    <dimen name="size_252">252.0dip</dimen>
+    <dimen name="size_26">26.0dip</dimen>
+    <dimen name="size_27">27.0dip</dimen>
+    <dimen name="size_270">270.0dip</dimen>
+    <dimen name="size_278">278.0dip</dimen>
+    <dimen name="size_28">28.0dip</dimen>
+    <dimen name="size_284">284.0dip</dimen>
+    <dimen name="size_29">29.0dip</dimen>
+    <dimen name="size_3">3.0dip</dimen>
+    <dimen name="size_30">30.0dip</dimen>
+    <dimen name="size_300">300.0dip</dimen>
+    <dimen name="size_32">32.0dip</dimen>
+    <dimen name="size_33">33.0dip</dimen>
+    <dimen name="size_330">330.0dip</dimen>
+    <dimen name="size_34">34.0dip</dimen>
+    <dimen name="size_35">35.0dip</dimen>
+    <dimen name="size_36">36.0dip</dimen>
+    <dimen name="size_360">360.0dip</dimen>
+    <dimen name="size_37">37.0dip</dimen>
+    <dimen name="size_38">38.0dip</dimen>
+    <dimen name="size_38_point_5">38.5dip</dimen>
+    <dimen name="size_39">39.0dip</dimen>
+    <dimen name="size_3_2_negative">-3.1999817dip</dimen>
+    <dimen name="size_3_and_half">3.5dip</dimen>
+    <dimen name="size_3_negative">-3.0dip</dimen>
+    <dimen name="size_3_point_2">3.1999817dip</dimen>
+    <dimen name="size_4">4.0dip</dimen>
+    <dimen name="size_40">40.0dip</dimen>
+    <dimen name="size_400">400.0dip</dimen>
+    <dimen name="size_42">42.0dip</dimen>
+    <dimen name="size_44">44.0dip</dimen>
+    <dimen name="size_45">45.0dip</dimen>
+    <dimen name="size_46">46.0dip</dimen>
+    <dimen name="size_47">47.0dip</dimen>
+    <dimen name="size_48">48.0dip</dimen>
+    <dimen name="size_4_5_negative">-4.5dip</dimen>
+    <dimen name="size_4_negative">-4.0dip</dimen>
+    <dimen name="size_5">5.0dip</dimen>
+    <dimen name="size_50">50.0dip</dimen>
+    <dimen name="size_500">500.0dip</dimen>
+    <dimen name="size_51">51.0dip</dimen>
+    <dimen name="size_52">52.0dip</dimen>
+    <dimen name="size_54">54.0dip</dimen>
+    <dimen name="size_56">56.0dip</dimen>
+    <dimen name="size_57">57.0dip</dimen>
+    <dimen name="size_58">58.0dip</dimen>
+    <dimen name="size_6">6.0dip</dimen>
+    <dimen name="size_60">60.0dip</dimen>
+    <dimen name="size_62">62.0dip</dimen>
+    <dimen name="size_64">64.0dip</dimen>
+    <dimen name="size_65">65.0dip</dimen>
+    <dimen name="size_66">66.0dip</dimen>
+    <dimen name="size_68">68.0dip</dimen>
+    <dimen name="size_7">7.0dip</dimen>
+    <dimen name="size_70">70.0dip</dimen>
+    <dimen name="size_72">72.0dip</dimen>
+    <dimen name="size_74">74.0dip</dimen>
+    <dimen name="size_75">75.0dip</dimen>
+    <dimen name="size_77">77.0dip</dimen>
+    <dimen name="size_78">78.0dip</dimen>
+    <dimen name="size_7_negative">-7.0dip</dimen>
+    <dimen name="size_8">8.0dip</dimen>
+    <dimen name="size_80">80.0dip</dimen>
+    <dimen name="size_82">82.0dip</dimen>
+    <dimen name="size_85">85.0dip</dimen>
+    <dimen name="size_86">86.0dip</dimen>
+    <dimen name="size_88">88.0dip</dimen>
+    <dimen name="size_8_point_5_neg">-8.5dip</dimen>
+    <dimen name="size_9">9.0dip</dimen>
+    <dimen name="size_90">90.0dip</dimen>
+    <dimen name="size_94">94.0dip</dimen>
+    <dimen name="size_96">96.0dip</dimen>
+    <dimen name="size_98">98.0dip</dimen>
+    <dimen name="size_9_negative">-9.0dip</dimen>
+    <dimen name="size_image_card">556.0dip</dimen>
+    <dimen name="small_stepper_text_size">9.0sp</dimen>
+    <dimen name="snippet_type_14_image_height">64.0dip</dimen>
+    <dimen name="snippet_type_14_image_width">64.0dip</dimen>
+    <dimen name="snippet_type_17_right_image_max_size">80.0dip</dimen>
+    <item type="dimen" name="snippet_type_17_right_image_size">@dimen/size_40</item>
+    <dimen name="snippet_type_28_image_width">74.0dip</dimen>
+    <item type="dimen" name="snippet_type_33_left_image_size">@dimen/size_48</item>
+    <dimen name="snippet_type_42_image_height">42.0dip</dimen>
+    <dimen name="snippet_type_42_image_width">42.0dip</dimen>
+    <dimen name="snippets_between_spacing">18.0dip</dimen>
+    <dimen name="sound_ripple_size">112.0dip</dimen>
+    <dimen name="sp_1">1.0sp</dimen>
+    <dimen name="sp_10">10.0sp</dimen>
+    <dimen name="sp_11">11.0sp</dimen>
+    <dimen name="sp_12">12.0sp</dimen>
+    <dimen name="sp_13">13.0sp</dimen>
+    <dimen name="sp_14">14.0sp</dimen>
+    <dimen name="sp_15">15.0sp</dimen>
+    <dimen name="sp_16">16.0sp</dimen>
+    <dimen name="sp_17">17.0sp</dimen>
+    <dimen name="sp_18">18.0sp</dimen>
+    <dimen name="sp_19">19.0sp</dimen>
+    <dimen name="sp_2">2.0sp</dimen>
+    <dimen name="sp_20">20.0sp</dimen>
+    <dimen name="sp_21">21.0sp</dimen>
+    <dimen name="sp_22">22.0sp</dimen>
+    <dimen name="sp_23">23.0sp</dimen>
+    <dimen name="sp_24">24.0sp</dimen>
+    <dimen name="sp_25">25.0sp</dimen>
+    <dimen name="sp_26">26.0sp</dimen>
+    <dimen name="sp_27">27.0sp</dimen>
+    <dimen name="sp_28">28.0sp</dimen>
+    <dimen name="sp_29">29.0sp</dimen>
+    <dimen name="sp_3">3.0sp</dimen>
+    <dimen name="sp_30">30.0sp</dimen>
+    <dimen name="sp_31">31.0sp</dimen>
+    <dimen name="sp_32">32.0sp</dimen>
+    <dimen name="sp_33">33.0sp</dimen>
+    <dimen name="sp_34">34.0sp</dimen>
+    <dimen name="sp_35">35.0sp</dimen>
+    <dimen name="sp_36">36.0sp</dimen>
+    <dimen name="sp_37">37.0sp</dimen>
+    <dimen name="sp_38">38.0sp</dimen>
+    <dimen name="sp_39">39.0sp</dimen>
+    <dimen name="sp_4">4.0sp</dimen>
+    <dimen name="sp_40">40.0sp</dimen>
+    <dimen name="sp_41">41.0sp</dimen>
+    <dimen name="sp_42">42.0sp</dimen>
+    <dimen name="sp_43">43.0sp</dimen>
+    <dimen name="sp_44">44.0sp</dimen>
+    <dimen name="sp_45">45.0sp</dimen>
+    <dimen name="sp_46">46.0sp</dimen>
+    <dimen name="sp_47">47.0sp</dimen>
+    <dimen name="sp_48">48.0sp</dimen>
+    <dimen name="sp_49">49.0sp</dimen>
+    <dimen name="sp_5">5.0sp</dimen>
+    <dimen name="sp_50">50.0sp</dimen>
+    <dimen name="sp_6">6.0sp</dimen>
+    <dimen name="sp_7">7.0sp</dimen>
+    <dimen name="sp_8">8.0sp</dimen>
+    <dimen name="sp_9">9.0sp</dimen>
+    <dimen name="spacing_between_2dp">2.0dip</dimen>
+    <dimen name="spacing_between_3dp">3.0dip</dimen>
+    <dimen name="spacing_between_4_45dp">4.4499817dip</dimen>
+    <dimen name="spacing_with_tail">13.0dip</dimen>
+    <dimen name="special_lock">36.0dip</dimen>
+    <dimen name="speech_bubble_corners">10.0dip</dimen>
+    <dimen name="speech_bubble_corners_plus_tail">15.0dip</dimen>
+    <dimen name="speech_bubble_spacing">5.0dip</dimen>
+    <dimen name="star_icon_100">6.0dip</dimen>
+    <dimen name="star_icon_200">8.0dip</dimen>
+    <dimen name="star_icon_300">9.0dip</dimen>
+    <dimen name="star_icon_400">12.0dip</dimen>
+    <dimen name="star_icon_500">12.0dip</dimen>
+    <dimen name="star_icon_600">15.0dip</dimen>
+    <dimen name="star_rating_size_100">10.0dip</dimen>
+    <dimen name="star_rating_size_200">12.0dip</dimen>
+    <dimen name="star_rating_size_300">14.0dip</dimen>
+    <dimen name="star_rating_size_400">16.0dip</dimen>
+    <dimen name="star_rating_size_500">18.0dip</dimen>
+    <dimen name="star_rating_size_600">26.0dip</dimen>
+    <dimen name="star_rating_size_700">32.0dip</dimen>
+    <dimen name="star_rating_size_large">16.0dip</dimen>
+    <dimen name="star_rating_size_medium">12.0dip</dimen>
+    <dimen name="star_rating_size_small">10.0dip</dimen>
+    <item type="dimen" name="star_rating_text_size_100">@dimen/sushi_textsize_100</item>
+    <item type="dimen" name="star_rating_text_size_200">@dimen/sushi_textsize_300</item>
+    <item type="dimen" name="star_rating_text_size_300">@dimen/sushi_textsize_300</item>
+    <item type="dimen" name="star_rating_text_size_400">@dimen/sushi_textsize_300</item>
+    <item type="dimen" name="star_rating_text_size_500">@dimen/sushi_textsize_600</item>
+    <item type="dimen" name="star_rating_text_size_600">@dimen/sushi_textsize_700</item>
+    <item type="dimen" name="star_rating_text_size_700">@dimen/sushi_textsize_800</item>
+    <dimen name="star_rating_text_size_large">15.0sp</dimen>
+    <dimen name="star_rating_text_size_medium">13.0sp</dimen>
+    <dimen name="star_rating_text_size_small">11.0sp</dimen>
+    <dimen name="star_rating_text_size_tiny">9.0sp</dimen>
+    <dimen name="static_icon_default_size">14.0sp</dimen>
+    <dimen name="status_bar_height">25.0dip</dimen>
+    <dimen name="stepper_corner_radius">8.0dip</dimen>
+    <dimen name="stepper_height">28.0dip</dimen>
+    <dimen name="stepper_height_large">48.0dip</dimen>
+    <dimen name="stepper_height_medium">30.0dip</dimen>
+    <dimen name="stepper_height_mini">24.0dip</dimen>
+    <dimen name="stepper_height_small">24.0dip</dimen>
+    <dimen name="stepper_small_corner_radius">6.0dip</dimen>
+    <item type="dimen" name="stepper_stroke_width">@dimen/dimen_one_point_five</item>
+    <dimen name="stepper_text_size_default">15.0dip</dimen>
+    <dimen name="stepper_text_size_large">19.0dip</dimen>
+    <dimen name="stepper_text_size_small">13.0dip</dimen>
+    <dimen name="stepper_textview_width">23.0dip</dimen>
+    <dimen name="stepper_textview_width_small">17.0dip</dimen>
+    <dimen name="stepper_title_width">46.0dip</dimen>
+    <dimen name="stepper_title_width_small">34.0dip</dimen>
+    <dimen name="stepper_v2_text_size_default">19.0dip</dimen>
+    <dimen name="stepper_v2_text_size_large">19.0dip</dimen>
+    <dimen name="stepper_v2_text_size_medium">15.0dip</dimen>
+    <dimen name="stepper_v2_text_size_small">13.0dip</dimen>
+    <dimen name="stepper_v3_text_size_default">18.0dip</dimen>
+    <dimen name="stepper_width">84.0dip</dimen>
+    <dimen name="stepper_width_large">100.0dip</dimen>
+    <dimen name="stepper_width_medium">70.0dip</dimen>
+    <dimen name="stepper_width_mini">48.0dip</dimen>
+    <dimen name="stepper_width_small">52.0dip</dimen>
+    <dimen name="straight_separator_height">1.0dip</dimen>
+    <dimen name="subtitle_dessert_snippet_text_size">11.0sp</dimen>
+    <item type="dimen" name="subtitle_marginTop">@dimen/dimen_10</item>
+    <dimen name="sushi_action_item_drawable_size">20.0dip</dimen>
+    <dimen name="sushi_action_item_size">48.0dip</dimen>
+    <dimen name="sushi_big_rating_min_width">50.0dip</dimen>
+    <dimen name="sushi_button_extra_large_minheight">58.0dip</dimen>
+    <dimen name="sushi_button_icon_padding">8.0dip</dimen>
+    <dimen name="sushi_button_large_minheight">48.0dip</dimen>
+    <dimen name="sushi_button_medium_minheight">32.0dip</dimen>
+    <dimen name="sushi_button_small_minheight">25.0dip</dimen>
+    <dimen name="sushi_corner_radius">8.0dip</dimen>
+    <item type="dimen" name="sushi_corner_radius_huge">@dimen/sushi_spacing_extra</item>
+    <item type="dimen" name="sushi_corner_radius_large">@dimen/sushi_spacing_base</item>
+    <dimen name="sushi_iconsize_200">12.0sp</dimen>
+    <dimen name="sushi_iconsize_300">14.0sp</dimen>
+    <dimen name="sushi_iconsize_500">18.0sp</dimen>
+    <dimen name="sushi_large_capsule_tag_corner_radius">18.0dip</dimen>
+    <dimen name="sushi_listing_image_size">44.0dip</dimen>
+    <dimen name="sushi_outline_button_stroke_width">1.0dip</dimen>
+    <dimen name="sushi_rating_tag_large_minwidth">50.0dip</dimen>
+    <dimen name="sushi_rating_tag_medium_minwidth">40.0dip</dimen>
+    <dimen name="sushi_rating_tag_nano_minwidth">20.0dip</dimen>
+    <dimen name="sushi_rating_tag_small_minwidth">35.0dip</dimen>
+    <dimen name="sushi_rating_tag_tiny_minwidth">30.0dip</dimen>
+    <dimen name="sushi_small_capsule_tag_corner_radius">12.0dip</dimen>
+    <dimen name="sushi_small_rating_min_width">25.0dip</dimen>
+    <dimen name="sushi_spacing_alone">32.0dip</dimen>
+    <dimen name="sushi_spacing_alone_negative">-32.0dip</dimen>
+    <dimen name="sushi_spacing_base">12.0dip</dimen>
+    <dimen name="sushi_spacing_base_negative">-12.0dip</dimen>
+    <item type="dimen" name="sushi_spacing_between">@dimen/sushi_spacing_micro</item>
+    <item type="dimen" name="sushi_spacing_between_large">@dimen/sushi_spacing_mini</item>
+    <item type="dimen" name="sushi_spacing_between_small">@dimen/sushi_spacing_nano</item>
+    <dimen name="sushi_spacing_extra">16.0dip</dimen>
+    <dimen name="sushi_spacing_extra_negative">-16.0dip</dimen>
+    <dimen name="sushi_spacing_femto">0.0dip</dimen>
+    <dimen name="sushi_spacing_loose">24.0dip</dimen>
+    <dimen name="sushi_spacing_loose_negative">-24.0dip</dimen>
+    <dimen name="sushi_spacing_macro">8.0dip</dimen>
+    <dimen name="sushi_spacing_macro_negative">-8.0dip</dimen>
+    <dimen name="sushi_spacing_micro">4.0dip</dimen>
+    <dimen name="sushi_spacing_micro_negative">-4.0dip</dimen>
+    <dimen name="sushi_spacing_mini">6.0dip</dimen>
+    <dimen name="sushi_spacing_mini_negative">-6.0dip</dimen>
+    <dimen name="sushi_spacing_nano">2.0dip</dimen>
+    <dimen name="sushi_spacing_nano_negative">-2.0dip</dimen>
+    <dimen name="sushi_spacing_negative_10">-10.0dip</dimen>
+    <dimen name="sushi_spacing_negative_11">-11.0dip</dimen>
+    <dimen name="sushi_spacing_page_side">12.0dip</dimen>
+    <dimen name="sushi_spacing_pico">1.0dip</dimen>
+    <dimen name="sushi_spacing_pico_negative">-1.0dip</dimen>
+    <dimen name="sushi_stoke_width_small">1.0dip</dimen>
+    <dimen name="sushi_tag_capsule_corner_radius">30.0dip</dimen>
+    <item type="dimen" name="sushi_tag_extra_large_horizontal_padding">@dimen/sushi_spacing_extra</item>
+    <item type="dimen" name="sushi_tag_extra_large_textsize">@dimen/sushi_textsize_400</item>
+    <item type="dimen" name="sushi_tag_extra_large_vertical_padding">@dimen/sushi_spacing_base</item>
+    <dimen name="sushi_tag_extra_rounded_corner_radius">4.0dip</dimen>
+    <item type="dimen" name="sushi_tag_large_horizontal_padding">@dimen/sushi_spacing_macro</item>
+    <item type="dimen" name="sushi_tag_large_textsize">@dimen/sushi_textsize_400</item>
+    <item type="dimen" name="sushi_tag_large_vertical_padding">@dimen/sushi_spacing_macro</item>
+    <item type="dimen" name="sushi_tag_medium_horizontal_padding">@dimen/sushi_spacing_mini</item>
+    <item type="dimen" name="sushi_tag_medium_textsize">@dimen/sushi_textsize_300</item>
+    <item type="dimen" name="sushi_tag_medium_vertical_padding">@dimen/sushi_spacing_mini</item>
+    <item type="dimen" name="sushi_tag_nano_horizontal_padding">@dimen/sushi_spacing_nano</item>
+    <item type="dimen" name="sushi_tag_nano_textsize">@dimen/sushi_textsize_050</item>
+    <dimen name="sushi_tag_nano_vertical_padding">0.0dip</dimen>
+    <dimen name="sushi_tag_rounded_corner_radius">3.0dip</dimen>
+    <item type="dimen" name="sushi_tag_small_horizontal_padding">@dimen/sushi_spacing_micro</item>
+    <item type="dimen" name="sushi_tag_small_textsize">@dimen/sushi_textsize_200</item>
+    <item type="dimen" name="sushi_tag_small_vertical_padding">@dimen/sushi_spacing_micro</item>
+    <item type="dimen" name="sushi_tag_tiny_horizontal_padding">@dimen/sushi_spacing_nano</item>
+    <item type="dimen" name="sushi_tag_tiny_textsize">@dimen/sushi_textsize_100</item>
+    <dimen name="sushi_tag_tiny_vertical_padding">0.0dip</dimen>
+    <dimen name="sushi_text_button_icon_padding">4.0dip</dimen>
+    <dimen name="sushi_textsize_030">6.0sp</dimen>
+    <dimen name="sushi_textsize_040">8.0sp</dimen>
+    <dimen name="sushi_textsize_050">9.0sp</dimen>
+    <dimen name="sushi_textsize_090">7.0sp</dimen>
+    <dimen name="sushi_textsize_100">11.0sp</dimen>
+    <dimen name="sushi_textsize_200">12.0sp</dimen>
+    <dimen name="sushi_textsize_300">13.0sp</dimen>
+    <dimen name="sushi_textsize_400">15.0sp</dimen>
+    <dimen name="sushi_textsize_500">17.0sp</dimen>
+    <dimen name="sushi_textsize_600">19.0sp</dimen>
+    <dimen name="sushi_textsize_700">21.0sp</dimen>
+    <dimen name="sushi_textsize_800">24.0sp</dimen>
+    <dimen name="sushi_textsize_900">27.0sp</dimen>
+    <dimen name="tab_snippet_type_3_height">40.0dip</dimen>
+    <dimen name="tab_snippet_type_5_height">98.69998dip</dimen>
+    <dimen name="text_size_16">16.0sp</dimen>
+    <dimen name="text_size_27sp">27.0sp</dimen>
+    <dimen name="text_size_28sp">28.0sp</dimen>
+    <dimen name="text_size_36sp">36.0sp</dimen>
+    <dimen name="text_size_38sp">38.0sp</dimen>
+    <dimen name="text_size_4">4.0sp</dimen>
+    <dimen name="text_size_42sp">42.0sp</dimen>
+    <dimen name="text_size_48sp">48.0sp</dimen>
+    <dimen name="text_size_49sp">49.0sp</dimen>
+    <dimen name="text_size_5">5.0sp</dimen>
+    <dimen name="text_size_50sp">50.0sp</dimen>
+    <dimen name="text_size_64sp">64.0sp</dimen>
+    <dimen name="text_size_72sp">72.0sp</dimen>
+    <dimen name="text_size_75">10.0sp</dimen>
+    <dimen name="text_size_step_increase">1.0dip</dimen>
+    <dimen name="texts_padding">20.0dip</dimen>
+    <dimen name="textsize_30sp">30.0sp</dimen>
+    <dimen name="textsize_50sp">50.0sp</dimen>
+    <dimen name="textview_action_highlighter_tiny">9.0dip</dimen>
+    <dimen name="textview_basebodybold">15.0dip</dimen>
+    <dimen name="textview_bodylinks">15.0dip</dimen>
+    <dimen name="textview_bodysubtext">13.0dip</dimen>
+    <dimen name="textview_foodie_level_tag">56.0dip</dimen>
+    <dimen name="textview_tag">8.0dip</dimen>
+    <dimen name="textview_tag_baby">6.0dip</dimen>
+    <dimen name="textview_tag_big">9.0dip</dimen>
+    <dimen name="ticket_dash_gap">9.0dip</dimen>
+    <dimen name="title_dessert_snippet_text_size">13.0sp</dimen>
+    <dimen name="title_font_size">14.0sp</dimen>
+    <dimen name="title_subtext_icon_margin">-20.0dip</dimen>
+    <dimen name="toolbar_back_icon_size">16.0dip</dimen>
+    <item type="dimen" name="toolbar_elevation">0.0</item>
+    <dimen name="toolbar_height_restaurant">56.0dip</dimen>
+    <dimen name="toolbar_icon_dropdown_arrow_size">8.0dip</dimen>
+    <dimen name="toolbar_title_left_margin">3.0dip</dimen>
+    <dimen name="tooltip_corner_radius">2.0dip</dimen>
+    <dimen name="tooltip_horizontal_padding">16.0dip</dimen>
+    <dimen name="tooltip_margin">8.0dip</dimen>
+    <dimen name="tooltip_precise_anchor_extra_offset">8.0dip</dimen>
+    <dimen name="tooltip_precise_anchor_threshold">96.0dip</dimen>
+    <dimen name="tooltip_vertical_padding">6.5dip</dimen>
+    <dimen name="tooltip_y_offset_non_touch">0.0dip</dimen>
+    <dimen name="tooltip_y_offset_touch">16.0dip</dimen>
+    <dimen name="trailing_block_min_height">45.0dip</dimen>
+    <dimen name="trailing_block_min_width">75.0dip</dimen>
+    <dimen name="txt_size_inapp_button">16.0sp</dimen>
+    <dimen name="txt_size_inapp_footer_button">14.0sp</dimen>
+    <dimen name="txt_size_inapp_footer_message">12.0sp</dimen>
+    <dimen name="txt_size_inapp_footer_title">16.0sp</dimen>
+    <dimen name="txt_size_inapp_half_button">16.0sp</dimen>
+    <dimen name="txt_size_inapp_half_message">16.0sp</dimen>
+    <dimen name="txt_size_inapp_half_title">21.0sp</dimen>
+    <dimen name="txt_size_inapp_message">18.0sp</dimen>
+    <dimen name="txt_size_inapp_title">22.0sp</dimen>
+    <dimen name="type23_title_size">16.0sp</dimen>
+    <item type="dimen" name="type_11_dash_length">@dimen/sushi_spacing_micro</item>
+    <item type="dimen" name="type_11_dash_width">@dimen/dimen_point_five</item>
+    <dimen name="type_11_image_height">30.0dip</dimen>
+    <dimen name="type_11_view_height">168.0dip</dimen>
+    <dimen name="type_24_image_height">35.0dip</dimen>
+    <item type="dimen" name="ui_sushi_spacing_10">@dimen/dimen_10</item>
+    <dimen name="user_action_icon_size">20.0sp</dimen>
+    <item type="dimen" name="v15_corner_radius">@dimen/sushi_spacing_micro</item>
+    <dimen name="v17_menu_grid_item_image_height">152.0dip</dimen>
+    <dimen name="v17_menu_grid_item_image_width">152.0dip</dimen>
+    <dimen name="v1_type10_corner_radius">8.0dip</dimen>
+    <dimen name="v1_type13_corner_radius">12.0dip</dimen>
+    <dimen name="v1_type1_corner_radius">12.0dip</dimen>
+    <dimen name="v1_type2_corner_radius">10.0dip</dimen>
+    <dimen name="v2_23_image_container_height">90.0dip</dimen>
+    <dimen name="v2_23_image_container_new_height">96.0dip</dimen>
+    <dimen name="v2_23_image_container_new_width">96.0dip</dimen>
+    <dimen name="v2_23_image_container_width">106.0dip</dimen>
+    <dimen name="v2_23_item_image_description_padding">144.0dip</dimen>
+    <dimen name="v2_res_card3_left_image_height">18.0dip</dimen>
+    <dimen name="v2_res_card_left_image_height">22.0dip</dimen>
+    <dimen name="v2_snippet_type_2_image_height">55.0dip</dimen>
+    <dimen name="v2_snippet_type_2_image_width">64.0dip</dimen>
+    <dimen name="v2_snippet_type_3_image_height">55.0dip</dimen>
+    <dimen name="v2_snippet_type_3_image_width">64.0dip</dimen>
+    <dimen name="v2_stepper_height_large">48.0dip</dimen>
+    <dimen name="v2_stepper_height_medium">32.0dip</dimen>
+    <dimen name="v2_stepper_height_normal">40.0dip</dimen>
+    <dimen name="v2_stepper_height_small">26.0dip</dimen>
+    <dimen name="v2_stepper_height_small_v2">30.0dip</dimen>
+    <dimen name="v2_stepper_width_large">104.0dip</dimen>
+    <dimen name="v2_stepper_width_medium">90.0dip</dimen>
+    <dimen name="v2_stepper_width_normal">120.0dip</dimen>
+    <dimen name="v2_stepper_width_small">72.0dip</dimen>
+    <dimen name="v2_stepper_width_small_v2">82.0dip</dimen>
+    <dimen name="v2_stepper_width_xsmall">40.0dip</dimen>
+    <dimen name="v2_type1_corner_radius">10.0dip</dimen>
+    <dimen name="v3_stepper_height_large">30.0dip</dimen>
+    <dimen name="v3_stepper_height_medium">28.0dip</dimen>
+    <dimen name="v3_stepper_width_large">30.0dip</dimen>
+    <dimen name="v3_stepper_width_medium">88.0dip</dimen>
+    <dimen name="v3_stepper_width_xmedium">28.0dip</dimen>
+    <dimen name="v3_type45_subtitle5_image_startMargin">-3.0dip</dimen>
+    <dimen name="v3_type45_subtitle5_image_topMargin">-18.0dip</dimen>
+    <dimen name="veg_non_veg_icon_dimen">10.0dip</dimen>
+    <dimen name="vertical_dotted_separator_width">4.0dip</dimen>
+    <dimen name="vertical_toggle_switch_view_height">48.0dip</dimen>
+    <dimen name="vertical_toggle_switch_view_width">28.0dip</dimen>
+    <dimen name="video_large_action_button_height">60.0dip</dimen>
+    <dimen name="video_large_action_button_width">60.0dip</dimen>
+    <dimen name="video_medium_action_button_height">45.0dip</dimen>
+    <dimen name="video_medium_action_button_width">45.0dip</dimen>
+    <dimen name="video_play_button_start_padding">2.5dip</dimen>
+    <dimen name="video_showcase_left_image_height">14.0dip</dimen>
+    <dimen name="video_small_action_button_height">30.0dip</dimen>
+    <dimen name="video_small_action_button_width">30.0dip</dimen>
+    <dimen name="viewpager_current_item_horizontal_margin">42.0dip</dimen>
+    <dimen name="viewpager_next_item_visible">26.0dip</dimen>
+    <dimen name="vsearch_bar_height">48.0dip</dimen>
+    <dimen name="z_pink_separator_height">3.0dip</dimen>
+    <dimen name="z_pink_separator_width">50.0dip</dimen>
+    <dimen name="z_progressview_horizontal_height_default">3.1999817dip</dimen>
+    <dimen name="z_progressview_horizontal_height_mini">2.0dip</dimen>
+    <dimen name="z_progressview_size_default">42.0dip</dimen>
+    <dimen name="z_progressview_size_mini">16.0dip</dimen>
+    <dimen name="z_separator_height">2.0dip</dimen>
+    <item type="dimen" name="z_spacing_10">@dimen/dimen_10</item>
+    <item type="dimen" name="z_straight_separator_height">@dimen/sushi_spacing_pico</item>
+    <dimen name="z_triangle_half_width">6.0dip</dimen>
+    <dimen name="z_triangle_height">8.0dip</dimen>
+    <dimen name="z_vertical_dotted_separator_width">4.0dip</dimen>
+    <dimen name="zexoseekbar_big_height">5.0dip</dimen>
+    <dimen name="zexoseekbar_height">3.0dip</dimen>
+    <dimen name="zexoseekbar_scrubber_big_size">12.0dip</dimen>
+    <dimen name="zexoseekbar_scrubber_huge_size">14.0dip</dimen>
+    <dimen name="zexoseekbar_scrubber_small_size">8.0dip</dimen>
+</resources>

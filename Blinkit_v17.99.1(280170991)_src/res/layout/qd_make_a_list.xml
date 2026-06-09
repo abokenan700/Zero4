@@ -1,0 +1,144 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout
+    android:clipChildren="false"
+    android:clipToPadding="false"
+    android:layout_width="fill_parent"
+    android:layout_height="wrap_content"
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+    <com.blinkit.commons.ui.ui.customviews.bmediaview.BMediaView
+        android:id="@id/button"
+        android:visibility="gone"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="@dimen/qd_margin_20"
+        android:layout_marginRight="@dimen/qd_margin_20"
+        android:layout_marginHorizontal="@dimen/qd_margin_20"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+    <com.blinkit.blink.elements.ui.atoms.text.BlinkitTextView
+        android:id="@id/title"
+        android:visibility="gone"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/qd_margin_20"
+        app:layout_constraintEnd_toEndOf="@id/mainContainer"
+        app:layout_constraintStart_toStartOf="@id/mainContainer"
+        app:layout_constraintTop_toBottomOf="@id/button" />
+    <com.blinkit.blink.elements.ui.atoms.text.BlinkitTextView
+        android:id="@id/secondary_title"
+        android:visibility="gone"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/qd_margin_20"
+        app:layout_constraintEnd_toEndOf="@id/secondaryImage"
+        app:layout_constraintStart_toStartOf="@id/secondaryImage"
+        app:layout_constraintTop_toBottomOf="@id/button" />
+    <com.blinkit.commons.ui.ui.customviews.bmediaview.BMediaView
+        android:id="@id/processing_media"
+        android:visibility="gone"
+        android:layout_width="0.0dip"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/sushi_spacing_base"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/button" />
+    <androidx.constraintlayout.widget.Barrier
+        android:id="@id/titleProcessingBarrier"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:barrierDirection="bottom"
+        app:constraint_referenced_ids="title,secondary_title,processing_media" />
+    <com.blinkit.commons.ui.ui.customviews.bmediaview.BMediaView
+        android:id="@id/background_animation"
+        android:visibility="gone"
+        android:layout_width="0.0dip"
+        android:layout_height="0.0dip"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent" />
+    <com.blinkit.commons.ui.ui.customviews.bmediaview.BMediaView
+        android:id="@id/secondaryImage"
+        android:visibility="gone"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:scaleType="centerCrop"
+        app:layout_constraintBottom_toBottomOf="@id/mainContainer"
+        app:layout_constraintEnd_toStartOf="@id/mainContainer"
+        app:layout_constraintHorizontal_chainStyle="packed"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="@id/mainContainer"
+        app:layout_goneMarginEnd="0.0dip" />
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:id="@id/mainContainer"
+        android:visibility="gone"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/qd_margin_6"
+        android:layout_marginBottom="@dimen/qd_margin_12"
+        android:layout_marginStart="@dimen/qd_margin_12"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toEndOf="@id/secondaryImage"
+        app:layout_constraintTop_toBottomOf="@id/titleProcessingBarrier"
+        app:layout_goneMarginStart="0.0dip">
+        <com.blinkit.commons.ui.ui.customviews.BLottieAnimationView
+            android:id="@id/mainContainerAnimation"
+            android:visibility="gone"
+            android:layout_width="0.0dip"
+            android:layout_height="0.0dip"
+            android:scaleType="centerCrop"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+        <com.blinkit.commons.ui.ui.customviews.bmediaview.BMediaView
+            android:id="@id/circleImage"
+            android:visibility="gone"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:scaleType="centerCrop"
+            android:alpha="1.0"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+        <com.blinkit.commons.ui.ui.customviews.bmediaview.BMediaView
+            android:id="@id/leftImage"
+            android:visibility="gone"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:scaleType="centerCrop"
+            android:alpha="0.0"
+            android:layout_marginStart="@dimen/sushi_spacing_micro"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+        <com.blinkit.commons.ui.ui.snippets.makealist.audioVisualizer.BAudioVisualizer
+            android:id="@id/centerView"
+            android:visibility="gone"
+            android:layout_width="0.0dip"
+            android:layout_height="wrap_content"
+            android:alpha="0.0"
+            android:scaleX="0.0"
+            android:layout_marginStart="8.0dip"
+            android:layout_marginEnd="8.0dip"
+            android:elevation="12.0dip"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toStartOf="@id/rightImage"
+            app:layout_constraintStart_toEndOf="@id/leftImage"
+            app:layout_constraintTop_toTopOf="parent" />
+        <com.blinkit.commons.ui.ui.customviews.bmediaview.BMediaView
+            android:id="@id/rightImage"
+            android:visibility="gone"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:scaleType="centerCrop"
+            android:alpha="0.0"
+            android:layout_marginEnd="@dimen/sushi_spacing_micro"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+    </androidx.constraintlayout.widget.ConstraintLayout>
+</androidx.constraintlayout.widget.ConstraintLayout>

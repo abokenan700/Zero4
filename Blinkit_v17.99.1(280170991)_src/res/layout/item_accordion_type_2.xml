@@ -1,0 +1,50 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout
+    android:layout_gravity="center_vertical"
+    android:id="@id/header_container"
+    android:layout_width="fill_parent"
+    android:layout_height="wrap_content"
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+    <com.zomato.ui.atomiclib.atom.ZRoundedImageView
+        android:id="@id/ivLogo"
+        android:layout_width="0.0dip"
+        android:layout_height="@dimen/size_24"
+        android:layout_marginEnd="@dimen/sushi_spacing_base"
+        app:layout_constrainedWidth="true"
+        app:layout_constraintEnd_toStartOf="@id/ivExpandCollapse"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+    <ImageView
+        android:id="@id/ivExpandCollapse"
+        android:layout_width="0.0dip"
+        android:layout_height="wrap_content"
+        android:scaleType="fitCenter"
+        android:contentDescription="@null"
+        app:layout_constrainedWidth="true"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:tint="?attr_7f0403d4" />
+    <com.zomato.ui.atomiclib.atom.ZTextView
+        android:id="@id/tvTitle"
+        android:layout_width="0.0dip"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/sushi_spacing_macro"
+        app:layout_constrainedWidth="true"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/ivLogo" />
+    <com.zomato.ui.atomiclib.atom.ZTextView
+        android:id="@id/tvSubtitle"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/sushi_spacing_between"
+        app:layout_constraintTop_toBottomOf="@id/tvTitle" />
+    <com.zomato.ui.atomiclib.atom.ZButton
+        android:id="@id/bottom_button"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/sushi_spacing_between_large"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/tvSubtitle" />
+</androidx.constraintlayout.widget.ConstraintLayout>

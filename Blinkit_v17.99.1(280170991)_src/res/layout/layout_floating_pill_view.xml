@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="utf-8"?>
+<merge
+    android:layout_gravity="center_horizontal"
+    android:id="@id/parentView"
+    android:visibility="gone"
+    android:layout_width="fill_parent"
+    android:layout_height="wrap_content"
+    xmlns:android="http://schemas.android.com/apk/res/android">
+    <com.zomato.ui.atomiclib.atom.ZIconFontTextView
+        android:textSize="@dimen/size_25"
+        android:textColor="?themeColor500"
+        android:gravity="center"
+        android:layout_gravity="center_horizontal"
+        android:id="@id/icon"
+        android:background="@color/sushi_white"
+        android:padding="@dimen/sushi_spacing_extra"
+        android:visibility="gone"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content" />
+    <LinearLayout
+        android:gravity="start|center"
+        android:layout_gravity="start|center"
+        android:orientation="vertical"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="@dimen/sushi_spacing_macro">
+        <com.zomato.ui.atomiclib.atom.ZTextView
+            android:id="@id/title"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:lines="1"
+            android:singleLine="true" />
+        <com.zomato.ui.atomiclib.atom.ZTextView
+            android:id="@id/subtitle1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/sushi_spacing_between_small"
+            android:lines="1"
+            android:singleLine="true" />
+    </LinearLayout>
+</merge>

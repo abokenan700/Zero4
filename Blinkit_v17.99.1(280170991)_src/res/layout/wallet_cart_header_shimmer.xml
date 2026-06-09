@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    android:orientation="vertical"
+    android:background="?attr_7f0403d7"
+    android:layout_width="fill_parent"
+    android:layout_height="wrap_content"
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+    <com.zomato.ui.atomiclib.molecules.ShimmerChildView
+        android:layout_gravity="center"
+        android:layout_width="@dimen/size_200"
+        android:layout_height="@dimen/sushi_spacing_loose"
+        android:layout_marginLeft="@dimen/sushi_spacing_page_side"
+        android:layout_marginTop="@dimen/sushi_spacing_loose"
+        android:layout_marginRight="@dimen/sushi_spacing_page_side"
+        android:layout_marginHorizontal="@dimen/sushi_spacing_page_side"
+        app:shimmer_corner_radius="@dimen/sushi_corner_radius_huge" />
+    <com.zomato.ui.atomiclib.molecules.ShimmerChildView
+        android:layout_gravity="center"
+        android:layout_width="@dimen/size_160"
+        android:layout_height="@dimen/size_48"
+        android:layout_marginLeft="@dimen/sushi_spacing_page_side"
+        android:layout_marginTop="@dimen/sushi_spacing_extra"
+        android:layout_marginRight="@dimen/sushi_spacing_page_side"
+        android:layout_marginHorizontal="@dimen/sushi_spacing_page_side"
+        app:shimmer_corner_radius="@dimen/sushi_corner_radius_huge" />
+    <com.zomato.ui.atomiclib.molecules.ShimmerChildView
+        android:layout_gravity="center"
+        android:layout_width="@dimen/size_278"
+        android:layout_height="@dimen/sushi_spacing_loose"
+        android:layout_marginLeft="@dimen/sushi_spacing_page_side"
+        android:layout_marginTop="@dimen/sushi_spacing_base"
+        android:layout_marginRight="@dimen/sushi_spacing_page_side"
+        android:layout_marginBottom="@dimen/sushi_spacing_loose"
+        android:layout_marginHorizontal="@dimen/sushi_spacing_page_side"
+        app:shimmer_corner_radius="@dimen/sushi_corner_radius_huge" />
+</LinearLayout>

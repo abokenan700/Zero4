@@ -1,0 +1,92 @@
+<?xml version="1.0" encoding="utf-8"?>
+<merge
+    android:orientation="vertical"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    xmlns:android="http://schemas.android.com/apk/res/android">
+    <FrameLayout
+        android:id="@id/fl_ribbon"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content">
+        <com.zomato.ui.atomiclib.atom.ZTextView
+            android:id="@id/tv_ribbon"
+            android:paddingTop="@dimen/sushi_spacing_nano"
+            android:paddingBottom="@dimen/sushi_spacing_nano"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:paddingStart="@dimen/sushi_spacing_mini"
+            android:paddingEnd="@dimen/sushi_spacing_mini" />
+    </FrameLayout>
+    <LinearLayout
+        android:orientation="horizontal"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:baselineAligned="false">
+        <LinearLayout
+            android:layout_gravity="center_vertical"
+            android:orientation="vertical"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content">
+            <FrameLayout
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/sushi_spacing_micro"
+                android:layout_marginStart="@dimen/sushi_spacing_micro">
+                <com.zomato.ui.atomiclib.atom.ZProgressBar
+                    android:layout_gravity="center_horizontal"
+                    android:id="@id/pb_circle"
+                    android:background="@drawable/circular_shape"
+                    android:layout_width="@dimen/size_100"
+                    android:layout_height="@dimen/size_100"
+                    android:indeterminate="false"
+                    android:progressDrawable="@drawable/button_loader_circular_progress_bar" />
+                <com.zomato.ui.atomiclib.atom.ZTextView
+                    android:layout_gravity="center"
+                    android:id="@id/tv_progress_title"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content" />
+                <com.zomato.ui.atomiclib.atom.ZIconFontTextView
+                    android:layout_gravity="center"
+                    android:id="@id/iftv_progress"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content" />
+            </FrameLayout>
+            <com.zomato.ui.atomiclib.atom.ZTextView
+                android:gravity="center_horizontal"
+                android:id="@id/tv_progress_subtitle"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="@dimen/sushi_spacing_base" />
+        </LinearLayout>
+        <LinearLayout
+            android:layout_gravity="center_vertical"
+            android:orientation="vertical"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/sushi_spacing_base"
+            android:layout_marginBottom="@dimen/sushi_spacing_base"
+            android:layout_marginStart="@dimen/sushi_spacing_mini"
+            android:layout_marginEnd="@dimen/sushi_spacing_base">
+            <com.zomato.ui.atomiclib.atom.ZTextView
+                android:id="@id/tv_title"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content" />
+            <com.zomato.ui.atomiclib.atom.ZTextView
+                android:id="@id/tv_subtitle"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content" />
+        </LinearLayout>
+    </LinearLayout>
+    <FrameLayout
+        android:id="@id/fl_footer"
+        android:padding="@dimen/sushi_spacing_micro"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="@dimen/sushi_spacing_pico">
+        <com.zomato.ui.atomiclib.atom.ZTextView
+            android:gravity="center"
+            android:id="@id/tv_footer"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content" />
+    </FrameLayout>
+</merge>

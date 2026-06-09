@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout
+    android:background="@drawable/qd_white_rounded_12dp"
+    android:padding="@dimen/sushi_spacing_base"
+    android:layout_width="fill_parent"
+    android:layout_height="wrap_content"
+    android:layout_margin="@dimen/sushi_spacing_base"
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+    <com.zomato.ui.atomiclib.molecules.ShimmerChildView
+        android:id="@id/shimmer_image"
+        android:layout_width="fill_parent"
+        android:layout_height="@dimen/size_20"
+        app:layout_constraintBottom_toTopOf="@id/shimmer_rail_1"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:shimmer_corner_radius="@dimen/sushi_spacing_base" />
+    <include
+        android:id="@id/shimmer_rail_1"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/size_20"
+        app:layout_constraintBottom_toTopOf="@id/shimmer_rail_2"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/shimmer_image"
+        layout="@layout/shimmer_qd_pdp_rail" />
+    <include
+        android:id="@id/shimmer_rail_2"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/size_20"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/shimmer_rail_1"
+        layout="@layout/shimmer_qd_pdp_rail" />
+</androidx.constraintlayout.widget.ConstraintLayout>

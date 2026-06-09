@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="utf-8"?>
+<merge
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+    <androidx.media3.ui.PlayerView
+        android:id="@id/playerView"
+        android:background="@color/sushi_black"
+        android:layout_width="0.0dip"
+        android:layout_height="0.0dip"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:repeat_toggle_modes="one"
+        app:resize_mode="@integer/playerview_resize_mode"
+        app:shutter_background_color="@color/color_transparent"
+        app:surface_type="texture_view"
+        app:use_controller="false">
+        <ImageView
+            android:id="@id/thumbnailView"
+            android:layout_width="fill_parent"
+            android:layout_height="fill_parent"
+            android:src="@drawable/ic_bg"
+            android:scaleType="centerCrop" />
+    </androidx.media3.ui.PlayerView>
+</merge>

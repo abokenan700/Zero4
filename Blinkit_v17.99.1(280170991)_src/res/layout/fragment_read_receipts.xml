@@ -1,0 +1,100 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout
+    android:background="@color/sushi_white"
+    android:focusable="true"
+    android:clickable="true"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+    <com.google.android.material.appbar.AppBarLayout
+        android:id="@id/appBarLayout"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
+        <androidx.appcompat.widget.Toolbar
+            android:id="@id/tool_bar"
+            android:background="@color/sushi_white"
+            android:layout_width="fill_parent"
+            android:layout_height="?actionBarSize"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_scrollFlags="scroll|enterAlways|snap">
+            <com.zomato.ui.atomiclib.atom.ZIconFontTextView
+                android:layout_gravity="start"
+                android:id="@id/back_arrow"
+                android:padding="@dimen/sushi_spacing_micro"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content" />
+            <com.zomato.ui.atomiclib.atom.ZTextView
+                android:layout_gravity="center"
+                android:id="@id/title"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content" />
+        </androidx.appcompat.widget.Toolbar>
+    </com.google.android.material.appbar.AppBarLayout>
+    <ScrollView
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        app:layout_constrainedHeight="true"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/appBarLayout">
+        <androidx.constraintlayout.widget.ConstraintLayout
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content">
+            <LinearLayout
+                android:gravity="center"
+                android:orientation="vertical"
+                android:id="@id/chat_holder"
+                android:background="?attr_7f040180"
+                android:paddingTop="@dimen/sushi_spacing_macro"
+                android:paddingBottom="@dimen/sushi_spacing_base"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                app:layout_constraintTop_toTopOf="parent">
+                <com.zomato.ui.atomiclib.atom.ZTextView
+                    android:id="@id/header_title"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_margin="@dimen/sushi_spacing_extra" />
+            </LinearLayout>
+            <LinearLayout
+                android:orientation="horizontal"
+                android:id="@id/title_holder"
+                android:paddingTop="@dimen/sushi_spacing_loose"
+                android:paddingBottom="@dimen/sushi_spacing_base"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                app:layout_constraintTop_toBottomOf="@id/chat_holder">
+                <com.zomato.ui.atomiclib.atom.ZIconFontTextView
+                    android:id="@id/read_icon"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="@dimen/sushi_spacing_base"
+                    android:layout_marginEnd="@dimen/sushi_spacing_base" />
+                <com.zomato.ui.atomiclib.atom.ZTextView
+                    android:id="@id/read_status_text"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content" />
+            </LinearLayout>
+            <androidx.recyclerview.widget.RecyclerView
+                android:id="@id/recyclerView"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                app:layout_constrainedHeight="true"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintTop_toBottomOf="@id/title_holder" />
+            <ProgressBar
+                android:id="@id/read_progress_bar"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@id/title_holder" />
+        </androidx.constraintlayout.widget.ConstraintLayout>
+    </ScrollView>
+</androidx.constraintlayout.widget.ConstraintLayout>

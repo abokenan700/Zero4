@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout
+    android:id="@id/touch_layer"
+    android:paddingTop="@dimen/sushi_spacing_macro"
+    android:layout_width="fill_parent"
+    android:layout_height="wrap_content"
+    android:paddingStart="@dimen/sushi_spacing_base"
+    android:paddingEnd="@dimen/sushi_spacing_base"
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+    <LinearLayout
+        android:orientation="horizontal"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content">
+        <com.zomato.ui.atomiclib.atom.ZRoundedImageView
+            android:id="@id/image"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/sushi_spacing_between_small"
+            android:layout_marginEnd="@dimen/sushi_spacing_macro" />
+        <LinearLayout
+            android:orientation="vertical"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content">
+            <com.zomato.ui.atomiclib.atom.ZTextView
+                android:textColor="?attr_7f040475"
+                android:id="@id/title"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                app:drawablePadding="@dimen/sushi_spacing_micro"
+                app:textViewType="MEDIUM_200" />
+            <com.zomato.ui.atomiclib.atom.ZTextView
+                android:textColor="?android:textColorSecondary"
+                android:id="@id/subtitle1"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/sushi_spacing_micro"
+                app:textViewType="MEDIUM_200" />
+            <com.zomato.ui.atomiclib.molecules.ZTextInputField
+                android:id="@id/edit_text"
+                android:scrollbars="vertical"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                app:ztf_max_lines="5"
+                app:ztf_right_action="NONE" />
+        </LinearLayout>
+    </LinearLayout>
+</FrameLayout>

@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="utf-8"?>
+<merge
+    android:orientation="horizontal"
+    android:layout_width="fill_parent"
+    android:layout_height="wrap_content"
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+    <com.zomato.ui.atomiclib.atom.ZRoundedImageView
+        android:layout_gravity="start|center"
+        android:id="@id/left_image_view"
+        android:visibility="gone"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginEnd="@dimen/size_8" />
+    <com.zomato.ui.atomiclib.atom.staticviews.StaticTextView
+        android:layout_gravity="center_vertical"
+        android:id="@id/title_view"
+        android:layout_width="0.0dip"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/dimen_16"
+        android:layout_marginBottom="@dimen/dimen_16"
+        android:layout_weight="1.0"
+        android:layout_marginEnd="@dimen/dimen_12"
+        android:layout_marginVertical="@dimen/dimen_16" />
+    <com.zomato.ui.atomiclib.atom.ZRoundedImageView
+        android:layout_gravity="end|center"
+        android:id="@id/right_image_view"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginEnd="@dimen/dimen_4" />
+</merge>

@@ -1,0 +1,52 @@
+<?xml version="1.0" encoding="utf-8"?>
+<merge
+    android:layout_width="fill_parent"
+    android:layout_height="wrap_content"
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+    <LinearLayout
+        android:gravity="start"
+        android:orientation="horizontal"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content">
+        <com.zomato.ui.atomiclib.atom.ZTextView
+            android:id="@id/title"
+            android:layout_width="0.0dip"
+            android:layout_height="wrap_content"
+            android:layout_weight="1.0" />
+        <com.zomato.ui.atomiclib.atom.ZButton
+            android:id="@id/rightButton"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" />
+    </LinearLayout>
+    <LinearLayout
+        android:gravity="center_vertical"
+        android:orientation="horizontal"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/size_20">
+        <com.zomato.ui.atomiclib.snippets.RatingSnippetItem
+            android:id="@id/rating"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            app:ratedBlockDimenConfig="300"
+            app:ratingType="stars" />
+        <com.zomato.ui.atomiclib.atom.ZIconFontTextView
+            android:textSize="@dimen/sushi_textsize_300"
+            android:layout_gravity="center_vertical"
+            android:id="@id/topRightButton"
+            android:paddingTop="@dimen/sushi_spacing_between_large"
+            android:paddingBottom="@dimen/sushi_spacing_between_large"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:paddingStart="@dimen/sushi_spacing_nano"
+            android:paddingEnd="@dimen/sushi_spacing_between_large"
+            android:layout_marginStart="@dimen/sushi_spacing_nano"
+            android:paddingVertical="@dimen/sushi_spacing_between_large" />
+    </LinearLayout>
+    <com.zomato.ui.atomiclib.atom.ZTextView
+        android:id="@id/subtitle1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/sushi_spacing_mini" />
+</merge>

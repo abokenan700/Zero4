@@ -1,0 +1,73 @@
+<?xml version="1.0" encoding="utf-8"?>
+<merge
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+    <com.blinkit.commons.ui.ui.customviews.BShapeableImageView
+        android:id="@id/bg_image"
+        android:background="?attr_7f04017d"
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:transitionName="@string/shared_element_root_view_transition_name" />
+    <com.blinkit.commons.ui.ui.customviews.BShapeableImageView
+        android:id="@id/top_image"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:transitionName="@string/shared_element_top_image_transition_name"
+        app:layout_constraintTop_toTopOf="@id/bg_image" />
+    <View
+        android:id="@id/top_image_overlay"
+        android:layout_width="0.0dip"
+        android:layout_height="0.0dip"
+        app:layout_constraintBottom_toTopOf="@id/loader_top_barrier"
+        app:layout_constraintEnd_toEndOf="@id/top_image"
+        app:layout_constraintStart_toStartOf="@id/top_image"
+        app:layout_constraintTop_toTopOf="@id/top_image" />
+    <FrameLayout
+        android:id="@id/foreground_image_container"
+        android:layout_width="0.0dip"
+        android:layout_height="0.0dip"
+        android:transitionName="@string/shared_element_foreground_image_transition_name"
+        app:layout_constraintBottom_toBottomOf="@id/top_image"
+        app:layout_constraintEnd_toEndOf="@id/top_image"
+        app:layout_constraintStart_toStartOf="@id/top_image"
+        app:layout_constraintTop_toTopOf="@id/top_image">
+        <com.blinkit.commons.ui.ui.customviews.BShapeableImageView
+            android:layout_gravity="bottom"
+            android:id="@id/foreground_image"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content" />
+    </FrameLayout>
+    <androidx.constraintlayout.widget.Group
+        android:id="@id/overlay_image_group"
+        android:visibility="gone"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:constraint_referenced_ids="bg_image,top_image,foreground_image_container" />
+    <androidx.constraintlayout.widget.Barrier
+        android:id="@id/loader_top_barrier"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:barrierDirection="bottom"
+        app:barrierMargin="@dimen/sushi_spacing_extra"
+        app:constraint_referenced_ids="top_image,foreground_image_container" />
+    <com.zomato.ui.atomiclib.animation.ZLottieAnimationView
+        android:id="@id/transition_loader"
+        android:visibility="gone"
+        android:layout_width="24.0dip"
+        android:layout_height="24.0dip"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/loader_top_barrier"
+        app:lottie_autoPlay="true"
+        app:lottie_loop="true" />
+    <com.zomato.ui.atomiclib.molecules.ShimmerView
+        android:id="@id/shimmer_view"
+        android:visibility="gone"
+        android:layout_width="fill_parent"
+        android:layout_height="0.0dip"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/loader_top_barrier" />
+</merge>

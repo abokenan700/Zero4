@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout
+    android:layout_width="fill_parent"
+    android:layout_height="wrap_content"
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+    <include
+        android:id="@id/tag_layout"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        layout="@layout/layout_location_tag_item" />
+    <com.zomato.ui.atomiclib.molecules.ZTextInputField
+        android:textColorHint="@color/sushi_grey_400"
+        android:id="@id/text_layout"
+        android:layout_width="0.0dip"
+        android:layout_height="wrap_content"
+        android:inputType="textNoSuggestions"
+        android:layout_marginStart="8.0dip"
+        android:translationZ="@dimen/dimen_10"
+        android:elevation="@dimen/sushi_spacing_pico"
+        app:drawableEnd="@string/icon_cross_filled"
+        app:drawableTint="@color/sushi_grey_600"
+        app:editTextType="MEDIUM_300"
+        app:hintTextAppearance="@style/TextAppearance.Sushi.OrderTextField.Hint"
+        app:layout_constraintBottom_toBottomOf="@id/tag_layout"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toEndOf="@id/tag_layout"
+        app:layout_constraintTop_toTopOf="@id/tag_layout"
+        app:maxLines="1"
+        style="@style/Widget.Sushi.TextInputField" />
+</androidx.constraintlayout.widget.ConstraintLayout>

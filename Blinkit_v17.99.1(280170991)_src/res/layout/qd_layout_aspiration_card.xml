@@ -1,0 +1,238 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout
+    android:id="@id/root_container"
+    android:clipChildren="true"
+    android:layout_width="fill_parent"
+    android:layout_height="wrap_content"
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+    <com.blinkit.commons.ui.ui.customviews.viewstub.video.PlayerViewContainerViewStub
+        android:id="@id/bg_player_view_container"
+        android:layout_width="0.0dip"
+        android:layout_height="0.0dip"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+    <Space
+        android:id="@id/bg_video_overlay_space"
+        android:layout_width="wrap_content"
+        android:layout_height="0.0dip"
+        android:layout_marginBottom="@dimen/size_36"
+        app:layout_constraintBottom_toTopOf="@id/tv_name"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent" />
+    <View
+        android:id="@id/bg_video_overlay"
+        android:background="@drawable/bg_video_overlay_asp_card"
+        android:layout_width="0.0dip"
+        android:layout_height="0.0dip"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="@id/bg_video_overlay_space" />
+    <com.blinkit.commons.ui.ui.customviews.BShapeableImageView
+        android:id="@id/image"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:scaleType="fitXY"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+    <View
+        android:id="@id/bg_border_view"
+        android:layout_width="0.0dip"
+        android:layout_height="0.0dip"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+    <com.blinkit.commons.ui.ui.customviews.bmediaview.BMediaView
+        android:id="@id/lottie_image_view"
+        android:layout_width="0.0dip"
+        android:layout_height="0.0dip"
+        app:layout_constraintBottom_toTopOf="@id/tv_name"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toEndOf="@id/offer_tag_extension"
+        app:layout_constraintTop_toTopOf="parent" />
+    <com.zomato.ui.atomiclib.atom.ZTextView
+        android:textStyle="bold"
+        android:textColor="@color/sushi_white"
+        android:gravity="center"
+        android:id="@id/tv_offer_tag"
+        android:background="@drawable/bg_product_card_offer"
+        android:paddingLeft="@dimen/sushi_spacing_mini"
+        android:paddingTop="@dimen/sushi_spacing_micro"
+        android:paddingRight="@dimen/sushi_spacing_mini"
+        android:paddingBottom="@dimen/sushi_spacing_mini"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:includeFontPadding="false"
+        android:lineSpacingMultiplier="0.75"
+        android:textAlignment="center"
+        android:layout_marginStart="@dimen/qd_margin_18"
+        android:paddingHorizontal="@dimen/sushi_spacing_mini"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:textViewType="REGULAR_300" />
+    <ImageView
+        android:id="@id/offer_tag_extension"
+        android:visibility="gone"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:src="@drawable/ic_flat_offer_tag_top_right_corner"
+        android:translationZ="-0.100000024dip"
+        app:layout_constraintStart_toEndOf="@id/tv_offer_tag"
+        app:layout_constraintTop_toTopOf="@id/tv_offer_tag" />
+    <com.google.android.material.chip.ChipGroup
+        android:id="@id/tag_chip_group"
+        android:visibility="gone"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="@dimen/sushi_spacing_micro"
+        android:paddingEnd="@dimen/sushi_spacing_mini"
+        app:chipSpacingHorizontal="@dimen/sushi_spacing_micro"
+        app:chipSpacingVertical="@dimen/sushi_spacing_micro"
+        app:layout_constraintBottom_toTopOf="@id/tv_name"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="@id/start_guideline"
+        app:layout_constraintVertical_bias="1.0"
+        app:singleLine="true" />
+    <com.blinkit.commons.ui.ui.customviews.BShapeableImageView
+        android:textColor="@color/sushi_white"
+        android:id="@id/iv_sold_out"
+        android:visibility="gone"
+        android:layout_width="@dimen/size_80"
+        android:layout_height="@dimen/size_80"
+        android:src="@drawable/sold_out"
+        app:layout_constraintBottom_toTopOf="@id/tv_name"
+        app:layout_constraintEnd_toEndOf="@id/image"
+        app:layout_constraintHorizontal_bias="0.9"
+        app:layout_constraintStart_toStartOf="@id/image"
+        app:layout_constraintTop_toTopOf="@id/image"
+        app:layout_constraintVertical_bias="0.94"
+        app:textViewType="REGULAR_400" />
+    <com.zomato.ui.atomiclib.atom.ZTextView
+        android:textColor="@color/sushi_black"
+        android:ellipsize="end"
+        android:gravity="start"
+        android:id="@id/tv_name"
+        android:layout_width="0.0dip"
+        android:layout_height="wrap_content"
+        android:maxLines="2"
+        android:includeFontPadding="false"
+        android:lineSpacingExtra="2.0sp"
+        app:layout_constraintEnd_toEndOf="@id/end_guideline"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="@id/start_guideline"
+        app:layout_constraintTop_toTopOf="@id/tv_name_fix_height" />
+    <com.zomato.ui.atomiclib.atom.ZTextView
+        android:gravity="start"
+        android:id="@id/tv_name_fix_height"
+        android:visibility="invisible"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="@dimen/sushi_spacing_base"
+        android:lines="4"
+        android:includeFontPadding="false"
+        app:layout_constraintBottom_toTopOf="@id/stepper"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent" />
+    <com.zomato.ui.atomiclib.atom.ZTextView
+        android:textColor="@color/sushi_grey_700"
+        android:ellipsize="end"
+        android:layout_gravity="start"
+        android:id="@id/tv_variant"
+        android:layout_width="0.0dip"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/sushi_spacing_micro"
+        android:maxLines="1"
+        app:layout_constraintEnd_toEndOf="@id/end_guideline"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="@id/start_guideline"
+        app:layout_constraintTop_toBottomOf="@id/tv_name"
+        app:textViewType="REGULAR_400" />
+    <com.blinkit.commons.ui.ui.customviews.viewstub.rating.RatingSnippetItemViewStub
+        android:id="@id/rating_star_view"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/sushi_spacing_mini"
+        android:layout_marginStart="-2.0dip"
+        app:layout_constraintEnd_toEndOf="@id/end_guideline"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="@id/start_guideline"
+        app:layout_constraintTop_toBottomOf="@id/tv_variant" />
+    <com.blinkit.commons.ui.ui.customviews.viewstub.text.ZTextViewStub
+        android:id="@id/rating_star_view_fixed_height"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/sushi_spacing_mini"
+        app:layout_constraintEnd_toEndOf="@id/end_guideline"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="@id/start_guideline"
+        app:layout_constraintTop_toBottomOf="@id/tv_variant" />
+    <com.zomato.ui.atomiclib.atom.ZTextView
+        android:textColor="@color/sushi_black"
+        android:ellipsize="end"
+        android:gravity="start"
+        android:id="@id/price"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:lines="1"
+        android:layout_marginEnd="@dimen/sushi_spacing_micro"
+        app:layout_constrainedWidth="true"
+        app:layout_constraintBottom_toBottomOf="@id/stepper"
+        app:layout_constraintEnd_toStartOf="@id/mrp"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintHorizontal_chainStyle="packed"
+        app:layout_constraintStart_toStartOf="@id/start_guideline"
+        app:layout_constraintTop_toTopOf="@id/stepper"
+        app:textViewType="REGULAR_400" />
+    <com.zomato.ui.atomiclib.atom.ZTextView
+        android:textColor="@color/sushi_grey_600"
+        android:ellipsize="end"
+        android:gravity="start"
+        android:id="@id/mrp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:lines="1"
+        app:layout_constraintBottom_toBottomOf="@id/stepper"
+        app:layout_constraintEnd_toStartOf="@id/stepper"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toEndOf="@id/price"
+        app:layout_constraintTop_toTopOf="@id/stepper"
+        app:textViewType="REGULAR_400" />
+    <com.blinkit.commons.ui.ui.customviews.stepper.Stepper
+        android:id="@id/stepper"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="@dimen/sushi_spacing_extra"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="@id/end_guideline"
+        app:layout_constraintTop_toBottomOf="@id/rating_star_view"
+        app:layout_constraintVertical_bias="1.0"
+        app:stepper_type="SMALL" />
+    <include
+        android:id="@id/top_right_icon_layout"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        layout="@layout/qd_top_right_icon" />
+    <androidx.constraintlayout.widget.Guideline
+        android:orientation="vertical"
+        android:id="@id/start_guideline"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:layout_constraintGuide_begin="@dimen/sushi_spacing_extra"
+        app:layout_constraintStart_toStartOf="parent" />
+    <androidx.constraintlayout.widget.Guideline
+        android:orientation="vertical"
+        android:id="@id/end_guideline"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintGuide_end="@dimen/sushi_spacing_extra" />
+</androidx.constraintlayout.widget.ConstraintLayout>

@@ -1,0 +1,69 @@
+<?xml version="1.0" encoding="utf-8"?>
+<merge
+    android:layout_width="fill_parent"
+    android:layout_height="wrap_content"
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+    <HorizontalScrollView
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:fillViewport="true">
+        <LinearLayout
+            android:orientation="horizontal"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content">
+            <FrameLayout
+                android:id="@id/add_photo_container"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/sushi_spacing_macro"
+                android:layout_marginBottom="@dimen/padding_tiny"
+                android:layout_marginEnd="@dimen/sushi_spacing_macro">
+                <com.zomato.ui.atomiclib.atom.ZIconFontTextView
+                    android:textSize="@dimen/iconfont_size_larger"
+                    android:textColor="@color/sushi_blue_400"
+                    android:layout_gravity="center"
+                    android:id="@id/cam_icon"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/icon_font_camera_add" />
+            </FrameLayout>
+            <RelativeLayout
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content">
+                <androidx.recyclerview.widget.RecyclerView
+                    android:id="@id/photos_recyclerview"
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content" />
+            </RelativeLayout>
+            <LinearLayout
+                android:gravity="center"
+                android:orientation="vertical"
+                android:id="@id/gallery_container"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/sushi_spacing_macro"
+                android:layout_marginBottom="@dimen/padding_tiny"
+                android:layout_marginEnd="@dimen/sushi_spacing_macro">
+                <com.zomato.ui.atomiclib.atom.ZRoundedImageView
+                    android:textSize="@dimen/iconfont_size_larger"
+                    android:textColor="@color/sushi_grey_500"
+                    android:layout_gravity="center"
+                    android:id="@id/gallery_icon"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:src="@drawable/ic_gallery" />
+                <com.zomato.ui.atomiclib.atom.ZTextView
+                    android:textSize="@dimen/sushi_textsize_100"
+                    android:textColor="@color/sushi_red_500"
+                    android:gravity="center"
+                    android:layout_gravity="center"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="@dimen/sushi_spacing_micro"
+                    android:text="Gallery"
+                    app:textViewType="MEDIUM_100" />
+            </LinearLayout>
+        </LinearLayout>
+    </HorizontalScrollView>
+</merge>

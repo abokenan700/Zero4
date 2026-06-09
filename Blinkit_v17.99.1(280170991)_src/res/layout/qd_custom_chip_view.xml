@@ -1,0 +1,55 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    android:gravity="center"
+    android:orientation="horizontal"
+    android:id="@id/chip_container"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+    <com.zomato.ui.atomiclib.atom.ZRoundedImageView
+        android:layout_gravity="center_vertical"
+        android:id="@id/prefix_image"
+        android:visibility="gone"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_margin="@dimen/straight_separator_height" />
+    <com.zomato.ui.atomiclib.atom.ZIconFontTextView
+        android:layout_gravity="center_vertical"
+        android:id="@id/prefix_icon"
+        android:visibility="gone"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/corner_stroke_one" />
+    <com.zomato.ui.lib.snippets.ZIconWithTextView
+        android:layout_gravity="center_vertical"
+        android:id="@id/text"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:layout_constraintBottom_toBottomOf="parent" />
+    <com.zomato.ui.atomiclib.atom.ZIconFontTextView
+        android:layout_gravity="center_vertical"
+        android:id="@id/suffix_icon"
+        android:visibility="gone"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/corner_stroke_one" />
+    <com.zomato.ui.atomiclib.atom.ZRoundedImageView
+        android:layout_gravity="center_vertical"
+        android:id="@id/suffix_image"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_margin="@dimen/straight_separator_height" />
+    <View
+        android:id="@id/right_divider"
+        android:background="@drawable/filter_divider"
+        android:visibility="gone"
+        android:layout_width="@dimen/sushi_spacing_extra"
+        android:layout_height="fill_parent"
+        android:importantForAccessibility="no" />
+    <com.blinkit.commons.ui.ui.customviews.viewstub.blinkittext.BlinkitTextViewStub
+        android:id="@id/right_text"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:paddingEnd="@dimen/sushi_spacing_nano" />
+</LinearLayout>

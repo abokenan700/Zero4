@@ -1,0 +1,82 @@
+<?xml version="1.0" encoding="utf-8"?>
+<merge
+    android:clipChildren="false"
+    android:layout_width="fill_parent"
+    android:layout_height="wrap_content"
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+    <com.zomato.ui.lib.atom.ZTicketBackground
+        android:id="@id/ticket_bg"
+        android:layout_width="fill_parent"
+        android:layout_height="0.0dip"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:ticketBackgroundColor="@color/sushi_white"
+        app:ticketBorderColor="@color/sushi_grey_200"
+        app:ticketBorderWidth="@dimen/sushi_spacing_pico"
+        app:ticketCornerRadius="@dimen/sushi_spacing_macro"
+        app:ticketCornerType="rounded"
+        app:ticketDividerColor="@color/sushi_grey_200"
+        app:ticketDividerPadding="@dimen/sushi_spacing_femto"
+        app:ticketDividerType="normal"
+        app:ticketDividerWidth="@dimen/dimen_point_five"
+        app:ticketElevation="@dimen/elevation_micro"
+        app:ticketOrientation="horizontal"
+        app:ticketScallopPositionPercent="67.0"
+        app:ticketScallopRadius="@dimen/sushi_spacing_macro"
+        app:ticketShowBorder="true"
+        app:ticketShowDivider="true" />
+    <com.zomato.ui.lib.organisms.snippets.imagetext.v2type79.ZV2ImageTextSnippetType79
+        android:id="@id/top_container"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/sushi_spacing_base"
+        android:layout_marginStart="@dimen/sushi_spacing_base"
+        android:layout_marginEnd="@dimen/sushi_spacing_base"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+    <Space
+        android:id="@id/space_scallop"
+        android:layout_width="fill_parent"
+        android:layout_height="@dimen/size_26"
+        app:layout_constraintBottom_toTopOf="@id/tv_title1"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/top_container" />
+    <com.zomato.ui.atomiclib.atom.ZTextView
+        android:id="@id/tv_title1"
+        android:layout_width="@dimen/sushi_spacing_femto"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="@dimen/sushi_spacing_base"
+        android:layout_marginStart="@dimen/sushi_spacing_base"
+        android:layout_marginEnd="@dimen/sushi_spacing_macro"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toStartOf="@id/tv_subtitle"
+        app:layout_constraintHorizontal_bias="1.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/space_scallop"
+        app:textViewType="MEDIUM_400" />
+    <com.zomato.ui.atomiclib.atom.ZTextView
+        android:id="@id/tv_subtitle"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="@dimen/sushi_spacing_base"
+        android:layout_marginEnd="@dimen/sushi_spacing_base"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toEndOf="@id/tv_title"
+        app:layout_constraintTop_toBottomOf="@id/space_scallop"
+        app:textViewType="MEDIUM_400" />
+    <com.zomato.ui.lib.organisms.snippets.rescards.imagebottomcontainer.ImageBottomContainerView
+        android:id="@id/top_left_tag"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/sushi_spacing_mini"
+        android:layout_marginStart="@dimen/sushi_spacing_pico"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+</merge>

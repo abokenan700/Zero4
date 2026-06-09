@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    android:orientation="vertical"
+    android:paddingTop="@dimen/sushi_spacing_base"
+    android:paddingBottom="@dimen/sushi_spacing_base"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:stateListAnimator="@animator/scale_animator"
+    xmlns:android="http://schemas.android.com/apk/res/android">
+    <com.zomato.ui.atomiclib.atom.ZTextView
+        android:id="@id/title"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content" />
+    <com.zomato.ui.atomiclib.atom.ZTextView
+        android:id="@id/subtitle"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content" />
+</LinearLayout>

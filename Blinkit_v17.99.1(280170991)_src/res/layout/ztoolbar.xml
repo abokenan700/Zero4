@@ -1,0 +1,146 @@
+<?xml version="1.0" encoding="utf-8"?>
+<merge
+    android:id="@id/ztoolbar_container"
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+    <View
+        android:id="@id/toolbar_background"
+        android:background="@color/color_transparent"
+        android:visibility="gone"
+        android:layout_width="fill_parent"
+        android:layout_height="@dimen/actionbar_primary_height" />
+    <FrameLayout
+        android:id="@id/left_icon_container"
+        style="@style/zToolBarLeftIconStyle">
+        <com.zomato.ui.atomiclib.atom.ZIconFontTextView
+            android:textSize="@dimen/toolbar_back_icon_size"
+            android:textColor="@color/sushi_white"
+            android:gravity="center"
+            android:layout_gravity="center_vertical"
+            android:id="@id/left_icon"
+            android:background="@drawable/feedback_ripple_white_overlay"
+            android:padding="@dimen/sushi_spacing_micro"
+            android:clickable="true"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/icon_font_back" />
+    </FrameLayout>
+    <TextSwitcher
+        android:id="@id/title_text_switcher"
+        style="@style/zToolBarDualTitleContainer">
+        <com.zomato.ui.atomiclib.atom.ZTextView
+            android:textColor="?attr_7f040475"
+            android:id="@id/first_title_switcher"
+            app:textViewType="REGULAR_600"
+            style="@style/zToolBarSingleTitleStyle" />
+        <com.zomato.ui.atomiclib.atom.ZTextView
+            android:textColor="?attr_7f040475"
+            android:id="@id/second_title_switcher"
+            app:textViewType="REGULAR_600"
+            style="@style/zToolBarSingleTitleStyle" />
+    </TextSwitcher>
+    <FrameLayout
+        android:id="@id/single_title_container"
+        style="@style/zToolBarSingleTitleContainer">
+        <com.zomato.ui.atomiclib.atom.ZTextView
+            android:textColor="@color/sushi_white"
+            android:id="@id/single_title"
+            app:textViewType="REGULAR_600"
+            style="@style/zToolBarSingleTitleStyle" />
+    </FrameLayout>
+    <LinearLayout
+        android:id="@id/dual_title_container"
+        style="@style/zToolBarDualTitleContainer">
+        <com.zomato.ui.atomiclib.atom.ZTextView
+            android:textColor="@color/sushi_white"
+            android:id="@id/toolbar_subtitle"
+            app:textViewType="REGULAR_300"
+            style="@style/zToolBarSubTitleStyle" />
+        <LinearLayout
+            android:gravity="start|center"
+            android:orientation="horizontal"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content">
+            <com.zomato.ui.atomiclib.atom.ZTextView
+                android:textColor="?attr_7f040475"
+                android:gravity="start|center"
+                android:id="@id/toolbar_title"
+                app:textViewType="REGULAR_600"
+                style="@style/zToolBarTitleStyle" />
+            <com.zomato.ui.atomiclib.atom.ZIconFontTextView
+                android:textColor="?attr_7f040475"
+                android:id="@id/dual_title_dropdown"
+                android:visibility="gone"
+                android:text="@string/zicon_down_arrow"
+                style="@style/zToolBarTitleRightIconStyle" />
+        </LinearLayout>
+    </LinearLayout>
+    <FrameLayout
+        android:id="@id/menu_items_frame_layout"
+        android:layout_width="wrap_content"
+        android:layout_height="@dimen/actionbar_primary_height"
+        android:layout_marginStart="@dimen/padding_medium"
+        android:layout_alignParentEnd="true">
+        <com.zomato.ui.atomiclib.atom.ZButton
+            android:layout_gravity="center_vertical"
+            android:id="@id/action_text"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:paddingStart="@dimen/sushi_spacing_mini"
+            android:layout_marginEnd="@dimen/sushi_spacing_mini"
+            app:buttonDimension="medium"
+            app:buttonType="text" />
+        <LinearLayout
+            android:gravity="center_vertical"
+            android:orientation="horizontal"
+            android:id="@id/icon_menu_item_container"
+            android:visibility="gone"
+            android:layout_width="wrap_content"
+            android:layout_height="@dimen/actionbar_primary_height">
+            <com.zomato.ui.atomiclib.atom.ZIconFontTextView
+                android:id="@id/action_one"
+                style="@style/zToolBarFirstAction" />
+            <com.zomato.ui.atomiclib.atom.ZIconFontTextView
+                android:id="@id/action_two"
+                android:layout_marginStart="@dimen/padding_small"
+                style="@style/zToolBarSecondAction" />
+            <com.zomato.ui.atomiclib.atom.ZIconFontTextView
+                android:id="@id/action_three"
+                android:visibility="gone"
+                android:layout_marginStart="@dimen/padding_small"
+                style="@style/zToolBarSecondAction" />
+        </LinearLayout>
+    </FrameLayout>
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:id="@id/toggle_action_bar"
+        android:visibility="gone"
+        android:layout_width="fill_parent"
+        android:layout_height="@dimen/actionbar_primary_height">
+        <com.zomato.ui.atomiclib.atom.staticviews.StaticIconView
+            android:id="@id/toggle_action_bar_left_icon"
+            android:visibility="gone"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:maxWidth="@dimen/size_56"
+            android:maxHeight="@dimen/size_56"
+            android:layout_marginStart="@dimen/dimen_16"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+        <LinearLayout
+            android:gravity="center_vertical"
+            android:orientation="horizontal"
+            android:id="@id/toggle_action_bar_right_container"
+            android:layout_width="wrap_content"
+            android:layout_height="fill_parent"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+    </androidx.constraintlayout.widget.ConstraintLayout>
+    <View
+        android:id="@id/toolbar_overlay"
+        android:background="@color/color_transparent"
+        android:visibility="gone"
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent" />
+</merge>

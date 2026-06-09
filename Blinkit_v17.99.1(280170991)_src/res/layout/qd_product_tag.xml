@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    android:gravity="center_vertical"
+    android:orientation="horizontal"
+    android:background="@drawable/qd_grey_white_rounded_gradient"
+    android:padding="@dimen/sushi_spacing_micro"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    app:layout_constraintStart_toStartOf="parent"
+    app:layout_constraintTop_toBottomOf="@id/image"
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+    <ImageView
+        android:id="@id/image_eta"
+        android:visibility="gone"
+        android:layout_width="@dimen/sushi_spacing_page_side"
+        android:layout_height="@dimen/sushi_spacing_page_side"
+        android:layout_marginRight="@dimen/sushi_spacing_micro" />
+    <com.zomato.ui.atomiclib.atom.ZTextView
+        android:textColor="@color/sushi_black"
+        android:ellipsize="end"
+        android:gravity="start"
+        android:id="@id/eta"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:includeFontPadding="false" />
+</LinearLayout>

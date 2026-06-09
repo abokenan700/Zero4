@@ -1,0 +1,51 @@
+<?xml version="1.0" encoding="utf-8"?>
+<merge
+    android:layout_width="fill_parent"
+    android:layout_height="wrap_content"
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+    <com.zomato.ui.atomiclib.atom.ZRoundedImageView
+        android:layout_gravity="center_vertical"
+        android:id="@id/restaurant_thumb_image"
+        android:layout_width="@dimen/size_40"
+        android:layout_height="@dimen/size_40"
+        android:scaleType="centerCrop"
+        app:cornerRadius="@dimen/corner_radius_base"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+    <com.zomato.ui.atomiclib.atom.ZTextView
+        android:id="@id/restaurant_title"
+        android:layout_width="0.0dip"
+        android:layout_height="wrap_content"
+        android:includeFontPadding="false"
+        android:layout_marginStart="@dimen/sushi_spacing_macro"
+        android:layout_marginEnd="@dimen/sushi_spacing_page_side"
+        app:layout_constraintEnd_toStartOf="@id/rightButton"
+        app:layout_constraintStart_toEndOf="@id/restaurant_thumb_image"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_goneMarginStart="@dimen/sushi_spacing_femto"
+        app:textViewType="MEDIUM_400" />
+    <com.zomato.ui.atomiclib.atom.ZTextView
+        android:id="@id/restaurant_subtitle"
+        android:layout_width="0.0dip"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/sushi_spacing_nano"
+        android:includeFontPadding="false"
+        android:layout_marginStart="@dimen/sushi_spacing_macro"
+        android:layout_marginEnd="@dimen/sushi_spacing_page_side"
+        app:layout_constraintEnd_toStartOf="@id/rightButton"
+        app:layout_constraintStart_toEndOf="@id/restaurant_thumb_image"
+        app:layout_constraintTop_toBottomOf="@id/restaurant_title"
+        app:layout_goneMarginStart="@dimen/sushi_spacing_femto"
+        app:textViewType="MEDIUM_200" />
+    <com.zomato.ui.atomiclib.atom.ZButton
+        android:id="@id/rightButton"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginEnd="@dimen/sushi_spacing_macro"
+        app:buttonColor="?themeColor500"
+        app:buttonDimension="small"
+        app:buttonType="text"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toTopOf="@id/restaurant_title" />
+</merge>

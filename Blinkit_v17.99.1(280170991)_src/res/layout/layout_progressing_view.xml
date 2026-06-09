@@ -1,0 +1,51 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout
+    android:id="@id/progressiveViewParent"
+    android:background="?attr_7f04017d"
+    android:layout_width="fill_parent"
+    android:layout_height="wrap_content"
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+    <com.zomato.ui.atomiclib.atom.ZTextView
+        android:id="@id/title"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:textViewType="MEDIUM_500" />
+    <com.zomato.ui.atomiclib.atom.ZProgressBar
+        android:id="@id/progress"
+        android:layout_width="0.0dip"
+        android:layout_height="@dimen/sushi_spacing_micro"
+        android:progress="25"
+        android:progressDrawable="@drawable/gold_progressive_view_progress_bar_bg"
+        android:layout_marginEnd="@dimen/sushi_spacing_base"
+        android:progressTint="?themeColor400"
+        android:progressTintMode="src_in"
+        android:progressBackgroundTint="?themeColor200"
+        app:layout_constraintBottom_toBottomOf="@id/button"
+        app:layout_constraintEnd_toStartOf="@id/button"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="@id/button"
+        style="?android:progressBarStyleHorizontal" />
+    <com.zomato.ui.atomiclib.atom.ZButton
+        android:id="@id/button"
+        android:padding="@dimen/dimen_0"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:buttonType="text"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/title" />
+    <com.zomato.ui.atomiclib.atom.ZProgressBar
+        android:id="@id/progressView"
+        android:visibility="gone"
+        android:layout_width="@dimen/sushi_spacing_extra"
+        android:layout_height="@dimen/sushi_spacing_extra"
+        app:layout_constraintBottom_toBottomOf="@id/button"
+        app:layout_constraintEnd_toEndOf="@id/button"
+        app:layout_constraintStart_toStartOf="@id/button"
+        app:layout_constraintTop_toTopOf="@id/button"
+        style="?android:progressBarStyle" />
+</androidx.constraintlayout.widget.ConstraintLayout>

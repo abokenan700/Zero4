@@ -1,0 +1,88 @@
+<?xml version="1.0" encoding="utf-8"?>
+<merge
+    android:layout_width="fill_parent"
+    android:layout_height="wrap_content"
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+    <com.zomato.ui.atomiclib.atom.staticviews.StaticTextView
+        android:id="@id/header_top_title"
+        android:visibility="gone"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="@dimen/dimen_12"
+        android:layout_marginTop="@dimen/size24"
+        android:layout_marginRight="@dimen/dimen_12"
+        android:layout_marginHorizontal="@dimen/dimen_12"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+    <com.zomato.ui.atomiclib.atom.staticviews.StaticTextView
+        android:id="@id/header_main_title"
+        android:visibility="gone"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="@dimen/dimen_12"
+        android:layout_marginRight="@dimen/dimen_12"
+        android:layout_marginHorizontal="@dimen/dimen_12"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/header_top_title"
+        app:textViewType="BOLD_800" />
+    <com.zomato.ui.lib.organisms.snippets.progress.type2.HorizontalLinkProgressBars
+        android:orientation="horizontal"
+        android:id="@id/header_progress_container"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/size24"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/header_main_title" />
+    <com.zomato.ui.atomiclib.atom.staticviews.StaticTextView
+        android:id="@id/header_main_subtitle"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="@dimen/size28"
+        android:layout_marginTop="@dimen/size24"
+        android:layout_marginRight="@dimen/size28"
+        android:textAlignment="center"
+        android:layout_marginHorizontal="@dimen/size28"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/header_progress_container" />
+    <com.zomato.ui.lib.organisms.snippets.ticket.container_type1.TicketSnippetContainerType1
+        android:orientation="horizontal"
+        android:id="@id/header_ticket_container"
+        android:visibility="gone"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="@dimen/dimen_12"
+        android:layout_marginTop="@dimen/size24"
+        android:layout_marginRight="@dimen/dimen_12"
+        android:layout_marginHorizontal="@dimen/dimen_12"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/header_progress_container"
+        app:ticketDividerDashGap="@dimen/sushi_spacing_pico" />
+    <androidx.constraintlayout.widget.Barrier
+        android:id="@id/bottom_barrier_1"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        app:barrierDirection="bottom"
+        app:constraint_referenced_ids="header_main_subtitle,header_ticket_container" />
+    <LinearLayout
+        android:orientation="vertical"
+        android:id="@id/bottom_container"
+        android:paddingLeft="@dimen/dimen_16"
+        android:paddingTop="@dimen/dimen_16"
+        android:paddingRight="@dimen/dimen_16"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="@dimen/dimen_12"
+        android:layout_marginTop="@dimen/size_24"
+        android:layout_marginRight="@dimen/dimen_12"
+        android:layout_marginHorizontal="@dimen/dimen_12"
+        android:paddingHorizontal="@dimen/dimen_16"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/bottom_barrier_1" />
+</merge>

@@ -1,0 +1,137 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    android:orientation="vertical"
+    android:background="?attr_7f04017d"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    xmlns:android="http://schemas.android.com/apk/res/android">
+    <RelativeLayout
+        android:id="@id/relative_aboutUs_Below"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true">
+        <View
+            android:id="@id/divider_aboutUs"
+            android:background="?attr_7f040296"
+            android:layout_width="fill_parent"
+            android:layout_height="1.0dip" />
+        <RelativeLayout
+            android:id="@id/relative_fssai_connect"
+            android:padding="@dimen/padding_18"
+            android:visibility="gone"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/divider_aboutUs">
+            <com.zomato.ui.atomiclib.atom.ZTextView
+                android:textSize="@dimen/font_size_medium"
+                android:textColor="?attr_7f040466"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:text="@string/str_fssai_connect"
+                android:layout_toLeftOf="@id/icon_fssai_connect" />
+            <com.zomato.ui.atomiclib.atom.ZIconFontTextView
+                android:textSize="@dimen/font_size_medium"
+                android:textColor="?attr_7f040466"
+                android:id="@id/icon_fssai_connect"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentRight="true" />
+        </RelativeLayout>
+        <View
+            android:id="@id/divider_relative_privacy_policy"
+            android:background="?attr_7f040296"
+            android:visibility="gone"
+            android:layout_width="fill_parent"
+            android:layout_height="1.0dip"
+            android:layout_below="@id/relative_fssai_connect" />
+        <RelativeLayout
+            android:id="@id/relative_privacy_policy"
+            android:padding="@dimen/padding_18"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/divider_relative_privacy_policy">
+            <com.zomato.ui.atomiclib.atom.ZTextView
+                android:textSize="@dimen/font_size_medium"
+                android:textColor="?attr_7f040466"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:text="@string/str_privacy_policty"
+                android:layout_toLeftOf="@id/icon_privacy_policy" />
+            <com.zomato.ui.atomiclib.atom.ZIconFontTextView
+                android:textSize="@dimen/font_size_medium"
+                android:textColor="?attr_7f040466"
+                android:id="@id/icon_privacy_policy"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentRight="true" />
+        </RelativeLayout>
+        <View
+            android:id="@id/divider_aboutUs_privacyTerms"
+            android:background="?attr_7f040296"
+            android:layout_width="fill_parent"
+            android:layout_height="1.0dip"
+            android:layout_below="@id/relative_privacy_policy" />
+        <RelativeLayout
+            android:id="@id/relative_terms_conditions"
+            android:padding="@dimen/padding_18"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/divider_aboutUs_privacyTerms">
+            <com.zomato.ui.atomiclib.atom.ZTextView
+                android:textSize="@dimen/font_size_medium"
+                android:textColor="?attr_7f040466"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:text="@string/str_terms_conditions"
+                android:layout_toLeftOf="@id/icon_terms_cond" />
+            <com.zomato.ui.atomiclib.atom.ZIconFontTextView
+                android:textSize="@dimen/font_size_medium"
+                android:textColor="?attr_7f040466"
+                android:id="@id/icon_terms_cond"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentRight="true" />
+        </RelativeLayout>
+    </RelativeLayout>
+    <ScrollView
+        android:scrollbarStyle="outsideOverlay"
+        android:paddingTop="@dimen/padding_18"
+        android:paddingBottom="@dimen/padding_18"
+        android:clipToPadding="false"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_above="@id/relative_aboutUs_Below"
+        android:layout_alignParentTop="true">
+        <RelativeLayout
+            android:id="@id/relative_aboutUs_1"
+            android:paddingLeft="@dimen/padding_18"
+            android:paddingRight="@dimen/padding_18"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content">
+            <com.zomato.ui.atomiclib.atom.ZTextView
+                android:textSize="@dimen/font_size_xxlarge"
+                android:textColor="?attr_7f040466"
+                android:id="@id/title_aboutUs"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content" />
+            <com.zomato.ui.atomiclib.atom.ZTextView
+                android:textSize="@dimen/font_size_medium"
+                android:textColor="?attr_7f04047c"
+                android:id="@id/about_us_version"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="@dimen/margin_3"
+                android:layout_alignBottom="@id/title_aboutUs"
+                android:layout_marginStart="@dimen/padding_12"
+                android:layout_toEndOf="@id/title_aboutUs" />
+            <com.zomato.ui.atomiclib.atom.ZTextView
+                android:textSize="@dimen/font_size_tiny"
+                android:textColor="?attr_7f04047c"
+                android:id="@id/desc_about_us"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/padding_18"
+                android:layout_below="@id/title_aboutUs" />
+        </RelativeLayout>
+    </ScrollView>
+</RelativeLayout>

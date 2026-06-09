@@ -1,0 +1,53 @@
+<?xml version="1.0" encoding="utf-8"?>
+<merge
+    android:id="@id/root_container"
+    android:fitsSystemWindows="true"
+    android:layout_width="fill_parent"
+    android:layout_height="wrap_content"
+    app:layout_collapseMode="parallax"
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+    <com.zomato.ui.atomiclib.atom.ZRoundedImageView
+        android:id="@id/imageContainer"
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:scaleType="fitXY"
+        android:adjustViewBounds="true" />
+    <LinearLayout
+        android:gravity="center"
+        android:layout_gravity="bottom"
+        android:orientation="vertical"
+        android:id="@id/bottom_container"
+        android:visibility="gone"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="@dimen/sushi_spacing_base"
+        android:layout_marginRight="@dimen/sushi_spacing_base"
+        android:layout_marginBottom="@dimen/dimen_10"
+        android:layout_marginHorizontal="@dimen/sushi_spacing_base">
+        <com.zomato.ui.atomiclib.atom.ZSeparator
+            android:visibility="gone"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="@dimen/dimen_10"
+            app:zseparator_type="STRAIGHT" />
+        <LinearLayout
+            android:orientation="horizontal"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content">
+            <com.zomato.ui.atomiclib.atom.ZTextView
+                android:textColor="@color/sushi_white"
+                android:id="@id/text_label"
+                android:layout_width="0.0dip"
+                android:layout_height="wrap_content"
+                android:layout_weight="1.0"
+                android:layout_marginEnd="@dimen/sushi_spacing_macro"
+                app:textViewType="MEDIUM_200" />
+            <com.zomato.ui.atomiclib.atom.ZButton
+                android:id="@id/share_button"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                app:buttonType="text" />
+        </LinearLayout>
+    </LinearLayout>
+</merge>

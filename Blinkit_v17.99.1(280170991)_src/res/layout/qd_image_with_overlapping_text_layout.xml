@@ -1,0 +1,83 @@
+<?xml version="1.0" encoding="utf-8"?>
+<merge
+    android:id="@id/constraint_layout"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+    <com.blinkit.commons.ui.ui.customviews.BShapeableImageView
+        android:id="@id/image"
+        android:visibility="visible"
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent" />
+    <androidx.constraintlayout.widget.Guideline
+        android:orientation="vertical"
+        android:id="@id/start_guideline"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:layout_constraintGuide_percent="0.1" />
+    <androidx.constraintlayout.widget.Guideline
+        android:orientation="vertical"
+        android:id="@id/end_guideline"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:layout_constraintGuide_percent="0.9" />
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:id="@id/container_background"
+        android:paddingLeft="@dimen/sushi_spacing_macro"
+        android:paddingTop="@dimen/sushi_spacing_macro"
+        android:paddingRight="@dimen/sushi_spacing_macro"
+        android:paddingBottom="@dimen/sushi_spacing_macro"
+        android:layout_width="0.0dip"
+        android:layout_height="wrap_content"
+        android:paddingHorizontal="@dimen/sushi_spacing_macro"
+        android:paddingVertical="@dimen/sushi_spacing_macro"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="@id/end_guideline"
+        app:layout_constraintStart_toStartOf="@id/start_guideline"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintWidth_default="wrap">
+        <com.blinkit.blink.elements.ui.atoms.text.BlinkitTextView
+            android:id="@id/title"
+            android:layout_width="0.0dip"
+            android:layout_height="wrap_content"
+            android:textAlignment="center"
+            android:layout_marginEnd="@dimen/dimen_10"
+            app:layout_constraintBottom_toTopOf="@id/subtitle"
+            app:layout_constraintEnd_toStartOf="@id/button"
+            app:layout_constraintHorizontal_chainStyle="packed"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintVertical_chainStyle="packed"
+            app:layout_constraintWidth_default="wrap"
+            app:layout_goneMarginEnd="@dimen/sushi_spacing_femto" />
+        <com.blinkit.commons.ui.ui.customviews.viewstub.blinkittext.BlinkitTextViewStub
+            android:id="@id/subtitle"
+            android:visibility="gone"
+            android:layout_width="0.0dip"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/sushi_spacing_nano"
+            android:textAlignment="center"
+            android:layout_marginEnd="@dimen/dimen_10"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toStartOf="@id/button"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/title"
+            app:layout_constraintVertical_chainStyle="packed"
+            app:layout_constraintWidth_default="wrap"
+            app:layout_goneMarginEnd="@dimen/sushi_spacing_femto" />
+        <com.blinkit.commons.ui.ui.customviews.viewstub.blinkittext.BlinkitTextViewStub
+            android:id="@id/button"
+            android:paddingLeft="@dimen/sushi_spacing_macro"
+            android:paddingTop="@dimen/size_6"
+            android:paddingRight="@dimen/sushi_spacing_macro"
+            android:paddingBottom="@dimen/size_6"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:paddingHorizontal="@dimen/sushi_spacing_macro"
+            android:paddingVertical="@dimen/size_6"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+    </androidx.constraintlayout.widget.ConstraintLayout>
+</merge>

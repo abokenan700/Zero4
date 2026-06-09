@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layer-list
+    xmlns:android="http://schemas.android.com/apk/res/android">
+    <item
+        android:top="@dimen/sushi_spacing_micro"
+        android:bottom="@dimen/sushi_spacing_micro">
+        <shape
+            android:shape="rectangle">
+            <size
+                android:height="@dimen/size_40" />
+            <corners
+                android:radius="@dimen/size_100" />
+            <solid
+                android:color="@color/sushi_onion_800" />
+        </shape>
+    </item>
+    <item
+        android:gravity="left"
+        android:id="@android:id/background"
+        android:drawable="@drawable/locked"
+        android:left="@dimen/dimen_14"
+        android:top="@dimen/dimen_14"
+        android:bottom="@dimen/dimen_14" />
+    <item
+        android:id="@android:id/background"
+        android:drawable="@drawable/right_arrows"
+        android:left="@dimen/size_60"
+        android:top="@dimen/dimen_18"
+        android:right="@dimen/dimen_14"
+        android:bottom="@dimen/dimen_18" />
+</layer-list>

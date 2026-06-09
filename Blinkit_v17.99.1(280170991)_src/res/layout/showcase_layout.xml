@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    android:gravity="center"
+    android:layout_gravity="center"
+    android:orientation="vertical"
+    android:id="@id/root_showcase_layout"
+    android:layout_width="fill_parent"
+    android:layout_height="wrap_content"
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+    <com.zomato.ui.atomiclib.atom.ZRoundedImageView
+        android:id="@id/showcase_imageview"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:scaleType="centerCrop"
+        app:cornerRadiusTopLeft="@dimen/corner_radius_micro"
+        app:cornerRadiusTopRight="@dimen/corner_radius_micro" />
+    <com.zomato.android.zcommons.legacyViews.NitroTextView
+        android:gravity="center"
+        android:id="@id/showcase_title"
+        android:paddingTop="@dimen/padding_medium"
+        android:paddingBottom="@dimen/padding_medium"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/new_collection"
+        android:paddingStart="@dimen/padding_small"
+        android:paddingEnd="@dimen/padding_small"
+        app:newztextview_type="ACTION_TITLE"
+        app:ztextview_color="BLACK" />
+    <com.zomato.android.zcommons.legacyViews.NitroTextView
+        android:gravity="center"
+        android:id="@id/showcase_description"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:paddingStart="@dimen/padding_side"
+        android:paddingEnd="@dimen/padding_side"
+        app:newztextview_type="BASE_BODY_PARA"
+        app:ztextview_color="BLACK" />
+    <com.zomato.android.zcommons.legacyViews.NitroTextView
+        android:gravity="center"
+        android:id="@id/showcase_action1"
+        android:padding="@dimen/padding_side"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:newztextview_feedback="true"
+        app:newztextview_type="SECTION_HEADING" />
+</LinearLayout>

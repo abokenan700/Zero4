@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout
+    android:layout_gravity="center"
+    android:id="@id/top_right_icon_container"
+    android:background="@drawable/qd_rounded_fifty_percent_transparent"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+    <com.zomato.ui.atomiclib.atom.ZRoundedImageView
+        android:textColor="?android:textColorSecondary"
+        android:gravity="center"
+        android:layout_gravity="center"
+        android:id="@id/top_right_icon"
+        android:visibility="gone"
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+    <com.zomato.ui.atomiclib.animation.ZLottieAnimationView
+        android:gravity="center"
+        android:layout_gravity="center"
+        android:id="@id/top_right_icon_animation_view"
+        android:visibility="gone"
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:contentDescription="@null"
+        app:layout_constraintBottom_toBottomOf="@id/top_right_icon"
+        app:layout_constraintEnd_toEndOf="@id/top_right_icon"
+        app:layout_constraintStart_toStartOf="@id/top_right_icon"
+        app:layout_constraintTop_toTopOf="@id/top_right_icon"
+        app:lottie_autoPlay="false" />
+</androidx.constraintlayout.widget.ConstraintLayout>

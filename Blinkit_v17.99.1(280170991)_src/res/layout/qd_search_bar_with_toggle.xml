@@ -1,0 +1,65 @@
+<?xml version="1.0" encoding="utf-8"?>
+<merge
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+    <com.zomato.ui.atomiclib.molecules.VSearchBar
+        android:id="@id/search_bar"
+        android:clipChildren="false"
+        android:clipToPadding="false"
+        android:layout_width="0.0dip"
+        android:layout_height="wrap_content"
+        android:layout_marginEnd="@dimen/sushi_spacing_mini"
+        android:backgroundTint="@color/color_transparent"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toStartOf="@id/right_barrier"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.0" />
+    <androidx.constraintlayout.helper.widget.Layer
+        android:id="@id/toggle_background_view"
+        android:layout_width="0.0dip"
+        android:layout_height="fill_parent"
+        app:constraint_referenced_ids="toggle_image,toggle_container"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="@id/right_barrier" />
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:id="@id/toggle_container"
+        android:layout_width="@dimen/size_34"
+        android:layout_height="@dimen/size_20"
+        android:layout_marginTop="@dimen/sushi_spacing_micro"
+        android:layout_marginEnd="@dimen/sushi_spacing_micro"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/toggle_image"
+        app:layout_constraintVertical_chainStyle="packed">
+        <Switch
+            android:id="@id/toggle"
+            android:focusable="false"
+            android:clickable="false"
+            android:layout_width="@dimen/size_34"
+            android:layout_height="@dimen/size_20"
+            android:thumb="@drawable/qd_custom_thumb"
+            android:track="@drawable/qd_custom_track"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+    </androidx.constraintlayout.widget.ConstraintLayout>
+    <com.blinkit.commons.ui.ui.customviews.BShapeableImageView
+        android:id="@id/toggle_image"
+        android:layout_width="@dimen/size_32"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/sushi_spacing_nano"
+        android:layout_marginEnd="@dimen/sushi_spacing_micro"
+        app:layout_constraintBottom_toTopOf="@id/toggle_container"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="@id/toggle_container"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_chainStyle="packed" />
+    <androidx.constraintlayout.widget.Barrier
+        android:id="@id/right_barrier"
+        android:layout_width="0.0dip"
+        android:layout_height="fill_parent"
+        app:barrierDirection="start"
+        app:constraint_referenced_ids="toggle_container,toggle_image" />
+</merge>

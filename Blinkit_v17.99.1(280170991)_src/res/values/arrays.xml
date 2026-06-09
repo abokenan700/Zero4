@@ -1,0 +1,108 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string-array name="app_link_accepted_schemes">
+        <item>@string/app_link_grofers_scheme</item>
+        <item>@string/app_link_blinkit_scheme</item>
+    </string-array>
+    <string-array name="appsflyer_app_links_hosts">
+        <item>@string/appsflyer_blinit_host</item>
+        <item>@string/appsflyer_blinkit_host</item>
+    </string-array>
+    <string-array name="assume_strong_biometrics_models">
+        <item>Pixel 4</item>
+        <item>Pixel 4 XL</item>
+    </string-array>
+    <array name="crypto_fingerprint_fallback_prefixes" />
+    <string-array name="crypto_fingerprint_fallback_vendors">
+        <item>samsung</item>
+    </string-array>
+    <string-array name="delay_showing_prompt_models">
+        <item>Pixel 4</item>
+        <item>Pixel 4 XL</item>
+    </string-array>
+    <string-array name="exo_controls_playback_speeds">
+        <item>0.25x</item>
+        <item>0.5x</item>
+        <item>0.75x</item>
+        <item>Normal</item>
+        <item>1.25x</item>
+        <item>1.5x</item>
+        <item>2x</item>
+    </string-array>
+    <string-array name="forward_icon_array">
+        <item>@string/iconfont_forward_arrow_round</item>
+    </string-array>
+    <string-array name="hide_fingerprint_instantly_prefixes">
+        <item>SM-A50</item>
+        <item>SM-G973</item>
+        <item>SM-G975</item>
+        <item>SM-G977</item>
+        <item>SM-G770</item>
+        <item>SM-N970</item>
+        <item>SM-N971</item>
+        <item>SM-N975</item>
+        <item>SM-N976</item>
+        <item>SM-N770</item>
+        <item>SC-03L</item>
+        <item>SC-04L</item>
+        <item>SC-05L</item>
+        <item>SC-01M</item>
+        <item>SCV41</item>
+        <item>SCV42</item>
+        <item>SCV45</item>
+    </string-array>
+    <string-array name="pin_distance_text">
+        <item>Pin location is %1$s away from the saved address</item>
+        <item>Pin location is %1$s away from your current location</item>
+    </string-array>
+    <string-array name="qd_shimmer_phrases_array">
+        <item>Everything you need, delivered at your doorstep</item>
+    </string-array>
+    <string-array name="scheme_array">
+        <item>@string/scheme_http</item>
+        <item>@string/scheme_https</item>
+    </string-array>
+    <string-array name="shimmer_phrases_array">
+        <item>Support centre</item>
+    </string-array>
+    <string-array name="supported_image_hosts">
+        <item>cdn.blinkit.dev</item>
+        <item>cdn.grofers.com</item>
+        <item>cdn-brands.blinkit.com</item>
+    </string-array>
+    <string-array name="web_internal_domains">
+        <item>https://grofers.com</item>
+        <item>https://bistro.blinkit.com</item>
+        <item>https://blinkit.com</item>
+        <item>https://blinkit.dev</item>
+        <item>https://link.blinkit.com</item>
+        <item>https://games.blinkit.com</item>
+        <item>https://games.blinkit.dev</item>
+        <item>https://blinkit.in</item>
+        <item>https://blinkit.to</item>
+        <item>https://blinkit.link</item>
+        <item>https://blinkit.onelink.me</item>
+        <item>https://bistro.onelink.me</item>
+    </string-array>
+    <string-array name="web_whitelisted_domains">
+        <item>https://grofers.com</item>
+        <item>https://blinkit.com</item>
+        <item>https://blinkit.dev</item>
+        <item>https://link.blinkit.com</item>
+        <item>https://games.blinkit.com</item>
+        <item>https://games.blinkit.dev</item>
+        <item>https://blinkit.in</item>
+        <item>https://blinkit.to</item>
+        <item>https://blinkit.link</item>
+        <item>https://blinkit.onelink.me</item>
+        <item>https://bistro.onelink.me</item>
+        <item>https://bistro.blinkit.com</item>
+        <item>https://link.district.in</item>
+        <item>https://link.zomato.com</item>
+        <item>https://zomato.com</item>
+        <item>https://zoma.to</item>
+        <item>https://zomato.onelink.me</item>
+        <item>https://feedingindia.org</item>
+        <item>https://go.onelink.me</item>
+    </string-array>
+</resources>

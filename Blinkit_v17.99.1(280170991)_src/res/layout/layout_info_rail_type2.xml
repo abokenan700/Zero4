@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    android:orientation="horizontal"
+    android:id="@id/root_container"
+    android:paddingLeft="@dimen/sushi_spacing_base"
+    android:paddingTop="@dimen/sushi_spacing_macro"
+    android:paddingRight="@dimen/sushi_spacing_base"
+    android:paddingBottom="@dimen/sushi_spacing_macro"
+    android:layout_width="fill_parent"
+    android:layout_height="wrap_content"
+    android:layout_marginLeft="@dimen/sushi_spacing_base"
+    android:layout_marginTop="@dimen/sushi_spacing_base"
+    android:layout_marginRight="@dimen/sushi_spacing_base"
+    android:layout_marginBottom="@dimen/sushi_spacing_base"
+    android:layout_marginHorizontal="@dimen/sushi_spacing_base"
+    android:layout_marginVertical="@dimen/sushi_spacing_base"
+    android:paddingHorizontal="@dimen/sushi_spacing_base"
+    android:paddingVertical="@dimen/sushi_spacing_macro"
+    xmlns:android="http://schemas.android.com/apk/res/android" />

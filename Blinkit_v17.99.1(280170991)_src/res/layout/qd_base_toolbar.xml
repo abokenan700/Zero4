@@ -1,0 +1,125 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.appcompat.widget.Toolbar
+    android:id="@id/cl_toolbar_search"
+    android:background="?attr_7f0403d7"
+    android:layout_width="fill_parent"
+    android:layout_height="?android:actionBarSize"
+    android:elevation="@dimen/elevation_big"
+    app:contentInsetEnd="0.0dip"
+    app:contentInsetStart="0.0dip"
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent">
+        <ImageView
+            android:id="@id/iv_toolbar_left"
+            android:background="?actionBarItemBackground"
+            android:padding="@dimen/sushi_spacing_micro"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="@dimen/sushi_spacing_macro"
+            android:src="@drawable/qd_ic_back_arrow"
+            android:contentDescription="@string/navigate_up_accessibility_text"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            app:tint="?attr_7f040466" />
+        <LinearLayout
+            android:orientation="vertical"
+            android:id="@id/left_container"
+            android:layout_width="0.0dip"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="@dimen/sushi_spacing_macro"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toStartOf="@id/barrier"
+            app:layout_constraintStart_toEndOf="@id/iv_toolbar_left"
+            app:layout_constraintTop_toTopOf="parent">
+            <com.zomato.ui.atomiclib.atom.ZTextView
+                android:textSize="@dimen/font_icon_size_15"
+                android:textColor="?attr_7f040466"
+                android:gravity="center_vertical"
+                android:id="@id/tv_toolbar_title"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:maxLines="1" />
+            <com.zomato.ui.atomiclib.atom.ZTextView
+                android:textSize="@dimen/font_icon_size_10"
+                android:textColor="?attr_7f0401e9"
+                android:gravity="center_vertical"
+                android:id="@id/tv_toolbar_subtitle"
+                android:visibility="gone"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/dimen_2"
+                android:maxLines="1" />
+        </LinearLayout>
+        <com.zomato.ui.atomiclib.atom.ZIconFontTextView
+            android:gravity="center"
+            android:id="@id/iv_toolbar_right_icon_2"
+            android:background="?selectableItemBackground"
+            android:focusable="true"
+            android:visibility="gone"
+            android:clickable="true"
+            android:layout_width="@dimen/font_icon_size_24"
+            android:layout_height="@dimen/font_icon_size_24"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toStartOf="@id/tv_toolbar_right_title"
+            app:layout_constraintTop_toTopOf="parent" />
+        <com.zomato.ui.atomiclib.atom.ZTextView
+            android:textSize="@dimen/font_icon_size_15"
+            android:textColor="?attr_7f040466"
+            android:gravity="center_vertical"
+            android:id="@id/tv_toolbar_right_title"
+            android:background="?selectableItemBackground"
+            android:focusable="true"
+            android:visibility="gone"
+            android:clickable="true"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:maxLines="1"
+            android:layout_marginEnd="@dimen/dimen_16"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toStartOf="@id/iv_toolbar_right"
+            app:layout_constraintTop_toTopOf="parent" />
+        <ImageView
+            android:gravity="center"
+            android:id="@id/iv_toolbar_right"
+            android:padding="@dimen/qd_padding_12"
+            android:visibility="gone"
+            android:layout_width="wrap_content"
+            android:layout_height="fill_parent"
+            android:src="@drawable/qd_ic_qd_search"
+            android:contentDescription="@null"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+        <com.zomato.ui.atomiclib.animation.ZLottieAnimationView
+            android:gravity="center"
+            android:id="@id/right_lottie"
+            android:visibility="gone"
+            android:layout_width="@dimen/qd_margin_60"
+            android:layout_height="@dimen/qd_margin_28"
+            android:layout_marginEnd="@dimen/sushi_spacing_base"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+        <ProgressBar
+            android:gravity="center"
+            android:id="@id/right_lottie_loader"
+            android:visibility="gone"
+            android:layout_width="@dimen/sushi_spacing_extra"
+            android:layout_height="@dimen/sushi_spacing_extra"
+            android:indeterminateTint="@color/sushi_green_700"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="@id/right_lottie"
+            app:layout_constraintStart_toStartOf="@id/right_lottie"
+            app:layout_constraintTop_toTopOf="parent" />
+        <androidx.constraintlayout.widget.Barrier
+            android:id="@id/barrier"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            app:barrierDirection="start"
+            app:constraint_referenced_ids="iv_toolbar_right_icon_2, iv_toolbar_right,tv_toolbar_right_title" />
+    </androidx.constraintlayout.widget.ConstraintLayout>
+</androidx.appcompat.widget.Toolbar>

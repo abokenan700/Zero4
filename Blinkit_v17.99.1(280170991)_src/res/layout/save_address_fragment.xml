@@ -1,0 +1,74 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout
+    android:background="@drawable/qd_bottom_sheet_circular"
+    android:layout_width="fill_parent"
+    android:layout_height="0.0dip"
+    app:layout_constraintBottom_toBottomOf="parent"
+    app:layout_constraintStart_toStartOf="parent"
+    app:layout_constraintTop_toTopOf="parent"
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+    <com.zomato.ui.atomiclib.atom.ZTextView
+        android:textColor="?attr_7f040466"
+        android:ellipsize="end"
+        android:id="@id/title"
+        android:paddingTop="@dimen/padding_12"
+        android:paddingBottom="@dimen/padding_12"
+        android:layout_width="0.0dip"
+        android:layout_height="wrap_content"
+        android:maxLines="1"
+        android:paddingStart="@dimen/padding_12"
+        android:paddingVertical="@dimen/padding_12"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_chainStyle="packed"
+        app:textViewType="BOLD_500" />
+    <com.zomato.ui.atomiclib.atom.ZIconFontTextView
+        android:textSize="@dimen/sushi_textsize_800"
+        android:textColor="?attr_7f040466"
+        android:id="@id/cross_button"
+        android:paddingLeft="@dimen/qd_padding_16"
+        android:paddingTop="@dimen/padding_12"
+        android:paddingRight="@dimen/qd_padding_16"
+        android:paddingBottom="@dimen/padding_12"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/icon_font_cross"
+        android:backgroundTint="?attr_7f040180"
+        android:paddingHorizontal="@dimen/qd_padding_16"
+        android:paddingVertical="@dimen/padding_12"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toTopOf="@id/title" />
+    <com.blinkit.commons.ui.base.BNitroSeparator
+        android:id="@id/separator"
+        android:layout_width="fill_parent"
+        android:layout_height="1.0dip"
+        app:layout_constraintTop_toBottomOf="@id/title" />
+    <androidx.recyclerview.widget.RecyclerView
+        android:id="@id/rv_view"
+        android:clipChildren="false"
+        android:clipToPadding="false"
+        android:layout_width="fill_parent"
+        android:layout_height="0.0dip"
+        app:layout_constraintBottom_toTopOf="@id/save_address_container"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/separator" />
+    <LinearLayout
+        android:orientation="vertical"
+        android:id="@id/save_address_container"
+        android:background="?attr_7f0403d7"
+        android:padding="@dimen/dimen_12"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        app:layout_constraintBottom_toBottomOf="parent">
+        <com.blinkit.blink.elements.ui.atoms.button.BlinkitButtonView
+            android:layout_gravity="bottom"
+            android:id="@id/save_address"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:text="@string/save_address"
+            android:textAllCaps="false"
+            app:buttonColor="?attr_7f0402a9" />
+    </LinearLayout>
+</androidx.constraintlayout.widget.ConstraintLayout>

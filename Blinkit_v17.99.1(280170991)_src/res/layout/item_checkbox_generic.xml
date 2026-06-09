@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="utf-8"?>
+<merge
+    android:layout_width="fill_parent"
+    android:layout_height="wrap_content"
+    xmlns:android="http://schemas.android.com/apk/res/android">
+    <com.zomato.ui.atomiclib.atom.ZCheckBox
+        android:textSize="@dimen/sushi_textsize_300"
+        android:id="@id/checkbox"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content" />
+    <com.zomato.ui.atomiclib.atom.ZTextView
+        android:id="@id/subtitle"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:translationY="@dimen/sushi_spacing_micro_negative"
+        android:paddingStart="@dimen/sushi_spacing_mini"
+        android:layout_marginStart="@dimen/size_32" />
+</merge>

@@ -1,0 +1,57 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+    <com.blinkit.commons.ui.base.gms.BMapView
+        android:id="@id/map"
+        android:background="?attr_7f04017d"
+        android:layout_width="0.0dip"
+        android:layout_height="0.0dip"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+    <include
+        android:id="@id/info_window"
+        android:layout_width="139.0dip"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="@dimen/sushi_spacing_pico_negative"
+        app:layout_constraintBottom_toTopOf="@id/triangle_view"
+        app:layout_constraintEnd_toEndOf="@id/triangle_view"
+        app:layout_constraintStart_toStartOf="@id/triangle_view"
+        layout="@layout/qd_layout_image_text_info_window" />
+    <View
+        android:layout_gravity="center"
+        android:id="@id/triangle_view"
+        android:visibility="gone"
+        android:layout_width="@dimen/dimen_24"
+        android:layout_height="@dimen/size_8"
+        app:layout_constraintBottom_toTopOf="@id/pin_marker"
+        app:layout_constraintEnd_toEndOf="@id/pin_marker"
+        app:layout_constraintStart_toStartOf="@id/pin_marker" />
+    <com.blinkit.commons.ui.ui.customviews.viewstub.image.BShapeableImageViewStub
+        android:id="@id/pin_marker"
+        android:paddingBottom="@dimen/sushi_spacing_nano"
+        android:visibility="invisible"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="@dimen/size_26"
+        android:scaleType="fitCenter"
+        app:layout_constraintBottom_toBottomOf="@id/map"
+        app:layout_constraintEnd_toEndOf="@id/map"
+        app:layout_constraintStart_toStartOf="@id/map"
+        app:layout_constraintTop_toTopOf="@id/map" />
+    <FrameLayout
+        android:id="@id/poi_title_container"
+        android:focusable="false"
+        android:clickable="false"
+        android:layout_width="0.0dip"
+        android:layout_height="0.0dip"
+        android:elevation="@dimen/size_8"
+        app:layout_constraintBottom_toBottomOf="@id/map"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="@id/map" />
+</androidx.constraintlayout.widget.ConstraintLayout>

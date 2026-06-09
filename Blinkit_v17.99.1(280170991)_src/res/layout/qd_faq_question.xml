@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout
+    android:layout_width="fill_parent"
+    android:layout_height="wrap_content"
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+    <com.blinkit.commons.ui.ui.customviews.expandableTextView.BlinkitExpandableTextView
+        android:id="@id/expand_text_view"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/sushi_spacing_base"
+        expandableTextView:animDuration="200"
+        expandableTextView:layout_constraintEnd_toEndOf="parent"
+        expandableTextView:layout_constraintStart_toStartOf="parent"
+        expandableTextView:layout_constraintTop_toTopOf="parent"
+        expandableTextView:maxCollapsedLines="0"
+        xmlns:expandableTextView="http://schemas.android.com/apk/res-auto">
+        <androidx.constraintlayout.widget.ConstraintLayout
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="@dimen/sushi_spacing_macro">
+            <com.zomato.ui.atomiclib.atom.ZTextView
+                android:id="@id/faq_question"
+                android:layout_width="0.0dip"
+                android:layout_height="wrap_content"
+                expandableTextView:layout_constraintBottom_toBottomOf="parent"
+                expandableTextView:layout_constraintEnd_toStartOf="@id/expand_collapse"
+                expandableTextView:layout_constraintStart_toStartOf="parent"
+                expandableTextView:layout_constraintTop_toTopOf="parent" />
+            <ImageButton
+                android:id="@id/expand_collapse"
+                android:background="@android:color/transparent"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:src="@drawable/qd_ic_arrow"
+                expandableTextView:layout_constraintBottom_toBottomOf="parent"
+                expandableTextView:layout_constraintEnd_toEndOf="parent"
+                expandableTextView:layout_constraintTop_toTopOf="parent"
+                expandableTextView:tint="?attr_7f040466" />
+        </androidx.constraintlayout.widget.ConstraintLayout>
+        <com.zomato.ui.atomiclib.atom.ZTextView
+            android:id="@id/expandable_text"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content" />
+    </com.blinkit.commons.ui.ui.customviews.expandableTextView.BlinkitExpandableTextView>
+</androidx.constraintlayout.widget.ConstraintLayout>

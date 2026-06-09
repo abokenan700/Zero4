@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout
+    android:id="@id/container"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    xmlns:android="http://schemas.android.com/apk/res/android">
+    <com.zomato.ui.lib.utils.SwipeRefreshLayout
+        android:id="@id/swipe_refresh_layout"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content">
+        <com.zomato.ui.atomiclib.atom.ZTouchInterceptRecyclerView
+            android:id="@id/rv_dashboard"
+            android:background="@color/sushi_color_white"
+            android:paddingLeft="@dimen/size_12"
+            android:paddingRight="@dimen/size_12"
+            android:clipToPadding="false"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="@dimen/sushi_spacing_mini"
+            android:paddingHorizontal="@dimen/size_12" />
+    </com.zomato.ui.lib.utils.SwipeRefreshLayout>
+    <com.zomato.android.zcommons.overlay.BaseNitroOverlay
+        android:id="@id/overlay"
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent" />
+</FrameLayout>

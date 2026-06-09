@@ -1,0 +1,123 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout
+    android:id="@id/root_container"
+    android:clipChildren="false"
+    android:clipToPadding="false"
+    android:layout_width="fill_parent"
+    android:layout_height="wrap_content"
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+    <com.zomato.ui.atomiclib.atom.ZTextView
+        android:textColor="?attr_7f040475"
+        android:gravity="center_vertical"
+        android:id="@id/tv_feature_set"
+        android:visibility="gone"
+        android:layout_width="@dimen/size_200"
+        android:layout_height="wrap_content"
+        android:lineSpacingExtra="@dimen/sushi_spacing_micro"
+        android:paddingStart="@dimen/sushi_spacing_base"
+        android:paddingEnd="@dimen/sushi_spacing_base"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+    <ImageView
+        android:id="@id/overlay_image"
+        android:padding="@dimen/sushi_spacing_extra"
+        android:visibility="gone"
+        android:layout_width="@dimen/size_200"
+        android:layout_height="0.0dip"
+        android:scaleType="fitCenter"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+    <com.zomato.ui.atomiclib.animation.ZLottieAnimationView
+        android:id="@id/lottie_animation_view"
+        android:layout_width="0.0dip"
+        android:layout_height="wrap_content"
+        android:scaleType="centerCrop"
+        android:layout_marginStart="@dimen/dimen_12"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+    <com.zomato.ui.atomiclib.atom.ZRoundedImageView
+        android:id="@id/list_bg_image"
+        android:layout_width="0.0dip"
+        android:layout_height="0.0dip"
+        android:layout_marginTop="@dimen/negative_dimen_18"
+        android:layout_marginBottom="@dimen/sushi_spacing_extra_negative"
+        android:scaleType="fitXY"
+        app:layout_constraintBottom_toBottomOf="@id/scroll_indicator"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+    <com.zomato.ui.atomiclib.atom.ZRoundedImageView
+        android:id="@id/list_header_prefix_image"
+        android:visibility="gone"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginEnd="@dimen/sushi_spacing_macro"
+        app:layout_constraintBottom_toBottomOf="@id/list_header_title_shimmer"
+        app:layout_constraintEnd_toStartOf="@id/list_header_title_shimmer"
+        app:layout_constraintHorizontal_chainStyle="packed"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="@id/list_header_title_shimmer" />
+    <com.zomato.ui.atomiclib.atom.AnimatedShimmerFrameLayout
+        android:layout_gravity="center"
+        android:id="@id/list_header_title_shimmer"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:layout_constrainedWidth="true"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_chainStyle="packed"
+        app:layout_constraintStart_toEndOf="@id/list_header_prefix_image"
+        app:layout_constraintTop_toTopOf="parent"
+        app:shimmer_auto_start="false">
+        <com.zomato.ui.atomiclib.atom.staticviews.StaticTextView
+            android:textColor="@color/sushi_grey_400"
+            android:gravity="center"
+            android:id="@id/list_header_title"
+            android:visibility="visible"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" />
+    </com.zomato.ui.atomiclib.atom.AnimatedShimmerFrameLayout>
+    <com.zomato.ui.atomiclib.atom.staticviews.StaticTextView
+        android:textColor="@color/sushi_grey_500"
+        android:gravity="center"
+        android:id="@id/list_header_subtitle"
+        android:visibility="visible"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="@dimen/sushi_spacing_base"
+        android:layout_marginTop="@dimen/sushi_spacing_nano"
+        android:layout_marginRight="@dimen/sushi_spacing_base"
+        android:layout_marginBottom="@dimen/sushi_spacing_base"
+        android:layout_marginHorizontal="@dimen/sushi_spacing_base"
+        app:layout_constrainedWidth="true"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/list_header_title_shimmer" />
+    <com.zomato.ui.atomiclib.utils.video.toro.widget.Container
+        android:id="@id/recyclerView"
+        android:clipToPadding="false"
+        android:layout_width="0.0dip"
+        android:layout_height="wrap_content"
+        android:paddingEnd="@dimen/sushi_spacing_base"
+        android:nestedScrollingEnabled="false"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/list_header_subtitle"
+        app:layout_constraintVertical_bias="0.0" />
+    <com.zomato.ui.atomiclib.molecules.CustomHorizontalScrollIndicator
+        android:id="@id/scroll_indicator"
+        android:visibility="gone"
+        android:layout_width="@dimen/size_48"
+        android:layout_height="@dimen/sushi_spacing_micro"
+        android:layout_marginTop="@dimen/sushi_spacing_nano"
+        android:layout_marginBottom="@dimen/sushi_spacing_macro"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/recyclerView" />
+</androidx.constraintlayout.widget.ConstraintLayout>

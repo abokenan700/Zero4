@@ -1,0 +1,61 @@
+<?xml version="1.0" encoding="utf-8"?>
+<font-family
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+    <font
+        android:font="@font/okra_thin"
+        android:fontWeight="100"
+        android:fontStyle="normal"
+        app:font="@font/okra_thin"
+        app:fontStyle="normal"
+        app:fontWeight="100" />
+    <font
+        android:font="@font/okra_extralight"
+        android:fontWeight="200"
+        android:fontStyle="normal"
+        app:font="@font/okra_extralight"
+        app:fontStyle="normal"
+        app:fontWeight="200" />
+    <font
+        android:font="@font/okra_light"
+        android:fontWeight="300"
+        android:fontStyle="normal"
+        app:font="@font/okra_light"
+        app:fontStyle="normal"
+        app:fontWeight="300" />
+    <font
+        android:font="@font/okra_regular"
+        android:fontWeight="400"
+        android:fontStyle="normal"
+        app:font="@font/okra_regular"
+        app:fontStyle="normal"
+        app:fontWeight="400" />
+    <font
+        android:font="@font/okra_medium"
+        android:fontWeight="500"
+        android:fontStyle="normal"
+        app:font="@font/okra_medium"
+        app:fontStyle="normal"
+        app:fontWeight="500" />
+    <font
+        android:font="@font/okra_semibold"
+        android:fontWeight="600"
+        android:fontStyle="normal"
+        app:font="@font/okra_semibold"
+        app:fontStyle="normal"
+        app:fontWeight="600" />
+    <font
+        android:font="@font/okra_bold"
+        android:fontWeight="700"
+        android:fontStyle="normal"
+        app:font="@font/okra_bold"
+        app:fontStyle="normal"
+        app:fontWeight="700" />
+    <font
+        android:font="@font/okra_extrabold"
+        android:fontWeight="800"
+        android:fontStyle="normal"
+        app:font="@font/okra_extrabold"
+        app:fontStyle="normal"
+        app:fontWeight="800" />
+</font-family>

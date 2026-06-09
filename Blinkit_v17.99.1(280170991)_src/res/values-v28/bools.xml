@@ -1,0 +1,5 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <bool name="shouldEnableFloatingProperty">true</bool>
+    <bool name="shouldEnableTranslucentProperty">true</bool>
+</resources>

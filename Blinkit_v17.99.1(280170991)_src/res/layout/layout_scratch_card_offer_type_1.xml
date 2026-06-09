@@ -1,0 +1,90 @@
+<?xml version="1.0" encoding="utf-8"?>
+<merge
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+    <com.blinkit.commons.ui.ui.customviews.bmediaview.BMediaView
+        android:id="@id/lottie_image_view"
+        android:layout_width="fill_parent"
+        android:layout_height="0.0dip"
+        android:layout_marginTop="@dimen/sushi_spacing_loose"
+        android:layout_marginBottom="@dimen/sushi_spacing_extra"
+        app:layout_constraintBottom_toTopOf="@id/title"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+    <com.blinkit.commons.ui.ui.customviews.viewstub.text.ZTextViewStub
+        android:gravity="center"
+        android:id="@id/title"
+        android:paddingTop="@dimen/sushi_spacing_nano"
+        android:paddingBottom="@dimen/sushi_spacing_nano"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="@dimen/sushi_spacing_base"
+        android:layout_marginRight="@dimen/sushi_spacing_base"
+        android:layout_marginHorizontal="@dimen/sushi_spacing_base"
+        android:paddingVertical="@dimen/sushi_spacing_nano"
+        app:layout_constraintBottom_toTopOf="@id/subtitle" />
+    <com.blinkit.commons.ui.ui.customviews.viewstub.text.ZTextViewStub
+        android:gravity="center"
+        android:id="@id/subtitle"
+        android:paddingTop="@dimen/sushi_spacing_nano"
+        android:paddingBottom="@dimen/sushi_spacing_nano"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="@dimen/sushi_spacing_base"
+        android:layout_marginRight="@dimen/sushi_spacing_base"
+        android:layout_marginBottom="@dimen/sushi_spacing_macro"
+        android:layout_marginHorizontal="@dimen/sushi_spacing_base"
+        android:paddingVertical="@dimen/sushi_spacing_nano"
+        app:layout_constraintBottom_toTopOf="@id/subtitle2" />
+    <com.blinkit.commons.ui.ui.customviews.viewstub.text.ZTextViewStub
+        android:gravity="center"
+        android:id="@id/subtitle2"
+        android:paddingTop="@dimen/sushi_spacing_nano"
+        android:paddingBottom="@dimen/sushi_spacing_nano"
+        android:visibility="gone"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="@dimen/sushi_spacing_base"
+        android:layout_marginRight="@dimen/sushi_spacing_base"
+        android:layout_marginBottom="@dimen/sushi_spacing_base"
+        android:layout_marginHorizontal="@dimen/sushi_spacing_base"
+        android:paddingVertical="@dimen/sushi_spacing_nano"
+        app:layout_constraintBottom_toTopOf="@id/separator1" />
+    <View
+        android:id="@id/separator1"
+        android:background="@color/sushi_grey_200"
+        android:visibility="gone"
+        android:layout_width="fill_parent"
+        android:layout_height="@dimen/dimen_point_five"
+        app:layout_constraintBottom_toTopOf="@id/button1" />
+    <com.blinkit.commons.ui.ui.customviews.viewstub.text.ZTextViewStub
+        android:gravity="center"
+        android:id="@id/button1"
+        android:paddingTop="@dimen/sushi_spacing_base"
+        android:paddingBottom="@dimen/sushi_spacing_base"
+        android:visibility="gone"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:paddingVertical="@dimen/sushi_spacing_base"
+        app:layout_constraintBottom_toTopOf="@id/separator2" />
+    <View
+        android:id="@id/separator2"
+        android:background="@color/sushi_grey_200"
+        android:visibility="gone"
+        android:layout_width="fill_parent"
+        android:layout_height="@dimen/dimen_point_five"
+        app:layout_constraintBottom_toTopOf="@id/button2" />
+    <com.blinkit.commons.ui.ui.customviews.viewstub.text.ZTextViewStub
+        android:gravity="center"
+        android:id="@id/button2"
+        android:paddingTop="@dimen/sushi_spacing_base"
+        android:paddingBottom="@dimen/sushi_spacing_base"
+        android:visibility="gone"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:paddingVertical="@dimen/sushi_spacing_base"
+        app:layout_constraintBottom_toBottomOf="parent" />
+</merge>

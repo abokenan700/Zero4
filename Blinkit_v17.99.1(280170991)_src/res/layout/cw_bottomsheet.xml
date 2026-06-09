@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout
+    android:layout_width="fill_parent"
+    android:layout_height="wrap_content"
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+    <com.blinkit.blink.elements.ui.atoms.icon.BlinkitIconView
+        android:gravity="center"
+        android:id="@id/outer_icon"
+        android:padding="@dimen/sushi_spacing_macro"
+        android:layout_width="40.0dip"
+        android:layout_height="40.0dip"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+    <View
+        android:id="@id/outer_bg"
+        android:clickable="false"
+        android:layout_width="fill_parent"
+        android:layout_height="60.0dip"
+        android:layout_marginTop="-36.0dip"
+        android:translationY="12.0dip"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/outer_icon" />
+    <FrameLayout
+        android:id="@id/fragment_container"
+        android:background="?attr_7f04017d"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/sushi_spacing_extra"
+        app:layout_constrainedHeight="true"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/outer_bg" />
+</androidx.constraintlayout.widget.ConstraintLayout>

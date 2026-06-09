@@ -1,0 +1,52 @@
+<?xml version="1.0" encoding="utf-8"?>
+<merge
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+    <LinearLayout
+        android:gravity="center"
+        android:orientation="horizontal"
+        android:id="@id/ll_root"
+        android:layout_width="fill_parent"
+        android:layout_height="@dimen/stepper_height"
+        android:animateLayoutChanges="true">
+        <com.zomato.ui.atomiclib.atom.ZIconFontTextView
+            android:textColor="?brandColor"
+            android:gravity="center"
+            android:id="@id/button_remove"
+            android:layout_width="wrap_content"
+            android:layout_height="fill_parent"
+            android:text="@string/icon_font_remove"
+            android:paddingStart="@dimen/sushi_spacing_between"
+            android:paddingEnd="@dimen/sushi_spacing_between" />
+        <com.zomato.ui.atomiclib.atom.ZTextView
+            android:textColor="?brandColor"
+            android:gravity="center"
+            android:id="@id/text_view_title"
+            android:paddingTop="@dimen/sushi_spacing_micro"
+            android:paddingBottom="@dimen/sushi_spacing_micro"
+            android:layout_width="0.0dip"
+            android:layout_height="fill_parent"
+            android:maxLines="1"
+            android:minEms="3"
+            android:layout_weight="1.0"
+            android:paddingVertical="@dimen/sushi_spacing_micro"
+            app:autoSizeMinTextSize="@dimen/text_size_4"
+            app:autoSizeStepGranularity="@dimen/text_size_step_increase"
+            app:autoSizeTextType="uniform"
+            app:textAllCaps="true"
+            app:textViewType="MEDIUM_100" />
+        <com.zomato.ui.atomiclib.atom.ZIconFontTextView
+            android:textColor="?brandColor"
+            android:gravity="center"
+            android:id="@id/button_add"
+            android:layout_width="wrap_content"
+            android:layout_height="fill_parent"
+            android:text="@string/icon_font_plus"
+            android:paddingStart="@dimen/sushi_spacing_between"
+            android:paddingEnd="@dimen/sushi_spacing_between"
+            android:elevation="@dimen/dimen_2"
+            android:outlineProvider="none" />
+    </LinearLayout>
+</merge>

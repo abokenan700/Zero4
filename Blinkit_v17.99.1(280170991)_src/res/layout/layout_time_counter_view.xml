@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="utf-8"?>
+<merge
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    xmlns:android="http://schemas.android.com/apk/res/android">
+    <com.blinkit.commons.ui.ui.customviews.BCounterComponent
+        android:id="@id/hour"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content" />
+    <com.zomato.ui.atomiclib.atom.ZTextView
+        android:id="@id/hour_end_separator"
+        android:paddingTop="@dimen/dimen_2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content" />
+    <com.blinkit.commons.ui.ui.customviews.BCounterComponent
+        android:id="@id/minute"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content" />
+    <com.zomato.ui.atomiclib.atom.ZTextView
+        android:id="@id/minute_end_separator"
+        android:paddingTop="@dimen/dimen_2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content" />
+    <com.blinkit.commons.ui.ui.customviews.BCounterComponent
+        android:id="@id/seconds"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content" />
+</merge>

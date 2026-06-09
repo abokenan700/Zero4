@@ -1,0 +1,126 @@
+<?xml version="1.0" encoding="utf-8"?>
+<merge
+    android:layout_width="fill_parent"
+    android:layout_height="wrap_content"
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+    <com.blinkit.commons.ui.ui.customviews.viewstub.image.BShapeableImageViewStub
+        android:gravity="center"
+        android:id="@id/bg_image"
+        android:visibility="gone"
+        android:layout_width="0.0dip"
+        android:layout_height="0.0dip"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+    <androidx.viewpager2.widget.ViewPager2
+        android:id="@id/view_pager_2"
+        android:background="@color/color_transparent"
+        android:clipChildren="false"
+        android:clipToPadding="false"
+        android:layout_width="0.0dip"
+        android:layout_height="wrap_content"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+    <com.blinkit.commons.ui.ui.customviews.BShapeableImageView
+        android:gravity="center"
+        android:id="@id/overlay_image"
+        android:visibility="gone"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="@dimen/size_36"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintStart_toStartOf="parent" />
+    <com.blinkit.commons.ui.ui.customviews.viewstub.OverlayBadgeViewStub
+        android:id="@id/overlay_badge_view_stub"
+        android:layout_width="0.0dip"
+        android:layout_height="0.0dip"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+    <View
+        android:orientation="vertical"
+        android:id="@id/full_page_overlay_view"
+        android:background="@color/black"
+        android:visibility="gone"
+        android:layout_width="fill_parent"
+        android:layout_height="0.0dip"
+        android:alpha="0.2"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+    <LinearLayout
+        android:gravity="top"
+        android:orientation="vertical"
+        android:id="@id/overlay_view"
+        android:visibility="gone"
+        android:layout_width="wrap_content"
+        android:layout_height="0.0dip"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+    <com.blinkit.commons.ui.ui.customviews.BShapeableImageView
+        android:id="@id/dismiss_image"
+        android:visibility="gone"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="@dimen/size_36"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintStart_toEndOf="@id/overlay_view" />
+    <ViewStub
+        android:gravity="center"
+        android:orientation="horizontal"
+        android:id="@id/dash_progress_indicator"
+        android:visibility="gone"
+        android:layout="@layout/layout_dash_progress_indicator"
+        android:inflatedId="@id/dash_progress_indicator"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        app:layout_constraintBottom_toBottomOf="parent" />
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:id="@id/dots_container"
+        android:paddingLeft="2.0dip"
+        android:paddingTop="4.0dip"
+        android:paddingRight="2.0dip"
+        android:paddingBottom="4.0dip"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:elevation="@dimen/size_8"
+        android:paddingHorizontal="2.0dip"
+        android:paddingVertical="4.0dip"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/view_pager_2">
+        <com.blinkit.commons.ui.ui.customviews.qdzviewpagerv2.indicator.BViewPager2OverflowIndicator
+            android:id="@id/dots_bottom_indicator"
+            android:visibility="gone"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:elevation="@dimen/size_8"
+            app:indicatorDefaultColor="@color/sushi_grey_200"
+            app:indicatorSelectedColor="@color/sushi_grey_800"
+            app:layout_constraintBottom_toBottomOf="@id/dots_container"
+            app:layout_constraintEnd_toEndOf="@id/dots_container"
+            app:layout_constraintStart_toStartOf="@id/dots_container"
+            app:layout_constraintTop_toTopOf="@id/dots_container"
+            app:layout_constraintVertical_bias="1.0" />
+    </androidx.constraintlayout.widget.ConstraintLayout>
+    <com.blinkit.commons.ui.ui.customviews.viewstub.blinkittext.BlinkitTextViewStub
+        android:id="@id/text_indicator"
+        android:paddingLeft="@dimen/sushi_spacing_macro"
+        android:paddingTop="@dimen/sushi_spacing_micro"
+        android:paddingRight="@dimen/sushi_spacing_macro"
+        android:paddingBottom="@dimen/sushi_spacing_micro"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:paddingHorizontal="@dimen/sushi_spacing_macro"
+        android:paddingVertical="@dimen/sushi_spacing_micro"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/view_pager_2" />
+</merge>

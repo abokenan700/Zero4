@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    android:orientation="vertical"
+    android:background="?attr_7f04017d"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:weightSum="35.0"
+    xmlns:android="http://schemas.android.com/apk/res/android">
+    <include
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="@dimen/sushi_spacing_base"
+        android:layout_marginRight="@dimen/sushi_spacing_base"
+        android:layout_marginHorizontal="@dimen/sushi_spacing_base"
+        layout="@layout/shimmer_qd_filter_horizontal_item" />
+    <include
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_weight="10.0"
+        layout="@layout/shimmer_qd_plp_horizontal_item_3" />
+    <include
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_weight="10.0"
+        layout="@layout/shimmer_qd_plp_horizontal_item_3" />
+    <include
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_weight="10.0"
+        layout="@layout/shimmer_qd_plp_horizontal_item_3" />
+</LinearLayout>

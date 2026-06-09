@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    android:orientation="vertical"
+    android:layout_width="fill_parent"
+    android:layout_height="wrap_content"
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+    <com.zomato.ui.atomiclib.atom.ZTextView
+        android:id="@id/title"
+        android:paddingTop="@dimen/sushi_spacing_mini"
+        android:paddingBottom="@dimen/sushi_spacing_mini"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:paddingStart="@dimen/sushi_spacing_macro"
+        android:paddingEnd="@dimen/sushi_spacing_macro"
+        android:layout_marginStart="@dimen/sushi_spacing_page_side"
+        app:textViewType="SEMIBOLD_200" />
+    <com.zomato.ui.atomiclib.utils.video.toro.widget.Container
+        android:id="@id/recyclerView"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content" />
+</LinearLayout>

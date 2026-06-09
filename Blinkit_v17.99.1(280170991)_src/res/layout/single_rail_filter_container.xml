@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.zomato.ui.atomiclib.atom.ZTouchInterceptRecyclerView
+    android:layout_gravity="center_vertical"
+    android:id="@id/pillRv"
+    android:paddingTop="@dimen/size_3"
+    android:paddingBottom="@dimen/size_3"
+    android:clipChildren="false"
+    android:clipToPadding="false"
+    android:layout_width="fill_parent"
+    android:layout_height="wrap_content"
+    android:nestedScrollingEnabled="false"
+    android:paddingVertical="@dimen/size_3"
+    app:layout_behavior="@string/appbar_scrolling_view_behavior"
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto" />

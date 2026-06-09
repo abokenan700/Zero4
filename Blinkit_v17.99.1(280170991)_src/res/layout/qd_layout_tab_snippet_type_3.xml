@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout
+    android:layout_width="fill_parent"
+    android:layout_height="wrap_content"
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+    <com.blinkit.commons.ui.ui.snippets.tabSnippetType3.AnimatedTabIndicatorView
+        android:id="@id/animated_indicator"
+        android:focusable="false"
+        android:visibility="gone"
+        android:clickable="false"
+        android:layout_width="0.0dip"
+        android:layout_height="0.0dip"
+        app:layout_constraintBottom_toBottomOf="@id/tab_layout"
+        app:layout_constraintEnd_toEndOf="@id/tab_layout"
+        app:layout_constraintStart_toStartOf="@id/tab_layout"
+        app:layout_constraintTop_toTopOf="parent" />
+    <com.blinkit.commons.ui.ui.customviews.BTabLayout
+        android:id="@id/tab_layout"
+        android:background="@color/transparent_white"
+        android:clipToPadding="false"
+        android:layout_width="fill_parent"
+        android:layout_height="@dimen/size_94"
+        app:layout_behavior="@string/appbar_scrolling_view_behavior"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:tabGravity="fill"
+        app:tabIndicatorAnimationDuration="200"
+        app:tabIndicatorAnimationMode="linear"
+        app:tabIndicatorColor="?themeColor500"
+        app:tabIndicatorFullWidth="false"
+        app:tabIndicatorHeight="@dimen/size_3"
+        app:tabMinWidth="@dimen/sushi_spacing_pico"
+        app:tabMode="auto"
+        app:tabPaddingBottom="@dimen/sushi_spacing_femto"
+        app:tabPaddingEnd="10.0dip"
+        app:tabPaddingStart="10.0dip"
+        app:tabPaddingTop="@dimen/sushi_spacing_micro_negative"
+        app:tabRippleColor="@null" />
+</androidx.constraintlayout.widget.ConstraintLayout>

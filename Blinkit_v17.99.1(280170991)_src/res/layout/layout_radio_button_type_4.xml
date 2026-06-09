@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="utf-8"?>
+<merge
+    android:gravity="center_vertical"
+    android:layout_width="fill_parent"
+    android:layout_height="wrap_content"
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+    <com.zomato.ui.atomiclib.atom.ZRoundedImageView
+        android:layout_gravity="center_vertical"
+        android:id="@id/image"
+        android:visibility="gone"
+        android:layout_width="@dimen/size24"
+        android:layout_height="@dimen/size24"
+        android:scaleType="fitXY"
+        android:layout_marginEnd="@dimen/sushi_spacing_macro" />
+    <LinearLayout
+        android:layout_gravity="center_vertical"
+        android:orientation="vertical"
+        android:layout_width="0.0dip"
+        android:layout_height="wrap_content"
+        android:layout_weight="1.0"
+        android:layout_marginEnd="@dimen/sushi_spacing_base">
+        <com.zomato.ui.atomiclib.atom.ZTextView
+            android:id="@id/title"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content" />
+        <com.zomato.ui.atomiclib.atom.ZTextView
+            android:id="@id/subtitle"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/sushi_spacing_micro" />
+    </LinearLayout>
+    <com.zomato.ui.atomiclib.atom.ZRadioButton
+        android:layout_gravity="center_vertical"
+        android:id="@id/radioButton"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content" />
+</merge>

@@ -1,0 +1,50 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout
+    android:id="@id/recommended_search_vh"
+    android:paddingBottom="@dimen/sushi_spacing_macro"
+    android:visibility="gone"
+    android:layout_width="fill_parent"
+    android:layout_height="wrap_content"
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+    <com.zomato.ui.atomiclib.atom.ZTextView
+        android:textSize="@dimen/sushi_textsize_100"
+        android:textColor="@color/sushi_grey_600"
+        android:id="@id/recommended_search_tv"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/recent_searches"
+        android:textAllCaps="true"
+        android:layout_marginStart="@dimen/sushi_spacing_base"
+        android:letterSpacing="0.2"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:textViewType="MEDIUM_300" />
+    <com.zomato.ui.atomiclib.atom.ZTextView
+        android:textSize="@dimen/sushi_textsize_100"
+        android:textColor="?themeColor400"
+        android:id="@id/clear"
+        android:clickable="true"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/clear"
+        android:layout_marginEnd="@dimen/sushi_spacing_base"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:textViewType="REGULAR_200" />
+    <com.zomato.ui.atomiclib.molecules.FlowLayout
+        android:gravity="center_vertical"
+        android:layout_gravity="center_vertical"
+        android:orientation="horizontal"
+        android:id="@id/recommended_search_flexboxlayout"
+        android:paddingTop="@dimen/sushi_spacing_macro"
+        android:scrollbars="none"
+        android:clipToPadding="true"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:paddingStart="@dimen/sushi_spacing_base"
+        android:layout_marginEnd="@dimen/sushi_spacing_base"
+        app:fl_horizontalSpacing="@dimen/sushi_spacing_extra"
+        app:fl_verticalSpacing="@dimen/sushi_spacing_macro"
+        app:layout_constraintTop_toBottomOf="@id/recommended_search_tv" />
+</androidx.constraintlayout.widget.ConstraintLayout>

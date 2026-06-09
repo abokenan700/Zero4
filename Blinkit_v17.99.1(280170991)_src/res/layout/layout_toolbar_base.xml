@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+    <com.zomato.ui.atomiclib.atom.ZIconFontTextView
+        android:textSize="@dimen/sushi_textsize_400"
+        android:textColor="?attr_7f040466"
+        android:gravity="center"
+        android:id="@id/iv_toolbar_left"
+        android:background="@drawable/bg_default_toolbar_icon"
+        android:layout_width="@dimen/size_36"
+        android:layout_height="@dimen/size_36"
+        android:layout_marginLeft="@dimen/sushi_spacing_base"
+        android:text="@string/icon_font_back"
+        android:contentDescription="@null"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+    <com.zomato.ui.atomiclib.atom.ZTextView
+        android:textSize="@dimen/font_icon_size_15"
+        android:textColor="?attr_7f040466"
+        android:gravity="center_vertical"
+        android:id="@id/tv_toolbar_title"
+        android:layout_width="0.0dip"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="@dimen/sushi_spacing_macro"
+        android:maxLines="1"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toStartOf="@id/iv_toolbar_right"
+        app:layout_constraintStart_toEndOf="@id/iv_toolbar_left"
+        app:layout_constraintTop_toTopOf="parent" />
+    <ImageView
+        android:gravity="center"
+        android:id="@id/iv_toolbar_right"
+        android:padding="@dimen/qd_padding_12"
+        android:visibility="gone"
+        android:layout_width="wrap_content"
+        android:layout_height="fill_parent"
+        android:src="@drawable/qd_ic_qd_search"
+        android:contentDescription="@null"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+</androidx.constraintlayout.widget.ConstraintLayout>

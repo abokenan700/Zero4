@@ -1,0 +1,58 @@
+<?xml version="1.0" encoding="utf-8"?>
+<merge
+    android:orientation="vertical"
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+    <com.zomato.ui.atomiclib.atom.ZTouchInterceptRecyclerView
+        android:id="@id/recyclerView"
+        android:clipChildren="false"
+        android:clipToPadding="false"
+        android:layout_width="0.0dip"
+        android:layout_height="wrap_content"
+        android:paddingEnd="@dimen/sushi_spacing_page_side"
+        android:nestedScrollingEnabled="false"
+        app:layout_behavior="@string/appbar_scrolling_view_behavior"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:id="@id/right_overlay_container"
+        android:paddingLeft="@dimen/dimen_10"
+        android:paddingRight="@dimen/dimen_10"
+        android:layout_width="wrap_content"
+        android:layout_height="0.0dip"
+        android:layout_marginTop="@dimen/sushi_spacing_nano"
+        android:layout_marginBottom="@dimen/dimen_14"
+        android:layout_marginEnd="@dimen/sushi_spacing_pico_negative"
+        android:paddingHorizontal="@dimen/dimen_10"
+        app:layout_constraintBottom_toBottomOf="@id/recyclerView"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toTopOf="@id/recyclerView">
+        <com.zomato.ui.atomiclib.atom.staticviews.StaticTextView
+            android:id="@id/rightOverlayText"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+        <com.zomato.ui.atomiclib.atom.staticviews.StaticIconView
+            android:id="@id/rightOverlayIconView"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            app:layout_constraintBottom_toBottomOf="@id/rightOverlayText"
+            app:layout_constraintStart_toEndOf="@id/rightOverlayText"
+            app:layout_constraintTop_toTopOf="@id/rightOverlayText" />
+    </androidx.constraintlayout.widget.ConstraintLayout>
+    <View
+        android:id="@id/separator"
+        android:background="@color/sushi_grey_200"
+        android:visibility="invisible"
+        android:layout_width="fill_parent"
+        android:layout_height="@dimen/dimen_point_five"
+        android:layout_marginLeft="@dimen/sushi_spacing_base"
+        android:layout_marginRight="@dimen/sushi_spacing_base"
+        android:layout_marginHorizontal="@dimen/sushi_spacing_base"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/recyclerView" />
+</merge>

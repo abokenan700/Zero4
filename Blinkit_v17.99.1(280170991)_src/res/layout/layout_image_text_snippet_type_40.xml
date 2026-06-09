@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    android:orientation="horizontal"
+    android:id="@id/root_view"
+    android:padding="@dimen/sushi_spacing_base"
+    android:layout_width="fill_parent"
+    android:layout_height="wrap_content"
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+    <com.zomato.ui.atomiclib.atom.ZRoundedImageView
+        android:id="@id/image"
+        android:visibility="gone"
+        android:layout_width="@dimen/dish_image_circular_width"
+        android:layout_height="@dimen/dish_image_circular_height"
+        android:scaleType="centerCrop"
+        android:layout_marginEnd="@dimen/sushi_spacing_base"
+        app:cornerRadius="@dimen/dish_image_circular_radius" />
+    <com.zomato.ui.atomiclib.atom.ZIconFontTextView
+        android:textColor="@color/sushi_grey_700"
+        android:layout_gravity="end"
+        android:id="@id/icon"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerVertical="true"
+        android:layout_marginStart="@dimen/sushi_spacing_between"
+        android:layout_alignParentEnd="true" />
+    <LinearLayout
+        android:orientation="vertical"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_toLeftOf="@id/icon"
+        android:layout_toRightOf="@id/image"
+        android:layout_centerVertical="true">
+        <com.zomato.ui.atomiclib.atom.ZTextView
+            android:textColor="?attr_7f040475"
+            android:id="@id/title"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            app:textViewType="MEDIUM_400" />
+        <com.zomato.ui.atomiclib.atom.ZTextView
+            android:id="@id/subtitle"
+            android:visibility="gone"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            app:textViewType="MEDIUM_300" />
+    </LinearLayout>
+</RelativeLayout>

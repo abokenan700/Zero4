@@ -1,0 +1,113 @@
+<?xml version="1.0" encoding="utf-8"?>
+<merge
+    android:id="@id/multi_card_aero_bar_container"
+    android:layout_width="fill_parent"
+    android:layout_height="wrap_content"
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+    <com.zomato.ui.atomiclib.atom.ZTextView
+        android:textColor="?attr_7f040475"
+        android:id="@id/title"
+        android:visibility="gone"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:layout_constrainedWidth="true"
+        app:layout_constraintBottom_toTopOf="@id/stack_barrier"
+        app:layout_constraintEnd_toStartOf="@id/subtitle"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.5"
+        app:textViewType="SEMIBOLD_600" />
+    <com.zomato.ui.atomiclib.atom.ZTextView
+        android:textColor="@color/sushi_grey_600"
+        android:id="@id/subtitle"
+        android:visibility="gone"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:layout_constraintBottom_toBottomOf="@id/title"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toTopOf="@id/title"
+        app:textViewType="SEMIBOLD_200" />
+    <com.zomato.ui.atomiclib.atom.ZButton
+        android:id="@id/right_button"
+        android:visibility="gone"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:layout_constraintBottom_toBottomOf="@id/title"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toTopOf="@id/title" />
+    <androidx.constraintlayout.widget.Barrier
+        android:id="@id/stack_barrier"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        app:barrierDirection="top"
+        app:constraint_referenced_ids="stack_container, tooltip_snippet" />
+    <com.zomato.ui.lib.data.tooltipsnippet.type3.TooltipSnippetType3
+        android:id="@id/tooltip_snippet"
+        android:visibility="gone"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:animateLayoutChanges="true"
+        android:elevation="@dimen/size_8"
+        app:layout_constraintBottom_toTopOf="@id/stack_container"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/stack_barrier" />
+    <FrameLayout
+        android:id="@id/stack_container"
+        android:clipChildren="false"
+        android:clipToPadding="false"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/dimen_10"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/tooltip_snippet"
+        app:layout_constraintVertical_bias="1.0">
+        <com.zomato.android.zcommons.aerobar.V2AeroBarItemViewWrapper
+            android:layout_gravity="bottom|center"
+            android:id="@id/fourth_card"
+            android:visibility="gone"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content" />
+        <com.zomato.android.zcommons.aerobar.V2AeroBarItemViewWrapper
+            android:layout_gravity="bottom|center"
+            android:id="@id/third_card"
+            android:visibility="gone"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content" />
+        <com.zomato.android.zcommons.aerobar.V2AeroBarItemViewWrapper
+            android:layout_gravity="bottom|center"
+            android:id="@id/second_card"
+            android:visibility="gone"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content" />
+        <com.zomato.android.zcommons.aerobar.V2AeroBarItemViewWrapper
+            android:layout_gravity="bottom|center"
+            android:id="@id/first_card"
+            android:visibility="gone"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content" />
+    </FrameLayout>
+    <FrameLayout
+        android:id="@id/expand_collapse_icon"
+        android:paddingTop="@dimen/sushi_spacing_mini"
+        android:paddingBottom="@dimen/sushi_spacing_mini"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="@dimen/size_48"
+        android:paddingStart="@dimen/dimen_10"
+        android:paddingEnd="@dimen/dimen_10"
+        android:paddingVertical="@dimen/sushi_spacing_mini"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="@id/stack_container"
+        app:layout_constraintStart_toStartOf="@id/stack_container">
+        <com.zomato.ui.atomiclib.atom.ZTextView
+            android:textColor="?attr_7f040475"
+            android:id="@id/subtitle_2"
+            android:visibility="gone"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            app:textViewType="SEMIBOLD_300" />
+    </FrameLayout>
+</merge>

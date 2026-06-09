@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout
+    android:paddingTop="@dimen/dimen_4"
+    android:paddingBottom="@dimen/sushi_spacing_macro"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:layout_marginLeft="@dimen/sushi_spacing_mini"
+    android:layout_marginTop="@dimen/sushi_spacing_micro"
+    android:layout_marginRight="@dimen/sushi_spacing_mini"
+    android:layout_marginBottom="@dimen/sushi_spacing_micro"
+    android:layout_marginHorizontal="@dimen/sushi_spacing_mini"
+    android:layout_marginVertical="@dimen/sushi_spacing_micro"
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+    <com.zomato.ui.atomiclib.molecules.ShimmerChildView
+        android:id="@id/icon_shimmer"
+        android:background="@color/color_white"
+        android:layout_width="@dimen/size_36"
+        android:layout_height="@dimen/size_36"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintDimensionRatio="1:1"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:shimmer_corner_radius="18.0dip" />
+    <com.zomato.ui.atomiclib.molecules.ShimmerChildView
+        android:id="@id/text_shimmer"
+        android:background="@color/color_white"
+        android:layout_width="120.0dip"
+        android:layout_height="14.0dip"
+        android:layout_marginStart="@dimen/dimen_12"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintStart_toEndOf="@id/icon_shimmer"
+        app:layout_constraintTop_toTopOf="parent"
+        app:shimmer_corner_radius="4.0dip" />
+    <com.zomato.ui.atomiclib.molecules.ShimmerChildView
+        android:id="@id/right_icon_shimmer"
+        android:background="@color/color_white"
+        android:layout_width="@dimen/size_36"
+        android:layout_height="@dimen/size_36"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintDimensionRatio="1:1"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:shimmer_corner_radius="18.0dip" />
+</androidx.constraintlayout.widget.ConstraintLayout>

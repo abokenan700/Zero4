@@ -1,0 +1,169 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    android:orientation="vertical"
+    android:background="@drawable/all_rounded_white_12dp"
+    android:layout_width="fill_parent"
+    android:layout_height="wrap_content"
+    xmlns:android="http://schemas.android.com/apk/res/android">
+    <com.blinkit.consumerapp.deprecated.IconTextView
+        android:textSize="80.0sp"
+        android:textColor="@color/black"
+        android:gravity="center"
+        android:id="@id/ic_dialog_pic"
+        android:visibility="visible"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content" />
+    <ImageView
+        android:layout_gravity="center_horizontal"
+        android:id="@id/dialog_image_top"
+        android:visibility="gone"
+        android:layout_width="144.0dip"
+        android:layout_height="144.0dip"
+        android:layout_marginBottom="@dimen/margin_18"
+        android:adjustViewBounds="true" />
+    <com.blinkit.consumerapp.deprecated.TextViewBoldFont
+        android:textSize="@dimen/font_size_xmedium"
+        android:textColor="?attr_7f040466"
+        android:gravity="center"
+        android:layout_gravity="center"
+        android:id="@id/dialog_delivery_title"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="@dimen/margin_16"
+        android:layout_marginTop="@dimen/margin_24"
+        android:layout_marginRight="@dimen/margin_16"
+        android:layout_below="@id/ic_dialog_pic"
+        android:textAlignment="center"
+        android:layout_marginHorizontal="@dimen/margin_16" />
+    <com.blinkit.consumerapp.deprecated.TextViewRegularFont
+        android:textSize="@dimen/font_size_tiny"
+        android:textColor="?attr_7f04047c"
+        android:gravity="center"
+        android:layout_gravity="center"
+        android:id="@id/dialog_delivery_desc"
+        android:scrollbars="vertical"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="@dimen/margin_16"
+        android:layout_marginTop="@dimen/margin_4"
+        android:layout_marginRight="@dimen/margin_16"
+        android:maxLines="10"
+        android:layout_below="@id/dialog_delivery_title"
+        android:textAlignment="center"
+        android:layout_marginHorizontal="@dimen/margin_16" />
+    <com.blinkit.consumerapp.deprecated.TextViewRegularFont
+        android:textSize="@dimen/font_size_small"
+        android:textColor="?attr_7f04047c"
+        android:gravity="center"
+        android:layout_gravity="center"
+        android:id="@id/desc_part2"
+        android:scrollbars="vertical"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="@dimen/margin_16"
+        android:layout_marginTop="@dimen/margin_4"
+        android:layout_marginRight="@dimen/margin_16"
+        android:maxLines="10"
+        android:layout_below="@id/dialog_delivery_desc"
+        android:textAlignment="center"
+        android:layout_marginHorizontal="@dimen/margin_16" />
+    <ImageView
+        android:id="@id/dialog_image"
+        android:visibility="gone"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="@dimen/padding_18"
+        android:layout_marginRight="@dimen/padding_18"
+        android:adjustViewBounds="true"
+        android:maxWidth="120.0dip"
+        android:maxHeight="120.0dip"
+        android:layout_below="@id/dialog_delivery_desc"
+        android:layout_centerHorizontal="true" />
+    <ScrollView
+        android:id="@id/dialog_bullet_list_parent"
+        android:paddingTop="@dimen/padding_6"
+        android:paddingBottom="@dimen/padding_6"
+        android:visibility="gone"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="-3.0dip"
+        android:layout_below="@id/dialog_delivery_desc">
+        <LinearLayout
+            android:orientation="vertical"
+            android:id="@id/dialog_bullet_list"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content" />
+    </ScrollView>
+    <View
+        android:background="?attr_7f040296"
+        android:layout_width="fill_parent"
+        android:layout_height="1.0dip"
+        android:layout_marginTop="@dimen/margin_24" />
+    <LinearLayout
+        android:orientation="vertical"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content">
+        <LinearLayout
+            android:orientation="horizontal"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content">
+            <com.blinkit.consumerapp.deprecated.TextViewMediumFont
+                android:textSize="@dimen/font_size_mini"
+                android:textColor="?attr_7f04047c"
+                android:ellipsize="end"
+                android:gravity="center"
+                android:id="@id/btn_negative"
+                android:paddingLeft="@dimen/padding_4"
+                android:paddingTop="@dimen/padding_12"
+                android:paddingRight="@dimen/padding_4"
+                android:paddingBottom="@dimen/padding_12"
+                android:layout_width="0.0dip"
+                android:layout_height="wrap_content"
+                android:maxLines="1"
+                android:layout_weight="1.0"
+                android:paddingHorizontal="@dimen/padding_4"
+                android:paddingVertical="@dimen/padding_12" />
+            <View
+                android:background="?attr_7f040296"
+                android:layout_width="1.0dip"
+                android:layout_height="fill_parent" />
+            <com.blinkit.consumerapp.deprecated.TextViewMediumFont
+                android:textSize="@dimen/font_size_mini"
+                android:textColor="?attr_7f0402a6"
+                android:ellipsize="end"
+                android:gravity="center"
+                android:id="@id/btn_positive"
+                android:paddingLeft="@dimen/padding_4"
+                android:paddingTop="@dimen/padding_12"
+                android:paddingRight="@dimen/padding_4"
+                android:paddingBottom="@dimen/padding_12"
+                android:layout_width="0.0dip"
+                android:layout_height="wrap_content"
+                android:maxLines="1"
+                android:layout_weight="1.0"
+                android:paddingHorizontal="@dimen/padding_4"
+                android:paddingVertical="@dimen/padding_12" />
+        </LinearLayout>
+        <View
+            android:id="@id/cancel_separator"
+            android:background="?attr_7f040296"
+            android:layout_width="fill_parent"
+            android:layout_height="1.0dip" />
+        <com.blinkit.consumerapp.deprecated.TextViewMediumFont
+            android:textSize="@dimen/font_size_mini"
+            android:textColor="@color/black"
+            android:ellipsize="end"
+            android:gravity="center"
+            android:id="@id/btn_cancel"
+            android:paddingLeft="@dimen/padding_4"
+            android:paddingTop="@dimen/padding_12"
+            android:paddingRight="@dimen/padding_4"
+            android:paddingBottom="@dimen/padding_12"
+            android:visibility="visible"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:maxLines="1"
+            android:paddingHorizontal="@dimen/padding_4"
+            android:paddingVertical="@dimen/padding_12" />
+    </LinearLayout>
+</LinearLayout>

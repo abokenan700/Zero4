@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layer-list
+    xmlns:android="http://schemas.android.com/apk/res/android">
+    <item
+        android:top="-8.0dip">
+        <shape>
+            <solid
+                android:color="@color/sushi_red_100" />
+            <corners
+                android:bottomLeftRadius="@dimen/sushi_spacing_base"
+                android:bottomRightRadius="@dimen/sushi_spacing_base" />
+            <padding
+                android:left="@dimen/qd_padding_6"
+                android:top="@dimen/qd_padding_6"
+                android:right="@dimen/qd_padding_6"
+                android:bottom="@dimen/qd_padding_6" />
+            <stroke
+                android:width="@dimen/corner_stroke_one"
+                android:color="@color/sushi_grey_400" />
+        </shape>
+    </item>
+</layer-list>

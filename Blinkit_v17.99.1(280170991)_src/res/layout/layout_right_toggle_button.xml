@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.zomato.ui.atomiclib.atom.ZButton
+    android:textStyle="bold"
+    android:layout_gravity="top"
+    android:id="@id/rightToggleButton"
+    android:padding="0.0dip"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:layout_marginTop="@dimen/sushi_spacing_micro"
+    app:buttonColor="?themeColor500"
+    app:buttonDimension="medium"
+    app:buttonType="text"
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto" />

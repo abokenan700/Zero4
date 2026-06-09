@@ -1,0 +1,68 @@
+<?xml version="1.0" encoding="utf-8"?>
+<merge
+    android:id="@id/fabButtonContainer"
+    android:background="@color/color_transparent"
+    android:visibility="gone"
+    android:layout_width="fill_parent"
+    android:layout_height="wrap_content"
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_gravity="center_horizontal"
+        android:id="@id/container"
+        android:paddingTop="@dimen/sushi_spacing_nano"
+        android:paddingBottom="@dimen/sushi_spacing_nano"
+        android:focusable="true"
+        android:clickable="true"
+        android:layout_width="wrap_content"
+        android:layout_height="@dimen/size_36"
+        android:layout_marginTop="@dimen/sushi_spacing_page_side"
+        android:minWidth="84.0dip"
+        android:paddingStart="@dimen/size_5"
+        android:paddingEnd="@dimen/sushi_spacing_base"
+        android:paddingVertical="@dimen/sushi_spacing_nano">
+        <com.blinkit.commons.ui.ui.customviews.viewstub.blinkittext.BlinkitIconViewStub
+            android:id="@id/left_icon"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="@dimen/sushi_spacing_micro"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+        <com.blinkit.commons.ui.ui.customviews.viewstub.image.BShapeableImageViewStub
+            android:layout_gravity="center_horizontal"
+            android:id="@id/left_image"
+            android:layout_width="@dimen/size_26"
+            android:layout_height="@dimen/size_26"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+        <androidx.constraintlayout.widget.Barrier
+            android:id="@id/left_barrier"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            app:barrierDirection="end"
+            app:constraint_referenced_ids="left_image, left_icon" />
+        <com.blinkit.commons.ui.ui.customviews.viewstub.blinkittext.BlinkitIconViewStub
+            android:layout_gravity="center_horizontal"
+            android:id="@id/title"
+            android:focusable="false"
+            android:clickable="false"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="@dimen/sushi_spacing_mini"
+            app:buttonDimension="large"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintStart_toEndOf="@id/left_barrier"
+            app:layout_constraintTop_toTopOf="parent" />
+        <com.blinkit.commons.ui.ui.customviews.bmediaview.BMediaView
+            android:id="@id/right_media"
+            android:layout_width="@dimen/sushi_spacing_extra"
+            android:layout_height="@dimen/sushi_spacing_extra"
+            android:layout_marginStart="@dimen/sushi_spacing_nano"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toEndOf="@id/title"
+            app:layout_constraintTop_toTopOf="parent" />
+    </androidx.constraintlayout.widget.ConstraintLayout>
+</merge>

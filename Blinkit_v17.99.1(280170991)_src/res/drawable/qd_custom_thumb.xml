@@ -1,0 +1,49 @@
+<?xml version="1.0" encoding="utf-8"?>
+<selector
+    xmlns:android="http://schemas.android.com/apk/res/android">
+    <TextView
+        android:id="@id/textView2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="qd_custom_track.xml\n" />
+    <item
+        android:state_checked="false">
+        <layer-list>
+            <item
+                android:left="3.0dip"
+                android:top="3.0dip"
+                android:bottom="3.0dip">
+                <shape
+                    android:shape="rectangle">
+                    <corners
+                        android:radius="@dimen/dimen_17" />
+                    <solid
+                        android:color="@color/sushi_white" />
+                    <size
+                        android:height="@dimen/dimen_11"
+                        android:width="@dimen/dimen_14" />
+                </shape>
+            </item>
+        </layer-list>
+    </item>
+    <item
+        android:state_checked="true">
+        <layer-list>
+            <item
+                android:top="3.0dip"
+                android:right="3.0dip"
+                android:bottom="3.0dip">
+                <shape
+                    android:shape="rectangle">
+                    <corners
+                        android:radius="@dimen/dimen_17" />
+                    <solid
+                        android:color="@color/sushi_white" />
+                    <size
+                        android:height="@dimen/dimen_11"
+                        android:width="@dimen/dimen_14" />
+                </shape>
+            </item>
+        </layer-list>
+    </item>
+</selector>

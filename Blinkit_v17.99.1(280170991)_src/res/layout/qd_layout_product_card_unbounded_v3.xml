@@ -1,0 +1,513 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout
+    android:background="@color/color_transparent"
+    android:paddingBottom="@dimen/qd_padding_6"
+    android:clipChildren="false"
+    android:clipToPadding="false"
+    android:layout_width="fill_parent"
+    android:layout_height="wrap_content"
+    android:transitionName="@string/shared_element_root_view_transition_name"
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+    <View
+        android:id="@id/border_overlay_view"
+        android:layout_width="@dimen/sushi_spacing_femto"
+        android:layout_height="@dimen/sushi_spacing_femto"
+        app:layout_constraintBottom_toBottomOf="@id/media_container"
+        app:layout_constraintEnd_toEndOf="@id/media_container"
+        app:layout_constraintStart_toStartOf="@id/media_container"
+        app:layout_constraintTop_toTopOf="@id/media_container" />
+    <FrameLayout
+        android:id="@id/media_container"
+        android:clipChildren="true"
+        android:layout_width="@dimen/sushi_spacing_femto"
+        android:layout_height="@dimen/sushi_spacing_femto"
+        android:transitionName="@string/shared_element_top_image_transition_name"
+        android:clipToOutline="true"
+        app:layout_constraintDimensionRatio="0.88:1"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
+        <ViewStub
+            android:id="@id/gradient_overlay"
+            android:visibility="gone"
+            android:layout="@layout/qd_simple_gradient_view"
+            android:layout_width="fill_parent"
+            android:layout_height="fill_parent" />
+        <com.blinkit.commons.ui.ui.customviews.viewstub.blinkitPlayerViewContainer.BPlayerViewContainerViewStub
+            android:id="@id/player_view_container"
+            android:layout_width="fill_parent"
+            android:layout_height="fill_parent" />
+        <com.blinkit.commons.ui.ui.customviews.BShapeableImageView
+            android:id="@id/image_view_primary"
+            android:layout_width="fill_parent"
+            android:layout_height="fill_parent" />
+        <com.blinkit.commons.ui.ui.customviews.viewstub.image.BShapeableImageViewStub
+            android:id="@id/image_view_secondary"
+            android:visibility="gone"
+            android:layout_width="fill_parent"
+            android:layout_height="fill_parent" />
+    </FrameLayout>
+    <com.blinkit.commons.ui.ui.customviews.CarouselDotsIndicator
+        android:id="@id/indicator"
+        android:visibility="gone"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="@dimen/sushi_spacing_mini"
+        android:layout_marginRight="@dimen/sushi_spacing_mini"
+        android:layout_marginBottom="@dimen/sushi_spacing_mini"
+        android:layout_marginHorizontal="@dimen/sushi_spacing_mini"
+        app:layout_constraintBottom_toTopOf="@id/uom_bg_view"
+        app:layout_constraintStart_toStartOf="@id/media_container" />
+    <androidx.constraintlayout.widget.Barrier
+        android:id="@id/indicator_barrier"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:barrierDirection="top"
+        app:constraint_referenced_ids="indicator" />
+    <com.blinkit.commons.ui.ui.customviews.viewstub.blinkittext.BlinkitTextViewStub
+        android:textColor="@color/sushi_black"
+        android:ellipsize="end"
+        android:gravity="start"
+        android:id="@id/bottom_left_overlay"
+        android:paddingLeft="@dimen/sushi_spacing_micro"
+        android:paddingTop="@dimen/sushi_spacing_pico"
+        android:paddingRight="@dimen/sushi_spacing_micro"
+        android:paddingBottom="@dimen/sushi_spacing_nano"
+        android:layout_width="0.0dip"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="@dimen/sushi_spacing_mini"
+        android:layout_marginStart="@dimen/sushi_spacing_macro"
+        android:paddingHorizontal="@dimen/sushi_spacing_micro"
+        app:layout_constraintBottom_toTopOf="@id/indicator_barrier"
+        app:layout_constraintStart_toStartOf="@id/media_container" />
+    <View
+        android:id="@id/uom_bg_view"
+        android:layout_width="0.0dip"
+        android:layout_height="@dimen/size_32"
+        android:layout_marginTop="-0.5dip"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/media_container" />
+    <androidx.constraintlayout.widget.Guideline
+        android:orientation="vertical"
+        android:id="@id/uom_guideline"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:layout_constraintGuide_percent="0.55" />
+    <com.blinkit.blink.elements.ui.atoms.text.BlinkitTextView
+        android:textColor="@color/sushi_black"
+        android:ellipsize="end"
+        android:gravity="start"
+        android:id="@id/tv_uom_title"
+        android:layout_width="0.0dip"
+        android:layout_height="wrap_content"
+        android:maxLines="1"
+        android:paddingEnd="@dimen/sushi_spacing_micro"
+        android:layout_marginStart="@dimen/sushi_spacing_macro"
+        app:layout_constrainedWidth="true"
+        app:layout_constraintBottom_toTopOf="@id/tv_uom_subtitle"
+        app:layout_constraintEnd_toStartOf="@id/uom_guideline"
+        app:layout_constraintStart_toStartOf="@id/uom_bg_view"
+        app:layout_constraintTop_toTopOf="@id/uom_bg_view"
+        app:layout_constraintVertical_chainStyle="packed" />
+    <com.blinkit.commons.ui.ui.customviews.viewstub.blinkittext.BlinkitTextViewStub
+        android:textColor="@color/sushi_black"
+        android:ellipsize="end"
+        android:gravity="start"
+        android:id="@id/tv_uom_subtitle"
+        android:layout_width="0.0dip"
+        android:layout_height="wrap_content"
+        android:maxLines="1"
+        android:paddingEnd="@dimen/sushi_spacing_micro"
+        android:layout_marginStart="@dimen/sushi_spacing_macro"
+        app:layout_constrainedWidth="true"
+        app:layout_constraintBottom_toBottomOf="@id/uom_bg_view"
+        app:layout_constraintEnd_toStartOf="@id/uom_guideline"
+        app:layout_constraintStart_toStartOf="@id/uom_bg_view"
+        app:layout_constraintTop_toBottomOf="@id/tv_uom_title" />
+    <com.blinkit.commons.ui.ui.customviews.viewstub.blinkittext.BlinkitTextViewStub
+        android:ellipsize="end"
+        android:layout_gravity="start"
+        android:id="@id/price_heading"
+        android:visibility="gone"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/sushi_spacing_mini"
+        android:lines="1"
+        android:includeFontPadding="false"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/uom_bg_view"
+        app:layout_goneMarginTop="@dimen/sushi_spacing_micro" />
+    <com.blinkit.commons.ui.ui.customviews.viewstub.blinkittext.BlinkitTextViewStub
+        android:ellipsize="end"
+        android:layout_gravity="start"
+        android:id="@id/price_per_unit"
+        android:visibility="gone"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/sushi_spacing_micro"
+        android:lines="1"
+        android:includeFontPadding="false"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/price_heading" />
+    <com.blinkit.blink.elements.ui.atoms.text.BlinkitTextView
+        android:ellipsize="end"
+        android:id="@id/price"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:maxLines="1" />
+    <com.blinkit.blink.elements.ui.atoms.text.BlinkitTextView
+        android:ellipsize="end"
+        android:id="@id/mrp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:maxLines="1" />
+    <Space
+        android:id="@id/price_fallback_space"
+        android:layout_width="0.0dip"
+        android:layout_height="0.0dip"
+        android:layout_marginTop="6.0dip"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/uom_bg_view" />
+    <androidx.constraintlayout.widget.Barrier
+        android:id="@id/price_header_barrier"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:barrierDirection="bottom"
+        app:constraint_referenced_ids="price_heading,price_per_unit,price_fallback_space" />
+    <androidx.constraintlayout.helper.widget.Flow
+        android:id="@id/price_mrp_flow"
+        android:layout_width="@dimen/sushi_spacing_femto"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="-2.0dip"
+        app:constraint_referenced_ids="price,mrp"
+        app:flow_horizontalBias="0.0"
+        app:flow_horizontalGap="@dimen/sushi_spacing_micro"
+        app:flow_horizontalStyle="packed"
+        app:flow_verticalAlign="baseline"
+        app:flow_verticalGap="@dimen/sushi_spacing_nano"
+        app:flow_wrapMode="chain"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/price_header_barrier" />
+    <com.blinkit.commons.ui.ui.customviews.viewstub.FlipperViewStub
+        android:gravity="start"
+        android:id="@id/offer"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/sushi_spacing_nano"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/price_mrp_flow" />
+    <com.blinkit.commons.ui.ui.customviews.viewstub.blinkittext.BlinkitTextViewStub
+        android:ellipsize="end"
+        android:id="@id/price_offer"
+        android:visibility="gone"
+        android:layout_width="@dimen/sushi_spacing_femto"
+        android:layout_height="wrap_content"
+        android:maxLines="1"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/offer"
+        app:layout_constraintVertical_chainStyle="packed"
+        app:layout_goneMarginTop="@dimen/sushi_spacing_micro" />
+    <com.blinkit.commons.ui.ui.customviews.stepper.Stepper
+        android:id="@id/stepper"
+        android:clipChildren="false"
+        android:clipToPadding="false"
+        android:layout_width="wrap_content"
+        android:layout_height="@dimen/size_40"
+        android:layout_marginBottom="-3.0dip"
+        android:layout_marginStart="3.0dip"
+        app:layout_constraintBottom_toBottomOf="@id/uom_bg_view"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="1.0"
+        app:layout_constraintStart_toStartOf="@id/stepper_guideline" />
+    <com.blinkit.commons.ui.ui.customviews.viewstub.image.BShapeableImageViewStub
+        android:id="@id/unavailability_state_image"
+        android:clipChildren="false"
+        android:clipToPadding="false"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="-28.0dip"
+        android:layout_marginStart="@dimen/sushi_spacing_base"
+        app:layout_constraintBottom_toBottomOf="@id/uom_bg_view"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="1.0"
+        app:layout_constraintStart_toStartOf="@id/stepper_guideline"
+        app:layout_constraintTop_toTopOf="@id/uom_bg_view" />
+    <androidx.constraintlayout.widget.Guideline
+        android:orientation="vertical"
+        android:id="@id/stepper_guideline"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:layout_constraintGuide_percent="0.6" />
+    <com.blinkit.commons.ui.ui.customviews.viewstub.blinkittext.BlinkitTextViewStub
+        android:gravity="center"
+        android:id="@id/custom_button_cta"
+        android:clipChildren="false"
+        android:clipToPadding="false"
+        android:layout_width="@dimen/qd_stepper_width_micro"
+        android:layout_height="@dimen/size_40"
+        android:maxLines="1"
+        android:textAlignment="center"
+        app:layout_constraintBottom_toBottomOf="@id/uom_bg_view"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toTopOf="@id/uom_bg_view" />
+    <com.blinkit.commons.ui.ui.customviews.viewstub.blinkittext.BlinkitTextViewStub
+        android:ellipsize="end"
+        android:gravity="center"
+        android:id="@id/stateful_button"
+        android:paddingTop="@dimen/dimen_11"
+        android:paddingBottom="@dimen/dimen_11"
+        android:clipChildren="false"
+        android:clipToPadding="false"
+        android:layout_width="@dimen/qd_stateful_button_width_small"
+        android:layout_height="@dimen/size_40"
+        android:maxLines="1"
+        android:textAlignment="center"
+        android:paddingVertical="@dimen/dimen_11"
+        app:layout_constraintBottom_toBottomOf="@id/uom_bg_view"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toTopOf="@id/uom_bg_view" />
+    <com.blinkit.commons.ui.ui.customviews.viewstub.NotifyMeViewStub
+        android:id="@id/notify_me"
+        android:clipChildren="false"
+        android:clipToPadding="false"
+        android:layout_width="@dimen/size_44"
+        android:layout_height="@dimen/size_40"
+        android:layout_marginBottom="-3.0dip"
+        android:layout_marginStart="3.0dip"
+        app:layout_constraintBottom_toBottomOf="@id/uom_bg_view"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="1.0"
+        app:layout_constraintStart_toStartOf="@id/stepper_guideline" />
+    <com.blinkit.commons.ui.ui.customviews.overlayBadges.OverlayBadgeView
+        android:id="@id/overlay_view"
+        android:layout_width="0.0dip"
+        android:layout_height="0.0dip"
+        android:paddingEnd="@dimen/sushi_spacing_nano"
+        app:layout_constraintBottom_toTopOf="@id/stepper"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+    <androidx.constraintlayout.widget.Barrier
+        android:id="@id/media_barrier"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        app:barrierDirection="bottom"
+        app:constraint_referenced_ids="media_container" />
+    <androidx.constraintlayout.widget.Barrier
+        android:id="@id/offer_barrier"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:barrierDirection="bottom"
+        app:constraint_referenced_ids="price, price_mrp_flow, offer,price_offer, new_promo_offer_tv" />
+    <com.blinkit.commons.ui.ui.customviews.viewstub.blinkittext.BlinkitTextViewStub
+        android:textColor="@color/sushi_black"
+        android:ellipsize="end"
+        android:gravity="start"
+        android:id="@id/brand_name"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/sushi_spacing_nano"
+        android:includeFontPadding="false"
+        android:elevation="0.100000024dip"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/offer_barrier" />
+    <com.blinkit.blink.elements.ui.atoms.text.BlinkitTextView
+        android:textColor="@color/sushi_black"
+        android:ellipsize="end"
+        android:gravity="start"
+        android:id="@id/tv_name"
+        android:layout_width="0.0dip"
+        android:layout_height="wrap_content"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/brand_name" />
+    <com.blinkit.commons.ui.ui.customviews.viewstub.AutoDropLayoutViewStub
+        android:id="@id/secondary_variant_view"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/sushi_spacing_micro"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/tv_name" />
+    <com.blinkit.commons.ui.ui.customviews.autodroplayout.AutoDropLayout
+        android:id="@id/highlight_badges_container"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/sushi_spacing_mini"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/secondary_variant_view" />
+    <com.blinkit.commons.ui.ui.customviews.viewstub.blinkittext.BlinkitTextViewStub
+        android:textColor="@color/sushi_grey_700"
+        android:ellipsize="end"
+        android:layout_gravity="start"
+        android:id="@id/tv_variant"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/sushi_spacing_nano"
+        android:lines="1"
+        android:includeFontPadding="false"
+        app:layout_constrainedWidth="true"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintHorizontal_chainStyle="packed"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/highlight_badges_container"
+        app:textViewType="REGULAR_400" />
+    <com.blinkit.commons.ui.ui.customviews.viewstub.blinkittext.BlinkitTagViewStub
+        android:ellipsize="end"
+        android:layout_gravity="start"
+        android:id="@id/product_info"
+        android:visibility="gone"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/sushi_spacing_micro"
+        android:includeFontPadding="false"
+        app:layout_constrainedWidth="true"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/rating_start_view" />
+    <com.blinkit.blink.elements.ui.atoms.tag.BlinkitTagView
+        android:id="@id/include_badge"
+        android:paddingTop="@dimen/qd_margin_2"
+        android:paddingBottom="@dimen/qd_margin_2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/qd_margin_2"
+        android:paddingVertical="@dimen/qd_margin_2"
+        app:layout_constrainedWidth="true"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/product_info" />
+    <com.blinkit.commons.ui.ui.customviews.viewstub.blinkittext.BlinkitTagViewStub
+        android:ellipsize="end"
+        android:layout_gravity="start"
+        android:id="@id/inventory_info"
+        android:paddingTop="@dimen/qd_margin_2"
+        android:paddingBottom="@dimen/qd_margin_2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/qd_margin_2"
+        android:lines="1"
+        android:includeFontPadding="false"
+        android:layout_marginStart="@dimen/sushi_spacing_macro"
+        android:paddingVertical="@dimen/qd_margin_2"
+        app:layout_constrainedWidth="true"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toEndOf="@id/include_badge"
+        app:layout_constraintTop_toBottomOf="@id/product_info"
+        app:layout_goneMarginStart="0.0dip" />
+    <androidx.constraintlayout.widget.Barrier
+        android:orientation="horizontal"
+        android:id="@id/eta_barrier"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:barrierDirection="bottom"
+        app:constraint_referenced_ids="include_badge, inventory_info" />
+    <com.blinkit.commons.ui.ui.customviews.viewstub.blinkittext.BlinkitTagViewStub
+        android:id="@id/specification_view"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/sushi_spacing_nano"
+        android:layout_marginStart="-2.0dip"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/highlight_badges_container" />
+    <androidx.constraintlayout.widget.Barrier
+        android:orientation="horizontal"
+        android:id="@id/specification_barrier"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:barrierDirection="bottom"
+        app:constraint_referenced_ids="highlight_badges_container, specification_view, tv_variant" />
+    <com.blinkit.blink.elements.ui.atoms.tag.BlinkitTagView
+        android:id="@id/rating_start_view"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/dimen_5"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/specification_barrier" />
+    <androidx.constraintlayout.widget.Barrier
+        android:id="@id/top_barrier"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:barrierDirection="bottom"
+        app:constraint_referenced_ids="price_mrp_flow, offer,price_offer" />
+    <com.blinkit.commons.ui.ui.customviews.viewstub.blinkittext.BlinkitTextViewStub
+        android:id="@id/new_promo_offer_tv"
+        android:visibility="gone"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:maxLines="2"
+        android:lines="1"
+        android:layout_marginStart="-0.5dip"
+        app:layout_constraintBottom_toTopOf="@id/tv_name"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/top_barrier"
+        app:layout_constraintVertical_chainStyle="packed" />
+    <androidx.constraintlayout.widget.Barrier
+        android:id="@id/promo_bottom_barrier"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        app:barrierDirection="bottom"
+        app:constraint_referenced_ids="new_promo_offer_tv, product_info" />
+    <com.blinkit.commons.ui.ui.customviews.viewstub.ProgressInfoViewStub
+        android:id="@id/view_stub_progress_info"
+        android:visibility="gone"
+        android:layout_width="0.0dip"
+        android:layout_height="wrap_content"
+        app:layout_constraintEnd_toEndOf="@id/media_container"
+        app:layout_constraintStart_toStartOf="@id/media_container"
+        app:layout_constraintTop_toBottomOf="@id/price_mrp_flow" />
+    <com.blinkit.commons.ui.ui.customviews.viewstub.UnboundedBottomButtonLayoutV3ViewStub
+        android:id="@id/bottom_view"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/sushi_spacing_macro"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/eta_barrier"
+        app:layout_constraintVertical_bias="1.0"
+        app:layout_goneMarginTop="@dimen/sushi_spacing_micro" />
+    <com.blinkit.commons.ui.ui.customviews.viewstub.image.BShapeableImageViewStub
+        android:id="@id/top_right_image"
+        android:paddingLeft="@dimen/size_3"
+        android:paddingTop="@dimen/sushi_spacing_nano"
+        android:paddingRight="@dimen/size_3"
+        android:paddingBottom="@dimen/sushi_spacing_nano"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_margin="@dimen/sushi_spacing_micro"
+        android:paddingHorizontal="@dimen/size_3"
+        android:paddingVertical="@dimen/sushi_spacing_nano"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toTopOf="@id/media_container" />
+    <com.blinkit.commons.ui.ui.customviews.viewstub.blinkittext.BlinkitIconViewStub
+        android:id="@id/top_right_icon"
+        android:paddingLeft="@dimen/size_3"
+        android:paddingTop="@dimen/sushi_spacing_nano"
+        android:paddingRight="@dimen/size_3"
+        android:paddingBottom="@dimen/sushi_spacing_nano"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_margin="@dimen/sushi_spacing_micro"
+        android:paddingHorizontal="@dimen/size_3"
+        android:paddingVertical="@dimen/sushi_spacing_nano"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toTopOf="@id/media_container" />
+    <com.blinkit.commons.ui.ui.customviews.viewstub.image.BLottieAnimationViewStub
+        android:id="@id/top_right_lv_for_image"
+        android:layout_width="0.0dip"
+        android:layout_height="0.0dip"
+        app:layout_constraintBottom_toBottomOf="@id/top_right_image"
+        app:layout_constraintEnd_toEndOf="@id/top_right_image"
+        app:layout_constraintStart_toStartOf="@id/top_right_image"
+        app:layout_constraintTop_toTopOf="@id/top_right_image" />
+</androidx.constraintlayout.widget.ConstraintLayout>

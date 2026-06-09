@@ -1,0 +1,59 @@
+<?xml version="1.0" encoding="utf-8"?>
+<merge
+    android:layout_width="fill_parent"
+    android:layout_height="wrap_content"
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+    <com.zomato.ui.lib.organisms.snippets.slider.snap.ZSnapHorizontalSliderView
+        android:id="@id/snap_slider_view"
+        android:visibility="gone"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        app:dotBgColor="?attr_7f0403c6"
+        app:dotBorderColor="?attr_7f040268"
+        app:dotRadius="@dimen/sushi_spacing_nano"
+        app:indicatorBgColor="?attr_7f040268"
+        app:indicatorBorderColor="?attr_7f040291"
+        app:indicatorRadius="@dimen/sushi_spacing_macro"
+        app:layout_constraintBottom_toBottomOf="@id/top_barrier"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:trackColor="?attr_7f040299"
+        app:trackHeight="@dimen/sushi_spacing_micro" />
+    <androidx.constraintlayout.widget.Barrier
+        android:id="@id/top_barrier"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:barrierDirection="top"
+        app:constraint_referenced_ids="check_box, check_box_title, bottom_container_checkbox_lottie" />
+    <com.zomato.ui.atomiclib.atom.ZCheckBox
+        android:id="@id/check_box"
+        android:visibility="gone"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/sushi_spacing_micro"
+        app:controlColor="?themeColor500"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/snap_slider_view" />
+    <com.zomato.ui.atomiclib.atom.staticviews.StaticTextView
+        android:id="@id/check_box_title"
+        android:visibility="gone"
+        android:layout_width="0.0dip"
+        android:layout_height="wrap_content"
+        app:layout_constraintBottom_toBottomOf="@id/check_box"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toEndOf="@id/check_box"
+        app:layout_constraintTop_toTopOf="@id/check_box" />
+    <com.zomato.ui.atomiclib.lottie.LottieImageView
+        android:id="@id/bottom_container_checkbox_lottie"
+        android:visibility="gone"
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        app:layout_constrainedHeight="true"
+        app:layout_constrainedWidth="true"
+        app:layout_constraintBottom_toBottomOf="@id/check_box"
+        app:layout_constraintEnd_toEndOf="@id/check_box_title"
+        app:layout_constraintStart_toStartOf="@id/check_box"
+        app:layout_constraintTop_toTopOf="@id/check_box" />
+</merge>

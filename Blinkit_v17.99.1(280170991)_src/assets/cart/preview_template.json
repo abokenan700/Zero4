@@ -1,0 +1,559 @@
+{
+	"is_success": true,
+	"response": {
+		"page_level_components": {
+			"sticky": {
+				"footer_snippet_models": [
+					{
+						"snippet": {
+							"data": {
+								"bg_color_hex": "#F7FAFF",
+								"top_radius": 8,
+								"elevation": 8
+							},
+							"widget_type": "multiple_offer_strip_snippet_wrapper"
+						}
+					},
+					{
+						"snippet": {
+							"data": {
+								"click_action": {
+									"type": "dismiss_bottom_sheet"
+								},
+								"button_data": {
+									"size": "large",
+									"type": "solid",
+									"text": "Next",
+									"suffix_icon": {
+										"code": "e875"
+									},
+									"click_action": {
+										"blinkit_deeplink": {
+											"url": "grofers://cart"
+										},
+										"type": "blinkit_deeplink"
+									},
+									"secondary_click_actions": [
+										{
+											"type": "dismiss_bottom_sheet"
+										}
+									]
+								},
+								"expanded_state": true
+							},
+							"tracking": {
+								"widget_meta": {
+									"widget_id": "cart-strip-v2"
+								},
+								"click_map": {
+									"event_name": "Cart Footer Strip Clicked"
+								},
+								"common_attributes": {
+									"widget_position": 2
+								},
+								"entry_source_map": {
+									"entry_source_id": "cart-strip-v2"
+								},
+								"impression_map": {
+									"event_name": "Cart Footer Strip Shown"
+								},
+								"interactions_map": {
+									"BUTTON_CTA": {
+										"event_source_identifier": "BUTTON_CTA"
+									},
+									"CHECKOUT_STRIP": {
+										"event_source_identifier": "CHECKOUT_STRIP"
+									}
+								}
+							},
+							"widget_type": "cart_strip_v2_vr",
+							"layout_config": {}
+						},
+						"layout_config": null
+					}
+				]
+			}
+		},
+		"snippet_list_updater_data": {
+			"dependent_snippets": {
+				"type": "remove_snippets",
+				"payload": {
+					"snippet_ids_to_remove": [
+						"unavailable",
+						"oos"
+					]
+				}
+			}
+		},
+		"layout_config": {
+			"bg_color": {
+				"tint": "50",
+				"type": "indigo"
+			},
+			"padding": "12,0,12,0"
+		},
+		"snippets": [
+			{
+				"data": {
+					"identity": {
+						"id": "unavailable"
+					},
+					"container_layout_config": {
+						"stroke_color": {
+							"tint": "200",
+							"type": "red"
+						},
+						"bg_color": {
+							"tint": "100",
+							"type": "red"
+						},
+						"padding": "0,0,0,12",
+						"stroke_width": 1,
+						"corner_radius": 16
+					},
+					"items": [
+						{
+							"widget_type": "image_text_vr_type_header",
+							"tracking": {
+								"widget_meta": {
+									"widget_name": "image_text_vr_type_header"
+								},
+								"impression_map": {
+									"event_name": "Item Unavailable Widget Shown"
+								},
+								"click_map": {
+									"event_name": "Item Unavailable Widget Clicked",
+									"event_source_identifier": "close button"
+								}
+							},
+							"data": {
+								"identity": {
+									"id": "unavailable"
+								},
+								"title": {
+									"color": {
+										"tint": "700",
+										"type": "red"
+									},
+									"text": "0 item is temporarily unavailable",
+									"font": {
+										"weight": "extrabold",
+										"size": "500"
+									}
+								},
+								"card_bg_color": {
+									"tint": "100",
+									"type": "red"
+								},
+								"padding": "12,12,12,8",
+								"radius": 0,
+								"right_icon": {
+									"color": {
+										"tint": "500",
+										"type": "grey"
+									},
+									"code": "e93d",
+									"size": 20
+								},
+								"left_underlined_subtitle": {
+									"color": {
+										"tint": "800",
+										"type": "grey"
+									},
+									"text": "The store serving these items is facing high demand right now",
+									"number_of_lines": 2,
+									"font": {
+										"weight": "regular",
+										"size": "100"
+									}
+								}
+							}
+						},
+						{
+							"widget_type": "separator_v2_data",
+							"data": {
+								"color": {
+									"tint": "700",
+									"type": "white"
+								},
+								"bg_color": {
+									"tint": "100",
+									"type": "red"
+								},
+								"type": "curve",
+								"size": "small"
+							}
+						}
+					],
+					"bg_color_hex": "#FFFFFF"
+				},
+				"layout_config": {
+					"spacing": "0,12,0,0"
+				},
+				"widget_type": "grid_container_vr"
+			},
+			{
+				"data": {
+					"identity": {
+						"id": "oos"
+					},
+					"container_layout_config": {
+						"stroke_color": {
+							"tint": "200",
+							"type": "red"
+						},
+						"bg_color": {
+							"tint": "100",
+							"type": "red"
+						},
+						"padding": "0,0,0,12",
+						"stroke_width": 1,
+						"corner_radius": 16
+					},
+					"items": [
+						{
+							"widget_type": "image_text_vr_type_header",
+							"tracking": {
+								"widget_meta": {
+									"widget_name": "image_text_vr_type_header"
+								},
+								"impression_map": {
+									"event_name": "Out Of Stock Widget Shown"
+								},
+								"click_map": {
+									"event_name": "Out Of Stock Widget Clicked",
+									"event_source_identifier": "close button"
+								}
+							},
+							"data": {
+								"identity": {
+									"id": "oos"
+								},
+								"title": {
+									"color": {
+										"tint": "700",
+										"type": "red"
+									},
+									"text": "0 item is not in stock",
+									"font": {
+										"weight": "extrabold",
+										"size": "500"
+									}
+								},
+								"card_bg_color": {
+									"tint": "100",
+									"type": "red"
+								},
+								"padding": "12,12,12,12",
+								"radius": 0,
+								"right_icon": {
+									"color": {
+										"tint": "500",
+										"type": "grey"
+									},
+									"code": "e93d",
+									"size": 20
+								}
+							}
+						},
+						{
+							"widget_type": "separator_v2_data",
+							"data": {
+								"color": {
+									"tint": "700",
+									"type": "white"
+								},
+								"bg_color": {
+									"tint": "100",
+									"type": "red"
+								},
+								"type": "curve",
+								"size": "small"
+							}
+						}
+					],
+					"bg_color_hex": "#FFFFFF"
+				},
+				"layout_config": {
+					"spacing": "0,12,0,0"
+				},
+				"widget_type": "grid_container_vr"
+			},
+			{
+				"data": {
+					"identity": {
+						"id": "express"
+					},
+					"container_layout_config": {
+						"padding": "0,0,0,0",
+						"corner_radius": 16
+					},
+					"items": [
+						{
+							"data": {
+								"identity": {
+									"id": "express"
+								},
+								"title": {
+									"text": "Delivery in 10 minutes",
+									"font": {
+										"size": "500",
+										"weight": "extrabold"
+									},
+									"color": {
+										"tint": "900",
+										"type": "grey"
+									}
+								},
+								"subtitle": {
+									"text": "Shipment of 0 item",
+									"font": {
+										"size": "200",
+										"weight": "medium"
+									},
+									"color": {
+										"tint": "600",
+										"type": "grey"
+									}
+								},
+								"layout_config": {
+									"padding_top": 12,
+									"padding_bottom": 12,
+									"padding_left": 0,
+									"padding_right": 0
+								},
+								"image_url": "https://cdn.grofers.com/assets/eta-icons/15-mins-filled.png"
+							},
+							"tracking": {
+								"widget_meta": {
+									"widget_name": "Shipment Widget"
+								},
+								"impression_map": {
+									"event_name": "Shipment Widget Shown"
+								}
+							},
+							"widget_type": "cart_shipment_data"
+						}
+					],
+					"bg_color_hex": "#F4F6FB"
+				},
+				"widget_type": "grid_container_vr",
+				"layout_config": {
+					"spacing": "0,12,0,0"
+				}
+			},
+			{
+				"data": {
+					"identity": {
+						"id": "ExpressLongTail"
+					},
+					"container_layout_config": {
+						"padding": "0,0,0,0",
+						"corner_radius": 16
+					},
+					"items": [
+						{
+							"data": {
+								"identity": {
+									"id": "ExpressLongTail"
+								},
+								"title": {
+									"text": "Delivery in 30 minutes",
+									"font": {
+										"size": "500",
+										"weight": "extrabold"
+									},
+									"color": {
+										"tint": "900",
+										"type": "grey"
+									}
+								},
+								"subtitle": {
+									"text": "Shipment of 0 item",
+									"font": {
+										"size": "200",
+										"weight": "medium"
+									},
+									"color": {
+										"tint": "600",
+										"type": "grey"
+									}
+								},
+								"layout_config": {
+									"padding_top": 12,
+									"padding_bottom": 12,
+									"padding_left": 0,
+									"padding_right": 0
+								},
+								"image_url": "https://cdn.grofers.com/assets/eta-icons/30-mins-filled.png"
+							},
+							"tracking": {
+								"widget_meta": {
+									"widget_name": "Shipment Widget"
+								},
+								"impression_map": {
+									"event_name": "Shipment Widget Shown"
+								}
+							},
+							"widget_type": "cart_shipment_data"
+						}
+					],
+					"bg_color_hex": "#F4F6FB"
+				},
+				"widget_type": "grid_container_vr",
+				"layout_config": {
+					"spacing": "0,12,0,0"
+				}
+			},
+			{
+				"data": {
+					"identity": {
+						"id": "longtail"
+					},
+					"container_layout_config": {
+						"padding": "0,0,0,0",
+						"corner_radius": 16
+					},
+					"items": [
+						{
+							"data": {
+								"identity": {
+									"id": "longtail"
+								},
+								"title": {
+									"text": "Delivery in 30 minutes",
+									"font": {
+										"size": "500",
+										"weight": "extrabold"
+									},
+									"color": {
+										"tint": "900",
+										"type": "grey"
+									}
+								},
+								"subtitle": {
+									"text": "Shipment of 0 item",
+									"font": {
+										"size": "200",
+										"weight": "medium"
+									},
+									"color": {
+										"tint": "600",
+										"type": "grey"
+									}
+								},
+								"layout_config": {
+									"padding_top": 12,
+									"padding_bottom": 12,
+									"padding_left": 0,
+									"padding_right": 0
+								},
+								"image_url": "https://cdn.grofers.com/assets/eta-icons/30-mins-filled.png"
+							},
+							"tracking": {
+								"widget_meta": {
+									"widget_name": "Shipment Widget"
+								},
+								"impression_map": {
+									"event_name": "Shipment Widget Shown"
+								}
+							},
+							"widget_type": "cart_shipment_data"
+						}
+					],
+					"bg_color_hex": "#F4F6FB"
+				},
+				"widget_type": "grid_container_vr",
+				"layout_config": {
+					"spacing": "0,12,0,0"
+				}
+			},
+			{
+				"data": {
+					"identity": {
+						"id": "unicorn"
+					},
+					"container_layout_config": {
+						"padding": "0,0,0,0",
+						"corner_radius": 16
+					},
+					"items": [
+						{
+							"data": {
+								"identity": {
+									"id": "Unicorn"
+								},
+								"title": {
+									"text": "Delivery in 10 minutes",
+									"font": {
+										"size": "500",
+										"weight": "extrabold"
+									},
+									"color": {
+										"tint": "900",
+										"type": "grey"
+									}
+								},
+								"subtitle": {
+									"text": "Shipment of 0 item",
+									"font": {
+										"size": "200",
+										"weight": "medium"
+									},
+									"color": {
+										"tint": "600",
+										"type": "grey"
+									}
+								},
+								"layout_config": {
+									"padding_top": 12,
+									"padding_bottom": 12,
+									"padding_left": 0,
+									"padding_right": 0
+								},
+								"image_url": "https://cdn.grofers.com/assets/eta-icons/30-mins-filled.png"
+							},
+							"tracking": {
+								"widget_meta": {
+									"widget_name": "Shipment Widget"
+								},
+								"impression_map": {
+									"event_name": "Shipment Widget Shown"
+								}
+							},
+							"widget_type": "cart_shipment_data"
+						}
+					],
+					"bg_color_hex": "#F4F6FB"
+				},
+				"widget_type": "grid_container_vr",
+				"layout_config": {
+					"spacing": "0,12,0,0"
+				}
+			}
+		],
+		"page_config": {
+			"cache_config": {
+				"ttl": {
+					"resume": 90000000
+				}
+			},
+			"is_diff_util_enabled": true
+		},
+		"subscribers": {
+			"PDP_DISMISS": {
+				"common_actions": [
+					{
+						"type": "refresh_page"
+					}
+				]
+			}
+		},
+		"tracking": {
+			"event_name": "Cart Preview Bottom Sheet Visit",
+			"le_meta": {
+				"name": "Cart Preview Bottom Sheet"
+			}
+		}
+	}
+}

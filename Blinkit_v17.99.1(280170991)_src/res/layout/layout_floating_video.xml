@@ -1,0 +1,148 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout
+    android:id="@id/videoSnippetParent"
+    android:background="@color/sushi_black"
+    android:focusable="true"
+    android:clickable="true"
+    android:layout_width="fill_parent"
+    android:layout_height="wrap_content"
+    android:animateLayoutChanges="true"
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+    <com.zomato.ui.lib.organisms.snippets.video.customViews.ZExoSeekbar
+        android:gravity="center"
+        android:id="@id/seekBar"
+        android:visibility="gone"
+        android:layout_width="fill_parent"
+        android:layout_height="12.0dip"
+        app:actualBarHeight="@dimen/zexoseekbar_height"
+        app:actualBufferedColor="@color/sushi_grey_300"
+        app:actualUnplayedColor="@color/sushi_grey_600"
+        app:bar_height="@dimen/zexoseekbar_height"
+        app:buffered_color="@android:color/transparent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:played_color="@color/sushi_white"
+        app:scrubber_color="@color/sushi_white"
+        app:scrubber_disabled_size="@dimen/zexoseekbar_scrubber_small_size"
+        app:scrubber_dragged_size="@dimen/zexoseekbar_scrubber_big_size"
+        app:scrubber_enabled_size="@dimen/zexoseekbar_scrubber_small_size"
+        app:unplayed_color="@android:color/transparent" />
+    <com.zomato.ui.lib.organisms.snippets.videoSnippets.ZPlayerViewContainer
+        android:id="@id/player_view_container"
+        android:layout_width="0.0dip"
+        android:layout_height="0.0dip"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/seekBar" />
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:id="@id/controlsViewGroup"
+        android:visibility="gone"
+        android:layout_width="0.0dip"
+        android:layout_height="0.0dip"
+        android:animateLayoutChanges="true"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/seekBar">
+        <View
+            android:id="@id/controlsShowHideView"
+            android:layout_width="fill_parent"
+            android:layout_height="fill_parent" />
+        <View
+            android:id="@id/overlayView"
+            android:background="@color/color_black_alpha_sixty"
+            android:visibility="gone"
+            android:layout_width="0.0dip"
+            android:layout_height="0.0dip"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+        <View
+            android:id="@id/pausePlayRewindForward"
+            android:visibility="gone"
+            android:layout_width="fill_parent"
+            android:layout_height="fill_parent"
+            app:layout_constraintTop_toTopOf="parent" />
+        <com.zomato.ui.atomiclib.atom.ZIconFontTextView
+            android:textSize="@dimen/sushi_textsize_900"
+            android:textColor="@color/sushi_white"
+            android:id="@id/rewindIcon"
+            android:visibility="gone"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/icon_font_rewind"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.25"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+        <com.zomato.ui.atomiclib.atom.ZIconFontTextView
+            android:textSize="@dimen/sushi_textsize_900"
+            android:textColor="@color/sushi_white"
+            android:id="@id/forwardIcon"
+            android:visibility="gone"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/icon_font_max_arrow"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.75"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+        <com.zomato.ui.atomiclib.atom.ZIconFontTextView
+            android:textSize="@dimen/size_20"
+            android:textColor="@color/sushi_white"
+            android:gravity="center"
+            android:id="@id/fullScreenButton"
+            android:visibility="visible"
+            android:layout_width="@dimen/size_34"
+            android:layout_height="@dimen/size_34"
+            android:layout_marginTop="@dimen/sushi_spacing_mini"
+            android:layout_marginBottom="@dimen/sushi_spacing_macro"
+            android:text="@string/icon_font_expand"
+            android:layout_marginEnd="@dimen/sushi_spacing_mini"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+        <com.zomato.ui.atomiclib.atom.ZIconFontTextView
+            android:textSize="@dimen/dimen_20"
+            android:textColor="@color/sushi_white"
+            android:gravity="center"
+            android:id="@id/muteButton"
+            android:layout_width="@dimen/size_34"
+            android:layout_height="@dimen/size_34"
+            app:layout_constraintEnd_toStartOf="@id/fullScreenButton"
+            app:layout_constraintTop_toTopOf="@id/fullScreenButton"
+            app:layout_goneMarginEnd="@dimen/sushi_spacing_mini"
+            app:layout_goneMarginTop="@dimen/sushi_spacing_mini" />
+        <com.zomato.ui.atomiclib.atom.ZIconFontTextView
+            android:textSize="@dimen/size24"
+            android:textColor="@color/sushi_white"
+            android:gravity="center"
+            android:id="@id/crossButton"
+            android:layout_width="@dimen/size_34"
+            android:layout_height="@dimen/size_34"
+            android:layout_marginLeft="@dimen/sushi_spacing_mini"
+            android:layout_marginTop="@dimen/sushi_spacing_mini"
+            android:layout_marginRight="@dimen/sushi_spacing_mini"
+            android:text="@string/icon_font_cross_circle_fill"
+            android:contentDescription="@string/qd_drawer_close"
+            android:layout_marginHorizontal="@dimen/sushi_spacing_mini"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+        <com.zomato.ui.atomiclib.atom.ZIconFontTextView
+            android:textSize="@dimen/dimen_14"
+            android:textColor="@color/sushi_white"
+            android:gravity="center"
+            android:id="@id/pausePlayButton"
+            android:background="@drawable/bg_video_control_button"
+            android:layout_width="@dimen/size_34"
+            android:layout_height="@dimen/size_34"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+    </androidx.constraintlayout.widget.ConstraintLayout>
+</androidx.constraintlayout.widget.ConstraintLayout>

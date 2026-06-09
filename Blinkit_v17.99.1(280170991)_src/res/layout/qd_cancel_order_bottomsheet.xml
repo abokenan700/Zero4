@@ -1,0 +1,64 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    android:layout_gravity="bottom"
+    android:orientation="vertical"
+    android:id="@id/root_card_view"
+    android:background="#00000000"
+    android:layout_width="fill_parent"
+    android:layout_height="400.0dip"
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+    <include
+        android:id="@id/closeButtonContainer"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        layout="@layout/qd_layout_bottom_sheet_close_btn" />
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:id="@id/pdp_constraint_layout"
+        android:background="@drawable/qd_bottom_sheet_circular"
+        android:visibility="visible"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content">
+        <FrameLayout
+            android:id="@id/recycler_view_container"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            app:layout_constrainedHeight="true"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintVertical_bias="0.0">
+            <androidx.recyclerview.widget.RecyclerView
+                android:scrollbarSize="@dimen/size_3"
+                android:scrollbarThumbVertical="@drawable/qd_menu_scrollbar_thumb"
+                android:scrollbarAlwaysDrawVerticalTrack="true"
+                android:scrollbarStyle="insideOverlay"
+                android:layout_gravity="top"
+                android:id="@id/cancelDialog"
+                android:paddingBottom="@dimen/sushi_spacing_base"
+                android:scrollbars="vertical"
+                android:clipToPadding="false"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:fadeScrollbars="false" />
+        </FrameLayout>
+        <com.zomato.ui.atomiclib.atom.ZButton
+            android:textColor="@color/white"
+            android:layout_gravity="bottom"
+            android:id="@id/cancel_button"
+            android:background="@drawable/all_rounded_theme_8dp"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="@dimen/nitro_side_padding"
+            android:text="Cancel order"
+            android:layout_alignParentBottom="true"
+            android:layout_marginStart="@dimen/nitro_side_padding"
+            android:layout_marginEnd="@dimen/nitro_side_padding"
+            app:buttonColor="?accentColor"
+            app:buttonType="solid"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/recycler_view_container" />
+    </androidx.constraintlayout.widget.ConstraintLayout>
+</LinearLayout>

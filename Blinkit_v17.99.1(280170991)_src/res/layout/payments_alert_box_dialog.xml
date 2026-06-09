@@ -1,0 +1,101 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    android:orientation="vertical"
+    android:background="@drawable/payments_rounded_background"
+    android:padding="@dimen/size_20"
+    android:layout_width="fill_parent"
+    android:layout_height="wrap_content"
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+    <com.zomato.ui.atomiclib.atom.ZIconFontTextView
+        android:textSize="@dimen/size_60"
+        android:textColor="@color/sushi_green_500"
+        android:gravity="center"
+        android:layout_gravity="center"
+        android:id="@id/topIcon"
+        android:visibility="gone"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/sushi_spacing_micro" />
+    <com.zomato.ui.atomiclib.atom.ZTextView
+        android:textSize="@dimen/sushi_textsize_500"
+        android:gravity="center"
+        android:layout_gravity="center"
+        android:id="@id/title"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/size_20"
+        android:fontFamily="@font/okra_medium"
+        android:textAlignment="center"
+        app:fontFamily="@font/okra_semibold"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+    <com.zomato.ui.atomiclib.atom.ZTextView
+        android:textSize="@dimen/sushi_textsize_300"
+        android:textColor="@color/sushi_grey_600"
+        android:gravity="center"
+        android:layout_gravity="center"
+        android:id="@id/subtitle"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/sushi_spacing_macro"
+        android:fontFamily="@font/okra_medium"
+        android:textAlignment="center"
+        android:layout_marginStart="@dimen/sushi_spacing_extra"
+        android:layout_marginEnd="@dimen/sushi_spacing_extra"
+        app:fontFamily="@font/okra"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+    <LinearLayout
+        android:orientation="vertical"
+        android:id="@id/positive_button_ll"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content">
+        <com.zomato.ui.atomiclib.atom.ZSeparator
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/sushi_spacing_extra"
+            app:zseparator_color="@color/sushi_grey_200" />
+        <com.zomato.ui.atomiclib.atom.ZButton
+            android:textColor="?colorAccent"
+            android:gravity="center"
+            android:layout_gravity="center"
+            android:id="@id/positive_button"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/sushi_spacing_extra"
+            android:fontFamily="@font/okra"
+            app:buttonDimension="medium"
+            app:buttonType="text"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toStartOf="@id/positive_button"
+            app:layout_constraintTop_toBottomOf="@id/message" />
+    </LinearLayout>
+    <LinearLayout
+        android:orientation="vertical"
+        android:id="@id/negative_button_ll"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content">
+        <com.zomato.ui.atomiclib.atom.ZSeparator
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/sushi_spacing_extra"
+            app:zseparator_color="@color/sushi_grey_200" />
+        <com.zomato.ui.atomiclib.atom.ZButton
+            android:textColor="@color/sushi_grey_500"
+            android:gravity="center"
+            android:layout_gravity="center"
+            android:id="@id/negative_button"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/sushi_spacing_extra"
+            android:fontFamily="@font/okra"
+            app:buttonDimension="medium"
+            app:buttonType="text"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/message" />
+    </LinearLayout>
+</LinearLayout>

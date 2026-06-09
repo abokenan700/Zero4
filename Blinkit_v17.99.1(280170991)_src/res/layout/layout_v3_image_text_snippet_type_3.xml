@@ -1,0 +1,94 @@
+<?xml version="1.0" encoding="utf-8"?>
+<merge
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:id="@id/root_container"
+        android:padding="@dimen/sushi_spacing_base"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content">
+        <com.zomato.ui.atomiclib.atom.ZCircularImageView
+            android:id="@id/imageView"
+            android:layout_width="@dimen/size_40"
+            android:layout_height="@dimen/size_40"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            app:srcCompat="@drawable/starr" />
+        <com.zomato.ui.atomiclib.atom.ZTextView
+            android:ellipsize="end"
+            android:id="@id/title"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:singleLine="true"
+            android:layout_marginStart="@dimen/sushi_spacing_macro"
+            android:layout_marginEnd="@dimen/sushi_spacing_micro"
+            app:layout_constraintEnd_toStartOf="@id/right_title"
+            app:layout_constraintHorizontal_bias="0.0"
+            app:layout_constraintStart_toEndOf="@id/imageView"
+            app:layout_constraintTop_toTopOf="@id/imageView" />
+        <com.zomato.ui.atomiclib.atom.ZTextView
+            android:id="@id/subtitle"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            app:layout_constraintStart_toStartOf="@id/title"
+            app:layout_constraintTop_toBottomOf="@id/title" />
+        <com.zomato.ui.atomiclib.atom.ZTextView
+            android:id="@id/bottom_title"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/sushi_spacing_base"
+            android:layout_marginStart="@dimen/sushi_spacing_macro"
+            app:layout_constraintStart_toEndOf="@id/imageView"
+            app:layout_constraintTop_toBottomOf="@id/subtitle" />
+        <com.zomato.ui.atomiclib.atom.ZTextView
+            android:id="@id/right_title"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            app:layout_constraintBottom_toBottomOf="@id/subtitle"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintTop_toTopOf="@id/title" />
+        <com.zomato.ui.atomiclib.atom.ZSeparator
+            android:id="@id/zSeperator"
+            android:layout_width="fill_parent"
+            android:layout_height="@dimen/border_stroke_width"
+            android:layout_marginTop="@dimen/sushi_spacing_base"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/bottom_title"
+            app:zseparator_color="@color/sushi_grey_200" />
+        <com.zomato.ui.atomiclib.atom.ZButton
+            android:id="@id/negative_btn"
+            android:padding="@dimen/sushi_spacing_macro"
+            android:layout_width="0.0dip"
+            android:layout_height="wrap_content"
+            android:layout_marginEnd="@dimen/size_20"
+            app:buttonType="text"
+            app:layout_constraintBottom_toBottomOf="@id/positive_btn"
+            app:layout_constraintEnd_toStartOf="@id/positive_btn"
+            app:layout_constraintHorizontal_bias="0.5"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="@id/positive_btn" />
+        <com.zomato.ui.atomiclib.atom.ZButton
+            android:id="@id/positive_btn"
+            android:padding="@dimen/sushi_spacing_macro"
+            android:layout_width="0.0dip"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/sushi_spacing_macro"
+            android:layout_marginBottom="@dimen/spacing_between_2dp"
+            android:minWidth="@dimen/size_40"
+            android:paddingStart="@dimen/sushi_spacing_extra"
+            android:paddingEnd="@dimen/sushi_spacing_extra"
+            app:buttonColor="@color/z_red"
+            app:buttonDimension="large"
+            app:buttonType="solid"
+            app:cornerRadius="@dimen/sushi_spacing_macro"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.5"
+            app:layout_constraintStart_toEndOf="@id/negative_btn"
+            app:layout_constraintTop_toBottomOf="@id/zSeperator"
+            app:layout_constraintVertical_bias="0.0" />
+    </androidx.constraintlayout.widget.ConstraintLayout>
+</merge>

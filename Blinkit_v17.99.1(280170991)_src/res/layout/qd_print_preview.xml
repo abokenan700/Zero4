@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout
+    android:id="@id/preview_container"
+    android:paddingTop="@dimen/sushi_spacing_nano"
+    android:paddingBottom="@dimen/sushi_spacing_nano"
+    android:layout_width="fill_parent"
+    android:layout_height="wrap_content"
+    android:paddingVertical="@dimen/sushi_spacing_nano"
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+    <LinearLayout
+        android:orientation="vertical"
+        android:id="@id/preview_image_frame"
+        android:background="@drawable/qd_rounded_grey_border_12_thin"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:layout_constraintBottom_toBottomOf="@id/page_count"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
+        <com.zomato.ui.atomiclib.atom.ZRoundedImageView
+            android:id="@id/preview_image"
+            android:layout_width="@dimen/preview_image_width"
+            android:layout_height="@dimen/navigation_drawer_width"
+            android:layout_margin="@dimen/sushi_spacing_macro"
+            android:scaleType="fitCenter"
+            android:adjustViewBounds="true" />
+        <com.zomato.ui.atomiclib.atom.ZTextView
+            android:gravity="center_horizontal"
+            android:id="@id/settings_warning"
+            android:background="@drawable/qd_rounded_red_border_12"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/sushi_spacing_micro" />
+    </LinearLayout>
+    <com.zomato.ui.atomiclib.atom.ZTextView
+        android:id="@id/page_count"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/sushi_spacing_macro"
+        android:layout_marginBottom="@dimen/sushi_spacing_macro"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/preview_image_frame" />
+</androidx.constraintlayout.widget.ConstraintLayout>

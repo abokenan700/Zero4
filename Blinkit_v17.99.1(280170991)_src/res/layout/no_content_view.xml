@@ -1,0 +1,54 @@
+<?xml version="1.0" encoding="utf-8"?>
+<merge
+    xmlns:android="http://schemas.android.com/apk/res/android">
+    <LinearLayout
+        android:gravity="center"
+        android:orientation="vertical"
+        android:id="@id/center_content"
+        android:layout_width="fill_parent"
+        android:layout_height="0.0dip"
+        android:layout_weight="1.0">
+        <com.zomato.ui.atomiclib.atom.ZRoundedImageView
+            android:id="@id/center_image"
+            android:layout_width="@dimen/no_content_view_drawable_width"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="@dimen/sushi_spacing_loose"
+            android:scaleType="fitCenter"
+            android:adjustViewBounds="true"
+            android:maxHeight="@dimen/no_content_view_drawable_height" />
+        <com.zomato.ui.atomiclib.atom.ZTextView
+            android:gravity="center"
+            android:id="@id/ncv_title"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="@dimen/sushi_spacing_loose"
+            android:layout_marginRight="@dimen/sushi_spacing_loose"
+            android:layout_marginBottom="@dimen/sushi_spacing_macro"
+            android:layout_marginHorizontal="@dimen/sushi_spacing_loose" />
+        <com.zomato.ui.atomiclib.atom.ZTextView
+            android:gravity="center"
+            android:id="@id/ncv_message"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="@dimen/sushi_spacing_loose"
+            android:layout_marginRight="@dimen/sushi_spacing_loose"
+            android:layout_marginBottom="@dimen/sushi_spacing_macro"
+            android:layout_marginHorizontal="@dimen/sushi_spacing_loose" />
+        <com.zomato.ui.atomiclib.atom.ZButton
+            android:id="@id/center_button"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:minWidth="@dimen/size_220" />
+    </LinearLayout>
+    <com.zomato.ui.atomiclib.atom.ZButton
+        android:id="@id/bottom_button"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="@dimen/sushi_spacing_base"
+        android:hapticFeedbackEnabled="true" />
+    <ProgressBar
+        android:id="@id/progressBar"
+        android:visibility="gone"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content" />
+</merge>

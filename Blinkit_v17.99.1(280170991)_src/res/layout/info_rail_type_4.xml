@@ -1,0 +1,49 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    android:gravity="center_vertical"
+    android:orientation="horizontal"
+    android:id="@id/container"
+    android:paddingLeft="@dimen/sushi_spacing_macro"
+    android:paddingTop="@dimen/sushi_spacing_micro"
+    android:paddingRight="@dimen/sushi_spacing_macro"
+    android:paddingBottom="@dimen/sushi_spacing_micro"
+    android:clipToPadding="false"
+    android:layout_width="fill_parent"
+    android:layout_height="wrap_content"
+    android:paddingHorizontal="@dimen/sushi_spacing_macro"
+    android:paddingVertical="@dimen/sushi_spacing_micro"
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+    <com.zomato.ui.atomiclib.atom.ZRoundedImageView
+        android:id="@id/image"
+        android:layout_width="@dimen/dimen_14"
+        android:layout_height="@dimen/dimen_14"
+        android:scaleType="centerCrop" />
+    <com.zomato.ui.atomiclib.atom.ZButton
+        android:id="@id/button"
+        android:layout_width="wrap_content"
+        android:layout_height="@dimen/dimen_14"
+        android:scaleType="centerCrop"
+        android:layout_marginStart="@dimen/sushi_spacing_micro_negative"
+        app:buttonDimension="small"
+        app:buttonType="text" />
+    <com.zomato.ui.atomiclib.atom.staticviews.StaticTextView
+        android:textColor="@color/sushi_grey_900"
+        android:id="@id/title"
+        android:layout_width="0.0dip"
+        android:layout_height="wrap_content"
+        android:layout_weight="1.0"
+        android:paddingStart="@dimen/sushi_spacing_micro"
+        app:textViewType="SEMIBOLD_600" />
+    <com.zomato.ui.atomiclib.atom.staticviews.StaticIconView
+        android:layout_gravity="end|center"
+        android:id="@id/right_icon"
+        android:paddingLeft="@dimen/sushi_spacing_mini"
+        android:paddingTop="@dimen/sushi_spacing_micro"
+        android:paddingRight="@dimen/sushi_spacing_mini"
+        android:paddingBottom="@dimen/sushi_spacing_micro"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:paddingHorizontal="@dimen/sushi_spacing_mini"
+        android:paddingVertical="@dimen/sushi_spacing_micro" />
+</LinearLayout>

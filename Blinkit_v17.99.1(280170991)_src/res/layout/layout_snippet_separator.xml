@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    android:orientation="vertical"
+    android:id="@id/separator_root"
+    android:background="@color/sushi_grey_100"
+    android:layout_width="fill_parent"
+    android:layout_height="wrap_content"
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+    <com.zomato.ui.atomiclib.atom.ZTriangle
+        android:id="@id/triangle_view_top"
+        android:visibility="gone"
+        android:layout_width="@dimen/dimen_20"
+        android:layout_height="@dimen/dimen_10"
+        app:triangle_color="@color/sushi_black"
+        app:triangle_type="NORTH" />
+    <com.zomato.ui.lib.snippets.separatornew.NitroZSeparator
+        android:id="@id/top_separator"
+        android:visibility="gone"
+        android:layout_width="fill_parent"
+        android:layout_height="@dimen/dimen_point_five"
+        app:separator_color="@color/sushi_grey_200" />
+    <com.zomato.ui.lib.snippets.separatornew.NitroZSeparator
+        android:id="@id/bottom_separator"
+        android:visibility="gone"
+        android:layout_width="fill_parent"
+        android:layout_height="@dimen/dimen_point_five"
+        android:layout_marginTop="@dimen/sushi_spacing_base"
+        app:separator_color="@color/sushi_grey_200" />
+</LinearLayout>

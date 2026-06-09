@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    android:orientation="vertical"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:paddingStart="@dimen/sushi_spacing_base"
+    android:paddingEnd="@dimen/sushi_spacing_base"
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+    <com.zomato.ui.atomiclib.atom.ZTextView
+        android:id="@id/renamedwallet_recharge_page_desc"
+        android:visibility="gone"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/sushi_spacing_base"
+        android:paddingStart="@dimen/sushi_spacing_micro"
+        android:paddingEnd="@dimen/sushi_spacing_micro" />
+    <com.zomato.ui.atomiclib.molecules.ZTextInputField
+        android:id="@id/renamedwallet_recharge_amount"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:inputType="number" />
+    <LinearLayout
+        android:orientation="horizontal"
+        android:id="@id/renamedwallet_recharge_add_amount_layout"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/sushi_spacing_base" />
+    <com.zomato.ui.atomiclib.atom.ZButtonWithLoader
+        android:id="@id/renamedwallet_recharge_pay"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/sushi_spacing_base"
+        android:text="@string/renamedpayment_proceed_to_add_money" />
+</LinearLayout>

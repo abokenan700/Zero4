@@ -1,0 +1,85 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    android:orientation="vertical"
+    android:background="@color/sushi_transparent"
+    android:layout_width="fill_parent"
+    android:layout_height="wrap_content"
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+    <LinearLayout
+        android:gravity="center_vertical"
+        android:orientation="horizontal"
+        android:paddingBottom="@dimen/sushi_spacing_nano"
+        android:visibility="visible"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content">
+        <LinearLayout
+            android:orientation="vertical"
+            android:id="@id/data_container"
+            android:layout_width="0.0dip"
+            android:layout_height="wrap_content"
+            android:layout_weight="1.0">
+            <com.zomato.ui.atomiclib.atom.ZTextView
+                android:textColor="?attr_7f040466"
+                android:id="@id/title"
+                android:visibility="visible"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/qd_margin_16"
+                android:text="@string/profile_header_title"
+                android:singleLine="true"
+                android:layout_marginStart="@dimen/sushi_spacing_page_side"
+                app:textViewType="SEMIBOLD_800" />
+            <LinearLayout
+                android:gravity="center_vertical"
+                android:orientation="horizontal"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/sushi_spacing_micro"
+                android:layout_marginBottom="@dimen/qd_margin_4"
+                android:layout_marginStart="@dimen/sushi_spacing_page_side">
+                <com.blinkit.blink.elements.ui.atoms.icon.BlinkitIconView
+                    android:id="@id/iconView"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:paddingEnd="@dimen/sushi_spacing_micro" />
+                <com.zomato.ui.atomiclib.atom.ZTextView
+                    android:textColor="?attr_7f04047c"
+                    android:id="@id/subtitle"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginRight="@dimen/sushi_spacing_extra"
+                    android:text="@string/profile_header_title"
+                    android:singleLine="true"
+                    android:layout_weight="1.0"
+                    app:textViewType="REGULAR_300" />
+                <com.blinkit.blink.elements.ui.atoms.icon.BlinkitIconView
+                    android:id="@id/iconView_2"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:paddingEnd="@dimen/sushi_spacing_micro" />
+                <com.zomato.ui.atomiclib.atom.ZTextView
+                    android:textColor="?attr_7f04047c"
+                    android:id="@id/subtitle_2"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:singleLine="true"
+                    android:layout_weight="1.0"
+                    app:textViewType="REGULAR_300" />
+            </LinearLayout>
+            <com.zomato.ui.atomiclib.atom.ZButton
+                android:layout_gravity="center"
+                android:id="@id/logIn"
+                android:visibility="gone"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/qd_margin_12"
+                android:text="Continue"
+                android:layout_marginStart="@dimen/qd_margin_12"
+                android:layout_marginEnd="@dimen/qd_margin_12"
+                app:buttonType="outline"
+                app:outline_bg_color="?attr_7f0402b2"
+                app:strokeColor="?attr_7f0402b5" />
+        </LinearLayout>
+    </LinearLayout>
+</LinearLayout>

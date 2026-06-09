@@ -1,0 +1,79 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout
+    android:paddingLeft="@dimen/sushi_spacing_base"
+    android:paddingTop="@dimen/sushi_spacing_nano"
+    android:paddingRight="@dimen/sushi_spacing_base"
+    android:paddingBottom="@dimen/sushi_spacing_base"
+    android:layout_width="fill_parent"
+    android:layout_height="wrap_content"
+    android:paddingHorizontal="@dimen/sushi_spacing_base"
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:id="@id/container"
+        android:padding="@dimen/sushi_spacing_base"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content">
+        <com.zomato.ui.atomiclib.atom.staticviews.StaticIconView
+            android:id="@id/right_icon"
+            android:visibility="gone"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+        <com.zomato.ui.atomiclib.lottie.LottieImageView
+            android:id="@id/left_image"
+            android:visibility="gone"
+            android:layout_width="36.0dip"
+            android:layout_height="wrap_content"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+        <com.zomato.ui.atomiclib.atom.staticviews.StaticTextView
+            android:id="@id/title"
+            android:visibility="gone"
+            android:layout_width="0.0dip"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="@dimen/sushi_spacing_macro"
+            android:layout_marginRight="@dimen/sushi_spacing_macro"
+            android:layout_marginHorizontal="@dimen/sushi_spacing_macro"
+            app:layout_constraintEnd_toStartOf="@id/right_icon"
+            app:layout_constraintStart_toEndOf="@id/left_image"
+            app:layout_constraintTop_toTopOf="parent" />
+        <com.zomato.ui.atomiclib.atom.staticviews.StaticTextView
+            android:id="@id/subtitle"
+            android:visibility="gone"
+            android:layout_width="0.0dip"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="@dimen/sushi_spacing_macro"
+            android:layout_marginTop="@dimen/sushi_spacing_nano"
+            android:layout_marginRight="@dimen/sushi_spacing_macro"
+            android:layout_marginHorizontal="@dimen/sushi_spacing_macro"
+            app:layout_constraintEnd_toStartOf="@id/right_icon"
+            app:layout_constraintStart_toEndOf="@id/left_image"
+            app:layout_constraintTop_toBottomOf="@id/title" />
+        <androidx.constraintlayout.widget.Barrier
+            android:id="@id/content_barrier"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            app:barrierDirection="bottom"
+            app:constraint_referenced_ids="left_image,subtitle" />
+        <com.zomato.ui.atomiclib.atom.staticviews.StaticTextView
+            android:id="@id/right_title"
+            android:visibility="gone"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            app:layout_constraintBottom_toBottomOf="@id/progress_bar"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintTop_toTopOf="@id/progress_bar" />
+        <com.zomato.ui.lib.organisms.snippets.progress.progressBar.ProgressBarView
+            android:id="@id/progress_bar"
+            android:visibility="gone"
+            android:layout_width="0.0dip"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/sushi_spacing_macro"
+            android:layout_marginEnd="@dimen/sushi_spacing_macro"
+            app:layout_constraintEnd_toStartOf="@id/right_title"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/content_barrier" />
+    </androidx.constraintlayout.widget.ConstraintLayout>
+</FrameLayout>

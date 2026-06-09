@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    android:gravity="center"
+    android:orientation="horizontal"
+    android:id="@id/view_data"
+    android:paddingLeft="@dimen/size_8"
+    android:paddingRight="@dimen/size_8"
+    android:focusable="true"
+    android:clickable="true"
+    android:layout_width="fill_parent"
+    android:layout_height="wrap_content"
+    android:paddingHorizontal="@dimen/size_8"
+    xmlns:android="http://schemas.android.com/apk/res/android">
+    <com.zomato.ui.atomiclib.atom.ZRoundedImageView
+        android:layout_gravity="center_vertical"
+        android:id="@id/icon"
+        android:visibility="gone"
+        android:layout_width="@dimen/dimen_14"
+        android:layout_height="@dimen/dimen_14"
+        android:layout_marginLeft="@dimen/size_5"
+        android:layout_marginRight="@dimen/size_5"
+        android:layout_marginHorizontal="@dimen/size_5" />
+    <com.zomato.ui.atomiclib.atom.ZTextView
+        android:textSize="@dimen/size_8"
+        android:ellipsize="end"
+        android:id="@id/title"
+        android:paddingTop="@dimen/qd_padding_8"
+        android:paddingBottom="@dimen/qd_padding_8"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:lines="1"
+        android:paddingVertical="@dimen/qd_padding_8" />
+</LinearLayout>

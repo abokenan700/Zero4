@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="utf-8"?>
+<merge
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+    <ViewStub
+        android:id="@id/image_view"
+        android:layout="@layout/view_stub_layout_rounded_image_view"
+        android:inflatedId="@id/image_view"
+        android:layout_width="fill_parent"
+        android:layout_height="0.0dip"
+        app:layout_constraintTop_toTopOf="parent" />
+    <ViewStub
+        android:id="@id/animation_view"
+        android:layout="@layout/view_stub_layout_lottie_animation_view"
+        android:inflatedId="@id/animation_view"
+        android:layout_width="fill_parent"
+        android:layout_height="0.0dip"
+        app:layout_constraintTop_toTopOf="parent" />
+</merge>

@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout
+    android:orientation="vertical"
+    android:layout_width="fill_parent"
+    android:layout_height="wrap_content"
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+    <LinearLayout
+        android:orientation="vertical"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content">
+        <Space
+            android:id="@id/view_pager_offset"
+            android:layout_width="fill_parent"
+            android:layout_height="@dimen/iconfont_size_50" />
+        <com.zomato.ui.lib.organisms.navigation.WrapContentViewPager
+            android:id="@id/view_pager"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content" />
+    </LinearLayout>
+    <com.zomato.ui.lib.organisms.snippets.imagetext.type19.indicator.OverflowPagerIndicator
+        android:layout_gravity="bottom|center"
+        android:id="@id/indicator"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:piDefaultColor="@color/sushi_grey_400"
+        app:piSelectedColor="@color/sushi_grey_900" />
+    <com.zomato.ui.atomiclib.atom.ZRoundedImageView
+        android:layout_gravity="center|top"
+        android:id="@id/logo_image"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/sushi_spacing_loose"
+        android:scaleType="fitXY"
+        android:adjustViewBounds="true" />
+</FrameLayout>

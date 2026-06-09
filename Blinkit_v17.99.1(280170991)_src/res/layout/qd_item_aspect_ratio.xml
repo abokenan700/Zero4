@@ -1,0 +1,93 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout
+    android:id="@id/bottom_frame"
+    android:layout_width="@dimen/qd_size_130"
+    android:layout_height="wrap_content"
+    android:layout_marginLeft="@dimen/sushi_spacing_micro"
+    android:layout_marginTop="@dimen/sushi_spacing_micro"
+    android:layout_marginRight="@dimen/sushi_spacing_micro"
+    android:layout_marginBottom="@dimen/sushi_spacing_micro"
+    android:layout_marginHorizontal="@dimen/sushi_spacing_micro"
+    android:layout_marginVertical="@dimen/sushi_spacing_micro"
+    app:layout_constrainedHeight="true"
+    app:layout_constraintBottom_toBottomOf="parent"
+    app:layout_constraintEnd_toEndOf="@id/bottom_layout"
+    app:layout_constraintStart_toStartOf="@id/bottom_layout"
+    app:layout_constraintTop_toTopOf="@id/bottom_layout"
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+    <androidx.appcompat.widget.LinearLayoutCompat
+        android:gravity="start"
+        android:orientation="vertical"
+        android:id="@id/text_container"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="@dimen/sushi_spacing_macro"
+        app:layout_constraintBottom_toBottomOf="@id/bottom_frame"
+        app:layout_constraintStart_toEndOf="@id/image_frame"
+        app:layout_constraintTop_toTopOf="@id/bottom_frame">
+        <com.blinkit.blink.elements.ui.atoms.text.BlinkitTextView
+            android:textColor="?attr_7f040466"
+            android:id="@id/bottom_selection_title"
+            android:paddingTop="@dimen/sushi_spacing_macro"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="@dimen/sushi_spacing_nano"
+            app:textViewType="SEMIBOLD_200" />
+        <com.blinkit.blink.elements.ui.atoms.text.BlinkitTextView
+            android:textColor="?attr_7f04047c"
+            android:gravity="center"
+            android:id="@id/bottom_selection_subtext2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:maxLines="2"
+            app:textViewType="MEDIUM_100" />
+        <com.blinkit.blink.elements.ui.atoms.text.BlinkitTextView
+            android:textColor="?attr_7f04047c"
+            android:gravity="center"
+            android:id="@id/bottom_selection_subtext"
+            android:paddingBottom="@dimen/sushi_spacing_macro"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:maxLines="2"
+            app:textViewType="MEDIUM_100" />
+    </androidx.appcompat.widget.LinearLayoutCompat>
+    <FrameLayout
+        android:gravity="center"
+        android:id="@id/image_frame"
+        android:layout_width="@dimen/size_45"
+        android:layout_height="0.0dip"
+        android:layout_marginLeft="@dimen/sushi_spacing_pico"
+        android:layout_marginTop="@dimen/sushi_spacing_pico"
+        android:layout_marginBottom="@dimen/sushi_spacing_pico"
+        android:layout_marginVertical="@dimen/sushi_spacing_pico"
+        app:layout_constraintBottom_toBottomOf="@id/bottom_frame"
+        app:layout_constraintEnd_toStartOf="@id/text_container"
+        app:layout_constraintHorizontal_chainStyle="packed"
+        app:layout_constraintStart_toStartOf="@id/bottom_frame"
+        app:layout_constraintTop_toTopOf="@id/bottom_frame" />
+    <com.zomato.ui.atomiclib.atom.ZRoundedImageView
+        android:id="@id/size_image"
+        android:background="@color/white"
+        android:layout_width="@dimen/size_30"
+        android:layout_height="0.0dip"
+        android:scaleType="centerCrop"
+        android:elevation="@dimen/size_6"
+        android:outlineSpotShadowColor="@color/color_transparent"
+        android:outlineAmbientShadowColor="@color/color_transparent"
+        app:layout_constraintBottom_toBottomOf="@id/bottom_frame"
+        app:layout_constraintEnd_toEndOf="@id/image_frame"
+        app:layout_constraintHorizontal_chainStyle="packed"
+        app:layout_constraintStart_toStartOf="@id/bottom_frame"
+        app:layout_constraintTop_toTopOf="@id/bottom_frame" />
+    <FrameLayout
+        android:id="@id/polaroid_frame"
+        android:background="@color/white"
+        android:visibility="gone"
+        android:layout_width="0.0dip"
+        android:layout_height="0.0dip"
+        app:layout_constraintBottom_toBottomOf="@id/size_image"
+        app:layout_constraintEnd_toEndOf="@id/size_image"
+        app:layout_constraintStart_toStartOf="@id/size_image"
+        app:layout_constraintTop_toTopOf="@id/size_image" />
+</androidx.constraintlayout.widget.ConstraintLayout>

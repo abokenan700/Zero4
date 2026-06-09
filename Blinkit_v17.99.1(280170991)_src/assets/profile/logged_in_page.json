@@ -1,0 +1,701 @@
+{
+	"side_menu_data": {
+		"sections": [
+			{
+				"items": [
+					{
+						"title": {
+							"text": "App update available"
+						},
+						"icon": {
+							"code": "e841",
+							"bg_color": {
+								"tint": "100",
+								"type": "grey"
+							},
+							"color": {
+								"tint": "500",
+								"type": "grey"
+							},
+							"font_size": "15"
+						},
+						"right_icon": {
+							"code": "e92f",
+							"color": {
+								"tint": "500",
+								"type": "grey"
+							},
+							"font_size": "700"
+						},
+						"tag": {
+							"title": {
+								"font": {
+									"size": "200",
+									"weight": "medium"
+								},
+								"color": {
+									"tint": "500",
+									"type": "teal"
+								}
+							},
+							"border_color": {
+								"tint": "100",
+								"type": "teal"
+							},
+							"corner_radius": 4,
+							"bg_color": {
+								"tint": "100",
+								"type": "teal"
+							},
+							"size": "small",
+							"font_size": "18"
+						}
+					},
+					{
+						"title": {
+							"text": "Appearance"
+						},
+						"icon": {
+							"code": "e82d",
+							"bg_color": {
+								"tint": "100",
+								"type": "grey"
+							},
+							"color": {
+								"tint": "500",
+								"type": "grey"
+							},
+							"font_size": "15"
+						},
+						"right_icon": {
+							"code": "e92f",
+							"color": {
+								"tint": "500",
+								"type": "grey"
+							},
+							"font_size": "700"
+						},
+						"tag": {
+							"title": {
+								"font": {
+									"size": "200",
+									"weight": "medium"
+								},
+								"color": {
+									"tint": "500",
+									"type": "teal",
+									"theme_bucket": {
+										"token": "color.text.grey"
+									}
+								}
+							},
+							"corner_radius": 4,
+							"bg_color": {
+								"tint": "100",
+								"type": "teal",
+								"theme_bucket": {
+									"token": "color.surface.teal"
+								}
+							},
+							"size": "small",
+							"font_size": "18"
+						},
+						"click_action": {
+							"type": "open_bottom_sheet_v2",
+							"open_bottom_sheet_v2": {
+								"response": {
+									"type": "deserialized",
+									"data": {
+										"is_success": true,
+										"response": {
+											"snippets": [
+												{
+													"type": "radio_button_snippet_type_4",
+													"data": {
+														"bg_color": {
+															"theme_bucket": {
+																"token": "color.background.primary"
+															}
+														},
+														"items": [
+															{
+																"identifier": "light",
+																"default_selected": true,
+																"title": {
+																	"text": "Light theme",
+																	"color": {
+																		"tint": "900",
+																		"type": "grey"
+																	},
+																	"font": {
+																		"size": "400",
+																		"weight": "medium"
+																	},
+																	"should_round_for_height": false
+																},
+																"disabled": false,
+																"bottom_separator": {
+																	"type": "line",
+																	"color": {
+																		"theme_bucket": {
+																			"token": "color.border.subtle"
+																		}
+																	}
+																}
+															},
+															{
+																"identifier": "dark",
+																"default_selected": false,
+																"title": {
+																	"text": "Dark theme",
+																	"color": {
+																		"tint": "900",
+																		"type": "grey"
+																	},
+																	"font": {
+																		"size": "400",
+																		"weight": "medium"
+																	},
+																	"should_round_for_height": false
+																},
+																"disabled": false,
+																"bottom_separator": {
+																	"type": "line",
+																	"color": {
+																		"theme_bucket": {
+																			"token": "color.border.subtle"
+																		}
+																	}
+																}
+															},
+															{
+																"identifier": "follow_system",
+																"default_selected": false,
+																"title": {
+																	"text": "Use device theme",
+																	"color": {
+																		"tint": "900",
+																		"type": "grey"
+																	},
+																	"font": {
+																		"size": "400",
+																		"weight": "medium"
+																	},
+																	"should_round_for_height": false
+																},
+																"disabled": false
+															}
+														],
+														"vertical_spacing_between_items": 16,
+														"snippet_vertical_spacing": 0,
+														"should_remove_inter_item_spacing": true
+													}
+												}
+											]
+										}
+									}
+								}
+							}
+						}
+					},
+					{
+						"title": {
+							"text": "Restricted Mode"
+						},
+						"subtitle": {
+							"text": "View details"
+						},
+						"click_action": {
+							"type": "deeplink",
+							"deeplink": {
+								"url": "grofers:\/\/order_history"
+							}
+						}
+					}
+				]
+			},
+			{
+				"title": {
+					"text": "YOUR INFORMATION"
+				},
+				"items": [
+					{
+						"title": {
+							"text": "Your orders"
+						},
+						"icon": {
+							"code": "e88a"
+						},
+						"deeplink": "grofers:\/\/search-products",
+						"click_action": {
+							"type": "deeplink",
+							"deeplink": {
+								"url": "grofers:\/\/order_history"
+							}
+						}
+					},
+					{
+						"title": {
+							"text": "Your wishlist"
+						},
+						"icon": {
+							"code": "e889"
+						},
+						"deeplink": "grofers://listing?dynamic_collection_id=wishlist_items&dynamic_header_title=Your wishlist"
+					},
+					{
+						"title": {
+							"text": "Bookmarked recipes"
+						},
+						"icon": {
+							"code": "ea67"
+						},
+						"deeplink": "grofers://usecase_listing?is_bookmarked_usecase_listing=true&toolbar_title=Bookmarked Recipes"
+					},
+					{
+						"title": {
+							"text": "Address book"
+						},
+						"icon": {
+							"code": "e888"
+						},
+						"click_action": {
+							"type": "open_address_book"
+						}
+					},
+					{
+						"title": {
+							"text": "Your collected rewards"
+						},
+						"icon": {
+							"code": "e8f9",
+							"bg_color": {
+								"tint": "100",
+								"type": "grey"
+							},
+							"color": {
+								"tint": "500",
+								"type": "grey"
+							},
+							"font_size": "16"
+						},
+						"right_icon": {
+							"code": "e92f",
+							"color": {
+								"tint": "500",
+								"type": "grey"
+							},
+							"font_size": "700"
+						},
+						"deeplink": "grofers://layout?widget_layout_id=collected_coupon&milestone_type=SCRATCH_CARD"
+					},
+					{
+						"title": {
+							"text": "GST details"
+						},
+						"icon": {
+							"code": "e9ab",
+							"bg_color": {
+								"tint": "100",
+								"type": "grey"
+							},
+							"color": {
+								"tint": "500",
+								"type": "grey"
+							},
+							"font_size": "16"
+						},
+						"right_icon": {
+							"code": "e92f",
+							"color": {
+								"tint": "500",
+								"type": "grey"
+							},
+							"font_size": "700"
+						},
+						"deeplink": "grofers://bottom-sheet/layout?widget_layout_id=gst/manage"
+					},
+					{
+						"title": {
+							"text": "E-Gift Cards"
+						},
+						"icon": {
+							"code": "ea66",
+							"bg_color": {
+								"tint": "100",
+								"type": "grey"
+							},
+							"color": {
+								"tint": "500",
+								"type": "grey"
+							},
+							"font_size": "16"
+						},
+						"deeplink": "grofers://layout?widget_layout_id=profile_egift_card"
+					},
+					{
+						"title": {
+							"text": "Your Prescriptions"
+						},
+						"icon": {
+							"code": "e9ab",
+							"bg_color": {
+								"tint": "100",
+								"type": "grey"
+							},
+							"color": {
+								"tint": "500",
+								"type": "grey"
+							},
+							"font_size": "16"
+						},
+						"deeplink": "grofers://layout?widget_layout_id=prescriptions"
+					}
+				]
+			},
+			{
+				"title": {
+					"text": "FEEDING INDIA"
+				},
+				"items": [
+					{
+						"title": {
+							"text": "Your impact"
+						},
+						"icon": {
+							"code": "ea3a",
+							"font_size": "5"
+						},
+						"click_action": {
+							"type": "blinkit_deeplink",
+							"blinkit_deeplink": {
+								"url": "grofers://layout?widget_layout_id=y25_feeding_india_donation"
+							}
+						}
+					},
+					{
+						"title": {
+							"text": "Get donation receipt"
+						},
+						"click_action": {
+							"type": "open_feeding_india_receipt_bottom_sheet"
+						},
+						"icon": {
+							"code": "e865"
+						}
+					}
+				]
+			},
+			{
+				"title": {
+					"text": "PAYMENTS AND COUPONS"
+				},
+				"items": [
+					{
+						"title": {
+							"text": "Wallet"
+						},
+						"icon": {
+							"code": "e96e"
+						},
+						"click_action": {
+							"type": "blinkit_deeplink",
+							"blinkit_deeplink": {
+								"url": "grofers://wallet"
+							}
+						}
+					},
+					{
+						"title": {
+							"text": "Blinkit Money"
+						},
+						"icon": {
+							"code": "e96e"
+						},
+						"click_action": {
+							"type": "deeplink",
+							"deeplink": {
+								"url": "grofers://layout?widget_layout_id=blinkit_money"
+							}
+						}
+					},
+					{
+						"title": {
+							"text": "Claim Gift card"
+						},
+						"icon": {
+							"code": "e8c4"
+						},
+						"deeplink": "grofers://layout?widget_layout_id=blinkit_money_gift_card_input&source=ProfilePage"
+					},
+					{
+						"title": {
+							"text": "Payment settings"
+						},
+						"icon": {
+							"code": "e8c4"
+						},
+						"click_action": {
+							"type": "open_payments_settings"
+						}
+					},
+					{
+						"title": {
+							"text": "Your collected rewards"
+						},
+						"icon": {
+							"code": "e8f9",
+							"bg_color": {
+								"tint": "100",
+								"type": "grey"
+							},
+							"color": {
+								"tint": "500",
+								"type": "grey"
+							},
+							"font_size": "16"
+						},
+						"right_icon": {
+							"code": "e92f",
+							"color": {
+								"tint": "500",
+								"type": "grey"
+							},
+							"font_size": "700"
+						},
+						"deeplink": "grofers://layout?widget_layout_id=collected_coupon&milestone_type=SCRATCH_CARD"
+					}
+				]
+			},
+			{
+				"title": {
+					"text": "BADGES 2023"
+				},
+				"items": [
+					{
+						"title": {
+							"text": "Your badges"
+						},
+						"icon": {
+							"code": "ec80"
+						},
+						"deeplink": "grofers://layout?widget_layout_id=badges2023"
+					}
+				]
+			}
+		],
+		"header_data": {
+			"title": {
+				"text": "Saket"
+			},
+			"subtitle": {
+				"text": "7980203307"
+			},
+			"click_action": {
+				"type": "deeplink",
+				"deeplink": {
+					"url": "zomato:\/\/user\/110227339"
+				}
+			},
+			"image": {
+				"url": "https:\/\/b.zmtcdn.com\/images\/user_avatars\/wine_2x.png?fit=around%7C200%3A200&crop=200%3A200%3B%2A%2C%2A"
+			},
+			"bottom_button": {
+				"text": "View activity",
+				"type": "text",
+				"size": "small",
+				"click_action": {
+					"type": "deeplink",
+					"deeplink": {
+						"url": "zomato:\/\/user\/110227339"
+					}
+				},
+				"suffix_icon": {
+					"code": "e875"
+				},
+				"is_action_disabled": 1,
+				"alignment": "left"
+			}
+		},
+		"top_sections": [
+			{
+				"items": [
+					{
+						"title": {
+							"text": "Birthday"
+						},
+						"click_animation_type": "BOUNCE"
+					}
+				]
+			}
+		],
+		"action_bar_items": [
+			{
+				"title": {
+					"text": "Wallet"
+				},
+				"click_action": {
+					"type": "blinkit_deeplink",
+					"blinkit_deeplink": {
+						"url": "grofers://wallet"
+					}
+				},
+				"icon": {
+					"code": "e96e"
+				},
+				"notification_badge": {
+					"key": "bookmarks",
+					"version": "2.0.1",
+					"type": "dot"
+				}
+			},
+			{
+				"title": {
+					"text": "Blinkit Money"
+				},
+				"click_action": {
+					"type": "blinkit_deeplink",
+					"blinkit_deeplink": {
+						"url": "grofers://layout?widget_layout_id=blinkit_money"
+					}
+				},
+				"icon": {
+					"code": "e96e"
+				},
+				"notification_badge": {
+					"key": "bookmarks",
+					"version": "2.0.1",
+					"type": "dot"
+				}
+			},
+			{
+				"title": {
+					"text": "Support"
+				},
+				"click_action": {
+					"type": "open_support"
+				},
+				"icon": {
+					"code": "e88c"
+				}
+			},
+			{
+				"title": {
+					"text": "Payments"
+				},
+				"click_action": {
+					"type": "open_payments_settings"
+				},
+				"icon": {
+					"code": "e8c4"
+				}
+			}
+		],
+		"bottom_sections": [
+			{
+				"title": {
+					"text": "OTHER INFORMATION"
+				},
+				"items": [
+					{
+						"title": {
+							"text": "Chat support"
+						},
+						"icon": {
+							"code": "e88c"
+						},
+						"click_action": {
+							"type": "open_support"
+						}
+					},
+					{
+						"title": {
+							"text": "Share the app"
+						},
+						"icon": {
+							"code": "e94c"
+						},
+						"click_action": {
+							"type": "deeplink",
+							"deeplink": {
+								"url": "zomato:\/\/zchat?service_type=delivery"
+							}
+						}
+					},
+					{
+						"title": {
+							"text": "About us"
+						},
+						"click_action": {
+							"type": "open_about"
+						},
+						"icon": {
+							"code": "e805"
+						}
+					},
+					{
+						"title": {
+							"text": "Get donation receipt"
+						},
+						"click_action": {
+							"type": "open_feeding_india_receipt_bottom_sheet"
+						},
+						"icon": {
+							"code": "ea3a"
+						}
+					},
+					{
+						"title": {
+							"text": "Rate us on the Play Store"
+						},
+						"click_action": {
+							"type": "app_rating"
+						},
+						"icon": {
+							"code": "e904"
+						}
+					},
+					{
+						"title": {
+							"text": "Account privacy"
+						},
+						"click_action": {
+							"type": "open_notification_preferences"
+						},
+						"icon": {
+							"code": "e826"
+						}
+					},
+					{
+						"title": {
+							"text": "Notification preferences"
+						},
+						"click_action": {
+							"type": "open_notification_preferences"
+						},
+						"icon": {
+							"code": "e834"
+						}
+					},
+					{
+						"title": {
+							"text": "Log out"
+						},
+						"click_action": {
+							"type": "logout"
+						},
+						"icon": {
+							"code": "e807"
+						}
+					}
+				]
+			}
+		],
+		"postback_params": ""
+	},
+	"subscribers": {
+		"USER_PROPERTIES_UPDATED": {},
+		"RESTRICTED_MODE": {}
+	},
+	"api_time_ms": 0
+}

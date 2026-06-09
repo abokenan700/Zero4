@@ -1,0 +1,75 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout
+    android:id="@id/root"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+    <SeekBar
+        android:id="@id/seekBar"
+        android:paddingTop="@dimen/sushi_spacing_micro_negative"
+        android:paddingBottom="@dimen/sushi_spacing_micro_negative"
+        android:layout_width="@dimen/sushi_spacing_femto"
+        android:layout_height="@dimen/sushi_spacing_femto"
+        android:progressDrawable="@drawable/unlock_bg"
+        android:thumb="@drawable/unlock_drawable"
+        android:thumbOffset="@dimen/sushi_spacing_micro_negative"
+        android:paddingStart="@dimen/sushi_spacing_femto"
+        android:paddingEnd="@dimen/sushi_spacing_femto"
+        android:splitTrack="false"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+    <com.zomato.ui.atomiclib.atom.ZTextView
+        android:textColor="@color/sushi_purple_800"
+        android:id="@id/rightTitle"
+        android:padding="@dimen/dimen_0"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:layout_constraintBottom_toBottomOf="@id/seekBar"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.6"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="@id/seekBar"
+        app:layout_constraintVertical_bias="0.5"
+        app:textViewType="SEMIBOLD_500" />
+    <com.zomato.ui.atomiclib.atom.ZTextView
+        android:textColor="@color/sushi_white"
+        android:id="@id/leftTitle"
+        android:visibility="gone"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:layout_constraintBottom_toBottomOf="@id/seekBar"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="@id/seekBar"
+        app:textViewType="SEMIBOLD_500" />
+    <FrameLayout
+        android:id="@id/lockedBg"
+        android:background="@color/sushi_onion_800"
+        android:visibility="gone"
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:layout_margin="@dimen/size_4">
+        <com.zomato.ui.atomiclib.atom.ZRoundedImageView
+            android:layout_gravity="center"
+            android:id="@id/lockedImage"
+            android:visibility="gone"
+            android:layout_width="40.0dip"
+            android:layout_height="40.0dip"
+            android:src="@drawable/unlocked"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+        <com.zomato.ui.atomiclib.atom.ZProgressLoader
+            android:layout_gravity="center"
+            android:id="@id/progress_loader"
+            android:visibility="gone"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            app:progressLoaderColor="@color/sushi_onion_100" />
+    </FrameLayout>
+</androidx.constraintlayout.widget.ConstraintLayout>

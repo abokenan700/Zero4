@@ -1,0 +1,67 @@
+<?xml version="1.0" encoding="utf-8"?>
+<merge
+    android:gravity="center"
+    android:id="@id/root_view"
+    android:layout_width="fill_parent"
+    android:layout_height="wrap_content"
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+    <LinearLayout
+        android:gravity="start|center"
+        android:orientation="horizontal"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content">
+        <com.zomato.ui.atomiclib.atom.ZRoundedImageView
+            android:id="@id/imageView"
+            android:visibility="gone"
+            android:layout_width="@dimen/size_48"
+            android:layout_height="@dimen/size_48"
+            android:layout_marginEnd="@dimen/sushi_spacing_macro" />
+        <LinearLayout
+            android:orientation="vertical"
+            android:layout_width="0.0dip"
+            android:layout_height="wrap_content"
+            android:layout_weight="1.0">
+            <com.zomato.ui.atomiclib.atom.staticviews.StaticTextView
+                android:gravity="start|center"
+                android:id="@id/title"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:singleLine="true" />
+            <com.zomato.ui.atomiclib.atom.staticviews.StaticTextView
+                android:gravity="start|center"
+                android:id="@id/subtitle"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/sushi_spacing_nano" />
+            <com.zomato.ui.atomiclib.atom.ZButton
+                android:id="@id/action_button"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/sushi_spacing_between"
+                app:buttonColor="?themeColor500"
+                app:buttonDimension="small"
+                app:buttonType="text" />
+        </LinearLayout>
+        <LinearLayout
+            android:orientation="vertical"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="@dimen/sushi_spacing_macro">
+            <com.zomato.ui.atomiclib.atom.staticviews.StaticTextView
+                android:layout_gravity="end"
+                android:id="@id/right_title"
+                android:visibility="gone"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:singleLine="true" />
+            <com.zomato.ui.atomiclib.atom.ZTag
+                android:layout_gravity="end"
+                android:id="@id/tag"
+                android:visibility="gone"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/sushi_spacing_between" />
+        </LinearLayout>
+    </LinearLayout>
+</merge>

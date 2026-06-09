@@ -1,0 +1,82 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout
+    android:id="@id/container"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+    <FrameLayout
+        android:id="@id/image_container"
+        android:clipChildren="true"
+        android:clipToPadding="true"
+        android:layout_width="@dimen/size_48"
+        android:layout_height="@dimen/size_48"
+        app:layout_constraintBottom_toTopOf="@id/title"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent">
+        <com.blinkit.commons.ui.ui.customviews.BShapeableImageView
+            android:id="@id/image"
+            android:layout_width="fill_parent"
+            android:layout_height="fill_parent"
+            android:scaleType="centerInside" />
+    </FrameLayout>
+    <com.blinkit.commons.ui.ui.customviews.viewstub.image.BLottieAnimationViewStub
+        android:id="@id/lottie"
+        android:layout_width="@dimen/size_48"
+        android:layout_height="@dimen/size_48"
+        app:layout_constraintBottom_toTopOf="@id/title"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent" />
+    <androidx.constraintlayout.widget.Barrier
+        android:id="@id/media_bottom"
+        android:layout_width="0.0dip"
+        android:layout_height="0.0dip"
+        app:barrierDirection="bottom"
+        app:constraint_referenced_ids="image_container,lottie" />
+    <androidx.constraintlayout.widget.Barrier
+        android:id="@id/media_end"
+        android:layout_width="0.0dip"
+        android:layout_height="0.0dip"
+        app:barrierDirection="end"
+        app:constraint_referenced_ids="image_container,lottie" />
+    <androidx.constraintlayout.widget.Barrier
+        android:id="@id/media_top"
+        android:layout_width="0.0dip"
+        android:layout_height="0.0dip"
+        app:barrierDirection="top"
+        app:constraint_referenced_ids="image_container,lottie" />
+    <com.blinkit.blink.elements.ui.atoms.text.BlinkitTextView
+        android:gravity="center_horizontal"
+        android:id="@id/title"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/sushi_spacing_micro"
+        android:lines="2"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/media_bottom"
+        app:textViewType="MEDIUM_300" />
+    <com.zomato.ui.atomiclib.atom.ZTextView
+        android:gravity="center_horizontal"
+        android:id="@id/title_fix_width"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:lines="2"
+        app:layout_constraintEnd_toEndOf="@id/title"
+        app:layout_constraintStart_toStartOf="@id/title"
+        app:layout_constraintTop_toTopOf="@id/title"
+        app:textViewType="MEDIUM_300" />
+    <com.blinkit.commons.ui.ui.customviews.viewstub.text.ZTextViewStub
+        android:id="@id/tag"
+        android:paddingLeft="@dimen/sushi_spacing_micro"
+        android:paddingTop="@dimen/sushi_spacing_femto"
+        android:paddingRight="@dimen/sushi_spacing_micro"
+        android:paddingBottom="@dimen/sushi_spacing_pico"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:paddingHorizontal="@dimen/sushi_spacing_micro"
+        app:layout_constraintBottom_toTopOf="@id/media_top"
+        app:layout_constraintEnd_toEndOf="@id/media_end"
+        app:layout_constraintStart_toEndOf="@id/media_end"
+        app:layout_constraintTop_toTopOf="@id/media_top" />
+</androidx.constraintlayout.widget.ConstraintLayout>

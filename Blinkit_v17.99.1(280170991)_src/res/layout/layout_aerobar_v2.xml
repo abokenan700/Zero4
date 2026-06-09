@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout
+    android:layout_gravity="center"
+    android:background="@color/color_white"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+    <com.zomato.ui.atomiclib.atom.ZSeparator
+        android:id="@id/separator_aerobar"
+        android:layout_width="fill_parent"
+        android:layout_height="@dimen/divider_view_height"
+        app:layout_constraintTop_toTopOf="parent"
+        app:zseparator_color="@color/sushi_grey_200" />
+    <com.blinkit.consumerapp.ui.aerobar.common.AutoTransitionViewPager
+        android:id="@id/viewpager_aerobar"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.0" />
+    <com.blinkit.consumerapp.ui.aerobar.common.indicator.CircleIndicator
+        android:layout_gravity="bottom|center"
+        android:id="@id/indicator_aerobar"
+        android:paddingBottom="@dimen/dimen_16"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:ci_drawable="?themeColor500"
+        app:ci_drawable_unselected="@color/sushi_grey_400"
+        app:ci_gravity="start"
+        app:ci_height="@dimen/sushi_spacing_nano"
+        app:ci_margin="@dimen/nitro_between_padding_small"
+        app:ci_resize="true"
+        app:ci_width="@dimen/sushi_spacing_macro"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/viewpager_aerobar" />
+</androidx.constraintlayout.widget.ConstraintLayout>

@@ -1,0 +1,51 @@
+<?xml version="1.0" encoding="utf-8"?>
+<merge
+    android:id="@id/root"
+    android:background="@drawable/universal_ripple_effect"
+    android:layout_width="fill_parent"
+    android:layout_height="wrap_content"
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+    <FrameLayout
+        android:id="@id/image_view_holder"
+        android:layout_width="100.0dip"
+        android:layout_height="100.0dip"
+        android:layout_margin="@dimen/nitro_side_padding">
+        <ImageView
+            android:id="@id/image_view"
+            android:layout_width="fill_parent"
+            android:layout_height="fill_parent"
+            android:scaleType="centerCrop" />
+        <View
+            android:background="@drawable/circular_frame"
+            android:layout_width="fill_parent"
+            android:layout_height="fill_parent" />
+    </FrameLayout>
+    <LinearLayout
+        android:orientation="vertical"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignTop="@id/image_view_holder"
+        android:layout_toEndOf="@id/image_view_holder">
+        <com.zomato.ui.atomiclib.atom.ZTextView
+            android:textColor="?attr_7f040475"
+            android:id="@id/album_name"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/sushi_spacing_micro"
+            app:textViewType="MEDIUM_600" />
+        <com.zomato.ui.atomiclib.atom.ZTextView
+            android:textColor="?attr_7f040475"
+            android:id="@id/album_photo_count"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/sushi_spacing_micro"
+            app:textViewType="REGULAR_300" />
+    </LinearLayout>
+    <View
+        android:background="@color/z_color_separator"
+        android:layout_width="fill_parent"
+        android:layout_height="@dimen/border_stroke_width"
+        android:layout_below="@id/image_view_holder"
+        android:layout_alignStart="@id/image_view_holder" />
+</merge>

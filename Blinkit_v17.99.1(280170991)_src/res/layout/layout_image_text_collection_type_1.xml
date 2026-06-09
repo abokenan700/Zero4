@@ -1,0 +1,74 @@
+<?xml version="1.0" encoding="utf-8"?>
+<merge
+    android:id="@id/card_container"
+    android:layout_width="fill_parent"
+    android:layout_height="wrap_content"
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+    <include
+        android:id="@id/left_container"
+        android:layout_width="@dimen/sushi_spacing_femto"
+        android:layout_height="wrap_content"
+        android:layout_marginEnd="@dimen/sushi_spacing_micro"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toStartOf="@id/vertical_guideline"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        layout="@layout/layout_image_text_collection_type_1_container" />
+    <androidx.constraintlayout.widget.Guideline
+        android:orientation="vertical"
+        android:id="@id/vertical_guideline"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:layout_constraintGuide_percent="0.5" />
+    <include
+        android:id="@id/top_left_container"
+        android:layout_width="@dimen/sushi_spacing_femto"
+        android:layout_height="@dimen/sushi_spacing_femto"
+        android:layout_marginBottom="@dimen/sushi_spacing_micro"
+        android:layout_marginStart="@dimen/sushi_spacing_micro"
+        app:layout_constraintBottom_toTopOf="@id/horizontal_guideline"
+        app:layout_constraintEnd_toStartOf="@id/top_right_container"
+        app:layout_constraintStart_toEndOf="@id/vertical_guideline"
+        app:layout_constraintTop_toTopOf="@id/left_container"
+        layout="@layout/layout_image_text_collection_type_1_container" />
+    <include
+        android:id="@id/top_right_container"
+        android:layout_width="@dimen/sushi_spacing_femto"
+        android:layout_height="@dimen/sushi_spacing_femto"
+        android:layout_marginBottom="@dimen/sushi_spacing_micro"
+        android:layout_marginStart="@dimen/sushi_spacing_macro"
+        app:layout_constraintBottom_toTopOf="@id/horizontal_guideline"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toEndOf="@id/top_left_container"
+        app:layout_constraintTop_toTopOf="@id/left_container"
+        layout="@layout/layout_image_text_collection_type_1_container" />
+    <androidx.constraintlayout.widget.Guideline
+        android:orientation="horizontal"
+        android:id="@id/horizontal_guideline"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        app:layout_constraintGuide_percent="0.5" />
+    <include
+        android:id="@id/bottom_left_container"
+        android:layout_width="@dimen/sushi_spacing_femto"
+        android:layout_height="@dimen/sushi_spacing_femto"
+        android:layout_marginTop="@dimen/sushi_spacing_micro"
+        android:layout_marginStart="@dimen/sushi_spacing_micro"
+        app:layout_constraintBottom_toBottomOf="@id/left_container"
+        app:layout_constraintEnd_toStartOf="@id/bottom_right_container"
+        app:layout_constraintStart_toEndOf="@id/vertical_guideline"
+        app:layout_constraintTop_toBottomOf="@id/horizontal_guideline"
+        layout="@layout/layout_image_text_collection_type_1_container" />
+    <include
+        android:id="@id/bottom_right_container"
+        android:layout_width="@dimen/sushi_spacing_femto"
+        android:layout_height="@dimen/sushi_spacing_femto"
+        android:layout_marginTop="@dimen/sushi_spacing_micro"
+        android:layout_marginStart="@dimen/sushi_spacing_macro"
+        app:layout_constraintBottom_toBottomOf="@id/left_container"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toEndOf="@id/bottom_left_container"
+        app:layout_constraintTop_toBottomOf="@id/horizontal_guideline"
+        layout="@layout/layout_image_text_collection_type_1_container" />
+</merge>

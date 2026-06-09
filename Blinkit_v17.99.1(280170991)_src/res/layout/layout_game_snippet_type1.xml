@@ -1,0 +1,60 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    android:orientation="vertical"
+    android:layout_width="fill_parent"
+    android:layout_height="wrap_content"
+    xmlns:android="http://schemas.android.com/apk/res/android">
+    <com.zomato.ui.atomiclib.atom.ZTextView
+        android:textColor="@color/sushi_white"
+        android:gravity="center"
+        android:id="@id/title"
+        android:paddingLeft="@dimen/sushi_spacing_base"
+        android:paddingTop="@dimen/sushi_spacing_base"
+        android:paddingRight="@dimen/sushi_spacing_base"
+        android:paddingBottom="@dimen/sushi_spacing_macro"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:paddingHorizontal="@dimen/sushi_spacing_base" />
+    <com.zomato.ui.atomiclib.atom.ZTextView
+        android:textColor="@color/sushi_white"
+        android:gravity="center"
+        android:id="@id/subtitle"
+        android:paddingLeft="@dimen/sushi_spacing_base"
+        android:paddingRight="@dimen/sushi_spacing_base"
+        android:paddingBottom="@dimen/sushi_spacing_loose"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:paddingHorizontal="@dimen/sushi_spacing_base" />
+    <com.zomato.ui.lib.utils.HorizontalScrollViewWithScrollListener
+        android:scrollbarAlwaysDrawVerticalTrack="true"
+        android:scrollbarStyle="outsideInset"
+        android:id="@id/game_scroll_view"
+        android:scrollbars="horizontal"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content">
+        <FrameLayout
+            android:id="@id/scroll_frame"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content">
+            <LinearLayout
+                android:layout_gravity="start|center|top"
+                android:orientation="horizontal"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:backgroundTint="@color/sushi_indigo_800">
+                <com.zomato.ui.atomiclib.atom.ZRoundedImageView
+                    android:id="@id/bg_img"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:scaleType="fitXY"
+                    android:backgroundTint="@color/sushi_indigo_800" />
+                <com.zomato.ui.atomiclib.atom.ZRoundedImageView
+                    android:id="@id/bg_img2"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:scaleType="fitXY"
+                    android:backgroundTint="@color/sushi_indigo_800" />
+            </LinearLayout>
+        </FrameLayout>
+    </com.zomato.ui.lib.utils.HorizontalScrollViewWithScrollListener>
+</LinearLayout>

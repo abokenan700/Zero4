@@ -1,0 +1,120 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout
+    android:id="@id/parent_layout"
+    android:background="@color/sushi_white"
+    android:focusable="true"
+    android:clickable="true"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+    <fragment
+        android:name="com.zomato.chatsdk.location.ui.ChatCustomMapFragment"
+        android:id="@id/mapview"
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:layout_marginBottom="@dimen/sushi_spacing_mini_negative"
+        app:layout_constrainedHeight="true"
+        app:layout_constraintBottom_toTopOf="@id/send_location_button_container"
+        app:layout_constraintTop_toTopOf="parent" />
+    <com.zomato.ui.atomiclib.atom.ZIconFontTextView
+        android:layout_gravity="start"
+        android:id="@id/back_arrow"
+        android:padding="@dimen/sushi_spacing_extra"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/icon_font_back"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+    <com.zomato.ui.atomiclib.atom.ZRoundedImageView
+        android:id="@id/pinMapPin"
+        android:paddingBottom="@dimen/dimen_map_pin_bottom_padding"
+        android:visibility="gone"
+        android:layout_width="@dimen/dimen_map_pin_size"
+        android:layout_height="@dimen/dimen_map_pin_size"
+        android:layout_marginBottom="@dimen/sushi_spacing_mini_negative"
+        android:src="@drawable/chat_add_address_marker"
+        android:scaleType="fitCenter"
+        app:layout_constraintBottom_toTopOf="@id/send_location_button_container"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+    <com.zomato.ui.atomiclib.atom.ZIconFontTextView
+        android:textSize="@dimen/current_location_icon_size"
+        android:textColor="?attr_7f040475"
+        android:gravity="center"
+        android:id="@id/my_location"
+        android:padding="@dimen/sushi_spacing_macro"
+        android:visibility="gone"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_margin="@dimen/sushi_spacing_macro"
+        android:text="@string/icon_font_current_location"
+        android:textAlignment="center"
+        android:elevation="@dimen/dimen_5"
+        app:layout_constraintBottom_toTopOf="@id/send_location_button_container"
+        app:layout_constraintEnd_toEndOf="parent" />
+    <LinearLayout
+        android:orientation="vertical"
+        android:id="@id/send_location_button_container"
+        android:background="@color/sushi_white"
+        android:padding="@dimen/sushi_spacing_base"
+        android:visibility="gone"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:translationZ="20.0dip"
+        app:layout_constraintBottom_toBottomOf="parent">
+        <com.zomato.ui.atomiclib.atom.ZTextView
+            android:id="@id/bottom_sheet_title"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content" />
+        <EditText
+            android:gravity="top"
+            android:id="@id/bottom_sheet_edittext"
+            android:paddingLeft="@dimen/sushi_spacing_mini"
+            android:paddingRight="@dimen/sushi_spacing_mini"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/sushi_spacing_base"
+            android:lines="3"
+            android:paddingHorizontal="@dimen/sushi_spacing_mini" />
+        <FrameLayout
+            android:paddingTop="@dimen/sushi_spacing_base"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content">
+            <com.zomato.ui.atomiclib.atom.ZButton
+                android:id="@id/send_location_button"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:hapticFeedbackEnabled="true" />
+            <ProgressBar
+                android:layout_gravity="center"
+                android:id="@id/share_location_progress_bar"
+                android:padding="@dimen/sushi_spacing_base"
+                android:visibility="gone"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:indeterminate="true"
+                android:indeterminateTint="@color/sushi_white"
+                android:indeterminateTintMode="src_atop"
+                style="?android:progressBarStyleSmall" />
+        </FrameLayout>
+    </LinearLayout>
+    <ProgressBar
+        android:id="@id/progressBar"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+    <com.zomato.chatsdk.chatuikit.snippets.ChatSDKNoContentView
+        android:id="@id/noContentView"
+        android:visibility="gone"
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+</androidx.constraintlayout.widget.ConstraintLayout>

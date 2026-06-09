@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="utf-8"?>
+<merge
+    android:id="@id/bottom_container"
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+    <com.zomato.ui.atomiclib.atom.ZButton
+        android:id="@id/left_button"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:maxLines="1"
+        app:buttonDimension="medium"
+        app:buttonType="outline" />
+    <com.zomato.ui.atomiclib.atom.ZButton
+        android:ellipsize="end"
+        android:id="@id/right_button"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:maxLines="1"
+        android:layout_marginStart="@dimen/sushi_spacing_base"
+        app:buttonDimension="medium"
+        app:buttonType="outline" />
+</merge>

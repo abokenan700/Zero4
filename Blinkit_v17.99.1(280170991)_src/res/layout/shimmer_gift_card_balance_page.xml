@@ -1,0 +1,197 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout
+    android:background="?attr_7f04017d"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+    <androidx.constraintlayout.widget.Guideline
+        android:orientation="vertical"
+        android:id="@id/guidelineExtremeLeft"
+        android:padding="@dimen/nitro_side_padding"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:layout_constraintGuide_percent="0.35" />
+    <androidx.constraintlayout.widget.Guideline
+        android:orientation="vertical"
+        android:id="@id/guidelineLeft"
+        android:padding="@dimen/nitro_side_padding"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:layout_constraintGuide_percent="0.45" />
+    <androidx.constraintlayout.widget.Guideline
+        android:orientation="vertical"
+        android:id="@id/guidelineRight"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:layout_constraintGuide_percent="0.55" />
+    <androidx.constraintlayout.widget.Guideline
+        android:orientation="vertical"
+        android:id="@id/guidelineExtremeRight"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:layout_constraintGuide_percent="0.65" />
+    <com.zomato.ui.atomiclib.molecules.ShimmerChildView
+        android:id="@id/header"
+        android:layout_width="@dimen/dimen_0"
+        android:layout_height="@dimen/size_154"
+        android:layout_marginLeft="@dimen/size_12"
+        android:layout_marginTop="@dimen/size_4"
+        android:layout_marginRight="@dimen/size_12"
+        android:layout_marginHorizontal="@dimen/size_12"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:shimmer_corner_radius="@dimen/dimen_16" />
+    <com.zomato.ui.atomiclib.molecules.ShimmerChildView
+        android:id="@id/tag_title2"
+        android:layout_width="@dimen/size_116"
+        android:layout_height="@dimen/dimen_20"
+        android:layout_marginTop="@dimen/size_32"
+        android:layout_marginStart="@dimen/dimen_12"
+        android:layout_marginEnd="@dimen/dimen_12"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/header"
+        app:shimmer_corner_radius="@dimen/dimen_16" />
+    <com.zomato.ui.atomiclib.molecules.ShimmerChildView
+        android:id="@id/tag_title3"
+        android:layout_width="@dimen/size_116"
+        android:layout_height="@dimen/dimen_20"
+        android:layout_marginTop="@dimen/size_32"
+        android:layout_marginStart="@dimen/dimen_12"
+        android:layout_marginEnd="@dimen/dimen_12"
+        app:layout_constraintStart_toEndOf="@id/tag_title2"
+        app:layout_constraintTop_toBottomOf="@id/header"
+        app:shimmer_corner_radius="@dimen/dimen_16" />
+    <com.zomato.ui.atomiclib.molecules.ShimmerChildView
+        android:id="@id/tag_title4"
+        android:layout_width="@dimen/size_116"
+        android:layout_height="@dimen/dimen_20"
+        android:layout_marginTop="@dimen/size_32"
+        android:layout_marginStart="@dimen/dimen_12"
+        android:layout_marginEnd="@dimen/dimen_12"
+        app:layout_constraintStart_toEndOf="@id/tag_title3"
+        app:layout_constraintTop_toBottomOf="@id/header"
+        app:shimmer_corner_radius="@dimen/dimen_16" />
+    <com.zomato.ui.atomiclib.molecules.ShimmerChildView
+        android:id="@id/tag_title5"
+        android:layout_width="@dimen/size_116"
+        android:layout_height="@dimen/dimen_20"
+        android:layout_marginTop="@dimen/size_32"
+        android:layout_marginStart="@dimen/dimen_12"
+        android:layout_marginEnd="@dimen/dimen_12"
+        app:layout_constraintStart_toEndOf="@id/tag_title4"
+        app:layout_constraintTop_toBottomOf="@id/header"
+        app:shimmer_corner_radius="@dimen/dimen_16" />
+    <androidx.constraintlayout.widget.Barrier
+        android:id="@id/shimmerHomeHeaderBarrier"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:barrierDirection="bottom"
+        app:constraint_referenced_ids="tag_title5" />
+    <com.zomato.ui.atomiclib.molecules.ShimmerChildView
+        android:id="@id/tag_item0"
+        android:layout_width="@dimen/size_50"
+        android:layout_height="@dimen/size_50"
+        android:layout_marginTop="@dimen/dimen_20"
+        android:layout_marginStart="@dimen/dimen_12"
+        android:layout_marginEnd="@dimen/dimen_12"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/tag_title2"
+        app:shimmer_corner_radius="@dimen/dimen_16" />
+    <com.zomato.ui.atomiclib.molecules.ShimmerChildView
+        android:id="@id/tag_item01"
+        android:layout_width="0.0dip"
+        android:layout_height="0.0dip"
+        android:layout_marginStart="@dimen/dimen_12"
+        android:layout_marginEnd="@dimen/dimen_12"
+        app:layout_constraintBottom_toBottomOf="@id/tag_item0"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toEndOf="@id/tag_item0"
+        app:layout_constraintTop_toTopOf="@id/tag_item0"
+        app:shimmer_corner_radius="@dimen/dimen_16" />
+    <com.zomato.ui.atomiclib.molecules.ShimmerChildView
+        android:id="@id/tag_item10"
+        android:layout_width="@dimen/size_50"
+        android:layout_height="@dimen/size_50"
+        android:layout_marginTop="@dimen/dimen_20"
+        android:layout_marginStart="@dimen/dimen_12"
+        android:layout_marginEnd="@dimen/dimen_12"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/tag_item0"
+        app:shimmer_corner_radius="@dimen/dimen_16" />
+    <com.zomato.ui.atomiclib.molecules.ShimmerChildView
+        android:id="@id/tag_item11"
+        android:layout_width="0.0dip"
+        android:layout_height="0.0dip"
+        android:layout_marginStart="@dimen/dimen_12"
+        android:layout_marginEnd="@dimen/dimen_12"
+        app:layout_constraintBottom_toBottomOf="@id/tag_item10"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toEndOf="@id/tag_item10"
+        app:layout_constraintTop_toTopOf="@id/tag_item10"
+        app:shimmer_corner_radius="@dimen/dimen_16" />
+    <com.zomato.ui.atomiclib.molecules.ShimmerChildView
+        android:id="@id/tag_item20"
+        android:layout_width="@dimen/size_50"
+        android:layout_height="@dimen/size_50"
+        android:layout_marginTop="@dimen/dimen_20"
+        android:layout_marginStart="@dimen/dimen_12"
+        android:layout_marginEnd="@dimen/dimen_12"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/tag_item10"
+        app:shimmer_corner_radius="@dimen/dimen_16" />
+    <com.zomato.ui.atomiclib.molecules.ShimmerChildView
+        android:id="@id/tag_item21"
+        android:layout_width="0.0dip"
+        android:layout_height="0.0dip"
+        android:layout_marginStart="@dimen/dimen_12"
+        android:layout_marginEnd="@dimen/dimen_12"
+        app:layout_constraintBottom_toBottomOf="@id/tag_item20"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toEndOf="@id/tag_item10"
+        app:layout_constraintTop_toTopOf="@id/tag_item20"
+        app:shimmer_corner_radius="@dimen/dimen_16" />
+    <com.zomato.ui.atomiclib.molecules.ShimmerChildView
+        android:id="@id/tag_item30"
+        android:layout_width="@dimen/size_50"
+        android:layout_height="@dimen/size_50"
+        android:layout_marginTop="@dimen/dimen_20"
+        android:layout_marginStart="@dimen/dimen_12"
+        android:layout_marginEnd="@dimen/dimen_12"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/tag_item20"
+        app:shimmer_corner_radius="@dimen/dimen_16" />
+    <com.zomato.ui.atomiclib.molecules.ShimmerChildView
+        android:id="@id/tag_item31"
+        android:layout_width="0.0dip"
+        android:layout_height="0.0dip"
+        android:layout_marginStart="@dimen/dimen_12"
+        android:layout_marginEnd="@dimen/dimen_12"
+        app:layout_constraintBottom_toBottomOf="@id/tag_item30"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toEndOf="@id/tag_item10"
+        app:layout_constraintTop_toTopOf="@id/tag_item30"
+        app:shimmer_corner_radius="@dimen/dimen_16" />
+    <com.zomato.ui.atomiclib.molecules.ShimmerChildView
+        android:id="@id/tag_item40"
+        android:layout_width="@dimen/size_50"
+        android:layout_height="@dimen/size_50"
+        android:layout_marginTop="@dimen/dimen_20"
+        android:layout_marginStart="@dimen/dimen_12"
+        android:layout_marginEnd="@dimen/dimen_12"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/tag_item30"
+        app:shimmer_corner_radius="@dimen/dimen_16" />
+    <com.zomato.ui.atomiclib.molecules.ShimmerChildView
+        android:id="@id/tag_item41"
+        android:layout_width="0.0dip"
+        android:layout_height="0.0dip"
+        android:layout_marginStart="@dimen/dimen_12"
+        android:layout_marginEnd="@dimen/dimen_12"
+        app:layout_constraintBottom_toBottomOf="@id/tag_item40"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toEndOf="@id/tag_item10"
+        app:layout_constraintTop_toTopOf="@id/tag_item40"
+        app:shimmer_corner_radius="@dimen/dimen_16" />
+</androidx.constraintlayout.widget.ConstraintLayout>

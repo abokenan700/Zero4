@@ -1,0 +1,79 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    android:gravity="center"
+    android:layout_gravity="center"
+    android:orientation="horizontal"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+    <com.zomato.ui.atomiclib.snippets.RatingItemV2
+        android:layout_gravity="center"
+        android:id="@id/one"
+        android:layout_width="@dimen/star_rating_size_large"
+        android:layout_height="@dimen/star_rating_size_large"
+        android:layout_marginEnd="@dimen/spacing_between_3dp" />
+    <com.zomato.ui.atomiclib.snippets.RatingItemV2
+        android:layout_gravity="center"
+        android:id="@id/two"
+        android:layout_width="@dimen/star_rating_size_large"
+        android:layout_height="@dimen/star_rating_size_large"
+        android:layout_marginEnd="@dimen/spacing_between_3dp" />
+    <com.zomato.ui.atomiclib.snippets.RatingItemV2
+        android:layout_gravity="center"
+        android:id="@id/three"
+        android:layout_width="@dimen/star_rating_size_large"
+        android:layout_height="@dimen/star_rating_size_large"
+        android:layout_marginEnd="@dimen/spacing_between_3dp" />
+    <com.zomato.ui.atomiclib.snippets.RatingItemV2
+        android:layout_gravity="center"
+        android:id="@id/four"
+        android:layout_width="@dimen/star_rating_size_large"
+        android:layout_height="@dimen/star_rating_size_large"
+        android:layout_marginEnd="@dimen/spacing_between_3dp" />
+    <com.zomato.ui.atomiclib.snippets.RatingItemV2
+        android:layout_gravity="center"
+        android:id="@id/five"
+        android:layout_width="@dimen/star_rating_size_large"
+        android:layout_height="@dimen/star_rating_size_large" />
+    <com.zomato.ui.atomiclib.atom.ZTextView
+        android:id="@id/ratingText"
+        android:visibility="gone"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:maxLines="1"
+        android:paddingStart="@dimen/sushi_spacing_nano"
+        app:textFontWeight="semibold" />
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:id="@id/subtitleContainer"
+        android:visibility="gone"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="@dimen/sushi_spacing_nano">
+        <com.zomato.ui.atomiclib.atom.ZTextView
+            android:textColor="@color/sushi_grey_400"
+            android:ellipsize="end"
+            android:id="@id/ratingSubtitle"
+            android:visibility="gone"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:lines="1"
+            android:includeFontPadding="false"
+            android:paddingStart="@dimen/sushi_spacing_nano"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            app:textFontWeight="regular" />
+        <com.zomato.ui.atomiclib.atom.ZSeparator
+            android:id="@id/separator"
+            android:visibility="gone"
+            android:layout_width="0.0dip"
+            android:layout_height="@dimen/sushi_spacing_pico"
+            android:layout_marginTop="@dimen/sushi_spacing_nano"
+            android:layout_marginStart="@dimen/sushi_spacing_nano"
+            android:layout_marginEnd="@dimen/sushi_spacing_pico"
+            app:layout_constraintEnd_toEndOf="@id/ratingSubtitle"
+            app:layout_constraintStart_toStartOf="@id/ratingSubtitle"
+            app:layout_constraintTop_toBottomOf="@id/ratingSubtitle"
+            app:zseparator_type="DOTTED" />
+    </androidx.constraintlayout.widget.ConstraintLayout>
+</LinearLayout>

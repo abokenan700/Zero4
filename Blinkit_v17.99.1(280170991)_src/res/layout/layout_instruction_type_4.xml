@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="utf-8"?>
+<merge
+    android:layout_width="fill_parent"
+    android:layout_height="wrap_content"
+    xmlns:android="http://schemas.android.com/apk/res/android">
+    <LinearLayout
+        android:orientation="vertical"
+        android:id="@id/instructions_container"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content" />
+    <View
+        android:id="@id/snippet_overlay_view"
+        android:background="?attr_7f04017d"
+        android:visibility="gone"
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:alpha="0.5" />
+</merge>

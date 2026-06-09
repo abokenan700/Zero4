@@ -1,0 +1,117 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout
+    android:background="?attr_7f0403a1"
+    android:paddingLeft="@dimen/dimen_16"
+    android:paddingRight="@dimen/size_12"
+    android:paddingBottom="@dimen/size_12"
+    android:layout_width="fill_parent"
+    android:layout_height="wrap_content"
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+    <include
+        android:layout_gravity="center_vertical"
+        android:id="@id/shimmer_sq_1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/size_12"
+        android:layout_marginRight="@dimen/size_8"
+        app:layout_constraintTop_toTopOf="parent"
+        layout="@layout/qd_shimmer_square" />
+    <include
+        android:layout_gravity="center_vertical"
+        android:id="@id/shimmer_rec_1"
+        android:layout_width="0.0dip"
+        android:layout_height="18.0dip"
+        android:layout_marginStart="@dimen/size_12"
+        app:layout_constraintBottom_toBottomOf="@id/shimmer_sq_1"
+        app:layout_constraintEnd_toStartOf="@id/guide_70"
+        app:layout_constraintStart_toEndOf="@id/shimmer_sq_1"
+        app:layout_constraintTop_toTopOf="@id/shimmer_sq_1"
+        layout="@layout/qd_shimmer_rectangle" />
+    <include
+        android:layout_gravity="center_vertical"
+        android:id="@id/shimmer_sq_2"
+        android:layout_width="0.0dip"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/size_12"
+        android:layout_marginRight="@dimen/size_8"
+        app:layout_constraintTop_toBottomOf="@id/shimmer_sq_1"
+        layout="@layout/qd_shimmer_square" />
+    <include
+        android:layout_gravity="center_vertical"
+        android:id="@id/shimmer_rec_2"
+        android:layout_width="0.0dip"
+        android:layout_height="18.0dip"
+        android:layout_marginStart="@dimen/size_12"
+        app:layout_constraintBottom_toBottomOf="@id/shimmer_sq_2"
+        app:layout_constraintEnd_toStartOf="@id/guide_50"
+        app:layout_constraintStart_toEndOf="@id/shimmer_sq_2"
+        app:layout_constraintTop_toTopOf="@id/shimmer_sq_2"
+        layout="@layout/qd_shimmer_rectangle" />
+    <include
+        android:layout_gravity="center_vertical"
+        android:id="@id/shimmer_sq_3"
+        android:layout_width="0.0dip"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/size_12"
+        android:layout_marginRight="@dimen/size_8"
+        android:layout_weight="0.1"
+        app:layout_constraintTop_toBottomOf="@id/shimmer_sq_2"
+        layout="@layout/qd_shimmer_square" />
+    <include
+        android:layout_gravity="center_vertical"
+        android:id="@id/shimmer_rec_3"
+        android:layout_width="0.0dip"
+        android:layout_height="18.0dip"
+        android:layout_marginStart="@dimen/size_12"
+        app:layout_constraintBottom_toBottomOf="@id/shimmer_sq_3"
+        app:layout_constraintEnd_toStartOf="@id/guide_60"
+        app:layout_constraintStart_toEndOf="@id/shimmer_sq_3"
+        app:layout_constraintTop_toTopOf="@id/shimmer_sq_3"
+        layout="@layout/qd_shimmer_rectangle" />
+    <include
+        android:layout_gravity="center_vertical"
+        android:id="@id/shimmer_sq_4"
+        android:layout_width="0.0dip"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/size_12"
+        android:layout_marginRight="@dimen/size_8"
+        android:layout_weight="0.1"
+        app:layout_constraintTop_toBottomOf="@id/shimmer_sq_3"
+        layout="@layout/qd_shimmer_square" />
+    <include
+        android:layout_gravity="center_vertical"
+        android:id="@id/shimmer_rec_4"
+        android:layout_width="0.0dip"
+        android:layout_height="18.0dip"
+        android:layout_marginStart="@dimen/size_12"
+        app:layout_constraintBottom_toBottomOf="@id/shimmer_sq_4"
+        app:layout_constraintEnd_toStartOf="@id/guide_40"
+        app:layout_constraintStart_toEndOf="@id/shimmer_sq_4"
+        app:layout_constraintTop_toTopOf="@id/shimmer_sq_4"
+        layout="@layout/qd_shimmer_rectangle" />
+    <androidx.constraintlayout.widget.Guideline
+        android:orientation="vertical"
+        android:id="@id/guide_70"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:layout_constraintGuide_percent="0.7" />
+    <androidx.constraintlayout.widget.Guideline
+        android:orientation="vertical"
+        android:id="@id/guide_50"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:layout_constraintGuide_percent="0.5" />
+    <androidx.constraintlayout.widget.Guideline
+        android:orientation="vertical"
+        android:id="@id/guide_60"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:layout_constraintGuide_percent="0.6" />
+    <androidx.constraintlayout.widget.Guideline
+        android:orientation="vertical"
+        android:id="@id/guide_40"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:layout_constraintGuide_percent="0.4" />
+</androidx.constraintlayout.widget.ConstraintLayout>

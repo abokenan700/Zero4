@@ -1,0 +1,91 @@
+<?xml version="1.0" encoding="utf-8"?>
+<merge
+    android:layout_width="fill_parent"
+    android:layout_height="wrap_content"
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+    <com.zomato.ui.atomiclib.atom.ZRoundedImageView
+        android:layout_gravity="center"
+        android:id="@id/left_image"
+        android:visibility="gone"
+        android:layout_width="@dimen/sushi_spacing_extra"
+        android:layout_height="wrap_content"
+        android:adjustViewBounds="true"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="@id/left_container" />
+    <com.zomato.ui.atomiclib.atom.ZRoundedImageView
+        android:id="@id/top_left_image"
+        android:visibility="gone"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+    <LinearLayout
+        android:orientation="vertical"
+        android:id="@id/left_container"
+        android:layout_width="0.0dip"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="@dimen/sushi_spacing_extra"
+        android:layout_marginStart="@dimen/size_12"
+        android:layout_marginEnd="@dimen/sushi_spacing_between_large"
+        app:layout_constraintBottom_toTopOf="@id/bottom_container"
+        app:layout_constraintEnd_toStartOf="@id/radioButton"
+        app:layout_constraintStart_toEndOf="@id/left_image"
+        app:layout_constraintTop_toBottomOf="@id/top_left_image">
+        <com.zomato.ui.atomiclib.atom.staticviews.StaticTextView
+            android:id="@id/title"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" />
+        <com.zomato.ui.atomiclib.atom.staticviews.StaticTextView
+            android:ellipsize="end"
+            android:id="@id/subtitle"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/sushi_spacing_between_large"
+            android:maxLines="2" />
+        <com.zomato.ui.atomiclib.atom.ZTag
+            android:id="@id/tag"
+            android:paddingLeft="@dimen/dimen_5"
+            android:paddingTop="@dimen/sushi_spacing_nano"
+            android:paddingRight="@dimen/dimen_5"
+            android:paddingBottom="@dimen/sushi_spacing_nano"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/sushi_spacing_macro"
+            android:paddingHorizontal="@dimen/dimen_5"
+            android:paddingVertical="@dimen/sushi_spacing_nano" />
+    </LinearLayout>
+    <com.zomato.ui.atomiclib.atom.ZRadioButton
+        android:id="@id/radioButton"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:layout_constraintBottom_toBottomOf="@id/left_container"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toTopOf="@id/left_container" />
+    <LinearLayout
+        android:gravity="center"
+        android:orientation="vertical"
+        android:id="@id/bottom_container"
+        android:layout_width="0.0dip"
+        android:layout_height="wrap_content"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent">
+        <com.zomato.ui.atomiclib.atom.ZSeparator
+            android:id="@id/bottom_separator"
+            android:visibility="gone"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginEnd="@dimen/sushi_spacing_macro"
+            app:zseparator_color="@color/sushi_grey_200"
+            app:zseparator_type="DASHED" />
+        <com.zomato.ui.lib.snippets.CustomPillScrollView
+            android:id="@id/custom_pill_scroll_view"
+            android:paddingBottom="@dimen/sushi_spacing_extra"
+            android:focusable="true"
+            android:visibility="gone"
+            android:clickable="true"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content" />
+    </LinearLayout>
+</merge>

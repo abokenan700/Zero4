@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout
+    android:paddingTop="@dimen/sushi_spacing_base"
+    android:paddingBottom="@dimen/sushi_spacing_extra"
+    android:layout_width="fill_parent"
+    android:layout_height="wrap_content"
+    android:paddingStart="@dimen/sushi_spacing_base"
+    android:paddingEnd="@dimen/sushi_spacing_base"
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+    <androidx.constraintlayout.widget.Guideline
+        android:orientation="vertical"
+        android:id="@id/guideline_vertical_2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:layout_constraintGuide_percent="0.25" />
+    <com.zomato.ui.atomiclib.molecules.ShimmerChildView
+        android:id="@id/right_item"
+        android:layout_width="0.0dip"
+        android:layout_height="8.0dip"
+        android:layout_marginTop="@dimen/sushi_spacing_mini"
+        app:layout_constraintEnd_toEndOf="@id/guideline_vertical_2"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:shimmer_corner_radius="2.0dip" />
+    <com.zomato.ui.atomiclib.molecules.ShimmerChildView
+        android:id="@id/itemLine2"
+        android:layout_width="0.0dip"
+        android:layout_height="12.0dip"
+        android:layout_marginTop="@dimen/sushi_spacing_base"
+        app:layout_constraintEnd_toStartOf="@id/itemLine2_1"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/right_item"
+        app:shimmer_corner_radius="2.0dip" />
+    <com.zomato.ui.atomiclib.molecules.ShimmerChildView
+        android:id="@id/itemLine2_1"
+        android:layout_width="60.0dip"
+        android:layout_height="20.0dip"
+        android:layout_marginStart="40.0dip"
+        app:layout_constraintBottom_toBottomOf="@id/itemLine2"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toEndOf="@id/itemLine2"
+        app:shimmer_corner_radius="4.0dip" />
+</androidx.constraintlayout.widget.ConstraintLayout>

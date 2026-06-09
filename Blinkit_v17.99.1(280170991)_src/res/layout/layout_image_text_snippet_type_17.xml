@@ -1,0 +1,89 @@
+<?xml version="1.0" encoding="utf-8"?>
+<merge
+    android:layout_width="fill_parent"
+    android:layout_height="wrap_content"
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+    <LinearLayout
+        android:orientation="vertical"
+        android:id="@id/image_tag"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/sushi_spacing_base"
+        android:translationZ="12.0dip">
+        <com.zomato.ui.atomiclib.atom.ZTextView
+            android:textColor="@color/sushi_white"
+            android:id="@id/image_tag_text"
+            android:background="@drawable/bg_image_tag"
+            android:padding="@dimen/sushi_spacing_between"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            app:textViewType="MEDIUM_100" />
+        <View
+            android:id="@id/tag_triangle_view"
+            android:background="@drawable/bg_image_tag_triangle"
+            android:layout_width="@dimen/sushi_spacing_mini"
+            android:layout_height="@dimen/sushi_spacing_micro" />
+    </LinearLayout>
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content">
+        <com.zomato.ui.atomiclib.atom.ZRoundedImageView
+            android:id="@id/image"
+            android:layout_width="0.0dip"
+            android:layout_height="wrap_content"
+            android:contentDescription="@null"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+        <com.zomato.ui.atomiclib.atom.ZRoundedImageView
+            android:id="@id/rightImage"
+            android:layout_width="wrap_content"
+            android:layout_height="@dimen/snippet_type_17_right_image_size"
+            android:layout_margin="@dimen/sushi_spacing_extra"
+            android:scaleType="fitXY"
+            android:adjustViewBounds="true"
+            android:maxWidth="@dimen/snippet_type_17_right_image_max_size"
+            android:contentDescription="@null"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+        <androidx.constraintlayout.widget.Guideline
+            android:orientation="vertical"
+            android:id="@id/rightGuideline"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            app:layout_constraintGuide_percent="0.85" />
+        <LinearLayout
+            android:orientation="vertical"
+            android:id="@id/linearLayout"
+            android:padding="@dimen/sushi_spacing_extra"
+            android:layout_width="0.0dip"
+            android:layout_height="wrap_content"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="@id/rightGuideline"
+            app:layout_constraintStart_toStartOf="@id/image">
+            <com.zomato.ui.atomiclib.atom.ZTextView
+                android:id="@id/title"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:maxLines="1" />
+            <com.zomato.ui.atomiclib.atom.ZTextView
+                android:id="@id/subtitle1"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:maxLines="2"
+                android:lineSpacingExtra="-6.0dip" />
+            <com.zomato.ui.atomiclib.atom.ZTextView
+                android:id="@id/subtitle2"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:maxLines="1" />
+            <com.zomato.ui.atomiclib.atom.ZTextView
+                android:id="@id/subtitle3"
+                android:paddingTop="@dimen/sushi_spacing_base"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:maxLines="1" />
+        </LinearLayout>
+    </androidx.constraintlayout.widget.ConstraintLayout>
+</merge>

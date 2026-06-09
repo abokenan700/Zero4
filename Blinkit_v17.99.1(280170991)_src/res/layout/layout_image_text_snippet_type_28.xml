@@ -1,0 +1,86 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout
+    android:id="@id/rootLayout"
+    android:layout_width="fill_parent"
+    android:layout_height="wrap_content"
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+    <com.zomato.ui.atomiclib.atom.ZRoundedImageView
+        android:id="@id/backgroundImage"
+        android:clickable="false"
+        android:layout_width="0.0dip"
+        android:layout_height="0.0dip"
+        android:scaleType="fitXY"
+        android:adjustViewBounds="true"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+    <com.zomato.ui.atomiclib.atom.ZRoundedImageView
+        android:id="@id/leftImage"
+        android:clickable="false"
+        android:layout_width="wrap_content"
+        android:layout_height="@dimen/size_40"
+        android:scaleType="fitXY"
+        android:adjustViewBounds="true"
+        android:layout_marginStart="@dimen/sushi_spacing_page_side"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+    <com.zomato.ui.atomiclib.atom.ZRoundedImageView
+        android:id="@id/rightImage"
+        android:clickable="false"
+        android:layout_width="wrap_content"
+        android:layout_height="@dimen/size_33"
+        android:scaleType="fitXY"
+        android:adjustViewBounds="true"
+        android:layout_marginEnd="@dimen/sushi_spacing_page_side"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+    <LinearLayout
+        android:orientation="vertical"
+        android:id="@id/textContainer"
+        android:layout_width="0.0dip"
+        android:layout_height="wrap_content"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toStartOf="@id/rightImage"
+        app:layout_constraintStart_toEndOf="@id/leftImage"
+        app:layout_constraintTop_toTopOf="parent">
+        <com.zomato.ui.atomiclib.atom.ZTextView
+            android:textColor="@color/sushi_white"
+            android:id="@id/titleView"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:paddingStart="@dimen/sushi_spacing_page_side"
+            android:paddingEnd="@dimen/sushi_spacing_page_side"
+            app:textViewType="SEMIBOLD_600" />
+        <com.zomato.ui.atomiclib.atom.ZTextView
+            android:textColor="@color/sushi_white"
+            android:id="@id/description"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:paddingStart="@dimen/sushi_spacing_page_side"
+            android:paddingEnd="@dimen/sushi_spacing_page_side"
+            app:drawableEnd="@string/icon_font_right_triangle_small"
+            app:textViewType="REGULAR_300" />
+    </LinearLayout>
+    <com.zomato.ui.atomiclib.atom.ZButton
+        android:gravity="center_vertical"
+        android:id="@id/actionButton"
+        android:visibility="gone"
+        android:layout_width="0.0dip"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/sushi_spacing_mini"
+        android:layout_marginStart="@dimen/sushi_spacing_macro"
+        android:layout_marginEnd="@dimen/sushi_spacing_page_side"
+        app:buttonColor="@color/sushi_white"
+        app:buttonDimension="medium"
+        app:buttonType="text"
+        app:cornerRadius="@dimen/sushi_spacing_micro"
+        app:drawableEnd="@string/icon_font_right_triangle_small"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="@id/textContainer"
+        app:layout_constraintTop_toBottomOf="@id/textContainer"
+        app:strokeColor="@color/sushi_grey_300" />
+</androidx.constraintlayout.widget.ConstraintLayout>

@@ -1,0 +1,62 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.cardview.widget.CardView
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    app:cardCornerRadius="@dimen/sushi_corner_radius"
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+    <LinearLayout
+        android:orientation="vertical"
+        android:id="@id/dialog_container"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content">
+        <LinearLayout
+            android:gravity="center"
+            android:orientation="horizontal"
+            android:id="@id/icon_layout"
+            android:layout_width="fill_parent"
+            android:layout_height="@dimen/permission_dialog_header_height"
+            app:layout_constraintTop_toTopOf="parent">
+            <com.zomato.ui.atomiclib.atom.ZIconFontTextView
+                android:gravity="center"
+                android:layout_gravity="center"
+                android:id="@id/permission_dialog_header_icon"
+                android:layout_width="@dimen/size_42"
+                android:layout_height="@dimen/size_42" />
+            <com.zomato.ui.atomiclib.atom.ZIconFontTextView
+                android:gravity="center"
+                android:layout_gravity="center"
+                android:id="@id/permission_dialog_header_secondary_icon"
+                android:layout_width="@dimen/size_42"
+                android:layout_height="@dimen/size_42" />
+        </LinearLayout>
+        <com.zomato.ui.atomiclib.atom.ZTextView
+            android:id="@id/message_box"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/size_29"
+            android:layout_marginBottom="@dimen/size_29"
+            android:layout_marginStart="@dimen/size_24"
+            android:layout_marginEnd="@dimen/size_24" />
+        <LinearLayout
+            android:gravity="end"
+            android:orientation="horizontal"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content">
+            <com.zomato.ui.atomiclib.atom.ZButton
+                android:textStyle="bold"
+                android:id="@id/secondary_button"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="@dimen/dimen_17"
+                android:layout_marginEnd="@dimen/dimen_17" />
+            <com.zomato.ui.atomiclib.atom.ZButton
+                android:textStyle="bold"
+                android:id="@id/primary_button"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="@dimen/dimen_17"
+                android:layout_marginEnd="@dimen/size_27" />
+        </LinearLayout>
+    </LinearLayout>
+</androidx.cardview.widget.CardView>

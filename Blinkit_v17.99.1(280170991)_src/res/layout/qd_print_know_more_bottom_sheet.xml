@@ -1,0 +1,66 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    android:layout_gravity="bottom"
+    android:orientation="vertical"
+    android:id="@id/root_card_view"
+    android:layout_width="fill_parent"
+    android:layout_height="0.0dip"
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+    <include
+        android:id="@id/closeButtonContainer"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        layout="@layout/qd_layout_bottom_sheet_close_btn" />
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:id="@id/safe_secure_constraint_layout"
+        android:background="@drawable/qd_bottom_sheet_circular"
+        android:visibility="visible"
+        android:layout_width="fill_parent"
+        android:layout_height="0.0dip">
+        <LinearLayout
+            android:orientation="vertical"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="@dimen/sushi_spacing_base"
+            android:layout_marginRight="@dimen/sushi_spacing_base"
+            android:layout_marginHorizontal="@dimen/sushi_spacing_base"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintLeft_toLeftOf="parent"
+            app:layout_constraintRight_toRightOf="parent"
+            app:layout_constraintTop_toTopOf="parent">
+            <ImageView
+                android:layout_gravity="center"
+                android:id="@id/safe_and_secure_image"
+                android:layout_width="@dimen/size_64"
+                android:layout_height="@dimen/size_64"
+                android:contentDescription="@string/safe_and_secure_image" />
+            <com.zomato.ui.atomiclib.atom.ZTextView
+                android:gravity="center"
+                android:id="@id/safe_and_secure_title"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="@dimen/qd_padding_32"
+                android:layout_marginTop="@dimen/qd_margin_10"
+                android:layout_marginRight="@dimen/qd_padding_32"
+                android:layout_marginHorizontal="@dimen/qd_padding_32" />
+            <LinearLayout
+                android:orientation="vertical"
+                android:id="@id/know_more_points"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="@dimen/sushi_spacing_micro"
+                android:layout_marginTop="@dimen/qd_margin_10"
+                android:layout_marginRight="@dimen/sushi_spacing_micro"
+                android:layout_marginHorizontal="@dimen/sushi_spacing_micro" />
+        </LinearLayout>
+        <com.blinkit.commons.ui.ui.customviews.loadingErrorOverlay.LoadingErrorOverlay
+            android:id="@id/loading_error_overlay"
+            android:layout_width="0.0dip"
+            android:layout_height="0.0dip"
+            app:layout_constraintBottom_toTopOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+    </androidx.constraintlayout.widget.ConstraintLayout>
+</LinearLayout>

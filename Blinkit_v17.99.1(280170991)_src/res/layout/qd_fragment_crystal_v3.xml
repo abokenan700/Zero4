@@ -1,0 +1,91 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout
+    android:orientation="vertical"
+    android:id="@id/rootConstraintLayout"
+    android:background="@color/color_transparent"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+    <include
+        android:id="@id/shimmer_crystal_layout"
+        android:visibility="gone"
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        layout="@layout/qd_shimmer_crystal_3" />
+    <FrameLayout
+        android:id="@id/no_cvv_flow_container"
+        android:visibility="gone"
+        android:fitsSystemWindows="false"
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:elevation="@dimen/elevation_huge" />
+    <com.blinkit.commons.ui.ui.customviews.loadingErrorOverlay.LoadingErrorOverlay
+        android:id="@id/loading_error_overlay"
+        android:visibility="gone"
+        android:layout_width="0.0dip"
+        android:layout_height="fill_parent"
+        android:elevation="@dimen/dimen_12"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+    <androidx.coordinatorlayout.widget.CoordinatorLayout
+        android:id="@id/coordinator_layout"
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:splitMotionEvents="false"
+        android:windowEnableSplitTouch="false">
+        <com.google.android.material.appbar.AppBarLayout
+            android:id="@id/app_bar"
+            android:background="@color/sushi_indigo_050"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:elevation="@dimen/elevation_medium"
+            app:expanded="true">
+            <com.google.android.material.appbar.CollapsingToolbarLayout
+                android:id="@id/collapsing_toolbar"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                app:layout_scrollFlags="scroll|exitUntilCollapsed|snap"
+                app:scrimAnimationDuration="20">
+                <com.blinkit.commons.ui.ui.customviews.recyclerview.BContainer
+                    android:id="@id/app_bar_rv"
+                    android:visibility="gone"
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    app:layout_collapseMode="pin"
+                    app:layout_constraintTop_toTopOf="parent" />
+            </com.google.android.material.appbar.CollapsingToolbarLayout>
+        </com.google.android.material.appbar.AppBarLayout>
+        <com.blinkit.commons.ui.ui.customviews.recyclerview.BContainer
+            android:id="@id/recycler_view"
+            android:background="@color/color_transparent"
+            android:clipChildren="true"
+            android:clipToPadding="true"
+            android:layout_width="fill_parent"
+            android:layout_height="fill_parent"
+            app:layout_behavior="@string/appbar_scrolling_view_behavior"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/app_bar" />
+        <com.blinkit.commons.ui.ui.snippets.crystalMapSnippet.CrystalMapSnippetVH
+            android:id="@id/sticky_header"
+            android:visibility="gone"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content" />
+    </androidx.coordinatorlayout.widget.CoordinatorLayout>
+    <com.zomato.ui.atomiclib.atom.ZIconFontTextView
+        android:textSize="@dimen/sushi_textsize_600"
+        android:id="@id/toolbar_arrow_back"
+        android:background="?selectableItemBackground"
+        android:padding="@dimen/qd_padding_12"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/sushi_spacing_loose"
+        android:text="@string/icon_font_back"
+        android:layout_marginStart="@dimen/sushi_spacing_micro"
+        app:font="@font/okra_bold"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.0" />
+</androidx.constraintlayout.widget.ConstraintLayout>

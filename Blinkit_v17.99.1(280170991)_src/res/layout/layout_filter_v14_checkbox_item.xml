@@ -1,0 +1,66 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    android:orientation="horizontal"
+    android:id="@id/checkbox_parent"
+    android:layout_width="fill_parent"
+    android:layout_height="wrap_content"
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+    <com.zomato.ui.lib.molecules.ZMultipleStackedImageView
+        android:layout_gravity="center_vertical"
+        android:id="@id/checkbox_prefix_stacked_image"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="@dimen/sushi_spacing_page_side"
+        app:zstackedimages_image_height="@dimen/size_40"
+        app:zstackedimages_image_width="@dimen/size_40"
+        app:zstackedimages_item_spacing="@dimen/sushi_spacing_loose_negative"
+        app:zstackimages_max_images="3" />
+    <com.zomato.ui.atomiclib.atom.ZCheckBox
+        android:textSize="@dimen/sushi_textsize_400"
+        android:layout_gravity="center_vertical"
+        android:id="@id/checkBox_left"
+        android:clickable="false"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="@dimen/size9" />
+    <com.zomato.ui.atomiclib.atom.ZRoundedImageView
+        android:layout_gravity="center_vertical"
+        android:id="@id/checkbox_prefix_image"
+        android:layout_width="@dimen/veg_non_veg_icon_dimen"
+        android:layout_height="@dimen/veg_non_veg_icon_dimen"
+        android:layout_marginStart="@dimen/sushi_spacing_page_side" />
+    <LinearLayout
+        android:layout_gravity="center_vertical"
+        android:orientation="vertical"
+        android:layout_width="0.0dip"
+        android:layout_height="wrap_content"
+        android:layout_weight="1.0"
+        android:layout_marginStart="@dimen/sushi_spacing_page_side">
+        <com.zomato.ui.atomiclib.atom.ZTextView
+            android:id="@id/checkbox_tile"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" />
+        <com.zomato.ui.atomiclib.atom.ZTextView
+            android:id="@id/checkbox_subtitle"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/sushi_spacing_micro" />
+    </LinearLayout>
+    <com.zomato.ui.atomiclib.atom.ZCheckBox
+        android:textSize="@dimen/sushi_textsize_400"
+        android:layout_gravity="center_vertical"
+        android:id="@id/checkBox_right"
+        android:clickable="false"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginEnd="@dimen/sushi_spacing_micro" />
+    <CheckBox
+        android:textSize="@dimen/sushi_textsize_400"
+        android:layout_gravity="center_vertical"
+        android:id="@id/checkBox_right_v2"
+        android:clickable="false"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginEnd="@dimen/sushi_spacing_macro" />
+</LinearLayout>

@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="utf-8"?>
+<shape
+    xmlns:android="http://schemas.android.com/apk/res/android">
+    <solid
+        android:color="?android:colorBackground" />
+    <padding
+        android:left="@dimen/sushi_spacing_between_small"
+        android:top="@dimen/sushi_spacing_between_small"
+        android:right="@dimen/sushi_spacing_between_small"
+        android:bottom="@dimen/sushi_spacing_between_small" />
+    <corners
+        android:radius="@dimen/sushi_spacing_mini" />
+</shape>

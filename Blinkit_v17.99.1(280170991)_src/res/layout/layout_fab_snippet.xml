@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout
+    android:layout_width="fill_parent"
+    android:layout_height="wrap_content"
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+    <com.zomato.ui.atomiclib.atom.ZRoundedImageView
+        android:layout_gravity="end"
+        android:id="@id/image"
+        android:layout_width="@dimen/size_68"
+        android:layout_height="@dimen/size_68"
+        android:layout_marginBottom="@dimen/sushi_spacing_mini"
+        android:layout_marginEnd="@dimen/sushi_spacing_base"
+        android:elevation="@dimen/elevation_regular"
+        android:stateListAnimator="@animator/scale_animator"
+        android:outlineSpotShadowColor="@color/fab_shadow_color" />
+    <com.zomato.ui.atomiclib.animation.ZLottieAnimationView
+        android:layout_gravity="end"
+        android:id="@id/animation_view"
+        android:layout_width="@dimen/size_68"
+        android:layout_height="@dimen/size_68"
+        android:layout_marginBottom="@dimen/sushi_spacing_mini"
+        android:scaleType="centerCrop"
+        android:layout_marginEnd="@dimen/sushi_spacing_base"
+        android:elevation="@dimen/elevation_regular"
+        android:stateListAnimator="@animator/scale_animator"
+        android:outlineSpotShadowColor="@color/fab_shadow_color"
+        app:lottie_autoPlay="true"
+        app:lottie_loop="true"
+        app:lottie_repeatMode="restart" />
+</FrameLayout>

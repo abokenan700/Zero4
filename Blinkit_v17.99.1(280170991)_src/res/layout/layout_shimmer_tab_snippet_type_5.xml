@@ -1,0 +1,57 @@
+<?xml version="1.0" encoding="utf-8"?>
+<merge
+    android:id="@id/shimmer_container"
+    android:layout_width="fill_parent"
+    android:layout_height="wrap_content"
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+    <include
+        android:id="@id/item1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toStartOf="@id/item2"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        layout="@layout/layout_item_tab_snippet_type_5" />
+    <include
+        android:id="@id/item2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="@dimen/sushi_spacing_macro"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toStartOf="@id/item3"
+        app:layout_constraintStart_toEndOf="@id/item1"
+        app:layout_constraintTop_toTopOf="parent"
+        layout="@layout/layout_item_tab_snippet_type_5" />
+    <include
+        android:id="@id/item3"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="@dimen/sushi_spacing_macro"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toStartOf="@id/item4"
+        app:layout_constraintStart_toEndOf="@id/item2"
+        app:layout_constraintTop_toTopOf="parent"
+        layout="@layout/layout_item_tab_snippet_type_5" />
+    <include
+        android:id="@id/item4"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="@dimen/sushi_spacing_macro"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toStartOf="@id/item5"
+        app:layout_constraintStart_toEndOf="@id/item3"
+        app:layout_constraintTop_toTopOf="parent"
+        layout="@layout/layout_item_tab_snippet_type_5" />
+    <include
+        android:id="@id/item5"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="@dimen/sushi_spacing_macro"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toEndOf="@id/item4"
+        app:layout_constraintTop_toTopOf="parent"
+        layout="@layout/layout_item_tab_snippet_type_5" />
+</merge>

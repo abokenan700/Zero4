@@ -1,0 +1,94 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout
+    android:background="?attr_7f04017d"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+    <androidx.constraintlayout.widget.Group
+        android:id="@id/group"
+        android:visibility="gone"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:constraint_referenced_ids="subtitle,subtitle2,line_animation" />
+    <com.zomato.ui.atomiclib.animation.ZLottieAnimationView
+        android:id="@id/lottie"
+        android:layout_width="@dimen/size_108"
+        android:layout_height="@dimen/size_108"
+        app:layout_constraintBottom_toBottomOf="@id/guideline_center"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="@id/guideline_center" />
+    <com.zomato.ui.atomiclib.atom.ZTextView
+        android:textColor="@color/sushi_grey_500"
+        android:gravity="center_horizontal"
+        android:id="@id/title"
+        android:paddingTop="@dimen/qd_padding_12"
+        android:layout_width="0.0dip"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="@dimen/sushi_spacing_base"
+        android:layout_marginRight="@dimen/sushi_spacing_base"
+        android:layout_marginHorizontal="@dimen/sushi_spacing_base"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/lottie"
+        app:textViewType="BOLD_300" />
+    <androidx.constraintlayout.widget.Guideline
+        android:orientation="horizontal"
+        android:id="@id/guideline_center"
+        android:layout_width="0.0dip"
+        android:layout_height="0.0dip"
+        app:layout_constraintGuide_percent="0.5" />
+    <com.zomato.ui.atomiclib.atom.ZTextView
+        android:textColor="@color/sushi_black"
+        android:gravity="center_horizontal"
+        android:id="@id/subtitle"
+        android:paddingBottom="@dimen/qd_padding_4"
+        android:layout_width="0.0dip"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="@dimen/sushi_spacing_base"
+        android:layout_marginTop="@dimen/qd_margin_20"
+        android:layout_marginRight="@dimen/sushi_spacing_base"
+        android:maxLines="1"
+        android:layout_marginHorizontal="@dimen/sushi_spacing_base"
+        app:layout_constrainedWidth="true"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/guideline_center"
+        app:layout_constraintWidth="wrap_content"
+        app:textViewType="BOLD_700" />
+    <com.blinkit.commons.ui.ui.customviews.LineAnimationView
+        android:id="@id/line_animation"
+        android:layout_width="0.0dip"
+        android:layout_height="@dimen/dimen_2"
+        android:layout_marginLeft="@dimen/qd_margin_4"
+        android:layout_marginRight="@dimen/qd_margin_4"
+        android:layout_marginHorizontal="@dimen/qd_margin_4"
+        app:layout_constraintEnd_toEndOf="@id/subtitle"
+        app:layout_constraintStart_toStartOf="@id/subtitle"
+        app:layout_constraintTop_toBottomOf="@id/subtitle" />
+    <com.zomato.ui.atomiclib.atom.ZTextView
+        android:textColor="@color/sushi_grey_600"
+        android:gravity="center_horizontal"
+        android:id="@id/subtitle2"
+        android:paddingTop="@dimen/qd_padding_4"
+        android:layout_width="0.0dip"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="@dimen/sushi_spacing_base"
+        android:layout_marginRight="@dimen/sushi_spacing_base"
+        android:layout_marginHorizontal="@dimen/sushi_spacing_base"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/line_animation"
+        app:textViewType="MEDIUM_300" />
+    <com.blinkit.commons.ui.ui.customviews.BShapeableImageView
+        android:id="@id/bottom_image"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="@dimen/qd_margin_40"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/guideline_center"
+        app:layout_constraintVertical_bias="1.0" />
+</androidx.constraintlayout.widget.ConstraintLayout>

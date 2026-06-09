@@ -1,0 +1,222 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout
+    android:id="@id/snippet_37_root_container"
+    android:layout_width="fill_parent"
+    android:layout_height="wrap_content"
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+    <FrameLayout
+        android:id="@id/left_container"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/size_3"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
+        <FrameLayout
+            android:layout_gravity="center"
+            android:id="@id/imageContainer"
+            android:layout_width="@dimen/size_60"
+            android:layout_height="wrap_content">
+            <com.zomato.ui.atomiclib.atom.ZRoundedImageView
+                android:layout_gravity="center"
+                android:id="@id/image"
+                android:layout_width="@dimen/size_54"
+                android:layout_height="wrap_content"
+                android:scaleType="fitCenter"
+                app:cornerRadius="@dimen/corner_radius_base" />
+        </FrameLayout>
+        <com.zomato.ui.atomiclib.atom.ZProgressBar
+            android:layout_gravity="center"
+            android:id="@id/pb_circle"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:indeterminate="false"
+            android:progressDrawable="@drawable/circular_progress_bar_thin"
+            android:rotationY="180.0" />
+    </FrameLayout>
+    <com.zomato.ui.atomiclib.atom.ZRoundedImageView
+        android:id="@id/leftImage"
+        android:visibility="gone"
+        android:layout_width="@dimen/size_30"
+        android:layout_height="@dimen/size_30"
+        app:cornerRadius="@dimen/corner_radius_base"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+    <androidx.constraintlayout.widget.Barrier
+        android:id="@id/leftBarrierType37"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:barrierDirection="end"
+        app:constraint_referenced_ids="left_container,leftImage" />
+    <com.zomato.ui.atomiclib.atom.ZSeparator
+        android:id="@id/separator"
+        android:visibility="gone"
+        android:layout_width="fill_parent"
+        android:layout_height="@dimen/sushi_spacing_pico"
+        android:layout_marginTop="@dimen/dimen_17"
+        app:layout_constraintTop_toBottomOf="@id/bottomBarrier_2Type37"
+        app:zseparator_color="@color/sushi_grey_200" />
+    <com.zomato.ui.atomiclib.atom.ZTextView
+        android:ellipsize="end"
+        android:id="@id/title"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:maxLines="2"
+        android:layout_marginStart="@dimen/sushi_spacing_macro"
+        android:layout_marginEnd="@dimen/sushi_spacing_between_large"
+        app:layout_constrainedWidth="true"
+        app:layout_constraintEnd_toStartOf="@id/title_tag"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintHorizontal_chainStyle="packed"
+        app:layout_constraintStart_toEndOf="@id/leftBarrierType37"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_chainStyle="packed"
+        app:textViewType="MEDIUM_500" />
+    <com.zomato.ui.atomiclib.atom.ZTag
+        android:id="@id/title_tag"
+        android:visibility="gone"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:layout_constraintBottom_toBottomOf="@id/title"
+        app:layout_constraintEnd_toStartOf="@id/rightBarrierType37"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintHorizontal_chainStyle="packed"
+        app:layout_constraintStart_toEndOf="@id/title"
+        app:layout_constraintTop_toTopOf="@id/title" />
+    <com.zomato.ui.atomiclib.atom.ZTextView
+        android:textColor="@color/sushi_grey_500"
+        android:ellipsize="end"
+        android:id="@id/subtitle"
+        android:layout_width="0.0dip"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="@dimen/sushi_spacing_macro"
+        android:layout_marginEnd="@dimen/sushi_spacing_between_large"
+        app:layout_constraintBottom_toTopOf="@id/rating"
+        app:layout_constraintEnd_toStartOf="@id/rightBarrierType37"
+        app:layout_constraintStart_toEndOf="@id/leftBarrierType37"
+        app:layout_constraintTop_toBottomOf="@id/title"
+        app:textViewType="MEDIUM_200" />
+    <com.zomato.ui.atomiclib.snippets.ZMenuRating
+        android:id="@id/rating"
+        android:paddingBottom="@dimen/sushi_spacing_pico"
+        android:layout_width="0.0dip"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="@dimen/sushi_spacing_macro"
+        android:layout_marginEnd="@dimen/sushi_spacing_between"
+        app:layout_constraintBottom_toTopOf="@id/subtitle2"
+        app:layout_constraintEnd_toStartOf="@id/rightBarrierType37"
+        app:layout_constraintStart_toEndOf="@id/leftBarrierType37"
+        app:layout_constraintTop_toBottomOf="@id/subtitle" />
+    <com.zomato.ui.atomiclib.atom.ZTextView
+        android:ellipsize="end"
+        android:id="@id/subtitle2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/sushi_spacing_between_small"
+        android:maxLines="2"
+        android:layout_marginStart="@dimen/sushi_spacing_macro"
+        android:layout_marginEnd="@dimen/sushi_spacing_between"
+        app:layout_constrainedWidth="true"
+        app:layout_constraintEnd_toStartOf="@id/voteToggleButton"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toEndOf="@id/leftBarrierType37"
+        app:layout_constraintTop_toBottomOf="@id/bottomBarrierType37"
+        app:textViewType="MEDIUM_200" />
+    <com.zomato.ui.atomiclib.atom.ZTextView
+        android:ellipsize="end"
+        android:id="@id/subtitle3"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/sushi_spacing_mini"
+        android:maxLines="2"
+        android:layout_marginStart="@dimen/sushi_spacing_macro"
+        android:layout_marginEnd="@dimen/sushi_spacing_between"
+        app:layout_constrainedWidth="true"
+        app:layout_constraintEnd_toStartOf="@id/voteToggleButton"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toEndOf="@id/leftBarrierType37"
+        app:layout_constraintTop_toBottomOf="@id/subtitle2"
+        app:textViewType="MEDIUM_200" />
+    <com.zomato.ui.atomiclib.atom.ZButton
+        android:id="@id/action_button_1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="@dimen/sushi_spacing_page_side"
+        app:buttonColor="?themeColor500"
+        app:buttonDimension="medium"
+        app:buttonType="outline"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+    <com.zomato.ui.lib.snippets.ZImageTagView
+        android:id="@id/tag_view"
+        android:visibility="gone"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:layout_constraintBottom_toBottomOf="@id/subtitle2"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+    <com.zomato.ui.atomiclib.atom.ZButton
+        android:textColor="?themeColor500"
+        android:id="@id/voteToggleButton"
+        android:visibility="gone"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:maxWidth="@dimen/size_88"
+        android:ems="6"
+        android:hapticFeedbackEnabled="true"
+        android:textAllCaps="false"
+        android:layout_marginStart="@dimen/sushi_spacing_page_side"
+        app:buttonColor="@color/sushi_grey_300"
+        app:buttonDimension="small"
+        app:buttonType="outline"
+        app:layout_constraintBottom_toBottomOf="@id/subtitle2"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+    <com.zomato.ui.atomiclib.atom.ZRoundedImageView
+        android:id="@id/image_big"
+        android:visibility="gone"
+        android:layout_width="fill_parent"
+        android:layout_height="@dimen/size_169"
+        android:layout_marginTop="@dimen/sushi_spacing_macro"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/subtitle2" />
+    <com.zomato.ui.atomiclib.atom.ZButton
+        android:id="@id/action_button_2"
+        android:visibility="gone"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="@dimen/sushi_spacing_page_side"
+        app:buttonColor="?themeColor500"
+        app:buttonDimension="medium"
+        app:buttonType="outline"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/image_big" />
+    <com.zomato.ui.atomiclib.atom.ZButton
+        android:id="@id/bottom_button"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/dimen_5"
+        app:buttonColor="?themeColor500"
+        app:buttonDimension="medium"
+        app:buttonType="text"
+        app:layout_constraintStart_toStartOf="@id/title"
+        app:layout_constraintTop_toBottomOf="@id/subtitle2" />
+    <androidx.constraintlayout.widget.Barrier
+        android:id="@id/rightBarrierType37"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:barrierDirection="start"
+        app:constraint_referenced_ids="action_button_1,voteToggleButton" />
+    <androidx.constraintlayout.widget.Barrier
+        android:id="@id/bottomBarrierType37"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:barrierDirection="bottom"
+        app:constraint_referenced_ids="action_button_1,rating,subtitle,title," />
+    <androidx.constraintlayout.widget.Barrier
+        android:id="@id/bottomBarrier_2Type37"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:barrierDirection="bottom"
+        app:constraint_referenced_ids="subtitle2,bottom_button,action_button_2,left_container" />
+</androidx.constraintlayout.widget.ConstraintLayout>

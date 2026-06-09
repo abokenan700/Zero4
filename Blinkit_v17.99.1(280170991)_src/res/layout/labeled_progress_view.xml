@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="utf-8"?>
+<merge
+    android:id="@id/progress_container"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+    <FrameLayout
+        android:id="@id/background_view"
+        android:background="@color/sushi_charcoal_300"
+        android:layout_width="@dimen/size_36"
+        android:layout_height="0.0dip"
+        android:layout_marginTop="@dimen/sushi_spacing_nano"
+        android:layout_marginBottom="@dimen/sushi_spacing_nano"
+        android:layout_marginVertical="@dimen/sushi_spacing_nano"
+        android:clipToOutline="true"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
+        <View
+            android:id="@id/shadow_view"
+            android:background="@color/sushi_charcoal_100"
+            android:layout_width="fill_parent"
+            android:layout_height="fill_parent"
+            android:translationX="@dimen/sushi_spacing_pico_negative"
+            android:translationY="@dimen/sushi_spacing_pico_negative" />
+        <View
+            android:id="@id/progress_shadow_view"
+            android:layout_width="@dimen/size_36"
+            android:layout_height="fill_parent" />
+        <View
+            android:id="@id/progress_view"
+            android:layout_width="@dimen/size_36"
+            android:layout_height="fill_parent" />
+    </FrameLayout>
+    <com.blinkit.blink.elements.ui.atoms.text.BlinkitTextView
+        android:ellipsize="end"
+        android:id="@id/label"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:singleLine="true"
+        android:layout_marginStart="@dimen/sushi_spacing_micro"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toEndOf="@id/background_view"
+        app:layout_constraintTop_toTopOf="parent" />
+</merge>

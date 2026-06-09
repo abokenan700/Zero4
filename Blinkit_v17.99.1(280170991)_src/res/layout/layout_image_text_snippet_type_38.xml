@@ -1,0 +1,59 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    android:orientation="horizontal"
+    android:id="@id/root_view"
+    android:layout_width="fill_parent"
+    android:layout_height="wrap_content"
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+    <FrameLayout
+        android:id="@id/imageContainer"
+        android:clipToPadding="false"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="@dimen/sushi_spacing_macro"
+        android:paddingStart="@dimen/sushi_spacing_macro">
+        <com.zomato.ui.atomiclib.atom.ZRoundedImageView
+            android:id="@id/image_view"
+            android:layout_width="@dimen/menu_new_grid_item_image_width"
+            android:layout_height="@dimen/menu_new_grid_item_image_height"
+            android:scaleType="centerCrop"
+            app:cornerRadius="@dimen/sushi_corner_radius" />
+        <com.zomato.ui.atomiclib.atom.ZRoundedImageView
+            android:layout_gravity="end|center|top"
+            android:id="@id/veg_non_veg_icon"
+            android:layout_width="@dimen/dimen_10"
+            android:layout_height="@dimen/dimen_10"
+            android:layout_marginTop="@dimen/sushi_spacing_mini"
+            android:scaleType="centerInside"
+            android:layout_marginEnd="@dimen/sushi_spacing_between" />
+        <LinearLayout
+            android:orientation="vertical"
+            android:id="@id/image_tag"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/sushi_spacing_base"
+            android:translationZ="@dimen/sushi_spacing_base"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent">
+            <com.zomato.ui.atomiclib.atom.ZTextView
+                android:textColor="@color/sushi_white"
+                android:id="@id/image_tag_text"
+                android:background="@drawable/bg_image_tag"
+                android:padding="@dimen/sushi_spacing_between"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                app:textViewType="MEDIUM_100" />
+            <View
+                android:id="@id/tag_triangle_view"
+                android:background="@drawable/bg_image_tag_triangle"
+                android:layout_width="@dimen/sushi_spacing_mini"
+                android:layout_height="@dimen/sushi_spacing_micro" />
+        </LinearLayout>
+    </FrameLayout>
+    <include
+        android:id="@id/text_container"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        layout="@layout/layout_menu_item_text_layout_dish_search" />
+</LinearLayout>

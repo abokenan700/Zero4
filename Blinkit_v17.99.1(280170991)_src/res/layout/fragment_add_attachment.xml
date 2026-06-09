@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout
+    android:id="@id/background_area"
+    android:background="@color/color_black_alpha_fifty"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    xmlns:android="http://schemas.android.com/apk/res/android">
+    <com.zomato.chatsdk.chatuikit.snippets.AttachmentContainer
+        android:layout_gravity="bottom"
+        android:id="@id/attachment_container"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="@dimen/sushi_spacing_base"
+        android:layout_marginRight="@dimen/sushi_spacing_base"
+        android:layout_marginBottom="@dimen/size_70"
+        android:elevation="@dimen/sushi_spacing_pico"
+        android:layout_marginHorizontal="@dimen/sushi_spacing_base" />
+</FrameLayout>

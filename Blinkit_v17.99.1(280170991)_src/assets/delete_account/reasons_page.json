@@ -1,0 +1,560 @@
+{
+	"is_success": true,
+	"response": {
+		"snippets": [
+			{
+				"data": {
+					"title": {
+						"text": "Delete my account",
+						"color": {
+							"type": "black",
+							"theme_bucket": {
+								"token": "color.text.black"
+							}
+						},
+						"font": {
+							"size": "500",
+							"weight": "extrabold"
+						}
+					},
+					"subtitle": {
+						"text": "Why would you like to delete your account",
+						"color": {
+							"tint": "900",
+							"type": "grey",
+							"theme_bucket": {
+								"token": "color.text.grey"
+							}
+						},
+						"font": {
+							"size": "200",
+							"weight": "regular"
+						},
+						"number_of_lines": 2
+					}
+				},
+				"widget_type": "image_text_vr_type_header",
+				"layout_config": {
+					"spacing": "0,6,0,6"
+				}
+			},
+			{
+				"data": {
+					"items": [
+						{
+							"data": {
+								"title": {
+									"text": "I don't want to use Blinkit anymore",
+									"color": {
+										"type": "black",
+										"theme_bucket": {
+											"token": "color.text.black"
+										}
+									},
+									"font": {
+										"size": "300",
+										"weight": "semibold"
+									},
+									"number_of_lines": 2
+								},
+								"right_icon": {
+									"color": {
+										"tint": "900",
+										"type": "black",
+										"theme_bucket": {
+											"token": "color.text.black"
+										}
+									},
+									"font_size": "600",
+									"code": "e92f",
+									"border": {
+										"width": 0,
+										"colors": [
+											{
+												"tint": "200",
+												"type": "grey",
+												"theme_bucket": {
+													"token": "color.border.grey.mid"
+												}
+											}
+										]
+									}
+								},
+								"click_action": {
+									"blinkit_deeplink": {
+										"url": "grofers://delete_account_feedback_page?reason=I don't want to use Blinkit anymore&subreason=Do you have any feedback for us? We would love to hear from you!"
+									},
+									"type": "blinkit_deeplink"
+								},
+								"animation_type": "ALPHA_EFFECT"
+							},
+							"tracking": {
+								"widget_meta": {
+									"widget_name": "delete_account_reason_clicked"
+								},
+								"click_map": {
+									"event_name": "DELETE_ACCOUNT_REASON_CLICKED",
+									"reason": "I don't want to use Blinkit anymore"
+								},
+								"common_attributes": {
+									"widget_position": 1,
+									"reason": "I don't want to use Blinkit anymore"
+								}
+							},
+							"widget_type": "image_text_vr_type_header",
+							"layout_config": {
+								"spacing": "0,6,0,6"
+							}
+						},
+						{
+							"data": {
+								"type": "line",
+								"color_hex": "#E8E8E8",
+								"color": {
+									"theme_bucket": {
+										"token": "color.border.gery.mid"
+									}
+								}
+							},
+							"widget_type": "snippet_separator_vr",
+							"layout_config": {
+								"outer_bg_color": "",
+								"spacing": "0,0,0,0"
+							}
+						},
+						{
+							"data": {
+								"title": {
+									"text": "I'm using a different account",
+									"color": {
+										"type": "black",
+										"theme_bucket": {
+											"token": "color.text.black"
+										}
+									},
+									"font": {
+										"size": "300",
+										"weight": "semibold"
+									},
+									"number_of_lines": 2
+								},
+								"right_icon": {
+									"color": {
+										"tint": "900",
+										"type": "black",
+										"theme_bucket": {
+											"token": "color.text.black"
+										}
+									},
+									"font_size": "600",
+									"code": "e92f",
+									"border": {
+										"width": 0,
+										"colors": [
+											{
+												"tint": "200",
+												"type": "grey",
+												"theme_bucket": {
+													"token": "color.text.grey.mid"
+												}
+											}
+										]
+									}
+								},
+								"click_action": {
+									"blinkit_deeplink": {
+										"url": "grofers://delete_account_feedback_page?reason=I'm using a different account&subreason=Do you have any feedback for us? We would love to hear from you!"
+									},
+									"type": "blinkit_deeplink"
+								},
+								"animation_type": "ALPHA_EFFECT"
+							},
+							"tracking": {
+								"widget_meta": {
+									"widget_name": "delete_account_reason_clicked"
+								},
+								"click_map": {
+									"event_name": "DELETE_ACCOUNT_REASON_CLICKED",
+									"reason": "I'm using a different account"
+								},
+								"common_attributes": {
+									"widget_position": 1,
+									"reason": "I'm using a different account"
+								}
+							},
+							"widget_type": "image_text_vr_type_header",
+							"layout_config": {
+								"spacing": "0,6,0,6"
+							}
+						},
+						{
+							"data": {
+								"type": "line",
+								"color_hex": "#E8E8E8",
+								"color": {
+									"theme_bucket": {
+										"token": "color.border.gery.mid"
+									}
+								}
+							},
+							"widget_type": "snippet_separator_vr",
+							"layout_config": {
+								"outer_bg_color": "",
+								"spacing": "0,0,0,0"
+							}
+						},
+						{
+							"data": {
+								"title": {
+									"text": "I'm worried about my privacy",
+									"color": {
+										"tint": "900",
+										"type": "black",
+										"theme_bucket": {
+											"token": "color.text.black"
+										}
+									},
+									"font": {
+										"size": "300",
+										"weight": "semibold"
+									},
+									"number_of_lines": 2
+								},
+								"right_icon": {
+									"color": {
+										"tint": "900",
+										"type": "black",
+										"theme_bucket": {
+											"token": "color.text.black"
+										}
+									},
+									"font_size": "600",
+									"code": "e92f",
+									"border": {
+										"width": 0,
+										"colors": [
+											{
+												"tint": "200",
+												"type": "grey",
+												"theme_bucket": {
+													"token": "color.text.grey.mid"
+												}
+											}
+										]
+									}
+								},
+								"click_action": {
+									"blinkit_deeplink": {
+										"url": "grofers://delete_account_feedback_page?reason=I'm worried about my privacy&subreason=If you are worried about your privacy on Blinkit, you can edit your privacy settings, or contact us if something is bothering you."
+									},
+									"type": "blinkit_deeplink"
+								},
+								"animation_type": "ALPHA_EFFECT"
+							},
+							"tracking": {
+								"widget_meta": {
+									"widget_name": "delete_account_reason_clicked"
+								},
+								"click_map": {
+									"event_name": "DELETE_ACCOUNT_REASON_CLICKED",
+									"reason": "I'm worried about my privacy"
+								},
+								"common_attributes": {
+									"widget_position": 1,
+									"reason": "I'm worried about my privacy"
+								}
+							},
+							"widget_type": "image_text_vr_type_header",
+							"layout_config": {
+								"spacing": "0,6,0,6"
+							}
+						},
+						{
+							"data": {
+								"type": "line",
+								"color_hex": "#E8E8E8",
+								"color": {
+									"theme_bucket": {
+										"token": "color.border.gery.mid"
+									}
+								}
+							},
+							"widget_type": "snippet_separator_vr",
+							"layout_config": {
+								"outer_bg_color": "",
+								"spacing": "0,0,0,0"
+							}
+						},
+						{
+							"data": {
+								"title": {
+									"text": "You are sending me too many emails/notifications",
+									"color": {
+										"type": "black",
+										"theme_bucket": {
+											"token": "color.text.black"
+										}
+									},
+									"font": {
+										"size": "300",
+										"weight": "semibold"
+									},
+									"number_of_lines": 2
+								},
+								"right_icon": {
+									"color": {
+										"tint": "900",
+										"type": "black",
+										"theme_bucket": {
+											"token": "color.text.black"
+										}
+									},
+									"font_size": "600",
+									"code": "e92f",
+									"border": {
+										"width": 0,
+										"colors": [
+											{
+												"tint": "200",
+												"type": "grey",
+												"theme_bucket": {
+													"token": "color.text.grey.mid"
+												}
+											}
+										]
+									}
+								},
+								"click_action": {
+									"blinkit_deeplink": {
+										"url": "grofers://delete_account_feedback_page?reason=You are sending me too many emails/notifications&subreason=To receive fewer emails or push notifications, you can change your notification settings."
+									},
+									"type": "blinkit_deeplink"
+								},
+								"animation_type": "ALPHA_EFFECT"
+							},
+							"tracking": {
+								"widget_meta": {
+									"widget_name": "delete_account_reason_clicked"
+								},
+								"click_map": {
+									"event_name": "DELETE_ACCOUNT_REASON_CLICKED",
+									"reason": "You are sending me too many emails/notifications"
+								},
+								"common_attributes": {
+									"widget_position": 1,
+									"reason": "You are sending me too many emails/notifications"
+								}
+							},
+							"widget_type": "image_text_vr_type_header",
+							"layout_config": {
+								"spacing": "0,6,0,6"
+							}
+						},
+						{
+							"data": {
+								"type": "line",
+								"color_hex": "#0000FF",
+								"color": {
+									"theme_bucket": {
+										"token": "color.border.grey.mid"
+									}
+								}
+							},
+							"widget_type": "snippet_separator_vr",
+							"layout_config": {
+								"outer_bg_color": "",
+								"spacing": "0,0,0,0"
+							}
+						},
+						{
+							"data": {
+								"title": {
+									"text": "This app is not working properly",
+									"color": {
+										"type": "black",
+										"theme_bucket": {
+											"token": "color.text.black"
+										}
+									},
+									"font": {
+										"size": "300",
+										"weight": "semibold"
+									},
+									"number_of_lines": 2
+								},
+								"right_icon": {
+									"color": {
+										"tint": "900",
+										"type": "black",
+										"theme_bucket": {
+											"token": "color.text.black"
+										}
+									},
+									"font_size": "600",
+									"code": "e92f",
+									"border": {
+										"width": 0,
+										"colors": [
+											{
+												"tint": "200",
+												"type": "grey",
+												"theme_bucket": {
+													"token": "color.text.grey.mid"
+												}
+											}
+										]
+									}
+								},
+								"click_action": {
+									"blinkit_deeplink": {
+										"url": "grofers://delete_account_feedback_page?reason=This app is not working properly&subreason=Feel free to report any issues that you're facing with Blinkit app. We will do our best to fix them!"
+									},
+									"type": "blinkit_deeplink"
+								},
+								"animation_type": "ALPHA_EFFECT"
+							},
+							"tracking": {
+								"widget_meta": {
+									"widget_name": "delete_account_reason_clicked"
+								},
+								"click_map": {
+									"event_name": "DELETE_ACCOUNT_REASON_CLICKED",
+									"reason": "This app is not working properly"
+								},
+								"common_attributes": {
+									"widget_position": 1,
+									"reason": "This app is not working properly"
+								}
+							},
+							"widget_type": "image_text_vr_type_header",
+							"layout_config": {
+								"spacing": "0,6,0,6"
+							}
+						},
+						{
+							"data": {
+								"type": "line",
+								"color_hex": "#E8E8E8",
+								"color": {
+									"theme_bucket": {
+										"token": "color.border.grey.mid"
+									}
+								}
+							},
+							"widget_type": "snippet_separator_vr",
+							"layout_config": {
+								"outer_bg_color": "",
+								"spacing": "0,0,0,0"
+							}
+						},
+						{
+							"data": {
+								"title": {
+									"text": "Other",
+									"color": {
+										"type": "black",
+										"theme_bucket": {
+											"token": "color.text.black"
+										}
+									},
+									"font": {
+										"size": "300",
+										"weight": "semibold"
+									}
+								},
+								"right_icon": {
+									"color": {
+										"tint": "900",
+										"type": "black",
+										"theme_bucket": {
+											"token": "color.text.black"
+										}
+									},
+									"font_size": "600",
+									"code": "e92f",
+									"border": {
+										"width": 0,
+										"colors": [
+											{
+												"tint": "200",
+												"type": "grey",
+												"theme_bucket": {
+													"token": "color.text.grey.mid"
+												}
+											}
+										]
+									}
+								},
+								"click_action": {
+									"blinkit_deeplink": {
+										"url": "grofers://delete_account_feedback_page?reason=Other&subreason=Do you have any feedback for us? We would love to hear from you!"
+									},
+									"type": "blinkit_deeplink"
+								},
+								"animation_type": "ALPHA_EFFECT"
+							},
+							"tracking": {
+								"widget_meta": {
+									"widget_name": "delete_account_reason_clicked"
+								},
+								"click_map": {
+									"event_name": "DELETE_ACCOUNT_REASON_CLICKED",
+									"reason": "Other"
+								},
+								"common_attributes": {
+									"widget_position": 1,
+									"reason": "Other"
+								}
+							},
+							"widget_type": "image_text_vr_type_header",
+							"layout_config": {
+								"spacing": "0,6,0,6"
+							}
+						}],
+					"container_layout_config":{
+						"stroke_width":0.5,
+						"stroke_color":{
+							"type":"grey",
+							"tint":200,
+							"theme_bucket": {
+								"token": "color.border.grey.mid"
+							}
+						},
+						"corner_radius": 12
+					}
+				},
+				"widget_type": "grid_container_vr",
+				"layout_config": {
+					"spacing": "12,0,12,0"
+				}
+			}
+		],
+		"layout_config": {
+			"bg_color_hex": "#FFFFFF",
+			"padding": "0,0,0,16"
+		},
+		"page_level_components": {
+			"sticky": {},
+			"toolbar_config": {
+				"title": {
+					"text": "Delete account"
+				},
+				"left_icon": {
+					"icon_type": "BACK_ARROW"
+				},
+				"left_icon_v2": {
+					"code": "e804",
+					"font_size": "600"
+				},
+				"elevation": 6
+			}
+		},
+		"tracking": {
+			"le_meta": {
+				"id": "delete_account_with_reason_listing_page",
+				"name": "delete_account_with_reason_listing_page"
+			},
+			"event_name": "DELETE_ACCOUNT_REASON_LISTING_PAGE_VISIT"
+		}
+	}
+}

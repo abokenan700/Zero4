@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    android:orientation="vertical"
+    android:background="?attr_7f0403d7"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+    <com.zomato.ui.atomiclib.molecules.ShimmerChildView
+        android:layout_width="fill_parent"
+        android:layout_height="@dimen/dimen_20"
+        android:layout_margin="@dimen/dimen_10"
+        app:shimmer_corner_radius="@dimen/size_8" />
+    <com.zomato.ui.atomiclib.molecules.ShimmerChildView
+        android:layout_width="fill_parent"
+        android:layout_height="@dimen/dimen_20"
+        android:layout_margin="@dimen/dimen_10"
+        app:shimmer_corner_radius="@dimen/size_8" />
+    <com.zomato.ui.atomiclib.molecules.ShimmerChildView
+        android:layout_width="fill_parent"
+        android:layout_height="@dimen/dimen_20"
+        android:layout_margin="@dimen/dimen_10"
+        app:shimmer_corner_radius="@dimen/size_8" />
+    <com.zomato.ui.atomiclib.molecules.ShimmerChildView
+        android:layout_width="fill_parent"
+        android:layout_height="@dimen/dimen_20"
+        android:layout_margin="@dimen/dimen_10"
+        app:shimmer_corner_radius="@dimen/size_8" />
+    <com.zomato.ui.atomiclib.molecules.ShimmerChildView
+        android:layout_width="fill_parent"
+        android:layout_height="@dimen/dimen_20"
+        android:layout_margin="@dimen/dimen_10"
+        app:shimmer_corner_radius="@dimen/size_8" />
+    <com.zomato.ui.atomiclib.molecules.ShimmerChildView
+        android:layout_width="fill_parent"
+        android:layout_height="@dimen/dimen_20"
+        android:layout_margin="@dimen/dimen_10"
+        app:shimmer_corner_radius="@dimen/size_8" />
+</LinearLayout>

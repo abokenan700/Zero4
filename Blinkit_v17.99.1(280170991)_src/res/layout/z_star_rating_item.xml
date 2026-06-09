@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    android:paddingLeft="@dimen/sushi_spacing_page_side"
+    android:paddingTop="@dimen/sushi_spacing_micro"
+    android:paddingRight="@dimen/sushi_spacing_page_side"
+    android:paddingBottom="@dimen/sushi_spacing_micro"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:minWidth="@dimen/size_44"
+    android:minHeight="@dimen/size_30"
+    android:paddingHorizontal="@dimen/sushi_spacing_page_side"
+    android:paddingVertical="@dimen/sushi_spacing_micro"
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+    <com.zomato.ui.atomiclib.atom.ZTextView
+        android:textColor="@color/sushi_grey_300"
+        android:layout_gravity="center_vertical"
+        android:id="@id/text"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:textViewType="SEMIBOLD_500" />
+    <com.zomato.ui.atomiclib.atom.ZIconFontTextView
+        android:textSize="@dimen/size_10_point_five"
+        android:textColor="@color/sushi_grey_300"
+        android:gravity="center"
+        android:layout_gravity="center"
+        android:id="@id/icon"
+        android:paddingLeft="@dimen/sushi_spacing_nano"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/icon_font_star_fill" />
+</LinearLayout>

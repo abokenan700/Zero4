@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="utf-8"?>
+<merge
+    android:orientation="vertical"
+    android:layout_width="fill_parent"
+    android:layout_height="wrap_content"
+    xmlns:android="http://schemas.android.com/apk/res/android">
+    <com.zomato.ui.lib.organisms.snippets.imagetext.type14.ZImageTextSnippetType14
+        android:id="@id/top_snippet"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content" />
+    <com.zomato.ui.lib.organisms.snippets.imagetext.type14.ZImageTextSnippetType14
+        android:id="@id/bottom_snippet"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/dimen_16" />
+    <com.zomato.ui.lib.organisms.snippets.imagetext.tag.type5.ZTagLayout5
+        android:layout_gravity="center_horizontal"
+        android:id="@id/bottom_tag"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/dimen_16" />
+</merge>

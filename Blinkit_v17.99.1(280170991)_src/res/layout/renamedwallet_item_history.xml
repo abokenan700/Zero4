@@ -1,0 +1,62 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout
+    android:paddingTop="@dimen/dimen_15"
+    android:layout_width="fill_parent"
+    android:layout_height="wrap_content"
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+    <com.zomato.ui.atomiclib.atom.ZTextView
+        android:textColor="@color/sushi_grey_900"
+        android:id="@id/renameddate_textview"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:paddingStart="@dimen/sushi_spacing_base"
+        android:paddingEnd="@dimen/sushi_spacing_base"
+        android:layout_alignParentStart="true"
+        app:layout_constraintBottom_toTopOf="@id/renameddescription"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+    <com.zomato.ui.atomiclib.atom.ZTextView
+        android:textColor="@color/sushi_grey_900"
+        android:id="@id/renameddescription"
+        android:layout_width="0.0dip"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/sushi_spacing_micro"
+        android:layout_below="@id/renameddate_textview"
+        android:paddingStart="@dimen/sushi_spacing_base"
+        android:paddingEnd="@dimen/dimen_10"
+        android:layout_alignParentStart="true"
+        app:layout_constraintBottom_toTopOf="@id/renamedwallet_history_separator"
+        app:layout_constraintEnd_toStartOf="@id/renamedamount"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/renameddate_textview" />
+    <com.zomato.ui.atomiclib.atom.ZTextView
+        android:textSize="@dimen/dimen_15"
+        android:gravity="end"
+        android:id="@id/renamedamount"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/renameddate_textview"
+        android:paddingEnd="@dimen/sushi_spacing_base"
+        android:layout_alignParentEnd="true"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toEndOf="@id/renameddescription"
+        app:layout_constraintTop_toTopOf="@id/renameddescription" />
+    <com.zomato.ui.atomiclib.atom.ZSeparator
+        android:layout_gravity="bottom"
+        android:id="@id/renamedwallet_history_separator"
+        android:visibility="visible"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/sushi_spacing_base"
+        android:layout_below="@id/renameddescription"
+        android:layout_marginStart="@dimen/sushi_spacing_base"
+        android:layout_marginEnd="@dimen/sushi_spacing_base"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/renameddescription"
+        app:zseparator_color="@color/sushi_grey_200"
+        app:zseparator_type="STRAIGHT" />
+</androidx.constraintlayout.widget.ConstraintLayout>

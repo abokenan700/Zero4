@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layer-list
+    xmlns:android="http://schemas.android.com/apk/res/android">
+    <item
+        android:gravity="center"
+        android:id="@android:id/background">
+        <shape>
+            <size
+                android:height="@dimen/sushi_spacing_micro" />
+            <corners
+                android:radius="@dimen/sushi_spacing_base" />
+            <gradient
+                android:startColor="?attr_7f0403d3"
+                android:endColor="?attr_7f0403d3"
+                android:angle="0.0"
+                android:centerY="0.75"
+                android:centerColor="?attr_7f0403d3" />
+        </shape>
+    </item>
+    <item
+        android:gravity="center"
+        android:id="@android:id/progress">
+        <clip>
+            <shape>
+                <size
+                    android:height="@dimen/sushi_spacing_micro" />
+                <corners
+                    android:radius="@dimen/sushi_spacing_base" />
+                <gradient
+                    android:startColor="@color/renamedbank_transfer_progress_blue"
+                    android:endColor="@color/renamedbank_transfer_progress_blue"
+                    android:angle="0.0" />
+            </shape>
+        </clip>
+    </item>
+</layer-list>

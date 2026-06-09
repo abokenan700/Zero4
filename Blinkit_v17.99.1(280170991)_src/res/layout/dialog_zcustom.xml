@@ -1,0 +1,76 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    android:orientation="vertical"
+    android:background="?attr_7f04017d"
+    android:paddingTop="@dimen/size_20"
+    android:paddingBottom="@dimen/dimen_10"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:paddingStart="@dimen/size_20"
+    android:paddingEnd="@dimen/dimen_10"
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+    <com.zomato.ui.atomiclib.atom.ZTextView
+        android:textSize="@dimen/sushi_textsize_500"
+        android:textColor="?attr_7f040475"
+        android:id="@id/zcustomdialog_title"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="@dimen/sushi_spacing_macro"
+        android:layout_marginEnd="@dimen/dimen_10"
+        app:textFontWeight="medium"
+        app:textViewType="MEDIUM_400" />
+    <com.zomato.ui.atomiclib.atom.ZTextView
+        android:textColor="?attr_7f040490"
+        android:id="@id/zcustomdialog_message"
+        android:visibility="gone"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="@dimen/dimen_10"
+        android:layout_marginEnd="@dimen/dimen_10"
+        app:textViewType="REGULAR_300" />
+    <ListView
+        android:layout_gravity="start|center"
+        android:id="@id/listViewContainer"
+        android:visibility="gone"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:paddingStart="-5.0dip" />
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content">
+        <com.zomato.ui.atomiclib.atom.ZTextView
+            android:textColor="?themeColor400"
+            android:gravity="center"
+            android:id="@id/zcustomdialog_negative_button"
+            android:background="@drawable/feedback_zcustomdialog"
+            android:padding="@dimen/dimen_10"
+            android:layout_width="0.0dip"
+            android:layout_height="wrap_content"
+            android:textAllCaps="false"
+            android:layout_marginEnd="@dimen/dimen_10"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toStartOf="@id/zcustomdialog_positive_button"
+            app:layout_constraintHorizontal_bias="1.0"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintWidth_max="wrap"
+            app:layout_constraintWidth_percent="0.5"
+            app:textViewType="MEDIUM_400" />
+        <com.zomato.ui.atomiclib.atom.ZTextView
+            android:textColor="?themeColor400"
+            android:gravity="center"
+            android:id="@id/zcustomdialog_positive_button"
+            android:background="@drawable/feedback_zcustomdialog"
+            android:padding="@dimen/dimen_10"
+            android:layout_width="0.0dip"
+            android:layout_height="wrap_content"
+            android:textAllCaps="false"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintWidth_max="wrap"
+            app:layout_constraintWidth_percent="0.5"
+            app:textViewType="MEDIUM_400" />
+    </androidx.constraintlayout.widget.ConstraintLayout>
+</LinearLayout>

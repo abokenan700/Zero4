@@ -1,0 +1,90 @@
+<?xml version="1.0" encoding="utf-8"?>
+<merge
+    android:orientation="vertical"
+    android:layout_width="fill_parent"
+    android:layout_height="wrap_content"
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+    <LinearLayout
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content">
+        <com.zomato.ui.atomiclib.atom.ZRoundedImageView
+            android:layout_gravity="end|center"
+            android:id="@id/left_image"
+            android:visibility="gone"
+            android:layout_width="@dimen/dimen_16"
+            android:layout_height="wrap_content"
+            android:scaleType="fitXY"
+            android:adjustViewBounds="true"
+            android:layout_marginEnd="@dimen/size_8" />
+        <com.zomato.ui.atomiclib.atom.ZRoundedImageView
+            android:layout_gravity="end|center"
+            android:id="@id/image"
+            android:layout_width="@dimen/size_40"
+            android:layout_height="@dimen/size18"
+            android:scaleType="fitXY" />
+        <com.zomato.ui.atomiclib.atom.ZTextView
+            android:gravity="start"
+            android:id="@id/title1"
+            android:layout_width="0.0dip"
+            android:layout_height="wrap_content"
+            android:layout_weight="1.0"
+            android:layout_marginEnd="@dimen/sushi_spacing_micro" />
+        <com.zomato.ui.atomiclib.atom.ZTextView
+            android:gravity="end"
+            android:id="@id/subtitle1"
+            android:layout_width="0.0dip"
+            android:layout_height="wrap_content"
+            android:layout_weight="1.0"
+            android:layout_marginStart="@dimen/sushi_spacing_micro" />
+    </LinearLayout>
+    <LinearLayout
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content">
+        <com.zomato.ui.atomiclib.atom.ZTextView
+            android:gravity="start"
+            android:id="@id/title2"
+            android:layout_width="0.0dip"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/sushi_spacing_micro"
+            android:layout_weight="1.0"
+            android:layout_marginEnd="@dimen/sushi_spacing_micro" />
+        <com.zomato.ui.atomiclib.atom.ZTextView
+            android:gravity="end"
+            android:id="@id/subtitle2"
+            android:layout_width="0.0dip"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/sushi_spacing_micro"
+            android:layout_weight="1.0"
+            android:layout_marginStart="@dimen/sushi_spacing_micro" />
+    </LinearLayout>
+    <LinearLayout
+        android:gravity="center_vertical"
+        android:orientation="horizontal"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content">
+        <com.zomato.ui.atomiclib.snippets.RatingSnippetItem
+            android:id="@id/rating"
+            android:paddingTop="@dimen/sushi_spacing_nano"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            app:ratingType="bar" />
+        <com.zomato.ui.atomiclib.atom.ZIconFontTextView
+            android:textSize="@dimen/sushi_textsize_300"
+            android:layout_gravity="center_vertical"
+            android:id="@id/bottom_button"
+            android:paddingTop="@dimen/sushi_spacing_between_large"
+            android:paddingBottom="@dimen/sushi_spacing_between"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:paddingStart="@dimen/sushi_spacing_mini"
+            android:paddingEnd="@dimen/sushi_spacing_between_large" />
+    </LinearLayout>
+    <com.zomato.ui.atomiclib.atom.ZSeparator
+        android:id="@id/bottom_separator"
+        android:visibility="gone"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/sushi_spacing_page_side"
+        app:zseparator_type="DOTTED" />
+</merge>

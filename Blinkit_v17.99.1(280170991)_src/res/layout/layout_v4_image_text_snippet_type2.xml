@@ -1,0 +1,93 @@
+<?xml version="1.0" encoding="utf-8"?>
+<merge
+    android:layout_width="fill_parent"
+    android:layout_height="wrap_content"
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+    <FrameLayout
+        android:id="@id/top_container"
+        android:paddingTop="@dimen/size_4"
+        android:paddingBottom="@dimen/size_4"
+        android:clipChildren="true"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:elevation="@dimen/negative_ten"
+        android:paddingVertical="@dimen/size_4"
+        app:layout_constraintTop_toTopOf="parent">
+        <com.zomato.ui.atomiclib.atom.staticviews.StaticTextView
+            android:id="@id/top_title"
+            android:paddingLeft="@dimen/dimen_14"
+            android:paddingRight="@dimen/dimen_14"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:paddingHorizontal="@dimen/dimen_14" />
+    </FrameLayout>
+    <com.zomato.ui.atomiclib.atom.staticviews.StaticTextView
+        android:id="@id/title"
+        android:layout_width="0.0dip"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="@dimen/dimen_12"
+        android:layout_marginTop="@dimen/size_8"
+        android:layout_marginRight="@dimen/dimen_12"
+        android:layout_marginHorizontal="@dimen/dimen_12"
+        app:layout_constraintEnd_toStartOf="@id/rating_snippet"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/top_container" />
+    <com.zomato.ui.atomiclib.atom.ZRoundedImageView
+        android:id="@id/subtitle_prefix_image"
+        android:layout_width="@dimen/size14"
+        android:layout_height="@dimen/size14"
+        android:layout_marginStart="@dimen/dimen_12"
+        app:layout_constraintBottom_toBottomOf="@id/subtitle"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="@id/subtitle"
+        app:layout_constraintVertical_bias="0.5" />
+    <com.zomato.ui.atomiclib.atom.staticviews.StaticTextView
+        android:id="@id/subtitle"
+        android:layout_width="0.0dip"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/size_4"
+        android:layout_marginStart="@dimen/dimen_12"
+        android:layout_marginEnd="@dimen/dimen_12"
+        app:layout_constraintBottom_toTopOf="@id/subtitle2"
+        app:layout_constraintEnd_toStartOf="@id/rating_snippet"
+        app:layout_constraintStart_toEndOf="@id/subtitle_prefix_image"
+        app:layout_constraintTop_toBottomOf="@id/title" />
+    <com.zomato.ui.atomiclib.atom.staticviews.StaticTextView
+        android:id="@id/subtitle2"
+        android:layout_width="0.0dip"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/size_4"
+        android:layout_marginStart="@dimen/dimen_12"
+        android:layout_marginEnd="@dimen/dimen_12"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toStartOf="@id/rating_snippet"
+        app:layout_constraintStart_toEndOf="@id/subtitle_prefix_image"
+        app:layout_constraintTop_toBottomOf="@id/subtitle" />
+    <com.zomato.ui.atomiclib.atom.ZRoundedImageView
+        android:id="@id/subtitle_2_prefix_image"
+        android:layout_width="@dimen/size14"
+        android:layout_height="@dimen/size14"
+        android:layout_marginStart="@dimen/dimen_12"
+        app:layout_constraintBottom_toBottomOf="@id/subtitle2"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="@id/subtitle2"
+        app:layout_constraintVertical_bias="0.5" />
+    <com.zomato.ui.atomiclib.snippets.RatingSnippetItem
+        android:id="@id/rating_snippet"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/dimen_12"
+        android:layout_marginEnd="@dimen/dimen_12"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/top_container"
+        app:ratedBlockDimenConfig="200"
+        app:ratingType="tag_v2" />
+    <com.zomato.ui.atomiclib.atom.ZRadioButton
+        android:id="@id/radio_button"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:layout_constraintBottom_toBottomOf="@id/subtitle2"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toTopOf="@id/title" />
+</merge>

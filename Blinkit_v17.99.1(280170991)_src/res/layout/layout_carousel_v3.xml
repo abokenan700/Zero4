@@ -1,0 +1,63 @@
+<?xml version="1.0" encoding="utf-8"?>
+<merge
+    android:layout_width="fill_parent"
+    android:layout_height="wrap_content"
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+    <androidx.viewpager2.widget.ViewPager2
+        android:id="@id/viewPager2"
+        android:background="@color/color_transparent"
+        android:clipChildren="false"
+        android:clipToPadding="false"
+        android:layout_width="0.0dip"
+        android:layout_height="wrap_content"
+        app:layout_constrainedWidth="true"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toStartOf="@id/leftAnimatedDotIndicator"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+    <ViewStub
+        android:id="@id/leftOverflowDotIndicatorStub"
+        android:layout="@layout/animated_dot_indicator_left"
+        android:inflatedId="@id/leftAnimatedDotIndicator"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="@dimen/sushi_spacing_base"
+        app:layout_constraintBottom_toBottomOf="@id/viewPager2"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toEndOf="@id/viewPager2"
+        app:layout_constraintTop_toTopOf="@id/viewPager2" />
+    <View
+        android:id="@id/dotsIndicatorBottomBg"
+        android:layout_width="fill_parent"
+        android:layout_height="@dimen/size_28"
+        app:layout_constraintBottom_toBottomOf="@id/viewPager2"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent" />
+    <ViewStub
+        android:id="@id/animatedDotIndicatorStub"
+        android:layout="@layout/animated_dot_indicator_center"
+        android:inflatedId="@id/animatedDotIndicator"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/sushi_spacing_micro"
+        android:layout_marginBottom="@dimen/sushi_spacing_micro"
+        app:layout_constraintBottom_toBottomOf="@id/viewPager2"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintVertical_bias="1.0" />
+    <com.zomato.ui.lib.organisms.snippets.viewpager2.indicator.ViewPager2OverflowIndicator
+        android:id="@id/dotsBottomIndicator"
+        android:visibility="gone"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/sushi_spacing_macro"
+        android:layout_marginBottom="@dimen/sushi_spacing_macro"
+        app:indicatorDefaultColor="@color/sushi_grey_200"
+        app:indicatorSelectedColor="@color/sushi_grey_800"
+        app:layout_constraintBottom_toBottomOf="@id/viewPager2"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintVertical_bias="1.0"
+        app:maxIndicatorCount="5" />
+</merge>

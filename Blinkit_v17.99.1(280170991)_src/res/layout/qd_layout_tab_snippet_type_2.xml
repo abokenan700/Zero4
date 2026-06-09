@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout
+    android:layout_width="fill_parent"
+    android:layout_height="wrap_content"
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+    <com.google.android.material.tabs.TabLayout
+        android:id="@id/tab_layout"
+        android:background="@color/color_transparent"
+        android:paddingLeft="@dimen/sushi_spacing_macro"
+        android:paddingRight="@dimen/sushi_spacing_macro"
+        android:clipToPadding="false"
+        android:layout_width="wrap_content"
+        android:layout_height="@dimen/size_94"
+        android:paddingHorizontal="@dimen/sushi_spacing_macro"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:tabIndicatorAnimationDuration="400"
+        app:tabIndicatorAnimationMode="linear"
+        app:tabIndicatorColor="?themeColor500"
+        app:tabIndicatorFullWidth="false"
+        app:tabIndicatorHeight="@dimen/size_4"
+        app:tabMode="scrollable"
+        app:tabPaddingBottom="@dimen/sushi_spacing_macro"
+        app:tabPaddingEnd="@dimen/dimen_5"
+        app:tabPaddingStart="@dimen/dimen_5"
+        app:tabPaddingTop="@dimen/sushi_spacing_micro_negative"
+        app:tabRippleColor="@null"
+        app:tabTextAppearance="@style/TabFont" />
+</androidx.constraintlayout.widget.ConstraintLayout>

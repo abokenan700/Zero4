@@ -1,0 +1,184 @@
+{
+	"is_success": true,
+	"response": {
+		"snippets": [
+			{
+				"data": {
+					"title": {
+						"text": "#reason",
+						"color": {
+							"type": "black",
+							"theme_bucket": {
+								"token": "color.text.black"
+							}
+						},
+						"font": {
+							"size": "500",
+							"weight": "extrabold"
+						}
+					},
+					"subtitle": {
+						"text": "#subreason",
+						"color": {
+							"tint": "800",
+							"type": "grey"
+						},
+						"font": {
+							"size": "200",
+							"weight": "regular"
+						}
+					}
+				},
+				"widget_type": "b_image_text_snippet_type_6",
+				"layout_config": {
+					"spacing": "0,16,0,0"
+				}
+			},
+			{
+				"data": {
+					"identity": {
+						"id": "delete_account_input"
+					},
+					"max_text_length": 200,
+					"title": {
+						"text": "Please share your feedback",
+						"color": {
+							"tint": "900",
+							"type": "grey"
+						},
+						"font": {
+							"size": "300",
+							"weight": "medium"
+						}
+					},
+					"placeholder": {
+						"text": "Please share your feedback (Optional)",
+						"color": {
+							"tint": "500",
+							"type": "grey"
+						},
+						"font": {
+							"size": "300",
+							"weight": "regular"
+						}
+					},
+					"lines": 5,
+					"form_id": "delete_account_form_id",
+					"layout_config": {
+						"stroke_color": {
+							"tint": "900",
+							"type": "grey"
+						},
+						"stroke_width": 0.5
+					},
+					"should_reset_text": true
+				},
+				"widget_type": "text_input_layout_snippet",
+				"layout_config": {
+					"spacing": "12,16,12,12"
+				}
+			},
+			{
+				"data": {
+					"button": {
+						"size": "large",
+						"type": "solid",
+						"text": "Delete my account",
+						"font": {
+							"size": "500",
+							"weight": "medium"
+						},
+						"color": {
+							"tint": "700",
+							"type": "white"
+						},
+						"bg_color": {
+							"tint": "500",
+							"type": "theme"
+						},
+						"click_action": {
+							"type": "delete_account",
+							"delete_account": {
+								"id": "delete_account_form_id"
+							}
+						}
+					},
+					"identity": {
+						"id": "submit_button"
+					}
+				},
+				"tracking": {
+					"widget_meta": {
+						"widget_name": "delete_my_account_button"
+					},
+					"click_map": {
+						"event_name": "DELETE_MY_ACCOUNT_BUTTON_CLICKED"
+					},
+					"common_attributes": {
+						"widget_position": 1
+					},
+					"impression_map": {
+						"event_name": "DELETE_MY_ACCOUNT_BUTTON_SHOWN"
+					}
+				},
+				"widget_type": "button_with_loader_snippet",
+				"layout_config": {
+					"spacing": "12,0,12,12"
+				}
+			},
+			{
+				"data": {
+					"title": {
+						"text": "Note* : All data associated with this account will be deleted in accordance with our privacy policy. You will not be able to retrieve this information once deleted.",
+						"color": {
+							"tint": "800",
+							"type": "grey"
+						},
+						"font": {
+							"size": "100",
+							"weight": "regular"
+						}
+					}
+				},
+				"widget_type": "b_image_text_snippet_type_6"
+			}
+		],
+		"page_level_components": {
+			"sticky": {},
+			"toolbar_config": {
+				"title": {
+					"text": "Delete account"
+				},
+				"left_icon": {
+					"icon_type": "BACK_ARROW"
+				},
+				"left_icon_v2": {
+					"code": "e804",
+					"font_size": "600"
+				},
+				"elevation": 6
+			}
+		},
+		"form_fields_config": {
+			"form_id": "delete_account_form_id",
+			"fields": {
+				"submit_button": {
+					"ordered_validation_data": [],
+					"dependencies": [
+						"delete_account_input"
+					]
+				}
+			}
+		},
+		"subscribers": {
+			"DELETE_ACCOUNT_DIALOG_DISMISS": {}
+		},
+		"tracking": {
+			"le_meta": {
+				"id": "delete_account_feedback_page",
+				"name": "delete_account_feedback_page"
+			},
+			"event_name": "DELETE_ACCOUNT_FEEDBACK_PAGE_VISIT"
+		}
+	}
+}

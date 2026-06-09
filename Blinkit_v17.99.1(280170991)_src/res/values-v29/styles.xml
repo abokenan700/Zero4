@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <style name="AppBaseTheme" parent="@style/Theme.Sushi">
+        <item name="android:theme">@style/ThemeOverlay.OkraFont</item>
+        <item name="android:textColorTertiary">@color/sushi_grey_400</item>
+        <item name="android:colorControlNormal">@color/sushi_grey_200</item>
+        <item name="android:colorControlActivated">?brandColor</item>
+        <item name="android:forceDarkAllowed">false</item>
+        <item name="bottomSheetDialogTheme">@style/AppBottomSheetDialogTheme</item>
+        <item name="colorAccent">?themeColor500</item>
+        <item name="colorPrimary">?attr_7f04017d</item>
+        <item name="colorPrimaryDark">@color/sushi_grey_100</item>
+        <item name="tabStyle">@style/Widget.ZTabLayoutStyle</item>
+        <item name="textInputStyle">@style/TextInputFieldTheme</item>
+        <item name="zseparator_color">?attr_7f040299</item>
+    </style>
+    <style name="Base.Theme.Payments" parent="@style/Theme.Sushi">
+        <item name="android:colorControlActivated">?colorPrimary</item>
+        <item name="android:forceDarkAllowed">false</item>
+        <item name="colorError">@color/sushi_red_500</item>
+    </style>
+    <style name="ChatSdkTheme" parent="@style/BlinkitTokensTheme">
+        <item name="android:colorControlActivated">?themeColor500</item>
+        <item name="android:forceDarkAllowed">false</item>
+        <item name="colorAccent">?themeColor500</item>
+        <item name="windowActionBar">false</item>
+        <item name="windowNoTitle">true</item>
+    </style>
+    <style name="UnifiedChatSDKBaseTheme" parent="@style/Theme.Sushi">
+        <item name="android:theme">@style/UnifiedChatSDKThemeOverlay.OkraFont</item>
+        <item name="android:textColorPrimary">@color/sushi_black</item>
+        <item name="android:textColorTertiary">@color/sushi_grey_400</item>
+        <item name="android:colorControlNormal">@color/sushi_grey_200</item>
+        <item name="android:colorControlActivated">?themeColor400</item>
+        <item name="android:colorPrimary">?android:colorPrimary</item>
+        <item name="android:colorPrimaryDark">?colorPrimaryDark</item>
+        <item name="android:forceDarkAllowed">false</item>
+        <item name="actionBarItemBackground">?android:colorBackground</item>
+        <item name="bottomSheetDialogTheme">@style/UnifiedChatSDKBottomSheetDialogTheme</item>
+        <item name="colorAccent">?themeColor500</item>
+        <item name="colorPrimary">@color/sushi_white</item>
+        <item name="colorPrimaryDark">@color/sushi_grey_100</item>
+        <item name="colorSurface">?colorPrimary</item>
+        <item name="textInputStyle">@style/UnifiedChatSDKTextInputFieldTheme</item>
+    </style>
+</resources>

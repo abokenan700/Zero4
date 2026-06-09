@@ -1,0 +1,110 @@
+{
+  "servers": [
+    {
+      "domain": "cert1.zomato.com",
+      "public_key": [],
+      "allowed_all_subdomains": true,
+      "SHA256": [
+        {
+          "certificate": "Qg0mC1JYf0NTrIIQxMGmhgkFYuVAyS7Y2LZ3Tj39N3c=",
+          "date_of_expiry": "2024-05-01T23:59:59Z"
+        }
+      ]
+    },
+    {
+      "domain": "cert2.zomato.com",
+      "public_key": [],
+      "allowed_all_subdomains": true,
+      "SHA256": [
+        {
+          "certificate": "b1EMhmHT0NNKcDc6LVbwREDqBbMO5JsuBmfJ/X2WV2g=",
+          "date_of_expiry": "2023-09-08T23:59:59Z"
+        }
+      ]
+    },
+    {
+      "domain": "cert3.zomato.com",
+      "public_key": [],
+      "allowed_all_subdomains": true,
+      "SHA256": [
+        {
+          "certificate": "5dyU6J77AvJgvVWtsz6YBnbpaynaP86I25dPrrXUVpI=",
+          "date_of_expiry": "2023-10-13T23:59:59Z"
+        }
+      ]
+    },
+    {
+      "domain": "148api.zomato.com",
+      "public_key": [],
+      "allowed_all_subdomains": true,
+      "SHA256": [
+        {
+          "certificate": "L/FbmWbspirEkeYL9qg45J2bSjk0BOivJzTagUzEG4E=",
+          "date_of_expiry": "2023-06-16T23:59:59Z"
+        },
+        {
+          "certificate": "ay+UnoF6ELiRz3BXtyPPw56XeWoQV2+9yv3lMY8XUmM=",
+          "date_of_expiry": "2024-04-26T23:59:59Z"
+        },
+        {
+          "certificate": "JcWl8FJ3BvLfiRGCHqQIIr2LjUWZHL46Xsc+EZ61x+0=",
+          "date_of_expiry": "2023-06-16T23:59:59Z"
+        },
+        {
+          "certificate": "2I7KYj/Yi43IzIKJgy/P0Zcu1DlTiN5luRzjn8TdkCU=",
+          "date_of_expiry": "2023-07-16T23:59:59Z"
+        }
+      ]
+    },
+    {
+      "domain": "api.zomato.com",
+      "public_key": [],
+      "allowed_all_subdomains": true,
+      "SHA256": [
+        {
+          "certificate": "L/FbmWbspirEkeYL9qg45J2bSjk0BOivJzTagUzEG4E",
+          "date_of_expiry": "2023-06-16T23:59:59Z"
+        },
+        {
+          "certificate": "ay+UnoF6ELiRz3BXtyPPw56XeWoQV2+9yv3lMY8XUmM=",
+          "date_of_expiry": "2024-04-26T23:59:59Z"
+        }
+      ]
+    },
+    {
+      "domain": "apibeta.zomato.com",
+      "public_key": [],
+      "allowed_all_subdomains": true,
+      "SHA256": [
+        {
+          "certificate": "2s4tWYbqHHK9bpOe6iineZ/uXo2BO0Ghi5OY9Ro7TCk=",
+          "date_of_expiry": "2023-07-2T23:59:59Z"
+        },
+        {
+          "certificate": "eWhcMak5SEZ9Gq/K1GipVMcb/DwCMJ3F4DMZMZ+q9og=",
+          "date_of_expiry": "2023-09-10T23:59:59Z"
+        },
+        {
+          "certificate": "Td5dNteP5HneuDTxp+4pup09Rccf8ZJfdENlGfppYPY=",
+          "date_of_expiry": "2024-06-12T23:59:59Z"
+        }
+      ]
+    },
+    {
+      "domain": "zpay.zomato.com",
+      "public_key": [],
+      "allowed_all_subdomains": true,
+      "SHA256": [
+        {
+          "certificate": "L/FbmWbspirEkeYL9qg45J2bSjk0BOivJzTagUzEG4E=",
+          "date_of_expiry": "2023-06-16T23:59:59Z"
+        },
+        {
+          "certificate": "ay+UnoF6ELiRz3BXtyPPw56XeWoQV2+9yv3lMY8XUmM=",
+          "date_of_expiry": "2024-04-26T23:59:59Z"
+        }
+      ]
+    }
+  ],
+  "ssl_pinning": false
+}

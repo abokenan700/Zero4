@@ -1,0 +1,67 @@
+<?xml version="1.0" encoding="utf-8"?>
+<merge
+    android:layout_width="fill_parent"
+    android:layout_height="wrap_content"
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+    <androidx.media3.ui.PlayerView
+        android:id="@id/playerView"
+        android:background="@color/sushi_black"
+        android:layout_width="0.0dip"
+        android:layout_height="0.0dip"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:repeat_toggle_modes="one"
+        app:resize_mode="@integer/playerview_resize_mode"
+        app:shutter_background_color="@color/color_transparent"
+        app:surface_type="texture_view"
+        app:use_controller="false">
+        <ImageView
+            android:id="@id/thumbnailView"
+            android:layout_width="fill_parent"
+            android:layout_height="fill_parent"
+            android:src="@drawable/ic_bg"
+            android:scaleType="centerCrop" />
+        <ProgressBar
+            android:layout_gravity="center"
+            android:id="@id/progress_bar"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:indeterminateTint="@color/sushi_white"
+            style="?android:progressBarStyleSmall" />
+        <View
+            android:id="@id/view"
+            android:background="@color/color_black_alpha_sixty"
+            android:layout_width="fill_parent"
+            android:layout_height="fill_parent" />
+        <LinearLayout
+            android:layout_gravity="center"
+            android:orientation="vertical"
+            android:id="@id/errorParent"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content">
+            <com.zomato.ui.atomiclib.atom.ZTextView
+                android:textColor="@color/sushi_white"
+                android:gravity="center"
+                android:layout_gravity="center"
+                android:id="@id/errorDesc"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:textAlignment="center"
+                app:textViewType="REGULAR_300" />
+            <com.zomato.ui.atomiclib.atom.ZButton
+                android:layout_gravity="center"
+                android:id="@id/retryButton"
+                android:focusable="true"
+                android:clickable="true"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                app:buttonType="text"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@id/errorDesc" />
+        </LinearLayout>
+    </androidx.media3.ui.PlayerView>
+</merge>

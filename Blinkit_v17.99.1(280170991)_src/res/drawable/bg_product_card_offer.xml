@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="utf-8"?>
+<vector
+    android:height="26.303009dip"
+    android:width="26.0dip"
+    android:viewportWidth="33.0"
+    android:viewportHeight="28.0"
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:aapt="http://schemas.android.com/aapt">
+    <path
+        android:fillColor="@drawable/$bg_product_card_offer__0"
+        android:pathData="M33,0C32.374,0 32.052,0.843 32.052,2V28L27.968,26L24.137,28L20.307,26L16.477,28L12.646,26L8.816,28L4.986,26L1.002,28V2C1.002,0.843 0.626,0 0,0H33Z" />
+</vector>

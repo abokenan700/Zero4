@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.zomato.ui.atomiclib.atom.ZTextView
+    android:gravity="center"
+    android:id="@id/title"
+    android:padding="@dimen/sushi_spacing_base"
+    android:layout_width="fill_parent"
+    android:layout_height="wrap_content"
+    android:layout_marginLeft="@dimen/sushi_spacing_micro"
+    android:layout_marginRight="@dimen/sushi_spacing_micro"
+    android:layout_marginBottom="@dimen/size14"
+    android:layout_marginHorizontal="@dimen/sushi_spacing_micro"
+    xmlns:android="http://schemas.android.com/apk/res/android" />

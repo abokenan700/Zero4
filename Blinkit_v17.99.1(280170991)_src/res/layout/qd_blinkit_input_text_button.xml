@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout
+    android:background="@drawable/qd_rounded_white_with_grey_border"
+    android:paddingTop="@dimen/sushi_spacing_macro"
+    android:paddingBottom="@dimen/sushi_spacing_macro"
+    android:layout_width="fill_parent"
+    android:layout_height="wrap_content"
+    android:paddingStart="@dimen/sushi_spacing_base"
+    android:paddingEnd="@dimen/sushi_spacing_macro"
+    android:paddingVertical="@dimen/sushi_spacing_macro"
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+    <EditText
+        android:id="@id/text_input_field"
+        android:background="@null"
+        android:layout_width="0.0dip"
+        android:layout_height="wrap_content"
+        android:hint="Enter promo code"
+        android:inputType="textCapCharacters"
+        android:imeOptions="actionDone"
+        android:textCursorDrawable="@null"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toStartOf="@id/right_button"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+    <com.zomato.ui.atomiclib.atom.ZButton
+        android:textColor="@color/sushi_white"
+        android:id="@id/right_button"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="APPLY"
+        app:buttonColor="@color/sushi_grey_300"
+        app:buttonDimension="medium"
+        app:buttonType="solid"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toEndOf="@id/text_input_field"
+        app:layout_constraintTop_toTopOf="parent" />
+</androidx.constraintlayout.widget.ConstraintLayout>

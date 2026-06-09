@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+    <com.zomato.ui.atomiclib.atom.ZTextView
+        android:id="@id/resend_dialog_message_box"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/size_29"
+        android:layout_marginBottom="@dimen/size_29"
+        android:layout_marginStart="@dimen/size_24"
+        android:layout_marginEnd="@dimen/size_24"
+        app:layout_constraintBottom_toTopOf="@id/resend_dialog_barrier"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+    <androidx.constraintlayout.widget.Barrier
+        android:id="@id/resend_dialog_barrier"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:barrierDirection="top"
+        app:constraint_referenced_ids="resend_dialog_resend_button,resend_dialog_delete_button" />
+    <com.zomato.ui.atomiclib.atom.ZButton
+        android:id="@id/resend_dialog_resend_button"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="@dimen/dimen_17"
+        android:layout_marginEnd="@dimen/dimen_17"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent" />
+    <com.zomato.ui.atomiclib.atom.ZButton
+        android:id="@id/resend_dialog_delete_button"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="@dimen/dimen_17"
+        android:layout_marginEnd="@dimen/size_27"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toStartOf="@id/resend_dialog_resend_button" />
+</androidx.constraintlayout.widget.ConstraintLayout>

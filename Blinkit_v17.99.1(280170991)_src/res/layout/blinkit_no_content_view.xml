@@ -1,0 +1,87 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    android:gravity="center"
+    android:layout_gravity="center"
+    android:orientation="vertical"
+    android:id="@id/ncv_ll_container"
+    android:background="?attr_7f04017d"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+    <com.zomato.ui.atomiclib.atom.ZRoundedImageView
+        android:id="@id/ncv_image"
+        android:visibility="gone"
+        android:layout_width="@dimen/size_244"
+        android:layout_height="@dimen/size_244" />
+    <com.blinkit.commons.ui.ui.customviews.viewstub.image.BLottieAnimationViewStub
+        android:id="@id/ncv_lottie"
+        android:visibility="gone"
+        android:layout_width="@dimen/size_244"
+        android:layout_height="@dimen/size_244" />
+    <com.blinkit.blink.elements.ui.atoms.text.BlinkitTextView
+        android:textColor="?attr_7f040466"
+        android:id="@id/ncv_extra_info"
+        android:paddingLeft="@dimen/qd_padding_20"
+        android:paddingRight="@dimen/qd_padding_20"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:paddingHorizontal="@dimen/qd_padding_20" />
+    <com.zomato.ui.atomiclib.atom.ZTextView
+        android:textColor="?attr_7f040466"
+        android:ellipsize="end"
+        android:gravity="center"
+        android:id="@id/ncv_title"
+        android:paddingLeft="@dimen/qd_padding_20"
+        android:paddingRight="@dimen/qd_padding_20"
+        android:visibility="gone"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/sushi_spacing_base"
+        android:maxLines="2"
+        android:textAlignment="center"
+        android:paddingHorizontal="@dimen/qd_padding_20"
+        app:textViewType="MEDIUM_700" />
+    <com.zomato.ui.atomiclib.atom.ZTextView
+        android:textColor="?attr_7f04047c"
+        android:ellipsize="end"
+        android:gravity="center"
+        android:id="@id/ncv_subtitle"
+        android:paddingLeft="@dimen/qd_padding_20"
+        android:paddingRight="@dimen/qd_padding_20"
+        android:visibility="gone"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/sushi_spacing_micro"
+        android:maxLines="2"
+        android:textAlignment="center"
+        android:paddingHorizontal="@dimen/qd_padding_20"
+        app:textViewType="REGULAR_300" />
+    <com.blinkit.blink.elements.ui.atoms.button.BlinkitButtonView
+        android:id="@id/ncv_solid_button"
+        android:visibility="gone"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="@dimen/margin_20"
+        android:layout_marginTop="@dimen/qd_margin_24"
+        android:layout_marginRight="@dimen/margin_20"
+        android:layout_marginHorizontal="@dimen/margin_20"
+        app:buttonColor="?themeColor500"
+        app:buttonType="solid"
+        app:cornerRadius="@dimen/margin_6" />
+    <com.blinkit.blink.elements.ui.atoms.button.BlinkitButtonView
+        android:textColor="?themeColor500"
+        android:id="@id/ncv_text_button"
+        android:visibility="gone"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/qd_margin_12"
+        app:buttonType="text" />
+    <com.zomato.ui.atomiclib.atom.ZTextView
+        android:textColor="?attr_7f04047c"
+        android:id="@id/ncv_retry_later_text"
+        android:visibility="gone"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/qd_margin_20" />
+</LinearLayout>

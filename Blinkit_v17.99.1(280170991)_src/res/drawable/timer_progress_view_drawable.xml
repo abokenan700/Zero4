@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layer-list
+    xmlns:android="http://schemas.android.com/apk/res/android">
+    <item
+        android:id="@android:id/secondaryProgress">
+        <shape
+            android:shape="ring"
+            android:useLevel="true"
+            android:innerRadius="@dimen/progress_timer_inner_radius"
+            android:thickness="@dimen/progress_timer_thickness" />
+    </item>
+    <item
+        android:id="@android:id/progress">
+        <rotate
+            android:fromDegrees="360.0"
+            android:toDegrees="0.0">
+            <shape
+                android:shape="ring"
+                android:useLevel="true"
+                android:innerRadius="@dimen/progress_timer_inner_radius"
+                android:thickness="@dimen/progress_timer_thickness" />
+        </rotate>
+    </item>
+</layer-list>

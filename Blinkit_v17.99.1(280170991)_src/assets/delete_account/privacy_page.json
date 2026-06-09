@@ -1,0 +1,379 @@
+{
+	"is_success": true,
+	"response": {
+		"snippets": [
+			{
+				"data": {
+					"title": {
+						"text": "Account privacy and policy",
+						"color": {
+							"tint": "900",
+							"type": "black",
+							"theme_bucket": {
+								"token": "color.text.black"
+							}
+						},
+						"font": {
+							"size": "500",
+							"weight": "extrabold"
+						}
+					}
+				},
+				"widget_type": "b_image_text_snippet_type_6",
+				"layout_config": {
+					"spacing": "0,16,0,4"
+				}
+			},
+			{
+				"data": {
+					"title": {
+						"text": "We i.e. \"Blink Commerce Private Limited\" (formerly known as Grofers India Private Limited) (“Company”), are committed to protecting the privacy and security of your personal information. Your privacy is important to us and maintaining your trust is paramount.",
+						"color": {
+							"tint": "800",
+							"type": "grey",
+							"theme_bucket": {
+								"token": "color.text.grey"
+							}
+						},
+						"font": {
+							"size": "200",
+							"weight": "regular"
+						}
+					},
+					"identity": {
+						"id": "product_details"
+					}
+				},
+				"widget_type": "b_image_text_snippet_type_6",
+				"layout_config": {
+					"spacing": "0,0,0,2"
+				}
+			},
+			{
+				"data": {
+					"left_image": null,
+					"title": null,
+					"subtitle1": null,
+					"right_button": null,
+					"bottom_button": {
+						"text": "Read more",
+						"color": {
+							"tint": "700",
+							"type": "green",
+							"theme_bucket": {
+								"token": "color.button.ghost.label"
+							}
+						},
+						"suffix_icon": {
+							"code": "e874",
+							"color": {
+								"tint": "700",
+								"type": "green",
+								"theme_bucket": {
+									"token": "color.button.ghost.label"
+								}
+							},
+							"font_size": "200"
+						},
+						"click_action": {
+							"type": "update_snippet_list",
+							"update_snippet_list": {
+								"snippet_list_updater_ids": [
+									"expand_attributes",
+									"expand_remove_attributes"
+								]
+							}
+						},
+						"font": {
+							"size": "200",
+							"weight": "semibold"
+						}
+					},
+					"identity": {
+						"id": "collapsed_button_id"
+					},
+					"padding": "0,0,0,0"
+				},
+				"widget_type": "crystal_snippet_vr_type_1"
+			},
+			{
+				"data": {
+					"bg_color_data": {
+						"theme_bucket": {
+							"token": "color.surface.quaternary"
+						}
+					},
+					"title": {
+						"color": {
+							"tint": "900",
+							"type": "black",
+							"theme_bucket": {
+								"token": "color.text.black"
+							}
+						},
+						"text": "Request to delete account",
+						"font": {
+							"weight": "bold",
+							"size": "300"
+						}
+					},
+					"subtitle1": {
+						"color": {
+							"tint": "800",
+							"type": "grey",
+							"theme_bucket": {
+								"token": "color.text.grey"
+							}
+						},
+						"text": "Request to closure of your account",
+						"font": {
+							"weight": "regular",
+							"size": "100"
+						}
+					},
+					"left_icon": {
+						"code": "e8AC",
+						"color": {
+							"tint": "900",
+							"type": "black",
+							"theme_bucket": {
+								"token": "color.text.black"
+							}
+						},
+						"font_size": "800"
+					},
+					"right_icon": {
+						"color": {
+							"tint": "900",
+							"type": "black",
+							"theme_bucket": {
+								"token": "color.text.black"
+							}
+						},
+						"font_size": "600",
+						"code": "e92f",
+						"border": {
+							"width": 0,
+							"colors": [
+								{
+									"tint": "200",
+									"type": "grey"
+								}
+							]
+						}
+					},
+					"border": {
+						"width": 0.5,
+						"colors": [
+							{
+								"tint": "200",
+								"type": "grey",
+								"theme_bucket": {
+									"token": "color.border.grey.mid"
+								}
+							}
+						]
+					},
+					"radius": 12,
+					"click_action": {
+						"blinkit_deeplink": {
+							"url": "grofers://delete_account_reasons_page"
+						},
+						"type": "blinkit_deeplink"
+					}
+				},
+				"tracking": {
+					"widget_meta": {
+						"widget_name": "request_to_delete_account_widget"
+					},
+					"click_map": {
+						"event_name": "REQUEST_TO_DELETE_ACCOUNT_WIDGET_CLICKED"
+					},
+					"common_attributes": {
+						"widget_position": 1
+					},
+					"impression_map": {
+						"event_name": "REQUEST_TO_DELETE_ACCOUNT_WIDGET_SHOWN"
+					}
+				},
+				"widget_type": "crystal_snippet_type_6",
+				"layout_config": {
+					"spacing": "12,24,12,12"
+				}
+			}
+		],
+		"page_level_components": {
+			"sticky": {},
+			"toolbar_config": {
+				"title": {
+					"text": "Account privacy"
+				},
+				"left_icon": {
+					"icon_type": "BACK_ARROW"
+				},
+				"left_icon_v2": {
+					"code": "e804",
+					"font_size": "600",
+					"accessibility_text": {
+						"text": "Go back"
+					}
+				},
+				"elevation": 6
+			}
+		},
+		"snippet_list_updater_data": {
+			"collapsed_add_attributes": {
+				"type": "add_snippets",
+				"payload": {
+					"snippet_id_to_attach": "product_details",
+					"snippets_to_add": [
+						{
+							"data": {
+								"bottom_button": {
+									"text": "Read more",
+									"color": {
+										"tint": "700",
+										"type": "green",
+										"theme_bucket": {
+											"token": "color.button.ghost.label"
+										}
+									},
+									"suffix_icon": {
+										"code": "e874",
+										"color": {
+											"tint": "700",
+											"type": "green",
+											"theme_bucket": {
+												"token": "color.button.ghost.label"
+											}
+										},
+										"font_size": "200"
+									},
+									"click_action": {
+										"type": "update_snippet_list",
+										"update_snippet_list": {
+											"snippet_list_updater_ids": [
+												"expand_attributes",
+												"expand_remove_attributes"
+											]
+										}
+									},
+									"font": {
+										"size": "100",
+										"weight": "medium"
+									}
+								},
+								"identity": {
+									"id": "collapsed_button_id"
+								},
+								"padding": "0,0,0,0"
+							},
+							"widget_type": "crystal_snippet_vr_type_1"
+						}
+					]
+				}
+			},
+			"collapsed_attributes": {
+				"type": "remove_snippets",
+				"payload": {
+					"snippet_ids_to_remove": [
+						"product_details_1",
+						"expanded_button_id"
+					]
+				}
+			},
+			"expand_attributes": {
+				"type": "add_snippets",
+				"payload": {
+					"snippet_id_to_attach": "product_details",
+					"snippets_to_add": [
+						{
+							"data": {
+								"title": {
+									"text": "\nThis privacy policy explains how we collect, use, process and disclose information about you. By using our website/ app/ platform and affiliated services, you consent to the terms of our privacy policy (“Privacy Policy”) in addition to our ‘Terms of Use.’ We encourage you to read this privacy policy to understand the collection, use, and disclosure of your information from time to time, to keep yourself updated with the changes and updates that we make to this policy.\n\nThis privacy policy describes our privacy practices for all websites, products and services that are linked to it. However this policy does not apply to those affiliates and partners that have their own privacy policy. In such situations, we recommend that you read the privacy policy on the applicable site.\n\nShould you have any clarifications regarding this privacy policy, please write to us at info@blinkit.com",
+									"color": {
+										"tint": "800",
+										"type": "grey",
+										"theme_bucket": {
+											"token": "color.text.grey"
+										}
+									},
+									"font": {
+										"size": "200",
+										"weight": "regular"
+									}
+								},
+								"identity": {
+									"id": "product_details_1"
+								}
+							},
+							"widget_type": "b_image_text_snippet_type_6",
+							"layout_config": {
+								"spacing": "0,0,0,2"
+							}
+						},
+						{
+							"data": {
+								"bottom_button": {
+									"text": "Read less",
+									"color": {
+										"tint": "700",
+										"type": "green",
+										"theme_bucket": {
+											"token": "color.button.ghost.label"
+										}
+									},
+									"suffix_icon": {
+										"code": "e873",
+										"color": {
+											"tint": "700",
+											"type": "green",
+											"theme_bucket": {
+												"token": "color.button.ghost.label"
+											}
+										},
+										"font_size": "200"
+									},
+									"click_action": {
+										"type": "update_snippet_list",
+										"update_snippet_list": {
+											"snippet_list_updater_ids": [
+												"collapsed_add_attributes",
+												"collapsed_attributes"
+											]
+										}
+									},
+									"font": {
+										"size": "100",
+										"weight": "medium"
+									}
+								},
+								"click_action": null,
+								"identity": {
+									"id": "expanded_button_id"
+								},
+								"padding" : "0,0,0,0"
+							},
+							"widget_type": "crystal_snippet_vr_type_1"
+						}
+					]
+				}
+			},
+			"expand_remove_attributes": {
+				"type": "remove_snippets",
+				"payload": {
+					"snippet_ids_to_remove": [
+						"collapsed_button_id"
+					]
+				}
+			}
+		},
+		"tracking": {
+			"le_meta": {
+				"id": "account_privacy_page",
+				"name": "account_privacy_page"
+			},
+			"event_name": "ACCOUNT_PRIVACY_PAGE_VISIT"
+		}
+	}
+}

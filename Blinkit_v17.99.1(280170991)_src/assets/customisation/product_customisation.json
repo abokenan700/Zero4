@@ -1,0 +1,72 @@
+{
+	"is_success": true,
+	"response": {
+		"snippets": [
+			{
+				"data": {
+					"title": {
+						"text": "Repeat last used customizations?",
+						"font" : {
+							"size": "500",
+							"weight": "extrabold"
+						},
+						"color": {
+							"tint": "900",
+							"type": "black"
+						}
+					}
+				},
+				"widget_type": "image_text_vr_type_header"
+			},
+			{
+				"widget_type": "placeholder_snippet_type_1"
+			},
+			{
+				"data": {
+					"title": {
+						"text": "+ Add new customisation",
+						"font": {
+							"size": "300",
+							"weight": "medium"
+						},
+						"color": {
+							"tint": "700",
+							"type": "green"
+						}
+					},
+					"card_bg_color":  {
+						"tint": "900",
+						"type": "white"
+					},
+					"padding": "0,16,0,16",
+					"click_action": {
+						"consume_actions": {
+							"key": "consume_product_#product_id#bundle_offer_id",
+							"should_consume_one_time": false
+						},
+						"type": "consume_actions"
+					}
+				},
+				"tracking": {
+					"impression_map": {
+						"event_name": "FOOTER_SHOWN"
+					},
+					"click_map": {
+						"event_name": "FOOTER_CLICKED"
+					},
+					"entry_source_map": {
+						"entry_source_title": "Add new customisation"
+					}
+				},
+				"widget_type": "image_text_vr_type_footer_v2"
+			}
+		],
+		"tracking": {
+			"le_meta": {
+				"id": "#product_id",
+				"name": "product_customisation_bottom_sheet"
+			},
+			"event_name": "BOTTOM_SHEET_VISIT"
+		}
+	}
+}

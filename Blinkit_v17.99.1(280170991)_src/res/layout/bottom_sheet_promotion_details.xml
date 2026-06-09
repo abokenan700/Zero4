@@ -1,0 +1,63 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    android:orientation="vertical"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+    <FrameLayout
+        android:id="@id/cross_button_container"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        app:layout_constraintTop_toTopOf="parent">
+        <com.zomato.ui.atomiclib.atom.ZIconFontTextView
+            android:textSize="@dimen/sushi_textsize_800"
+            android:textColor="@color/color_white"
+            android:layout_gravity="center_horizontal"
+            android:id="@id/cross_button"
+            android:background="@drawable/qd_cross_icon"
+            android:paddingLeft="@dimen/sushi_spacing_macro"
+            android:paddingTop="@dimen/size_8"
+            android:paddingRight="@dimen/sushi_spacing_macro"
+            android:paddingBottom="@dimen/size_8"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="@dimen/sushi_spacing_extra"
+            android:text="@string/icon_font_cross"
+            android:paddingHorizontal="@dimen/sushi_spacing_macro"
+            android:paddingVertical="@dimen/size_8" />
+    </FrameLayout>
+    <LinearLayout
+        android:orientation="vertical"
+        android:id="@id/data_container"
+        android:background="@color/sushi_white"
+        android:paddingBottom="@dimen/sushi_spacing_page_side"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:minHeight="@dimen/size_200">
+        <com.zomato.ui.atomiclib.atom.ZTextView
+            android:textColor="?android:textColorPrimary"
+            android:ellipsize="end"
+            android:layout_gravity="start"
+            android:id="@id/title"
+            android:paddingLeft="@dimen/dimen_12"
+            android:paddingTop="@dimen/dimen_12"
+            android:paddingRight="@dimen/dimen_12"
+            android:paddingBottom="@dimen/dimen_10"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:text="@string/coupon_details_title"
+            android:maxLines="1"
+            android:paddingHorizontal="@dimen/dimen_12"
+            app:textViewType="SEMIBOLD_500" />
+        <com.zomato.ui.atomiclib.atom.ZSeparator
+            android:id="@id/bottom_separator"
+            android:visibility="visible"
+            android:layout_width="fill_parent"
+            android:layout_height="@dimen/dimen_point_five" />
+        <androidx.recyclerview.widget.RecyclerView
+            android:id="@id/rv"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content" />
+    </LinearLayout>
+</LinearLayout>

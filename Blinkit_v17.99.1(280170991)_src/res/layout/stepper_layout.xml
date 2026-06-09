@@ -1,0 +1,61 @@
+<?xml version="1.0" encoding="utf-8"?>
+<merge
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+    <LinearLayout
+        android:orientation="horizontal"
+        android:id="@id/ll_rootview"
+        android:background="?android:selectableItemBackground"
+        android:layout_width="wrap_content"
+        android:layout_height="@dimen/stepper_height">
+        <com.zomato.ui.atomiclib.atom.ZIconFontTextView
+            android:gravity="center"
+            android:id="@id/button_remove"
+            android:background="?android:selectableItemBackground"
+            android:visibility="visible"
+            android:layout_width="0.0dip"
+            android:layout_height="fill_parent"
+            android:text="@string/icon_font_remove"
+            android:layout_weight="1.0"
+            android:paddingStart="@dimen/sushi_spacing_between"
+            android:paddingEnd="@dimen/sushi_spacing_between"
+            app:layout_constraintStart_toStartOf="parent" />
+        <TextSwitcher
+            android:id="@id/text_view_title"
+            android:layout_width="0.0dip"
+            android:layout_height="fill_parent"
+            android:layout_weight="1.0">
+            <com.zomato.ui.atomiclib.atom.ZTextView
+                android:ellipsize="end"
+                android:gravity="center"
+                android:layout_width="fill_parent"
+                android:layout_height="fill_parent"
+                android:maxLines="1"
+                android:minEms="3"
+                android:textAllCaps="true"
+                app:textViewType="MEDIUM_100" />
+            <com.zomato.ui.atomiclib.atom.ZTextView
+                android:ellipsize="end"
+                android:gravity="center"
+                android:layout_width="fill_parent"
+                android:layout_height="fill_parent"
+                android:maxLines="1"
+                android:minEms="3"
+                android:textAllCaps="true"
+                app:textViewType="MEDIUM_100" />
+        </TextSwitcher>
+        <com.zomato.ui.atomiclib.atom.ZIconFontTextView
+            android:gravity="center"
+            android:id="@id/button_add"
+            android:background="?android:selectableItemBackground"
+            android:layout_width="0.0dip"
+            android:layout_height="fill_parent"
+            android:text="@string/icon_font_plus"
+            android:layout_weight="1.0"
+            android:paddingStart="@dimen/sushi_spacing_between"
+            android:paddingEnd="@dimen/sushi_spacing_between"
+            app:layout_constraintEnd_toEndOf="parent" />
+    </LinearLayout>
+</merge>

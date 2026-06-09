@@ -1,0 +1,65 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    android:orientation="vertical"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+    <FrameLayout
+        android:id="@id/web_view_container"
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent">
+        <WebView
+            android:id="@id/webView"
+            android:layout_width="fill_parent"
+            android:layout_height="fill_parent" />
+        <View
+            android:id="@id/webView_overlay"
+            android:background="@color/sushi_black"
+            android:visibility="visible"
+            android:layout_width="fill_parent"
+            android:layout_height="fill_parent"
+            android:alpha="0.74" />
+        <LinearLayout
+            android:gravity="center"
+            android:layout_gravity="center"
+            android:orientation="vertical"
+            android:id="@id/webView_overlay_text_container"
+            android:paddingLeft="@dimen/sushi_spacing_base"
+            android:paddingRight="@dimen/sushi_spacing_base"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:paddingHorizontal="@dimen/sushi_spacing_base">
+            <com.zomato.ui.atomiclib.atom.ZIconFontTextView
+                android:textSize="@dimen/size18"
+                android:textColor="@color/sushi_white"
+                android:id="@id/webView_overlay_icon"
+                android:paddingBottom="@dimen/sushi_spacing_macro"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/icon_font_mail_fill" />
+            <com.zomato.ui.atomiclib.atom.ZTextView
+                android:textSize="@dimen/sushi_textsize_400"
+                android:textColor="@color/sushi_white"
+                android:gravity="center"
+                android:id="@id/webView_overlay_text"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:text="@string/view_full_content" />
+        </LinearLayout>
+    </FrameLayout>
+    <TextView
+        android:textSize="@dimen/dimen_15sp"
+        android:id="@id/html_string_textview"
+        android:visibility="gone"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content" />
+    <com.zomato.ui.atomiclib.atom.ZButton
+        android:textSize="@dimen/sushi_textsize_500"
+        android:gravity="start"
+        android:id="@id/read_more_button"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:buttonDimension="small"
+        app:buttonType="text" />
+</LinearLayout>

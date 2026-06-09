@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="utf-8"?>
+<merge
+    android:layout_width="fill_parent"
+    android:layout_height="wrap_content"
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+    <View
+        android:gravity="center_horizontal"
+        android:layout_gravity="center_horizontal"
+        android:id="@id/notch_view"
+        android:layout_width="@dimen/size_60"
+        android:layout_height="@dimen/sushi_spacing_macro"
+        android:layout_margin="@dimen/sushi_spacing_mini" />
+</merge>

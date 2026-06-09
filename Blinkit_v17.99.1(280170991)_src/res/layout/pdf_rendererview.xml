@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+    <com.blinkit.filemanager.pdf.core.ui.PinchZoomRecyclerView
+        android:id="@id/recyclerView"
+        android:background="@android:color/transparent"
+        android:scrollbars="vertical"
+        android:clipToPadding="false"
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent" />
+    <TextView
+        android:textSize="16.0sp"
+        android:textColor="@color/sushi_grey_800"
+        android:id="@id/pageNumber"
+        android:background="@color/sushi_grey_200"
+        android:paddingTop="4.0dip"
+        android:paddingBottom="4.0dip"
+        android:visibility="gone"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_margin="18.0dip"
+        android:paddingStart="12.0dip"
+        android:paddingEnd="12.0dip"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+</androidx.constraintlayout.widget.ConstraintLayout>

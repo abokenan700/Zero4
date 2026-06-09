@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout
+    android:layout_width="fill_parent"
+    android:layout_height="wrap_content"
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+    <com.google.android.material.tabs.TabLayout
+        android:id="@id/tab_layout"
+        android:layout_width="0.0dip"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="@dimen/sushi_spacing_micro"
+        android:layout_marginRight="@dimen/sushi_spacing_micro"
+        android:layout_marginHorizontal="@dimen/sushi_spacing_micro"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:tabIndicatorAnimationDuration="600"
+        app:tabIndicatorAnimationMode="linear"
+        app:tabIndicatorFullWidth="false"
+        app:tabIndicatorHeight="@dimen/size_4"
+        app:tabMode="scrollable"
+        app:tabPaddingBottom="@dimen/dimen_0"
+        app:tabPaddingEnd="@dimen/sushi_spacing_macro"
+        app:tabPaddingStart="@dimen/sushi_spacing_macro"
+        app:tabPaddingTop="@dimen/dimen_0"
+        app:tabRippleColor="@null"
+        app:tabTextAppearance="@style/TabFont" />
+    <androidx.recyclerview.widget.RecyclerView
+        android:id="@id/recycler_view"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/tab_layout" />
+</androidx.constraintlayout.widget.ConstraintLayout>

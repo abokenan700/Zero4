@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout
+    android:background="?attr_7f040180"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+    <androidx.recyclerview.widget.RecyclerView
+        android:id="@id/rv_view"
+        android:layout_width="fill_parent"
+        android:layout_height="0.0dip"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintBottom_toTopOf="@id/bg_view"
+        app:layout_constraintTop_toTopOf="parent" />
+    <View
+        android:id="@id/bg_view"
+        android:background="?attr_7f0403d7"
+        android:padding="@dimen/padding_12"
+        android:layout_width="fill_parent"
+        android:layout_height="@dimen/size_64"
+        app:layout_constraintBottom_toBottomOf="parent" />
+    <com.zomato.ui.atomiclib.atom.ZButtonWithLoader
+        android:id="@id/save_address"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="@dimen/margin_12"
+        android:textAllCaps="false"
+        app:buttonColor="?themeColor500"
+        app:layout_constraintBottom_toBottomOf="@id/bg_view"
+        app:layout_constraintTop_toTopOf="@id/bg_view" />
+    <com.blinkit.commons.ui.ui.customviews.loadingErrorOverlay.LoadingErrorOverlay
+        android:id="@id/loading_error_overlay"
+        android:visibility="gone"
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+</androidx.constraintlayout.widget.ConstraintLayout>

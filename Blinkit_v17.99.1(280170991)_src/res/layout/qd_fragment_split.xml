@@ -1,0 +1,89 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+    <com.blinkit.commonwidgetized.ui.ui.view.pagelevel.toolbar.CwToolbar
+        android:id="@id/include_toolbar"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:outlineProvider="none"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+    <View
+        android:id="@id/toolbar_shadow_view"
+        android:background="@color/color_black_trans_ten"
+        android:layout_width="fill_parent"
+        android:layout_height="0.5dip"
+        app:layout_constraintTop_toBottomOf="@id/include_toolbar" />
+    <com.blinkit.commons.ui.ui.customviews.stickyoverlay.suboverlays.StickyHeaderContainer
+        android:id="@id/sticky_header"
+        android:background="@color/sushi_white"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:elevation="@dimen/elevation_big"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/toolbar_shadow_view"
+        app:layout_constraintVertical_bias="0.0" />
+    <FrameLayout
+        android:id="@id/fl_primary"
+        android:visibility="visible"
+        android:layout_width="0.0dip"
+        android:layout_height="0.0dip"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/sticky_header" />
+    <FrameLayout
+        android:id="@id/fl_detail"
+        android:tag="fl_detail"
+        android:visibility="gone"
+        android:layout_width="0.0dip"
+        android:layout_height="0.0dip"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toEndOf="@id/fl_primary"
+        app:layout_constraintTop_toBottomOf="@id/sticky_header" />
+    <com.blinkit.commons.ui.ui.customviews.CustomViewPager
+        android:id="@id/view_pager"
+        android:visibility="gone"
+        android:layout_width="fill_parent"
+        android:layout_height="0.0dip"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/fl_primary" />
+    <View
+        android:id="@id/fl_primary_horizontal_shadow_view"
+        android:background="@drawable/qd_horizontal_shadow"
+        android:layout_width="4.0dip"
+        android:layout_height="0.0dip"
+        android:elevation="6.0dip"
+        app:layout_constraintStart_toEndOf="@id/fl_primary"
+        app:layout_constraintTop_toBottomOf="@id/sticky_header" />
+    <View
+        android:id="@id/fl_primary_vertical_shadow_view"
+        android:background="@drawable/bg_shadow_downward"
+        android:layout_width="0.0dip"
+        android:layout_height="4.0dip"
+        android:elevation="6.0dip"
+        app:layout_constraintTop_toBottomOf="@id/fl_primary" />
+    <com.blinkit.commons.ui.ui.customviews.loadingErrorOverlay.LoadingErrorOverlay
+        android:id="@id/loading_error_overlay"
+        android:layout_width="0.0dip"
+        android:layout_height="0.0dip"
+        android:elevation="@dimen/elevation_medium"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+    <com.blinkit.commons.ui.ui.customviews.stickyoverlay.suboverlays.StickyFooterContainer
+        android:id="@id/sticky_footer"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:elevation="@dimen/elevation_big"
+        app:layout_constraintBottom_toBottomOf="parent" />
+    <com.blinkit.commons.ui.ui.customviews.stickyoverlay.suboverlays.OverlayContainer
+        android:id="@id/overlay_container"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:elevation="@dimen/elevation_big"
+        app:layout_constraintTop_toBottomOf="@id/toolbar_shadow_view" />
+</androidx.constraintlayout.widget.ConstraintLayout>

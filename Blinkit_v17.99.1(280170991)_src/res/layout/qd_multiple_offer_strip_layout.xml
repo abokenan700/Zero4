@@ -1,0 +1,154 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout
+    android:id="@id/strip_animation_container"
+    android:clipChildren="false"
+    android:layout_width="fill_parent"
+    android:layout_height="wrap_content"
+    android:clipToOutline="false"
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+    <View
+        android:id="@id/shadow"
+        android:background="@drawable/bg_above_shadow"
+        android:visibility="gone"
+        android:layout_width="fill_parent"
+        android:layout_height="@dimen/dimen_14"
+        android:translationY="-8.0dip" />
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:id="@id/strip_container"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content">
+        <androidx.viewpager2.widget.ViewPager2
+            android:orientation="horizontal"
+            android:id="@id/view_pager"
+            android:background="@color/color_transparent"
+            android:clipChildren="false"
+            android:clipToPadding="false"
+            android:layout_width="0.0dip"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="@dimen/sushi_spacing_nano"
+            android:layout_marginRight="@dimen/sushi_spacing_nano"
+            android:layout_marginHorizontal="@dimen/sushi_spacing_nano"
+            app:layout_constraintEnd_toStartOf="@id/right_section_left_barrier"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+        <View
+            android:id="@id/vertical_separator"
+            android:background="?attr_7f0403d4"
+            android:layout_width="1.0dip"
+            android:layout_height="0.0dip"
+            android:alpha="0.06"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintStart_toEndOf="@id/view_pager"
+            app:layout_constraintTop_toTopOf="@id/view_pager" />
+        <LinearLayout
+            android:orientation="horizontal"
+            android:id="@id/right_nudge"
+            android:visibility="visible"
+            android:layout_width="@dimen/size_110"
+            android:layout_height="0.0dip"
+            android:layout_marginLeft="@dimen/sushi_spacing_nano"
+            android:layout_marginTop="@dimen/sushi_spacing_micro"
+            android:layout_marginRight="@dimen/sushi_spacing_nano"
+            android:layout_marginBottom="@dimen/sushi_spacing_micro"
+            android:alpha="0.0"
+            android:layout_marginHorizontal="@dimen/sushi_spacing_nano"
+            android:layout_marginVertical="@dimen/sushi_spacing_micro"
+            app:layout_constraintBottom_toBottomOf="@id/view_pager"
+            app:layout_constraintBottom_toTopOf="@id/dots_bottom_indicator"
+            app:layout_constraintStart_toEndOf="@id/view_pager"
+            app:layout_constraintTop_toTopOf="parent">
+            <com.zomato.ui.atomiclib.atom.ZTextView
+                android:textColor="@color/sushi_black"
+                android:ellipsize="end"
+                android:gravity="start|center"
+                android:layout_gravity="center"
+                android:id="@id/nudge_text"
+                android:layout_width="@dimen/size_60"
+                android:layout_height="fill_parent"
+                android:maxLines="2"
+                android:textAllCaps="true"
+                android:textAlignment="viewStart"
+                android:layout_marginStart="@dimen/sushi_spacing_base"
+                app:textViewType="BOLD_50" />
+            <com.blinkit.commons.ui.ui.customviews.bmediaview.BMediaView
+                android:layout_gravity="center|left"
+                android:id="@id/animated_image"
+                android:layout_width="@dimen/size_40"
+                android:layout_height="@dimen/size_40"
+                android:scaleType="fitCenter"
+                android:layout_marginEnd="@dimen/sushi_spacing_micro" />
+        </LinearLayout>
+        <androidx.constraintlayout.widget.Barrier
+            android:id="@id/right_section_left_barrier"
+            android:layout_width="wrap_content"
+            android:layout_height="fill_parent"
+            app:barrierDirection="start"
+            app:constraint_referenced_ids="dots_right_indicator_text,dots_right_indicator" />
+        <androidx.constraintlayout.helper.widget.Layer
+            android:id="@id/right_section"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            app:constraint_referenced_ids="dots_right_indicator_text,dots_right_indicator" />
+        <com.zomato.ui.atomiclib.atom.ZTextView
+            android:textColor="@color/sushi_black"
+            android:gravity="center"
+            android:id="@id/dots_right_indicator_text"
+            android:visibility="gone"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="@dimen/sushi_spacing_micro"
+            android:maxHeight="@dimen/dimen_16"
+            android:minWidth="@dimen/size_36"
+            app:layout_constraintBottom_toTopOf="@id/dots_right_indicator"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintTop_toTopOf="@id/view_pager"
+            app:layout_constraintVertical_chainStyle="packed"
+            app:textViewType="MEDIUM_200" />
+        <com.blinkit.commons.ui.ui.customviews.viewstub.ThreeDotIndicatorViewStub
+            android:gravity="center"
+            android:id="@id/dots_right_indicator"
+            android:visibility="gone"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:minWidth="@dimen/size_36"
+            app:layout_constraintBottom_toBottomOf="@id/view_pager"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/dots_right_indicator_text"
+            app:layout_constraintVertical_chainStyle="packed" />
+        <Space
+            android:id="@id/space_1"
+            android:layout_width="0.0dip"
+            android:layout_height="@dimen/sushi_spacing_micro"
+            app:layout_constraintBottom_toTopOf="@id/bottom_indicator_line"
+            app:layout_constraintEnd_toEndOf="@id/view_pager"
+            app:layout_constraintStart_toStartOf="@id/view_pager"
+            app:layout_constraintTop_toBottomOf="@id/view_pager" />
+        <View
+            android:id="@id/bottom_indicator_line"
+            android:background="@color/sushi_blue_100"
+            android:visibility="gone"
+            android:layout_width="fill_parent"
+            android:layout_height="@dimen/divider_view_height"
+            android:layout_marginLeft="@dimen/sushi_spacing_pico"
+            android:layout_marginRight="@dimen/sushi_spacing_pico"
+            android:layout_marginHorizontal="@dimen/sushi_spacing_pico"
+            app:layout_constraintEnd_toEndOf="@id/view_pager"
+            app:layout_constraintStart_toStartOf="@id/view_pager"
+            app:layout_constraintTop_toBottomOf="@id/space_1" />
+        <com.blinkit.commons.ui.ui.customviews.viewstub.ThreeDotIndicatorViewStub
+            android:gravity="center"
+            android:id="@id/dots_bottom_indicator"
+            android:visibility="gone"
+            android:layout_width="wrap_content"
+            android:layout_height="10.0dip"
+            android:layout_marginTop="@dimen/sushi_spacing_macro"
+            android:layout_marginBottom="@dimen/sushi_spacing_macro"
+            android:minWidth="@dimen/size_36"
+            android:layout_marginVertical="@dimen/sushi_spacing_macro"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/bottom_indicator_line" />
+    </androidx.constraintlayout.widget.ConstraintLayout>
+</FrameLayout>

@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    android:orientation="vertical"
+    android:id="@id/activity_root_layout"
+    android:background="?attr_7f04017d"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    xmlns:android="http://schemas.android.com/apk/res/android">
+    <com.zomato.android.zcommons.faq.views.GenericFaqToolbar
+        android:id="@id/toolbar_generic_faq"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content" />
+    <FrameLayout
+        android:id="@id/fl_generic_faq_container"
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent" />
+</LinearLayout>

@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="utf-8"?>
+<paths>
+    <files-path
+        name="images"
+        path="images/" />
+    <files-path
+        name="temp_chat_media"
+        path="/" />
+    <cache-path
+        name="chatsdk_cache"
+        path="chat_cached_files/" />
+</paths>

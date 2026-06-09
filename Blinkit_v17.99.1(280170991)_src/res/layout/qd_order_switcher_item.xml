@@ -1,0 +1,81 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout
+    android:id="@id/container"
+    android:background="@drawable/universal_ripple_effect"
+    android:paddingBottom="@dimen/sushi_spacing_base"
+    android:layout_width="fill_parent"
+    android:layout_height="wrap_content"
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+    <com.zomato.ui.atomiclib.atom.ZSeparator
+        android:id="@id/item_order_separator"
+        android:background="@color/sushi_grey_200"
+        android:layout_width="fill_parent"
+        android:layout_height="@dimen/qd_padding_0.5"
+        app:layout_constraintTop_toTopOf="parent" />
+    <com.zomato.ui.atomiclib.atom.ZIconFontTextView
+        android:textSize="@dimen/sushi_textsize_600"
+        android:layout_gravity="center"
+        android:id="@id/left_icon"
+        android:paddingLeft="@dimen/sushi_spacing_base"
+        android:paddingRight="@dimen/sushi_spacing_base"
+        android:visibility="gone"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:paddingHorizontal="@dimen/sushi_spacing_base"
+        app:layout_constraintBottom_toBottomOf="@id/item_order_subtitle1"
+        app:layout_constraintEnd_toStartOf="@id/item_order_title"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="@id/item_order_title" />
+    <com.zomato.ui.atomiclib.atom.ZTextView
+        android:ellipsize="end"
+        android:id="@id/item_order_title"
+        android:paddingRight="@dimen/sushi_spacing_base"
+        android:layout_width="0.0dip"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/sushi_spacing_base"
+        android:maxLines="1"
+        android:layout_weight="1.0"
+        app:layout_constraintBottom_toTopOf="@id/item_order_subtitle1"
+        app:layout_constraintEnd_toStartOf="@id/item_status"
+        app:layout_constraintStart_toEndOf="@id/left_icon"
+        app:layout_constraintTop_toTopOf="@id/item_order_separator"
+        app:textViewType="MEDIUM_500" />
+    <com.zomato.ui.atomiclib.atom.ZTextView
+        android:textColor="@color/sushi_grey_600"
+        android:ellipsize="end"
+        android:id="@id/item_order_subtitle1"
+        android:paddingRight="@dimen/sushi_spacing_base"
+        android:visibility="gone"
+        android:layout_width="0.0dip"
+        android:layout_height="wrap_content"
+        android:maxLines="1"
+        android:layout_weight="1.0"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toStartOf="@id/item_status"
+        app:layout_constraintStart_toEndOf="@id/left_icon"
+        app:layout_constraintTop_toBottomOf="@id/item_order_title"
+        app:textViewType="MEDIUM_300" />
+    <com.blinkit.commons.ui.ui.customviews.imageTextTagStack.ImageTextTagStack
+        android:id="@id/right_image_stack"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginRight="@dimen/dimen_12"
+        app:layout_constraintBottom_toBottomOf="@id/item_order_subtitle1"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toTopOf="@id/item_order_title" />
+    <com.zomato.ui.atomiclib.atom.ZTextView
+        android:textColor="@color/sushi_grey_400"
+        android:ellipsize="end"
+        android:id="@id/item_status"
+        android:paddingLeft="@dimen/sushi_spacing_base"
+        android:paddingRight="@dimen/sushi_spacing_base"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:maxLines="1"
+        android:paddingHorizontal="@dimen/sushi_spacing_base"
+        app:layout_constraintBottom_toBottomOf="@id/item_order_subtitle1"
+        app:layout_constraintEnd_toStartOf="@id/right_image_stack"
+        app:layout_constraintTop_toTopOf="@id/item_order_title"
+        app:textViewType="MEDIUM_100" />
+</androidx.constraintlayout.widget.ConstraintLayout>

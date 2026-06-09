@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    android:orientation="vertical"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    xmlns:android="http://schemas.android.com/apk/res/android">
+    <com.blinkit.consumerapp.deprecated.TextViewRegularFont
+        android:textSize="@dimen/font_icon_size_12"
+        android:textColor="@color/black"
+        android:id="@id/other_marker_text"
+        android:background="@drawable/rounded_white_4dp"
+        android:paddingLeft="@dimen/padding_9"
+        android:paddingTop="@dimen/padding_4"
+        android:paddingRight="@dimen/padding_9"
+        android:paddingBottom="@dimen/padding_4"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:paddingHorizontal="@dimen/padding_9"
+        android:paddingVertical="@dimen/padding_4" />
+    <ImageView
+        android:background="@drawable/ic_rectangle_3260"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="@dimen/margin_6" />
+    <ImageView
+        android:background="@drawable/ic_rectangle_3261"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="@dimen/margin_6"
+        android:layout_marginTop="@dimen/poi_tooltip_top_margin" />
+</LinearLayout>

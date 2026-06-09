@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<vector
+    android:height="@dimen/speech_bubble_corners"
+    android:width="@dimen/speech_bubble_corners_plus_tail"
+    android:viewportWidth="30.0"
+    android:viewportHeight="20.0"
+    xmlns:android="http://schemas.android.com/apk/res/android">
+    <path
+        android:fillColor="@color/speech_bubble_right"
+        android:pathData="M14,5V14C17.3475,16.0807 23.1336,15.6361 28.2587,13.3388C29.0014,13.0059 28.9771,11.9866 28.2398,11.6421L28.1397,11.5953C24.2784,9.7912 20.6923,8.1157 17.7333,5H14Z" />
+</vector>

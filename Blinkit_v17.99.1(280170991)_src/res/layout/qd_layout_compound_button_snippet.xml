@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout
+    android:layout_gravity="center"
+    android:id="@id/container"
+    android:clipChildren="false"
+    android:layout_width="fill_parent"
+    android:layout_height="wrap_content"
+    xmlns:android="http://schemas.android.com/apk/res/android">
+    <CheckBox
+        android:layout_gravity="center"
+        android:id="@id/check_box"
+        android:background="@android:color/transparent"
+        android:padding="@dimen/dimen_0"
+        android:clickable="false"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:scaleX="0.9"
+        android:scaleY="0.9"
+        android:buttonTint="?themeColor500" />
+    <RadioButton
+        android:layout_gravity="center"
+        android:id="@id/radio_button"
+        android:background="@android:color/transparent"
+        android:padding="@dimen/dimen_0"
+        android:clickable="false"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:scaleX="0.9"
+        android:scaleY="0.9"
+        android:buttonTint="?themeColor700" />
+</FrameLayout>

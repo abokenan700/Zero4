@@ -1,0 +1,72 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout
+    android:background="@color/sushi_black"
+    android:focusable="true"
+    android:clickable="true"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+    <com.zomato.ui.atomiclib.atom.ZIconFontTextView
+        android:textSize="@dimen/size24"
+        android:textColor="@color/sushi_white"
+        android:gravity="center"
+        android:id="@id/close_icon"
+        android:layout_width="@dimen/sushi_button_medium_minheight"
+        android:layout_height="@dimen/sushi_button_medium_minheight"
+        android:layout_marginTop="@dimen/sushi_spacing_extra"
+        android:text="@string/icon_font_cross"
+        android:layout_marginStart="@dimen/sushi_spacing_extra"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+    <androidx.constraintlayout.widget.Barrier
+        android:id="@id/top_barrier"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        app:barrierDirection="bottom"
+        app:constraint_referenced_ids="close_icon" />
+    <com.zomato.chatsdk.chatuikit.atoms.LockableScrollView
+        android:id="@id/scroll_view"
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        app:layout_constrainedHeight="true"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/top_barrier">
+        <LinearLayout
+            android:gravity="center"
+            android:orientation="vertical"
+            android:layout_width="fill_parent"
+            android:layout_height="fill_parent">
+            <androidx.viewpager2.widget.ViewPager2
+                android:id="@id/view_pager"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content" />
+        </LinearLayout>
+    </com.zomato.chatsdk.chatuikit.atoms.LockableScrollView>
+    <View
+        android:background="@drawable/preview_image_gradient"
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        app:layout_constrainedHeight="true"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/top_barrier" />
+    <androidx.recyclerview.widget.RecyclerView
+        android:id="@id/photos_recyclerview"
+        android:paddingLeft="@dimen/sushi_spacing_micro"
+        android:paddingRight="@dimen/sushi_spacing_micro"
+        android:clipToPadding="true"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="@dimen/sushi_spacing_base"
+        android:paddingHorizontal="@dimen/sushi_spacing_micro"
+        app:layout_constraintBottom_toTopOf="@id/input_snippet" />
+    <com.zomato.chatsdk.chatuikit.snippets.ChatInputSnippet
+        android:id="@id/input_snippet"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:message_input_left_icon="CAMERA_ICON_WITH_BACKGROUND"
+        app:shouldShowCharCount="false"
+        app:should_enable_right_button_when_input_empty="true"
+        app:should_show_reply_layout="false" />
+</androidx.constraintlayout.widget.ConstraintLayout>

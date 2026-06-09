@@ -1,0 +1,91 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout
+    android:background="?attr_7f0401eb"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+    <include
+        android:id="@id/type_3_shimmer"
+        android:visibility="gone"
+        layout="@layout/content_type_3_shimmer" />
+    <include
+        android:id="@id/type_4_shimmer"
+        android:visibility="gone"
+        layout="@layout/content_type_4_shimmer" />
+    <FrameLayout
+        android:id="@id/childFragmentContainer"
+        android:visibility="gone"
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent" />
+    <LinearLayout
+        android:layout_gravity="end"
+        android:orientation="horizontal"
+        android:id="@id/ll_top_icons"
+        android:padding="@dimen/sushi_spacing_micro"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/size_30"
+        android:layout_marginEnd="@dimen/sushi_spacing_nano">
+        <com.zomato.ui.atomiclib.atom.ZIconFontTextView
+            android:textSize="@dimen/sushi_textsize_600"
+            android:textColor="@color/sushi_white"
+            android:id="@id/top_right_sound_icon"
+            android:padding="@dimen/sushi_spacing_base"
+            android:visibility="gone"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/icon_font_speaker_on_fill" />
+        <com.zomato.ui.atomiclib.atom.ZIconFontTextView
+            android:textSize="@dimen/sushi_textsize_500"
+            android:textColor="@color/sushi_white"
+            android:id="@id/top_right_close_icon_ll"
+            android:padding="@dimen/sushi_spacing_base"
+            android:visibility="gone"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/icon_font_cross_large"
+            app:iconfont_enable_feedback="true" />
+    </LinearLayout>
+    <LinearLayout
+        android:gravity="center"
+        android:layout_gravity="center"
+        android:orientation="vertical"
+        android:id="@id/retryContainer"
+        android:background="?attr_7f0401eb"
+        android:visibility="gone"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content">
+        <com.zomato.ui.atomiclib.atom.ZTextView
+            android:textColor="@color/sushi_white"
+            android:id="@id/errorText"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            app:textViewType="SEMIBOLD_400" />
+        <com.zomato.ui.atomiclib.atom.ZButton
+            android:id="@id/retryButton"
+            android:paddingBottom="@dimen/size_12"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/size_12"
+            android:text="@string/data_kit_try_again"
+            app:buttonDimension="medium"
+            app:buttonType="text" />
+    </LinearLayout>
+    <FrameLayout
+        android:id="@id/fl_loader"
+        android:background="@color/color_black_trans_eighty"
+        android:visibility="gone"
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent">
+        <ProgressBar
+            android:layout_gravity="center"
+            android:id="@id/pb_overlay"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:indeterminate="true"
+            android:indeterminateTint="@color/sushi_white"
+            android:indeterminateTintMode="src_atop"
+            style="?android:progressBarStyleSmall" />
+    </FrameLayout>
+</FrameLayout>

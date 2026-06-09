@@ -1,0 +1,59 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.cardview.widget.CardView
+    android:id="@id/cardContainerView"
+    android:layout_width="fill_parent"
+    android:layout_height="wrap_content"
+    app:cardCornerRadius="@dimen/corner_radius_base"
+    app:cardElevation="@dimen/sushi_spacing_nano"
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+    <LinearLayout
+        android:orientation="horizontal"
+        android:paddingTop="@dimen/sushi_spacing_macro"
+        android:paddingBottom="@dimen/sushi_spacing_macro"
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:paddingStart="@dimen/sushi_spacing_page_side"
+        android:paddingEnd="@dimen/sushi_spacing_page_side">
+        <com.zomato.ui.atomiclib.atom.ZRoundedImageView
+            android:layout_gravity="center"
+            android:id="@id/image"
+            android:layout_width="@dimen/snippet_type_42_image_width"
+            android:layout_height="@dimen/snippet_type_42_image_height"
+            android:layout_marginEnd="@dimen/sushi_spacing_page_side" />
+        <LinearLayout
+            android:gravity="center_vertical"
+            android:layout_gravity="center"
+            android:orientation="vertical"
+            android:id="@id/textContainer"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content">
+            <com.zomato.ui.atomiclib.atom.ZTextView
+                android:ellipsize="end"
+                android:id="@id/title"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:lines="1"
+                app:textViewType="MEDIUM_100" />
+            <FrameLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content">
+                <com.zomato.ui.atomiclib.atom.ZTextView
+                    android:ellipsize="end"
+                    android:id="@id/subtitle"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:maxLines="2"
+                    app:textViewType="MEDIUM_400" />
+                <com.zomato.ui.atomiclib.atom.ZTextView
+                    android:ellipsize="end"
+                    android:id="@id/dummySubtitle"
+                    android:visibility="invisible"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:maxLines="2"
+                    app:textViewType="MEDIUM_400" />
+            </FrameLayout>
+        </LinearLayout>
+    </LinearLayout>
+</androidx.cardview.widget.CardView>

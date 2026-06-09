@@ -1,0 +1,122 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    android:orientation="vertical"
+    android:background="?attr_7f04017d"
+    android:focusable="true"
+    android:clickable="true"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+    <com.zomato.ui.atomiclib.atom.ZTextView
+        android:gravity="center"
+        android:id="@id/verification_msg_text"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/sushi_spacing_loose"
+        android:text="@string/enter_the_verification_code_sent_to"
+        android:layout_marginStart="@dimen/sushi_spacing_base"
+        android:layout_marginEnd="@dimen/sushi_spacing_base" />
+    <com.zomato.ui.lib.atom.ZOtpEditText
+        android:textSize="@dimen/sushi_textsize_600"
+        android:id="@id/otp_edit_text"
+        android:layout_width="fill_parent"
+        android:layout_height="@dimen/size50"
+        android:layout_marginTop="@dimen/size_40"
+        android:text=""
+        android:cursorVisible="true"
+        android:maxLength="4"
+        android:digits="\ 1234567890"
+        android:inputType="number"
+        android:contentDescription="@string/enter_otp"
+        android:textCursorDrawable="@drawable/cursor_black"
+        android:paddingStart="@dimen/sushi_spacing_micro"
+        android:paddingEnd="@dimen/sushi_spacing_micro"
+        app:zotp_background_color="?attr_7f040295"
+        app:zotp_border_color="?attr_7f04029e"
+        app:zotp_focused_border_color="?attr_7f04029e"
+        app:zotp_item_border_width="@dimen/border_stroke_width"
+        app:zotp_item_corner_radius="@dimen/corner_radius"
+        app:zotp_item_height="@dimen/sushi_action_item_size"
+        app:zotp_item_spacing="@dimen/sushi_spacing_extra"
+        app:zotp_item_width="@dimen/size_44" />
+    <com.zomato.ui.atomiclib.atom.ZTextView
+        android:textColor="?themeColor700"
+        android:gravity="center"
+        android:id="@id/resend_text"
+        android:padding="@dimen/sushi_spacing_base"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/sushi_spacing_base"
+        android:textAlignment="center"
+        app:textViewType="MEDIUM_300" />
+    <LinearLayout
+        android:orientation="horizontal"
+        android:id="@id/retry_container"
+        android:visibility="gone"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:weightSum="2.0">
+        <com.blinkit.blink.elements.ui.atoms.text.BlinkitTextView
+            android:gravity="center"
+            android:id="@id/button1"
+            android:padding="@dimen/sushi_spacing_macro"
+            android:paddingLeft="@dimen/qd_margin_24"
+            android:paddingTop="@dimen/qd_margin_12"
+            android:paddingRight="@dimen/qd_margin_24"
+            android:paddingBottom="@dimen/qd_margin_12"
+            android:visibility="visible"
+            android:layout_width="0.0dip"
+            android:layout_height="fill_parent"
+            android:layout_weight="1.0"
+            android:textAllCaps="false"
+            android:fontFamily="@font/okra_regular"
+            android:layout_marginStart="@dimen/qd_margin_48"
+            android:layout_marginEnd="@dimen/qd_margin_6"
+            android:paddingHorizontal="@dimen/qd_margin_24"
+            android:paddingVertical="@dimen/qd_margin_12"
+            app:buttonColor="?themeColor700" />
+        <com.blinkit.blink.elements.ui.atoms.text.BlinkitTextView
+            android:gravity="center"
+            android:id="@id/button2"
+            android:padding="@dimen/sushi_spacing_macro"
+            android:paddingLeft="@dimen/qd_margin_24"
+            android:paddingTop="@dimen/qd_margin_12"
+            android:paddingRight="@dimen/qd_margin_24"
+            android:paddingBottom="@dimen/qd_margin_12"
+            android:visibility="visible"
+            android:layout_width="0.0dip"
+            android:layout_height="fill_parent"
+            android:layout_weight="1.0"
+            android:textAllCaps="false"
+            android:fontFamily="@font/okra_regular"
+            android:layout_marginStart="@dimen/qd_margin_6"
+            android:layout_marginEnd="@dimen/qd_margin_48"
+            android:paddingHorizontal="@dimen/qd_margin_24"
+            android:paddingVertical="@dimen/qd_margin_12"
+            app:buttonColor="?themeColor700" />
+    </LinearLayout>
+    <com.zomato.ui.atomiclib.atom.ZProgressBar
+        android:id="@id/progress"
+        android:visibility="invisible"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/sushi_spacing_extra"
+        style="?android:progressBarStyleInverse" />
+    <Space
+        android:layout_width="fill_parent"
+        android:layout_height="0.0dip"
+        android:layout_weight="1.0" />
+    <com.blinkit.blink.elements.ui.atoms.text.BlinkitTextView
+        android:gravity="center"
+        android:id="@id/session_id"
+        android:paddingLeft="@dimen/qd_padding_20"
+        android:paddingRight="@dimen/qd_padding_20"
+        android:visibility="gone"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/sushi_spacing_base"
+        android:layout_marginBottom="@dimen/sushi_spacing_extra"
+        android:textAlignment="center"
+        android:paddingHorizontal="@dimen/qd_padding_20" />
+</LinearLayout>

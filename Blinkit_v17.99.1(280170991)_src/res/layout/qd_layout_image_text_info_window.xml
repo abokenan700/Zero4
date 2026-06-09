@@ -1,0 +1,71 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout
+    android:layout_gravity="center"
+    android:id="@id/infoWindow"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+    <com.blinkit.blink.elements.ui.atoms.text.BlinkitTextView
+        android:id="@id/left_title"
+        android:padding="@dimen/sushi_spacing_micro"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:maxLines="1"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+    <com.blinkit.blink.elements.ui.atoms.text.BlinkitTextView
+        android:id="@id/right_title"
+        android:padding="@dimen/sushi_spacing_micro"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:maxLines="1"
+        app:layout_constraintStart_toEndOf="@id/left_title"
+        app:layout_constraintTop_toTopOf="@id/left_title" />
+    <com.blinkit.blink.elements.ui.atoms.icon.BlinkitIconView
+        android:id="@id/right_icon"
+        android:paddingRight="@dimen/sushi_spacing_micro"
+        android:visibility="gone"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:flow_verticalBias="0.5"
+        app:layout_constraintBottom_toBottomOf="@id/right_title"
+        app:layout_constraintStart_toEndOf="@id/right_title"
+        app:layout_constraintTop_toTopOf="@id/right_title" />
+    <com.blinkit.blink.elements.ui.atoms.text.BlinkitTextView
+        android:ellipsize="end"
+        android:id="@id/top_title"
+        android:paddingLeft="@dimen/sushi_spacing_page_side"
+        android:paddingTop="@dimen/sushi_spacing_macro"
+        android:paddingRight="@dimen/sushi_spacing_page_side"
+        android:paddingBottom="@dimen/sushi_spacing_macro"
+        android:visibility="gone"
+        android:layout_width="0.0dip"
+        android:layout_height="wrap_content"
+        android:maxLines="2"
+        android:paddingHorizontal="@dimen/sushi_spacing_page_side"
+        android:paddingVertical="@dimen/sushi_spacing_macro"
+        app:layout_constraintBottom_toTopOf="@id/bottom_title"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintWidth_min="wrap" />
+    <com.blinkit.blink.elements.ui.atoms.text.BlinkitTextView
+        android:ellipsize="end"
+        android:id="@id/bottom_title"
+        android:paddingLeft="@dimen/sushi_spacing_page_side"
+        android:paddingTop="@dimen/sushi_spacing_macro"
+        android:paddingRight="@dimen/sushi_spacing_page_side"
+        android:paddingBottom="@dimen/sushi_spacing_macro"
+        android:visibility="gone"
+        android:layout_width="0.0dip"
+        android:layout_height="wrap_content"
+        android:maxLines="2"
+        android:paddingHorizontal="@dimen/sushi_spacing_page_side"
+        android:paddingVertical="@dimen/sushi_spacing_macro"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/top_title"
+        app:layout_constraintWidth_min="wrap" />
+</androidx.constraintlayout.widget.ConstraintLayout>

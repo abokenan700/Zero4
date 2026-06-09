@@ -1,0 +1,90 @@
+<?xml version="1.0" encoding="utf-8"?>
+<merge
+    android:orientation="vertical"
+    android:id="@id/root_view"
+    android:layout_width="fill_parent"
+    android:layout_height="wrap_content"
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content">
+        <com.zomato.ui.atomiclib.atom.ZRoundedImageView
+            android:id="@id/left_image"
+            android:layout_width="wrap_content"
+            android:layout_height="@dimen/size_20"
+            android:scaleType="fitXY"
+            android:adjustViewBounds="true"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+        <com.zomato.ui.atomiclib.atom.ZTextView
+            android:id="@id/left_title"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/sushi_spacing_base"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/left_image"
+            app:layout_goneMarginTop="@dimen/sushi_spacing_femto" />
+        <com.zomato.ui.atomiclib.atom.ZTextView
+            android:id="@id/left_subtitle"
+            android:layout_width="0.0dip"
+            android:layout_height="wrap_content"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/left_title"
+            app:layout_constraintWidth_max="wrap"
+            app:layout_constraintWidth_percent="0.65" />
+        <com.zomato.ui.atomiclib.atom.ZIconFontTextView
+            android:textColor="?attr_7f040475"
+            android:id="@id/icon_left"
+            android:padding="@dimen/sushi_spacing_mini"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="@dimen/sushi_spacing_micro"
+            android:layout_marginRight="@dimen/sushi_spacing_micro"
+            android:text="@string/icon_font_copy"
+            android:layout_marginHorizontal="@dimen/sushi_spacing_micro"
+            app:layout_constraintBottom_toBottomOf="@id/left_subtitle"
+            app:layout_constraintStart_toEndOf="@id/left_subtitle"
+            app:layout_constraintTop_toTopOf="@id/left_subtitle" />
+        <com.zomato.ui.atomiclib.atom.ZButton
+            android:id="@id/right_button"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            app:buttonType="text"
+            app:layout_constraintBottom_toBottomOf="@id/left_subtitle"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintTop_toTopOf="@id/left_subtitle" />
+        <androidx.constraintlayout.widget.Barrier
+            android:id="@id/barrier"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            app:barrierDirection="bottom"
+            app:constraint_referenced_ids="right_button" />
+    </androidx.constraintlayout.widget.ConstraintLayout>
+    <LinearLayout
+        android:orientation="horizontal"
+        android:id="@id/button_container"
+        android:visibility="gone"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/sushi_spacing_extra">
+        <include
+            android:id="@id/bottom_button1"
+            android:layout_width="0.0dip"
+            android:layout_height="wrap_content"
+            android:layout_margin="@dimen/dimen_2"
+            android:layout_weight="1.0"
+            layout="@layout/textsnippet_type_4_button" />
+        <include
+            android:id="@id/bottom_button2"
+            android:layout_width="0.0dip"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/dimen_2"
+            android:layout_marginBottom="@dimen/dimen_2"
+            android:layout_weight="1.0"
+            android:layout_marginStart="@dimen/sushi_spacing_page_side"
+            android:layout_marginEnd="@dimen/dimen_2"
+            android:layout_marginVertical="@dimen/dimen_2"
+            layout="@layout/textsnippet_type_4_button" />
+    </LinearLayout>
+</merge>

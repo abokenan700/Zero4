@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <plurals name="exo_controls_fastforward_by_amount_description">
+        <item quantity="other">Fast forward %d seconds</item>
+        <item quantity="one">Fast forward %d second</item>
+    </plurals>
+    <plurals name="exo_controls_rewind_by_amount_description">
+        <item quantity="other">Rewind %d seconds</item>
+        <item quantity="one">Rewind %d second</item>
+    </plurals>
+    <plurals name="file">
+        <item quantity="other">files</item>
+        <item quantity="one">file</item>
+    </plurals>
+    <plurals name="file_limit_reached_title">
+        <item quantity="other">You have %1$s %2$s uploads remaining</item>
+        <item quantity="one">You have %1$s %2$s upload remaining</item>
+    </plurals>
+    <plurals name="mtrl_badge_content_description">
+        <item quantity="other">%d new notifications</item>
+        <item quantity="one">%d new notification</item>
+    </plurals>
+    <plurals name="photo">
+        <item quantity="other">photos</item>
+        <item quantity="one">photo</item>
+    </plurals>
+    <plurals name="qd_grocery_item">
+        <item quantity="other">%d items</item>
+        <item quantity="one">%d item</item>
+    </plurals>
+    <plurals name="qd_print_item">
+        <item quantity="other">%d PRINTS</item>
+        <item quantity="one">%d PRINT</item>
+    </plurals>
+    <plurals name="successful_dialog">
+        <item quantity="other">%1$s %2$s successfully uploaded</item>
+        <item quantity="one">%1$s %2$s successfully uploaded</item>
+    </plurals>
+    <plurals name="upload_dialog">
+        <item quantity="other">Uploading your %s on a secure network</item>
+        <item quantity="one">Uploading your %s on a secure network</item>
+    </plurals>
+</resources>

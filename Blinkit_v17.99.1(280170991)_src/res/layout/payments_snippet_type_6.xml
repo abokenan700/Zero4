@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="utf-8"?>
+<merge
+    android:orientation="vertical"
+    android:layout_width="fill_parent"
+    android:layout_height="wrap_content"
+    xmlns:android="http://schemas.android.com/apk/res/android">
+    <payments.zomato.paymentkit.paymentspagev5.snippets.PaymentSnippetType1View
+        android:id="@id/top_container_view"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content" />
+    <LinearLayout
+        android:orientation="horizontal"
+        android:id="@id/type_6_bottom_container"
+        android:paddingTop="@dimen/sushi_spacing_loose"
+        android:paddingBottom="@dimen/sushi_spacing_base"
+        android:visibility="gone"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/sushi_spacing_extra_negative">
+        <com.zomato.ui.atomiclib.atom.ZRoundedImageView
+            android:layout_gravity="center_vertical"
+            android:id="@id/bottom_image"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="@dimen/sushi_spacing_extra" />
+        <com.zomato.ui.atomiclib.atom.staticviews.StaticTextView
+            android:layout_gravity="center_vertical"
+            android:id="@id/bottom_title"
+            android:layout_width="0.0dip"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="@dimen/sushi_spacing_base"
+            android:layout_marginRight="@dimen/sushi_spacing_base"
+            android:layout_weight="1.0"
+            android:layout_marginHorizontal="@dimen/sushi_spacing_base" />
+        <com.zomato.ui.atomiclib.atom.staticviews.StaticIconView
+            android:textSize="@dimen/sushi_textsize_200"
+            android:layout_gravity="end|center"
+            android:id="@id/bottom_icon"
+            android:padding="@dimen/sushi_spacing_micro"
+            android:visibility="gone"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginEnd="@dimen/sushi_spacing_extra" />
+    </LinearLayout>
+</merge>

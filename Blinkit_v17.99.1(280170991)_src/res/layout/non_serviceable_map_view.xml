@@ -1,0 +1,50 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    android:gravity="center_horizontal"
+    android:orientation="vertical"
+    android:id="@id/non_serviceable_view"
+    android:padding="@dimen/qd_padding_16"
+    android:layout_width="fill_parent"
+    android:layout_height="wrap_content"
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+    <com.blinkit.commons.ui.ui.customviews.BShapeableImageView
+        android:id="@id/image"
+        android:visibility="gone"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content" />
+    <com.zomato.ui.atomiclib.atom.ZTextView
+        android:textSize="@dimen/font_size_xmedium"
+        android:textColor="?attr_7f040466"
+        android:id="@id/nsa_title"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/non_serviceable_map_title"
+        app:textFontWeight="bold" />
+    <com.zomato.ui.atomiclib.atom.ZTextView
+        android:textSize="@dimen/font_size_tiny"
+        android:textColor="?attr_7f04047c"
+        android:gravity="center_horizontal"
+        android:id="@id/nsa_sub_title"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/non_serviceable_map_subtitle"
+        android:lines="2" />
+    <com.zomato.ui.atomiclib.atom.ZButton
+        android:id="@id/use_gps"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/margin_20"
+        android:text="@string/use_current_location"
+        android:textAllCaps="false"
+        app:buttonColor="?attr_7f0402a9" />
+    <com.zomato.ui.atomiclib.atom.ZButton
+        android:textColor="?attr_7f0402a6"
+        android:id="@id/set_location_manually"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/margin_20"
+        android:text="@string/select_location_manually"
+        android:textAllCaps="false"
+        app:buttonType="text" />
+</LinearLayout>

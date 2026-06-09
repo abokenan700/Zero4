@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    android:orientation="vertical"
+    android:id="@id/bottom_strip"
+    android:clickable="false"
+    android:layout_width="fill_parent"
+    android:layout_height="wrap_content"
+    xmlns:android="http://schemas.android.com/apk/res/android">
+    <View
+        android:id="@id/shadow"
+        android:background="@drawable/bg_shadow"
+        android:visibility="gone"
+        android:layout_width="fill_parent"
+        android:layout_height="@dimen/sushi_spacing_mini" />
+    <FrameLayout
+        android:id="@id/generic_button_container"
+        android:layout_width="fill_parent"
+        android:layout_height="@dimen/qd_bottom_cart_strip_v2_height">
+        <com.blinkit.commons.ui.ui.snippets.cartStrip.cartStripV2.CartStripV2
+            android:id="@id/cart_strip_v2"
+            android:layout_width="fill_parent"
+            android:layout_height="@dimen/qd_bottom_cart_strip_v2_height" />
+    </FrameLayout>
+</LinearLayout>

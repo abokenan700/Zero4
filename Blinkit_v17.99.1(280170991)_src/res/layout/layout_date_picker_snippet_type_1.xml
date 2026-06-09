@@ -1,0 +1,51 @@
+<?xml version="1.0" encoding="utf-8"?>
+<merge
+    android:layout_width="fill_parent"
+    android:layout_height="wrap_content"
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+    <LinearLayout
+        android:gravity="center_horizontal"
+        android:orientation="vertical"
+        android:layout_width="0.0dip"
+        android:layout_height="wrap_content"
+        android:layout_weight="1.0">
+        <com.zomato.ui.atomiclib.atom.ZTextView
+            android:ellipsize="end"
+            android:id="@id/title1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            app:textViewType="REGULAR_300" />
+        <com.zomato.ui.atomiclib.atom.ZButton
+            android:id="@id/button1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/sushi_spacing_between"
+            app:buttonType="text" />
+    </LinearLayout>
+    <View
+        android:background="@color/sushi_grey_200"
+        android:layout_width="1.0dip"
+        android:layout_height="fill_parent"
+        android:layout_marginTop="@dimen/sushi_spacing_nano"
+        android:layout_marginBottom="@dimen/sushi_spacing_nano" />
+    <LinearLayout
+        android:gravity="center_horizontal"
+        android:orientation="vertical"
+        android:layout_width="0.0dip"
+        android:layout_height="wrap_content"
+        android:layout_weight="1.0">
+        <com.zomato.ui.atomiclib.atom.ZTextView
+            android:ellipsize="end"
+            android:id="@id/title2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            app:textViewType="REGULAR_300" />
+        <com.zomato.ui.atomiclib.atom.ZButton
+            android:id="@id/button2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/sushi_spacing_between"
+            app:buttonType="text" />
+    </LinearLayout>
+</merge>

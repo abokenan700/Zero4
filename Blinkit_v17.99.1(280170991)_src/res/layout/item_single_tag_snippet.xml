@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout
+    android:id="@id/container"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+    <com.zomato.ui.atomiclib.atom.ZTag
+        android:textColor="@color/sushi_grey_700"
+        android:id="@id/singleTagSnippetTag"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:tagColor="@color/sushi_grey_100"
+        app:tagSize="small"
+        app:tagType="capsule" />
+    <com.zomato.ui.lib.organisms.snippets.crystal.ImageTextTag
+        android:id="@id/imageTag"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content" />
+</FrameLayout>

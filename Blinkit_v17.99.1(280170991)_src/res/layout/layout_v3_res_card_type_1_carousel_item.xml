@@ -1,0 +1,56 @@
+<?xml version="1.0" encoding="utf-8"?>
+<merge
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    xmlns:android="http://schemas.android.com/apk/res/android">
+    <FrameLayout
+        android:layout_gravity="center"
+        android:id="@id/video_container"
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent" />
+    <com.zomato.ui.atomiclib.atom.ZRoundedImageView
+        android:layout_gravity="center"
+        android:id="@id/custom_thumbnail"
+        android:visibility="gone"
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent" />
+    <com.zomato.ui.lib.snippets.ResCardActionItemViewV2
+        android:layout_gravity="start|center|top"
+        android:id="@id/top_left_container"
+        android:visibility="gone"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/sushi_spacing_macro"
+        android:maxWidth="@dimen/size_200"
+        android:layout_marginStart="@dimen/sushi_spacing_macro"
+        android:layout_marginEnd="@dimen/sushi_spacing_loose" />
+    <com.zomato.ui.lib.snippets.ResCardActionItemViewV2
+        android:layout_gravity="center"
+        android:id="@id/right_strip_container"
+        android:visibility="gone"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:translationX="190.0dip"
+        android:rotation="270.0" />
+    <com.zomato.ui.atomiclib.atom.staticviews.StaticTextView
+        android:layout_gravity="start|bottom|center"
+        android:id="@id/bottom_left_tag"
+        android:paddingLeft="@dimen/sushi_spacing_micro"
+        android:paddingTop="@dimen/sushi_spacing_nano"
+        android:paddingRight="@dimen/sushi_spacing_micro"
+        android:paddingBottom="@dimen/sushi_spacing_nano"
+        android:visibility="gone"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="@dimen/sushi_spacing_macro"
+        android:maxWidth="@dimen/size_40"
+        android:layout_marginStart="@dimen/sushi_spacing_macro"
+        android:paddingHorizontal="@dimen/sushi_spacing_micro"
+        android:paddingVertical="@dimen/sushi_spacing_nano" />
+    <com.zomato.ui.lib.organisms.snippets.rescards.v3type1.ZV3Type1ResCardCarouselItemOverlay
+        android:gravity="start|center"
+        android:id="@id/overlay_container"
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:layout_margin="@dimen/dimen_10" />
+</merge>

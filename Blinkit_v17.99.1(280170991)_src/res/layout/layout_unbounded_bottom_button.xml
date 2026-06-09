@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    android:orientation="horizontal"
+    android:id="@id/container"
+    android:layout_width="fill_parent"
+    android:layout_height="wrap_content"
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+    <com.blinkit.blink.elements.ui.atoms.text.BlinkitTextView
+        android:layout_gravity="center_vertical"
+        android:id="@id/textView"
+        android:paddingTop="4.0dip"
+        android:paddingBottom="4.0dip"
+        android:layout_width="0.0dip"
+        android:layout_height="wrap_content"
+        android:layout_weight="1.0"
+        android:paddingStart="8.0dip"
+        android:paddingVertical="4.0dip" />
+    <com.zomato.ui.atomiclib.atom.ZSeparator
+        android:layout_gravity="start|center"
+        android:layout_width="@dimen/qd_margin_0.5"
+        android:layout_height="fill_parent"
+        android:layout_marginStart="@dimen/sushi_spacing_micro"
+        app:zseparator_color="@color/color_black_trans_ten" />
+    <com.blinkit.blink.elements.ui.atoms.icon.BlinkitIconView
+        android:gravity="center"
+        android:layout_gravity="center"
+        android:id="@id/icon"
+        android:paddingTop="4.0dip"
+        android:paddingBottom="4.0dip"
+        android:visibility="gone"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/icon_font_min_arrow"
+        android:paddingStart="2.5dip"
+        android:paddingEnd="3.0dip"
+        android:paddingVertical="4.0dip" />
+</LinearLayout>

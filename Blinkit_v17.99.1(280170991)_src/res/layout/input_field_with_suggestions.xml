@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout
+    android:id="@id/root_layout"
+    android:layout_width="fill_parent"
+    android:layout_height="wrap_content"
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+    <com.blinkit.commons.ui.ui.snippets.inputFieldSuggestions.BAutoCompleteTextField
+        android:textColorHint="@color/sushi_grey_400"
+        android:id="@id/auto_complete_text_field"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:inputType="textNoSuggestions"
+        android:translationZ="@dimen/elevation_huge"
+        android:elevation="@dimen/sushi_spacing_pico"
+        app:boxCornerRadiusBottomEnd="@dimen/sushi_spacing_macro"
+        app:boxCornerRadiusBottomStart="@dimen/sushi_spacing_macro"
+        app:boxCornerRadiusTopEnd="@dimen/sushi_spacing_macro"
+        app:boxCornerRadiusTopStart="@dimen/sushi_spacing_macro"
+        app:drawablePadding="@dimen/sushi_spacing_macro"
+        app:editTextType="MEDIUM_400"
+        app:errorEnabled="true"
+        app:hintEnabled="true"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        style="@style/TextInputLayoutV3" />
+    <com.blinkit.blink.elements.ui.atoms.text.BlinkitTextView
+        android:textColor="@color/sushi_grey_800"
+        android:id="@id/tv_counter"
+        android:visibility="gone"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:layout_constraintRight_toRightOf="@id/auto_complete_text_field"
+        app:layout_constraintTop_toBottomOf="@id/auto_complete_text_field"
+        app:textViewType="REGULAR_50" />
+</androidx.constraintlayout.widget.ConstraintLayout>

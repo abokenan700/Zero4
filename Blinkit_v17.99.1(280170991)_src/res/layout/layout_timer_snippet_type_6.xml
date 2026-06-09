@@ -1,0 +1,149 @@
+<?xml version="1.0" encoding="utf-8"?>
+<merge
+    android:gravity="center_horizontal"
+    android:orientation="vertical"
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+    <com.zomato.ui.atomiclib.atom.staticviews.StaticTextView
+        android:gravity="center_horizontal"
+        android:id="@id/timer_type_6_title"
+        android:visibility="gone"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        app:layout_constraintTop_toTopOf="parent" />
+    <com.zomato.ui.atomiclib.atom.staticviews.StaticTextView
+        android:gravity="center_horizontal"
+        android:id="@id/timer_type_6_subtitle"
+        android:visibility="gone"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/sushi_spacing_macro"
+        android:layout_marginBottom="@dimen/sushi_spacing_macro"
+        android:layout_marginVertical="@dimen/sushi_spacing_macro"
+        app:layout_constraintTop_toBottomOf="@id/timer_type_6_title" />
+    <com.zomato.ui.atomiclib.atom.staticviews.StaticTextView
+        android:gravity="center_horizontal"
+        android:id="@id/timer_type_6_subtitle_2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="@dimen/sushi_spacing_base"
+        android:layout_marginEnd="@dimen/sushi_spacing_base"
+        app:layout_constraintBottom_toBottomOf="@id/timerHour"
+        app:layout_constraintEnd_toStartOf="@id/timerHour"
+        app:layout_constraintHorizontal_chainStyle="packed"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/timer_type_6_subtitle"
+        app:layout_goneMarginEnd="0.0dip" />
+    <com.zomato.ui.atomiclib.atom.staticviews.StaticTextView
+        android:gravity="center_horizontal"
+        android:id="@id/timerHour"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginEnd="@dimen/sushi_spacing_base"
+        app:layout_constraintEnd_toStartOf="@id/timerSeparator1"
+        app:layout_constraintHorizontal_chainStyle="packed"
+        app:layout_constraintStart_toEndOf="@id/timer_type_6_subtitle_2"
+        app:layout_constraintTop_toBottomOf="@id/timer_type_6_subtitle"
+        app:layout_goneMarginEnd="0.0dip" />
+    <com.zomato.ui.atomiclib.atom.staticviews.StaticTextView
+        android:gravity="center_horizontal"
+        android:id="@id/timerHourTitle"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:layout_constraintEnd_toEndOf="@id/timerHour"
+        app:layout_constraintStart_toStartOf="@id/timerHour"
+        app:layout_constraintTop_toBottomOf="@id/timerHour" />
+    <com.zomato.ui.atomiclib.atom.staticviews.StaticTextView
+        android:gravity="center_horizontal"
+        android:layout_gravity="center"
+        android:id="@id/timerSeparator1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginEnd="@dimen/sushi_spacing_base"
+        app:layout_constraintBottom_toBottomOf="@id/timerHour"
+        app:layout_constraintEnd_toStartOf="@id/timerMins"
+        app:layout_constraintHorizontal_chainStyle="packed"
+        app:layout_constraintStart_toEndOf="@id/timerHour"
+        app:layout_constraintTop_toTopOf="@id/timerHour"
+        app:layout_goneMarginEnd="0.0dip"
+        app:layout_goneMarginStart="0.0dip" />
+    <com.zomato.ui.atomiclib.atom.staticviews.StaticTextView
+        android:id="@id/timerMins"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginEnd="@dimen/sushi_spacing_base"
+        app:layout_constraintEnd_toStartOf="@id/timerSeparator2"
+        app:layout_constraintHorizontal_chainStyle="packed"
+        app:layout_constraintStart_toEndOf="@id/timerSeparator1"
+        app:layout_constraintTop_toBottomOf="@id/timer_type_6_subtitle"
+        app:layout_goneMarginEnd="0.0dip" />
+    <com.zomato.ui.atomiclib.atom.staticviews.StaticTextView
+        android:gravity="center_horizontal"
+        android:id="@id/timerMinsTitle"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:layout_constraintEnd_toEndOf="@id/timerMins"
+        app:layout_constraintStart_toStartOf="@id/timerMins"
+        app:layout_constraintTop_toBottomOf="@id/timerMins" />
+    <com.zomato.ui.atomiclib.atom.staticviews.StaticTextView
+        android:gravity="center_horizontal"
+        android:layout_gravity="center"
+        android:id="@id/timerSeparator2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginEnd="@dimen/sushi_spacing_base"
+        app:layout_constraintBottom_toBottomOf="@id/timerMins"
+        app:layout_constraintEnd_toStartOf="@id/timerSeconds"
+        app:layout_constraintHorizontal_chainStyle="packed"
+        app:layout_constraintStart_toEndOf="@id/timerMins"
+        app:layout_constraintTop_toTopOf="@id/timerMins"
+        app:layout_goneMarginEnd="0.0dip" />
+    <com.zomato.ui.atomiclib.atom.staticviews.StaticTextView
+        android:gravity="center_horizontal"
+        android:id="@id/timerSeconds"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_chainStyle="packed"
+        app:layout_constraintStart_toEndOf="@id/timerSeparator2"
+        app:layout_constraintTop_toBottomOf="@id/timer_type_6_subtitle"
+        app:layout_goneMarginStart="0.0dip" />
+    <com.zomato.ui.atomiclib.atom.staticviews.StaticTextView
+        android:gravity="center_horizontal"
+        android:id="@id/timerSecondsTitle"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:layout_constraintEnd_toEndOf="@id/timerSeconds"
+        app:layout_constraintStart_toStartOf="@id/timerSeconds"
+        app:layout_constraintTop_toBottomOf="@id/timerSeconds" />
+    <com.zomato.ui.atomiclib.animation.ZLottieAnimationView
+        android:id="@id/lottie_view"
+        android:visibility="gone"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/sushi_spacing_base"
+        android:layout_marginBottom="@dimen/sushi_spacing_base"
+        android:scaleType="fitXY"
+        android:layout_marginVertical="@dimen/sushi_spacing_base"
+        app:layout_constraintTop_toBottomOf="@id/timerSecondsTitle"
+        app:lottie_autoPlay="true" />
+    <com.zomato.ui.atomiclib.atom.ZTag
+        android:layout_gravity="center_horizontal"
+        android:id="@id/tag"
+        android:paddingLeft="@dimen/sushi_spacing_base"
+        android:paddingTop="@dimen/sushi_spacing_macro"
+        android:paddingRight="@dimen/sushi_spacing_base"
+        android:paddingBottom="@dimen/sushi_spacing_macro"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/sushi_spacing_base"
+        android:drawablePadding="@dimen/dimen_10"
+        android:paddingHorizontal="@dimen/sushi_spacing_base"
+        android:paddingVertical="@dimen/sushi_spacing_macro"
+        app:drawablePadding="@dimen/dimen_10"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/lottie_view"
+        app:tagSize="medium"
+        app:tagType="rounded_outline" />
+</merge>

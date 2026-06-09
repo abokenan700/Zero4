@@ -1,0 +1,3296 @@
+{
+	"is_success": true,
+	"response": {
+		"snippets": [
+			{
+				"widget_type": "vertical_text_image_snippet",
+				"data": {
+					"identity": {
+						"id": "profile_header"
+					},
+					"bg_gradient": {
+						"colors": [
+							{
+								"theme_bucket": {
+									"token": "color.surface.yellow.light"
+								}
+							},
+							{
+								"theme_bucket": {
+									"token": "color.background.secondary"
+								}
+							}
+						]
+					},
+					"snippet_layout_config": {
+						"top_radius": 12,
+						"bottom_radius": 12,
+						"padding": "0,40,0,0"
+					},
+					"title": {
+						"text": "Your account",
+						"font": {
+							"weight": "extrabold",
+							"size": "700"
+						}
+					},
+					"top_image": {
+						"url": "https://cdn.grofers.com/layout-engine/v2/2025-07/profile_v2_hero_image/profile_v2_hero_image_light.png",
+						"width": 92,
+						"height": 92
+					},
+					"subtitle": {
+						"color": {
+							"theme_bucket": {
+								"token": "color.text.grey"
+							}
+						},
+						"alignment": "center",
+						"text": "Log in to view your complete profile",
+						"font": {
+							"weight": "regular",
+							"size": "100"
+						}
+					},
+					"subtitle2": {
+						"color": {
+							"theme_bucket": {
+								"token": "color.text.grey"
+							}
+						},
+						"alignment": "center",
+						"font": {
+							"weight": "regular",
+							"size": "100"
+						}
+					}
+				}
+			},
+			{
+				"widget_type": "vertical_text_image_snippet",
+				"data": {
+					"identity": {
+						"id": "profile_header_logged_out"
+					},
+					"title": {
+						"text": "Your account",
+						"font": {
+							"weight": "extrabold",
+							"size": "700"
+						}
+					},
+					"top_image": {
+						"url": "https://cdn.grofers.com/layout-engine/v2/2025-07/profile_v3_hero_image/profile_v3_hero_image_light.png",
+						"width": 92,
+						"height": 92
+					},
+					"subtitle": {
+						"color": {
+							"theme_bucket": {
+								"token": "color.text.grey"
+							}
+						},
+						"alignment": "center",
+						"text": "Log in to view your complete profile",
+						"font": {
+							"weight": "regular",
+							"size": "100"
+						}
+					},
+					"subtitle2": {
+						"color": {
+							"theme_bucket": {
+								"token": "color.text.grey"
+							}
+						},
+						"alignment": "center",
+						"font": {
+							"weight": "regular",
+							"size": "100"
+						}
+					},
+					"snippet_layout_config": {
+						"padding": "0,40,0,0"
+					}
+				}
+			},
+			{
+				"data": {
+					"button": {
+						"size": "large",
+						"type": "outline",
+						"text": "Continue",
+						"color": {
+							"theme_bucket": {
+								"token": "color.button.ghost.label"
+							}
+						},
+						"click_action": {
+							"type": "request_login"
+						},
+						"font": {
+							"size": "400",
+							"weight": "semibold"
+						}
+					},
+					"identity": {
+						"id": "continue_button"
+					}
+				},
+				"tracking": {
+					"entry_source_map": {
+						"entry_source_child_position": 2,
+						"entry_source_position": 1
+					},
+					"common_attributes": {
+						"child_widget_position": 2,
+						"is_child_widget": true,
+						"widget_position": 1
+					}
+				},
+				"widget_type": "button_with_loader_snippet",
+				"layout_config": {
+					"spacing": "16,20,16,0"
+				}
+			},
+			{
+				"data": {
+					"identity": {
+						"id": "user_birthday_banner"
+					},
+					"top_radius": 8,
+					"bottom_radius": 8
+				},
+				"widget_type": "v2_image_text_snippet_type_19",
+				"tracking": {
+					"widget_meta": {
+						"widget_name": "Birthday",
+						"widget_title": "Birthday"
+					},
+					"impression_map": {
+						"event_name": "Banner Widget Shown"
+					},
+					"click_map": {
+						"event_name": "Banner Widget Clicked"
+					}
+				},
+				"layout_config": {
+					"spacing": "12,12,12,0"
+				}
+			},
+			{
+				"data": {
+					"items": [
+						{
+							"widget_type": "vertical_text_image_snippet",
+							"data": {
+								"section_count": 3,
+								"top_image": {
+									"url": "https://cdn.grofers.com/layout-engine/v2/2025-07/profile_v3_your_orders/profile_v3_your_orders_light.png",
+									"width": 32,
+									"height": 32
+								},
+								"container_bg_color": {
+									"theme_bucket": {
+										"token": "color.surface.primary"
+									}
+								},
+								"title": {
+									"color": {
+										"theme_bucket": {
+											"token": "color.text.black"
+										}
+									},
+									"alignment": "center",
+									"text": "Your orders",
+									"font": {
+										"weight": "semibold",
+										"size": "300"
+									}
+								},
+								"click_action": {
+									"type": "blinkit_deeplink",
+									"blinkit_deeplink": {
+										"url": "grofers://widgetized/order_history?requires_login=true"
+									}
+								},
+								"snippet_layout_config": {
+									"top_radius": 12,
+									"bottom_radius": 12,
+									"padding": "12,12,12,12"
+								},
+								"identity": {
+									"id": "your_order_tile"
+								}
+							}
+						},
+						{
+							"widget_type": "vertical_text_image_snippet",
+							"data": {
+								"section_count": 3,
+								"top_image": {
+									"url": "https://cdn.grofers.com/layout-engine/v2/2025-07/profile_v3_your_wallet/profile_v3_your_wallet_light.png",
+									"width": 32,
+									"height": 32
+								},
+								"container_bg_color": {
+									"theme_bucket": {
+										"token": "color.surface.primary"
+									}
+								},
+								"click_action": {
+									"type": "blinkit_deeplink",
+									"blinkit_deeplink": {
+										"url": "grofers://layout?widget_layout_id=blinkit_money&requires_login=true"
+									}
+								},
+								"snippet_layout_config": {
+									"top_radius": 12,
+									"bottom_radius": 12,
+									"padding": "12,12,12,12"
+								},
+								"title": {
+									"color": {
+										"theme_bucket": {
+											"token": "color.text.black"
+										}
+									},
+									"alignment": "center",
+									"text": "Blinkit Money",
+									"font": {
+										"weight": "semibold",
+										"size": "300"
+									}
+								},
+								"identity": {
+									"id": "blinkit_money_tile"
+								}
+							}
+						},
+						{
+							"widget_type": "vertical_text_image_snippet",
+							"data": {
+								"section_count": 3,
+								"top_image": {
+									"url": "https://cdn.grofers.com/layout-engine/v2/2025-07/profile_v3_support/profile_v3_support_light.png",
+									"width": 32,
+									"height": 32
+								},
+								"container_bg_color": {
+									"theme_bucket": {
+										"token": "color.surface.primary"
+									}
+								},
+								"click_action": {
+									"type": "blinkit_deeplink",
+									"blinkit_deeplink": {
+										"url": "grofers://customer-support-chat?should_fetch_flow_type=true&requires_login=true"
+									}
+								},
+								"snippet_layout_config": {
+									"top_radius": 12,
+									"bottom_radius": 12,
+									"padding": "12,12,12,12"
+								},
+								"title": {
+									"color": {
+										"theme_bucket": {
+											"token": "color.text.black"
+										}
+									},
+									"alignment": "center",
+									"text": "Need help?",
+									"font": {
+										"weight": "semibold",
+										"size": "300"
+									}
+								},
+								"identity": {
+									"id": "need_help_tile"
+								}
+							}
+						}
+					],
+					"identity": {
+						"id": "horizontal_grid"
+					},
+					"container_layout_config": {
+						"item_spacing": 8
+					}
+				},
+				"widget_type": "grid_container_vr",
+				"layout_config": {
+					"spacing": "12,12,12,0"
+				}
+			},
+			{
+				"data": {
+					"identity": {
+						"id": "app_update"
+					},
+					"title": {
+						"text": "App update available",
+						"color": {
+							"theme_bucket": {
+								"token": "color.text.black"
+							}
+						},
+						"font": {
+							"size": "300",
+							"weight": "semibold"
+						}
+					},
+					"left_media": {
+						"media_type": "image",
+						"image": {
+							"url": "https://cdn.grofers.com/layout-engine/v2/2025-08/profile_v2_update_app/profile_v2_update_app_light.png",
+							"width": 34,
+							"height": 34
+						}
+					},
+					"subtitle": {
+						"text": "bug fixes and improvements",
+						"color": {
+							"theme_bucket": {
+								"token": "color.text.grey"
+							}
+						},
+						"font": {
+							"size": "200",
+							"weight": "regular"
+						}
+					},
+					"padding": "12,12,12,12",
+					"click_action": {
+						"type": "show_developer_options"
+					},
+					"bg_color": {
+						"theme_bucket": {
+							"token": "color.surface.primary"
+						}
+					},
+					"right_icon": {
+						"code": "e92f",
+						"color": {
+							"theme_bucket": {
+								"token": "color.base.grey.400"
+							}
+						},
+						"font_size": "400"
+					},
+					"bottom_radius": 12,
+					"top_radius": 12,
+					"right_tag": {
+						"size": "Tiny",
+						"corner_radius": 4,
+						"bg_color": {
+							"theme_bucket": {
+								"token": "color.base.teal.100"
+							}
+						},
+						"border_color": {
+							"theme_bucket": {
+								"token": "color.productcard.highlights.border"
+							}
+						},
+						"alignment": "1",
+						"title": {
+							"text": "v.17.24",
+							"color": {
+								"theme_bucket": {
+									"token": "color.base.teal.500"
+								}
+							},
+							"font": {
+								"size": "100",
+								"weight": "semibold"
+							}
+						}
+					}
+				},
+				"tracking": {
+					"impression_map": {
+						"event_name": "In App Update Widget Shown"
+					},
+					"click_map": {
+						"event_name": "Header List Widget Option Clicked",
+						"click_source": "app update available"
+					},
+					"common_attributes": {
+						"available_update_version": "#NA"
+					}
+				},
+				"widget_type": "header_type_4",
+				"layout_config": {
+					"spacing": "12,12,12,0"
+				}
+			},
+			{
+				"data": {
+					"identity": {
+						"id": "appearance_collapsed"
+					},
+					"title": {
+						"text": "Appearance",
+						"color": {
+							"theme_bucket": {
+								"token": "color.text.black"
+							}
+						},
+						"font": {
+							"size": "300",
+							"weight": "semibold"
+						}
+					},
+					"padding": "12,12,12,12",
+					"click_action": {
+						"type": "update_snippet_list",
+						"update_snippet_list": {
+							"snippet_list_updater_ids": [
+								"add_appearance_expanded_section",
+								"remove_appearance_collapsed_section"
+							]
+						}
+					},
+					"bg_color": {
+						"theme_bucket": {
+							"token": "color.surface.primary"
+						}
+					},
+					"left_media": {
+						"media_type": "image",
+						"image": {
+							"url": "https://cdn.grofers.com/layout-engine/v2/2025-06/address.png",
+							"width": 18,
+							"height": 18
+						}
+					},
+					"right_icon": {
+						"code": "e92d",
+						"color": {
+							"theme_bucket": {
+								"token": "color.base.grey.400"
+							}
+						},
+						"font_size": "400"
+					},
+					"top_radius": 12,
+					"bottom_radius": 12,
+					"right_tag": {
+						"size": "Tiny",
+						"corner_radius": 4,
+						"bg_color": {
+							"theme_bucket": {
+								"token": "color.productcard.highlights.background"
+							}
+						},
+						"border_color": {
+							"theme_bucket": {
+								"token": "color.productcard.highlights.border"
+							}
+						},
+						"alignment": "1",
+						"title": {
+							"text": "LIGHT",
+							"color": {
+								"theme_bucket": {
+									"token": "color.productcard.highlights.text"
+								}
+							},
+							"font": {
+								"size": "100",
+								"weight": "semibold"
+							}
+						}
+					}
+				},
+				"tracking": {
+					"impression_map": {
+						"event_name": "APP_APPEARANCE_WIDGET_SHOWN"
+					},
+					"click_map": {
+						"event_name": "APP_APPEARANCE_WIDGET_CLICKED"
+					},
+					"common_attributes": {}
+				},
+				"widget_type": "appearance_header",
+				"layout_config": {
+					"spacing": "12,12,12,12"
+				}
+			},
+			{
+				"data": {
+					"identity": {
+						"id": "restricted_mode"
+					},
+					"accessibility_info": {
+						"text": "Child mode toggle"
+					},
+					"button_type": "SWITCH",
+					"layout_config": {
+						"padding_top": 12,
+						"padding_left": 12,
+						"padding_bottom": 12,
+						"padding_right": 12,
+						"bg_color_data": {
+							"theme_bucket": {
+								"token": "color.surface.primary"
+							}
+						}
+					},
+					"button_position": "RIGHT",
+					"title": {
+						"text": "Hide sensitive items",
+						"color": {
+							"theme_bucket": {
+								"token": "color.text.black"
+							}
+						},
+						"font": {
+							"size": "300",
+							"weight": "medium"
+						}
+					},
+					"subtitle1": {
+						"color": {
+							"theme_bucket": {
+								"token": "color.text.grey"
+							}
+						},
+						"font": {
+							"size": "100",
+							"weight": "regular"
+						},
+						"text": "Sexual wellness, nicotine products and other sensitive items will be hidden"
+					},
+					"subtitle2": {
+						"text": "Know more",
+						"color": {
+							"theme_bucket": {
+								"token": "color.button.ghost.label"
+							}
+						},
+						"is_markdown": 1,
+						"dashed_config": {
+							"color": {
+								"theme_bucket": {
+									"token": "color.button.ghost.label"
+								}
+							},
+							"stroke_width": 1,
+							"dash_gap": 1
+						},
+						"font": {
+							"weight": "medium",
+							"size": "100"
+						}
+					},
+					"image": {
+						"url": "https://cdn.grofers.com/layout-engine/v2/2025-07/hide_sensitive_items_icon/hide_sensitive_items_icon_light.png",
+						"width": 32,
+						"height": 32
+					},
+					"toggle_data": {
+						"toggle_button_data": {
+							"is_selected": false
+						},
+						"selected_actions": [
+							{
+								"open_bottom_sheet_v2": {
+									"api_params": {
+										"query_params": {
+											"is_disabling": "true"
+										},
+										"url": "/v1/layout/restricted-mode/verify-pin"
+									},
+									"config": {
+										"outer_icon": {
+											"code": "e921",
+											"color": {
+												"type": "white",
+												"tint": "900"
+											},
+											"font_size": "800",
+											"bg_color": {
+												"type": "black",
+												"tint": "900",
+												"theme_bucket": {
+													"token": "color.base.slate.900"
+												}
+											}
+										},
+										"height_config": {
+											"should_wrap": true,
+											"default_height": {
+												"screen_factor": 0.5
+											}
+										},
+										"page_type": "restricted_mode_bottom_sheet"
+									}
+								},
+								"type": "open_bottom_sheet_v2"
+							}
+						],
+						"unselected_actions": [
+							{
+								"blinkit_deeplink": {
+									"url": "grofers://layout?widget_layout_id=hide_sensitive_items"
+								},
+								"type": "blinkit_deeplink"
+							}
+						],
+						"non_interactive_toggle": true
+					},
+					"click_action": {
+						"blinkit_deeplink": {
+							"url": "grofers://layout?widget_layout_id=hide_sensitive_items"
+						},
+						"type": "blinkit_deeplink"
+					},
+					"top_radius": 12,
+					"bottom_radius": 12
+				},
+				"widget_type": "compound_button_type_image_text",
+				"layout_config": {
+					"spacing": "12,0,12,12"
+				}
+			},
+			{
+				"data": {
+					"identity": {
+						"id": "your_badges"
+					},
+					"title": {
+						"text": "Your 2025 badges",
+						"color": {
+							"theme_bucket": {
+								"token": "color.text.black"
+							}
+						},
+						"font": {
+							"size": "300",
+							"weight": "semibold"
+						}
+					},
+					"padding": "12,12,12,12",
+					"click_action": {
+						"blinkit_deeplink": {
+							"url": "grofers://stories/badges_story_flow_2025"
+						},
+						"type": "blinkit_deeplink"
+					},
+					"bg_color": {
+						"theme_bucket": {
+							"token": "color.surface.primary"
+						}
+					},
+					"left_icon": {
+						"code": "ec80",
+						"color": {
+							"theme_bucket": {
+								"token": "color.text.black"
+							}
+						},
+						"font_size": "400"
+					},
+					"right_icon": {
+						"code": "e92f",
+						"color": {
+							"theme_bucket": {
+								"token": "color.base.grey.400"
+							}
+						},
+						"font_size": "400"
+					},
+					"bottom_radius": 12,
+					"top_radius": 12
+				},
+				"tracking": {
+					"click_map": {
+						"event_name": "Header List Widget Option Clicked",
+						"click_source": "Your badges 2025"
+					}
+				},
+				"widget_type": "header_type_4",
+				"layout_config": {
+					"spacing": "12,0,12,12"
+				}
+			},
+			{
+				"data": {
+					"identity": {
+						"id": "your_information"
+					},
+					"title": {
+						"text": "Your information",
+						"color": {
+							"theme_bucket": {
+								"token": "color.text.black"
+							}
+						},
+						"font": {
+							"size": "400",
+							"weight": "extrabold"
+						}
+					},
+					"padding": "12,12,12,12",
+					"bg_color": {
+						"theme_bucket": {
+							"token": "color.surface.primary"
+						}
+					},
+					"top_radius": 12
+				},
+				"widget_type": "header_type_4",
+				"layout_config": {
+					"spacing": "12,0,12,0"
+				}
+			},
+			{
+				"widget_type": "separator_v2_data",
+				"data": {
+					"identity": {
+						"id": "your_address_book_separator"
+					},
+					"type": "line",
+					"height": 0.5,
+					"offset": 8,
+					"color": {
+						"theme_bucket": {
+							"token": "color.background.secondary"
+						}
+					},
+					"bg_color": {
+						"theme_bucket": {
+							"token": "color.surface.primary"
+						}
+					}
+				},
+				"layout_config": {
+					"spacing": "12,0,12,0"
+				}
+			},
+			{
+				"data": {
+					"identity": {
+						"id": "your_address_book"
+					},
+					"title": {
+						"text": "Address book",
+						"color": {
+							"theme_bucket": {
+								"token": "color.text.black"
+							}
+						},
+						"font": {
+							"size": "300",
+							"weight": "semibold"
+						}
+					},
+					"padding": "12,12,12,12",
+					"click_action": {
+						"type": "blinkit_deeplink",
+						"blinkit_deeplink": {
+							"url": "grofers://user-address?requires_login=true"
+						}
+					},
+					"bg_color": {
+						"theme_bucket": {
+							"token": "color.surface.primary"
+						}
+					},
+					"left_media": {
+						"media_type": "image",
+						"image": {
+							"url": "https://cdn.grofers.com/layout-engine/v2/2025-07/profile_address_book/profile_address_book_light.png",
+							"width": 18,
+							"height": 18
+						}
+					},
+					"right_icon": {
+						"code": "e92f",
+						"color": {
+							"theme_bucket": {
+								"token": "color.base.grey.400"
+							}
+						},
+						"font_size": "400"
+					}
+				},
+				"tracking": {
+					"click_map": {
+						"event_name": "Header List Widget Option Clicked",
+						"click_source": "address book"
+					}
+				},
+				"widget_type": "header_type_4",
+				"layout_config": {
+					"spacing": "12,0,12,0"
+				}
+			},
+			{
+				"data": {
+					"identity": {
+						"id": "your_address_book_logged_out"
+					},
+					"title": {
+						"text": "Address book",
+						"color": {
+							"theme_bucket": {
+								"token": "color.text.black"
+							}
+						},
+						"font": {
+							"size": "300",
+							"weight": "semibold"
+						}
+					},
+					"padding": "12,12,12,12",
+					"click_action": {
+						"type": "blinkit_deeplink",
+						"blinkit_deeplink": {
+							"url": "grofers://user-address?requires_login=true"
+						}
+					},
+					"bg_color": {
+						"theme_bucket": {
+							"token": "color.surface.primary"
+						}
+					},
+					"left_media": {
+						"media_type": "image",
+						"image": {
+							"url": "https://cdn.grofers.com/layout-engine/v2/2025-07/profile_address_book/profile_address_book_light.png",
+							"width": 18,
+							"height": 18
+						}
+					},
+					"right_icon": {
+						"code": "e92f",
+						"color": {
+							"theme_bucket": {
+								"token": "color.base.grey.400"
+							}
+						},
+						"font_size": "400"
+					},
+					"bottom_radius": 12
+				},
+				"tracking": {
+					"click_map": {
+						"event_name": "Header List Widget Option Clicked",
+						"click_source": "address book"
+					}
+				},
+				"widget_type": "header_type_4",
+				"layout_config": {
+					"spacing": "12,0,12,0"
+				}
+			},
+			{
+				"widget_type": "separator_v2_data",
+				"data": {
+					"identity": {
+						"id": "bookmark_recipes_separator"
+					},
+					"type": "line",
+					"height": 0.5,
+					"offset": 8,
+					"color": {
+						"theme_bucket": {
+							"token": "color.background.secondary"
+						}
+					},
+					"bg_color": {
+						"theme_bucket": {
+							"token": "color.surface.primary"
+						}
+					}
+				},
+				"layout_config": {
+					"spacing": "12,0,12,0"
+				}
+			},
+			{
+				"data": {
+					"identity": {
+						"id": "bookmark_recipes"
+					},
+					"title": {
+						"text": "Bookmarked recipes",
+						"color": {
+							"theme_bucket": {
+								"token": "color.text.black"
+							}
+						},
+						"font": {
+							"size": "300",
+							"weight": "semibold"
+						}
+					},
+					"click_action": {
+						"type": "blinkit_deeplink",
+						"blinkit_deeplink": {
+							"url": "grofers://usecase_listing?is_bookmarked_usecase_listing=true&toolbar_title=Bookmarked Recipes&requires_login=true"
+						}
+					},
+					"padding": "12,12,12,12",
+					"bg_color": {
+						"theme_bucket": {
+							"token": "color.surface.primary"
+						}
+					},
+					"left_media": {
+						"media_type": "image",
+						"image": {
+							"url": "https://cdn.grofers.com/layout-engine/v2/2025-07/profile_cooking/profile_cooking_light.png",
+							"width": 18,
+							"height": 18
+						}
+					},
+					"right_icon": {
+						"code": "e92f",
+						"color": {
+							"theme_bucket": {
+								"token": "color.base.grey.400"
+							}
+						},
+						"font_size": "400"
+					}
+				},
+				"tracking": {
+					"click_map": {
+						"event_name": "Header List Widget Option Clicked",
+						"click_source": "bookmarked recipes"
+					}
+				},
+				"widget_type": "header_type_4",
+				"layout_config": {
+					"spacing": "12,0,12,0"
+				}
+			},
+			{
+				"widget_type": "separator_v2_data",
+				"data": {
+					"identity": {
+						"id": "your_wishlist_separator"
+					},
+					"type": "line",
+					"height": 0.5,
+					"offset": 8,
+					"color": {
+						"theme_bucket": {
+							"token": "color.background.secondary"
+						}
+					},
+					"bg_color": {
+						"theme_bucket": {
+							"token": "color.surface.primary"
+						}
+					}
+				},
+				"layout_config": {
+					"spacing": "12,0,12,0"
+				}
+			},
+			{
+				"data": {
+					"identity": {
+						"id": "your_wishlist"
+					},
+					"title": {
+						"text": "Your wishlist",
+						"color": {
+							"theme_bucket": {
+								"token": "color.text.black"
+							}
+						},
+						"font": {
+							"size": "300",
+							"weight": "semibold"
+						}
+					},
+					"padding": "12,12,12,12",
+					"click_action": {
+						"type": "blinkit_deeplink",
+						"blinkit_deeplink": {
+							"url": "grofers://listing?dynamic_collection_id=wishlist_items&dynamic_header_title=Your wishlist"
+						}
+					},
+					"bg_color": {
+						"theme_bucket": {
+							"token": "color.surface.primary"
+						}
+					},
+					"left_media": {
+						"media_type": "image",
+						"image": {
+							"url": "https://cdn.grofers.com/layout-engine/v2/2025-07/profile_heart/profile_heart_light.png",
+							"width": 18,
+							"height": 18
+						}
+					},
+					"right_icon": {
+						"code": "e92f",
+						"color": {
+							"theme_bucket": {
+								"token": "color.base.grey.400"
+							}
+						},
+						"font_size": "400"
+					}
+				},
+				"tracking": {
+					"click_map": {
+						"event_name": "Header List Widget Option Clicked",
+						"click_source": "your wishlist"
+					}
+				},
+				"widget_type": "header_type_4",
+				"layout_config": {
+					"spacing": "12,0,12,0"
+				}
+			},
+			{
+				"widget_type": "separator_v2_data",
+				"data": {
+					"identity": {
+						"id": "gst_details_separator"
+					},
+					"type": "line",
+					"height": 0.5,
+					"offset": 8,
+					"color": {
+						"theme_bucket": {
+							"token": "color.background.secondary"
+						}
+					},
+					"bg_color": {
+						"theme_bucket": {
+							"token": "color.surface.primary"
+						}
+					}
+				},
+				"layout_config": {
+					"spacing": "12,0,12,0"
+				}
+			},
+			{
+				"data": {
+					"identity": {
+						"id": "gst_details"
+					},
+					"title": {
+						"text": "GST details",
+						"color": {
+							"theme_bucket": {
+								"token": "color.text.black"
+							}
+						},
+						"font": {
+							"size": "300",
+							"weight": "semibold"
+						}
+					},
+					"padding": "12,12,12,12",
+					"bg_color": {
+						"theme_bucket": {
+							"token": "color.surface.primary"
+						}
+					},
+					"click_action": {
+						"type": "blinkit_deeplink",
+						"blinkit_deeplink": {
+							"url": "grofers://bottom-sheet/layout?widget_layout_id=gst/manage"
+						}
+					},
+					"left_media": {
+						"media_type": "image",
+						"image": {
+							"url": "https://cdn.grofers.com/layout-engine/v2/2025-07/profile_gst_details/profile_gst_details_light.png",
+							"width": 18,
+							"height": 18
+						}
+					},
+					"right_icon": {
+						"code": "e92f",
+						"color": {
+							"theme_bucket": {
+								"token": "color.base.grey.400"
+							}
+						},
+						"font_size": "400"
+					}
+				},
+				"tracking": {
+					"click_map": {
+						"event_name": "Header List Widget Option Clicked",
+						"click_source": "gst details"
+					}
+				},
+				"widget_type": "header_type_4",
+				"layout_config": {
+					"spacing": "12,0,12,0"
+				}
+			},
+			{
+				"widget_type": "separator_v2_data",
+				"data": {
+					"identity": {
+						"id": "e_gift_cards_separator"
+					},
+					"type": "line",
+					"height": 0.5,
+					"offset": 8,
+					"color": {
+						"theme_bucket": {
+							"token": "color.background.secondary"
+						}
+					},
+					"bg_color": {
+						"theme_bucket": {
+							"token": "color.surface.primary"
+						}
+					}
+				},
+				"layout_config": {
+					"spacing": "12,0,12,0"
+				}
+			},
+			{
+				"data": {
+					"identity": {
+						"id": "e_gift_cards"
+					},
+					"title": {
+						"text": "E-gift cards",
+						"color": {
+							"theme_bucket": {
+								"token": "color.text.black"
+							}
+						},
+						"font": {
+							"size": "300",
+							"weight": "semibold"
+						}
+					},
+					"padding": "12,12,12,12",
+					"click_action": {
+						"type": "blinkit_deeplink",
+						"blinkit_deeplink": {
+							"url": "grofers://layout?widget_layout_id=profile_egift_card&requires_login=true"
+						}
+					},
+					"bg_color": {
+						"theme_bucket": {
+							"token": "color.surface.primary"
+						}
+					},
+					"left_media": {
+						"media_type": "image",
+						"image": {
+							"url": "https://cdn.grofers.com/layout-engine/v2/2025-07/profile_gift_cards/profile_gift_cards_light.png",
+							"width": 18,
+							"height": 18
+						}
+					},
+					"right_icon": {
+						"code": "e92f",
+						"color": {
+							"theme_bucket": {
+								"token": "color.base.grey.400"
+							}
+						},
+						"font_size": "400"
+					}
+				},
+				"tracking": {
+					"click_map": {
+						"event_name": "Header List Widget Option Clicked",
+						"click_source": "e-gift cards"
+					}
+				},
+				"widget_type": "header_type_4",
+				"layout_config": {
+					"spacing": "12,0,12,0"
+				}
+			},
+			{
+				"widget_type": "separator_v2_data",
+				"data": {
+					"identity": {
+						"id": "your_prescriptions_separator"
+					},
+					"type": "line",
+					"height": 0.5,
+					"offset": 8,
+					"color": {
+						"theme_bucket": {
+							"token": "color.background.secondary"
+						}
+					},
+					"bg_color": {
+						"theme_bucket": {
+							"token": "color.surface.primary"
+						}
+					}
+				},
+				"layout_config": {
+					"spacing": "12,0,12,0"
+				}
+			},
+			{
+				"data": {
+					"identity": {
+						"id": "your_prescriptions"
+					},
+					"title": {
+						"text": "Your prescriptions",
+						"color": {
+							"theme_bucket": {
+								"token": "color.text.black"
+							}
+						},
+						"font": {
+							"size": "300",
+							"weight": "semibold"
+						}
+					},
+					"padding": "12,12,12,12",
+					"click_action": {
+						"type": "blinkit_deeplink",
+						"blinkit_deeplink": {
+							"url": "grofers://layout?widget_layout_id=prescriptions&requires_login=true"
+						}
+					},
+					"bg_color": {
+						"theme_bucket": {
+							"token": "color.surface.primary"
+						}
+					},
+					"left_media": {
+						"media_type": "image",
+						"image": {
+							"url": "https://cdn.grofers.com/layout-engine/v2/2025-07/profile_prescriptions/profile_prescriptions_light.png",
+							"width": 18,
+							"height": 18
+						}
+					},
+					"right_icon": {
+						"code": "e92f",
+						"color": {
+							"theme_bucket": {
+								"token": "color.base.grey.400"
+							}
+						},
+						"font_size": "400"
+					},
+					"bottom_radius": 12
+				},
+				"tracking": {
+					"click_map": {
+						"event_name": "Header List Widget Option Clicked",
+						"click_source": "your prescriptions"
+					}
+				},
+				"widget_type": "header_type_4",
+				"layout_config": {
+					"spacing": "12,0,12,0"
+				}
+			},
+			{
+				"data": {
+					"identity": {
+						"id": "payments_and_coupons"
+					},
+					"title": {
+						"text": "Payment and coupons",
+						"color": {
+							"theme_bucket": {
+								"token": "color.text.black"
+							}
+						},
+						"font": {
+							"size": "400",
+							"weight": "extrabold"
+						}
+					},
+					"padding": "12,12,12,12",
+					"bg_color": {
+						"theme_bucket": {
+							"token": "color.surface.primary"
+						}
+					},
+					"top_radius": 12
+				},
+				"tracking": {
+					"click_map": {
+						"event_name": "Header List Widget Option Clicked",
+						"click_source": "payment and coupons"
+					}
+				},
+				"widget_type": "header_type_4",
+				"layout_config": {
+					"spacing": "12,12,12,0"
+				}
+			},
+			{
+				"widget_type": "separator_v2_data",
+				"data": {
+					"identity": {
+						"id": "wallet_separator"
+					},
+					"type": "line",
+					"height": 0.5,
+					"offset": 8,
+					"color": {
+						"theme_bucket": {
+							"token": "color.background.secondary"
+						}
+					},
+					"bg_color": {
+						"theme_bucket": {
+							"token": "color.surface.primary"
+						}
+					}
+				},
+				"layout_config": {
+					"spacing": "12,0,12,0"
+				}
+			},
+			{
+				"data": {
+					"identity": {
+						"id": "wallet"
+					},
+					"title": {
+						"text": "Wallet",
+						"color": {
+							"theme_bucket": {
+								"token": "color.text.black"
+							}
+						},
+						"font": {
+							"size": "300",
+							"weight": "semibold"
+						}
+					},
+					"click_action": {
+						"type": "blinkit_deeplink",
+						"blinkit_deeplink": {
+							"url": "grofers://wallet?requires_login=true"
+						}
+					},
+					"padding": "12,12,12,12",
+					"bg_color": {
+						"theme_bucket": {
+							"token": "color.surface.primary"
+						}
+					},
+					"left_media": {
+						"media_type": "image",
+						"image": {
+							"url": "https://cdn.grofers.com/layout-engine/v2/2025-07/profile_wallet/profile_wallet_light.png",
+							"width": 18,
+							"height": 18
+						}
+					},
+					"right_icon": {
+						"code": "e92f",
+						"color": {
+							"theme_bucket": {
+								"token": "color.base.grey.400"
+							}
+						},
+						"font_size": "400"
+					}
+				},
+				"tracking": {
+					"click_map": {
+						"event_name": "Header List Widget Option Clicked",
+						"click_source": "wallet"
+					}
+				},
+				"widget_type": "header_type_4",
+				"layout_config": {
+					"spacing": "12,0,12,0"
+				}
+			},
+			{
+				"widget_type": "separator_v2_data",
+				"data": {
+					"identity": {
+						"id": "blinkit_money_separator"
+					},
+					"type": "line",
+					"height": 0.5,
+					"offset": 8,
+					"color": {
+						"theme_bucket": {
+							"token": "color.background.secondary"
+						}
+					},
+					"bg_color": {
+						"theme_bucket": {
+							"token": "color.surface.primary"
+						}
+					}
+				},
+				"layout_config": {
+					"spacing": "12,0,12,0"
+				}
+			},
+			{
+				"data": {
+					"identity": {
+						"id": "blinkit_money"
+					},
+					"title": {
+						"text": "Blinkit Money",
+						"color": {
+							"theme_bucket": {
+								"token": "color.text.black"
+							}
+						},
+						"font": {
+							"size": "300",
+							"weight": "semibold"
+						}
+					},
+					"click_action": {
+						"type": "blinkit_deeplink",
+						"blinkit_deeplink": {
+							"url": "grofers://layout?widget_layout_id=blinkit_money&requires_login=true"
+						}
+					},
+					"padding": "12,12,12,12",
+					"bg_color": {
+						"theme_bucket": {
+							"token": "color.surface.primary"
+						}
+					},
+					"left_media": {
+						"media_type": "image",
+						"image": {
+							"url": "https://cdn.grofers.com/layout-engine/v2/2025-07/profile_wallet/profile_wallet_light.png",
+							"width": 18,
+							"height": 18
+						}
+					},
+					"right_icon": {
+						"code": "e92f",
+						"color": {
+							"theme_bucket": {
+								"token": "color.base.grey.400"
+							}
+						},
+						"font_size": "400"
+					}
+				},
+				"tracking": {
+					"click_map": {
+						"event_name": "Header List Widget Option Clicked",
+						"click_source": "blinkit money"
+					}
+				},
+				"widget_type": "header_type_4",
+				"layout_config": {
+					"spacing": "12,0,12,0"
+				}
+			},
+			{
+				"widget_type": "separator_v2_data",
+				"data": {
+					"identity": {
+						"id": "payment_settings_separator"
+					},
+					"type": "line",
+					"height": 0.5,
+					"offset": 8,
+					"color": {
+						"theme_bucket": {
+							"token": "color.background.secondary"
+						}
+					},
+					"bg_color": {
+						"theme_bucket": {
+							"token": "color.surface.primary"
+						}
+					}
+				},
+				"layout_config": {
+					"spacing": "12,0,12,0"
+				}
+			},
+			{
+				"data": {
+					"identity": {
+						"id": "payment_settings"
+					},
+					"title": {
+						"text": "Payment settings",
+						"color": {
+							"theme_bucket": {
+								"token": "color.text.black"
+							}
+						},
+						"font": {
+							"size": "300",
+							"weight": "semibold"
+						}
+					},
+					"padding": "12,12,12,12",
+					"bg_color": {
+						"theme_bucket": {
+							"token": "color.surface.primary"
+						}
+					},
+					"click_action": {
+						"type": "payment_action",
+						"payment_action": {
+							"open_manage_payment": {
+								"additional_params": "{\"block_payment_methods\":[{\"payment_method_type\":\"cash\",\"message\":\"Cash on delivery is not available with Blinkit Money\"}],\"hidden_payment_methods\":[],\"service_type\":\"BLINKIT\",\"emi_details\":null,\"eligible_bank_codes\":{\"values\":[\"HDFC\",\"ICICI\"]},\"zomato_money_constraints\":\"{\\\"constraints\\\": [{\\\"subtype\\\": 1, \\\"is_wallet_applicable\\\": true}, {\\\"subtype\\\": 3, \\\"is_wallet_applicable\\\": true}, {\\\"subtype\\\": 2, \\\"is_wallet_applicable\\\": false, \\\"inapplicability_reason\\\": 15}]}\",\"wallet_level_bifurcation_serialized\":\"CiYIAxABGGQgZChkMKSh4gQ4AUABSAFQAWABaAZ6AggBggEECAEQARIECAMQAxIECAIQARgCIMCjCSokOWRlMjE0NGQtYTg0MC00ZjIxLWJmMGMtYjk3NzUxMDEzZjZh\",\"zomato_money_customer_action\":\"UNSELECTED\"}",
+								"service_type": "BLINKIT",
+								"payable_amount": 1,
+								"online_payments_flag": "1"
+							},
+							"operation": "open_manage_payment"
+						}
+					},
+					"left_media": {
+						"media_type": "image",
+						"image": {
+							"url": "https://cdn.grofers.com/layout-engine/v2/2025-07/profile_payments/profile_payments_light.png",
+							"width": 18,
+							"height": 18
+						}
+					},
+					"right_icon": {
+						"code": "e92f",
+						"color": {
+							"theme_bucket": {
+								"token": "color.base.grey.400"
+							}
+						},
+						"font_size": "400"
+					}
+				},
+				"tracking": {
+					"click_map": {
+						"event_name": "Header List Widget Option Clicked",
+						"click_source": "payment settings"
+					}
+				},
+				"widget_type": "header_type_4",
+				"layout_config": {
+					"spacing": "12,0,12,0"
+				}
+			},
+			{
+				"widget_type": "separator_v2_data",
+				"data": {
+					"identity": {
+						"id": "claim_gift_card_separator"
+					},
+					"type": "line",
+					"height": 0.5,
+					"offset": 8,
+					"color": {
+						"theme_bucket": {
+							"token": "color.background.secondary"
+						}
+					},
+					"bg_color": {
+						"theme_bucket": {
+							"token": "color.surface.primary"
+						}
+					}
+				},
+				"layout_config": {
+					"spacing": "12,0,12,0"
+				}
+			},
+			{
+				"data": {
+					"identity": {
+						"id": "claim_gift_card"
+					},
+					"title": {
+						"text": "Claim Gift card",
+						"color": {
+							"theme_bucket": {
+								"token": "color.text.black"
+							}
+						},
+						"font": {
+							"size": "300",
+							"weight": "semibold"
+						}
+					},
+					"padding": "12,12,12,12",
+					"click_action": {
+						"type": "blinkit_deeplink",
+						"blinkit_deeplink": {
+							"url": "grofers://layout?widget_layout_id=blinkit_money_gift_card_input&source=ProfilePage&requires_login=true"
+						}
+					},
+					"bg_color": {
+						"theme_bucket": {
+							"token": "color.surface.primary"
+						}
+					},
+					"left_media": {
+						"media_type": "image",
+						"image": {
+							"url": "https://cdn.grofers.com/layout-engine/v2/2025-07/profile_gift_cards/profile_gift_cards_light.png",
+							"width": 18,
+							"height": 18
+						}
+					},
+					"right_icon": {
+						"code": "e92f",
+						"color": {
+							"theme_bucket": {
+								"token": "color.base.grey.400"
+							}
+						},
+						"font_size": "400"
+					}
+				},
+				"tracking": {
+					"click_map": {
+						"event_name": "Header List Widget Option Clicked",
+						"click_source": "e-gift cards"
+					}
+				},
+				"widget_type": "header_type_4",
+				"layout_config": {
+					"spacing": "12,0,12,0"
+				}
+			},
+			{
+				"widget_type": "separator_v2_data",
+				"data": {
+					"identity": {
+						"id": "collected_rewards_separator"
+					},
+					"type": "line",
+					"height": 0.5,
+					"offset": 8,
+					"color": {
+						"theme_bucket": {
+							"token": "color.background.secondary"
+						}
+					},
+					"bg_color": {
+						"theme_bucket": {
+							"token": "color.surface.primary"
+						}
+					}
+				},
+				"layout_config": {
+					"spacing": "12,0,12,0"
+				}
+			},
+			{
+				"data": {
+					"identity": {
+						"id": "collected_rewards"
+					},
+					"title": {
+						"text": "Your collected rewards",
+						"color": {
+							"theme_bucket": {
+								"token": "color.text.black"
+							}
+						},
+						"font": {
+							"size": "300",
+							"weight": "semibold"
+						}
+					},
+					"padding": "12,12,12,12",
+					"bg_color": {
+						"theme_bucket": {
+							"token": "color.surface.primary"
+						}
+					},
+					"click_action": {
+						"type": "blinkit_deeplink",
+						"blinkit_deeplink": {
+							"url": "grofers://layout?widget_layout_id=collected_coupon&milestone_type=SCRATCH_CARD&requires_login=true"
+						}
+					},
+					"left_media": {
+						"media_type": "image",
+						"image": {
+							"url": "https://cdn.grofers.com/layout-engine/v2/2025-07/profile_coupon/profile_coupon_light.png",
+							"width": 18,
+							"height": 18
+						}
+					},
+					"right_icon": {
+						"code": "e92f",
+						"color": {
+							"theme_bucket": {
+								"token": "color.base.grey.400"
+							}
+						},
+						"font_size": "400"
+					},
+					"bottom_radius": 12
+				},
+				"tracking": {
+					"click_map": {
+						"event_name": "Header List Widget Option Clicked",
+						"click_source": "your collected rewards"
+					}
+				},
+				"widget_type": "header_type_4",
+				"layout_config": {
+					"spacing": "12,0,12,0"
+				}
+			},
+			{
+				"data": {
+					"identity": {
+						"id": "feeding_india"
+					},
+					"title": {
+						"text": "Feeding India",
+						"color": {
+							"theme_bucket": {
+								"token": "color.text.black"
+							}
+						},
+						"font": {
+							"size": "400",
+							"weight": "extrabold"
+						}
+					},
+					"padding": "12,12,12,12",
+					"bg_color": {
+						"theme_bucket": {
+							"token": "color.surface.primary"
+						}
+					},
+					"top_radius": 12
+				},
+				"tracking": {
+					"click_map": {
+						"event_name": "Header List Widget Option Clicked",
+						"click_source": "feeding india"
+					}
+				},
+				"widget_type": "header_type_4",
+				"layout_config": {
+					"spacing": "12,12,12,0"
+				}
+			},
+			{
+				"widget_type": "separator_v2_data",
+				"data": {
+					"identity": {
+						"id": "feeding_india_impact_separator"
+					},
+					"type": "line",
+					"height": 0.5,
+					"offset": 8,
+					"color": {
+						"theme_bucket": {
+							"token": "color.background.secondary"
+						}
+					},
+					"bg_color": {
+						"theme_bucket": {
+							"token": "color.surface.primary"
+						}
+					}
+				},
+				"layout_config": {
+					"spacing": "12,0,12,0"
+				}
+			},
+			{
+				"data": {
+					"identity": {
+						"id": "feeding_india_impact"
+					},
+					"title": {
+						"text": "Your impact",
+						"color": {
+							"theme_bucket": {
+								"token": "color.text.black"
+							}
+						},
+						"font": {
+							"size": "300",
+							"weight": "semibold"
+						}
+					},
+					"padding": "12,12,12,12",
+					"click_action": {
+						"type": "blinkit_deeplink",
+						"blinkit_deeplink": {
+							"url": "grofers://layout?widget_layout_id=y25_feeding_india_donation"
+						}
+					},
+					"bg_color": {
+						"theme_bucket": {
+							"token": "color.surface.primary"
+						}
+					},
+					"left_media": {
+						"media_type": "image",
+						"image": {
+							"url": "https://cdn.grofers.com/layout-engine/v2/2025-07/profile_feeding_india/profile_feeding_india_light.png",
+							"width": 18,
+							"height": 18
+						}
+					},
+					"right_icon": {
+						"code": "e92f",
+						"color": {
+							"theme_bucket": {
+								"token": "color.base.grey.400"
+							}
+						},
+						"font_size": "400"
+					}
+				},
+				"tracking": {
+					"click_map": {
+						"event_name": "Header List Widget Option Clicked",
+						"click_source": "your impact"
+					}
+				},
+				"widget_type": "header_type_4",
+				"layout_config": {
+					"spacing": "12,0,12,0"
+				}
+			},
+			{
+				"widget_type": "separator_v2_data",
+				"data": {
+					"identity": {
+						"id": "feeding_india_receipt_separator"
+					},
+					"type": "line",
+					"height": 0.5,
+					"offset": 8,
+					"color": {
+						"theme_bucket": {
+							"token": "color.background.secondary"
+						}
+					},
+					"bg_color": {
+						"theme_bucket": {
+							"token": "color.surface.primary"
+						}
+					}
+				},
+				"layout_config": {
+					"spacing": "12,0,12,0"
+				}
+			},
+			{
+				"data": {
+					"identity": {
+						"id": "feeding_india_receipt"
+					},
+					"title": {
+						"text": "Get donation receipt",
+						"color": {
+							"theme_bucket": {
+								"token": "color.text.black"
+							}
+						},
+						"font": {
+							"size": "300",
+							"weight": "semibold"
+						}
+					},
+					"padding": "12,12,12,12",
+					"click_action": {
+						"type": "open_feeding_india_receipt_bottom_sheet"
+					},
+					"bg_color": {
+						"theme_bucket": {
+							"token": "color.surface.primary"
+						}
+					},
+					"left_media": {
+						"media_type": "image",
+						"image": {
+							"url": "https://cdn.grofers.com/layout-engine/v2/2025-07/profile_receipt/profile_receipt_light.png",
+							"width": 18,
+							"height": 18
+						}
+					},
+					"right_icon": {
+						"code": "e92f",
+						"color": {
+							"theme_bucket": {
+								"token": "color.base.grey.400"
+							}
+						},
+						"font_size": "400"
+					},
+					"bottom_radius": 12
+				},
+				"tracking": {
+					"click_map": {
+						"event_name": "Header List Widget Option Clicked",
+						"click_source": "get feeding india receipt"
+					}
+				},
+				"widget_type": "header_type_4",
+				"layout_config": {
+					"spacing": "12,0,12,0"
+				}
+			},
+			{
+				"data": {
+					"identity": {
+						"id": "other_information"
+					},
+					"title": {
+						"text": "Other Information",
+						"color": {
+							"theme_bucket": {
+								"token": "color.text.black"
+							}
+						},
+						"font": {
+							"size": "400",
+							"weight": "extrabold"
+						}
+					},
+					"padding": "12,12,12,12",
+					"bg_color": {
+						"theme_bucket": {
+							"token": "color.surface.primary"
+						}
+					},
+					"top_radius": 12
+				},
+				"tracking": {
+					"click_map": {
+						"event_name": "Header List Widget Option Clicked",
+						"click_source": "other information"
+					}
+				},
+				"widget_type": "header_type_4",
+				"layout_config": {
+					"spacing": "12,12,12,0"
+				}
+			},
+			{
+				"widget_type": "separator_v2_data",
+				"data": {
+					"identity": {
+						"id": "share_app_separator"
+					},
+					"type": "line",
+					"height": 0.5,
+					"offset": 8,
+					"color": {
+						"theme_bucket": {
+							"token": "color.background.secondary"
+						}
+					},
+					"bg_color": {
+						"theme_bucket": {
+							"token": "color.surface.primary"
+						}
+					}
+				},
+				"layout_config": {
+					"spacing": "12,0,12,0"
+				}
+			},
+			{
+				"data": {
+					"identity": {
+						"id": "share_app"
+					},
+					"title": {
+						"text": "Share the app",
+						"color": {
+							"theme_bucket": {
+								"token": "color.text.black"
+							}
+						},
+						"font": {
+							"size": "300",
+							"weight": "semibold"
+						}
+					},
+					"padding": "12,12,12,12",
+					"click_action": {
+						"type": "share_app"
+					},
+					"bg_color": {
+						"theme_bucket": {
+							"token": "color.surface.primary"
+						}
+					},
+					"left_media": {
+						"media_type": "image",
+						"image": {
+							"url": "https://cdn.grofers.com/layout-engine/v2/2025-07/profile_share_app/profile_share_app_light.png",
+							"width": 18,
+							"height": 18
+						}
+					},
+					"right_icon": {
+						"code": "e92f",
+						"color": {
+							"theme_bucket": {
+								"token": "color.base.grey.400"
+							}
+						},
+						"font_size": "400"
+					}
+				},
+				"tracking": {
+					"click_map": {
+						"event_name": "Header List Widget Option Clicked",
+						"click_source": "share the app"
+					}
+				},
+				"widget_type": "header_type_4",
+				"layout_config": {
+					"spacing": "12,0,12,0"
+				}
+			},
+			{
+				"widget_type": "separator_v2_data",
+				"data": {
+					"identity": {
+						"id": "about_up_separator"
+					},
+					"type": "line",
+					"height": 0.5,
+					"offset": 8,
+					"color": {
+						"theme_bucket": {
+							"token": "color.background.secondary"
+						}
+					},
+					"bg_color": {
+						"theme_bucket": {
+							"token": "color.surface.primary"
+						}
+					}
+				},
+				"layout_config": {
+					"spacing": "12,0,12,0"
+				}
+			},
+			{
+				"data": {
+					"identity": {
+						"id": "about_up"
+					},
+					"title": {
+						"text": "About us",
+						"color": {
+							"theme_bucket": {
+								"token": "color.text.black"
+							}
+						},
+						"font": {
+							"size": "300",
+							"weight": "semibold"
+						}
+					},
+					"padding": "12,12,12,12",
+					"click_action": {
+						"type": "blinkit_deeplink",
+						"blinkit_deeplink": {
+							"url": "grofers://about-us"
+						}
+					},
+					"bg_color": {
+						"theme_bucket": {
+							"token": "color.surface.primary"
+						}
+					},
+					"left_media": {
+						"media_type": "image",
+						"image": {
+							"url": "https://cdn.grofers.com/layout-engine/v2/2025-07/profile_about_us/profile_about_us_light.png",
+							"width": 18,
+							"height": 18
+						}
+					},
+					"right_icon": {
+						"code": "e92f",
+						"color": {
+							"theme_bucket": {
+								"token": "color.base.grey.400"
+							}
+						},
+						"font_size": "400"
+					}
+				},
+				"tracking": {
+					"click_map": {
+						"event_name": "Header List Widget Option Clicked",
+						"click_source": "about us"
+					}
+				},
+				"widget_type": "header_type_4",
+				"layout_config": {
+					"spacing": "12,0,12,0"
+				}
+			},
+			{
+				"data": {
+					"identity": {
+						"id": "about_up_logged_out"
+					},
+					"title": {
+						"text": "About us",
+						"color": {
+							"theme_bucket": {
+								"token": "color.text.black"
+							}
+						},
+						"font": {
+							"size": "300",
+							"weight": "semibold"
+						}
+					},
+					"padding": "12,12,12,12",
+					"click_action": {
+						"type": "blinkit_deeplink",
+						"blinkit_deeplink": {
+							"url": "grofers://about-us"
+						}
+					},
+					"bg_color": {
+						"theme_bucket": {
+							"token": "color.surface.primary"
+						}
+					},
+					"left_media": {
+						"media_type": "image",
+						"image": {
+							"url": "https://cdn.grofers.com/layout-engine/v2/2025-06/address.png",
+							"width": 18,
+							"height": 18
+						}
+					},
+					"right_icon": {
+						"code": "e92f",
+						"color": {
+							"theme_bucket": {
+								"token": "color.base.grey.400"
+							}
+						},
+						"font_size": "400"
+					}
+				},
+				"tracking": {
+					"click_map": {
+						"event_name": "Header List Widget Option Clicked",
+						"click_source": "about us"
+					}
+				},
+				"widget_type": "header_type_4",
+				"layout_config": {
+					"spacing": "12,0,12,0"
+				}
+			},
+			{
+				"widget_type": "separator_v2_data",
+				"data": {
+					"identity": {
+						"id": "sell_on_blinkit_seperator"
+					},
+					"type": "line",
+					"height": 0.5,
+					"offset": 8,
+					"color": {
+						"theme_bucket": {
+							"token": "color.background.secondary"
+						}
+					},
+					"bg_color": {
+						"theme_bucket": {
+							"token": "color.surface.primary"
+						}
+					}
+				},
+				"layout_config": {
+					"spacing": "12,0,12,0"
+				}
+			},
+			{
+				"data": {
+					"identity": {
+						"id": "sell_on_blinkit"
+					},
+					"title": {
+						"text": "Sell on Blinkit",
+						"color": {
+							"theme_bucket": {
+								"token": "color.text.black"
+							}
+						},
+						"font": {
+							"size": "300",
+							"weight": "semibold"
+						}
+					},
+					"padding": "12,12,12,12",
+					"click_action": {
+						"type": "blinkit_deeplink",
+						"blinkit_deeplink": {
+							"url": "grofers://web-external?web_url=https://blinkit.to/bext/3bcnui01"
+						}
+					},
+					"bg_color": {
+						"theme_bucket": {
+							"token": "color.surface.primary"
+						}
+					},
+					"left_icon": {
+						"code": "e9d3",
+						"color": {
+							"theme_bucket": {
+								"token": "color.text.black"
+							}
+						},
+						"font_size": "500"
+					},
+					"right_icon": {
+						"code": "e92f",
+						"color": {
+							"theme_bucket": {
+								"token": "color.base.grey.400"
+							}
+						},
+						"font_size": "400"
+					}
+				},
+				"tracking": {
+					"impression_map": {
+						"event_name": "Header Shown",
+						"source": "sell on blinkit"
+					},
+					"click_map": {
+						"event_name": "Header List Widget Option Clicked",
+						"click_source": "sell on blinkit"
+					}
+				},
+				"widget_type": "header_type_4",
+				"layout_config": {
+					"spacing": "12,0,12,0"
+				}
+			},
+			{
+				"data": {
+					"identity": {
+						"id": "sell_on_blinkit_log_out"
+					},
+					"title": {
+						"text": "Sell on Blinkit",
+						"color": {
+							"theme_bucket": {
+								"token": "color.text.black"
+							}
+						},
+						"font": {
+							"size": "300",
+							"weight": "semibold"
+						}
+					},
+					"padding": "12,12,12,12",
+					"click_action": {
+						"type": "blinkit_deeplink",
+						"blinkit_deeplink": {
+							"url": "grofers://web-external?web_url=https://blinkit.to/bext/3bcnui01"
+						}
+					},
+					"bg_color": {
+						"theme_bucket": {
+							"token": "color.surface.primary"
+						}
+					},
+					"left_icon": {
+						"code": "e9d3",
+						"color": {
+							"theme_bucket": {
+								"token": "color.text.black"
+							}
+						},
+						"font_size": "500"
+					},
+					"right_icon": {
+						"code": "e92f",
+						"color": {
+							"theme_bucket": {
+								"token": "color.base.grey.400"
+							}
+						},
+						"font_size": "400"
+					},
+					"bottom_radius": 12
+				},
+				"tracking": {
+					"impression_map": {
+						"event_name": "Header Shown",
+						"source": "sell on blinkit"
+					},
+					"click_map": {
+						"event_name": "Header List Widget Option Clicked",
+						"click_source": "sell on blinkit"
+					}
+				},
+				"widget_type": "header_type_4",
+				"layout_config": {
+					"spacing": "12,0,12,12"
+				}
+			},
+			{
+				"widget_type": "separator_v2_data",
+				"data": {
+					"identity": {
+						"id": "account_privacy_separator"
+					},
+					"type": "line",
+					"height": 0.5,
+					"offset": 8,
+					"color": {
+						"theme_bucket": {
+							"token": "color.background.secondary"
+						}
+					},
+					"bg_color": {
+						"theme_bucket": {
+							"token": "color.surface.primary"
+						}
+					}
+				},
+				"layout_config": {
+					"spacing": "12,0,12,0"
+				}
+			},
+			{
+				"data": {
+					"identity": {
+						"id": "account_privacy"
+					},
+					"title": {
+						"text": "Account privacy",
+						"color": {
+							"theme_bucket": {
+								"token": "color.text.black"
+							}
+						},
+						"font": {
+							"size": "300",
+							"weight": "semibold"
+						}
+					},
+					"padding": "12,12,12,12",
+					"click_action": {
+						"type": "blinkit_deeplink",
+						"blinkit_deeplink": {
+							"url": "grofers://delete_account_privacy_page?requires_login=true"
+						}
+					},
+					"bg_color": {
+						"theme_bucket": {
+							"token": "color.surface.primary"
+						}
+					},
+					"left_media": {
+						"media_type": "image",
+						"image": {
+							"url": "https://cdn.grofers.com/layout-engine/v2/2025-07/profile_v2_account_privacy/profile_v2_account_privacy_light.png",
+							"width": 18,
+							"height": 18
+						}
+					},
+					"right_icon": {
+						"code": "e92f",
+						"color": {
+							"theme_bucket": {
+								"token": "color.base.grey.400"
+							}
+						},
+						"font_size": "400"
+					}
+				},
+				"tracking": {
+					"click_map": {
+						"event_name": "Header List Widget Option Clicked",
+						"click_source": "account privacy"
+					}
+				},
+				"widget_type": "header_type_4",
+				"layout_config": {
+					"spacing": "12,0,12,0"
+				}
+			},
+			{
+				"widget_type": "separator_v2_data",
+				"data": {
+					"identity": {
+						"id": "notification_preferences_separator"
+					},
+					"type": "line",
+					"height": 0.5,
+					"offset": 8,
+					"color": {
+						"theme_bucket": {
+							"token": "color.background.secondary"
+						}
+					},
+					"bg_color": {
+						"theme_bucket": {
+							"token": "color.surface.primary"
+						}
+					}
+				},
+				"layout_config": {
+					"spacing": "12,0,12,0"
+				}
+			},
+			{
+				"data": {
+					"identity": {
+						"id": "notification_preferences"
+					},
+					"title": {
+						"text": "Notification preferences",
+						"color": {
+							"theme_bucket": {
+								"token": "color.text.black"
+							}
+						},
+						"font": {
+							"size": "300",
+							"weight": "semibold"
+						}
+					},
+					"padding": "12,12,12,12",
+					"click_action": {
+						"type": "blinkit_deeplink",
+						"blinkit_deeplink": {
+							"url": "grofers://widgetized/notification_preferences?require_login=true"
+						}
+					},
+					"bg_color": {
+						"theme_bucket": {
+							"token": "color.surface.primary"
+						}
+					},
+					"left_media": {
+						"media_type": "image",
+						"image": {
+							"url": "https://cdn.grofers.com/layout-engine/v2/2025-07/profile_bell/profile_bell_light.png",
+							"width": 18,
+							"height": 18
+						}
+					},
+					"right_icon": {
+						"code": "e92f",
+						"color": {
+							"theme_bucket": {
+								"token": "color.base.grey.400"
+							}
+						},
+						"font_size": "400"
+					}
+				},
+				"tracking": {
+					"click_map": {
+						"event_name": "Header List Widget Option Clicked",
+						"click_source": "notification preferences"
+					}
+				},
+				"widget_type": "header_type_4",
+				"layout_config": {
+					"spacing": "12,0,12,0"
+				}
+			},
+			{
+				"widget_type": "separator_v2_data",
+				"data": {
+					"identity": {
+						"id": "log_out_separator"
+					},
+					"type": "line",
+					"height": 0.5,
+					"offset": 8,
+					"color": {
+						"theme_bucket": {
+							"token": "color.background.secondary"
+						}
+					},
+					"bg_color": {
+						"theme_bucket": {
+							"token": "color.surface.primary"
+						}
+					}
+				},
+				"layout_config": {
+					"spacing": "12,0,12,0"
+				}
+			},
+			{
+				"data": {
+					"identity": {
+						"id": "log_out"
+					},
+					"title": {
+						"text": "Log out",
+						"color": {
+							"theme_bucket": {
+								"token": "color.text.black"
+							}
+						},
+						"font": {
+							"size": "300",
+							"weight": "semibold"
+						}
+					},
+					"padding": "12,12,12,12",
+					"click_action": {
+						"type": "open_dialog",
+						"open_dialog": {
+							"modalType": "",
+							"position": "",
+							"extras": {
+								"cancelable": true,
+								"show_close_icon": false,
+								"should_show_full_width": true,
+								"show_button_separator": true,
+								"buttons_container_layout_config": {
+									"margin_start": 0,
+									"margin_end": 0,
+									"margin_top": 16
+								},
+								"heading": {
+									"text": "Log out from?",
+									"font": {
+										"weight": "bold",
+										"size": "600"
+									},
+									"color": {
+										"theme_bucket": {
+											"token": "color.text.black"
+										}
+									}
+								},
+								"buttons": {
+									"orientation": "vertical",
+									"objects": [
+										{
+											"text": "Current Device",
+											"click_action": {
+												"type": "logout",
+												"logout": {
+													"type": "current_device"
+												}
+											},
+											"layout_config": {
+												"margin_top": 12,
+												"padding_bottom": 12
+											},
+											"color": {
+												"theme_bucket": {
+													"token": "color.button.ghost.label"
+												}
+											}
+										},
+										{
+											"text": "All Devices",
+											"click_action": {
+												"type": "logout",
+												"logout": {
+													"type": "all_devices"
+												}
+											},
+											"layout_config": {
+												"margin_top": 12,
+												"padding_bottom": 12
+											},
+											"color": {
+												"theme_bucket": {
+													"token": "color.button.ghost.label"
+												}
+											}
+										},
+										{
+											"text": "Cancel",
+											"layout_config": {
+												"margin_top": 12,
+												"padding_bottom": 12
+											},
+											"color": {
+												"theme_bucket": {
+													"token": "color.button.ghost.label"
+												}
+											}
+										}
+									]
+								}
+							}
+						}
+					},
+					"bg_color": {
+						"theme_bucket": {
+							"token": "color.surface.primary"
+						}
+					},
+					"left_media": {
+						"media_type": "image",
+						"image": {
+							"url": "https://cdn.grofers.com/layout-engine/v2/2025-07/profile_logout/profile_logout_light.png",
+							"width": 18,
+							"height": 18
+						}
+					},
+					"right_icon": {
+						"code": "e92f",
+						"color": {
+							"theme_bucket": {
+								"token": "color.base.grey.400"
+							}
+						},
+						"font_size": "400"
+					},
+					"bottom_radius": 12
+				},
+				"tracking": {
+					"click_map": {
+						"event_name": "Header List Widget Option Clicked",
+						"click_source": "log out"
+					}
+				},
+				"widget_type": "header_type_4",
+				"layout_config": {
+					"spacing": "12,0,12,12"
+				}
+			},
+			{
+				"data": {
+					"identity": {
+						"id": "development_options"
+					},
+					"title": {
+						"text": "Developer options",
+						"color": {
+							"theme_bucket": {
+								"token": "color.text.black"
+							}
+						},
+						"font": {
+							"size": "300",
+							"weight": "semibold"
+						}
+					},
+					"padding": "12,12,12,12",
+					"click_action": {
+						"type": "show_developer_options"
+					},
+					"bg_color": {
+						"theme_bucket": {
+							"token": "color.surface.primary"
+						}
+					},
+					"left_media": {
+						"media_type": "image",
+						"image": {
+							"url": "https://cdn.grofers.com/layout-engine/v2/2025-06/address.png",
+							"width": 18,
+							"height": 18
+						}
+					},
+					"right_icon": {
+						"code": "e92f",
+						"color": {
+							"theme_bucket": {
+								"token": "color.base.grey.400"
+							}
+						},
+						"font_size": "400"
+					},
+					"bottom_radius": 12,
+					"top_radius": 12
+				},
+				"tracking": {
+					"click_map": {
+						"event_name": "Header List Widget Option Clicked",
+						"click_source": "developer options"
+					}
+				},
+				"widget_type": "header_type_4",
+				"layout_config": {
+					"spacing": "12,0,12,12"
+				}
+			},
+			{
+				"widget_type": "vertical_text_image_snippet",
+				"data": {
+					"top_image": {
+						"url": "https://cdn.grofers.com/layout-engine/v2/2025-07/profile_v2_blinkit_footer/profile_v2_blinkit_footer_light.png",
+						"height": 20
+					},
+					"title": {
+						"color": {
+							"theme_bucket": {
+								"token": "color.base.grey.400"
+							}
+						},
+						"alignment": "center",
+						"font": {
+							"weight": "semibold",
+							"size": "300"
+						}
+					},
+					"subtitle": {
+						"color": {
+							"theme_bucket": {
+								"token": "color.base.grey.400"
+							}
+						},
+						"alignment": "center",
+						"font": {
+							"weight": "regular",
+							"size": "50"
+						}
+					},
+					"identity": {
+						"id": "profile_footer"
+					}
+				},
+				"layout_config": {
+					"spacing": "0,40,0,100"
+				}
+			}
+		],
+		"page_level_components": {
+			"toolbar_config": {
+				"left_icon_v2": {
+					"code": "e804",
+					"font_size": "500",
+					"click_action": {
+						"type": "dismiss_page",
+						"dismiss_page": {}
+					},
+					"bg_color": {
+						"transparency": 0.3,
+						"theme_bucket": {
+							"token": "color.background.primary"
+						}
+					},
+					"accessibility_text": {
+						"text": "Navigate back"
+					}
+				},
+				"title": {
+					"text": "Profile",
+					"color": {
+						"theme_bucket": {
+							"token": "color.text.black"
+						}
+					},
+					"font": {
+						"weight": "semibold",
+						"size": "300"
+					}
+				},
+				"elevation": 10,
+				"bg_color": {
+					"theme_bucket": {
+						"token": "color.background.primary"
+					}
+				},
+				"style": {
+					"theme": "DEFAULT",
+					"type": "COLLAPSED"
+				}
+			}
+		},
+		"layout_config": {
+			"bg_color": {
+				"theme_bucket": {
+					"token": "color.background.secondary"
+				}
+			}
+		},
+		"tracking": {
+			"event_name": "Profile Visit"
+		},
+		"snippet_list_updater_data": {
+			"remove_appearance_collapsed_section": {
+				"type": "remove_snippets",
+				"payload": {
+					"snippet_ids_to_remove": [
+						"appearance_collapsed"
+					]
+				}
+			},
+			"remove_appearance_expanded_section": {
+				"type": "remove_snippets",
+				"payload": {
+					"snippet_ids_to_remove": [
+						"appearance_expanded_header",
+						"light_separator",
+						"light",
+						"dark_separator",
+						"dark",
+						"default_separator",
+						"default"
+					]
+				}
+			},
+			"add_appearance_collapsed_section": {
+				"type": "add_snippets",
+				"payload": {
+					"snippet_id_to_attach": "default",
+					"snippets_to_add": [
+						{
+							"data": {
+								"identity": {
+									"id": "appearance_collapsed"
+								},
+								"title": {
+									"text": "Appearance",
+									"color": {
+										"theme_bucket": {
+											"token": "color.text.black"
+										}
+									},
+									"font": {
+										"size": "300",
+										"weight": "semibold"
+									}
+								},
+								"padding": "12,12,12,12",
+								"click_action": {
+									"type": "update_snippet_list",
+									"update_snippet_list": {
+										"snippet_list_updater_ids": [
+											"add_appearance_expanded_section",
+											"remove_appearance_collapsed_section"
+										]
+									}
+								},
+								"bg_color": {
+									"theme_bucket": {
+										"token": "color.surface.primary"
+									}
+								},
+								"left_media": {
+									"media_type": "image",
+									"image": {
+										"url": "https://cdn.grofers.com/layout-engine/v2/2025-06/address.png",
+										"width": 18,
+										"height": 18
+									}
+								},
+								"right_icon": {
+									"code": "e92d",
+									"color": {
+										"theme_bucket": {
+											"token": "color.base.grey.400"
+										}
+									},
+									"font_size": "400"
+								},
+								"top_radius": 12,
+								"bottom_radius": 12,
+								"right_tag": {
+									"size": "Tiny",
+									"corner_radius": 4,
+									"bg_color": {
+										"theme_bucket": {
+											"token": "color.productcard.highlights.background"
+										}
+									},
+									"border_color": {
+										"theme_bucket": {
+											"token": "color.productcard.highlights.border"
+										}
+									},
+									"alignment": "1",
+									"title": {
+										"text": "LIGHT",
+										"color": {
+											"theme_bucket": {
+												"token": "color.productcard.highlights.text"
+											}
+										},
+										"font": {
+											"size": "100",
+											"weight": "semibold"
+										}
+									}
+								}
+							},
+							"widget_type": "appearance_header",
+							"tracking": {
+								"impression_map": {
+									"event_name": "APP_APPEARANCE_WIDGET_SHOWN"
+								},
+								"click_map": {
+									"event_name": "APP_APPEARANCE_WIDGET_CLICKED"
+								},
+								"common_attributes": {}
+							},
+							"layout_config": {
+								"spacing": "12,12,12,12"
+							}
+						}
+					]
+				}
+			},
+			"add_appearance_expanded_section": {
+				"type": "add_snippets",
+				"payload": {
+					"snippet_id_to_attach": "appearance_collapsed",
+					"snippets_to_add": [
+						{
+							"data": {
+								"identity": {
+									"id": "appearance_expanded_header"
+								},
+								"title": {
+									"text": "Appearance",
+									"color": {
+										"theme_bucket": {
+											"token": "color.text.black"
+										}
+									},
+									"font": {
+										"size": "300",
+										"weight": "semibold"
+									}
+								},
+								"padding": "12,12,12,12",
+								"click_action": {
+									"type": "update_snippet_list",
+									"update_snippet_list": {
+										"snippet_list_updater_ids": [
+											"add_appearance_collapsed_section",
+											"remove_appearance_expanded_section"
+										]
+									}
+								},
+								"bg_color": {
+									"theme_bucket": {
+										"token": "color.surface.primary"
+									}
+								},
+								"right_icon": {
+									"code": "e930",
+									"color": {
+										"theme_bucket": {
+											"token": "color.base.grey.400"
+										}
+									},
+									"font_size": "400"
+								},
+								"top_radius": 12
+							},
+							"tracking": {
+								"impression_map": {
+									"event_name": "APP_APPEARANCE_WIDGET_SHOWN"
+								},
+								"click_map": {
+									"event_name": "APP_APPEARANCE_WIDGET_CLICKED"
+								},
+								"common_attributes": {}
+							},
+							"widget_type": "appearance_header",
+							"layout_config": {
+								"spacing": "12,12,12,0"
+							}
+						},
+						{
+							"widget_type": "separator_v2_data",
+							"data": {
+								"identity": {
+									"id": "light_separator"
+								},
+								"type": "line",
+								"height": 0.5,
+								"offset": 8,
+								"color": {
+									"theme_bucket": {
+										"token": "color.background.secondary"
+									}
+								},
+								"bg_color": {
+									"theme_bucket": {
+										"token": "color.surface.primary"
+									}
+								}
+							},
+							"layout_config": {
+								"spacing": "12,0,12,0"
+							}
+						},
+						{
+							"data": {
+								"identity": {
+									"id": "light"
+								},
+								"title": {
+									"text": "Light Theme",
+									"color": {
+										"theme_bucket": {
+											"token": "color.text.black"
+										}
+									},
+									"font": {
+										"size": "300",
+										"weight": "semibold"
+									}
+								},
+								"padding": "12,4,4,4",
+								"click_action": {
+									"type": "update_app_appearance",
+									"update_app_appearance": {
+										"type": "light"
+									}
+								},
+								"secondary_click_actions": [
+									{
+										"type": "update_snippet_list",
+										"update_snippet_list": {
+											"snippet_list_updater_ids": [
+												"add_appearance_collapsed_section",
+												"remove_appearance_expanded_section"
+											]
+										}
+									}
+								],
+								"bg_color": {
+									"theme_bucket": {
+										"token": "color.surface.primary"
+									}
+								},
+								"left_media": {
+									"media_type": "image",
+									"image": {
+										"url": "https://cdn.grofers.com/layout-engine/v2/2025-07/Day_v2/Day_v2_light.png",
+										"width": 18,
+										"height": 18
+									}
+								}
+							},
+							"widget_type": "appearance_selection",
+							"tracking": {
+								"impression_map": {
+									"event_name": "COMPOUND_BUTTON_SHOWN"
+								},
+								"click_map": {
+									"event_name": "COMPOUND_BUTTON_CLICKED"
+								},
+								"common_attributes": {
+									"name": "LIGHT"
+								}
+							},
+							"layout_config": {
+								"spacing": "12,0,12,0"
+							}
+						},
+						{
+							"widget_type": "separator_v2_data",
+							"data": {
+								"identity": {
+									"id": "dark_separator"
+								},
+								"type": "line",
+								"height": 0.5,
+								"offset": 8,
+								"color": {
+									"theme_bucket": {
+										"token": "color.background.secondary"
+									}
+								},
+								"bg_color": {
+									"theme_bucket": {
+										"token": "color.surface.primary"
+									}
+								}
+							},
+							"layout_config": {
+								"spacing": "12,0,12,0"
+							}
+						},
+						{
+							"data": {
+								"identity": {
+									"id": "dark"
+								},
+								"title": {
+									"text": "Dark Theme",
+									"color": {
+										"theme_bucket": {
+											"token": "color.text.black"
+										}
+									},
+									"font": {
+										"size": "300",
+										"weight": "semibold"
+									}
+								},
+								"padding": "12,4,4,4",
+								"click_action": {
+									"type": "update_app_appearance",
+									"update_app_appearance": {
+										"type": "dark"
+									}
+								},
+								"bg_color": {
+									"theme_bucket": {
+										"token": "color.surface.primary"
+									}
+								},
+								"left_media": {
+									"media_type": "image",
+									"image": {
+										"url": "https://cdn.grofers.com/layout-engine/v2/2025-07/Light_v2/Light_v2_light.png",
+										"width": 18,
+										"height": 18
+									}
+								},
+								"secondary_click_actions": [
+									{
+										"type": "update_snippet_list",
+										"update_snippet_list": {
+											"snippet_list_updater_ids": [
+												"add_appearance_collapsed_section",
+												"remove_appearance_expanded_section"
+											]
+										}
+									}
+								]
+							},
+							"widget_type": "appearance_selection",
+							"tracking": {
+								"impression_map": {
+									"event_name": "COMPOUND_BUTTON_SHOWN"
+								},
+								"click_map": {
+									"event_name": "COMPOUND_BUTTON_CLICKED"
+								},
+								"common_attributes": {
+									"name": "DARK"
+								}
+							},
+							"layout_config": {
+								"spacing": "12,0,12,0"
+							}
+						},
+						{
+							"widget_type": "separator_v2_data",
+							"data": {
+								"identity": {
+									"id": "default_separator"
+								},
+								"type": "line",
+								"height": 0.5,
+								"offset": 8,
+								"color": {
+									"theme_bucket": {
+										"token": "color.background.secondary"
+									}
+								},
+								"bg_color": {
+									"theme_bucket": {
+										"token": "color.surface.primary"
+									}
+								}
+							},
+							"layout_config": {
+								"spacing": "12,0,12,0"
+							}
+						},
+						{
+							"data": {
+								"identity": {
+									"id": "default"
+								},
+								"title": {
+									"text": "System Theme",
+									"color": {
+										"theme_bucket": {
+											"token": "color.text.black"
+										}
+									},
+									"font": {
+										"size": "300",
+										"weight": "semibold"
+									}
+								},
+								"padding": "12,4,4,4",
+								"click_action": {
+									"type": "update_app_appearance",
+									"update_app_appearance": {
+										"type": "follow_system"
+									}
+								},
+								"bg_color": {
+									"theme_bucket": {
+										"token": "color.surface.primary"
+									}
+								},
+								"left_media": {
+									"media_type": "image",
+									"image": {
+										"url": "https://cdn.grofers.com/layout-engine/v2/2025-07/both_v2/both_v2_light.png",
+										"width": 18,
+										"height": 18
+									}
+								},
+								"bottom_radius": 12,
+								"secondary_click_actions": [
+									{
+										"type": "update_snippet_list",
+										"update_snippet_list": {
+											"snippet_list_updater_ids": [
+												"add_appearance_collapsed_section",
+												"remove_appearance_expanded_section"
+											]
+										}
+									}
+								]
+							},
+							"widget_type": "appearance_selection",
+							"tracking": {
+								"impression_map": {
+									"event_name": "COMPOUND_BUTTON_SHOWN"
+								},
+								"click_map": {
+									"event_name": "COMPOUND_BUTTON_CLICKED"
+								},
+								"common_attributes": {
+									"name": "FOLLOW_SYSTEM"
+								}
+							},
+							"layout_config": {
+								"spacing": "12,0,12,12"
+							}
+						}
+					]
+				}
+			}
+		},
+		"subscribers": {
+			"LOGOUT": {},
+			"USER_PROPERTIES_UPDATED": {},
+			"RESTRICTED_MODE": {}
+		}
+	}
+}

@@ -1,0 +1,53 @@
+<?xml version="1.0" encoding="utf-8"?>
+<merge
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+    <LinearLayout
+        android:orientation="vertical"
+        android:layout_width="0.0dip"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="@dimen/sushi_spacing_base"
+        android:layout_marginRight="@dimen/sushi_spacing_base"
+        android:layout_weight="1.0"
+        android:layout_marginHorizontal="@dimen/sushi_spacing_base">
+        <com.zomato.ui.atomiclib.atom.staticviews.StaticTextView
+            android:id="@id/title"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/sushi_spacing_base"
+            android:layout_marginBottom="@dimen/sushi_spacing_macro" />
+        <LinearLayout
+            android:id="@id/horizontal_subtitles_ll"
+            android:visibility="gone"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="@dimen/sushi_spacing_macro"
+            android:layout_marginEnd="@dimen/sushi_spacing_base">
+            <com.zomato.ui.lib.snippets.ZImageWithTextView
+                android:id="@id/subtitle1"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content" />
+            <com.zomato.ui.lib.snippets.ZImageWithTextView
+                android:id="@id/subtitle2"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="@dimen/sushi_spacing_micro"
+                android:layout_marginRight="@dimen/sushi_spacing_micro"
+                android:layout_marginHorizontal="@dimen/sushi_spacing_micro" />
+        </LinearLayout>
+    </LinearLayout>
+    <com.zomato.ui.atomiclib.animation.ZLottieAnimationView
+        android:layout_gravity="center|right"
+        android:id="@id/top_right_lottie"
+        android:visibility="gone"
+        android:layout_width="@dimen/size_36"
+        android:layout_height="@dimen/size_36"
+        android:layout_margin="@dimen/sushi_spacing_base"
+        app:lottie_autoPlay="false"
+        app:lottie_fileName="bookmark_lottie_with_border.json"
+        app:lottie_loop="false"
+        app:lottie_repeatCount="0"
+        app:lottie_repeatMode="restart" />
+</merge>

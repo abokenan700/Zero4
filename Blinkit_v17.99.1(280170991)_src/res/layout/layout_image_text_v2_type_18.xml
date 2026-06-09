@@ -1,0 +1,99 @@
+<?xml version="1.0" encoding="utf-8"?>
+<merge
+    android:layout_width="fill_parent"
+    android:layout_height="wrap_content"
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+    <androidx.constraintlayout.widget.Barrier
+        android:id="@id/top_barrier"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        app:barrierDirection="top"
+        app:constraint_referenced_ids="text_container,imageContainer" />
+    <androidx.constraintlayout.widget.Barrier
+        android:id="@id/bottom_barrier"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        app:barrierDirection="bottom"
+        app:constraint_referenced_ids="text_container,imageContainer" />
+    <com.zomato.ui.lib.atom.ZTicketBackground
+        android:id="@id/ticketView"
+        android:layout_width="fill_parent"
+        android:layout_height="@dimen/sushi_spacing_femto"
+        android:layout_marginStart="@dimen/size_26"
+        app:layout_constraintBottom_toBottomOf="@id/bottom_barrier"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="@id/top_barrier"
+        app:ticketBackgroundColor="@color/sushi_white"
+        app:ticketBorderColor="@color/sushi_grey_300"
+        app:ticketBorderType="dash"
+        app:ticketBorderWidth="@dimen/sushi_spacing_femto"
+        app:ticketCornerRadius="@dimen/dimen_10"
+        app:ticketCornerType="rounded"
+        app:ticketOrientation="vertical"
+        app:ticketScallopPositionPercent="25.0"
+        app:ticketScallopRadius="@dimen/sushi_spacing_between_large"
+        app:ticketShowBorder="true" />
+    <LinearLayout
+        android:orientation="vertical"
+        android:id="@id/text_container"
+        android:paddingTop="@dimen/sushi_spacing_extra"
+        android:paddingBottom="@dimen/sushi_spacing_extra"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:paddingStart="@dimen/size_30"
+        android:paddingEnd="@dimen/sushi_spacing_base"
+        android:layout_marginStart="@dimen/size_26"
+        android:paddingVertical="@dimen/sushi_spacing_extra"
+        app:layout_constraintBottom_toBottomOf="@id/bottom_barrier"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toTopOf="@id/top_barrier">
+        <com.zomato.ui.atomiclib.atom.ZTextView
+            android:ellipsize="end"
+            android:id="@id/title"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:maxLines="1"
+            android:paddingStart="@dimen/sushi_spacing_macro"
+            app:textViewType="SEMIBOLD_400" />
+        <com.zomato.ui.atomiclib.atom.ZTextView
+            android:ellipsize="end"
+            android:id="@id/subtitle1"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/size_3"
+            android:maxLines="1"
+            android:paddingStart="@dimen/sushi_spacing_macro"
+            app:textViewType="SEMIBOLD_300" />
+        <com.zomato.ui.atomiclib.atom.ZTextView
+            android:ellipsize="end"
+            android:id="@id/subtitle2"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/size_3"
+            android:maxLines="1"
+            android:paddingStart="@dimen/sushi_spacing_macro"
+            app:textViewType="REGULAR_300" />
+    </LinearLayout>
+    <FrameLayout
+        android:layout_gravity="center"
+        android:id="@id/imageContainer"
+        android:padding="@dimen/sushi_spacing_nano"
+        android:layout_width="@dimen/size_60"
+        android:layout_height="wrap_content"
+        android:elevation="@dimen/dimen_point_five"
+        app:layout_constraintBottom_toBottomOf="@id/bottom_barrier"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="@id/top_barrier">
+        <com.zomato.ui.atomiclib.atom.ZRoundedImageView
+            android:layout_gravity="center"
+            android:id="@id/image"
+            android:visibility="visible"
+            android:layout_width="@dimen/size_54"
+            android:layout_height="wrap_content"
+            android:layout_margin="@dimen/sushi_spacing_nano"
+            android:scaleType="fitCenter"
+            app:cornerRadius="@dimen/sushi_corner_radius" />
+    </FrameLayout>
+</merge>

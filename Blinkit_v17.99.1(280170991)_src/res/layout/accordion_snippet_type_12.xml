@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="utf-8"?>
+<merge
+    android:orientation="vertical"
+    android:layout_width="fill_parent"
+    android:layout_height="wrap_content"
+    xmlns:android="http://schemas.android.com/apk/res/android">
+    <com.zomato.ui.lib.organisms.snippets.tabsnippet.type7.ZTabSnippetType7
+        android:id="@id/tabs"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content" />
+    <androidx.core.widget.NestedScrollView
+        android:id="@id/scrollview"
+        android:paddingTop="@dimen/sushi_spacing_pico"
+        android:paddingBottom="@dimen/sushi_spacing_pico"
+        android:scrollbars="vertical"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/dimen_12"
+        android:paddingVertical="@dimen/sushi_spacing_pico">
+        <LinearLayout
+            android:orientation="vertical"
+            android:id="@id/items_container"
+            android:padding="@dimen/size_8"
+            android:layout_width="fill_parent"
+            android:layout_height="fill_parent" />
+    </androidx.core.widget.NestedScrollView>
+</merge>

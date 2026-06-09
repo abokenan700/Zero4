@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ripple
+    android:color="@color/sushi_color_dark_grey"
+    xmlns:android="http://schemas.android.com/apk/res/android">
+    <item
+        android:id="@android:id/mask"
+        android:drawable="@color/color_light_grey_with_alpha" />
+    <item
+        android:drawable="@color/sushi_color_grey" />
+</ripple>

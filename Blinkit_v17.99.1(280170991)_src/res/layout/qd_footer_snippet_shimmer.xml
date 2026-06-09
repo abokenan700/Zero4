@@ -1,0 +1,81 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout
+    android:id="@id/container"
+    android:background="@color/transparent_white"
+    android:paddingTop="@dimen/sushi_spacing_micro"
+    android:paddingBottom="@dimen/sushi_spacing_micro"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:paddingVertical="@dimen/sushi_spacing_micro"
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+    <com.zomato.ui.atomiclib.molecules.ShimmerChildView
+        android:id="@id/bg1"
+        android:layout_width="@dimen/size_26"
+        android:layout_height="@dimen/size_26"
+        app:bgColor="@color/color_primary"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:shimmer_corner_radius="@dimen/sushi_spacing_loose" />
+    <com.zomato.ui.atomiclib.molecules.ShimmerChildView
+        android:id="@id/image1_shimmer"
+        android:layout_width="@dimen/size_26"
+        android:layout_height="@dimen/size_26"
+        app:bgColor="@color/sushi_grey_200"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:shimmer_corner_radius="@dimen/sushi_spacing_loose" />
+    <com.zomato.ui.atomiclib.molecules.ShimmerChildView
+        android:id="@id/bg2"
+        android:layout_width="@dimen/size_26"
+        android:layout_height="@dimen/size_26"
+        android:translationX="@dimen/sushi_spacing_base_negative"
+        app:bgColor="@color/color_primary"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintStart_toEndOf="@id/image1_shimmer"
+        app:layout_constraintTop_toTopOf="parent"
+        app:shimmer_corner_radius="@dimen/sushi_spacing_loose" />
+    <com.zomato.ui.atomiclib.molecules.ShimmerChildView
+        android:id="@id/image2_shimmer"
+        android:layout_width="@dimen/size_26"
+        android:layout_height="@dimen/size_26"
+        android:translationX="@dimen/sushi_spacing_base_negative"
+        app:bgColor="@color/sushi_grey_200"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintStart_toEndOf="@id/image1_shimmer"
+        app:layout_constraintTop_toTopOf="parent"
+        app:shimmer_corner_radius="@dimen/sushi_spacing_loose" />
+    <com.zomato.ui.atomiclib.molecules.ShimmerChildView
+        android:id="@id/bg3"
+        android:layout_width="@dimen/size_26"
+        android:layout_height="@dimen/size_26"
+        android:translationX="@dimen/sushi_spacing_loose_negative"
+        app:bgColor="@color/color_primary"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintStart_toEndOf="@id/image2_shimmer"
+        app:layout_constraintTop_toTopOf="parent"
+        app:shimmer_corner_radius="@dimen/sushi_spacing_loose" />
+    <com.zomato.ui.atomiclib.molecules.ShimmerChildView
+        android:id="@id/image3_shimmer"
+        android:layout_width="@dimen/size_26"
+        android:layout_height="@dimen/size_26"
+        android:translationX="@dimen/sushi_spacing_loose_negative"
+        app:bgColor="@color/sushi_grey_200"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintStart_toEndOf="@id/image2_shimmer"
+        app:layout_constraintTop_toTopOf="parent"
+        app:shimmer_corner_radius="@dimen/sushi_spacing_loose" />
+    <com.zomato.ui.atomiclib.molecules.ShimmerChildView
+        android:id="@id/title_shimmer"
+        android:layout_width="@dimen/qd_shimmer_126"
+        android:layout_height="@dimen/qd_shimmer_14"
+        android:translationX="@dimen/sushi_spacing_base_negative"
+        app:bgColor="@color/sushi_grey_200"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toEndOf="@id/image3_shimmer"
+        app:layout_constraintTop_toTopOf="parent"
+        app:shimmer_corner_radius="@dimen/sushi_spacing_micro" />
+</androidx.constraintlayout.widget.ConstraintLayout>

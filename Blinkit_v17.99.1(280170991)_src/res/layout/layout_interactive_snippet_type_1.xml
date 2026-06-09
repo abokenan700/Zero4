@@ -1,0 +1,119 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    android:orientation="horizontal"
+    android:layout_width="fill_parent"
+    android:layout_height="wrap_content"
+    android:weightSum="4.6"
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+    <LinearLayout
+        android:orientation="vertical"
+        android:layout_width="0.0dip"
+        android:layout_height="wrap_content"
+        android:layout_weight="3.0">
+        <com.zomato.ui.atomiclib.atom.ZTextView
+            android:textColor="@color/sushi_white"
+            android:id="@id/titleGame2"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/sushi_spacing_base"
+            android:layout_marginStart="@dimen/dimen_16" />
+        <com.zomato.ui.atomiclib.atom.ZTextView
+            android:textColor="@color/sushi_white"
+            android:id="@id/subtitleGame2"
+            android:visibility="gone"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="-1.0dip"
+            android:layout_marginStart="@dimen/dimen_16" />
+        <FrameLayout
+            android:paddingRight="@dimen/size_45"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/sushi_spacing_macro"
+            android:layout_marginStart="@dimen/dimen_16">
+            <ImageView
+                android:id="@id/choiceImage"
+                android:visibility="invisible"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:adjustViewBounds="true"
+                android:maxHeight="@dimen/size_35" />
+            <LinearLayout
+                android:layout_gravity="center_vertical"
+                android:orientation="horizontal"
+                android:id="@id/radioButtonLayoutGame2"
+                android:visibility="invisible"
+                android:layout_width="fill_parent"
+                android:layout_height="fill_parent">
+                <LinearLayout
+                    android:layout_gravity="center"
+                    android:layout_width="0.0dip"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1.0"
+                    android:layout_marginStart="@dimen/sushi_spacing_micro">
+                    <com.zomato.ui.atomiclib.atom.ZRadioButton
+                        android:layout_gravity="start"
+                        android:id="@id/oddRadioButton"
+                        android:paddingRight="@dimen/sushi_spacing_negative_10"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:scaleX="0.7"
+                        android:scaleY="0.7" />
+                    <com.zomato.ui.atomiclib.atom.ZTextView
+                        android:textColor="@color/sushi_white"
+                        android:gravity="start"
+                        android:layout_gravity="center"
+                        android:id="@id/oddRadioButtonText"
+                        android:layout_width="fill_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginStart="@dimen/sushi_spacing_nano_negative" />
+                </LinearLayout>
+                <LinearLayout
+                    android:gravity="center"
+                    android:layout_gravity="center"
+                    android:layout_width="0.0dip"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1.0">
+                    <com.zomato.ui.atomiclib.atom.ZRadioButton
+                        android:layout_gravity="start"
+                        android:id="@id/evenRadioButton"
+                        android:paddingRight="-10.0dip"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:scaleX="0.7"
+                        android:scaleY="0.7"
+                        android:layout_marginStart="@dimen/dimen_10" />
+                    <com.zomato.ui.atomiclib.atom.ZTextView
+                        android:textColor="@color/sushi_white"
+                        android:gravity="start"
+                        android:layout_gravity="center"
+                        android:id="@id/evenRadioButtonText"
+                        android:layout_width="fill_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginStart="@dimen/sushi_spacing_nano_negative" />
+                </LinearLayout>
+            </LinearLayout>
+        </FrameLayout>
+        <com.zomato.ui.atomiclib.atom.ZButton
+            android:id="@id/submitGame2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/sushi_spacing_base"
+            android:layout_marginBottom="@dimen/dimen_16"
+            android:layout_marginStart="@dimen/dimen_16" />
+    </LinearLayout>
+    <FrameLayout
+        android:id="@id/lottieFrameGame2"
+        android:layout_width="0.0dip"
+        android:layout_height="fill_parent"
+        android:layout_weight="1.6">
+        <com.zomato.ui.atomiclib.animation.ZLottieAnimationView
+            android:layout_gravity="end|bottom|center"
+            android:id="@id/diceLottieView"
+            android:visibility="invisible"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:scaleType="centerCrop" />
+    </FrameLayout>
+</LinearLayout>

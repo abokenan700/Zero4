@@ -1,0 +1,52 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    android:gravity="center_horizontal"
+    android:orientation="vertical"
+    android:id="@id/shimmer_card"
+    android:background="@drawable/phone_login_linear_white_transparent_gradient"
+    android:padding="@dimen/sushi_spacing_extra"
+    android:clickable="false"
+    android:layout_width="fill_parent"
+    android:layout_height="wrap_content"
+    android:elevation="@dimen/point_one_dp"
+    app:layout_constraintBottom_toBottomOf="parent"
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+    <com.blinkit.commons.ui.ui.customviews.RoundedView
+        android:id="@id/shimmer_child_title"
+        android:background="@color/color_white_alpha_fifty"
+        android:layout_width="@dimen/size_200"
+        android:layout_height="@dimen/dimen_18"
+        app:corner_radius="@dimen/corner_radius_base" />
+    <com.blinkit.commons.ui.ui.customviews.RoundedView
+        android:id="@id/shimmer_child_subtitle"
+        android:background="@color/color_white_alpha_fifty"
+        android:layout_width="@dimen/size_160"
+        android:layout_height="@dimen/dimen_16"
+        android:layout_marginTop="@dimen/sushi_spacing_micro"
+        app:corner_radius="@dimen/corner_radius_base" />
+    <com.blinkit.commons.ui.ui.customviews.RoundedView
+        android:id="@id/shimmer_child_button"
+        android:background="@color/color_white_alpha_fifty"
+        android:layout_width="fill_parent"
+        android:layout_height="@dimen/size_52"
+        android:layout_marginTop="@dimen/dimen_14"
+        app:corner_radius="@dimen/sushi_corner_radius_large" />
+    <com.blinkit.commons.ui.ui.customviews.RoundedView
+        android:id="@id/shimmer_child_info"
+        android:background="@color/color_white_alpha_fifty"
+        android:layout_width="fill_parent"
+        android:layout_height="@dimen/dimen_16"
+        android:layout_marginLeft="@dimen/sushi_spacing_extra"
+        android:layout_marginTop="@dimen/sushi_spacing_mini"
+        android:layout_marginRight="@dimen/sushi_spacing_extra"
+        android:layout_marginHorizontal="@dimen/sushi_spacing_extra"
+        app:corner_radius="@dimen/corner_radius_base" />
+    <com.blinkit.commons.ui.ui.customviews.RoundedView
+        android:id="@id/shimmer_child_login_with_phone"
+        android:background="@color/color_white_alpha_fifty"
+        android:layout_width="250.0dip"
+        android:layout_height="@dimen/dimen_20"
+        android:layout_marginTop="@dimen/sushi_spacing_loose"
+        app:corner_radius="@dimen/corner_radius_base" />
+</LinearLayout>

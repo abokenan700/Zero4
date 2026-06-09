@@ -1,0 +1,95 @@
+<?xml version="1.0" encoding="utf-8"?>
+<merge
+    android:layout_width="fill_parent"
+    android:layout_height="wrap_content"
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+    <com.zomato.ui.atomiclib.atom.staticviews.StaticTextView
+        android:ellipsize="end"
+        android:id="@id/title"
+        android:visibility="gone"
+        android:layout_width="0.0dip"
+        android:layout_height="wrap_content"
+        android:maxLines="1"
+        android:layout_marginEnd="@dimen/sushi_spacing_macro"
+        app:layout_constraintEnd_toStartOf="@id/right_title"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+    <com.zomato.ui.atomiclib.atom.staticviews.StaticTextView
+        android:ellipsize="end"
+        android:id="@id/subtitle"
+        android:visibility="gone"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/sushi_spacing_micro"
+        android:maxLines="2"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/title" />
+    <com.zomato.ui.atomiclib.atom.ZButton
+        android:id="@id/button"
+        android:visibility="gone"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/sushi_spacing_micro"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/title" />
+    <com.zomato.ui.atomiclib.atom.staticviews.StaticTextView
+        android:id="@id/right_title"
+        android:visibility="gone"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginEnd="@dimen/sushi_spacing_nano"
+        app:layout_constraintEnd_toStartOf="@id/radio_button_frame"
+        app:layout_constraintTop_toTopOf="parent" />
+    <FrameLayout
+        android:id="@id/radio_button_frame"
+        android:layout_width="wrap_content"
+        android:layout_height="0.0dip"
+        android:layout_marginLeft="@dimen/size_7_negative"
+        android:layout_marginTop="-8.0dip"
+        android:layout_marginRight="@dimen/size_7_negative"
+        android:layout_marginBottom="-8.0dip"
+        android:layout_marginHorizontal="@dimen/size_7_negative"
+        android:layout_marginVertical="-8.0dip"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
+        <com.zomato.ui.atomiclib.atom.ZRadioButton
+            android:id="@id/radio_button"
+            android:padding="@dimen/dimen_0"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:scaleX="0.7"
+            android:scaleY="0.7" />
+    </FrameLayout>
+    <FrameLayout
+        android:id="@id/bottom_checkbox_frame"
+        android:visibility="gone"
+        android:layout_width="wrap_content"
+        android:layout_height="0.0dip"
+        android:layout_marginBottom="@dimen/size_9_negative"
+        android:layout_marginStart="@dimen/negative_ten"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/subtitle">
+        <com.zomato.ui.atomiclib.atom.ZCheckBox
+            android:gravity="top"
+            android:layout_gravity="top"
+            android:id="@id/checkbox"
+            android:padding="@dimen/dimen_0"
+            android:visibility="gone"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:scaleX="0.7"
+            android:scaleY="0.7" />
+    </FrameLayout>
+    <com.zomato.ui.atomiclib.atom.staticviews.StaticTextView
+        android:ellipsize="end"
+        android:id="@id/checkbox_title"
+        android:visibility="gone"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:maxLines="2"
+        android:layout_marginStart="@dimen/size_4_negative"
+        app:layout_constraintBottom_toBottomOf="@id/bottom_checkbox_frame"
+        app:layout_constraintStart_toEndOf="@id/bottom_checkbox_frame"
+        app:layout_constraintTop_toTopOf="@id/bottom_checkbox_frame" />
+</merge>

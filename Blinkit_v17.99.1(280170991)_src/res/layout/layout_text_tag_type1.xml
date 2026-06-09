@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="utf-8"?>
+<merge
+    android:orientation="vertical"
+    android:id="@id/trending_search_container"
+    android:visibility="gone"
+    android:layout_width="fill_parent"
+    android:layout_height="wrap_content"
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+    <com.zomato.ui.atomiclib.molecules.FlowLayout
+        android:gravity="center_vertical"
+        android:layout_gravity="center_vertical"
+        android:orientation="horizontal"
+        android:id="@id/trending_search_flexboxlayout"
+        android:paddingBottom="@dimen/sushi_spacing_base"
+        android:scrollbars="none"
+        android:clipToPadding="true"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:paddingStart="@dimen/sushi_spacing_base"
+        android:layout_marginEnd="@dimen/sushi_spacing_base"
+        app:fl_horizontalSpacing="@dimen/sushi_spacing_extra"
+        app:fl_verticalSpacing="@dimen/sushi_spacing_macro" />
+</merge>

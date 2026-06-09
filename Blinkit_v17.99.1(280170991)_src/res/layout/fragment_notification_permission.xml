@@ -1,0 +1,73 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    android:gravity="center"
+    android:layout_gravity="center"
+    android:orientation="vertical"
+    android:paddingTop="@dimen/dimen_12"
+    android:paddingBottom="@dimen/dimen_12"
+    android:layout_width="fill_parent"
+    android:layout_height="wrap_content"
+    android:layout_margin="@dimen/size_8"
+    android:paddingStart="@dimen/dimen_16"
+    android:paddingEnd="@dimen/dimen_16"
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+    <ImageView
+        android:gravity="center"
+        android:id="@id/permission_dialog_header_icon"
+        android:padding="@dimen/dimen_20"
+        android:visibility="gone"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/size_4"
+        android:layout_marginBottom="@dimen/size_8"
+        android:src="@drawable/notif_permission_2"
+        android:scaleType="fitXY"
+        android:adjustViewBounds="true" />
+    <com.zomato.ui.atomiclib.animation.ZLottieAnimationView
+        android:layout_gravity="center"
+        android:id="@id/lottie_animation_view"
+        android:visibility="gone"
+        android:layout_width="280.0dip"
+        android:layout_height="280.0dip"
+        android:adjustViewBounds="true"
+        app:layout_constrainedHeight="true"
+        app:lottie_autoPlay="true"
+        app:lottie_fileName="notification_permission_3.lottie"
+        app:lottie_loop="false" />
+    <com.zomato.ui.atomiclib.atom.ZTextView
+        android:textColor="?attr_7f040475"
+        android:gravity="center"
+        android:id="@id/messageTitle"
+        android:visibility="gone"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/notifications_dialog_title"
+        app:textViewType="BOLD_500" />
+    <com.zomato.ui.atomiclib.atom.ZTextView
+        android:gravity="center"
+        android:id="@id/message_box"
+        android:paddingLeft="@dimen/dimen_10"
+        android:paddingRight="@dimen/dimen_10"
+        android:paddingBottom="@dimen/dimen_16"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/size_12"
+        android:text="@string/notification_dialog_heading"
+        android:paddingHorizontal="@dimen/dimen_10"
+        app:textViewType="MEDIUM_500" />
+    <com.zomato.ui.atomiclib.atom.ZButton
+        android:textColor="@color/sushi_white"
+        android:id="@id/positive_button"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:text="@string/enable_notifications"
+        app:buttonColor="?themeColor500" />
+    <com.zomato.ui.atomiclib.atom.ZButton
+        android:textColor="?themeColor500"
+        android:id="@id/negative_button"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:text="@string/notification_dialog_not_now"
+        app:buttonColor="?attr_7f04017d" />
+</LinearLayout>

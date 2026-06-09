@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout
+    android:id="@id/root"
+    android:clipChildren="false"
+    android:clipToPadding="false"
+    android:layout_width="fill_parent"
+    android:layout_height="wrap_content"
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+    <com.blinkit.commons.ui.ui.customviews.bmediaview.BMediaView
+        android:id="@id/bg_lottie_image_view"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content" />
+    <com.blinkit.commons.ui.ui.customviews.recyclerview.BContainer
+        android:id="@id/horizontal_recycler_view"
+        android:clipChildren="false"
+        android:clipToPadding="false"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:nestedScrollingEnabled="false"
+        app:layout_behavior="@string/appbar_scrolling_view_behavior" />
+    <View
+        android:layout_gravity="start|center"
+        android:id="@id/left_gradient"
+        android:layout_width="@dimen/sushi_spacing_extra"
+        android:layout_height="fill_parent" />
+    <View
+        android:layout_gravity="end|center"
+        android:id="@id/right_gradient"
+        android:layout_width="@dimen/sushi_spacing_extra"
+        android:layout_height="fill_parent" />
+    <com.blinkit.commons.ui.ui.customviews.viewstub.LoadingOverlayViewStub
+        android:id="@id/loading_view"
+        android:background="@android:color/transparent"
+        android:visibility="gone"
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:layout_marginStart="@dimen/sushi_spacing_base"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+</FrameLayout>

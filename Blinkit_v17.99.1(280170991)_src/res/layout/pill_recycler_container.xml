@@ -1,0 +1,52 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout
+    android:orientation="horizontal"
+    android:id="@id/sticky_recycler_container"
+    android:clipChildren="false"
+    android:clipToPadding="false"
+    android:layout_width="fill_parent"
+    android:layout_height="wrap_content"
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+    <ViewStub
+        android:id="@id/multiRailFilterContainer"
+        android:visibility="gone"
+        android:layout="@layout/multi_rail_filter_container"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content" />
+    <ViewStub
+        android:id="@id/pillRvContainer"
+        android:visibility="gone"
+        android:layout="@layout/single_rail_filter_container"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content" />
+    <com.zomato.android.zcommons.filters.pills.view.PillView
+        android:layout_gravity="start|center"
+        android:id="@id/leadPillView"
+        android:visibility="gone"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/size_3"
+        android:layout_marginBottom="@dimen/size_3" />
+    <com.zomato.android.zcommons.filters.pills.view.PillView
+        android:layout_gravity="end|center"
+        android:id="@id/trailPillView"
+        android:visibility="gone"
+        android:clipToPadding="false"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/size_3"
+        android:layout_marginBottom="@dimen/size_3" />
+    <View
+        android:layout_gravity="start|center"
+        android:id="@id/left_gradient"
+        android:visibility="visible"
+        android:layout_width="@dimen/sushi_spacing_base"
+        android:layout_height="@dimen/sushi_spacing_alone" />
+    <View
+        android:layout_gravity="end|center"
+        android:id="@id/right_gradient"
+        android:visibility="visible"
+        android:layout_width="@dimen/sushi_spacing_base"
+        android:layout_height="@dimen/sushi_spacing_alone" />
+</FrameLayout>

@@ -1,0 +1,100 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+    <FrameLayout
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content">
+        <LinearLayout
+            android:orientation="vertical"
+            android:id="@id/renamedparent_layout"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content">
+            <com.zomato.ui.atomiclib.atom.ZTextView
+                android:textColor="?attr_7f040475"
+                android:id="@id/page_description"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:paddingStart="@dimen/sushi_spacing_base"
+                android:paddingEnd="@dimen/sushi_spacing_base" />
+            <com.zomato.ui.atomiclib.molecules.ZTextInputField
+                android:id="@id/renamedemail_edit_text"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="36.0dip"
+                android:layout_marginStart="@dimen/sushi_spacing_base"
+                android:layout_marginEnd="@dimen/sushi_spacing_base" />
+            <androidx.constraintlayout.widget.ConstraintLayout
+                android:layout_gravity="center_vertical"
+                android:id="@id/mobile_details_container"
+                android:paddingTop="@dimen/sushi_spacing_macro"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content">
+                <androidx.constraintlayout.widget.ConstraintLayout
+                    android:id="@id/countryContainer"
+                    android:paddingBottom="@dimen/sushi_spacing_mini"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:paddingStart="@dimen/sushi_spacing_extra"
+                    android:paddingEnd="@dimen/sushi_spacing_macro"
+                    app:layout_constraintBottom_toBottomOf="parent"
+                    app:layout_constraintEnd_toStartOf="@id/renamedmobile_edit_text"
+                    app:layout_constraintStart_toStartOf="parent">
+                    <com.zomato.ui.atomiclib.atom.ZRoundedImageView
+                        android:id="@id/countryFlag"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginBottom="@dimen/size_5"
+                        android:src="@color/sushi_blue_400"
+                        android:contentDescription="@string/payments_country_image"
+                        app:layout_constraintBottom_toTopOf="@id/countrySeparator"
+                        app:layout_constraintStart_toStartOf="parent"
+                        app:layout_constraintTop_toTopOf="parent" />
+                    <com.zomato.ui.atomiclib.atom.ZTextView
+                        android:id="@id/countryCode"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:paddingStart="@dimen/sushi_spacing_micro"
+                        android:paddingEnd="@dimen/sushi_spacing_micro"
+                        app:layout_constraintBottom_toBottomOf="@id/countryFlag"
+                        app:layout_constraintStart_toEndOf="@id/countryFlag" />
+                    <com.zomato.ui.atomiclib.atom.ZSeparator
+                        android:id="@id/countrySeparator"
+                        android:layout_width="0.0dip"
+                        android:layout_height="wrap_content"
+                        app:layout_constraintBottom_toBottomOf="parent"
+                        app:layout_constraintEnd_toEndOf="parent"
+                        app:layout_constraintStart_toStartOf="parent"
+                        app:layout_constraintTop_toBottomOf="@id/countryFlag"
+                        app:zseparator_color="@color/sushi_grey_200" />
+                </androidx.constraintlayout.widget.ConstraintLayout>
+                <com.zomato.ui.atomiclib.molecules.ZTextInputField
+                    android:id="@id/renamedmobile_edit_text"
+                    android:layout_width="0.0dip"
+                    android:layout_height="wrap_content"
+                    android:hint="@string/renamedpayment_wallet_mobile_number_hint"
+                    android:inputType="number"
+                    android:paddingEnd="@dimen/sushi_spacing_base"
+                    app:layout_constraintBottom_toBottomOf="@id/countryContainer"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintStart_toEndOf="@id/countryContainer"
+                    app:layout_constraintTop_toTopOf="parent" />
+            </androidx.constraintlayout.widget.ConstraintLayout>
+            <com.zomato.ui.atomiclib.atom.ZButton
+                android:id="@id/renamedcontinue_button"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="40.0dip"
+                android:layout_marginBottom="@dimen/sushi_spacing_base"
+                android:text="@string/renamedpayment_wallet_continue"
+                android:layout_marginStart="@dimen/sushi_spacing_base"
+                android:layout_marginEnd="@dimen/sushi_spacing_base" />
+        </LinearLayout>
+        <RelativeLayout
+            android:id="@id/renamedfragment_container"
+            android:layout_width="fill_parent"
+            android:layout_height="fill_parent" />
+    </FrameLayout>
+</ScrollView>

@@ -1,0 +1,170 @@
+<?xml version="1.0" encoding="utf-8"?>
+<merge
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+    <com.zomato.ui.atomiclib.atom.staticviews.StaticTextView
+        android:id="@id/top_text_view"
+        android:paddingLeft="@dimen/sushi_spacing_macro"
+        android:paddingRight="@dimen/sushi_spacing_macro"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="@dimen/sushi_spacing_nano"
+        android:paddingHorizontal="@dimen/sushi_spacing_macro" />
+    <LinearLayout
+        android:orientation="horizontal"
+        android:clipChildren="false"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content">
+        <com.zomato.ui.atomiclib.atom.ZRoundedImageView
+            android:layout_gravity="bottom"
+            android:id="@id/left_owner_image"
+            android:layout_width="@dimen/size_28"
+            android:layout_height="@dimen/size_28" />
+        <com.zomato.ui.atomiclib.atom.ZIconFontTextView
+            android:gravity="center"
+            android:layout_gravity="center"
+            android:id="@id/chat_left_icon"
+            android:layout_width="@dimen/size_32"
+            android:layout_height="@dimen/size_32" />
+        <FrameLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content">
+            <com.zomato.chatsdk.chatuikit.snippets.ChatBubbleBackground
+                android:orientation="vertical"
+                android:id="@id/base_chat_snippet"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content">
+                <com.zomato.ui.atomiclib.atom.ZTextView
+                    android:id="@id/owner_name"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginBottom="@dimen/sushi_spacing_mini"
+                    android:layout_marginEnd="@dimen/sushi_spacing_nano" />
+                <androidx.constraintlayout.widget.ConstraintLayout
+                    android:id="@id/reply_bubble_holder"
+                    android:layout_width="fill_parent"
+                    android:layout_height="@dimen/size50"
+                    android:layout_marginBottom="@dimen/sushi_spacing_micro"
+                    app:layout_constrainedWidth="true"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toBottomOf="@id/owner_name">
+                    <View
+                        android:id="@id/reply_bubble_left_decorator"
+                        android:layout_width="@dimen/size_4"
+                        android:layout_height="fill_parent"
+                        app:layout_constraintBottom_toBottomOf="parent"
+                        app:layout_constraintStart_toStartOf="parent"
+                        app:layout_constraintTop_toTopOf="parent" />
+                    <com.zomato.ui.atomiclib.atom.ZTextView
+                        android:ellipsize="end"
+                        android:id="@id/reply_bubble_message_sender"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="@dimen/sushi_spacing_macro"
+                        android:maxLines="1"
+                        android:layout_marginStart="@dimen/sushi_spacing_macro"
+                        android:layout_marginEnd="@dimen/sushi_spacing_mini"
+                        app:layout_constrainedWidth="true"
+                        app:layout_constraintBottom_toTopOf="@id/reply_bubble_message"
+                        app:layout_constraintEnd_toStartOf="@id/reply_bubble_message_thumb"
+                        app:layout_constraintHorizontal_bias="0.0"
+                        app:layout_constraintStart_toEndOf="@id/reply_bubble_left_decorator"
+                        app:layout_constraintTop_toTopOf="parent" />
+                    <com.zomato.ui.atomiclib.atom.ZIconFontTextView
+                        android:id="@id/reply_bubble_message_prefix_icon"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginBottom="@dimen/sushi_spacing_macro"
+                        android:layout_marginStart="@dimen/sushi_spacing_macro"
+                        android:layout_marginEnd="@dimen/sushi_spacing_micro"
+                        app:layout_constraintBottom_toBottomOf="parent"
+                        app:layout_constraintStart_toEndOf="@id/reply_bubble_left_decorator"
+                        app:layout_constraintTop_toBottomOf="@id/reply_bubble_message_sender" />
+                    <com.zomato.ui.atomiclib.atom.ZTextView
+                        android:ellipsize="end"
+                        android:id="@id/reply_bubble_message"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginBottom="@dimen/sushi_spacing_macro"
+                        android:maxLines="1"
+                        android:layout_marginStart="@dimen/sushi_spacing_macro"
+                        android:layout_marginEnd="@dimen/sushi_spacing_mini"
+                        app:layout_constrainedWidth="true"
+                        app:layout_constraintBottom_toBottomOf="parent"
+                        app:layout_constraintEnd_toStartOf="@id/reply_bubble_message_thumb"
+                        app:layout_constraintHorizontal_bias="0.0"
+                        app:layout_constraintStart_toEndOf="@id/reply_bubble_message_prefix_icon"
+                        app:layout_constraintTop_toBottomOf="@id/reply_bubble_message_sender" />
+                    <com.zomato.ui.atomiclib.atom.ZRoundedImageView
+                        android:id="@id/reply_bubble_message_thumb"
+                        android:layout_width="@dimen/size50"
+                        android:layout_height="@dimen/size50"
+                        android:scaleType="centerCrop"
+                        app:layout_constraintBottom_toBottomOf="parent"
+                        app:layout_constraintEnd_toEndOf="parent"
+                        app:layout_constraintTop_toTopOf="parent" />
+                </androidx.constraintlayout.widget.ConstraintLayout>
+                <include
+                    android:id="@id/chat_header_layout"
+                    android:visibility="gone"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginBottom="@dimen/sushi_spacing_base"
+                    layout="@layout/email_message_chat_header" />
+                <LinearLayout
+                    android:orientation="vertical"
+                    android:id="@id/layout_placeholder"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content" />
+                <LinearLayout
+                    android:gravity="center_vertical"
+                    android:layout_gravity="end"
+                    android:orientation="horizontal"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content">
+                    <com.zomato.ui.atomiclib.atom.ZTextView
+                        android:id="@id/read_status_timestamp"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginEnd="@dimen/sushi_spacing_nano" />
+                    <com.zomato.ui.atomiclib.atom.ZIconFontTextView
+                        android:id="@id/read_status_icon"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content" />
+                </LinearLayout>
+            </com.zomato.chatsdk.chatuikit.snippets.ChatBubbleBackground>
+            <com.zomato.ui.atomiclib.atom.ZIconFontTextView
+                android:id="@id/reaction_icon"
+                android:padding="@dimen/sushi_spacing_micro"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="@dimen/sushi_spacing_macro"
+                android:layout_marginTop="@dimen/sushi_spacing_negative_10"
+                android:layout_marginRight="@dimen/sushi_spacing_macro" />
+        </FrameLayout>
+        <com.zomato.ui.atomiclib.atom.ZRoundedImageView
+            android:layout_gravity="bottom"
+            android:id="@id/right_owner_image"
+            android:layout_width="@dimen/size_28"
+            android:layout_height="@dimen/size_28" />
+    </LinearLayout>
+    <FrameLayout
+        android:id="@id/bubble_bottom_container"
+        android:paddingLeft="@dimen/sushi_spacing_extra"
+        android:paddingTop="@dimen/sushi_spacing_base"
+        android:paddingRight="@dimen/sushi_spacing_extra"
+        android:paddingBottom="@dimen/sushi_spacing_base"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:paddingHorizontal="@dimen/sushi_spacing_extra"
+        android:paddingVertical="@dimen/sushi_spacing_base">
+        <com.zomato.ui.atomiclib.atom.ZButton
+            android:layout_gravity="center_horizontal"
+            android:id="@id/bubble_bottom_container_button"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" />
+    </FrameLayout>
+</merge>

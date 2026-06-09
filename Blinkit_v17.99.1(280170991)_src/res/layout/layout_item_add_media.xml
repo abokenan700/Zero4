@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="utf-8"?>
+<merge
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+    <com.zomato.ui.atomiclib.atom.ZIconFontTextView
+        android:textSize="@dimen/text_size_27sp"
+        android:textColor="?attr_7f040300"
+        android:gravity="center"
+        android:id="@id/item_add_new_media"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/icon_font_plus_circle" />
+    <com.zomato.ui.atomiclib.atom.ZTextView
+        android:textColor="?attr_7f0402f7"
+        android:layout_gravity="center"
+        android:id="@id/action_title"
+        android:visibility="visible"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/sushi_spacing_base"
+        android:text="@string/add_new_media"
+        app:textViewType="REGULAR_300" />
+</merge>

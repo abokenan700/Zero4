@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+    <LinearLayout
+        android:gravity="center"
+        android:orientation="vertical"
+        android:id="@id/container"
+        android:layout_width="wrap_content"
+        android:layout_height="@dimen/sushi_action_item_size"
+        android:paddingStart="@dimen/sushi_spacing_nano"
+        android:paddingEnd="@dimen/sushi_spacing_nano"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
+        <com.zomato.ui.atomiclib.atom.ZTextView
+            android:id="@id/title"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            app:drawablePadding="@dimen/sushi_spacing_micro" />
+        <com.zomato.ui.atomiclib.atom.ZTextView
+            android:id="@id/subtitle"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            app:drawablePadding="@dimen/sushi_spacing_micro" />
+    </LinearLayout>
+    <View
+        android:id="@id/tab_top_triangle_view"
+        android:layout_width="@dimen/sushi_spacing_pico"
+        android:layout_height="@dimen/size_3_and_half"
+        app:layout_constraintBottom_toTopOf="@id/container"
+        app:layout_constraintEnd_toStartOf="@id/tab_top_image" />
+    <com.zomato.ui.atomiclib.atom.ZRoundedImageView
+        android:gravity="center"
+        android:id="@id/tab_top_image"
+        android:layout_width="@dimen/sushi_spacing_alone"
+        android:layout_height="@dimen/sushi_spacing_page_side"
+        android:layout_marginEnd="@dimen/sushi_spacing_mini"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="@id/tab_top_triangle_view" />
+</androidx.constraintlayout.widget.ConstraintLayout>

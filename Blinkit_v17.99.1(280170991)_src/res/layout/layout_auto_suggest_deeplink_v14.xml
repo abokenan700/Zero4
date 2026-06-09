@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout
+    android:paddingTop="@dimen/sushi_spacing_loose"
+    android:layout_width="fill_parent"
+    android:layout_height="wrap_content"
+    android:paddingStart="@dimen/sushi_spacing_page_side"
+    android:paddingEnd="@dimen/sushi_spacing_page_side"
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+    <com.zomato.ui.atomiclib.atom.ZButton
+        android:id="@id/deeplink_button"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        app:buttonColor="?android:colorAccent"
+        app:buttonDimension="large"
+        app:buttonType="outline"
+        app:drawableEnd="@string/icon_font_left_triangle_small" />
+</FrameLayout>

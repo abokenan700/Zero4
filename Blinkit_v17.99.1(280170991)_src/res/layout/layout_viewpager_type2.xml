@@ -1,0 +1,91 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    android:orientation="vertical"
+    android:id="@id/root"
+    android:paddingBottom="@dimen/sushi_spacing_page_side"
+    android:layout_width="fill_parent"
+    android:layout_height="wrap_content"
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+    <Space
+        android:id="@id/top_space"
+        android:layout_width="fill_parent"
+        android:layout_height="@dimen/sushi_spacing_page_side" />
+    <com.zomato.ui.atomiclib.atom.ZTextView
+        android:textColor="?android:textColorSecondary"
+        android:gravity="center"
+        android:id="@id/title"
+        android:paddingTop="@dimen/sushi_spacing_between"
+        android:paddingBottom="@dimen/sushi_spacing_between"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:paddingStart="@dimen/sushi_spacing_page_side"
+        android:paddingEnd="@dimen/sushi_spacing_page_side"
+        app:textViewType="MEDIUM_700" />
+    <com.zomato.ui.atomiclib.atom.ZTextView
+        android:textColor="?android:textColorSecondary"
+        android:gravity="center"
+        android:id="@id/subtitle"
+        android:paddingBottom="@dimen/sushi_spacing_macro"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:paddingStart="@dimen/sushi_spacing_macro"
+        android:paddingEnd="@dimen/sushi_spacing_page_side"
+        app:textViewType="REGULAR_400" />
+    <Space
+        android:id="@id/title_space"
+        android:visibility="gone"
+        android:layout_width="fill_parent"
+        android:layout_height="@dimen/sushi_spacing_between" />
+    <FrameLayout
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="@dimen/sushi_spacing_macro"
+        android:layout_marginStart="@dimen/sushi_spacing_page_side"
+        android:layout_marginEnd="@dimen/sushi_spacing_page_side">
+        <View
+            android:layout_gravity="bottom"
+            android:id="@id/bottom_strip"
+            android:layout_width="fill_parent"
+            android:layout_height="@dimen/spacing_between_3dp" />
+        <com.zomato.ui.lib.organisms.navigation.ZTabsLayout
+            android:id="@id/tab_layout"
+            android:background="@color/color_transparent"
+            android:clipChildren="true"
+            android:layout_width="fill_parent"
+            android:layout_height="@dimen/size_36"
+            app:tabBackground="@color/color_transparent"
+            app:tabGravity="fill"
+            app:tabIndicatorHeight="@dimen/spacing_between_3dp"
+            app:tabMode="fixed"
+            app:tabSelectedTextColor="?android:textColorPrimary"
+            app:tabTextColor="?android:textColorPrimary" />
+    </FrameLayout>
+    <com.zomato.ui.lib.organisms.navigation.WrapContentViewPager
+        android:id="@id/view_pager"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="@dimen/sushi_spacing_macro" />
+    <com.zomato.ui.atomiclib.atom.ZButton
+        android:id="@id/action_button"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:lineSpacingMultiplier="0.75"
+        android:layout_marginStart="@dimen/sushi_spacing_page_side"
+        android:layout_marginEnd="@dimen/sushi_spacing_page_side"
+        app:buttonColor="?android:colorAccent"
+        app:buttonDimension="large"
+        app:buttonType="solid"
+        app:cornerRadius="@dimen/corner_radius_base" />
+    <com.zomato.ui.atomiclib.atom.ZTextView
+        android:textColor="?android:textColorSecondary"
+        android:gravity="center"
+        android:id="@id/notice"
+        android:paddingTop="@dimen/sushi_spacing_between"
+        android:paddingBottom="@dimen/sushi_spacing_between"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:paddingStart="@dimen/sushi_spacing_page_side"
+        android:paddingEnd="@dimen/sushi_spacing_page_side"
+        app:textViewType="MEDIUM_400" />
+</LinearLayout>

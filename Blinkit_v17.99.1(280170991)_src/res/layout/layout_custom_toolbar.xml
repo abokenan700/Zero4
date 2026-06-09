@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout
+    android:id="@id/toolbar"
+    android:layout_width="fill_parent"
+    android:layout_height="wrap_content"
+    android:minHeight="?actionBarSize"
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+    <com.zomato.ui.atomiclib.atom.ZTextView
+        android:textColor="?attr_7f040466"
+        android:gravity="center_vertical"
+        android:layout_gravity="center"
+        android:id="@id/toolbar_title"
+        android:layout_width="0.0dip"
+        android:layout_height="0.0dip"
+        android:text="@string/qd_your_orders_title"
+        android:layout_marginStart="@dimen/dimen_12"
+        android:layout_marginEnd="@dimen/dimen_16"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:textViewType="SEMIBOLD_700" />
+</androidx.constraintlayout.widget.ConstraintLayout>

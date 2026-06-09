@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    android:orientation="vertical"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+    <com.zomato.ui.atomiclib.molecules.ShimmerChildView
+        android:layout_width="@dimen/size_54"
+        android:layout_height="@dimen/size_54"
+        android:layout_marginBottom="@dimen/sushi_spacing_base"
+        app:bgColor="?attr_7f0403d3"
+        app:shimmer_corner_radius="@dimen/size_27" />
+    <com.zomato.ui.atomiclib.molecules.ShimmerChildView
+        android:layout_width="@dimen/size_54"
+        android:layout_height="@dimen/sushi_spacing_base"
+        app:bgColor="?attr_7f0403d3"
+        app:shimmer_corner_radius="@dimen/sushi_spacing_macro" />
+</LinearLayout>

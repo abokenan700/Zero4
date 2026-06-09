@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.zomato.ui.atomiclib.atom.ZTextView
+    android:textColor="@color/sushi_grey_600"
+    android:gravity="start"
+    android:layout_gravity="center"
+    android:id="@id/header"
+    android:paddingLeft="@dimen/sushi_spacing_base"
+    android:paddingTop="@dimen/sushi_spacing_base"
+    android:paddingRight="@dimen/sushi_spacing_base"
+    android:paddingBottom="@dimen/sushi_spacing_base"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:paddingHorizontal="@dimen/sushi_spacing_base"
+    android:paddingVertical="@dimen/sushi_spacing_base"
+    app:textViewType="REGULAR_300"
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto" />

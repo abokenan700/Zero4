@@ -1,0 +1,64 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout
+    android:id="@id/root_layout"
+    android:layout_width="fill_parent"
+    android:layout_height="wrap_content"
+    android:layout_marginLeft="@dimen/sushi_spacing_base"
+    android:layout_marginRight="@dimen/sushi_spacing_base"
+    android:layout_marginHorizontal="@dimen/sushi_spacing_base"
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+    <View
+        android:background="@drawable/bg_text_input_field_view"
+        android:layout_width="0.0dip"
+        android:layout_height="0.0dip"
+        android:layout_marginTop="4.0dip"
+        app:layout_constraintBottom_toBottomOf="@id/edit_text_other_address"
+        app:layout_constraintEnd_toEndOf="@id/edit_text_other_address"
+        app:layout_constraintStart_toStartOf="@id/edit_text_other_address"
+        app:layout_constraintTop_toTopOf="@id/edit_text_other_address" />
+    <com.zomato.ui.atomiclib.molecules.ZTextInputField
+        android:textColorHint="?attr_7f04047c"
+        android:id="@id/edit_text_other_address"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:inputType="textNoSuggestions"
+        android:translationZ="10.0dip"
+        android:elevation="@dimen/sushi_spacing_pico"
+        app:boxCornerRadiusBottomEnd="@dimen/sushi_spacing_macro"
+        app:boxCornerRadiusBottomStart="@dimen/sushi_spacing_macro"
+        app:boxCornerRadiusTopEnd="@dimen/sushi_spacing_macro"
+        app:boxCornerRadiusTopStart="@dimen/sushi_spacing_macro"
+        app:boxStrokeColor="?attr_7f040294"
+        app:editTextType="MEDIUM_400"
+        app:errorEnabled="true"
+        app:hintEnabled="true"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:maxLines="1"
+        style="@style/BlinkitTextInputLayout" />
+    <com.zomato.ui.atomiclib.atom.ZTextView
+        android:ellipsize="end"
+        android:id="@id/hint_view"
+        android:layout_width="0.0dip"
+        android:layout_height="wrap_content"
+        android:maxLines="1"
+        android:layout_marginStart="@dimen/sushi_spacing_extra"
+        android:translationZ="0.100000024dip"
+        app:layout_constraintBottom_toBottomOf="@id/edit_text_other_address"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="@id/edit_text_other_address"
+        app:textViewType="MEDIUM_300" />
+    <View
+        android:id="@id/disabled_view"
+        android:visibility="gone"
+        android:layout_width="0.0dip"
+        android:layout_height="0.0dip"
+        android:translationZ="@dimen/sushi_spacing_extra"
+        app:layout_constraintBottom_toBottomOf="@id/edit_text_other_address"
+        app:layout_constraintEnd_toEndOf="@id/edit_text_other_address"
+        app:layout_constraintStart_toStartOf="@id/edit_text_other_address"
+        app:layout_constraintTop_toTopOf="@id/edit_text_other_address" />
+</androidx.constraintlayout.widget.ConstraintLayout>

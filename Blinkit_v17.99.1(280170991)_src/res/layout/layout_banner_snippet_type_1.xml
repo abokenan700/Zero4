@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="utf-8"?>
+<merge
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    xmlns:android="http://schemas.android.com/apk/res/android">
+    <com.zomato.ui.atomiclib.atom.ZRoundedImageView
+        android:id="@id/bg_image"
+        android:visibility="gone"
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:scaleType="fitXY" />
+    <com.zomato.ui.atomiclib.animation.ZLottieAnimationView
+        android:id="@id/bg_lottie"
+        android:visibility="gone"
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:scaleType="fitXY" />
+    <com.zomato.ui.atomiclib.atom.ZRoundedImageView
+        android:layout_gravity="bottom"
+        android:id="@id/data_bg_image"
+        android:visibility="gone"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content" />
+    <com.zomato.ui.atomiclib.animation.ZLottieAnimationView
+        android:layout_gravity="bottom"
+        android:id="@id/data_bg_lottie"
+        android:visibility="gone"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content" />
+    <com.zomato.ui.atomiclib.atom.ZTag
+        android:ellipsize="end"
+        android:layout_gravity="start|bottom|center"
+        android:id="@id/bottom_left_tag"
+        android:paddingLeft="@dimen/size_8"
+        android:paddingTop="@dimen/size_6"
+        android:paddingRight="@dimen/size_8"
+        android:paddingBottom="@dimen/size_6"
+        android:visibility="gone"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="@dimen/size_24"
+        android:maxLines="1"
+        android:layout_marginStart="@dimen/size_12"
+        android:paddingHorizontal="@dimen/size_8"
+        android:paddingVertical="@dimen/size_6" />
+</merge>

@@ -1,0 +1,155 @@
+<?xml version="1.0" encoding="utf-8"?>
+<merge
+    android:background="@color/color_transparent"
+    android:clipChildren="true"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+    <com.blinkit.commons.ui.ui.customviews.bmediaview.BMediaView
+        android:id="@id/bg_media"
+        android:layout_width="fill_parent"
+        android:layout_height="0.0dip"
+        app:layout_constraintBottom_toTopOf="@id/bg_media_bottom_reference"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+    <com.blinkit.commons.ui.ui.customviews.bmediaview.BMediaView
+        android:id="@id/top_media"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/sushi_spacing_macro"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+    <com.blinkit.commons.ui.ui.customviews.viewstub.blinkittext.BlinkitTextViewStub
+        android:gravity="center_vertical"
+        android:id="@id/header_tag"
+        android:paddingLeft="@dimen/qd_margin_20"
+        android:paddingTop="@dimen/sushi_spacing_micro"
+        android:paddingRight="@dimen/qd_margin_20"
+        android:paddingBottom="@dimen/sushi_spacing_micro"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/sushi_spacing_nano"
+        android:layout_marginBottom="@dimen/sushi_spacing_nano"
+        android:maxLines="1"
+        android:layout_marginVertical="@dimen/sushi_spacing_nano"
+        android:paddingHorizontal="@dimen/qd_margin_20"
+        android:paddingVertical="@dimen/sushi_spacing_micro"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/top_media"
+        app:layout_goneMarginBottom="@dimen/sushi_spacing_loose" />
+    <com.blinkit.commons.ui.ui.snippets.bTextTimerSnippetType1.BTextTimerSnippetType1VH
+        android:id="@id/timer"
+        android:paddingLeft="@dimen/dimen_15"
+        android:paddingRight="@dimen/dimen_15"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/sushi_spacing_micro"
+        android:paddingHorizontal="@dimen/dimen_15"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/header_tag" />
+    <com.blinkit.commons.ui.ui.customviews.bmediaview.BMediaView
+        android:id="@id/center_media"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="@dimen/qd_margin_22"
+        android:layout_marginTop="@dimen/sushi_spacing_macro"
+        android:layout_marginRight="@dimen/qd_margin_22"
+        android:layout_marginBottom="@dimen/sushi_spacing_loose"
+        android:layout_marginHorizontal="@dimen/qd_margin_22"
+        app:layout_constraintBottom_toTopOf="@id/highlights_view"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/timer" />
+    <com.blinkit.commons.ui.ui.customviews.FoodAspirationalPriceView
+        android:id="@id/aspirational_price_view"
+        android:paddingTop="@dimen/qd_padding_6"
+        android:paddingBottom="@dimen/sushi_spacing_micro"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:translationY="@dimen/sushi_spacing_macro"
+        android:paddingStart="@dimen/sushi_spacing_page_side"
+        android:paddingEnd="@dimen/qd_padding_10"
+        app:layout_constraintBottom_toBottomOf="@id/center_media"
+        app:layout_constraintEnd_toEndOf="@id/center_media"
+        app:layout_constraintStart_toStartOf="@id/center_media" />
+    <com.blinkit.commons.ui.ui.customviews.viewstub.image.ZRoundedImageViewStub
+        android:id="@id/out_of_service_tag"
+        android:layout_width="@dimen/size70"
+        android:layout_height="@dimen/size70"
+        android:layout_marginEnd="@dimen/size25"
+        app:layout_constraintBottom_toBottomOf="@id/center_media"
+        app:layout_constraintEnd_toEndOf="@id/center_media"
+        app:layout_constraintTop_toTopOf="@id/center_media"
+        app:layout_constraintVertical_bias="0.2" />
+    <com.blinkit.commons.ui.ui.customviews.productCard.pricingsection.views.HorizontalMediaTextView
+        android:id="@id/highlights_view"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="@dimen/sushi_spacing_extra"
+        android:layout_marginRight="@dimen/sushi_spacing_extra"
+        android:layout_marginBottom="@dimen/sushi_spacing_micro"
+        android:layout_marginHorizontal="@dimen/sushi_spacing_extra"
+        app:layout_constraintBottom_toTopOf="@id/product_name"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent" />
+    <com.blinkit.blink.elements.ui.atoms.text.BlinkitTextView
+        android:gravity="center_horizontal"
+        android:id="@id/product_name"
+        android:paddingTop="@dimen/sushi_spacing_nano"
+        android:paddingBottom="@dimen/sushi_spacing_nano"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="@dimen/sushi_spacing_loose"
+        android:layout_marginRight="@dimen/sushi_spacing_loose"
+        android:layout_marginBottom="@dimen/sushi_spacing_micro"
+        android:layout_marginHorizontal="@dimen/sushi_spacing_loose"
+        android:paddingVertical="@dimen/sushi_spacing_nano"
+        app:layout_constraintBottom_toTopOf="@id/rating_star_view"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_goneMarginBottom="@dimen/sushi_spacing_macro" />
+    <com.blinkit.commons.ui.ui.customviews.starRating3D.BProductRating3D
+        android:id="@id/rating_star_view"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="@dimen/sushi_spacing_macro"
+        app:layout_constraintBottom_toTopOf="@id/highlight_text"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_goneMarginBottom="@dimen/sushi_spacing_page_side" />
+    <com.blinkit.commons.ui.ui.customviews.viewstub.blinkittext.BlinkitTextViewStub
+        android:gravity="center_horizontal"
+        android:id="@id/highlight_text"
+        android:paddingTop="@dimen/sushi_spacing_micro"
+        android:paddingBottom="@dimen/sushi_spacing_micro"
+        android:layout_width="0.0dip"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="@dimen/sushi_spacing_page_side"
+        android:maxLines="1"
+        android:paddingVertical="@dimen/sushi_spacing_micro"
+        app:layout_constraintBottom_toTopOf="@id/stepper"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintWidth_percent="0.35" />
+    <Space
+        android:id="@id/bg_media_bottom_reference"
+        android:visibility="invisible"
+        android:layout_width="wrap_content"
+        android:layout_height="@dimen/dimen_10"
+        app:layout_constraintBottom_toBottomOf="@id/stepper"
+        app:layout_constraintEnd_toEndOf="@id/stepper"
+        app:layout_constraintStart_toStartOf="@id/stepper"
+        app:layout_constraintTop_toTopOf="@id/stepper" />
+    <com.blinkit.commons.ui.ui.customviews.stepper.StepperNeoPop
+        android:id="@id/stepper"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent" />
+</merge>

@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="utf-8"?>
+<paths>
+    <files-path
+        name="files"
+        path="." />
+    <files-path
+        name="images"
+        path="images/" />
+    <files-path
+        name="int_files"
+        path="." />
+    <external-files-path
+        name="ext_files"
+        path="." />
+    <cache-path
+        name="int_cache"
+        path="." />
+    <external-cache-path
+        name="ext_cache"
+        path="." />
+    <cache-path
+        name="chatsdk_cache"
+        path="chat_cached_files/" />
+</paths>

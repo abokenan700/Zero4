@@ -1,0 +1,67 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout
+    android:id="@id/layout_audio_player_root"
+    android:paddingRight="@dimen/sushi_spacing_base"
+    android:layout_width="fill_parent"
+    android:layout_height="wrap_content"
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+    <FrameLayout
+        android:id="@id/play_icon_container"
+        android:layout_width="@dimen/size_32"
+        android:layout_height="@dimen/size_46"
+        android:layout_marginLeft="@dimen/sushi_spacing_macro"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
+        <com.zomato.ui.atomiclib.atom.ZIconFontTextView
+            android:gravity="center"
+            android:layout_gravity="center"
+            android:id="@id/audio_player_play_button"
+            android:layout_width="fill_parent"
+            android:layout_height="fill_parent" />
+        <com.zomato.ui.atomiclib.atom.ZIconFontTextView
+            android:gravity="center"
+            android:layout_gravity="center"
+            android:id="@id/audio_player_stop_button"
+            android:layout_width="@dimen/dimen_10"
+            android:layout_height="@dimen/dimen_10"
+            android:text="@string/icon_font_square_box" />
+        <ProgressBar
+            android:gravity="center"
+            android:layout_gravity="center"
+            android:id="@id/play_progress_bar"
+            android:layout_width="fill_parent"
+            android:layout_height="fill_parent" />
+    </FrameLayout>
+    <SeekBar
+        android:id="@id/audio_player_seekbar"
+        android:layout_width="0.0dip"
+        android:layout_height="wrap_content"
+        android:progressBackgroundTint="@color/sushi_white"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toStartOf="@id/audio_player_playing_time"
+        app:layout_constraintStart_toEndOf="@id/play_icon_container"
+        app:layout_constraintTop_toTopOf="parent" />
+    <com.zomato.ui.atomiclib.atom.ZTextView
+        android:gravity="center"
+        android:id="@id/audio_player_playing_time"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:minEms="3"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toStartOf="@id/audio_player_delete_button"
+        app:layout_constraintTop_toTopOf="parent"
+        app:textViewType="MEDIUM_300" />
+    <com.zomato.ui.atomiclib.atom.ZIconFontTextView
+        android:gravity="center"
+        android:id="@id/audio_player_delete_button"
+        android:padding="@dimen/sushi_spacing_micro"
+        android:paddingLeft="@dimen/sushi_spacing_base"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/icon_font_trash"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+</androidx.constraintlayout.widget.ConstraintLayout>

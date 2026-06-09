@@ -1,0 +1,212 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout
+    android:background="@color/sushi_color_bg_grey_2"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:id="@id/dateRangePickerTopBar"
+        android:background="@color/sushi_color_grey"
+        android:paddingTop="@dimen/sushi_spacing_extra"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
+        <com.zomato.ui.atomiclib.atom.IconFont
+            android:textColor="@color/sushi_color_red"
+            android:gravity="top"
+            android:id="@id/arrowIcon"
+            android:padding="@dimen/sushi_spacing_macro"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_margin="@dimen/sushi_spacing_macro"
+            android:text="@string/iconfont_thick_down"
+            app:layout_constraintBottom_toBottomOf="@id/startDate"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="@id/startDate" />
+        <com.zomato.android.zcommons.legacyViews.NitroTextView
+            android:gravity="end"
+            android:id="@id/startDate"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginEnd="4.0dip"
+            app:layout_constraintEnd_toStartOf="@id/dashText"
+            app:layout_constraintTop_toTopOf="parent"
+            app:newztextview_type="SECTION_HEADING"
+            app:ztextview_color="BLACK" />
+        <com.zomato.android.zcommons.legacyViews.NitroTextView
+            android:id="@id/dashText"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text=" - "
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            app:newztextview_type="SECTION_HEADING"
+            app:ztextview_color="BLACK" />
+        <com.zomato.android.zcommons.legacyViews.NitroTextView
+            android:gravity="start"
+            android:id="@id/endDate"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="4.0dip"
+            app:layout_constraintStart_toEndOf="@id/dashText"
+            app:layout_constraintTop_toTopOf="parent"
+            app:newztextview_type="SECTION_HEADING"
+            app:ztextview_color="GREY" />
+        <com.zomato.android.zcommons.legacyViews.ZTextButton
+            android:id="@id/clear_button"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginEnd="@dimen/sushi_spacing_extra"
+            app:button_text_color="@color/sushi_color_red"
+            app:layout_constraintBottom_toBottomOf="@id/endDate"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintTop_toTopOf="@id/endDate"
+            app:z_text_button_size="MEDIUM" />
+        <com.zomato.android.zcommons.dateRangePicker.views.CalendarRowView
+            android:id="@id/weekDayLayout"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            app:layout_constraintTop_toBottomOf="@id/startDate"
+            xmlns:android="http://schemas.android.com/apk/res/android">
+            <com.zomato.android.zcommons.dateRangePicker.views.CalendarCellView
+                android:background="@color/sushi_color_grey"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content">
+                <com.zomato.android.zcommons.legacyViews.NitroTextView
+                    android:layout_gravity="center"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/sunday"
+                    android:textAllCaps="true"
+                    app:newztextview_type="BODY_SUBTEXT"
+                    app:ztextview_color="BLACK" />
+            </com.zomato.android.zcommons.dateRangePicker.views.CalendarCellView>
+            <com.zomato.android.zcommons.dateRangePicker.views.CalendarCellView
+                android:background="@color/sushi_color_grey"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content">
+                <com.zomato.android.zcommons.legacyViews.NitroTextView
+                    android:layout_gravity="center"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/monday"
+                    android:textAllCaps="true"
+                    app:newztextview_type="BODY_SUBTEXT"
+                    app:ztextview_color="BLACK" />
+            </com.zomato.android.zcommons.dateRangePicker.views.CalendarCellView>
+            <com.zomato.android.zcommons.dateRangePicker.views.CalendarCellView
+                android:background="@color/sushi_color_grey"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content">
+                <com.zomato.android.zcommons.legacyViews.NitroTextView
+                    android:layout_gravity="center"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/tuesday"
+                    android:textAllCaps="true"
+                    app:newztextview_type="BODY_SUBTEXT"
+                    app:ztextview_color="BLACK" />
+            </com.zomato.android.zcommons.dateRangePicker.views.CalendarCellView>
+            <com.zomato.android.zcommons.dateRangePicker.views.CalendarCellView
+                android:background="@color/sushi_color_grey"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content">
+                <com.zomato.android.zcommons.legacyViews.NitroTextView
+                    android:layout_gravity="center"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/wednesday"
+                    android:textAllCaps="true"
+                    app:newztextview_type="BODY_SUBTEXT"
+                    app:ztextview_color="BLACK" />
+            </com.zomato.android.zcommons.dateRangePicker.views.CalendarCellView>
+            <com.zomato.android.zcommons.dateRangePicker.views.CalendarCellView
+                android:background="@color/sushi_color_grey"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content">
+                <com.zomato.android.zcommons.legacyViews.NitroTextView
+                    android:layout_gravity="center"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/thursday"
+                    android:textAllCaps="true"
+                    app:newztextview_type="BODY_SUBTEXT"
+                    app:ztextview_color="BLACK" />
+            </com.zomato.android.zcommons.dateRangePicker.views.CalendarCellView>
+            <com.zomato.android.zcommons.dateRangePicker.views.CalendarCellView
+                android:background="@color/sushi_color_grey"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content">
+                <com.zomato.android.zcommons.legacyViews.NitroTextView
+                    android:layout_gravity="center"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/friday"
+                    android:textAllCaps="true"
+                    app:newztextview_type="BODY_SUBTEXT"
+                    app:ztextview_color="BLACK" />
+            </com.zomato.android.zcommons.dateRangePicker.views.CalendarCellView>
+            <com.zomato.android.zcommons.dateRangePicker.views.CalendarCellView
+                android:background="@color/sushi_color_grey"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content">
+                <com.zomato.android.zcommons.legacyViews.NitroTextView
+                    android:layout_gravity="center"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/saturday"
+                    android:textAllCaps="true"
+                    app:newztextview_type="BODY_SUBTEXT"
+                    app:ztextview_color="BLACK" />
+            </com.zomato.android.zcommons.dateRangePicker.views.CalendarCellView>
+        </com.zomato.android.zcommons.dateRangePicker.views.CalendarRowView>
+        <View
+            android:id="@id/seperator"
+            android:background="@color/sushi_color_dodgy_grey"
+            android:layout_width="fill_parent"
+            android:layout_height="0.100000024dip"
+            android:layout_marginBottom="@dimen/sushi_spacing_extra"
+            android:elevation="@dimen/sushi_spacing_nano"
+            app:layout_constraintTop_toBottomOf="@id/weekDayLayout" />
+    </androidx.constraintlayout.widget.ConstraintLayout>
+    <com.zomato.android.zcommons.dateRangePicker.views.DateRangePickerView
+        android:scrollbarStyle="outsideOverlay"
+        android:id="@id/date_range_picker_view"
+        android:paddingBottom="@dimen/sushi_spacing_macro"
+        android:clipToPadding="false"
+        android:layout_width="fill_parent"
+        android:layout_height="0.0dip"
+        android:nestedScrollingEnabled="true"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintBottom_toTopOf="@id/applyButton"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/dateRangePickerTopBar"
+        app:tsquare_displayHeader="false" />
+    <com.zomato.ui.atomiclib.atom.ZButton
+        android:id="@id/clearAll"
+        android:visibility="gone"
+        android:layout_width="0.0dip"
+        android:layout_height="wrap_content"
+        android:layout_margin="@dimen/sushi_spacing_extra"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toStartOf="@id/applyButton"
+        app:layout_constraintStart_toStartOf="parent" />
+    <com.zomato.ui.atomiclib.atom.ZUKButton
+        android:id="@id/applyButton"
+        android:layout_width="0.0dip"
+        android:layout_height="wrap_content"
+        android:layout_margin="@dimen/sushi_spacing_extra"
+        app:button_text_color="@color/sushi_color_white"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toEndOf="@id/clearAll"
+        app:zuk_button_size="DEFAULT"
+        app:zuk_button_type="DEFAULT"
+        app:zuk_enabled="true"
+        app:zuk_gradient_color="RED" />
+</androidx.constraintlayout.widget.ConstraintLayout>

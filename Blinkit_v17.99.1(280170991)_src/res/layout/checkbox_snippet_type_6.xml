@@ -1,0 +1,84 @@
+<?xml version="1.0" encoding="utf-8"?>
+<merge
+    android:layout_width="fill_parent"
+    android:layout_height="wrap_content"
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+    <FrameLayout
+        android:id="@id/image_container"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content">
+        <com.zomato.ui.lib.molecules.ZMultipleStackedImageView
+            android:gravity="center"
+            android:id="@id/stacked_images"
+            android:visibility="gone"
+            android:layout_width="@dimen/size_40"
+            android:layout_height="@dimen/size_40"
+            android:layout_marginTop="@dimen/size_8"
+            android:layout_marginBottom="@dimen/size_8"
+            android:layout_marginEnd="@dimen/size_8"
+            android:layout_marginVertical="@dimen/size_8"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            app:zstackedimages_image_stack_reverse="true"
+            app:zstackimages_image_stroke_width="@dimen/sushi_spacing_pico"
+            app:zstackimages_stroke_color="?attr_7f040299" />
+        <com.zomato.ui.atomiclib.atom.ZRoundedImageView
+            android:id="@id/left_image"
+            android:visibility="gone"
+            android:layout_width="@dimen/size_40"
+            android:layout_height="@dimen/size_40"
+            android:layout_margin="@dimen/sushi_spacing_macro"
+            android:scaleType="centerCrop"
+            app:cornerRadius="@dimen/sushi_spacing_macro" />
+        <com.zomato.ui.atomiclib.atom.staticviews.StaticTextView
+            android:gravity="center"
+            android:id="@id/image_overlay_text"
+            android:visibility="gone"
+            android:layout_width="@dimen/size_36"
+            android:layout_height="@dimen/size_36"
+            android:layout_margin="@dimen/sushi_spacing_macro" />
+    </FrameLayout>
+    <LinearLayout
+        android:layout_gravity="center_vertical"
+        android:orientation="vertical"
+        android:id="@id/title_subtitle_container"
+        android:layout_width="0.0dip"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/sushi_spacing_macro"
+        android:layout_marginBottom="@dimen/sushi_spacing_macro"
+        android:layout_weight="1.0"
+        android:layout_marginVertical="@dimen/sushi_spacing_macro">
+        <com.zomato.ui.atomiclib.atom.staticviews.StaticTextView
+            android:id="@id/title"
+            android:visibility="gone"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" />
+        <com.zomato.ui.atomiclib.atom.staticviews.StaticTextView
+            android:id="@id/subtitle"
+            android:visibility="gone"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/sushi_spacing_nano" />
+    </LinearLayout>
+    <FrameLayout
+        android:id="@id/check_box_container"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/sushi_spacing_macro"
+        android:layout_marginBottom="@dimen/sushi_spacing_macro"
+        android:layout_marginEnd="@dimen/sushi_spacing_macro"
+        android:elevation="@dimen/sushi_spacing_pico"
+        android:layout_marginVertical="@dimen/sushi_spacing_macro">
+        <com.zomato.ui.atomiclib.atom.ZCheckBox
+            android:id="@id/check_box"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" />
+        <com.zomato.ui.lib.organisms.snippets.icontext.ZIconWithLottie
+            android:id="@id/icon_lottie_view"
+            android:visibility="gone"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" />
+    </FrameLayout>
+</merge>

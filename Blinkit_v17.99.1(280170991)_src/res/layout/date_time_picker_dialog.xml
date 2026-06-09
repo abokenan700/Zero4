@@ -1,0 +1,72 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout
+    android:layout_gravity="center"
+    android:background="@color/color_transparent"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+    <LinearLayout
+        android:layout_gravity="center"
+        android:orientation="vertical"
+        android:id="@id/dialog_surface"
+        android:background="?attr_7f0403d7"
+        android:paddingLeft="@dimen/sushi_spacing_mini"
+        android:paddingRight="@dimen/sushi_spacing_mini"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:paddingHorizontal="@dimen/sushi_spacing_mini">
+        <com.zomato.ui.atomiclib.atom.staticviews.StaticTextView
+            android:layout_gravity="center"
+            android:id="@id/title"
+            android:visibility="gone"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_margin="@dimen/sushi_spacing_base"
+            android:textAlignment="center" />
+        <com.zomato.ui.atomiclib.atom.ZSeparator
+            android:layout_width="fill_parent"
+            android:layout_height="1.0dip" />
+        <DatePicker
+            android:id="@id/datePicker"
+            android:descendantFocusability="blocksDescendants"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:spinnersShown="true"
+            android:calendarViewShown="false"
+            android:datePickerMode="spinner" />
+        <TimePicker
+            android:id="@id/timePicker"
+            android:visibility="gone"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:timePickerMode="spinner" />
+        <LinearLayout
+            android:gravity="end"
+            android:orientation="horizontal"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="@dimen/sushi_spacing_base">
+            <com.zomato.ui.atomiclib.atom.ZButton
+                android:id="@id/negative_button"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="@dimen/sushi_spacing_mini"
+                android:layout_marginRight="@dimen/sushi_spacing_mini"
+                android:maxLines="1"
+                android:layout_marginHorizontal="@dimen/sushi_spacing_mini"
+                app:buttonDimension="large"
+                app:buttonType="text" />
+            <com.zomato.ui.atomiclib.atom.ZButton
+                android:id="@id/positive_button"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="@dimen/sushi_spacing_mini"
+                android:layout_marginRight="@dimen/sushi_spacing_mini"
+                android:maxLines="1"
+                android:layout_marginHorizontal="@dimen/sushi_spacing_mini"
+                app:buttonDimension="large"
+                app:buttonType="text" />
+        </LinearLayout>
+    </LinearLayout>
+</FrameLayout>

@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    xmlns:android="http://schemas.android.com/apk/res/android">
+    <TextSwitcher
+        android:textColor="@color/sushi_white"
+        android:gravity="center"
+        android:layout_gravity="center"
+        android:id="@id/snack_bar_v2"
+        android:paddingLeft="@dimen/sushi_spacing_loose"
+        android:paddingTop="@dimen/sushi_spacing_nano"
+        android:paddingRight="@dimen/sushi_spacing_loose"
+        android:paddingBottom="@dimen/sushi_spacing_base"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:maxLines="1"
+        android:elevation="2.0dip"
+        android:paddingHorizontal="@dimen/sushi_spacing_loose" />
+</FrameLayout>

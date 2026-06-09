@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    android:orientation="horizontal"
+    android:id="@id/rate_buttons_container"
+    android:layout_width="fill_parent"
+    android:layout_height="wrap_content"
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+    <com.zomato.ui.atomiclib.atom.ZTextView
+        android:textColor="@color/sushi_grey_800"
+        android:gravity="center_vertical"
+        android:layout_gravity="center_vertical"
+        android:id="@id/rate_now_text"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:paddingEnd="@dimen/sushi_spacing_base"
+        app:textViewType="MEDIUM_200" />
+    <com.blinkit.commons.ui.ui.customviews.starRating.BStarRatingBar
+        android:gravity="center_vertical"
+        android:layout_gravity="end|center"
+        android:id="@id/rating_bar"
+        android:paddingRight="@dimen/b_star_rating_bar_right_margin"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        app:starSize="small" />
+</LinearLayout>

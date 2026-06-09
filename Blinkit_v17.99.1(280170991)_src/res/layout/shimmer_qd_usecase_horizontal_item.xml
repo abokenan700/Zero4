@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    android:orientation="horizontal"
+    android:layout_width="fill_parent"
+    android:layout_height="wrap_content"
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+    <include
+        android:layout_width="0.0dip"
+        android:layout_height="fill_parent"
+        android:layout_marginTop="@dimen/sushi_spacing_macro"
+        android:layout_marginBottom="@dimen/sushi_spacing_macro"
+        android:layout_weight="1.0"
+        android:layout_marginVertical="@dimen/sushi_spacing_macro"
+        app:layout_constraintHorizontal_weight="1.0"
+        app:layout_constraintVertical_weight="1.0"
+        layout="@layout/shimmer_usecase_item" />
+    <include
+        android:layout_width="0.0dip"
+        android:layout_height="fill_parent"
+        android:layout_marginTop="@dimen/sushi_spacing_macro"
+        android:layout_marginBottom="@dimen/sushi_spacing_macro"
+        android:layout_weight="1.0"
+        android:layout_marginStart="@dimen/sushi_spacing_macro"
+        android:layout_marginVertical="@dimen/sushi_spacing_macro"
+        app:layout_constraintHorizontal_weight="1.0"
+        app:layout_constraintVertical_weight="1.0"
+        layout="@layout/shimmer_usecase_item" />
+</LinearLayout>

@@ -1,0 +1,51 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    android:gravity="center"
+    android:orientation="vertical"
+    android:id="@id/non_serviceable_linear_layout"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:layout_marginBottom="@dimen/qd_margin_40"
+    xmlns:android="http://schemas.android.com/apk/res/android">
+    <ImageView
+        android:layout_gravity="center"
+        android:id="@id/non_serviceable_image"
+        android:layout_width="@dimen/size_252"
+        android:layout_height="@dimen/size_252" />
+    <com.zomato.ui.atomiclib.atom.ZTextView
+        android:gravity="center"
+        android:id="@id/non_serviceable_title"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="@dimen/qd_padding_32"
+        android:layout_marginTop="@dimen/qd_margin_20"
+        android:layout_marginRight="@dimen/qd_padding_32"
+        android:layout_marginHorizontal="@dimen/qd_padding_32" />
+    <com.zomato.ui.atomiclib.atom.ZTextView
+        android:gravity="center"
+        android:id="@id/non_serviceable_subtitle"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="@dimen/qd_padding_32"
+        android:layout_marginTop="@dimen/sushi_spacing_macro"
+        android:layout_marginRight="@dimen/qd_padding_32"
+        android:layout_marginHorizontal="@dimen/qd_padding_32" />
+    <com.zomato.ui.atomiclib.atom.ZButton
+        android:id="@id/non_serviceable_button1"
+        android:layout_width="@dimen/keyboard_height"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="@dimen/sushi_spacing_base"
+        android:layout_marginTop="@dimen/size_42"
+        android:layout_marginRight="@dimen/sushi_spacing_base"
+        android:stateListAnimator="@null"
+        android:layout_marginHorizontal="@dimen/sushi_spacing_base" />
+    <com.zomato.ui.atomiclib.atom.ZButton
+        android:id="@id/non_serviceable_button2"
+        android:layout_width="@dimen/size_252"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="@dimen/qd_margin_60"
+        android:layout_marginTop="@dimen/sushi_rating_tag_nano_minwidth"
+        android:layout_marginRight="@dimen/qd_margin_60"
+        android:stateListAnimator="@null"
+        android:layout_marginHorizontal="@dimen/qd_margin_60" />
+</LinearLayout>

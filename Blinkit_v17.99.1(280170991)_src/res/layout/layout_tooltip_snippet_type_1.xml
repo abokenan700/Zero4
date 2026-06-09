@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="utf-8"?>
+<merge
+    android:orientation="vertical"
+    android:layout_width="fill_parent"
+    android:layout_height="wrap_content"
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+    <FrameLayout
+        android:id="@id/container"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content">
+        <com.zomato.ui.atomiclib.atom.ZTextView
+            android:layout_gravity="center_horizontal"
+            android:id="@id/title"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_margin="@dimen/sushi_spacing_macro"
+            android:includeFontPadding="false" />
+    </FrameLayout>
+    <com.zomato.ui.atomiclib.atom.ZTriangle
+        android:layout_gravity="center_horizontal"
+        android:id="@id/tooltip"
+        android:layout_width="@dimen/dimen_16"
+        android:layout_height="@dimen/size_8"
+        app:triangle_type="SOUTH" />
+</merge>

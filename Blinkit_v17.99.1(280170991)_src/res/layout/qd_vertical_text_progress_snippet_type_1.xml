@@ -1,0 +1,104 @@
+<?xml version="1.0" encoding="utf-8"?>
+<merge
+    android:layout_width="fill_parent"
+    android:layout_height="wrap_content"
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+    <View
+        android:id="@id/top_view"
+        android:layout_width="fill_parent"
+        android:layout_height="@dimen/sushi_spacing_micro"
+        app:layout_constraintBottom_toBottomOf="@id/top_image"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="@id/top_image" />
+    <com.blinkit.commons.ui.ui.customviews.BShapeableImageView
+        android:id="@id/top_image"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:layout_constraintEnd_toEndOf="@id/container"
+        app:layout_constraintStart_toStartOf="@id/container"
+        app:layout_constraintTop_toTopOf="parent" />
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:id="@id/container"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="@dimen/sushi_spacing_micro"
+        android:layout_marginTop="@dimen/dimen_23"
+        android:layout_marginRight="@dimen/sushi_spacing_micro"
+        android:layout_marginHorizontal="@dimen/sushi_spacing_micro"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
+        <com.blinkit.commons.ui.ui.customviews.BShapeableImageView
+            android:id="@id/bg_image"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:scaleType="fitCenter"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+        <com.blinkit.blink.elements.ui.atoms.text.BlinkitTextView
+            android:gravity="center_horizontal"
+            android:id="@id/title"
+            android:layout_width="0.0dip"
+            android:layout_height="wrap_content"
+            app:layout_constraintBottom_toTopOf="@id/subtitle"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintVertical_chainStyle="packed" />
+        <com.blinkit.blink.elements.ui.atoms.text.BlinkitTextView
+            android:gravity="center_horizontal"
+            android:id="@id/subtitle"
+            android:layout_width="0.0dip"
+            android:layout_height="wrap_content"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/title" />
+        <com.blinkit.blink.elements.ui.atoms.text.BlinkitTextView
+            android:id="@id/bottom_center_overlay_text"
+            android:paddingLeft="@dimen/sushi_spacing_nano"
+            android:paddingTop="@dimen/sushi_spacing_pico"
+            android:paddingRight="@dimen/sushi_spacing_nano"
+            android:paddingBottom="@dimen/sushi_spacing_pico"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:paddingHorizontal="@dimen/sushi_spacing_nano"
+            android:paddingVertical="@dimen/sushi_spacing_pico"
+            app:layout_constrainedWidth="true"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toStartOf="@id/overlay_text_right_view"
+            app:layout_constraintHorizontal_chainStyle="packed"
+            app:layout_constraintStart_toEndOf="@id/overlay_text_left_view" />
+        <View
+            android:id="@id/overlay_text_left_view"
+            android:layout_width="@dimen/dimen_11"
+            android:layout_height="0.0dip"
+            android:layout_marginStart="@dimen/sushi_spacing_mini"
+            app:layout_constraintBottom_toBottomOf="@id/bottom_center_overlay_text"
+            app:layout_constraintEnd_toStartOf="@id/bottom_center_overlay_text"
+            app:layout_constraintHorizontal_chainStyle="packed"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="@id/bottom_center_overlay_text" />
+        <View
+            android:id="@id/overlay_text_right_view"
+            android:layout_width="@dimen/dimen_11"
+            android:layout_height="0.0dip"
+            android:layout_marginEnd="@dimen/sushi_spacing_mini"
+            app:layout_constraintBottom_toBottomOf="@id/bottom_center_overlay_text"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_chainStyle="packed"
+            app:layout_constraintStart_toEndOf="@id/bottom_center_overlay_text"
+            app:layout_constraintTop_toTopOf="@id/bottom_center_overlay_text" />
+        <androidx.constraintlayout.widget.Group
+            android:id="@id/overlay_text_view_group"
+            android:visibility="gone"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            app:constraint_referenced_ids="bottom_center_overlay_text,overlay_text_left_view,overlay_text_right_view" />
+    </androidx.constraintlayout.widget.ConstraintLayout>
+</merge>

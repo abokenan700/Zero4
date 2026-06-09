@@ -1,0 +1,69 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.blinkit.commons.ui.ui.customviews.LoggingConstraintLayout
+    android:id="@id/container"
+    android:background="?attr_7f04017d"
+    android:focusable="true"
+    android:clickable="true"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+    <com.blinkit.commons.ui.ui.customviews.viewstub.media.BMediaViewStub
+        android:id="@id/bg_media"
+        android:layout_width="0.0dip"
+        android:layout_height="0.0dip"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+    <com.blinkit.commonwidgetized.ui.ui.view.pagelevel.toolbar.CwToolbar
+        android:id="@id/toolbar"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+    <com.blinkit.commons.ui.ui.customviews.wrapswiperefreshlayout.BWrapSwipeRefreshLayout
+        android:id="@id/swipe_refresh_layout"
+        android:layout_width="fill_parent"
+        android:layout_height="0.0dip"
+        app:layout_constrainedHeight="true"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/toolbar">
+        <FrameLayout
+            android:id="@id/rv_container"
+            android:layout_width="fill_parent"
+            android:layout_height="fill_parent">
+            <com.blinkit.commons.ui.ui.customviews.recyclerview.VerticalTabRecyclerView
+                android:id="@id/cw_recycler_view"
+                android:clipChildren="false"
+                android:clipToPadding="false"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content" />
+            <com.blinkit.commons.ui.ui.customviews.stickyoverlay.StickyOverlay
+                android:id="@id/sticky_overlay"
+                android:layout_width="fill_parent"
+                android:layout_height="fill_parent" />
+        </FrameLayout>
+    </com.blinkit.commons.ui.ui.customviews.wrapswiperefreshlayout.BWrapSwipeRefreshLayout>
+    <com.blinkit.commons.ui.ui.customviews.loadingErrorOverlay.LoadingErrorOverlay
+        android:id="@id/loading_error_overlay"
+        android:layout_width="fill_parent"
+        android:layout_height="0.0dip"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintTop_toTopOf="@id/swipe_refresh_layout" />
+    <com.blinkit.commons.ui.ui.customviews.viewstub.SharedElementTransitionOverlayViewStub
+        android:id="@id/transition_overlay_view_stub"
+        android:layout_width="0.0dip"
+        android:layout_height="0.0dip"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+    <View
+        android:id="@id/status_bar_dummy"
+        android:background="@color/color_transparent"
+        android:visibility="gone"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        app:layout_constraintTop_toTopOf="parent" />
+</com.blinkit.commons.ui.ui.customviews.LoggingConstraintLayout>

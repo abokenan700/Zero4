@@ -1,0 +1,177 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView
+    android:id="@id/root_view"
+    android:background="?attr_7f04017d"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:fillViewport="true"
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:id="@id/Constraint"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content">
+        <com.zomato.ui.atomiclib.atom.ZRoundedImageView
+            android:id="@id/renamedNativeOTPBankLogo"
+            android:layout_width="@dimen/size130"
+            android:layout_height="@dimen/size_50"
+            android:layout_marginTop="@dimen/sushi_spacing_alone"
+            android:scaleType="fitCenter"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+        <com.zomato.ui.atomiclib.atom.ZTextView
+            android:id="@id/nativeOTPBankName"
+            android:visibility="gone"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/sushi_spacing_micro"
+            android:layout_marginBottom="@dimen/sushi_spacing_micro"
+            android:fontFamily="@font/okra_bold"
+            app:layout_constraintBottom_toTopOf="@id/renamedNativeOTPMessage"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/renamedNativeOTPBankLogo" />
+        <com.zomato.ui.atomiclib.atom.ZTextView
+            android:textColor="?attr_7f04048a"
+            android:gravity="center"
+            android:id="@id/renamedNativeOTPMessage"
+            android:layout_width="0.0dip"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="@dimen/size_30"
+            android:layout_marginTop="@dimen/size_20"
+            android:layout_marginRight="@dimen/size_30"
+            android:text="@string/renamednative_otp_authenticate_payment"
+            android:lineSpacingMultiplier="1.1"
+            android:fontFamily="@font/okra_regular"
+            android:layout_marginHorizontal="@dimen/size_30"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/nativeOTPBankName" />
+        <payments.zomato.paymentkit.ui.atoms.PaymentsOtpEditTextBox
+            android:textSize="@dimen/sushi_textsize_600"
+            android:gravity="center"
+            android:id="@id/nativeOTPEditBox"
+            android:paddingBottom="@dimen/size_20"
+            android:visibility="gone"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/size_40"
+            android:digits="\ 1234567890"
+            android:inputType="number"
+            android:paddingStart="@dimen/sushi_spacing_micro"
+            android:paddingEnd="@dimen/sushi_spacing_micro"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/renamedNativeOTPMessage"
+            app:payments_otp_background_color="?attr_7f0403d7"
+            app:payments_otp_border_color="?attr_7f040299"
+            app:payments_otp_focused_border_color="?attr_7f040298"
+            app:payments_otp_item_border_width="@dimen/sushi_spacing_pico"
+            app:payments_otp_item_corner_radius="@dimen/sushi_spacing_macro"
+            app:payments_otp_item_height="@dimen/size_44"
+            app:payments_otp_item_spacing="@dimen/sushi_spacing_base"
+            app:payments_otp_item_width="@dimen/size_40" />
+        <com.zomato.ui.atomiclib.molecules.ZTextInputField
+            android:gravity="center"
+            android:layout_gravity="center"
+            android:id="@id/renamedNativeOTPField"
+            android:visibility="gone"
+            android:layout_width="0.0dip"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/size_40"
+            android:maxLength="10"
+            android:inputType="number"
+            android:layout_marginStart="@dimen/size_100"
+            android:layout_marginEnd="@dimen/size_100"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/renamedNativeOTPMessage" />
+        <com.zomato.ui.atomiclib.atom.ZButtonWithLoader
+            android:id="@id/renamedNativeOTPConfirm"
+            android:layout_width="0.0dip"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/sushi_spacing_extra"
+            android:layout_marginBottom="@dimen/dimen_10"
+            android:fontFamily="@font/okra_regular"
+            android:layout_marginStart="@dimen/size_20"
+            android:layout_marginEnd="@dimen/size_20"
+            app:layout_constraintBottom_toTopOf="@id/renamedNativeOTPBankMessage"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent" />
+        <androidx.constraintlayout.widget.Barrier
+            android:id="@id/barrier"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            app:barrierDirection="bottom"
+            app:constraint_referenced_ids="renamedNativeOTPField,nativeOTPEditBox" />
+        <LinearLayout
+            android:gravity="center"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/sushi_spacing_base"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/barrier">
+            <com.zomato.ui.atomiclib.atom.ZTextView
+                android:textColor="?attr_7f0402a6"
+                android:id="@id/renamedNativeOTPResend"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/renamednative_otp_resend_sms"
+                android:fontFamily="@font/okra_medium" />
+            <com.zomato.ui.atomiclib.atom.ZTextView
+                android:textColor="?attr_7f040496"
+                android:gravity="center"
+                android:id="@id/renamedNativeOTPTime"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:fontFamily="@font/okra_medium"
+                android:layout_marginStart="@dimen/sushi_spacing_base"
+                app:layout_constraintBottom_toBottomOf="@id/renamedNativeOTPResend"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintHorizontal_bias="0.0"
+                app:layout_constraintStart_toEndOf="@id/renamedNativeOTPResend"
+                app:layout_constraintTop_toTopOf="@id/renamedNativeOTPResend" />
+        </LinearLayout>
+        <com.zomato.ui.atomiclib.atom.ZTextView
+            android:textSize="@dimen/sushi_textsize_100"
+            android:textColor="?attr_7f040490"
+            android:gravity="center"
+            android:id="@id/renamedNativeOTPBankMessage"
+            android:layout_width="0.0dip"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="@dimen/sushi_spacing_extra"
+            android:lineSpacingMultiplier="1.0"
+            android:fontFamily="@font/okra_regular"
+            android:layout_marginStart="@dimen/sushi_spacing_extra"
+            android:layout_marginEnd="@dimen/sushi_spacing_extra"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent" />
+        <LinearLayout
+            android:id="@id/errorContainer"
+            android:background="?attr_7f0403d7"
+            android:visibility="gone"
+            android:layout_width="0.0dip"
+            android:layout_height="wrap_content"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/renamedNativeOTPResend">
+            <com.zomato.ui.atomiclib.atom.ZTextView
+                android:textSize="@dimen/sushi_textsize_400"
+                android:gravity="center"
+                android:id="@id/errorText"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_margin="@dimen/size_20"
+                android:fontFamily="@font/okra_medium" />
+        </LinearLayout>
+        <payments.zomato.paymentkit.ui.molecules.PaymentsNoContentView
+            android:id="@id/renamedoverlay_viewholder_renamed"
+            android:visibility="gone"
+            android:layout_width="fill_parent"
+            android:layout_height="fill_parent"
+            app:paymentsNoContentState="loading" />
+    </androidx.constraintlayout.widget.ConstraintLayout>
+</ScrollView>

@@ -1,0 +1,123 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.cardview.widget.CardView
+    android:layout_width="fill_parent"
+    android:layout_height="wrap_content"
+    app:cardCornerRadius="@dimen/sushi_spacing_base"
+    app:cardElevation="@dimen/dimen_0"
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:background="?attr_7f0403d7"
+        android:paddingLeft="@dimen/sushi_spacing_mini"
+        android:paddingTop="@dimen/sushi_spacing_mini"
+        android:paddingRight="@dimen/sushi_spacing_mini"
+        android:paddingBottom="@dimen/sushi_spacing_mini"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:paddingHorizontal="@dimen/sushi_spacing_mini"
+        android:paddingVertical="@dimen/sushi_spacing_mini">
+        <com.zomato.ui.atomiclib.molecules.ShimmerChildView
+            android:id="@id/shimmer_image"
+            android:background="?attr_7f0403d1"
+            android:layout_width="0.0dip"
+            android:layout_height="@dimen/size_85"
+            android:layout_marginTop="@dimen/sushi_spacing_mini"
+            app:layout_constraintHorizontal_bias="0.0"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            app:shimmer_corner_radius="@dimen/sushi_spacing_base" />
+        <com.zomato.ui.atomiclib.molecules.ShimmerChildView
+            android:id="@id/shimmer_title_1"
+            android:background="?attr_7f0403d1"
+            android:layout_width="@dimen/size_50"
+            android:layout_height="@dimen/sushi_spacing_base"
+            android:layout_marginTop="@dimen/sushi_spacing_extra"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/shimmer_image"
+            app:shimmer_corner_radius="@dimen/sushi_spacing_micro" />
+        <com.zomato.ui.atomiclib.molecules.ShimmerChildView
+            android:id="@id/shimmer_subtitle_1"
+            android:background="?attr_7f0403d1"
+            android:layout_width="@dimen/size_90"
+            android:layout_height="@dimen/sushi_spacing_extra"
+            android:layout_marginTop="@dimen/sushi_spacing_mini"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/shimmer_title_1"
+            app:shimmer_corner_radius="@dimen/sushi_spacing_micro" />
+        <com.zomato.ui.atomiclib.molecules.ShimmerChildView
+            android:id="@id/shimmer_title_2"
+            android:background="?attr_7f0403d1"
+            android:layout_width="@dimen/size_50"
+            android:layout_height="@dimen/sushi_spacing_base"
+            android:layout_marginTop="@dimen/sushi_spacing_extra"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/shimmer_subtitle_1"
+            app:shimmer_corner_radius="@dimen/sushi_spacing_micro" />
+        <com.zomato.ui.atomiclib.molecules.ShimmerChildView
+            android:id="@id/shimmer_subtitle_2"
+            android:background="?attr_7f0403d1"
+            android:layout_width="@dimen/size_90"
+            android:layout_height="@dimen/sushi_spacing_extra"
+            android:layout_marginTop="@dimen/sushi_spacing_mini"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/shimmer_title_2"
+            app:shimmer_corner_radius="@dimen/sushi_spacing_micro" />
+        <com.zomato.ui.atomiclib.molecules.ShimmerChildView
+            android:id="@id/shimmer_title_3"
+            android:background="?attr_7f0403d1"
+            android:layout_width="@dimen/size_50"
+            android:layout_height="@dimen/sushi_spacing_base"
+            android:layout_marginTop="@dimen/sushi_spacing_extra"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/shimmer_subtitle_2"
+            app:shimmer_corner_radius="@dimen/sushi_spacing_micro" />
+        <com.zomato.ui.atomiclib.molecules.ShimmerChildView
+            android:id="@id/shimmer_subtitle_3"
+            android:background="?attr_7f0403d1"
+            android:layout_width="@dimen/size_90"
+            android:layout_height="@dimen/sushi_spacing_extra"
+            android:layout_marginTop="@dimen/sushi_spacing_mini"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/shimmer_title_3"
+            app:shimmer_corner_radius="@dimen/sushi_spacing_micro" />
+        <com.zomato.ui.atomiclib.molecules.ShimmerChildView
+            android:id="@id/shimmer_title_4"
+            android:background="?attr_7f0403d1"
+            android:layout_width="@dimen/size_50"
+            android:layout_height="@dimen/sushi_spacing_base"
+            android:layout_marginTop="@dimen/sushi_spacing_extra"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/shimmer_subtitle_3"
+            app:shimmer_corner_radius="@dimen/sushi_spacing_micro" />
+        <com.zomato.ui.atomiclib.molecules.ShimmerChildView
+            android:id="@id/shimmer_subtitle_4"
+            android:background="?attr_7f0403d1"
+            android:layout_width="@dimen/size_90"
+            android:layout_height="@dimen/sushi_spacing_extra"
+            android:layout_marginTop="@dimen/sushi_spacing_mini"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/shimmer_title_4"
+            app:shimmer_corner_radius="@dimen/sushi_spacing_micro" />
+        <com.zomato.ui.atomiclib.molecules.ShimmerChildView
+            android:id="@id/button1"
+            android:background="?attr_7f0403d1"
+            android:layout_width="0.0dip"
+            android:layout_height="@dimen/sushi_rating_tag_small_minwidth"
+            android:layout_marginTop="@dimen/sushi_spacing_extra"
+            app:layout_constraintEnd_toStartOf="@id/button2"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/shimmer_subtitle_4"
+            app:shimmer_corner_radius="@dimen/sushi_spacing_micro" />
+        <com.zomato.ui.atomiclib.molecules.ShimmerChildView
+            android:id="@id/button2"
+            android:background="?attr_7f0403d1"
+            android:layout_width="0.0dip"
+            android:layout_height="@dimen/sushi_rating_tag_small_minwidth"
+            android:layout_marginLeft="@dimen/sushi_spacing_macro"
+            android:layout_marginTop="@dimen/sushi_spacing_extra"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toEndOf="@id/button1"
+            app:layout_constraintTop_toBottomOf="@id/shimmer_subtitle_4"
+            app:shimmer_corner_radius="@dimen/sushi_spacing_micro" />
+    </androidx.constraintlayout.widget.ConstraintLayout>
+</androidx.cardview.widget.CardView>

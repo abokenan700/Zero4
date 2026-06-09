@@ -1,0 +1,181 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout
+    android:background="?attr_7f040180"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+    <LinearLayout
+        android:orientation="horizontal"
+        android:id="@id/llHeader"
+        android:clickable="true"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/sushi_spacing_mini"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
+        <com.zomato.ui.atomiclib.atom.ZIconFontTextView
+            android:textSize="20.0sp"
+            android:textColor="@color/sushi_grey_900"
+            android:id="@id/toolbar_arrow_back"
+            android:background="?android:selectableItemBackgroundBorderless"
+            android:padding="@dimen/sushi_spacing_base"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/icon_font_chevron_left" />
+        <com.zomato.ui.atomiclib.atom.ZTextView
+            android:textColor="@color/sushi_grey_900"
+            android:id="@id/header_title"
+            android:layout_width="0.0dip"
+            android:layout_height="wrap_content"
+            android:layout_weight="1.0"
+            app:textViewType="SEMIBOLD_500" />
+    </LinearLayout>
+    <com.zomato.ui.atomiclib.atom.ZTouchInterceptRecyclerView
+        android:id="@id/recycler_view"
+        android:paddingLeft="@dimen/sushi_spacing_base"
+        android:paddingTop="@dimen/sushi_spacing_extra"
+        android:paddingRight="@dimen/sushi_spacing_base"
+        android:clipChildren="false"
+        android:clipToPadding="false"
+        android:layout_width="fill_parent"
+        android:layout_height="0.0dip"
+        android:paddingHorizontal="@dimen/sushi_spacing_base"
+        app:layout_constraintBottom_toTopOf="@id/userErrorText"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/llHeader" />
+    <com.zomato.ui.atomiclib.atom.ZTextView
+        android:gravity="center"
+        android:id="@id/userErrorText"
+        android:background="@color/sushi_grey_900"
+        android:paddingTop="@dimen/sushi_spacing_macro"
+        android:paddingBottom="@dimen/sushi_spacing_macro"
+        android:visibility="gone"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:paddingStart="@dimen/sushi_spacing_base"
+        android:paddingEnd="@dimen/sushi_spacing_base"
+        app:layout_constraintBottom_toTopOf="@id/cartButtonContainer"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/recycler_view" />
+    <LinearLayout
+        android:orientation="vertical"
+        android:id="@id/cartButtonContainer"
+        android:background="?attr_7f040180"
+        android:visibility="visible"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent">
+        <View
+            android:layout_gravity="top"
+            android:id="@id/bg_shadow"
+            android:background="@drawable/bg_shadow"
+            android:layout_width="fill_parent"
+            android:layout_height="@dimen/spacing_between_3dp" />
+        <FrameLayout
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content">
+            <com.zomato.ui.lib.snippets.GenericCartButton
+                android:layout_gravity="center_vertical"
+                android:id="@id/genericCartButton"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                app:checkoutButtonColor="?themeColor500" />
+        </FrameLayout>
+    </LinearLayout>
+    <FrameLayout
+        android:id="@id/pg_failure"
+        android:background="?attr_7f040180"
+        android:visibility="gone"
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
+        <include
+            android:layout_gravity="center_vertical"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            layout="@layout/payments_pg_failure" />
+    </FrameLayout>
+    <com.zomato.android.zcommons.overlay.BaseNitroOverlay
+        android:id="@id/overlay"
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent" />
+    <LinearLayout
+        android:gravity="center"
+        android:orientation="vertical"
+        android:id="@id/refreshProgressContainer"
+        android:background="?attr_7f04017d"
+        android:visibility="gone"
+        android:layout_width="0.0dip"
+        android:layout_height="0.0dip"
+        android:alpha="0.8"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
+        <com.zomato.ui.atomiclib.atom.ZTextView
+            android:gravity="center"
+            android:layout_gravity="center"
+            android:id="@id/processingPaymentText"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:text=""
+            app:textViewType="MEDIUM_500" />
+        <ProgressBar
+            android:layout_gravity="center"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/sushi_spacing_macro" />
+    </LinearLayout>
+    <FrameLayout
+        android:id="@id/payment_success"
+        android:background="?attr_7f04017d"
+        android:paddingLeft="@dimen/size_24"
+        android:paddingRight="@dimen/size_24"
+        android:visibility="gone"
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:paddingHorizontal="@dimen/size_24">
+        <LinearLayout
+            android:layout_gravity="center"
+            android:orientation="vertical"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content">
+            <com.zomato.ui.atomiclib.animation.ZLottieAnimationView
+                android:layout_gravity="center"
+                android:id="@id/success_image"
+                android:layout_width="@dimen/size_180"
+                android:layout_height="@dimen/size_180"
+                app:lottie_autoPlay="true"
+                app:lottie_fileName="tick_with_confetti.lottie"
+                app:lottie_loop="true" />
+            <com.zomato.ui.atomiclib.atom.ZTextView
+                android:gravity="center"
+                android:layout_gravity="center"
+                android:id="@id/title"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/size_24" />
+        </LinearLayout>
+    </FrameLayout>
+    <include
+        android:layout_gravity="center_vertical"
+        android:id="@id/payBillAnimContainer"
+        android:visibility="gone"
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        layout="@layout/layout_dine_action_progress_anim_container" />
+    <FrameLayout
+        android:id="@id/no_cvv_flow_container"
+        android:visibility="gone"
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent" />
+</androidx.constraintlayout.widget.ConstraintLayout>

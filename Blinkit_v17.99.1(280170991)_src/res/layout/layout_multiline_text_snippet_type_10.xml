@@ -1,0 +1,155 @@
+<?xml version="1.0" encoding="utf-8"?>
+<merge
+    android:layout_width="fill_parent"
+    android:layout_height="wrap_content"
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+    <com.zomato.ui.atomiclib.atom.ZRoundedImageView
+        android:id="@id/top_image"
+        android:layout_width="@dimen/dimen_0"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="@dimen/dimen_12"
+        android:layout_marginRight="@dimen/dimen_12"
+        android:adjustViewBounds="true"
+        android:layout_marginHorizontal="@dimen/dimen_12"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+    <com.zomato.ui.atomiclib.atom.staticviews.StaticTextView
+        android:gravity="center"
+        android:id="@id/title"
+        android:layout_width="@dimen/dimen_0"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="@dimen/size14"
+        android:layout_marginTop="@dimen/size_12"
+        android:layout_marginRight="@dimen/size14"
+        android:layout_marginHorizontal="@dimen/size14"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/top_image" />
+    <com.zomato.ui.atomiclib.atom.staticviews.StaticTextView
+        android:gravity="center"
+        android:id="@id/subtitle"
+        android:layout_width="@dimen/dimen_0"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="@dimen/size14"
+        android:layout_marginTop="@dimen/size_4"
+        android:layout_marginRight="@dimen/size14"
+        android:layout_marginHorizontal="@dimen/size14"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/title" />
+    <FrameLayout
+        android:id="@id/middle_bg"
+        android:layout_width="@dimen/dimen_0"
+        android:layout_height="@dimen/dimen_0"
+        android:layout_marginLeft="@dimen/size_12"
+        android:layout_marginRight="@dimen/size_12"
+        android:layout_marginHorizontal="@dimen/size_12"
+        app:layout_constraintBottom_toBottomOf="@id/dummy_view2"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="@id/dummy_view" />
+    <View
+        android:id="@id/dummy_view"
+        android:layout_width="@dimen/dimen_0"
+        android:layout_height="@dimen/size18"
+        android:layout_marginLeft="@dimen/size24"
+        android:layout_marginTop="@dimen/dimen_18"
+        android:layout_marginRight="@dimen/size24"
+        android:layout_marginHorizontal="@dimen/size24"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/subtitle" />
+    <include
+        android:id="@id/item1"
+        android:layout_width="@dimen/dimen_0"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="@dimen/size24"
+        android:layout_marginRight="@dimen/size24"
+        android:layout_marginHorizontal="@dimen/size24"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/dummy_view"
+        layout="@layout/layout_multiline_text_snippet_type_10_middle_container_item" />
+    <include
+        android:id="@id/item2"
+        android:layout_width="@dimen/dimen_0"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="@dimen/size24"
+        android:layout_marginTop="@dimen/dimen_18"
+        android:layout_marginRight="@dimen/size24"
+        android:layout_marginHorizontal="@dimen/size24"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/item1"
+        layout="@layout/layout_multiline_text_snippet_type_10_middle_container_item" />
+    <include
+        android:id="@id/item3"
+        android:layout_width="@dimen/dimen_0"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="@dimen/size24"
+        android:layout_marginTop="@dimen/dimen_18"
+        android:layout_marginRight="@dimen/size24"
+        android:layout_marginHorizontal="@dimen/size24"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/item2"
+        layout="@layout/layout_multiline_text_snippet_type_10_middle_container_item" />
+    <include
+        android:id="@id/item4"
+        android:layout_width="@dimen/dimen_0"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="@dimen/size24"
+        android:layout_marginTop="@dimen/dimen_18"
+        android:layout_marginRight="@dimen/size24"
+        android:layout_marginHorizontal="@dimen/size24"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/item3"
+        layout="@layout/layout_multiline_text_snippet_type_10_middle_container_item" />
+    <LinearLayout
+        android:orientation="vertical"
+        android:id="@id/middle_container"
+        android:layout_width="@dimen/dimen_0"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="@dimen/size24"
+        android:layout_marginRight="@dimen/size24"
+        android:layout_marginHorizontal="@dimen/size24"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/item4" />
+    <View
+        android:id="@id/dummy_view2"
+        android:layout_width="@dimen/dimen_0"
+        android:layout_height="@dimen/size18"
+        android:layout_marginLeft="@dimen/size24"
+        android:layout_marginRight="@dimen/size24"
+        android:layout_marginHorizontal="@dimen/size24"
+        app:layout_constraintBottom_toTopOf="@id/bottom_tag"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/middle_container" />
+    <com.zomato.ui.atomiclib.atom.ZTag
+        android:id="@id/bottom_tag"
+        android:layout_width="0.0dip"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/dimen_18"
+        android:layout_marginStart="@dimen/size_12"
+        android:layout_marginEnd="@dimen/size_6"
+        app:layout_constraintEnd_toStartOf="@id/bottom_tag_2"
+        app:layout_constraintHorizontal_chainStyle="spread"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/dummy_view2" />
+    <com.zomato.ui.atomiclib.atom.ZTag
+        android:id="@id/bottom_tag_2"
+        android:visibility="gone"
+        android:layout_width="0.0dip"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/dimen_18"
+        android:layout_marginStart="@dimen/size_6"
+        android:layout_marginEnd="@dimen/size_12"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toEndOf="@id/bottom_tag"
+        app:layout_constraintTop_toBottomOf="@id/dummy_view2" />
+</merge>

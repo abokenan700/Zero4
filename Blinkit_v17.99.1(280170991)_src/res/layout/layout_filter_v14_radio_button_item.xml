@@ -1,0 +1,77 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout
+    android:orientation="horizontal"
+    android:id="@id/radio_container"
+    android:background="?attr_7f04017d"
+    android:padding="@dimen/sushi_spacing_nano"
+    android:layout_width="fill_parent"
+    android:layout_height="wrap_content"
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+    <com.zomato.ui.atomiclib.atom.ZRadioButton
+        android:textSize="@dimen/sushi_textsize_400"
+        android:id="@id/radio_button_left"
+        android:clickable="false"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="@dimen/sushi_spacing_page_side"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+    <com.zomato.ui.atomiclib.atom.ZRoundedImageView
+        android:id="@id/radio_button_prefix_image"
+        android:layout_width="@dimen/sushi_spacing_extra"
+        android:layout_height="@dimen/sushi_spacing_extra"
+        android:layout_marginStart="@dimen/sushi_spacing_mini"
+        app:layout_constraintBottom_toBottomOf="@id/radio_button_tile"
+        app:layout_constraintStart_toEndOf="@id/radio_button_left"
+        app:layout_constraintTop_toTopOf="@id/radio_button_tile" />
+    <androidx.constraintlayout.widget.Barrier
+        android:id="@id/radioButtonTopBarrier"
+        android:layout_width="wrap_content"
+        android:layout_height="fill_parent"
+        app:barrierDirection="top"
+        app:constraint_referenced_ids="radio_button_left, radio_button_right" />
+    <androidx.constraintlayout.widget.Barrier
+        android:id="@id/radioButtonBottomBarrier"
+        android:layout_width="wrap_content"
+        android:layout_height="fill_parent"
+        app:barrierDirection="bottom"
+        app:constraint_referenced_ids="radio_button_left, radio_button_right" />
+    <com.zomato.ui.atomiclib.atom.ZTextView
+        android:id="@id/radio_button_tile"
+        android:layout_width="0.0dip"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="@dimen/sushi_spacing_page_side"
+        android:layout_marginEnd="@dimen/sushi_spacing_page_side"
+        app:layout_constraintBottom_toBottomOf="@id/radioButtonBottomBarrier"
+        app:layout_constraintEnd_toStartOf="@id/radio_button_right"
+        app:layout_constraintStart_toEndOf="@id/radio_button_prefix_image"
+        app:layout_constraintTop_toTopOf="@id/radioButtonTopBarrier" />
+    <LinearLayout
+        android:orientation="horizontal"
+        android:id="@id/radio_button_info_text_ll"
+        android:layout_width="0.0dip"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/sushi_spacing_micro"
+        android:layout_weight="1.0"
+        app:layout_constraintEnd_toEndOf="@id/radio_button_tile"
+        app:layout_constraintStart_toStartOf="@id/radio_button_tile"
+        app:layout_constraintTop_toBottomOf="@id/radio_button_tile" />
+    <com.zomato.ui.atomiclib.atom.ZTextView
+        android:id="@id/radio_button_subtitle"
+        android:layout_width="0.0dip"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/sushi_spacing_macro"
+        android:layout_weight="1.0"
+        app:layout_constraintEnd_toEndOf="@id/radio_button_tile"
+        app:layout_constraintStart_toStartOf="@id/radio_button_tile"
+        app:layout_constraintTop_toBottomOf="@id/radio_button_info_text_ll" />
+    <com.zomato.ui.atomiclib.atom.ZRadioButton
+        android:textSize="@dimen/sushi_textsize_400"
+        android:id="@id/radio_button_right"
+        android:clickable="false"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+</androidx.constraintlayout.widget.ConstraintLayout>

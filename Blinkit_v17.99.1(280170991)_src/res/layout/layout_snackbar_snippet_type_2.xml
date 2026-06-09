@@ -1,0 +1,82 @@
+<?xml version="1.0" encoding="utf-8"?>
+<merge
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+    <LinearLayout
+        android:orientation="vertical"
+        android:padding="@dimen/sushi_spacing_page_side"
+        android:focusable="true"
+        android:clickable="true"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content">
+        <LinearLayout
+            android:gravity="center_vertical"
+            android:orientation="horizontal"
+            android:id="@id/ll_topcontainer"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="@dimen/sushi_spacing_macro">
+            <com.zomato.ui.atomiclib.atom.ZIconFontTextView
+                android:textSize="@dimen/dimen_14"
+                android:gravity="center"
+                android:id="@id/top_left_icon"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginEnd="@dimen/sushi_spacing_mini" />
+            <com.zomato.ui.atomiclib.atom.ZTextView
+                android:id="@id/title"
+                android:layout_width="0.0dip"
+                android:layout_height="wrap_content"
+                android:layout_weight="1.0" />
+            <com.zomato.ui.atomiclib.atom.ZIconFontTextView
+                android:gravity="center"
+                android:id="@id/icon_right"
+                android:layout_width="@dimen/size24"
+                android:layout_height="@dimen/dimen_18"
+                android:layout_marginStart="@dimen/sushi_spacing_macro" />
+        </LinearLayout>
+        <com.zomato.ui.atomiclib.atom.ZSeparator
+            android:id="@id/separator"
+            android:layout_width="fill_parent"
+            android:layout_height="@dimen/dimen_point_five"
+            android:layout_marginBottom="@dimen/sushi_spacing_macro" />
+        <androidx.constraintlayout.widget.ConstraintLayout
+            android:gravity="center"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content">
+            <com.zomato.ui.atomiclib.atom.ZIconFontTextView
+                android:id="@id/icon"
+                android:layout_width="wrap_content"
+                android:layout_height="@dimen/size_30"
+                android:layout_marginEnd="@dimen/sushi_spacing_mini"
+                app:layout_constraintEnd_toStartOf="@id/subtitle"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent" />
+            <com.zomato.ui.atomiclib.atom.ZTextView
+                android:id="@id/subtitle"
+                android:layout_width="0.0dip"
+                android:layout_height="wrap_content"
+                app:layout_constraintEnd_toStartOf="@id/stepper"
+                app:layout_constraintHorizontal_weight="1.0"
+                app:layout_constraintStart_toEndOf="@id/icon"
+                app:layout_constraintTop_toTopOf="parent" />
+            <com.zomato.ui.atomiclib.atom.ZButton
+                android:id="@id/bottom_button"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/sushi_spacing_micro"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@id/subtitle" />
+            <com.zomato.ui.atomiclib.molecules.ZStepper
+                android:id="@id/stepper"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="@dimen/sushi_spacing_extra"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toEndOf="@id/subtitle"
+                app:layout_constraintTop_toTopOf="parent" />
+        </androidx.constraintlayout.widget.ConstraintLayout>
+    </LinearLayout>
+</merge>

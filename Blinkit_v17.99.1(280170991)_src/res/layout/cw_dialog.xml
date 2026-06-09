@@ -1,0 +1,49 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout
+    android:padding="@dimen/sushi_spacing_macro"
+    android:layout_width="fill_parent"
+    android:layout_height="wrap_content"
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+    <FrameLayout
+        android:id="@id/fragment_container"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        app:layout_constrainedHeight="true"
+        app:layout_constraintBottom_toTopOf="@id/outer_icon"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="1.0"
+        app:layout_constraintVertical_chainStyle="packed" />
+    <View
+        android:id="@id/view_bottom_gradient"
+        android:background="@drawable/bg_white_gradient"
+        android:visibility="gone"
+        android:layout_width="0.0dip"
+        android:layout_height="@dimen/size_64"
+        app:layout_constraintBottom_toBottomOf="@id/fragment_container"
+        app:layout_constraintEnd_toEndOf="@id/fragment_container"
+        app:layout_constraintStart_toStartOf="@id/fragment_container" />
+    <com.blinkit.blink.elements.ui.atoms.icon.BlinkitIconView
+        android:gravity="center_horizontal"
+        android:id="@id/outer_icon"
+        android:padding="@dimen/sushi_spacing_macro"
+        android:layout_width="40.0dip"
+        android:layout_height="40.0dip"
+        android:layout_marginTop="@dimen/sushi_spacing_loose"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="@id/fragment_container"
+        app:layout_constraintStart_toStartOf="@id/fragment_container"
+        app:layout_constraintTop_toBottomOf="@id/fragment_container" />
+    <com.blinkit.commons.ui.ui.customviews.viewstub.media.BMediaViewStub
+        android:id="@id/outer_media"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/sushi_spacing_base"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="@id/fragment_container"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toStartOf="@id/fragment_container"
+        app:layout_constraintTop_toBottomOf="@id/fragment_container" />
+</androidx.constraintlayout.widget.ConstraintLayout>

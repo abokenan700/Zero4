@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="utf-8"?>
+<merge
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    xmlns:android="http://schemas.android.com/apk/res/android">
+    <LinearLayout
+        android:gravity="center"
+        android:orientation="vertical"
+        android:id="@id/timer_text"
+        android:layout_width="@dimen/size_180"
+        android:layout_height="@dimen/size_180">
+        <com.zomato.ui.atomiclib.atom.ZTextView
+            android:id="@id/time_left_text"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" />
+        <com.zomato.ui.atomiclib.atom.ZTextView
+            android:id="@id/time_left_duration"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" />
+    </LinearLayout>
+    <com.google.android.material.progressindicator.CircularProgressIndicator
+        android:id="@id/timer"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content" />
+</merge>

@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.zomato.ui.atomiclib.atom.ZRoundedImageView
+    android:layout_gravity="center"
+    android:id="@id/marker"
+    android:layout_width="40.0dip"
+    android:layout_height="40.0dip"
+    android:contentDescription="@null"
+    xmlns:android="http://schemas.android.com/apk/res/android" />

@@ -1,0 +1,99 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout
+    android:id="@id/parent"
+    android:background="@color/snack_bar_bg_color"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+    <androidx.camera.view.PreviewView
+        android:id="@id/preview_view"
+        android:layout_width="0.0dip"
+        android:layout_height="0.0dip"
+        android:layout_margin="0.0dip"
+        app:layout_constraintBottom_toTopOf="@id/guideline"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:scaleType="fillCenter" />
+    <com.blinkit.commons.ui.ui.customviews.BShapeableImageView
+        android:layout_gravity="center"
+        android:id="@id/image_overlay"
+        android:layout_width="fill_parent"
+        android:layout_height="0.0dip"
+        android:contentDescription="Overlay Image"
+        android:alpha="0.5"
+        app:layout_constraintBottom_toBottomOf="@id/preview_view"
+        app:layout_constraintEnd_toEndOf="@id/preview_view"
+        app:layout_constraintStart_toStartOf="@id/preview_view"
+        app:layout_constraintTop_toTopOf="@id/preview_view" />
+    <com.blinkit.commons.ui.ui.customviews.BShapeableImageView
+        android:id="@id/preview_image_view"
+        android:layout_width="0.0dip"
+        android:layout_height="0.0dip"
+        app:layout_constraintBottom_toTopOf="@id/guideline"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:scaleType="fillCenter" />
+    <androidx.constraintlayout.widget.Guideline
+        android:orientation="horizontal"
+        android:id="@id/guideline"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:layout_constraintGuide_percent="0.8" />
+    <com.zomato.ui.atomiclib.atom.ZIconFontTextView
+        android:id="@id/camera_switcher"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:contentDescription="Toggle Camera"
+        android:layout_marginEnd="@dimen/sushi_button_large_minheight"
+        app:layout_constraintBottom_toBottomOf="@id/cancel_button"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toTopOf="@id/cancel_button" />
+    <com.blinkit.blink.elements.ui.atoms.text.BlinkitTextView
+        android:textColor="@color/white"
+        android:id="@id/proceed_button"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Use Photo"
+        android:layout_marginEnd="@dimen/sushi_button_medium_minheight"
+        app:buttonType="text"
+        app:layout_constraintBottom_toBottomOf="@id/cancel_button"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toTopOf="@id/cancel_button" />
+    <com.blinkit.blink.elements.ui.atoms.text.BlinkitTextView
+        android:textColor="@color/white"
+        android:id="@id/cancel_button"
+        android:visibility="visible"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Cancel"
+        android:layout_marginStart="@dimen/sushi_button_medium_minheight"
+        app:buttonType="text"
+        app:layout_constraintBottom_toBottomOf="@id/capture_button"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="@id/capture_button" />
+    <com.blinkit.commons.ui.ui.customviews.BShapeableImageView
+        android:id="@id/capture_button"
+        android:clickable="true"
+        android:layout_width="@dimen/menu_new_grid_item_image_width"
+        android:layout_height="@dimen/menu_new_grid_item_image_width"
+        android:src="@drawable/button_camera"
+        android:contentDescription="Capture Photo"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/guideline" />
+    <androidx.constraintlayout.widget.Group
+        android:id="@id/capture_group"
+        android:visibility="visible"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:constraint_referenced_ids="preview_view,camera_switcher" />
+    <androidx.constraintlayout.widget.Group
+        android:id="@id/preview_group"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:constraint_referenced_ids="preview_image_view,proceed_button" />
+</androidx.constraintlayout.widget.ConstraintLayout>

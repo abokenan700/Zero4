@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout
+    android:layout_width="fill_parent"
+    android:layout_height="wrap_content"
+    android:layout_marginBottom="@dimen/qd_margin_8"
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+    <com.google.android.material.tabs.TabLayout
+        android:id="@id/tab_layout"
+        android:paddingLeft="@dimen/dimen_0"
+        android:paddingRight="@dimen/dimen_0"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="@dimen/dimen_0"
+        android:layout_marginRight="@dimen/dimen_0"
+        android:layout_marginHorizontal="@dimen/dimen_0"
+        android:paddingHorizontal="@dimen/dimen_0"
+        app:layout_constraintTop_toTopOf="parent"
+        app:tabIndicatorHeight="@dimen/dimen_0"
+        app:tabMode="scrollable"
+        app:tabRippleColor="@color/color_transparent" />
+</androidx.constraintlayout.widget.ConstraintLayout>

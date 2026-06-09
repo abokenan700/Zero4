@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="utf-8"?>
+<merge
+    android:layout_width="fill_parent"
+    android:layout_height="wrap_content"
+    xmlns:android="http://schemas.android.com/apk/res/android">
+    <com.blinkit.commons.ui.ui.customviews.viewstub.image.BShapeableImageViewStub
+        android:id="@id/b_custom_image_view"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content" />
+    <com.blinkit.commons.ui.ui.customviews.viewstub.image.ZLottieAnimationViewStub
+        android:id="@id/b_custom_lottie_view"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:scaleType="centerCrop" />
+    <com.blinkit.commons.ui.ui.customviews.viewstub.blinkitPlayerViewContainer.BPlayerViewContainerViewStub
+        android:id="@id/player_view_container"
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent" />
+</merge>

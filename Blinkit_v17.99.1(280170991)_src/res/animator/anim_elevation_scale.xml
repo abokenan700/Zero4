@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="utf-8"?>
+<selector
+    xmlns:android="http://schemas.android.com/apk/res/android">
+    <item
+        android:state_enabled="true"
+        android:state_pressed="true">
+        <set
+            android:interpolator="@android:anim/decelerate_interpolator">
+            <objectAnimator
+                android:duration="@android:integer/config_shortAnimTime"
+                android:valueTo="0.95"
+                android:valueType="floatType"
+                android:propertyName="scaleX" />
+            <objectAnimator
+                android:duration="@android:integer/config_shortAnimTime"
+                android:valueTo="0.95"
+                android:valueType="floatType"
+                android:propertyName="scaleY" />
+            <objectAnimator
+                android:duration="@android:integer/config_shortAnimTime"
+                android:valueTo="0.0dip"
+                android:valueType="floatType"
+                android:propertyName="translationZ" />
+        </set>
+    </item>
+    <item>
+        <set
+            android:interpolator="@android:anim/decelerate_interpolator">
+            <objectAnimator
+                android:duration="@android:integer/config_shortAnimTime"
+                android:valueTo="1.0"
+                android:valueType="floatType"
+                android:propertyName="scaleX" />
+            <objectAnimator
+                android:duration="@android:integer/config_shortAnimTime"
+                android:valueTo="1.0"
+                android:valueType="floatType"
+                android:propertyName="scaleY" />
+            <objectAnimator
+                android:duration="@android:integer/config_shortAnimTime"
+                android:valueTo="@dimen/sushi_spacing_pico"
+                android:valueType="floatType"
+                android:propertyName="translationZ" />
+        </set>
+    </item>
+</selector>

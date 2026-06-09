@@ -1,0 +1,58 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout
+    android:background="?android:colorBackground"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+    <com.zomato.ui.atomiclib.atom.ZTextView
+        android:textColor="@color/sushi_grey_700"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/sushi_spacing_loose"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:textViewType="MEDIUM_300" />
+    <ImageView
+        android:id="@id/no_location_image"
+        android:layout_width="@dimen/size_150"
+        android:layout_height="@dimen/size_150"
+        android:layout_marginTop="@dimen/size_32"
+        android:scaleType="fitXY"
+        android:contentDescription="@null"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/no_location_subtitle" />
+    <com.zomato.ui.atomiclib.atom.ZTextView
+        android:textColor="?android:textColorPrimary"
+        android:gravity="center"
+        android:id="@id/no_location_title"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/size_32"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:textViewType="SEMIBOLD_400" />
+    <com.zomato.ui.atomiclib.atom.ZTextView
+        android:textColor="?android:textColorSecondary"
+        android:gravity="center"
+        android:id="@id/no_location_subtitle"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="@dimen/sushi_spacing_extra"
+        android:layout_marginTop="@dimen/sushi_spacing_extra"
+        android:layout_marginRight="@dimen/sushi_spacing_extra"
+        android:text="@string/ordersdk_location_not_found_message"
+        android:layout_marginHorizontal="@dimen/sushi_spacing_extra"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/no_location_title"
+        app:textViewType="MEDIUM_300" />
+    <androidx.constraintlayout.widget.Group
+        android:id="@id/group"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:constraint_referenced_ids="no_location_title,no_location_subtitle,no_location_image" />
+</androidx.constraintlayout.widget.ConstraintLayout>

@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="utf-8"?>
+<merge
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    xmlns:android="http://schemas.android.com/apk/res/android">
+    <com.zomato.ui.atomiclib.atom.ZRoundedImageView
+        android:layout_gravity="center_horizontal"
+        android:id="@id/image"
+        android:layout_width="@dimen/size_152"
+        android:layout_height="@dimen/size_152"
+        android:layout_marginBottom="@dimen/sushi_spacing_base_negative" />
+    <FrameLayout
+        android:layout_gravity="bottom"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content">
+        <LinearLayout
+            android:orientation="horizontal"
+            android:id="@id/bottom_container"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content">
+            <com.zomato.ui.atomiclib.atom.ZRoundedImageView
+                android:layout_gravity="top"
+                android:id="@id/left_image"
+                android:layout_width="@dimen/size22"
+                android:layout_height="@dimen/size_20" />
+            <com.zomato.ui.atomiclib.atom.staticviews.StaticTextView
+                android:id="@id/title"
+                android:paddingLeft="@dimen/sushi_spacing_macro"
+                android:paddingRight="@dimen/sushi_spacing_macro"
+                android:layout_width="0.0dip"
+                android:layout_height="wrap_content"
+                android:layout_weight="1.0"
+                android:paddingHorizontal="@dimen/sushi_spacing_macro" />
+            <com.zomato.ui.atomiclib.atom.ZRoundedImageView
+                android:layout_gravity="bottom"
+                android:id="@id/right_image"
+                android:layout_width="@dimen/size22"
+                android:layout_height="@dimen/size_20" />
+        </LinearLayout>
+        <com.zomato.ui.atomiclib.atom.staticviews.StaticTextView
+            android:id="@id/dummy_title"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" />
+    </FrameLayout>
+</merge>

@@ -1,0 +1,61 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout
+    android:layout_width="fill_parent"
+    android:layout_height="wrap_content"
+    android:elevation="@dimen/dimen_0"
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+    <com.zomato.ui.atomiclib.molecules.ShimmerChildView
+        android:layout_gravity="center_vertical"
+        android:id="@id/shimmer_rec_3"
+        android:layout_width="@dimen/size_160"
+        android:layout_height="@dimen/sushi_spacing_extra"
+        android:layout_marginTop="@dimen/sushi_action_item_drawable_size"
+        android:layout_marginBottom="@dimen/sushi_action_item_drawable_size"
+        android:layout_marginStart="@dimen/sushi_spacing_base"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_goneMarginStart="@dimen/sushi_spacing_extra"
+        app:shimmer_corner_radius="@dimen/sushi_spacing_micro" />
+    <include
+        android:id="@id/shimmer_product_1"
+        android:layout_width="0.0dip"
+        android:layout_height="fill_parent"
+        android:layout_marginLeft="@dimen/sushi_spacing_base"
+        android:layout_marginTop="@dimen/sushi_spacing_extra"
+        android:layout_marginBottom="@dimen/sushi_action_item_drawable_size"
+        android:layout_marginEnd="@dimen/sushi_spacing_macro"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toStartOf="@id/shimmer_product_2"
+        app:layout_constraintHorizontal_weight="1.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/shimmer_rec_3"
+        layout="@layout/shimmer_qd_unbounded_v2_rail_item" />
+    <include
+        android:id="@id/shimmer_product_2"
+        android:layout_width="0.0dip"
+        android:layout_height="fill_parent"
+        android:layout_marginLeft="@dimen/sushi_spacing_base"
+        android:layout_marginTop="@dimen/sushi_spacing_extra"
+        android:layout_marginBottom="@dimen/sushi_action_item_drawable_size"
+        android:layout_marginEnd="@dimen/sushi_spacing_macro"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toStartOf="@id/shimmer_product_3"
+        app:layout_constraintHorizontal_weight="1.0"
+        app:layout_constraintStart_toEndOf="@id/shimmer_product_1"
+        app:layout_constraintTop_toBottomOf="@id/shimmer_rec_3"
+        layout="@layout/shimmer_qd_unbounded_v2_rail_item" />
+    <include
+        android:id="@id/shimmer_product_3"
+        android:layout_width="0.0dip"
+        android:layout_height="fill_parent"
+        android:layout_marginLeft="@dimen/sushi_spacing_base"
+        android:layout_marginTop="@dimen/sushi_spacing_extra"
+        android:layout_marginBottom="@dimen/sushi_action_item_drawable_size"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_weight="0.9"
+        app:layout_constraintStart_toEndOf="@id/shimmer_product_2"
+        app:layout_constraintTop_toBottomOf="@id/shimmer_rec_3"
+        layout="@layout/shimmer_qd_unbounded_v2_rail_item" />
+</androidx.constraintlayout.widget.ConstraintLayout>

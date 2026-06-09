@@ -1,0 +1,112 @@
+<?xml version="1.0" encoding="utf-8"?>
+<merge
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+    <com.zomato.ui.atomiclib.lottie.LottieImageView
+        android:id="@id/bg_image1"
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent" />
+    <com.zomato.ui.atomiclib.lottie.LottieImageView
+        android:id="@id/bg_image2"
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent" />
+    <com.zomato.ui.atomiclib.lottie.LottieImageView
+        android:id="@id/top_image1"
+        android:layout_width="@dimen/size_240"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/size_32"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+    <com.zomato.ui.atomiclib.lottie.LottieImageView
+        android:id="@id/top_image2"
+        android:layout_width="@dimen/size_240"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/size_32"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+    <LinearLayout
+        android:orientation="horizontal"
+        android:id="@id/switch_container"
+        android:visibility="gone"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="@dimen/dimen_16"
+        android:layout_marginTop="@dimen/dimen_16"
+        android:layout_marginRight="@dimen/dimen_16"
+        android:elevation="@dimen/dimen_point_three"
+        android:layout_marginHorizontal="@dimen/dimen_16"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/top_image1">
+        <com.zomato.ui.atomiclib.atom.staticviews.StaticTextView
+            android:layout_gravity="center_vertical"
+            android:id="@id/switch_title"
+            android:visibility="gone"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+        <com.zomato.ui.lib.snippets.ZLottieSwitcherView
+            android:gravity="center"
+            android:layout_gravity="center"
+            android:id="@id/zswitch"
+            android:visibility="gone"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" />
+    </LinearLayout>
+    <LinearLayout
+        android:gravity="center"
+        android:orientation="horizontal"
+        android:id="@id/container"
+        android:visibility="gone"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="@dimen/size_12"
+        android:layout_marginRight="@dimen/size_12"
+        android:elevation="@dimen/dimen_point_three"
+        android:layout_marginHorizontal="@dimen/size_12"
+        app:layout_constraintBottom_toBottomOf="@id/bottom_guideline"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent">
+        <ViewStub
+            android:id="@id/viewstub_layout_1"
+            android:visibility="gone"
+            android:layout="@layout/layout_image_text"
+            android:inflatedId="@id/layout_1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="@dimen/size_12"
+            android:layout_marginRight="@dimen/size_12"
+            android:layout_marginHorizontal="@dimen/size_12" />
+        <ViewStub
+            android:id="@id/viewstub_layout_2"
+            android:visibility="gone"
+            android:layout="@layout/layout_image_text"
+            android:inflatedId="@id/layout_2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="@dimen/size_12"
+            android:layout_marginRight="@dimen/size_12"
+            android:layout_marginHorizontal="@dimen/size_12" />
+        <ViewStub
+            android:id="@id/viewstub_layout_3"
+            android:visibility="gone"
+            android:layout="@layout/layout_image_text"
+            android:inflatedId="@id/layout_3"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="@dimen/size_12"
+            android:layout_marginRight="@dimen/size_12"
+            android:layout_marginHorizontal="@dimen/size_12" />
+    </LinearLayout>
+    <androidx.constraintlayout.widget.Guideline
+        android:orientation="horizontal"
+        android:id="@id/bottom_guideline"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:layout_constraintGuide_percent="0.8" />
+</merge>

@@ -1,0 +1,382 @@
+{
+	"templates": [
+		{
+			"fields": [
+				{
+					"type": "location_tags",
+					"id": "tags",
+					"location_tags": {
+						"tags": [
+							{
+								"label_id": "HOME",
+								"is_selected": true,
+								"image": {
+									"url": "https://cdn.grofers.com/assets/ui/address/address_home_location.png"
+								},
+								"title": {
+									"text": "Home"
+								}
+							},
+							{
+								"label_id": "WORK",
+								"is_selected": false,
+								"image": {
+									"url": "https://cdn.grofers.com/assets/ui/address/address_work_location.png"
+								},
+								"title": {
+									"text": "Work"
+								}
+							},
+							{
+								"label_id": "HOTEL",
+								"is_selected": false,
+								"image": {
+									"url": "https://cdn.grofers.com/assets/ui/address/address_hotel_location.png"
+								},
+								"title": {
+									"text": "Hotel"
+								}
+							},
+							{
+								"label_id": "OTHER",
+								"other_textfield": {
+									"is_optional": true,
+									"input_type": "text",
+									"is_hidden": false,
+									"is_inactive": false,
+									"placeholder": null
+								},
+								"image": {
+									"url": "https://cdn.grofers.com/assets/ui/address/address_other_location.png"
+								},
+								"is_selected": false,
+								"title": {
+									"text": "Other"
+								}
+							}
+						],
+						"title": {
+							"text": "Save address as *"
+						},
+						"is_optional": false,
+						"is_hidden": false,
+						"id": "",
+						"error_text": {
+							"text": "Please select your address type"
+						}
+					}
+				},
+				{
+					"textfield": {
+						"is_inactive": false,
+						"input_type": "text",
+						"is_optional": false,
+						"is_hidden": false,
+						"placeholder": {
+							"text": "Flat / House no / Building name *"
+						},
+						"error_text": {
+							"text": "Please enter your complete address details"
+						}
+					},
+					"type": "textfield",
+					"id": "address"
+				},
+				{
+					"textfield": {
+						"is_inactive": false,
+						"input_type": "alphanumeric",
+						"is_optional": true,
+						"is_hidden": false,
+						"placeholder": {
+							"text": "Floor (optional)"
+						},
+						"error_text": {
+							"text": ""
+						}
+					},
+					"type": "textfield",
+					"id": "floor"
+				},
+				{
+					"type": "textbox",
+					"id": "heuristics",
+					"textbox": {
+						"right_button": {
+							"color": {
+								"tint": "700",
+								"type": "green"
+							},
+							"text": "Change",
+							"font": {
+								"weight": "semibold",
+								"size": "200"
+							},
+							"type": "text"
+						},
+						"placeholder": {
+							"text": "Area / Sector / Locality *"
+						}
+					}
+				},
+				{
+					"textfield": {
+						"is_inactive": false,
+						"input_type": "text",
+						"is_optional": true,
+						"is_hidden": false,
+						"placeholder": {
+							"text": "Nearby landmark (optional)"
+						},
+						"error_text": {
+							"text": ""
+						}
+					},
+					"type": "textfield",
+					"id": "landmark"
+				},
+				{
+					"type": "label",
+					"id": "label",
+					"label": {
+						"color": {
+							"tint": "500",
+							"type": "grey"
+						},
+						"text": "Add Receiver's Details",
+						"font": {
+							"weight": "medium",
+							"size": "200"
+						}
+					}
+				},
+				{
+					"textfield": {
+						"is_inactive": false,
+						"input_type": "text",
+						"is_optional": false,
+						"is_hidden": false,
+						"placeholder": {
+							"text": "Receiver's name *"
+						},
+						"error_text": {
+							"text": "Please enter a valid Name"
+						}
+					},
+					"type": "textfield",
+					"id": "name"
+				},
+				{
+					"textfield": {
+						"is_inactive": false,
+						"input_type": "numeric",
+						"is_optional": true,
+						"is_hidden": false,
+						"placeholder": {
+							"text": "Receiver's phone (optional)"
+						},
+						"error_text": {
+							"text": "Please enter a valid phone number"
+						}
+					},
+					"type": "textfield",
+					"id": "phone"
+				}
+			],
+			"id": 21
+		}
+	],
+	"template_mapping": [
+		{
+			"field_value": "Home",
+			"field_id": "tags",
+			"template_id": 21
+		},
+		{
+			"field_value": "Work",
+			"field_id": "tags",
+			"template_id": 21
+		},
+		{
+			"field_value": "Hotel",
+			"field_id": "tags",
+			"template_id": 21
+		},
+		{
+			"field_value": "Other",
+			"field_id": "tags",
+			"template_id": 21
+		}
+	],
+	"default_template_id": 21,
+	"form_field_snippet_type_2": {
+		"input_fields": [
+			{
+				"type": "radio_button_layout",
+				"id": "check_box",
+				"radio_button_layout": {
+					"items": [
+						{
+							"is_checked": true,
+							"title": {
+								"color": {
+									"tint": "900",
+									"type": "black",
+									"theme_bucket": {
+										"token": "color.text.black"
+									}
+								},
+								"text": "Myself",
+								"font": {
+									"weight": "semibold",
+									"size": "300"
+								}
+							},
+							"secondary_click_actions": [
+								{
+									"type": "update_location_tags",
+									"data": {
+										"is_optional": false,
+										"should_show": true
+									}
+								},
+								{
+									"type": "update_form_field_snippet_type_2",
+									"data": {
+										"radio_button_state": [
+											{
+												"checkbox_id": "myself",
+												"is_selected": true
+											},
+											{
+												"checkbox_id": "someone_else",
+												"is_selected": false
+											}
+										],
+										"id": "check_box"
+									}
+								},
+								{
+									"type": "update_address_form_field",
+									"data": {
+										"input_fields": [
+											{
+												"textfield": {
+													"is_inactive": false,
+													"input_type": "numeric",
+													"is_optional": true,
+													"is_hidden": false,
+													"placeholder": {
+														"text": "Receiver's phone (optional)"
+													},
+													"id": "phone",
+													"error_text": {
+														"text": "Please enter a valid phone number"
+													}
+												},
+												"type": "textfield",
+												"id": "phone"
+											}
+										]
+									}
+								}
+							],
+							"id": "myself",
+							"icon_color": {
+								"tint": "700",
+								"type": "green"
+							}
+						},
+						{
+							"is_checked": false,
+							"title": {
+								"color": {
+									"tint": "900",
+									"type": "black",
+									"theme_bucket": {
+										"token": "color.text.black"
+									}
+								},
+								"text": "Someone else",
+								"font": {
+									"weight": "semibold",
+									"size": "300"
+								}
+							},
+							"secondary_click_actions": [
+								{
+									"type": "update_location_tags",
+									"data": {
+										"is_optional": true,
+										"should_show": false
+									}
+								},
+								{
+									"type": "update_form_field_snippet_type_2",
+									"data": {
+										"radio_button_state": [
+											{
+												"checkbox_id": "myself",
+												"is_selected": false
+											},
+											{
+												"checkbox_id": "someone_else",
+												"is_selected": true
+											}
+										],
+										"id": "check_box"
+									}
+								},
+								{
+									"type": "update_address_form_field",
+									"data": {
+										"input_fields": [
+											{
+												"textfield": {
+													"is_inactive": false,
+													"input_type": "numeric",
+													"is_optional": false,
+													"is_hidden": false,
+													"placeholder": {
+														"text": "Receiver's phone *"
+													},
+													"id": "phone",
+													"error_text": {
+														"text": "Please enter a valid phone number"
+													}
+												},
+												"type": "textfield",
+												"id": "phone"
+											}
+										]
+									}
+								}
+							],
+							"id": "someone_else",
+							"icon_color": {
+								"tint": "700",
+								"type": "green"
+							}
+						}
+					],
+					"id": "check_box"
+				}
+			}
+		],
+		"id": "check_box",
+		"title": {
+			"color": {
+				"tint": "900",
+				"type": "black",
+				"theme_bucket": {
+					"token": "color.text.black"
+				}
+			},
+			"text": "Who you are ordering for?",
+			"font": {
+				"weight": "semibold",
+				"size": "300"
+			}
+		}
+	}
+}

@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout
+    android:orientation="vertical"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+    <com.airbnb.lottie.LottieAnimationView
+        android:id="@id/normalLockLottie"
+        android:visibility="visible"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="5.0dip"
+        app:lottie_autoPlay="true" />
+    <ImageView
+        android:id="@id/normalLockImage"
+        android:visibility="visible"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="5.0dip" />
+    <androidx.cardview.widget.CardView
+        android:id="@id/lockNumberCard"
+        android:background="@color/sushi_white"
+        android:visibility="gone"
+        android:layout_width="@dimen/dimen_18"
+        android:layout_height="@dimen/dimen_13"
+        android:layout_marginLeft="@dimen/size_7"
+        android:textAlignment="center"
+        android:foregroundTint="@color/sushi_white"
+        app:cardBackgroundColor="@color/sushi_white"
+        app:cardCornerRadius="@dimen/size_80">
+        <com.zomato.ui.atomiclib.atom.ZTag
+            android:gravity="center"
+            android:layout_gravity="center"
+            android:id="@id/lockNumberText"
+            android:layout_width="fill_parent"
+            android:layout_height="fill_parent"
+            android:autoSizeTextType="uniform"
+            android:autoSizeMinTextSize="@dimen/sushi_spacing_nano"
+            android:autoSizeMaxTextSize="@dimen/sushi_spacing_loose"
+            app:autoSizeStepGranularity="@dimen/sushi_spacing_pico" />
+    </androidx.cardview.widget.CardView>
+</FrameLayout>

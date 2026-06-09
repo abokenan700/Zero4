@@ -1,0 +1,2832 @@
+{
+	"is_success": true,
+	"response": {
+		"snippets": [
+			{
+				"data": {
+					"items": [
+						{
+							"data": {
+								"title": {
+									"text": "Blinkit in",
+									"color": {
+										"theme_bucket": {
+											"token": "color.text.black"
+										}
+									},
+									"font": {
+										"size": "200",
+										"weight": "extrabold"
+									}
+								},
+								"subtitle": {
+									"text": "8 minutes",
+									"color": {
+										"theme_bucket": {
+											"token": "color.text.black"
+										}
+									},
+									"font": {
+										"size": "900",
+										"weight": "extrabold"
+									}
+								},
+								"subtitle_format_text": "%d minutes",
+								"subtitle2": {
+									"color": {
+										"theme_bucket": {
+											"token": "color.text.black"
+										}
+									},
+									"font": {
+										"size": "400",
+										"weight": "regular"
+									}
+								},
+								"subtitle2_left_tag": {
+									"title": {
+										"color": {
+											"theme_bucket": {
+												"token": "color.text.black"
+											}
+										},
+										"font": {
+											"size": "400",
+											"weight": "bold"
+										}
+									}
+								},
+								"subtitle2_right_icon": {
+									"code": "e874",
+									"color": {
+										"theme_bucket": {
+											"token": "color.text.black"
+										}
+									},
+									"size": 100
+								},
+								"click_action": {
+									"select_address": {
+										"address_selection_source": "SOURCE_FEED"
+									},
+									"type": "select_address"
+								},
+								"right_image_list": [
+									{
+										"url": "https://cdn.grofers.com/assets/ui/user-profile-light.png",
+										"click_action": {
+											"blinkit_deeplink": {
+												"url": "grofers://profile"
+											},
+											"type": "blinkit_deeplink"
+										},
+										"accessibility_text": {
+											"text": "Go to profile"
+										},
+										"placeholder_color": {
+											"transparency": 1,
+											"theme_bucket": {
+												"token": "color.text.black"
+											}
+										},
+										"theme_config": [
+											{
+												"theme": "DARK",
+												"component_type": "image",
+												"image": {
+													"url": "https://cdn.grofers.com/assets/ui/user-profile-dark.png",
+													"click_action": {
+														"blinkit_deeplink": {
+															"url": "grofers://profile"
+														},
+														"type": "blinkit_deeplink"
+													},
+													"accessibility_text": {
+														"text": "Go to profile"
+													},
+													"placeholder_color": {
+														"transparency": 1,
+														"theme_bucket": {
+															"token": "color.text.black"
+														}
+													}
+												}
+											}
+										]
+									},
+									{
+										"url": "https://cdn.grofers.com/layout-engine/v2/2024-11/wallet_pt_light_icon.png",
+										"click_action": {
+											"blinkit_deeplink": {
+												"url": "grofers://layout?widget_layout_id=zomato_money"
+											},
+											"type": "blinkit_deeplink"
+										},
+										"accessibility_text": {
+											"text": "Go to zomato money"
+										},
+										"placeholder_color": {
+											"transparency": 1,
+											"theme_bucket": {
+												"token": "color.text.black"
+											}
+										},
+										"theme_config": [
+											{
+												"theme": "DARK",
+												"component_type": "image",
+												"image": {
+													"url": "https://cdn.grofers.com/layout-engine/v2/2024-11/dark_wallet_v1.png",
+													"click_action": {
+														"blinkit_deeplink": {
+															"url": "grofers://layout?widget_layout_id=zomato_money"
+														},
+														"type": "blinkit_deeplink"
+													},
+													"accessibility_text": {
+														"text": "Go to zomato money"
+													},
+													"placeholder_color": {
+														"transparency": 1,
+														"theme_bucket": {
+															"token": "color.text.black"
+														}
+													}
+												}
+											}
+										]
+									}
+								],
+								"merchant_type": "express",
+								"identity": {
+									"id": "container_item::0"
+								}
+							},
+							"tracking": {
+								"widget_meta": {},
+								"impression_map": {},
+								"click_map": {},
+								"entry_source_map": {},
+								"common_attributes": {},
+								"interactions_map": {
+									"PROFILE": {
+										"click_source": "profile"
+									},
+									"TAG": {
+										"click_source": "tag"
+									}
+								}
+							},
+							"widget_type": "image_text_view_type_promise_time",
+							"layout_config": {
+								"spacing": "12,6,12,0"
+							}
+						},
+						{
+							"data": {
+								"icon": {
+									"code": "e806",
+									"accessibility_text": {
+										"text": "Search"
+									}
+								},
+								"elevation": 0,
+								"click_action": {
+									"blinkit_deeplink": {
+										"url": "grofers://search-products"
+									},
+									"type": "blinkit_deeplink"
+								},
+								"spacing": "0,0,0,0",
+								"hint_text_list": [
+									"Search \"milk\"",
+									"Search \"pooja needs\"",
+									"Search \"rice\"",
+									"Search \"cookies\"",
+									"Search \"sweets\"",
+									"Search \"disposables\"",
+									"Search \"gifts\"",
+									"Search \"pens\"",
+									"Search \"blanket\"",
+									"Search \"eggs\"",
+									"Search \"soup\""
+								],
+								"color": {
+									"theme_bucket": {
+										"token": "color.surface.secondary"
+									}
+								},
+								"mic_data": {
+									"is_visible": true,
+									"click_action": {
+										"type": "mic_search"
+									},
+									"icon_color": {
+										"theme_bucket": {
+											"token": "color.text.black"
+										}
+									}
+								}
+							},
+							"tracking": {
+								"widget_meta": {},
+								"impression_map": {},
+								"click_map": {},
+								"entry_source_map": {},
+								"common_attributes": {}
+							},
+							"widget_type": "search_bar_vr",
+							"layout_config": {
+								"spacing": "12,6,12,0"
+							}
+						},
+						{
+							"data": {
+								"selected_position": 0,
+								"items": [
+									{
+										"data": {
+											"selected_state_data": {
+												"image": {
+													"url": "https://cdn.grofers.com/layout-engine/v2/2024-03/1711433804045-active_All_dark.png",
+													"width": 20,
+													"height": 20,
+													"type": "rectangle",
+													"theme_config": [
+														{
+															"theme": "DARK",
+															"component_type": "image",
+															"image": {
+																"url": "https://cdn.grofers.com/layout-engine/v2/2024-03/1711433804045-active_all_light.png",
+																"width": 20,
+																"height": 20,
+																"type": "rectangle"
+															}
+														}
+													]
+												},
+												"title": {
+													"text": "All",
+													"color": {
+														"theme_bucket": {
+															"token": "color.text.black"
+														}
+													},
+													"font": {
+														"size": "100",
+														"weight": "bold"
+													},
+													"number_of_lines": 1
+												}
+											},
+											"unselected_state_data": {
+												"image": {
+													"url": "https://cdn.grofers.com/layout-engine/v2/2024-03/1711433804045-inactive_All_dark.png",
+													"width": 20,
+													"height": 20,
+													"type": "rectangle",
+													"theme_config": [
+														{
+															"theme": "DARK",
+															"component_type": "image",
+															"image": {
+																"url": "https://cdn.grofers.com/layout-engine/v2/2024-03/1711433804045-inactive_all_light.png",
+																"width": 20,
+																"height": 20,
+																"type": "rectangle"
+															}
+														}
+													]
+												},
+												"title": {
+													"text": "All",
+													"color": {
+														"theme_bucket": {
+															"token": "color.text.grey"
+														}
+													},
+													"font": {
+														"size": "100",
+														"weight": "medium"
+													},
+													"number_of_lines": 1
+												}
+											},
+											"click_action": {
+												"remove_snippets_range": {
+													"start_snippet_id": "pt_tab_container"
+												},
+												"type": "remove_snippets_range"
+											},
+											"updated_click_actions": [
+												{
+													"change_page_uri": {
+														"api_params": {
+															"body_params": {
+																"selected_tab_name": "homepage_v2_all"
+															},
+															"query_params": {
+																"selected_tab_name": "homepage_v2_all",
+																"selected_tab_type": "default"
+															},
+															"url": "v1/layout/feed"
+														}
+													},
+													"type": "change_page_uri"
+												}
+											],
+											"visible_cards": 5.5
+										},
+										"tracking": {
+											"widget_meta": {},
+											"impression_map": {},
+											"click_map": {},
+											"entry_source_map": {},
+											"common_attributes": {}
+										},
+										"widget_type": "tab_item_snippet_type_1"
+									},
+									{
+										"data": {
+											"selected_state_data": {
+												"image": {
+													"url": "https://cdn.grofers.com/layout-engine/v2/2024-05/1715079947252-Property-1-Light-active_electronics.png",
+													"width": 20,
+													"height": 20,
+													"type": "rectangle",
+													"theme_config": [
+														{
+															"theme": "DARK",
+															"component_type": "image",
+															"image": {
+																"url": "https://cdn.grofers.com/layout-engine/v2/2024-05/1715099282431-light_icons-1.png",
+																"width": 20,
+																"height": 20,
+																"type": "rectangle"
+															}
+														}
+													]
+												},
+												"title": {
+													"text": "Electronics",
+													"color": {
+														"theme_bucket": {
+															"token": "color.text.black"
+														}
+													},
+													"font": {
+														"size": "100",
+														"weight": "bold"
+													},
+													"number_of_lines": 1
+												}
+											},
+											"unselected_state_data": {
+												"image": {
+													"url": "https://cdn.grofers.com/layout-engine/v2/2024-05/1715079971575-Property-1-Light-inactive_electronics.png",
+													"width": 20,
+													"height": 20,
+													"type": "rectangle",
+													"theme_config": [
+														{
+															"theme": "DARK",
+															"component_type": "image",
+															"image": {
+																"url": "https://cdn.grofers.com/layout-engine/v2/2024-05/1715099302254-light_icons.png",
+																"width": 20,
+																"height": 20,
+																"type": "rectangle"
+															}
+														}
+													]
+												},
+												"title": {
+													"text": "Electronics",
+													"color": {
+														"theme_bucket": {
+															"token": "color.text.grey"
+														}
+													},
+													"font": {
+														"size": "100",
+														"weight": "medium"
+													},
+													"number_of_lines": 1
+												}
+											},
+											"click_action": {
+												"remove_snippets_range": {
+													"start_snippet_id": "pt_tab_container"
+												},
+												"type": "remove_snippets_range"
+											},
+											"updated_click_actions": [
+												{
+													"change_page_uri": {
+														"api_params": {
+															"body_params": {
+																"selected_tab_name": "homepage_v2_electronics"
+															},
+															"query_params": {
+																"selected_tab_name": "homepage_v2_electronics",
+																"selected_tab_type": "lifestyle"
+															},
+															"url": "v1/layout/feed"
+														}
+													},
+													"type": "change_page_uri"
+												}
+											],
+											"visible_cards": 5.5
+										},
+										"tracking": {
+											"widget_meta": {},
+											"impression_map": {},
+											"click_map": {},
+											"entry_source_map": {},
+											"common_attributes": {}
+										},
+										"widget_type": "tab_item_snippet_type_1"
+									}
+								],
+								"identity": {
+									"id": "TABS_ID:0"
+								},
+								"indicator_config": {
+									"bg_color": {
+										"theme_bucket": {
+											"token": "color.text.black"
+										}
+									},
+									"color_hex": "#000000"
+								},
+								"scroll_identity": {
+									"id": "TABS_ID:1"
+								},
+								"height": 64,
+								"padding": "0,0,0,0"
+							},
+							"widget_type": "tab_snippet_type_3",
+							"layout_config": {
+								"spacing": "0,0,0,0"
+							}
+						},
+						{
+							"data": {
+								"type": "line",
+								"color_hex": "#4D000000",
+								"color": {
+									"type": "black",
+									"tint": "700",
+									"transparency": 0.7
+								},
+								"bg_color": {
+									"type": "black",
+									"tint": "700",
+									"transparency": 1
+								}
+							},
+							"widget_type": "snippet_separator_vr",
+							"layout_config": {
+								"spacing": "0,0,0,0"
+							}
+						}
+					],
+					"bg_color_hex": "#FFFFFF",
+					"bg_color": {
+						"theme_bucket": {
+							"token": "color.surface.accent"
+						}
+					},
+					"identity": {
+						"id": "pt_tab_container"
+					},
+					"container_layout_config": {
+						"padding": "0,25,0,0",
+						"item_spacing": 12,
+						"corner_radius": 0
+					},
+					"bg_gradient": {
+						"color_hex_list": [
+							"#F9D362",
+							"#F6EFD5",
+							"#F6EFD5"
+						],
+						"colors": [
+							{
+								"theme_bucket": {
+									"token": "color.surface.yellow.dark"
+								}
+							},
+							{
+								"theme_bucket": {
+									"token": "color.surface.accent"
+								}
+							},
+							{
+								"theme_bucket": {
+									"token": "color.surface.accent"
+								}
+							}
+						],
+						"orientation": "top_bottom",
+						"height_offset_list": [
+							0,
+							0.85,
+							1
+						]
+					}
+				},
+				"tracking": {
+					"impression_map": {},
+					"click_map": {},
+					"entry_source_map": {},
+					"common_attributes": {}
+				},
+				"widget_type": "grid_container_vr",
+				"layout_config": {
+					"spacing": "0,0,0,0",
+					"sticky_items": [
+						{
+							"type": "HEADER",
+							"snippet": {
+								"data": {
+									"icon": {
+										"code": "e806",
+										"accessibility_text": {
+											"text": "Search"
+										}
+									},
+									"elevation": 0,
+									"click_action": {
+										"blinkit_deeplink": {
+											"url": "grofers://search-products"
+										},
+										"type": "blinkit_deeplink"
+									},
+									"hint_text": "Search for atta, dal, coke and more",
+									"bg_color": {
+										"theme_bucket": {
+											"token": "color.surface.accent"
+										}
+									},
+									"spacing": "0,0,0,0",
+									"color": {
+										"theme_bucket": {
+											"token": "color.surface.secondary"
+										}
+									},
+									"mic_data": {
+										"is_visible": true,
+										"click_action": {
+											"type": "mic_search"
+										},
+										"icon_color": {
+											"theme_bucket": {
+												"token": "color.text.black"
+											}
+										}
+									}
+								},
+								"tracking": {
+									"widget_meta": {},
+									"impression_map": {},
+									"click_map": {},
+									"entry_source_map": {}
+								},
+								"widget_type": "search_bar_vr",
+								"layout_config": {
+									"spacing": "12,0,12,0",
+									"sticky": {
+										"type": "HEADER"
+									}
+								}
+							},
+							"position_in_parent": 1,
+							"bg_color": {
+								"theme_bucket": {
+									"token": "color.surface.accent"
+								}
+							}
+						},
+						{
+							"type": "HEADER",
+							"snippet": {
+								"data": {
+									"selected_position": 0,
+									"items": [
+										{
+											"data": {
+												"selected_state_data": {
+													"image": {
+														"url": "https://cdn.grofers.com/layout-engine/v2/2024-03/1711433804045-active_gifting_dark.png",
+														"width": 20,
+														"height": 20,
+														"type": "rectangle",
+														"theme_config": [
+															{
+																"theme": "DARK",
+																"component_type": "image",
+																"image": {
+																	"url": "https://cdn.grofers.com/layout-engine/v2/2024-03/1711433804045-active_gifting_light.png",
+																	"width": 20,
+																	"height": 20,
+																	"type": "rectangle"
+																}
+															}
+														]
+													},
+													"title": {
+														"text": "Gifting",
+														"color": {
+															"theme_bucket": {
+																"token": "color.text.black"
+															}
+														},
+														"font": {
+															"size": "100",
+															"weight": "bold"
+														},
+														"number_of_lines": 1
+													}
+												},
+												"unselected_state_data": {
+													"image": {
+														"url": "https://cdn.grofers.com/layout-engine/v2/2024-03/1711433804045-inactive_gifting_light.png",
+														"width": 20,
+														"height": 20,
+														"type": "rectangle",
+														"theme_config": [
+															{
+																"theme": "DARK",
+																"component_type": "image",
+																"image": {
+																	"url": "https://cdn.grofers.com/layout-engine/v2/2024-03/1711433804045-inactive_gifting.png",
+																	"width": 20,
+																	"height": 20,
+																	"type": "rectangle"
+																}
+															}
+														]
+													},
+													"title": {
+														"text": "Gifting",
+														"color": {
+															"theme_bucket": {
+																"token": "color.text.grey"
+															}
+														},
+														"font": {
+															"size": "100",
+															"weight": "medium"
+														},
+														"number_of_lines": 1
+													}
+												},
+												"click_action": {
+													"remove_snippets_range": {
+														"start_snippet_id": "pt_tab_container"
+													},
+													"type": "remove_snippets_range"
+												},
+												"secondary_click_actions": [
+													{
+														"type": "update_partial_snippet_data",
+														"update_partial_snippet_data": {
+															"tab_selection_change": {
+																"selected_snippet_id": {},
+																"identity": {
+																	"id": "TABS_ID:0"
+																},
+																"selected_position": 4,
+																"type": "NO_INTERACTION"
+															},
+															"type": "tab_selection_change"
+														}
+													},
+													{
+														"type": "scroll_to_top"
+													}
+												],
+												"updated_click_actions": [
+													{
+														"change_page_uri": {
+															"api_params": {
+																"body_params": {
+																	"selected_tab_name": "homepage_v2_gifting"
+																},
+																"query_params": {
+																	"selected_tab_name": "homepage_v2_gifting",
+																	"selected_tab_type": "gifting"
+																},
+																"url": "v1/layout/feed"
+															}
+														},
+														"type": "change_page_uri"
+													}
+												],
+												"visible_cards": 5.5
+											},
+											"widget_type": "tab_item_snippet_type_1"
+										},
+										{
+											"data": {
+												"selected_state_data": {
+													"image": {
+														"url": "https://cdn.grofers.com/layout-engine/v2/2024-06/1717657492937-Dimond-2.png",
+														"width": 20,
+														"height": 20,
+														"type": "rectangle",
+														"theme_config": [
+															{
+																"theme": "DARK",
+																"component_type": "image",
+																"image": {
+																	"url": "https://cdn.grofers.com/layout-engine/v2/2024-06/1717657497186-primimum-2-light.png",
+																	"width": 20,
+																	"height": 20,
+																	"type": "rectangle"
+																}
+															}
+														]
+													},
+													"title": {
+														"text": "Premium",
+														"color": {
+															"theme_bucket": {
+																"token": "color.text.black"
+															}
+														},
+														"font": {
+															"size": "100",
+															"weight": "bold"
+														},
+														"number_of_lines": 1
+													}
+												},
+												"unselected_state_data": {
+													"image": {
+														"url": "https://cdn.grofers.com/layout-engine/v2/2024-06/1717657467303-Dimond-1.png",
+														"width": 20,
+														"height": 20,
+														"type": "rectangle",
+														"theme_config": [
+															{
+																"theme": "DARK",
+																"component_type": "image",
+																"image": {
+																	"url": "https://cdn.grofers.com/layout-engine/v2/2024-06/1717657489171-primimum-1-light.png",
+																	"width": 20,
+																	"height": 20,
+																	"type": "rectangle"
+																}
+															}
+														]
+													},
+													"title": {
+														"text": "Premium",
+														"color": {
+															"theme_bucket": {
+																"token": "color.text.grey"
+															}
+														},
+														"font": {
+															"size": "100",
+															"weight": "medium"
+														},
+														"number_of_lines": 1
+													}
+												},
+												"click_action": {
+													"remove_snippets_range": {
+														"start_snippet_id": "pt_tab_container"
+													},
+													"type": "remove_snippets_range"
+												},
+												"secondary_click_actions": [
+													{
+														"type": "update_partial_snippet_data",
+														"update_partial_snippet_data": {
+															"tab_selection_change": {
+																"selected_snippet_id": {},
+																"identity": {
+																	"id": "TABS_ID:0"
+																},
+																"selected_position": 5,
+																"type": "NO_INTERACTION"
+															},
+															"type": "tab_selection_change"
+														}
+													},
+													{
+														"type": "scroll_to_top"
+													}
+												],
+												"updated_click_actions": [
+													{
+														"change_page_uri": {
+															"api_params": {
+																"body_params": {
+																	"selected_tab_name": "homepage_v2_premium"
+																},
+																"query_params": {
+																	"selected_tab_name": "homepage_v2_premium",
+																	"selected_tab_type": "premium"
+																},
+																"url": "v1/layout/feed"
+															}
+														},
+														"type": "change_page_uri"
+													}
+												],
+												"visible_cards": 5.5
+											},
+											"widget_type": "tab_item_snippet_type_1"
+										}
+									],
+									"identity": {
+										"id": "TABS_ID:1"
+									},
+									"indicator_config": {
+										"bg_color": {
+											"theme_bucket": {
+												"token": "color.text.black"
+											}
+										},
+										"color_hex": "#000000"
+									},
+									"scroll_identity": {
+										"id": "TABS_ID:0"
+									},
+									"height": 64,
+									"bg_color_hex": "#FAF6E8",
+									"padding": "0,0,0,0",
+									"is_sticky": true
+								},
+								"widget_type": "tab_snippet_type_3",
+								"layout_config": {
+									"spacing": "0,0,0,0"
+								}
+							},
+							"bg_color": {
+								"theme_bucket": {
+									"token": "color.surface.accent"
+								}
+							}
+						}
+					]
+				}
+			},
+			{
+				"data": {
+					"horizontal_item_list": [
+						{
+							"data": {
+								"bg_media": {
+									"media_type": "image",
+									"image": {
+										"url": "http://cdn.grofers.com/app/images/stories/layouts/e9ace5a8-123f-4375-aea7-3ab7125b875e.png",
+										"aspect_ratio": 1.45
+									}
+								},
+								"title": {
+									"text": "Chocolate Paradise",
+									"color": {
+										"type": "white",
+										"tint": "900"
+									},
+									"font": {
+										"size": "300",
+										"weight": "bold"
+									}
+								},
+								"bottom_image_visible_portion": 0.75,
+								"border_data": {
+									"width": 2.5,
+									"colors": [
+										{
+											"type": "blue",
+											"tint": "500"
+										}
+									],
+									"corner_radius": 12
+								},
+								"corner_radius": 10,
+								"click_action": {
+									"blinkit_deeplink": {
+										"url": "grofers://layout?story_id=6833&widget_layout_id=y25_chocolate_factory"
+									},
+									"type": "blinkit_deeplink"
+								},
+								"secondary_click_actions": [
+									{
+										"type": "update_partial_snippet_data",
+										"update_partial_snippet_data": {
+											"type": "update_snippet_properties",
+											"update_snippet_properties": {
+												"border_data": {
+													"width": 2.5,
+													"colors": [
+														{
+															"type": "grey",
+															"tint": "200"
+														}
+													],
+													"corner_radius": 12
+												},
+												"identity": {
+													"id": "6833"
+												}
+											}
+										}
+									},
+									{
+										"fetch_api": {
+											"url": "v1/actions/record_story_tap",
+											"type": "POST",
+											"extra_params": {
+												"story_id": "6833"
+											}
+										},
+										"type": "fetch_api"
+									}
+								],
+								"section_count": 1,
+								"visible_cards": 3.2,
+								"layout_type": "carousel",
+								"card_aspect_ratio": 0.84,
+								"top_overlay_text": {
+									"text": "Featured",
+									"color": {
+										"type": "red",
+										"tint": "600",
+										"theme_bucket": {
+											"token": "color.base.red.600"
+										}
+									},
+									"font": {
+										"size": "050",
+										"weight": "semibold"
+									},
+									"bg_color": {
+										"type": "white",
+										"tint": "900"
+									}
+								},
+								"identity": {
+									"id": "6833"
+								}
+							},
+							"tracking": {
+								"widget_meta": {},
+								"impression_map": {},
+								"click_map": {},
+								"entry_source_map": {},
+								"common_attributes": {}
+							},
+							"widget_type": "story_snippet_type_1"
+						}
+					],
+					"bg_color": "#FFFFFF",
+					"container_layout_config": {},
+					"identity": {}
+				},
+				"tracking": {},
+				"widget_type": "horizontal_list",
+				"layout_config": {
+					"spacing": "0,12,0,0"
+				}
+			},
+			{
+				"data": {
+					"title": {
+						"text": "Frequently bought",
+						"color": {
+							"theme_bucket": {
+								"token": "color.text.black"
+							}
+						},
+						"font": {
+							"size": "500",
+							"weight": "extrabold"
+						}
+					},
+					"bg_color_data": {
+						"theme_bucket": {
+							"token": "color.background.primary"
+						}
+					}
+				},
+				"tracking": {},
+				"widget_type": "image_text_vr_type_header",
+				"layout_config": {
+					"spacing": "0,0,0,0"
+				}
+			},
+			{
+				"data": {
+					"title": {
+						"color": {
+							"theme_bucket": {
+								"token": "color.base.white"
+							}
+						},
+						"font": {
+							"size": "300",
+							"weight": "bold"
+						}
+					},
+					"bottom_text_data": {
+						"text": "Favourites",
+						"color": {
+							"theme_bucket": {
+								"token": "color.text.black"
+							}
+						},
+						"font": {
+							"size": "300",
+							"weight": "semibold"
+						},
+						"number_of_lines": 2
+					},
+					"subtitle": {
+						"color": {
+							"theme_bucket": {
+								"token": "color.base.white"
+							}
+						},
+						"font": {
+							"size": "200",
+							"weight": "semibold"
+						},
+						"number_of_lines": 2
+					},
+					"grouped_item": {},
+					"grouped_item_v2": {
+						"items": [
+							{
+								"image_list": [
+									{
+										"image": {
+											"url": "https://cdn.grofers.com/da/cms-assets/cms/product/532a6cde-d447-41eb-8b88-675915d5a53a.png?background=%23ffffff&bg_token=Color%2Ftoken%2FFFFFFF%2F236367&ts=1738921540",
+											"aspect_ratio": 1,
+											"theme_config": [
+												{
+													"theme": "DARK",
+													"component_type": "image",
+													"image": {
+														"url": "https://cdn.grofers.com/da/cms-assets/cms/product/532a6cde-d447-41eb-8b88-675915d5a53a.png?background=%23236367&bg_token=Color%2Ftoken%2FFFFFFF%2F236367&ts=1738921540",
+														"aspect_ratio": 1
+													}
+												}
+											]
+										}
+									},
+									{
+										"image": {
+											"url": "https://cdn.grofers.com/da/cms-assets/cms/product/645c934f-b0c1-464a-b0ac-f226bd9f8838.jpg?bg_token=color.base.white&ts=1737351000",
+											"aspect_ratio": 1
+										}
+									}
+								],
+								"inner_item_config": {
+									"spacing": 4,
+									"corner_radius": 10,
+									"column_count": 2
+								}
+							}
+						],
+						"duration": 2000,
+						"more_count_label_overlay": {
+							"title": {
+								"text": "+13 more",
+								"color": {
+									"hex": "#0A757C",
+									"theme_config": [
+										{
+											"theme": "DARK",
+											"component_type": "color",
+											"color": {
+												"hex": "#E5F3F3"
+											}
+										}
+									]
+								},
+								"font": {
+									"size": "050",
+									"weight": "medium"
+								}
+							},
+							"bg_color": {
+								"hex": "#ffffff",
+								"theme_config": [
+									{
+										"theme": "DARK",
+										"component_type": "color",
+										"color": {
+											"hex": "#236367"
+										}
+									}
+								]
+							},
+							"border_color": {
+								"hex": "#E5F3F3",
+								"theme_config": [
+									{
+										"theme": "DARK",
+										"component_type": "color",
+										"color": {
+											"hex": "#234445"
+										}
+									}
+								]
+							},
+							"corner_radius": 44
+						},
+						"bg_color": {
+							"hex": "#E5F3F3",
+							"theme_config": [
+								{
+									"theme": "DARK",
+									"component_type": "color",
+									"color": {
+										"hex": "#0C494C"
+									}
+								}
+							]
+						},
+						"spacing": "4,0,4,0",
+						"corner_radius_data": {
+							"all": true,
+							"corner_radius": 12
+						}
+					},
+					"click_action": {
+						"blinkit_deeplink": {
+							"url": "grofers://bottom-sheet/listing?type=your_collections&dynamic_collection_id=your_collections&dynamic_header_see_all_deeplink=&dynamic_header_title=Favourites&group_id=99999&oos_visibility=false&total_pagination_items=15&total_product_container_count=2"
+						},
+						"type": "blinkit_deeplink"
+					},
+					"bg_config": {
+						"color": {
+							"hex": "#E5F3F3",
+							"theme_config": [
+								{
+									"theme": "DARK",
+									"component_type": "color",
+									"color": {
+										"hex": "#0C494C"
+									}
+								}
+							]
+						}
+					},
+					"corner_radius": 12,
+					"section_count": 3,
+					"layout_type": "grid",
+					"visible_cards": 4,
+					"visible_portion_to_shuffle": 0.5,
+					"top_bg_color_data": {
+						"hex": "#E5F3F3",
+						"theme_config": [
+							{
+								"theme": "DARK",
+								"component_type": "color",
+								"color": {
+									"hex": "#0C494C"
+								}
+							}
+						]
+					}
+				},
+				"tracking": {
+					"widget_meta": {
+						"child_widget_group_tracking_id": "_Favourites",
+						"child_widget_id": "82960_Favourites",
+						"child_widget_name": "grouped_grid_with_text_header_Favourites",
+						"child_widget_title": "Favourites",
+						"child_widget_tracking_id": "frequently_bought_2_group_<_roll_out_collection_group_>_Favourites",
+						"widget_group_tracking_id": "frequently_bought_2_group_<_roll_out_collection_group_>",
+						"widget_id": "82960",
+						"widget_name": "grouped_grid_with_text_header",
+						"widget_title": "frequently_bought_2_group_<_roll_out_collection_group_>",
+						"widget_tracking_id": "frequently_bought_2_group_<_roll_out_collection_group_>"
+					},
+					"impression_map": {
+						"event_name": "Grouped Item Icon Shown"
+					},
+					"click_map": {
+						"event_name": "Grouped Item Icon Clicked"
+					},
+					"entry_source_map": {
+						"entry_source_child_group_tracking_id": "_Favourites",
+						"entry_source_child_id": "82960_Favourites",
+						"entry_source_child_name": "grouped_grid_with_text_header_Favourites",
+						"entry_source_child_position": 1,
+						"entry_source_child_title": "Favourites",
+						"entry_source_child_tracking_id": "frequently_bought_2_group_<_roll_out_collection_group_>_Favourites",
+						"entry_source_group_tracking_id": "frequently_bought_2_group_<_roll_out_collection_group_>",
+						"entry_source_id": "82960",
+						"entry_source_name": "grouped_grid_with_text_header",
+						"entry_source_position": 3,
+						"entry_source_title": "frequently_bought_2_group_<_roll_out_collection_group_>",
+						"entry_source_tracking_id": "frequently_bought_2_group_<_roll_out_collection_group_>"
+					},
+					"common_attributes": {
+						"child_widget_position": 1,
+						"collection_id": "your_collections",
+						"group_id": "99999",
+						"is_child_widget": true,
+						"product_ids": "240092,212722,314,490670,403222,578,440075,283,35388,574,544827,499901,570361,289152,11150",
+						"title": "Favourites",
+						"widget_position": 3
+					}
+				},
+				"widget_type": "group_image_snippet",
+				"layout_config": {
+					"outer_bg": {
+						"theme_bucket": {
+							"token": "color.background.primary"
+						}
+					},
+					"spacing": "12,0,12,12"
+				}
+			},
+			{
+				"data": {
+					"items": [
+						{
+							"data": {
+								"image": {
+									"url": "https://cdn.grofers.com/app/images/collections/asset_Vegetables_&_Fruits_1724952225824",
+									"aspect_ratio": 0.86,
+									"bg_color": {
+										"theme_bucket": {
+											"token": "color.surface.teal"
+										}
+									},
+									"height": 90
+								},
+								"title": {
+									"text": "Vegetables & Fruits",
+									"color": {
+										"theme_bucket": {
+											"token": "color.text.black"
+										}
+									},
+									"font": {
+										"size": "300",
+										"weight": "semibold"
+									},
+									"number_of_lines": 2
+								},
+								"corner_radius": 12,
+								"click_action": {
+									"blinkit_deeplink": {
+										"url": "grofers://listing?collection_uuid=OTg3NjU0MzIxMjM0NTMzNzE=&cat=3989&collection_group_id=90651&collection_properties=%5B%7B%22id%22%3A4179%2C%22name%22%3A%22NEXT_PRODUCT_RECOMMENDATION%22%2C%22value%22%3A%22false%22%7D%2C%7B%22id%22%3A2872%2C%22name%22%3A%22UnitType%22%2C%22value%22%3A%22mg%22%7D%2C%7B%22id%22%3A6952%2C%22name%22%3A%22permissible_upper_range%22%2C%22value%22%3A%220.010%22%7D%2C%7B%22id%22%3A6953%2C%22name%22%3A%22value_detected%22%2C%22value%22%3A%220%22%7D%2C%7B%22id%22%3A6954%2C%22name%22%3A%22loq_value%22%2C%22value%22%3A%220.005%22%7D%5D"
+									},
+									"type": "blinkit_deeplink"
+								},
+								"section_count": 4,
+								"is_first_row_item": false,
+								"is_last_row_item": false,
+								"layout_type": "grid",
+								"identity": {
+									"id": "3000956624431049005"
+								},
+								"span": 3
+							},
+							"widget_type": "image_text_view_type_grid_item"
+						}
+					],
+					"identity": {},
+					"container_layout_config": {
+						"padding": "0,0,0,4",
+						"item_spacing": 8
+					}
+				},
+				"widget_type": "grid_container_vr",
+				"layout_config": {
+					"spacing": "8,0,8,0"
+				}
+			},
+			{
+				"data": {
+					"identity": {
+						"id": ""
+					},
+					"section_count": 1,
+					"corner_radius": 12,
+					"layout_type": "grid",
+					"click_action": {
+						"blinkit_deeplink": {
+							"url": "grofers://web-external?web_url=https://bistro.onelink.me/RgTe/mdy2ydxy"
+						},
+						"type": "blinkit_deeplink"
+					},
+					"image": {
+						"url": "https://cdn.grofers.com/layout-engine/v2/2025-01/Lunch-Bistro_Home-Page-Banner_DN.jpg",
+						"aspect_ratio": 1.98
+					}
+				},
+				"tracking": {
+					"widget_meta": {},
+					"impression_map": {},
+					"click_map": {},
+					"entry_source_map": {},
+					"common_attributes": {}
+				},
+				"widget_type": "v2_image_text_snippet_type_19",
+				"layout_config": {
+					"spacing": "12,12,12,0",
+					"overriden_spacing": "12,12,12,0"
+				}
+			},
+			{
+				"data": {
+					"identity": {
+						"id": "19143_560751"
+					},
+					"section_count": 3,
+					"layout_type": "grid",
+					"click_action": {
+						"blinkit_deeplink": {
+							"url": "grofers://pdp?product_id=560751&merchant_id=33431&previous_page=feed&npr_flag=PRODUCT_RECOMMENDATION&product_index=0&product_bg_image_color=%23F8F9FC&npr_max_trigger_count=4&product_card_prefix_id=19143&identity=19143_560751",
+							"transition": {
+								"type": "shared_element_transition",
+								"text": "Cetaphil Baby Care Gift Set"
+							}
+						},
+						"type": "blinkit_deeplink"
+					},
+					"display_name": {
+						"text": "Cetaphil Baby Care Gift Set",
+						"color": {
+							"theme_bucket": {
+								"token": "color.text.black"
+							}
+						},
+						"font": {
+							"size": "300",
+							"weight": "semibold"
+						},
+						"number_of_lines": 3
+					},
+					"highlights": {
+						"items": [
+							{
+								"text": {
+									"text": "0+ months",
+									"color": {
+										"theme_bucket": {
+											"token": "color.productcard.highlights.text"
+										}
+									},
+									"font": {
+										"size": "050",
+										"weight": "bold"
+									}
+								},
+								"bg_config": {
+									"color": {
+										"theme_bucket": {
+											"token": "color.productcard.highlights.background"
+										}
+									},
+									"border": {
+										"width": 0.5,
+										"colors": [
+											{
+												"theme_bucket": {
+													"token": "color.productcard.highlights.border"
+												}
+											}
+										]
+									}
+								}
+							},
+							{
+								"text": {
+									"text": "4 pcs",
+									"color": {
+										"theme_bucket": {
+											"token": "color.productcard.highlights.text"
+										}
+									},
+									"font": {
+										"size": "050",
+										"weight": "bold"
+									}
+								},
+								"bg_config": {
+									"color": {
+										"theme_bucket": {
+											"token": "color.productcard.highlights.background"
+										}
+									},
+									"border": {
+										"width": 0.5,
+										"colors": [
+											{
+												"theme_bucket": {
+													"token": "color.productcard.highlights.border"
+												}
+											}
+										]
+									}
+								}
+							}
+						],
+						"bg_config": {
+							"gradient": {
+								"colors": [
+									{
+										"type": "white",
+										"tint": "900"
+									},
+									{
+										"type": "indigo",
+										"tint": "050"
+									},
+									{
+										"type": "indigo",
+										"tint": "100"
+									},
+									{
+										"type": "indigo",
+										"tint": "050"
+									},
+									{
+										"type": "white",
+										"tint": "900"
+									}
+								]
+							}
+						}
+					},
+					"rating": {
+						"type": "bar",
+						"bar": {
+							"value": 2.996999979019165,
+							"size": "medium",
+							"title": {
+								"text": "(45)",
+								"color": {
+									"theme_bucket": {
+										"token": "color.text.grey"
+									}
+								},
+								"font": {
+									"size": "050",
+									"weight": "medium"
+								}
+							},
+							"border_color": {
+								"type": "yellow",
+								"tint": "400",
+								"theme_bucket": {
+									"token": "color.rating.primary.selected"
+								}
+							},
+							"star_color": {
+								"type": "yellow",
+								"tint": "400",
+								"theme_bucket": {
+									"token": "color.rating.primary.selected"
+								}
+							},
+							"star_unfilled_color": {
+								"theme_bucket": {
+									"token": "color.background.primary"
+								}
+							}
+						}
+					},
+					"group_info": {
+						"id": 1039206
+					},
+					"media_container": {
+						"items": [
+							{
+								"media_type": "image",
+								"image": {
+									"url": "https://cdn.grofers.com/app/assets/products/sliding_images/png/880d1481-1945-4bb8-886a-401eea3d7867.png?bg_token=color.surface.quaternary",
+									"aspect_ratio": 0.87,
+									"placeholder_color": {
+										"type": "white",
+										"tint": "900",
+										"theme_bucket": {
+											"token": "color.surface.quaternary"
+										}
+									},
+									"scale_factor": 1.3
+								}
+							}
+						],
+						"corner_radius": 12,
+						"border": {
+							"width": 0.5,
+							"colors": [
+								{
+									"type": "grey",
+									"tint": "200",
+									"transparency": 0.3
+								}
+							]
+						},
+						"alpha": 1,
+						"aspect_ratio": 0.87,
+						"scale_factor": 1.3
+					},
+					"pricing_info": {
+						"mrp": {
+							"text": "MRP ~~₹1,997~~",
+							"color": {
+								"theme_bucket": {
+									"token": "color.text.grey"
+								}
+							},
+							"font": {
+								"size": "050",
+								"weight": "regular"
+							},
+							"is_markdown": 1
+						},
+						"price": {
+							"text": "₹1,698",
+							"color": {
+								"theme_bucket": {
+									"token": "color.text.black"
+								}
+							},
+							"font": {
+								"size": "200",
+								"weight": "bold"
+							}
+						}
+					},
+					"meta_data": {
+						"merchant_id": "33431",
+						"merchant_type": "express"
+					},
+					"offers": {
+						"items": [
+							{
+								"text": {
+									"text": "14% OFF",
+									"color": {
+										"type": "blue",
+										"tint": "600",
+										"theme_bucket": {
+											"token": "color.productcard.offer"
+										}
+									},
+									"font": {
+										"size": "050",
+										"weight": "bold"
+									}
+								}
+							}
+						]
+					},
+					"cta_data": {
+						"cta_type": "stepper",
+						"count_type": "default",
+						"stepper": {
+							"size": "micro",
+							"max_count": 3,
+							"zero_layout_config": {
+								"style": "outline"
+							},
+							"non_zero_layout_config": {
+								"style": "fill",
+								"theme": "DARK"
+							},
+							"increment_actions": {
+								"default": [
+									{
+										"add_to_cart": {
+											"cart_item": {
+												"product_id": 560751,
+												"merchant_id": 33431,
+												"product_name": "Cetaphil Baby Care Gift Set",
+												"quantity": 1,
+												"unavailable_quantity": 0,
+												"price": 1698,
+												"mrp": 1997,
+												"unit": "1 set",
+												"inventory": 3,
+												"meta": null,
+												"image_url": "https://cdn.grofers.com/app/assets/products/sliding_images/png/880d1481-1945-4bb8-886a-401eea3d7867.png",
+												"group_id": 1039206,
+												"merchant_type": "express",
+												"brand": "",
+												"product_full_name": "Cetaphil Baby Care Gift Set",
+												"display_name": "Cetaphil Baby Care Gift Set"
+											}
+										},
+										"type": "add_to_cart"
+									}
+								],
+								"count_map": {
+									"0": [
+										{
+											"recommendation_action": {
+												"snippet_id": {
+													"id": "recommendation_rail_19143_560751"
+												},
+												"actions": [
+													{
+														"interaction_id": "remove_recommendation_snippet_id",
+														"max_trigger_count": 4,
+														"remove_recommendation": {
+															"snippet_prefix_id_to_remove": "recommendation_rail_",
+															"triggered_by_snippet_id": "19143_560751"
+														},
+														"type": "remove_recommendation"
+													},
+													{
+														"add_recommendation": {
+															"snippets_to_add": [
+																{
+																	"data": {
+																		"items": null,
+																		"bg_color_hex": "#FFF2E9",
+																		"bg_color": {
+																			"hex": "#FFF2E4",
+																			"theme_config": [
+																				{
+																					"theme": "DARK",
+																					"component_type": "color",
+																					"color": {
+																						"hex": "#28313E"
+																					}
+																				}
+																			]
+																		},
+																		"identity": {
+																			"id": "recommendation_rail_19143_560751"
+																		},
+																		"layout_bg_color": "#00000000",
+																		"loading_overlay_data": {
+																			"api_request_type": "DEFAULT",
+																			"screen_type": "COMMON_WIDGETIZED",
+																			"loading_error_state": "LOADING",
+																			"loading_error_overlay_size_type": "NO_CHANGE",
+																			"bg_color_data": {
+																				"hex": "#FFF2E4",
+																				"theme_config": [
+																					{
+																						"theme": "DARK",
+																						"component_type": "color",
+																						"color": {
+																							"hex": "#28313E"
+																						}
+																					}
+																				]
+																			},
+																			"shimmer_res_id": "recommendation_rail_unbounded_v2_shimmer_layout",
+																			"bg_color_hex": "#FFF2E9"
+																		},
+																		"border_data": {
+																			"width": 0.5,
+																			"colors": [
+																				{
+																					"type": "black",
+																					"tint": "900",
+																					"transparency": 0.92
+																				}
+																			],
+																			"config": {
+																				"bottom": true,
+																				"top": true
+																			}
+																		}
+																	},
+																	"tracking": {
+																		"widget_meta": {
+																			"widget_id": "19143_560751",
+																			"widget_name": "Recommendation Collections",
+																			"widget_title": "People also bought",
+																			"widget_tracking_id": ""
+																		},
+																		"impression_map": {
+																			"event_name": "Super Kvi Widget Shown"
+																		},
+																		"click_map": {
+																			"event_name": "Super Kvi Widget Clicked"
+																		},
+																		"entry_source_map": {
+																			"entry_source_id": "19143_560751",
+																			"entry_source_name": "Recommendation Collections",
+																			"entry_source_title": "People also bought",
+																			"entry_source_tracking_id": ""
+																		}
+																	},
+																	"widget_type": "grid_container_vr",
+																	"layout_config": {
+																		"bg_color": "#FBF8ED",
+																		"spacing": "0,0,0,20"
+																	}
+																}
+															],
+															"snippet_id_to_attach": "19143_560751",
+															"conflict_policy": {
+																"match_config": {}
+															},
+															"prefix_id": "recommendation_rail_"
+														},
+														"interaction_id": "add_recommendation_shimmer_id",
+														"max_trigger_count": 4,
+														"type": "add_recommendation"
+													},
+													{
+														"fetch_api": {
+															"url": "v1/actions/product_recommendations/560751?page_type=feed_page",
+															"type": "POST",
+															"extra_params": {
+																"container_bg_color": null,
+																"container_theme": null,
+																"product_bg_image_color": "#F8F9FC",
+																"product_id": "560751",
+																"product_identity": "19143_560751",
+																"recommendation_type": "FEED_RECOMMENDATION",
+																"send_cart_items": true
+															},
+															"failure_actions": [
+																{
+																	"remove_recommendation": {
+																		"snippet_prefix_id_to_remove": "recommendation_rail_"
+																	},
+																	"type": "remove_recommendation"
+																}
+															]
+														},
+														"interaction_id": "fetch_recommendation_snippet_id",
+														"max_trigger_count": 4,
+														"type": "fetch_api"
+													}
+												]
+											},
+											"type": "recommendation_action"
+										}
+									]
+								}
+							},
+							"decrement_actions": {
+								"default": [
+									{
+										"remove_from_cart": {
+											"cart_item": {
+												"product_id": 560751,
+												"merchant_id": 33431,
+												"product_name": "Cetaphil Baby Care Gift Set",
+												"quantity": 1,
+												"unavailable_quantity": 0,
+												"price": 1698,
+												"mrp": 1997,
+												"unit": "1 set",
+												"inventory": 3,
+												"meta": null,
+												"image_url": "https://cdn.grofers.com/app/assets/products/sliding_images/png/880d1481-1945-4bb8-886a-401eea3d7867.png",
+												"group_id": 1039206,
+												"merchant_type": "express",
+												"brand": "",
+												"product_full_name": "Cetaphil Baby Care Gift Set",
+												"display_name": "Cetaphil Baby Care Gift Set"
+											},
+											"count_type": "default"
+										},
+										"type": "remove_from_cart"
+									}
+								]
+							}
+						}
+					},
+					"badge_container": {
+						"items": [
+							{
+								"type": "ETA",
+								"label": "ETA",
+								"text_data": {
+									"text": "%d MINS",
+									"color": {
+										"theme_bucket": {
+											"token": "color.text.black"
+										}
+									},
+									"font": {
+										"size": "050",
+										"weight": "bold"
+									}
+								},
+								"bg_color_data": {
+									"type": "grey",
+									"tint": "100"
+								},
+								"image_data": {
+									"url": "https://cdn.grofers.com/layout-engine/v2/2024-05/1716297649595-15_min_icon_v6.png"
+								},
+								"padding": "6,0,6,0"
+							}
+						],
+						"bg_gradient": {
+							"corner_radius": 8
+						}
+					},
+					"overlay_badges": {
+						"top_center": {
+							"position": "top_center",
+							"text": {
+								"text": "Premium",
+								"color": {
+									"type": "cider",
+									"tint": "800"
+								},
+								"font": {
+									"size": "050",
+									"weight": "bold"
+								}
+							},
+							"bg_color": {
+								"type": "yellow",
+								"tint": "200"
+							},
+							"corner_radius_data": {
+								"bottom_right": true,
+								"bottom_left": true,
+								"corner_radius": 4
+							}
+						}
+					},
+					"category_cta": {
+						"title": {
+							"text": "See more like this",
+							"color": {
+								"theme_bucket": {
+									"token": "color.productcard.footer.primary.text"
+								}
+							},
+							"font": {
+								"size": "050",
+								"weight": "semibold"
+							},
+							"number_of_lines": 1
+						},
+						"right_icon": {
+							"code": "e875",
+							"color": {
+								"theme_bucket": {
+									"token": "color.productcard.footer.primary.arrow"
+								}
+							},
+							"font_size": "200"
+						},
+						"bg_config": {
+							"color": {
+								"transparency": 0.9,
+								"theme_bucket": {
+									"token": "color.productcard.footer.primary.background"
+								}
+							},
+							"top_radius": 4,
+							"bottom_radius": 4
+						},
+						"click_action": {
+							"blinkit_deeplink": {
+								"url": "grofers://bottom-sheet/listing?collection_filters=%5B%7B%22leaf_cat_id%22%3A%5B2899%5D%7D%5D&enable_auto_suggestions=false&collection_name=Baby+Gifting+Hampers&dynamic_header_title=Baby+Gifting+Hampers&hide_filters=false&oos_visibility=true&exclude_combos=false&disable_previous_buy_boosting=false&should_disable_listing=false&should_personalise=false&critical_entities_visibility=false"
+							},
+							"type": "blinkit_deeplink"
+						}
+					},
+					"bg_config": {
+						"color": {
+							"theme_bucket": {
+								"token": "color.background.primary"
+							}
+						}
+					},
+					"product_id": "560751"
+				},
+				"tracking": {
+					"widget_meta": {
+						"child_widget_group_tracking_id": "_Cetaphil Baby Care Gift Set",
+						"child_widget_id": "19143_Cetaphil Baby Care Gift Set",
+						"child_widget_name": "product_grid_with_dynamic_text_header_Cetaphil Baby Care Gift Set",
+						"child_widget_title": "Cetaphil Baby Care Gift Set",
+						"child_widget_tracking_id": "monet_placeholder_23_Cetaphil Baby Care Gift Set",
+						"widget_group_tracking_id": "monet_placeholder_23",
+						"widget_id": "19143",
+						"widget_name": "product_grid_with_dynamic_text_header",
+						"widget_title": "monet_placeholder_23",
+						"widget_tracking_id": "monet_placeholder_23"
+					},
+					"impression_map": {
+						"event_name": "Product Shown"
+					},
+					"click_map": {
+						"event_name": "Product Clicked"
+					},
+					"entry_source_map": {
+						"entry_source_child_group_tracking_id": "_Cetaphil Baby Care Gift Set",
+						"entry_source_child_id": "19143_Cetaphil Baby Care Gift Set",
+						"entry_source_child_name": "product_grid_with_dynamic_text_header_Cetaphil Baby Care Gift Set",
+						"entry_source_child_position": 1,
+						"entry_source_child_title": "Cetaphil Baby Care Gift Set",
+						"entry_source_child_tracking_id": "monet_placeholder_23_Cetaphil Baby Care Gift Set",
+						"entry_source_group_tracking_id": "monet_placeholder_23",
+						"entry_source_id": "19143",
+						"entry_source_name": "product_grid_with_dynamic_text_header",
+						"entry_source_position": 9,
+						"entry_source_title": "monet_placeholder_23",
+						"entry_source_tracking_id": "monet_placeholder_23"
+					},
+					"common_attributes": {
+						"ads_campaign_id": 185885,
+						"ads_collection_id": "",
+						"ads_type": "monet_product_shelf",
+						"badge": "savings,premium",
+						"brand": "Cetaphil",
+						"child_widget_position": 1,
+						"collection_id": "fafc5c87-3b65-4beb-92e1-7ebb2b45209c",
+						"currency": "INR",
+						"inventory": 3,
+						"inventory_limit": 3,
+						"is_child_widget": true,
+						"l0_category": "",
+						"l1_category": "",
+						"l2_category": "Baby Gifting Hampers",
+						"merchant_id": 33431,
+						"merchant_type": "express",
+						"mrp": 1997,
+						"name": "Cetaphil Baby Care Gift Set",
+						"price": 1698,
+						"product_cta_type": "see_more",
+						"product_id": "560751",
+						"product_offers": "percentage_off",
+						"ptype": "Gift Set",
+						"quantity": 1,
+						"rating": 2.997,
+						"state": "available",
+						"title": "Cetaphil Baby Care Gift Set",
+						"type_id": 9233,
+						"widget_position": 9
+					},
+					"interactions_map": {
+						"ADD_TO_CART": {
+							"event_name": "Product Added"
+						},
+						"BOTTOM_BUTTON": {
+							"event_name": "SEE_MORE_CLICKED"
+						},
+						"CUSTOM_CTA": {
+							"event_name": "Buy Now Clicked"
+						},
+						"DISABLED_ADD_TO_CART": {
+							"event_name": "Insufficient Inventory Atc Clicked"
+						},
+						"NOTIFY_ME": {
+							"event_name": "Notify Me Clicked"
+						},
+						"PRODUCT_FAVORITE_ICON": {
+							"event_name": "Product Favourite Icon Clicked"
+						},
+						"PROMO_OFFER_TEXT": {
+							"event_name": "PROMO_OFFER_TAG_CLICKED"
+						},
+						"REMOVE_FROM_CART": {
+							"event_name": "Product Removed"
+						},
+						"TOP_RIGHT_ICON": {
+							"event_name": "SAVED_PRODUCT_REMOVED"
+						}
+					}
+				},
+				"widget_type": "product_card_type_unbounded_v2",
+				"layout_config": {
+					"outer_bg": {
+						"theme_bucket": {
+							"token": "color.background.primary"
+						}
+					},
+					"spacing": "12,0,12,18"
+				}
+			},
+			{
+				"data": {
+					"border": {
+						"width": 0.5,
+						"colors": [
+							{
+								"theme_bucket": {
+									"token": "color.border.grey.mid"
+								}
+							}
+						],
+						"radius": 8,
+						"color_hex_list": [
+							"#EDEFF5"
+						]
+					},
+					"bg_color_hex": "#00000000",
+					"click_action": {
+						"blinkit_deeplink": {
+							"url": "grofers://collection-products?collection_uuid=fafc5c87-3b65-4beb-92e1-7ebb2b45209c"
+						},
+						"type": "blinkit_deeplink"
+					},
+					"title": {
+						"text": "See all products",
+						"color": {
+							"theme_bucket": {
+								"token": "color.text.indigo"
+							}
+						},
+						"font": {
+							"size": "300",
+							"weight": "semibold"
+						},
+						"suffix_icon": {
+							"code": "e902",
+							"font_size": "050"
+						}
+					},
+					"bg_config": {},
+					"card_bg_color_hex": "#F2F4F7",
+					"prefix_image_stack": [
+						{
+							"url": "https://cdn.grofers.com/app/assets/products/sliding_images/png/c64036f9-a0f5-4d6b-b822-48a9189dee7a.png?bg_token=color.surface.quaternary&ts=1720594832",
+							"width": 30,
+							"height": 30,
+							"border": {
+								"width": 1,
+								"colors": [
+									{
+										"type": "grey",
+										"tint": "200",
+										"theme_bucket": {
+											"token": "color.border.grey.mid"
+										}
+									}
+								],
+								"radius": 15
+							}
+						},
+						{
+							"url": "https://cdn.grofers.com/app/assets/products/sliding_images/png/8bcf9872-7551-49ba-98f4-d9f372566ebc.png?bg_token=color.surface.quaternary&ts=1720595002",
+							"width": 30,
+							"height": 30,
+							"border": {
+								"width": 1,
+								"colors": [
+									{
+										"type": "grey",
+										"tint": "200",
+										"theme_bucket": {
+											"token": "color.border.grey.mid"
+										}
+									}
+								],
+								"radius": 15
+							}
+						},
+						{
+							"url": "https://cdn.grofers.com/app/assets/products/sliding_images/png/aec0798b-15ab-441c-8147-9a224ae38c9d.png?bg_token=color.surface.quaternary&ts=1720595038",
+							"width": 30,
+							"height": 30,
+							"border": {
+								"width": 1,
+								"colors": [
+									{
+										"type": "grey",
+										"tint": "200",
+										"theme_bucket": {
+											"token": "color.border.grey.mid"
+										}
+									}
+								],
+								"radius": 15
+							}
+						}
+					]
+				},
+				"tracking": {
+					"widget_meta": {},
+					"impression_map": {},
+					"click_map": {},
+					"entry_source_map": {},
+					"common_attributes": {}
+				},
+				"widget_type": "image_text_vr_type_footer_v2",
+				"layout_config": {
+					"outer_bg_color": "#00000000",
+					"spacing": "12,0,12,12"
+				}
+			},
+			{
+				"data": {
+					"items": [
+						{
+							"data": {
+								"image": {
+									"url": "https://cdn.grofers.com/layout-engine/v2/2024-08/pet-store-icon-v16_2.png",
+									"aspect_ratio": 3.14,
+									"should_ignore_resizing": true,
+									"height": 72
+								},
+								"title": {
+									"text": "Pet\nStore",
+									"color": {
+										"theme_bucket": {
+											"token": "color.text.black"
+										}
+									},
+									"font": {
+										"size": "300",
+										"weight": "semibold"
+									},
+									"number_of_lines": 2
+								},
+								"corner_radius": 12,
+								"click_action": {
+									"blinkit_deeplink": {
+										"url": "grofers://layout?widget_layout_id=pet_store_new_homepage"
+									},
+									"type": "blinkit_deeplink"
+								},
+								"section_count": 4,
+								"layout_type": "grid"
+							},
+							"widget_type": "b_image_text_snippet_type_1"
+						},
+						{
+							"data": {
+								"image": {
+									"url": "https://cdn.grofers.com/layout-engine/v2/2024-06/1717736069784-Sports-Store.png",
+									"aspect_ratio": 2.89,
+									"should_ignore_resizing": true,
+									"height": 72
+								},
+								"title": {
+									"text": "Sports\nStore",
+									"color": {
+										"theme_bucket": {
+											"token": "color.text.black"
+										}
+									},
+									"font": {
+										"size": "300",
+										"weight": "semibold"
+									},
+									"number_of_lines": 2
+								},
+								"corner_radius": 12,
+								"click_action": {
+									"blinkit_deeplink": {
+										"url": "grofers://layout?widget_layout_id=sports_store"
+									},
+									"type": "blinkit_deeplink"
+								},
+								"section_count": 4,
+								"layout_type": "grid"
+							},
+							"widget_type": "b_image_text_snippet_type_1"
+						}
+					],
+					"identity": {},
+					"container_layout_config": {
+						"padding": "8,0,8,0",
+						"item_spacing": 8
+					}
+				},
+				"widget_type": "grid_container_vr",
+				"layout_config": {
+					"spacing": "0,0,0,0"
+				}
+			},
+			{
+				"data": {
+					"items": [
+						{
+							"data": {
+								"media_content": {
+									"media_type": "image",
+									"image": {
+										"url": "https://cdn.grofers.com/layout-engine/v2/2025-01/Britannia_entry-point_Masthead-01.png",
+										"aspect_ratio": 1.43
+									}
+								},
+								"click_action": {
+									"blinkit_deeplink": {
+										"url": "grofers://web-internal?show_toolbar=false&requires_login=true&inline_video=true&should_use_cache_policy=true&url=https://blinkit.dev/webview/?page=britannia&enable_drag_to_pop_gesture=false"
+									},
+									"type": "blinkit_deeplink"
+								}
+							},
+							"tracking": {
+								"widget_meta": {},
+								"impression_map": {},
+								"click_map": {},
+								"entry_source_map": {},
+								"common_attributes": {}
+							},
+							"widget_type": "v2_image_text_snippet_type_68"
+						},
+						{
+							"data": {
+								"media_content": {
+									"media_type": "image",
+									"image": {
+										"url": "https://cdn.grofers.com/layout-engine/2024-10/Nov-3_whiskas_Masthead-1.png",
+										"aspect_ratio": 1.43
+									}
+								},
+								"click_action": {
+									"blinkit_deeplink": {
+										"url": "grofers://layout?widget_layout_id=story&story_id=6645"
+									},
+									"type": "blinkit_deeplink"
+								},
+								"overlay_badges": {
+									"bottom_right": {
+										"position": "bottom_right",
+										"text": {
+											"text": "Ad",
+											"color": {
+												"type": "white",
+												"tint": "500"
+											},
+											"font": {
+												"size": "050",
+												"weight": "semibold"
+											}
+										},
+										"bg_color": {
+											"type": "grey",
+											"tint": "600",
+											"transparency": 0.5
+										},
+										"spacing": "8,8,8,8",
+										"corner_radius_data": {
+											"all": true,
+											"corner_radius": 4
+										}
+									}
+								}
+							},
+							"widget_type": "v2_image_text_snippet_type_68"
+						},
+						{
+							"data": {
+								"media_content": {
+									"media_type": "image",
+									"image": {
+										"url": "https://cdn.grofers.com/layout-engine/2024-11/Nov-8_Sebastian_Masthead.png",
+										"aspect_ratio": 1.43
+									}
+								},
+								"click_action": {
+									"blinkit_deeplink": {
+										"url": "grofers://collection-products?collection_uuid=7f22e367-e34d-4ee9-ad1c-732981fc4908"
+									},
+									"type": "blinkit_deeplink"
+								},
+								"overlay_badges": {
+									"bottom_right": {
+										"position": "bottom_right",
+										"text": {
+											"text": "Ad",
+											"color": {
+												"type": "white",
+												"tint": "500"
+											},
+											"font": {
+												"size": "050",
+												"weight": "semibold"
+											}
+										},
+										"bg_color": {
+											"type": "grey",
+											"tint": "600",
+											"transparency": 0.5
+										},
+										"spacing": "8,8,8,8",
+										"corner_radius_data": {
+											"all": true,
+											"corner_radius": 4
+										}
+									}
+								}
+							},
+							"widget_type": "v2_image_text_snippet_type_68"
+						}
+					],
+					"is_cyclic": true,
+					"layout_data": {
+						"snippet_type": "carousel",
+						"layout_type": "grid",
+						"section_count": 1,
+						"paging_config": {
+							"should_hide_indicator": true
+						}
+					},
+					"auto_scroll_time": 3000,
+					"visible_cards": 1.25
+				},
+				"widget_type": "b_carousel_snippet",
+				"layout_config": {
+					"spacing": "0,12,0,12",
+					"overriden_spacing": "0,12,0,12"
+				}
+			}
+		],
+		"pagination": {
+			"next_url": "/v1/layout/feed?&offset=13&limit=7&last_snippet_type=grid_container_vr&last_widget_type=category_grid&page_index=0&parent_name=homepage_v3&selected_tab_name=homepage_v2_all&selected_tab_type=default&total_entities_processed=5"
+		},
+		"tracking": {
+			"le_meta": {
+				"id": "155",
+				"title": "feed_default",
+				"revision_id": "",
+				"name": "feed"
+			},
+			"event_name": "Homepage Visit"
+		},
+		"page_actions": [
+			{
+				"interaction_id": "pt_interaction_id_0",
+				"type": "update_eta",
+				"update_eta": {
+					"eta_map": {
+						"dummy": {
+							"31719": {
+								"eta": 22,
+								"asset_id": "1"
+							}
+						},
+						"express": {
+							"31014": {
+								"eta": 8,
+								"asset_id": "0"
+							},
+							"32819": {
+								"eta": 13,
+								"asset_id": "0"
+							},
+							"33431": {
+								"eta": 8,
+								"asset_id": "0"
+							},
+							"34870": {
+								"eta": 12,
+								"asset_id": "0"
+							}
+						},
+						"instant": {
+							"35940": {
+								"default_eta": 10,
+								"asset_id": "0"
+							}
+						},
+						"longtail": {
+							"31719": {
+								"eta": 18,
+								"asset_id": "1"
+							}
+						},
+						"unicorn": {
+							"31967": {
+								"eta": 24,
+								"asset_id": "1"
+							}
+						}
+					},
+					"asset_map": {
+						"0": {
+							"eta_badge": {
+								"text_data": {
+									"color": {
+										"type": "grey",
+										"tint": "700"
+									},
+									"font": {
+										"size": "050",
+										"weight": "bold"
+									}
+								},
+								"image_data": {
+									"url": "https://cdn.grofers.com/layout-engine/v2/2024-05/1716186927756-10_min_icon_v6.png"
+								}
+							},
+							"shipment_badge": {
+								"image_data": {
+									"url": "https://cdn.grofers.com/assets/eta-icons/15-mins-filled.png"
+								}
+							}
+						},
+						"1": {
+							"eta_badge": {
+								"text_data": {
+									"color": {
+										"type": "grey",
+										"tint": "700"
+									},
+									"font": {
+										"size": "050",
+										"weight": "bold"
+									}
+								},
+								"image_data": {
+									"url": "https://cdn.grofers.com/layout-engine/v2/2024-05/1716186927756-30_min_icon_v6.png"
+								}
+							},
+							"shipment_badge": {
+								"image_data": {
+									"url": "https://cdn.grofers.com/assets/eta-icons/30-mins-filled.png"
+								}
+							}
+						},
+						"2": {
+							"eta_badge": {
+								"text_data": {
+									"color": {
+										"type": "grey",
+										"tint": "700"
+									},
+									"font": {
+										"size": "050",
+										"weight": "bold"
+									}
+								},
+								"image_data": {
+									"url": "https://cdn.grofers.com/layout-engine/v2/2025-01/45_min_icon_v2/45_min_icon_v2_light.png"
+								}
+							},
+							"shipment_badge": {
+								"image_data": {
+									"url": "https://cdn.grofers.com/layout-engine/v2/2025-01/icon_45_minutes_cart/icon_45_minutes_cart_light.png"
+								}
+							}
+						}
+					},
+					"merchant_info": {
+						"type": "express",
+						"id": "33431"
+					}
+				}
+			},
+			{
+				"interaction_id": "pt_interaction_id_1",
+				"type": "update_pt_state",
+				"update_pt_state": {
+					"state": {
+						"promise_time_state": {
+							"StatusCode": null,
+							"NextServiceableTime": null,
+							"NextServiceableDay": null,
+							"Surge": {
+								"SurgeAmount": 0,
+								"Mov": 0
+							},
+							"OperationalTimings": {
+								"Start": 0,
+								"End": 2359
+							},
+							"PTCommunicationOverrideData": {
+								"feed_title": "",
+								"feed_subtitle": "",
+								"banner_title": "",
+								"banner_subtitle": "",
+								"show_notify_me_button": null,
+								"serviceable_247_banner_timings": null,
+								"info_banner_enabled": false,
+								"info_banner_title": "",
+								"info_banner_subtitle": "",
+								"info_banner_tag_title": ""
+							},
+							"Theme": null,
+							"StoreServiceableNotifyProperties": null,
+							"TimeStamp": "2025-02-19T13:55:05.884023868+05:30",
+							"ETA": 480000000000,
+							"DistanceInMeter": 1058
+						}
+					}
+				}
+			},
+			{
+				"interaction_id": "ANIMATE_TOP_TABS",
+				"max_trigger_count": 1,
+				"max_trigger_count_scope": "global",
+				"post_page_render_action": {
+					"actions": [
+						{
+							"type": "update_partial_snippet_data",
+							"update_partial_snippet_data": {
+								"tab_selection_change": {
+									"selected_snippet_id": {},
+									"identity": {
+										"id": "TABS_ID:0"
+									},
+									"selected_position": 0
+								},
+								"type": "tab_selection_change"
+							}
+						}
+					]
+				},
+				"type": "post_page_render_action"
+			},
+			{
+				"prefetch_media": {
+					"media": [
+						{
+							"urls": [],
+							"media_type": "image"
+						}
+					]
+				},
+				"type": "prefetch_media"
+			},
+			{
+				"cache_page_v2": {
+					"response": {
+						"data": {
+							"encoded_value": "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",
+							"cache_config": {
+								"scope": "GLOBAL",
+								"storage_type": "non_volatile"
+							}
+						},
+						"type": "compressed"
+					},
+					"cache_key_data": {
+						"api_params": {
+							"body_params": {
+								"selected_tab_name": "homepage_v2_all"
+							},
+							"query_params": {
+								"selected_tab_name": "homepage_v2_all",
+								"selected_tab_type": "default"
+							},
+							"url": "v1/layout/feed"
+						},
+						"postback_params": {
+							"has_postback_params": true,
+							"monet_asset_ids": {
+								"masthead_ids": null,
+								"masthead_video_ids": null,
+								"homepage_ids": null,
+								"product_shelf_ids": null,
+								"brand_shelf_ids": null,
+								"kvi_highlight_ids": null,
+								"trending_offers_ids": null,
+								"must_try_grid_ids": null,
+								"brand_spotlight_ids": null
+							},
+							"personalised_infinite_asset": {
+								"asset_name": "your_collections_v2",
+								"is_scrolling_required": true,
+								"offset": 0,
+								"size": 18,
+								"total_size": 0,
+								"carousal_id": ""
+							},
+							"visible_usecase_widget_placeholder_ids": null,
+							"visual_hooks": {
+								"visual_hook_ids": null
+							}
+						},
+						"pagination": {
+							"next_url": "/v1/layout/feed?&offset=13&limit=7&last_snippet_type=grid_container_vr&last_widget_type=category_grid&page_index=0&parent_name=homepage_v3&request_source=pull_to_refresh&selected_tab_name=homepage_v2_all&selected_tab_type=default&total_entities_processed=5",
+							"loader": {
+								"api_request_type": "PAGINATED",
+								"loading_error_state": "LOADING",
+								"loading_error_overlay_size_type": "FULL_SCREEN"
+							}
+						}
+					}
+				},
+				"type": "cache_page_v2"
+			}
+		],
+		"page_level_components": {
+			"sticky": {
+				"header_snippet_models": [
+					{
+						"snippet": {
+							"data": {
+								"corner_radius": 100,
+								"button_data": {
+									"type": "solid",
+									"text": "Back to top",
+									"color": {
+										"type": "white",
+										"tint": "500"
+									},
+									"bg_color": {
+										"type": "black",
+										"tint": "800"
+									},
+									"click_action": {
+										"type": "scroll_to_top"
+									}
+								},
+								"prefix_icon": {
+									"code": "e813",
+									"color": {
+										"type": "white",
+										"tint": "500"
+									}
+								}
+							},
+							"tracking": {
+								"widget_meta": {
+									"widget_id": "scroll-to-top"
+								},
+								"impression_map": {
+									"event_name": "Scroll To Top Shown"
+								},
+								"click_map": {
+									"event_name": "Scroll To Top Clicked"
+								},
+								"common_attributes": {
+									"widget_position": 1
+								}
+							},
+							"widget_type": "scroll_to_top_snippet",
+							"layout_config": {
+								"spacing": "0,0,0,0"
+							}
+						},
+						"layout_config": {
+							"position": "BOTTOM",
+							"bg_color": {}
+						}
+					}
+				],
+				"footer_snippet_models": [
+					{
+						"snippet": {
+							"data": {
+								"enable_animation": true,
+								"item_remove_lottie_url": "https://cdn.grofers.com/assets/ui/cart_strip_item_remove_lottie.json",
+								"click_action": {
+									"blinkit_deeplink": {
+										"url": "grofers://cart"
+									},
+									"type": "blinkit_deeplink"
+								}
+							},
+							"tracking": {
+								"widget_meta": {
+									"widget_id": "cart-strip-v3"
+								},
+								"impression_map": {
+									"event_name": "Cart Footer Strip Shown"
+								},
+								"click_map": {
+									"event_name": "Cart Footer Strip Clicked"
+								},
+								"entry_source_map": {
+									"entry_source_id": "cart-strip-v3"
+								},
+								"common_attributes": {
+									"widget_position": 1
+								},
+								"interactions_map": {
+									"BUTTON_CTA": {
+										"event_source_identifier": "BUTTON_CTA"
+									},
+									"CHECKOUT_STRIP": {
+										"event_source_identifier": "CHECKOUT_STRIP"
+									}
+								}
+							},
+							"widget_type": "cart_strip_v3_vr",
+							"layout_config": {
+								"spacing": "0,0,0,0"
+							}
+						},
+						"layout_config": null
+					},
+					{
+						"snippet": {
+							"data": {
+								"bg_color_hex": "#F8F9FC",
+								"top_radius": 8,
+								"elevation": 8,
+								"height": 62
+							},
+							"widget_type": "multiple_offer_strip_snippet_wrapper",
+							"layout_config": {
+								"spacing": "0,0,0,0"
+							}
+						},
+						"layout_config": null
+					}
+				]
+			},
+			"toolbar_config": {
+				"scroll_data": {
+					"minimum_scroll_index": 0,
+					"status_bar_config": {
+						"end_color": {
+							"theme_bucket": {
+								"token": "color.surface.accent"
+							}
+						},
+						"start_color": {
+							"theme_bucket": {
+								"token": "color.surface.yellow.dark"
+							}
+						}
+					}
+				},
+				"style": {
+					"theme": "DEFAULT",
+					"type": "FULL_SCREEN"
+				}
+			}
+		},
+		"page_config": {
+			"swipe_to_refresh_enabled": true,
+			"cache_config": {
+				"scope": "GLOBAL",
+				"storage_type": "non_volatile"
+			}
+		},
+		"subscribers": {
+			"ETA": {
+				"common_actions": [
+					{
+						"type": "update_partial_snippet_data",
+						"update_partial_snippet_data": {
+							"type": "update_snippet_loading_state",
+							"update_snippet_loading_state": {
+								"identity": {
+									"id": "container_item::0"
+								},
+								"is_loading": true
+							}
+						}
+					},
+					{
+						"fetch_api": {
+							"url": "v1/actions/refresh_homepage?selected_tab_type=default",
+							"type": "POST",
+							"extra_params": {
+								"send_updated_pt_state": true,
+								"snippet_ids_to_refresh": [
+									{
+										"id": "pt_tab_container"
+									}
+								]
+							},
+							"failure_actions": [
+								{
+									"type": "update_partial_snippet_data",
+									"update_partial_snippet_data": {
+										"type": "update_snippet_loading_state",
+										"update_snippet_loading_state": {
+											"identity": {
+												"id": "container_item::0"
+											},
+											"is_loading": false
+										}
+									}
+								}
+							]
+						},
+						"type": "fetch_api"
+					}
+				]
+			}
+		}
+	},
+	"postback_params": {
+		"has_postback_params": true,
+		"monet_asset_ids": {
+			"masthead_ids": null,
+			"masthead_video_ids": null,
+			"homepage_ids": null,
+			"product_shelf_ids": null,
+			"brand_shelf_ids": null,
+			"kvi_highlight_ids": null,
+			"trending_offers_ids": null,
+			"must_try_grid_ids": null,
+			"brand_spotlight_ids": null
+		},
+		"personalised_infinite_asset": {
+			"asset_name": "your_collections_v2",
+			"is_scrolling_required": true,
+			"offset": 0,
+			"size": 18,
+			"total_size": 0,
+			"carousal_id": ""
+		},
+		"visible_usecase_widget_placeholder_ids": null,
+		"visual_hooks": {
+			"visual_hook_ids": null
+		}
+	}
+}

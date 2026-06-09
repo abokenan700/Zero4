@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="utf-8"?>
+<merge
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+    <View
+        android:id="@id/backgroundColorView"
+        android:background="@color/color_black_alpha_forty_four"
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent" />
+    <com.zomato.ui.atomiclib.atom.ZRoundedImageView
+        android:layout_gravity="center_horizontal"
+        android:id="@id/imageView"
+        android:layout_width="@dimen/size_120"
+        android:layout_height="@dimen/size_140"
+        app:cornerRadius="@dimen/sushi_corner_radius_large" />
+    <com.zomato.ui.atomiclib.animation.ZLottieAnimationView
+        android:layout_gravity="center_horizontal"
+        android:id="@id/lottieAnimationView"
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        app:lottie_autoPlay="false"
+        app:lottie_loop="false"
+        app:lottie_speed="1.6" />
+</merge>

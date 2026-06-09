@@ -1,0 +1,90 @@
+<?xml version="1.0" encoding="utf-8"?>
+<merge
+    android:layout_width="fill_parent"
+    android:layout_height="wrap_content"
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+    <androidx.constraintlayout.widget.Guideline
+        android:orientation="vertical"
+        android:id="@id/guideline_start"
+        android:layout_width="0.0dip"
+        android:layout_height="0.0dip"
+        app:layout_constraintGuide_begin="@dimen/sushi_spacing_base" />
+    <androidx.constraintlayout.widget.Guideline
+        android:orientation="vertical"
+        android:id="@id/guideline_end"
+        android:layout_width="0.0dip"
+        android:layout_height="0.0dip"
+        app:layout_constraintGuide_end="@dimen/sushi_spacing_base" />
+    <androidx.constraintlayout.widget.Guideline
+        android:orientation="horizontal"
+        android:id="@id/guideline_top"
+        android:layout_width="0.0dip"
+        android:layout_height="0.0dip"
+        app:layout_constraintGuide_begin="@dimen/sushi_spacing_femto" />
+    <androidx.constraintlayout.widget.Guideline
+        android:orientation="horizontal"
+        android:id="@id/guideline_bottom"
+        android:layout_width="0.0dip"
+        android:layout_height="0.0dip"
+        app:layout_constraintGuide_end="@dimen/sushi_spacing_femto" />
+    <View
+        android:id="@id/gradient_view"
+        android:visibility="visible"
+        android:clickable="false"
+        android:layout_width="0.0dip"
+        android:layout_height="0.0dip"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+    <com.blinkit.commons.ui.ui.customviews.notchView.NotchView
+        android:id="@id/notch_view"
+        android:layout_width="0.0dip"
+        android:layout_height="0.0dip"
+        app:layout_constraintBottom_toBottomOf="@id/data_container"
+        app:layout_constraintEnd_toEndOf="@id/data_container"
+        app:layout_constraintStart_toStartOf="@id/data_container"
+        app:layout_constraintTop_toTopOf="@id/data_container" />
+    <LinearLayout
+        android:gravity="center_vertical"
+        android:orientation="horizontal"
+        android:id="@id/data_container"
+        android:layout_width="wrap_content"
+        android:layout_height="0.0dip"
+        android:layout_marginTop="@dimen/qd_padding_1"
+        android:paddingStart="@dimen/size_12"
+        android:paddingEnd="@dimen/size_24"
+        android:layout_marginEnd="@dimen/size14"
+        app:layout_constraintBottom_toBottomOf="@id/guideline_bottom"
+        app:layout_constraintEnd_toEndOf="@id/guideline_end"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="@id/guideline_start"
+        app:layout_constraintTop_toTopOf="@id/guideline_top">
+        <com.blinkit.blink.elements.ui.atoms.tag.BlinkitTagView
+            android:id="@id/include_badge"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/qd_padding_1" />
+        <View
+            android:id="@id/separator_view"
+            android:background="@color/black"
+            android:layout_width="0.5dip"
+            android:layout_height="fill_parent"
+            android:layout_marginLeft="@dimen/dimen_10"
+            android:layout_marginTop="@dimen/sushi_spacing_macro"
+            android:layout_marginRight="@dimen/dimen_10"
+            android:layout_marginBottom="@dimen/sushi_spacing_macro"
+            android:layout_marginHorizontal="@dimen/dimen_10"
+            android:layout_marginVertical="@dimen/sushi_spacing_macro" />
+        <com.blinkit.blink.elements.ui.atoms.tag.BlinkitTagView
+            android:id="@id/rating_star_view"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" />
+        <com.blinkit.commons.ui.ui.customviews.viewstub.LabeledProgressViewStub
+            android:id="@id/labeled_pb_view"
+            android:visibility="gone"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" />
+    </LinearLayout>
+</merge>

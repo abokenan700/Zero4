@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layer-list
+    xmlns:android="http://schemas.android.com/apk/res/android">
+    <item
+        android:gravity="top">
+        <shape
+            android:shape="rectangle">
+            <size
+                android:height="42.0dip" />
+            <gradient
+                android:startColor="@color/color_transparent"
+                android:endColor="@color/color_black_alpha_twenty_five"
+                android:angle="270.0" />
+        </shape>
+    </item>
+    <item
+        android:top="@dimen/sushi_spacing_extra">
+        <shape
+            android:shape="rectangle">
+            <solid
+                android:color="@color/sushi_white" />
+            <corners
+                android:topLeftRadius="@dimen/sushi_spacing_extra"
+                android:topRightRadius="@dimen/sushi_spacing_extra" />
+        </shape>
+    </item>
+</layer-list>

@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="utf-8"?>
+<merge
+    android:gravity="center"
+    android:orientation="horizontal"
+    android:layout_width="fill_parent"
+    android:layout_height="wrap_content"
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+    <View
+        android:id="@id/left_scallop"
+        android:background="@drawable/left_scallop_bg"
+        android:layout_width="@dimen/dimen_12"
+        android:layout_height="@dimen/size24" />
+    <com.zomato.ui.atomiclib.atom.ZSeparator
+        android:layout_gravity="center"
+        android:id="@id/separator"
+        android:layout_width="@dimen/dimen_0"
+        android:layout_height="@dimen/separator_height"
+        android:layout_marginLeft="@dimen/dimen_2"
+        android:layout_marginRight="@dimen/dimen_2"
+        android:layout_weight="1.0"
+        android:layout_marginHorizontal="@dimen/dimen_2"
+        app:zseparator_color="@color/sushi_red_500"
+        app:zseparator_type="DASHED" />
+    <View
+        android:id="@id/right_scallop"
+        android:background="@drawable/right_scallop_bg"
+        android:layout_width="@dimen/dimen_12"
+        android:layout_height="@dimen/size24" />
+</merge>

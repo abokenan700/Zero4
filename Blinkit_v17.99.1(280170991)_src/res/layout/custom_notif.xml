@@ -1,0 +1,75 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    android:theme="@style/Theme.MaterialComponents.DayNight"
+    android:gravity="center"
+    android:orientation="vertical"
+    android:layout_width="fill_parent"
+    android:layout_height="wrap_content"
+    xmlns:android="http://schemas.android.com/apk/res/android">
+    <TextView
+        android:textSize="14.0sp"
+        android:textStyle="bold"
+        android:textColor="?android:textColorPrimary"
+        android:id="@id/title"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Pick up in 1 min"
+        android:layout_alignParentTop="true"
+        android:layout_toStartOf="@id/otp_container"
+        android:layout_alignParentStart="true" />
+    <TextView
+        android:textSize="12.0sp"
+        android:textColor="?android:textColorPrimary"
+        android:id="@id/subtitle"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="-2.0dip"
+        android:text="Leave now to meet RAM"
+        android:layout_below="@id/title"
+        android:layout_toStartOf="@id/otp_container"
+        android:layout_alignParentStart="true" />
+    <LinearLayout
+        android:layout_gravity="center"
+        android:orientation="vertical"
+        android:id="@id/progress_bar_container"
+        android:layout_width="wrap_content"
+        android:layout_height="@dimen/margin_16"
+        android:layout_below="@id/subtitle"
+        android:layout_toStartOf="@id/otp_container"
+        android:layout_alignParentStart="true" />
+    <LinearLayout
+        android:layout_gravity="center"
+        android:orientation="vertical"
+        android:id="@id/otp_container"
+        android:background="@drawable/rounded_grey_eeeeee_8dp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerVertical="true"
+        android:layout_marginStart="@dimen/dimen_12"
+        android:layout_alignParentEnd="true"
+        android:backgroundTint="@color/tokenised_green_600">
+        <TextView
+            android:textSize="10.0sp"
+            android:textStyle="bold"
+            android:textColor="@color/white"
+            android:layout_gravity="center"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/dimen_4"
+            android:text="OTP" />
+        <TextView
+            android:textSize="14.0sp"
+            android:textStyle="bold"
+            android:textColor="@color/white"
+            android:id="@id/otp_text"
+            android:paddingLeft="@dimen/sushi_spacing_macro"
+            android:paddingRight="@dimen/sushi_spacing_macro"
+            android:paddingBottom="@dimen/sushi_spacing_micro"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="-2.0dip"
+            android:layout_marginBottom="-2.0dip"
+            android:letterSpacing="0.2"
+            android:paddingHorizontal="@dimen/sushi_spacing_macro" />
+    </LinearLayout>
+</RelativeLayout>

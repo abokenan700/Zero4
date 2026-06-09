@@ -1,0 +1,125 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout
+    android:id="@id/adcb_container"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+    <ScrollView
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content">
+        <LinearLayout
+            android:orientation="vertical"
+            android:paddingTop="@dimen/dimen_10"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:paddingStart="@dimen/sushi_spacing_base"
+            android:paddingEnd="@dimen/sushi_spacing_base">
+            <com.zomato.ui.atomiclib.atom.ZTextView
+                android:textSize="@dimen/sushi_textsize_300"
+                android:id="@id/subtitle"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content" />
+            <LinearLayout
+                android:orientation="horizontal"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/dimen_15">
+                <com.zomato.ui.atomiclib.atom.ZTextView
+                    android:textSize="@dimen/sushi_textsize_300"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/payments_balance" />
+                <com.zomato.ui.atomiclib.atom.ZTextView
+                    android:textSize="@dimen/sushi_textsize_300"
+                    android:id="@id/display_balance"
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:fontFamily="@font/okra_semibold"
+                    android:layout_marginStart="@dimen/size_5" />
+            </LinearLayout>
+            <LinearLayout
+                android:orientation="horizontal"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/size_40">
+                <LinearLayout
+                    android:orientation="vertical"
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1.0">
+                    <com.zomato.ui.atomiclib.atom.ZTextView
+                        android:textSize="@dimen/sushi_textsize_300"
+                        android:id="@id/touch_points_being_used"
+                        android:layout_width="fill_parent"
+                        android:layout_height="wrap_content"
+                        android:fontFamily="@font/okra_semibold" />
+                    <com.zomato.ui.atomiclib.atom.ZTextView
+                        android:textSize="@dimen/sushi_textsize_100"
+                        android:id="@id/touch_point_section_message"
+                        android:layout_width="fill_parent"
+                        android:layout_height="wrap_content"
+                        android:fontFamily="@font/okra_medium" />
+                </LinearLayout>
+                <LinearLayout
+                    android:orientation="vertical"
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1.0">
+                    <com.zomato.ui.atomiclib.atom.ZTextView
+                        android:textSize="@dimen/sushi_textsize_300"
+                        android:gravity="end"
+                        android:id="@id/card_being_used"
+                        android:layout_width="fill_parent"
+                        android:layout_height="wrap_content"
+                        android:fontFamily="@font/okra_semibold" />
+                    <com.zomato.ui.atomiclib.atom.ZTextView
+                        android:textSize="@dimen/sushi_textsize_100"
+                        android:gravity="end"
+                        android:id="@id/card_section_message"
+                        android:layout_width="fill_parent"
+                        android:layout_height="wrap_content"
+                        android:fontFamily="@font/okra_medium" />
+                </LinearLayout>
+            </LinearLayout>
+            <SeekBar
+                android:id="@id/touch_points_progress"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:progressTint="?colorAccent"
+                android:progressBackgroundTint="@color/sushi_black"
+                android:progressBackgroundTintMode="add"
+                android:thumbTint="?colorAccent" />
+            <com.zomato.ui.atomiclib.atom.ZTextView
+                android:textSize="@dimen/sushi_textsize_100"
+                android:textColor="@color/sushi_grey_500"
+                android:id="@id/min_limit_message"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/size_5"
+                android:fontFamily="@font/okra_medium" />
+            <com.zomato.ui.atomiclib.atom.ZTextView
+                android:textSize="@dimen/sushi_textsize_100"
+                android:id="@id/terms"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/size_30" />
+            <com.zomato.ui.atomiclib.atom.ZButton
+                android:id="@id/proceed_button"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/dimen_15"
+                android:text="@string/payments_proceed"
+                app:buttonColor="?colorAccent" />
+        </LinearLayout>
+    </ScrollView>
+    <androidx.fragment.app.FragmentContainerView
+        android:id="@id/terms_fragment"
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent" />
+    <payments.zomato.paymentkit.ui.molecules.PaymentsNoContentView
+        android:id="@id/content_state"
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        app:paymentsNoContentState="loading" />
+</FrameLayout>

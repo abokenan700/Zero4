@@ -1,0 +1,3067 @@
+{
+	"is_success": true,
+	"response": {
+		"snippets": [
+			{
+				"data": {
+					"title": {
+						"text": "Add Details",
+						"color": {
+							"theme_bucket": {
+								"token": "color.text.black"
+							}
+						},
+						"font": {
+							"size": "500",
+							"weight": "extrabold"
+						}
+					},
+					"title_spacing": "0,0,0,2",
+					"subtitle": {
+						"text": "#screen_subheading#",
+						"color": {
+							"theme_bucket": {
+								"token": "color.text.grey"
+							}
+						},
+						"font": {
+							"size": "200",
+							"weight": "semibold"
+						},
+						"number_of_lines": 2
+					},
+					"padding": "0,0,0,0",
+					"card_bg_color": {
+						"theme_bucket": {
+							"token": "color.background.secondary"
+						}
+					}
+				},
+				"widget_type": "image_text_vr_type_header",
+				"layout_config": {
+					"outer_bg_color": "#F4F6FB",
+					"spacing": "12,12,12,12"
+				}
+			},
+			{
+				"data": {
+					"top_radius": 8,
+					"title": {
+						"text": "Select the theme",
+						"color": {
+							"theme_bucket": {
+								"token": "color.text.black"
+							}
+						},
+						"font": {
+							"size": "500",
+							"weight": "bold"
+						},
+						"number_of_lines": 1
+					},
+					"padding": "12,12,12,12",
+					"card_bg_color": {
+						"theme_bucket": {
+							"token": "color.surface.primary"
+						}
+					}
+				},
+				"widget_type": "image_text_vr_type_header",
+				"layout_config": {
+					"outer_bg_color": "#F4F6FB",
+					"spacing": "12,0,12,0"
+				}
+			},
+			{
+				"data": {
+					"items": [
+						{
+							"data": {
+								"media_content": {
+									"media_type": "image",
+									"image": {
+										"url": "#image_url#",
+										"aspect_ratio": -1111
+									}
+								},
+								"is_selected": true,
+								"should_wrap_image_view": true
+							},
+							"tracking": {
+								"widget_meta": {
+									"child_widget_id": "#template_id#",
+									"child_widget_name": "Carousel Image",
+									"child_widget_tracking_id": "#template_id#"
+								},
+								"impression_map": {
+									"event_name": "Carousel Banner Shown"
+								},
+								"entry_source_map": {
+									"entry_source_child_id": "#template_id#",
+									"entry_source_child_name": "Carousel Image",
+									"entry_source_child_position": -2222,
+									"entry_source_child_tracking_id": "#template_id#",
+									"entry_source_position": 1
+								},
+								"common_attributes": {
+									"child_widget_position": -2222,
+									"is_child_widget": true,
+									"widget_position": 1
+								}
+							},
+							"widget_type": "v2_image_text_snippet_type_68"
+						}
+					],
+					"is_cyclic": true,
+					"layout_data": {
+						"snippet_type": "carousel",
+						"layout_type": "grid",
+						"section_count": 1,
+						"paging_config": {
+							"should_hide_indicator": true
+						}
+					},
+					"visible_cards": 1.25,
+					"bg_color": {
+						"theme_bucket": {
+							"token": "color.surface.primary"
+						}
+					},
+					"rules": [
+						{
+							"type": "selection_rule",
+							"data": {
+								"is_selected": false
+							}
+						}
+					]
+				},
+				"widget_type": "b_carousel_snippet",
+				"layout_config": {
+					"spacing": "12,0,12,0"
+				}
+			},
+			{
+				"data": {
+					"bottom_radius": 8,
+					"bg_color": {
+						"theme_bucket": {
+							"token": "color.surface.primary"
+						}
+					},
+					"card_bg_color": {
+						"theme_bucket": {
+							"token": "color.surface.primary"
+						}
+					},
+					"title": {
+						"text": "E-Gift card powered by Gyftr X",
+						"color": {
+							"theme_bucket": {
+								"token": "color.text.grey"
+							}
+						},
+						"font": {
+							"size": "050",
+							"weight": "medium"
+						},
+						"number_of_lines": 1,
+						"alignment": "center"
+					},
+					"clickable_title_suffix": {
+						"text_data": {},
+						"markdown_data": {
+							"dash_config": {}
+						},
+						"prefix_image": {
+							"url": "https://cdn.grofers.com/layout-engine/v2/2024-12/blinkit_gyfter_logo/light.png",
+							"aspect_ratio": 3.62,
+							"height": 8
+						}
+					},
+					"bg_config": {
+						"bottom_radius": 12
+					},
+					"animation_type": "NONE"
+				},
+				"widget_type": "image_text_vr_type_footer_v2",
+				"layout_config": {
+					"spacing": "12,0,12,0"
+				}
+			},
+			{
+				"data": {
+					"title": {
+						"text": "",
+						"color": {
+							"theme_bucket": {
+								"token": "color.text.black"
+							}
+						},
+						"font": {
+							"size": "200",
+							"weight": "semibold"
+						},
+						"number_of_lines": 1
+					},
+					"ui_state_map": {
+						"non_filled_expanded": {
+							"data": {
+								"data": {
+									"identity": {
+										"id": "receiver_add_widget_0"
+									},
+									"state": "non_filled_expanded",
+									"title": {
+										"text": "#card_title#",
+										"color": {
+											"theme_bucket": {
+												"token": "color.text.black"
+											}
+										},
+										"font": {
+											"size": "300",
+											"weight": "medium"
+										},
+										"number_of_lines": 1
+									},
+									"layout_type": "grid",
+									"subtitle": {
+										"text": "#card_subtitle#",
+										"color": {
+											"theme_bucket": {
+												"token": "color.text.grey"
+											}
+										},
+										"font": {
+											"size": "100",
+											"weight": "medium"
+										}
+									},
+									"bg_color": {
+										"theme_bucket": {
+											"token": "color.surface.primary"
+										}
+									},
+									"top_radius": 8,
+									"padding": "12,12,12,0"
+								},
+								"widget_type": "receiver_product_card_snippet",
+								"layout_config": {
+									"spacing": "12,12,12,0"
+								}
+							},
+							"dependent_snippets": [
+								{
+									"data": {
+										"type": "line_end_to_end",
+										"color": {
+											"theme_bucket": {
+												"token": "color.border.grey.light"
+											}
+										}
+									},
+									"identity": {
+										"id": "1_receiver_detail_snippet_1"
+									},
+									"widget_type": "snippet_separator_vr",
+									"layout_config": {
+										"spacing": "12,0,12,0"
+									}
+								},
+								{
+									"data": {
+										"id": "check_box",
+										"title": {
+											"text": "Who you are ordering for?",
+											"color": {
+												"theme_bucket": {
+													"token": "color.text.black"
+												}
+											},
+											"font": {
+												"size": "300",
+												"weight": "semibold"
+											}
+										},
+										"ui_state_map": {
+											"self": {
+												"dependent_snippets": [
+													{
+														"data": {
+															"identity": {
+																"id": "receiver_detail_name"
+															},
+															"title": {
+																"text": "Receiver's Name*",
+																"color": {
+																	"theme_bucket": {
+																		"token": "color.text.grey"
+																	}
+																},
+																"font": {
+																	"size": "100",
+																	"weight": "medium"
+																}
+															},
+															"placeholder": {
+																"text": "Receiver's Name*",
+																"color": {
+																	"theme_bucket": {
+																		"token": "color.text.grey"
+																	}
+																},
+																"font": {
+																	"size": "300",
+																	"weight": "regular"
+																}
+															},
+															"clear_icon": {
+																"code": "e93d",
+																"color": {
+																	"tint": "400",
+																	"type": "grey"
+																},
+																"font_size": "700"
+															},
+															"border": {
+																"width": 1,
+																"colors": [
+																	{
+																		"tint": "300",
+																		"type": "grey"
+																	}
+																]
+															},
+															"active_border": {
+																"width": 1,
+																"colors": [
+																	{
+																		"theme_bucket": {
+																			"token": "color.border.grey.mid"
+																		}
+																	}
+																]
+															},
+															"invalid_input": {
+																"title": {
+																	"text": "Receiver's Name*",
+																	"color": {
+																		"theme_bucket": {
+																			"token": "color.text.grey"
+																		}
+																	},
+																	"font": {
+																		"size": "100",
+																		"weight": "medium"
+																	}
+																},
+																"border": {
+																	"width": 1,
+																	"colors": [
+																		{
+																			"tint": "600",
+																			"type": "red"
+																		}
+																	]
+																},
+																"warning_text": {
+																	"text": "Please enter a valid name",
+																	"color": {
+																		"tint": "600",
+																		"type": "red"
+																	},
+																	"font": {
+																		"size": "100",
+																		"weight": "medium"
+																	}
+																}
+															},
+															"form_id": "-3333_receiver_bottom_sheet",
+															"rules": [
+																{
+																	"type": "length_rule",
+																	"data": {
+																		"min_length": 1,
+																		"max_length": 30
+																	}
+																}
+															],
+															"text": {
+																"color": {
+																	"tint": "900",
+																	"type": "grey"
+																},
+																"font": {
+																	"size": "300",
+																	"weight": "semibold"
+																}
+															},
+															"layout_config": {
+																"padding": "12,0,12,12",
+																"stroke_color": {
+																	"tint": "700",
+																	"type": "grey"
+																}
+															},
+															"default_end_icon_visibility": "invisible",
+															"bg_color": {
+																"theme_bucket": {
+																	"token": "color.surface.primary"
+																}
+															},
+															"outer_bg_color": "#FFFFFF",
+															"padding": "12,0,12,0"
+														},
+														"tracking": {
+															"click_map": {
+																"event_name": "INPUT_TEXT_SNIPPET_CLICKED"
+															},
+															"entry_source_map": {
+																"entry_source_position": 1
+															},
+															"common_attributes": {
+																"click_source": "receiver_name",
+																"widget_position": 1
+															}
+														},
+														"widget_type": "text_input_layout_snippet",
+														"layout_config": {
+															"spacing": "12,0,12,0"
+														}
+													},
+													{
+														"data": {
+															"identity": {
+																"id": "receiver_detail_phone"
+															},
+															"max_text_length": 10,
+															"title": {
+																"text": "Your Number (WhatsApp)*",
+																"color": {
+																	"tint": "900",
+																	"type": "grey"
+																},
+																"font": {
+																	"size": "100",
+																	"weight": "medium"
+																}
+															},
+															"prefix_label": {
+																"text": "+91",
+																"color": {
+																	"tint": "900",
+																	"type": "grey"
+																},
+																"font": {
+																	"size": "300",
+																	"weight": "semibold"
+																}
+															},
+															"placeholder": {
+																"text": "Your Number (WhatsApp)*",
+																"color": {
+																	"tint": "500",
+																	"type": "grey"
+																},
+																"font": {
+																	"size": "300",
+																	"weight": "regular"
+																}
+															},
+															"input_type": "numeric",
+															"right_icon": {
+																"code": "ec53",
+																"color": {
+																	"theme_bucket": {
+																		"token": "color.text.black"
+																	}
+																},
+																"font_size": "700",
+																"click_action": {
+																	"interaction_id": "PHONE_DIRECTORY",
+																	"type": "fetch_contacts"
+																}
+															},
+															"clear_icon": {
+																"code": "e93d",
+																"color": {
+																	"tint": "400",
+																	"type": "grey"
+																},
+																"font_size": "700"
+															},
+															"border": {
+																"width": 1,
+																"colors": [
+																	{
+																		"tint": "300",
+																		"type": "grey"
+																	}
+																]
+															},
+															"active_border": {
+																"width": 1,
+																"colors": [
+																	{
+																		"tint": "900",
+																		"type": "grey"
+																	}
+																]
+															},
+															"invalid_input": {
+																"title": {
+																	"text": "Your phone number*",
+																	"color": {
+																		"tint": "500",
+																		"type": "grey"
+																	},
+																	"font": {
+																		"size": "100",
+																		"weight": "medium"
+																	}
+																},
+																"border": {
+																	"width": 1,
+																	"colors": [
+																		{
+																			"tint": "600",
+																			"type": "red"
+																		}
+																	]
+																},
+																"warning_text": {
+																	"text": "Please enter a valid phone number",
+																	"color": {
+																		"tint": "600",
+																		"type": "red"
+																	},
+																	"font": {
+																		"size": "100",
+																		"weight": "medium"
+																	}
+																}
+															},
+															"form_id": "-3333_receiver_bottom_sheet",
+															"rules": [
+																{
+																	"type": "length_rule",
+																	"data": {
+																		"min_length": 10,
+																		"max_length": 10
+																	}
+																},
+																{
+																	"type": "regex",
+																	"data": {
+																		"value": "[1-9][0-9]{9}"
+																	}
+																}
+															],
+															"text": {
+																"color": {
+																	"tint": "900",
+																	"type": "grey"
+																},
+																"font": {
+																	"size": "300",
+																	"weight": "semibold"
+																}
+															},
+															"layout_config": {
+																"padding": "12,0,12,12",
+																"stroke_color": {
+																	"tint": "700",
+																	"type": "grey"
+																}
+															},
+															"bg_color": {
+																"theme_bucket": {
+																	"token": "color.surface.primary"
+																}
+															},
+															"outer_bg_color": "#FFFFFF"
+														},
+														"tracking": {
+															"click_map": {
+																"event_name": "INPUT_TEXT_SNIPPET_CLICKED"
+															},
+															"entry_source_map": {
+																"entry_source_position": 1
+															},
+															"common_attributes": {
+																"click_source": "phone",
+																"widget_position": 1
+															}
+														},
+														"widget_type": "text_input_layout_snippet",
+														"layout_config": {
+															"spacing": "12,0,12,0"
+														}
+													},
+													{
+														"data": {
+															"identity": {
+																"id": "receiver_detail_email"
+															},
+															"title": {
+																"text": "Your Email ID (Optional)",
+																"color": {
+																	"tint": "900",
+																	"type": "grey"
+																},
+																"font": {
+																	"size": "100",
+																	"weight": "medium"
+																}
+															},
+															"placeholder": {
+																"text": "Your Email ID (Optional)",
+																"color": {
+																	"tint": "500",
+																	"type": "grey"
+																},
+																"font": {
+																	"size": "300",
+																	"weight": "regular"
+																}
+															},
+															"clear_icon": {
+																"code": "e93d",
+																"color": {
+																	"tint": "400",
+																	"type": "grey"
+																},
+																"font_size": "700"
+															},
+															"border": {
+																"width": 1,
+																"colors": [
+																	{
+																		"tint": "300",
+																		"type": "grey"
+																	}
+																]
+															},
+															"active_border": {
+																"width": 1,
+																"colors": [
+																	{
+																		"tint": "900",
+																		"type": "grey"
+																	}
+																]
+															},
+															"invalid_input": {
+																"title": {
+																	"text": "Your Email ID",
+																	"color": {
+																		"tint": "500",
+																		"type": "grey"
+																	},
+																	"font": {
+																		"size": "100",
+																		"weight": "medium"
+																	}
+																},
+																"border": {
+																	"width": 1,
+																	"colors": [
+																		{
+																			"tint": "600",
+																			"type": "red"
+																		}
+																	]
+																},
+																"warning_text": {
+																	"text": "Please enter a valid email id",
+																	"color": {
+																		"tint": "600",
+																		"type": "red"
+																	},
+																	"font": {
+																		"size": "100",
+																		"weight": "medium"
+																	}
+																}
+															},
+															"form_id": "-3333_receiver_bottom_sheet",
+															"rules": [
+																{
+																	"type": "regex",
+																	"data": {
+																		"value": "^$|^[a-zA-Z0-9._%+-]+@[a-zA-Z0-9.-]+\\.[a-zA-Z]{2,}$"
+																	}
+																}
+															],
+															"text": {
+																"color": {
+																	"tint": "900",
+																	"type": "grey"
+																},
+																"font": {
+																	"size": "300",
+																	"weight": "semibold"
+																}
+															},
+															"layout_config": {
+																"padding": "12,0,12,0",
+																"stroke_color": {
+																	"tint": "700",
+																	"type": "grey"
+																}
+															},
+															"bg_color": {
+																"theme_bucket": {
+																	"token": "color.surface.primary"
+																}
+															},
+															"default_end_icon_visibility": "invisible",
+															"outer_bg_color": "#FFFFFF",
+															"padding": "12,0,12,0"
+														},
+														"tracking": {
+															"click_map": {
+																"event_name": "INPUT_TEXT_SNIPPET_CLICKED"
+															},
+															"entry_source_map": {
+																"entry_source_position": 1
+															},
+															"common_attributes": {
+																"click_source": "receiver_name",
+																"widget_position": 1
+															}
+														},
+														"widget_type": "text_input_layout_snippet",
+														"layout_config": {
+															"spacing": "12,0,12,0"
+														}
+													},
+													{
+														"data": {
+															"type": "line",
+															"color": {
+																"theme_bucket": {
+																	"token": "color.surface.primary"
+																}
+															},
+															"size": "small",
+															"identity": {
+																"id": "snippet_separator"
+															},
+															"height": 12
+														},
+														"widget_type": "separator_v2_data",
+														"layout_config": {
+															"spacing": "12,0,12,0"
+														}
+													},
+													{
+														"data": {
+															"type": "line",
+															"color": {
+																"theme_bucket": {
+																	"token": "color.border.grey.light"
+																}
+															},
+															"size": "small",
+															"identity": {
+																"id": "1_receiver_detail_snippet_6"
+															},
+															"bg_color": {
+																"tint": "050",
+																"type": "indigo"
+															},
+															"height": 1
+														},
+														"widget_type": "separator_v2_data",
+														"layout_config": {
+															"spacing": "12,0,12,0"
+														}
+													},
+													{
+														"data": {
+															"identity": {
+																"id": "1_receiver_detail_snippet_7"
+															},
+															"title_layout_config": "0,0,0,0",
+															"title": {
+																"color": {
+																	"theme_bucket": {
+																		"token": "color.text.grey"
+																	}
+																},
+																"text": "Apply receiver details to all",
+																"number_of_lines": 1,
+																"font": {
+																	"weight": "medium",
+																	"size": "200"
+																}
+															},
+															"button_position": "LEFT",
+															"is_checked": false,
+															"bottom_radius": 12,
+															"bg_color": "#FFFFFF",
+															"button_type": "CHECK_BOX",
+															"checked_click_actions": [
+																{
+																	"update_snippet_list": {
+																		"snippet_list_updater_ids": [
+																			"update_attributes_1",
+																			"remove_attributes_1",
+																			"remove_attributes_2"
+																		]
+																	},
+																	"type": "update_snippet_list"
+																}
+															],
+															"layout_config": {
+																"padding_top": 10,
+																"padding_right": 0,
+																"padding_left": 6,
+																"padding_bottom": 10,
+																"margin_left": 12,
+																"margin_right": 12,
+																"margin_top": 0,
+																"margin_bottom": 0
+															}
+														},
+														"widget_type": "compound_button_type_image_text",
+														"layout_config": {
+															"spacing": "0,0,0,0"
+														}
+													}
+												],
+												"dependent_actions": [
+													{
+														"type": "remove_snippets",
+														"remove_snippets": {
+															"snippet_ids_to_remove": [
+																"remove_name"
+															]
+														}
+													},
+													{
+														"type": "update_snippets",
+														"update_snippets": {
+															"snippet": {
+																"data": {
+																	"identity": {
+																		"id": "update_phone"
+																	},
+																	"max_text_length": 10,
+																	"title": {
+																		"text": "Your Number (WhatsApp)*",
+																		"color": {
+																			"theme_bucket": {
+																				"token": "color.text.grey"
+																			}
+																		},
+																		"font": {
+																			"size": "100",
+																			"weight": "medium"
+																		}
+																	},
+																	"prefix_label": {
+																		"text": "+91",
+																		"color": {
+																			"theme_bucket": {
+																				"token": "color.text.grey"
+																			}
+																		},
+																		"font": {
+																			"size": "300",
+																			"weight": "semibold"
+																		}
+																	},
+																	"placeholder": {
+																		"text": "Your Number (WhatsApp)*",
+																		"color": {
+																			"theme_bucket": {
+																				"token": "color.text.grey"
+																			}
+																		},
+																		"font": {
+																			"size": "300",
+																			"weight": "regular"
+																		}
+																	},
+																	"input_type": "numeric",
+																	"right_icon": {
+																		"code": "ec53",
+																		"color": {
+																			"theme_bucket": {
+																				"token": "color.text.black"
+																			}
+																		},
+																		"font_size": "700",
+																		"click_action": {
+																			"interaction_id": "PHONE_DIRECTORY",
+																			"type": "fetch_contacts"
+																		}
+																	},
+																	"clear_icon": {
+																		"code": "e93d",
+																		"color": {
+																			"tint": "400",
+																			"type": "grey"
+																		},
+																		"font_size": "700"
+																	},
+																	"border": {
+																		"width": 1,
+																		"colors": [
+																			{
+																				"tint": "300",
+																				"type": "grey"
+																			}
+																		]
+																	},
+																	"active_border": {
+																		"width": 1,
+																		"colors": [
+																			{
+																				"tint": "900",
+																				"type": "grey"
+																			}
+																		]
+																	},
+																	"invalid_input": {
+																		"title": {
+																			"text": "Your phone number*",
+																			"color": {
+																				"tint": "500",
+																				"type": "grey"
+																			},
+																			"font": {
+																				"size": "100",
+																				"weight": "medium"
+																			}
+																		},
+																		"border": {
+																			"width": 1,
+																			"colors": [
+																				{
+																					"tint": "600",
+																					"type": "red"
+																				}
+																			]
+																		},
+																		"warning_text": {
+																			"text": "Please enter a valid phone number",
+																			"color": {
+																				"tint": "600",
+																				"type": "red"
+																			},
+																			"font": {
+																				"size": "100",
+																				"weight": "medium"
+																			}
+																		}
+																	},
+																	"form_id": "-3333_receiver_bottom_sheet",
+																	"rules": [
+																		{
+																			"type": "length_rule",
+																			"data": {
+																				"min_length": 10,
+																				"max_length": 10
+																			}
+																		},
+																		{
+																			"type": "regex",
+																			"data": {
+																				"value": "[1-9][0-9]{9}"
+																			}
+																		}
+																	],
+																	"text": {
+																		"color": {
+																			"theme_bucket": {
+																				"token": "color.text.grey"
+																			}
+																		},
+																		"font": {
+																			"size": "300",
+																			"weight": "semibold"
+																		}
+																	},
+																	"layout_config": {
+																		"padding": "12,0,12,12",
+																		"stroke_color": {
+																			"tint": "700",
+																			"type": "grey"
+																		}
+																	},
+																	"bg_color": {
+																		"theme_bucket": {
+																			"token": "color.surface.primary"
+																		}
+																	},
+																	"outer_bg_color": "#FFFFFF"
+																},
+																"widget_type": "text_input_layout_snippet",
+																"layout_config": {
+																	"spacing": "12,0,12,0"
+																}
+															},
+															"should_execute_post_animation": true
+														}
+													},
+													{
+														"type": "update_snippets",
+														"update_snippets": {
+															"snippet": {
+																"data": {
+																	"identity": {
+																		"id": "update_email"
+																	},
+																	"title": {
+																		"text": "Your Email ID (Optional)",
+																		"color": {
+																			"theme_bucket": {
+																				"token": "color.text.grey"
+																			}
+																		},
+																		"font": {
+																			"size": "100",
+																			"weight": "medium"
+																		}
+																	},
+																	"placeholder": {
+																		"text": "Your Email ID (Optional)",
+																		"color": {
+																			"theme_bucket": {
+																				"token": "color.text.grey"
+																			}
+																		},
+																		"font": {
+																			"size": "300",
+																			"weight": "regular"
+																		}
+																	},
+																	"clear_icon": {
+																		"code": "e93d",
+																		"color": {
+																			"tint": "400",
+																			"type": "grey"
+																		},
+																		"font_size": "700"
+																	},
+																	"border": {
+																		"width": 1,
+																		"colors": [
+																			{
+																				"tint": "300",
+																				"type": "grey"
+																			}
+																		]
+																	},
+																	"active_border": {
+																		"width": 1,
+																		"colors": [
+																			{
+																				"tint": "900",
+																				"type": "grey"
+																			}
+																		]
+																	},
+																	"invalid_input": {
+																		"title": {
+																			"text": "Your Email ID",
+																			"color": {
+																				"tint": "500",
+																				"type": "grey"
+																			},
+																			"font": {
+																				"size": "100",
+																				"weight": "medium"
+																			}
+																		},
+																		"border": {
+																			"width": 1,
+																			"colors": [
+																				{
+																					"tint": "600",
+																					"type": "red"
+																				}
+																			]
+																		},
+																		"warning_text": {
+																			"text": "Please enter a valid email id",
+																			"color": {
+																				"tint": "600",
+																				"type": "red"
+																			},
+																			"font": {
+																				"size": "100",
+																				"weight": "medium"
+																			}
+																		}
+																	},
+																	"form_id": "-3333_receiver_bottom_sheet",
+																	"rules": [
+																		{
+																			"type": "regex",
+																			"data": {
+																				"value": "^$|^[a-zA-Z0-9._%+-]+@[a-zA-Z0-9.-]+\\.[a-zA-Z]{2,}$"
+																			}
+																		}
+																	],
+																	"text": {
+																		"color": {
+																			"theme_bucket": {
+																				"token": "color.text.grey"
+																			}
+																		},
+																		"font": {
+																			"size": "300",
+																			"weight": "semibold"
+																		}
+																	},
+																	"layout_config": {
+																		"padding": "12,0,12,12",
+																		"stroke_color": {
+																			"tint": "700",
+																			"type": "grey"
+																		}
+																	},
+																	"bg_color": {
+																		"theme_bucket": {
+																			"token": "color.surface.primary"
+																		}
+																	},
+																	"outer_bg_color": "#FFFFFF",
+																	"padding": "12,0,12,0"
+																},
+																"tracking": {
+																	"click_map": {
+																		"event_name": "INPUT_TEXT_SNIPPET_CLICKED"
+																	},
+																	"entry_source_map": {
+																		"entry_source_position": 1
+																	},
+																	"common_attributes": {
+																		"click_source": "receiver_name",
+																		"widget_position": 1
+																	}
+																},
+																"widget_type": "text_input_layout_snippet",
+																"layout_config": {
+																	"spacing": "12,0,12,0"
+																}
+															},
+															"should_execute_post_animation": true
+														}
+													}
+												]
+											},
+											"someone_else": {
+												"dependend_snippets": [
+													{
+														"data": {
+															"identity": {
+																"id": "2_receiver_detail_snippet_4"
+															},
+															"title": {
+																"text": "Receiver's Name*",
+																"color": {
+																	"theme_bucket": {
+																		"token": "color.text.grey"
+																	}
+																},
+																"font": {
+																	"size": "100",
+																	"weight": "medium"
+																}
+															},
+															"placeholder": {
+																"text": "Receiver's Name*",
+																"color": {
+																	"theme_bucket": {
+																		"token": "color.text.grey"
+																	}
+																},
+																"font": {
+																	"size": "300",
+																	"weight": "regular"
+																}
+															},
+															"clear_icon": {
+																"code": "e93d",
+																"color": {
+																	"tint": "400",
+																	"type": "grey"
+																},
+																"font_size": "700"
+															},
+															"border": {
+																"width": 1,
+																"colors": [
+																	{
+																		"tint": "300",
+																		"type": "grey"
+																	}
+																]
+															},
+															"active_border": {
+																"width": 1,
+																"colors": [
+																	{
+																		"theme_bucket": {
+																			"token": "color.text.grey"
+																		}
+																	}
+																]
+															},
+															"invalid_input": {
+																"title": {
+																	"text": "Receiver's Name*",
+																	"color": {
+																		"theme_bucket": {
+																			"token": "color.text.grey"
+																		}
+																	},
+																	"font": {
+																		"size": "100",
+																		"weight": "medium"
+																	}
+																},
+																"border": {
+																	"width": 1,
+																	"colors": [
+																		{
+																			"tint": "600",
+																			"type": "red"
+																		}
+																	]
+																},
+																"warning_text": {
+																	"text": "Please enter a valid name",
+																	"color": {
+																		"tint": "600",
+																		"type": "red"
+																	},
+																	"font": {
+																		"size": "100",
+																		"weight": "medium"
+																	}
+																}
+															},
+															"form_id": "-3333_receiver_bottom_sheet",
+															"rules": [
+																{
+																	"type": "length_rule",
+																	"data": {
+																		"min_length": 1,
+																		"max_length": 30
+																	}
+																}
+															],
+															"text": {
+																"color": {
+																	"theme_bucket": {
+																		"token": "color.text.grey"
+																	}
+																},
+																"font": {
+																	"size": "300",
+																	"weight": "semibold"
+																}
+															},
+															"layout_config": {
+																"padding": "12,0,12,12",
+																"stroke_color": {
+																	"tint": "700",
+																	"type": "grey"
+																}
+															},
+															"bg_color": {
+																"theme_bucket": {
+																	"token": "color.surface.primary"
+																}
+															},
+															"outer_bg_color": "#FFFFFF",
+															"padding": "12,0,12,0"
+														},
+														"tracking": {
+															"click_map": {
+																"event_name": "INPUT_TEXT_SNIPPET_CLICKED"
+															},
+															"entry_source_map": {
+																"entry_source_position": 1
+															},
+															"common_attributes": {
+																"click_source": "receiver_name",
+																"widget_position": 1
+															}
+														},
+														"widget_type": "text_input_layout_snippet",
+														"layout_config": {
+															"spacing": "12,0,12,0"
+														}
+													},
+													{
+														"data": {
+															"identity": {
+																"id": "1_receiver_detail_snippet_3"
+															},
+															"max_text_length": 10,
+															"title": {
+																"text": "Receiver's Number (WhatsApp)*",
+																"color": {
+																	"theme_bucket": {
+																		"token": "color.text.grey"
+																	}
+																},
+																"font": {
+																	"size": "100",
+																	"weight": "medium"
+																}
+															},
+															"prefix_label": {
+																"text": "+91",
+																"color": {
+																	"tint": "900",
+																	"type": "grey"
+																},
+																"font": {
+																	"size": "300",
+																	"weight": "semibold"
+																}
+															},
+															"placeholder": {
+																"text": "Receiver's Number (WhatsApp)*",
+																"color": {
+																	"theme_bucket": {
+																		"token": "color.text.grey"
+																	}
+																},
+																"font": {
+																	"size": "300",
+																	"weight": "regular"
+																}
+															},
+															"input_type": "numeric",
+															"right_icon": {
+																"code": "ec53",
+																"color": {
+																	"theme_bucket": {
+																		"token": "color.text.black"
+																	}
+																},
+																"font_size": "700",
+																"click_action": {
+																	"interaction_id": "PHONE_DIRECTORY",
+																	"type": "fetch_contacts"
+																}
+															},
+															"clear_icon": {
+																"code": "e93d",
+																"color": {
+																	"tint": "400",
+																	"type": "grey"
+																},
+																"font_size": "700"
+															},
+															"border": {
+																"width": 1,
+																"colors": [
+																	{
+																		"tint": "300",
+																		"type": "grey"
+																	}
+																]
+															},
+															"active_border": {
+																"width": 1,
+																"colors": [
+																	{
+																		"theme_bucket": {
+																			"token": "color.text.grey"
+																		}
+																	}
+																]
+															},
+															"invalid_input": {
+																"title": {
+																	"text": "Receiver's phone number*",
+																	"color": {
+																		"tint": "500",
+																		"type": "grey"
+																	},
+																	"font": {
+																		"size": "100",
+																		"weight": "medium"
+																	}
+																},
+																"border": {
+																	"width": 1,
+																	"colors": [
+																		{
+																			"tint": "600",
+																			"type": "red"
+																		}
+																	]
+																},
+																"warning_text": {
+																	"text": "Please enter a valid phone number",
+																	"color": {
+																		"tint": "600",
+																		"type": "red"
+																	},
+																	"font": {
+																		"size": "100",
+																		"weight": "medium"
+																	}
+																}
+															},
+															"form_id": "-3333_receiver_bottom_sheet",
+															"rules": [
+																{
+																	"type": "length_rule",
+																	"data": {
+																		"min_length": 10,
+																		"max_length": 10
+																	}
+																},
+																{
+																	"type": "regex",
+																	"data": {
+																		"value": "[1-9][0-9]{9}"
+																	}
+																}
+															],
+															"text": {
+																"color": {
+																	"theme_bucket": {
+																		"token": "color.text.grey"
+																	}
+																},
+																"font": {
+																	"size": "300",
+																	"weight": "semibold"
+																}
+															},
+															"layout_config": {
+																"padding": "12,0,12,12",
+																"stroke_color": {
+																	"tint": "700",
+																	"type": "grey"
+																}
+															},
+															"bg_color": {
+																"theme_bucket": {
+																	"token": "color.surface.primary"
+																}
+															},
+															"outer_bg_color": "#FFFFFF"
+														},
+														"tracking": {
+															"click_map": {
+																"event_name": "INPUT_TEXT_SNIPPET_CLICKED"
+															},
+															"entry_source_map": {
+																"entry_source_position": 1
+															},
+															"common_attributes": {
+																"click_source": "phone",
+																"widget_position": 1
+															}
+														},
+														"widget_type": "text_input_layout_snippet",
+														"layout_config": {
+															"spacing": "12,0,12,0"
+														}
+													},
+													{
+														"data": {
+															"identity": {
+																"id": "1_receiver_detail_snippet_5"
+															},
+															"title": {
+																"text": "Receiver's Email ID (Optional)",
+																"color": {
+																	"theme_bucket": {
+																		"token": "color.text.grey"
+																	}
+																},
+																"font": {
+																	"size": "100",
+																	"weight": "medium"
+																}
+															},
+															"placeholder": {
+																"text": "Receiver's Email ID (Optional)",
+																"color": {
+																	"theme_bucket": {
+																		"token": "color.text.grey"
+																	}
+																},
+																"font": {
+																	"size": "300",
+																	"weight": "regular"
+																}
+															},
+															"clear_icon": {
+																"code": "e93d",
+																"color": {
+																	"tint": "400",
+																	"type": "grey"
+																},
+																"font_size": "700"
+															},
+															"border": {
+																"width": 1,
+																"colors": [
+																	{
+																		"tint": "300",
+																		"type": "grey"
+																	}
+																]
+															},
+															"active_border": {
+																"width": 1,
+																"colors": [
+																	{
+																		"theme_bucket": {
+																			"token": "color.text.grey"
+																		}
+																	}
+																]
+															},
+															"invalid_input": {
+																"title": {
+																	"text": "Your Email ID",
+																	"color": {
+																		"tint": "500",
+																		"type": "grey"
+																	},
+																	"font": {
+																		"size": "100",
+																		"weight": "medium"
+																	}
+																},
+																"border": {
+																	"width": 1,
+																	"colors": [
+																		{
+																			"tint": "600",
+																			"type": "red"
+																		}
+																	]
+																},
+																"warning_text": {
+																	"text": "Please enter a valid email id",
+																	"color": {
+																		"tint": "600",
+																		"type": "red"
+																	},
+																	"font": {
+																		"size": "100",
+																		"weight": "medium"
+																	}
+																}
+															},
+															"form_id": "-3333_receiver_bottom_sheet",
+															"rules": [
+																{
+																	"type": "regex",
+																	"data": {
+																		"value": "^$|^[a-zA-Z0-9._%+-]+@[a-zA-Z0-9.-]+\\.[a-zA-Z]{2,}$"
+																	}
+																}
+															],
+															"text": {
+																"color": {
+																	"theme_bucket": {
+																		"token": "color.text.grey"
+																	}
+																},
+																"font": {
+																	"size": "300",
+																	"weight": "semibold"
+																}
+															},
+															"layout_config": {
+																"padding": "12,0,12,0",
+																"stroke_color": {
+																	"tint": "700",
+																	"type": "grey"
+																}
+															},
+															"bg_color": {
+																"theme_bucket": {
+																	"token": "color.surface.primary"
+																}
+															},
+															"outer_bg_color": "#FFFFFF",
+															"padding": "12,0,12,0"
+														},
+														"tracking": {
+															"click_map": {
+																"event_name": "INPUT_TEXT_SNIPPET_CLICKED"
+															},
+															"entry_source_map": {
+																"entry_source_position": 1
+															},
+															"common_attributes": {
+																"click_source": "receiver_name",
+																"widget_position": 1
+															}
+														},
+														"widget_type": "text_input_layout_snippet",
+														"layout_config": {
+															"spacing": "12,0,12,0"
+														}
+													},
+													{
+														"data": {
+															"type": "line",
+															"size": "small",
+															"identity": {
+																"id": "snippet_separator"
+															},
+															"color": {
+																"theme_bucket": {
+																	"token": "color.surface.primary"
+																}
+															},
+															"height": 12
+														},
+														"widget_type": "separator_v2_data",
+														"layout_config": {
+															"spacing": "12,0,12,0"
+														}
+													},
+													{
+														"data": {
+															"type": "line",
+															"color": {
+																"theme_bucket": {
+																	"token": "color.border.grey.light"
+																}
+															},
+															"size": "small",
+															"identity": {
+																"id": "1_receiver_detail_snippet_6"
+															},
+															"height": 1
+														},
+														"widget_type": "separator_v2_data",
+														"layout_config": {
+															"spacing": "12,0,12,0"
+														}
+													},
+													{
+														"data": {
+															"identity": {
+																"id": "1_receiver_detail_snippet_7"
+															},
+															"title_layout_config": "0,0,0,0",
+															"title": {
+																"color": {
+																	"theme_bucket": {
+																		"token": "color.text.grey"
+																	}
+																},
+																"text": "Apply receiver details to all",
+																"number_of_lines": 1,
+																"font": {
+																	"weight": "medium",
+																	"size": "200"
+																}
+															},
+															"button_position": "LEFT",
+															"is_checked": false,
+															"bottom_radius": 12,
+															"bg_color": "#FFFFFF",
+															"button_type": "CHECK_BOX",
+															"checked_click_actions": [
+																{
+																	"update_snippet_list": {
+																		"snippet_list_updater_ids": [
+																			"update_attributes_1",
+																			"remove_attributes_1",
+																			"remove_attributes_2"
+																		]
+																	},
+																	"type": "update_snippet_list"
+																}
+															],
+															"layout_config": {
+																"padding_top": 10,
+																"padding_right": 0,
+																"padding_left": 6,
+																"padding_bottom": 10,
+																"margin_left": 12,
+																"margin_right": 12,
+																"margin_top": 0,
+																"margin_bottom": 0
+															}
+														},
+														"widget_type": "compound_button_type_image_text",
+														"layout_config": {
+															"spacing": "0,0,0,0"
+														}
+													}
+												],
+												"dependent_actions": [
+													{
+														"type": "add_snippets",
+														"add_snippets": {
+															"snippets_to_add": [
+																{
+																	"data": {
+																		"identity": {
+																			"id": "add_name"
+																		},
+																		"title": {
+																			"text": "Receiver's Name*",
+																			"color": {
+																				"theme_bucket": {
+																					"token": "color.text.grey"
+																				}
+																			},
+																			"font": {
+																				"size": "100",
+																				"weight": "medium"
+																			}
+																		},
+																		"placeholder": {
+																			"text": "Receiver's Name*",
+																			"color": {
+																				"theme_bucket": {
+																					"token": "color.text.grey"
+																				}
+																			},
+																			"font": {
+																				"size": "300",
+																				"weight": "regular"
+																			}
+																		},
+																		"clear_icon": {
+																			"code": "e93d",
+																			"color": {
+																				"tint": "400",
+																				"type": "grey"
+																			},
+																			"font_size": "700"
+																		},
+																		"border": {
+																			"width": 1,
+																			"colors": [
+																				{
+																					"tint": "300",
+																					"type": "grey"
+																				}
+																			]
+																		},
+																		"active_border": {
+																			"width": 1,
+																			"colors": [
+																				{
+																					"tint": "900",
+																					"type": "grey"
+																				}
+																			]
+																		},
+																		"invalid_input": {
+																			"title": {
+																				"text": "Receiver's Name*",
+																				"color": {
+																					"theme_bucket": {
+																						"token": "color.text.grey"
+																					}
+																				},
+																				"font": {
+																					"size": "100",
+																					"weight": "medium"
+																				}
+																			},
+																			"border": {
+																				"width": 1,
+																				"colors": [
+																					{
+																						"tint": "600",
+																						"type": "red"
+																					}
+																				]
+																			},
+																			"warning_text": {
+																				"text": "Please enter a valid name",
+																				"color": {
+																					"tint": "600",
+																					"type": "red"
+																				},
+																				"font": {
+																					"size": "100",
+																					"weight": "medium"
+																				}
+																			}
+																		},
+																		"form_id": "-3333_receiver_bottom_sheet",
+																		"rules": [
+																			{
+																				"type": "length_rule",
+																				"data": {
+																					"min_length": 1,
+																					"max_length": 30
+																				}
+																			}
+																		],
+																		"text": {
+																			"color": {
+																				"tint": "900",
+																				"type": "grey"
+																			},
+																			"font": {
+																				"size": "300",
+																				"weight": "semibold"
+																			}
+																		},
+																		"layout_config": {
+																			"padding": "12,0,12,12",
+																			"stroke_color": {
+																				"tint": "700",
+																				"type": "grey"
+																			}
+																		},
+																		"bg_color": {
+																			"theme_bucket": {
+																				"token": "color.surface.primary"
+																			}
+																		},
+																		"outer_bg_color": "#FFFFFF",
+																		"padding": "12,0,12,0"
+																	},
+																	"tracking": {
+																		"click_map": {
+																			"event_name": "INPUT_TEXT_SNIPPET_CLICKED"
+																		},
+																		"entry_source_map": {
+																			"entry_source_position": 1
+																		},
+																		"common_attributes": {
+																			"click_source": "receiver_name",
+																			"widget_position": 1
+																		}
+																	},
+																	"widget_type": "text_input_layout_snippet",
+																	"layout_config": {
+																		"spacing": "12,0,12,0"
+																	}
+																}
+															],
+															"should_execute_post_animation": true
+														}
+													},
+													{
+														"type": "update_snippets",
+														"update_snippets": {
+															"snippet": {
+																"data": {
+																	"identity": {
+																		"id": "update_phone"
+																	},
+																	"max_text_length": 10,
+																	"title": {
+																		"text": "Receiver's Number (WhatsApp)*",
+																		"color": {
+																			"theme_bucket": {
+																				"token": "color.text.grey"
+																			}
+																		},
+																		"font": {
+																			"size": "100",
+																			"weight": "medium"
+																		}
+																	},
+																	"prefix_label": {
+																		"text": "+91",
+																		"color": {
+																			"theme_bucket": {
+																				"token": "color.text.grey"
+																			}
+																		},
+																		"font": {
+																			"size": "300",
+																			"weight": "semibold"
+																		}
+																	},
+																	"placeholder": {
+																		"text": "Receiver's Number (WhatsApp)*",
+																		"color": {
+																			"theme_bucket": {
+																				"token": "color.text.grey"
+																			}
+																		},
+																		"font": {
+																			"size": "300",
+																			"weight": "regular"
+																		}
+																	},
+																	"input_type": "numeric",
+																	"right_icon": {
+																		"code": "ec53",
+																		"color": {
+																			"theme_bucket": {
+																				"token": "color.text.black"
+																			}
+																		},
+																		"font_size": "700",
+																		"click_action": {
+																			"interaction_id": "PHONE_DIRECTORY",
+																			"type": "fetch_contacts"
+																		}
+																	},
+																	"clear_icon": {
+																		"code": "e93d",
+																		"color": {
+																			"tint": "400",
+																			"type": "grey"
+																		},
+																		"font_size": "700"
+																	},
+																	"border": {
+																		"width": 1,
+																		"colors": [
+																			{
+																				"tint": "300",
+																				"type": "grey"
+																			}
+																		]
+																	},
+																	"active_border": {
+																		"width": 1,
+																		"colors": [
+																			{
+																				"tint": "900",
+																				"type": "grey"
+																			}
+																		]
+																	},
+																	"invalid_input": {
+																		"title": {
+																			"text": "Receiver's phone number*",
+																			"color": {
+																				"theme_bucket": {
+																					"token": "color.text.grey"
+																				}
+																			},
+																			"font": {
+																				"size": "100",
+																				"weight": "medium"
+																			}
+																		},
+																		"border": {
+																			"width": 1,
+																			"colors": [
+																				{
+																					"tint": "600",
+																					"type": "red"
+																				}
+																			]
+																		},
+																		"warning_text": {
+																			"text": "Please enter a valid phone number",
+																			"color": {
+																				"tint": "600",
+																				"type": "red"
+																			},
+																			"font": {
+																				"size": "100",
+																				"weight": "medium"
+																			}
+																		}
+																	},
+																	"form_id": "-3333_receiver_bottom_sheet",
+																	"rules": [
+																		{
+																			"type": "length_rule",
+																			"data": {
+																				"min_length": 10,
+																				"max_length": 10
+																			}
+																		},
+																		{
+																			"type": "regex",
+																			"data": {
+																				"value": "[1-9][0-9]{9}"
+																			}
+																		}
+																	],
+																	"text": {
+																		"color": {
+																			"theme_bucket": {
+																				"token": "color.text.grey"
+																			}
+																		},
+																		"font": {
+																			"size": "300",
+																			"weight": "semibold"
+																		}
+																	},
+																	"layout_config": {
+																		"padding": "12,0,12,12",
+																		"stroke_color": {
+																			"tint": "700",
+																			"type": "grey"
+																		}
+																	},
+																	"bg_color": {
+																		"theme_bucket": {
+																			"token": "color.surface.primary"
+																		}
+																	},
+																	"outer_bg_color": "#FFFFFF"
+																},
+																"widget_type": "text_input_layout_snippet",
+																"layout_config": {
+																	"spacing": "12,0,12,0"
+																}
+															},
+															"should_execute_post_animation": true
+														}
+													},
+													{
+														"type": "update_snippets",
+														"update_snippets": {
+															"snippet": {
+																"data": {
+																	"identity": {
+																		"id": "update_email"
+																	},
+																	"title": {
+																		"text": "Receiver's Email ID (Optional)",
+																		"color": {
+																			"theme_bucket": {
+																				"token": "color.text.grey"
+																			}
+																		},
+																		"font": {
+																			"size": "100",
+																			"weight": "medium"
+																		}
+																	},
+																	"placeholder": {
+																		"text": "Receiver's Email ID (Optional)",
+																		"color": {
+																			"theme_bucket": {
+																				"token": "color.text.grey"
+																			}
+																		},
+																		"font": {
+																			"size": "300",
+																			"weight": "regular"
+																		}
+																	},
+																	"clear_icon": {
+																		"code": "e93d",
+																		"color": {
+																			"tint": "400",
+																			"type": "grey"
+																		},
+																		"font_size": "700"
+																	},
+																	"border": {
+																		"width": 1,
+																		"colors": [
+																			{
+																				"tint": "300",
+																				"type": "grey"
+																			}
+																		]
+																	},
+																	"active_border": {
+																		"width": 1,
+																		"colors": [
+																			{
+																				"tint": "900",
+																				"type": "grey"
+																			}
+																		]
+																	},
+																	"invalid_input": {
+																		"title": {
+																			"text": "Your Email ID",
+																			"color": {
+																				"tint": "500",
+																				"type": "grey"
+																			},
+																			"font": {
+																				"size": "100",
+																				"weight": "medium"
+																			}
+																		},
+																		"border": {
+																			"width": 1,
+																			"colors": [
+																				{
+																					"tint": "600",
+																					"type": "red"
+																				}
+																			]
+																		},
+																		"warning_text": {
+																			"text": "Please enter a valid email id",
+																			"color": {
+																				"tint": "600",
+																				"type": "red"
+																			},
+																			"font": {
+																				"size": "100",
+																				"weight": "medium"
+																			}
+																		}
+																	},
+																	"form_id": "-3333_receiver_bottom_sheet",
+																	"rules": [
+																		{
+																			"type": "regex",
+																			"data": {
+																				"value": "^$|^[a-zA-Z0-9._%+-]+@[a-zA-Z0-9.-]+\\.[a-zA-Z]{2,}$"
+																			}
+																		}
+																	],
+																	"text": {
+																		"color": {
+																			"theme_bucket": {
+																				"token": "color.text.grey"
+																			}
+																		},
+																		"font": {
+																			"size": "300",
+																			"weight": "semibold"
+																		}
+																	},
+																	"layout_config": {
+																		"padding": "12,0,12,12",
+																		"stroke_color": {
+																			"tint": "700",
+																			"type": "grey"
+																		}
+																	},
+																	"bg_color": {
+																		"theme_bucket": {
+																			"token": "color.surface.primary"
+																		}
+																	},
+																	"outer_bg_color": "#FFFFFF",
+																	"padding": "12,0,12,0"
+																},
+																"tracking": {
+																	"click_map": {
+																		"event_name": "INPUT_TEXT_SNIPPET_CLICKED"
+																	},
+																	"entry_source_map": {
+																		"entry_source_position": 1
+																	},
+																	"common_attributes": {
+																		"click_source": "receiver_name",
+																		"widget_position": 1
+																	}
+																},
+																"widget_type": "text_input_layout_snippet",
+																"layout_config": {
+																	"spacing": "12,0,12,0"
+																}
+															},
+															"should_execute_post_animation": true
+														}
+													}
+												]
+											}
+										},
+										"form_id": "-3333_receiver_bottom_sheet",
+										"input_fields": [
+											{
+												"id": "check_box",
+												"type": "radio_button_layout",
+												"data": {
+													"id": "check_box",
+													"items": [
+														{
+															"id": "self",
+															"title": {
+																"text": "Myself",
+																"color": {
+																	"theme_bucket": {
+																		"token": "color.text.black"
+																	}
+																},
+																"font": {
+																	"size": "300",
+																	"weight": "semibold"
+																}
+															},
+															"click_action": {
+																"type": "update_snippet_list",
+																"update_snippet_list": {
+																	"snippet_list_updater_ids": [
+																		"remove_1_receiver_detail_snippet_4"
+																	]
+																}
+															},
+															"icon_color": {
+																"theme_bucket": {
+																	"token": "color.selection.border"
+																}
+															},
+															"is_checked": "self"
+														},
+														{
+															"id": "someone_else",
+															"title": {
+																"text": "Someone else",
+																"color": {
+																	"theme_bucket": {
+																		"token": "color.text.black"
+																	}
+																},
+																"font": {
+																	"size": "300",
+																	"weight": "semibold"
+																}
+															},
+															"click_action": {
+																"type": "update_snippet_list",
+																"update_snippet_list": {
+																	"snippet_list_updater_ids": [
+																		"add_1_receiver_detail_snippet_4"
+																	]
+																}
+															},
+															"icon_color": {
+																"theme_bucket": {
+																	"token": "color.selection.border"
+																}
+															}
+														}
+													]
+												}
+											}
+										],
+										"bg_color": {
+											"theme_bucket": {
+												"token": "color.surface.primary"
+											}
+										},
+										"identity": {
+											"id": "1_receiver_detail_snippet_2"
+										}
+									},
+									"tracking": {
+										"click_map": {
+											"event_name": "INPUT_TEXT_SNIPPET_CLICKED"
+										},
+										"entry_source_map": {
+											"entry_source_position": 1
+										},
+										"common_attributes": {
+											"click_source": "phone",
+											"widget_position": 1
+										}
+									},
+									"widget_type": "receiver_form_field_snippet_type_2",
+									"layout_config": {
+										"spacing": "12,0,12,0"
+									}
+								}
+							]
+						},
+						"non_filled": {
+							"data": {
+								"data": {
+									"state": "non_filled",
+									"title": {
+										"text": "#card_title#",
+										"color": {
+											"theme_bucket": {
+												"token": "color.text.black"
+											}
+										},
+										"font": {
+											"size": "300",
+											"weight": "medium"
+										},
+										"number_of_lines": 1
+									},
+									"layout_type": "grid",
+									"subtitle": {
+										"text": "#card_subtitle#",
+										"color": {
+											"theme_bucket": {
+												"token": "color.text.grey"
+											}
+										},
+										"font": {
+											"size": "100",
+											"weight": "medium"
+										}
+									},
+									"stepper_data_v2": {
+										"size": "small",
+										"max_count": 50,
+										"zero_layout_config": {
+											"style": "outline"
+										},
+										"non_zero_layout_config": {
+											"style": "fill",
+											"theme": "DARK"
+										},
+										"increment_actions": {
+											"default": [
+												{
+													"add_to_cart": {
+														"cart_item": {
+															"product_id": -3333,
+															"merchant_id": 28759,
+															"product_name": "MakeMyTrip E-Cards Hotel Instant Voucher",
+															"quantity": 1,
+															"unavailabel_quantity": 0,
+															"price": 1800,
+															"mrp": 2000,
+															"unit": "2000",
+															"inventory": 50,
+															"meta": null,
+															"image_url": "https://cdn.grofers.com/app/assets/products/sliding_images/jpeg/142f5138-a92b-41d3-b93a-5ec54a0e6974.jpg",
+															"merchant_type": "instant",
+															"brand": "",
+															"product_full_name": "MakeMyTrip E-Cards Hotel Instant Voucher",
+															"display_name": "MakeMyTrip E-Cards Hotel Instant Voucher"
+														}
+													},
+													"type": "add_to_cart"
+												}
+											]
+										},
+										"decrement_actions": {
+											"default": [
+												{
+													"remove_from_cart": {
+														"cart_item": {
+															"product_id": -3333,
+															"merchant_id": 28759,
+															"product_name": "Onion (Pyaz)",
+															"quantity": 1,
+															"unavailabel_quantity": 0,
+															"price": 74,
+															"mrp": 102,
+															"unit": "0.95  - 1.05 kg",
+															"inventory": 50,
+															"meta": null,
+															"image_url": "http://cdn.grofers.com/app/assets/products/sliding_images/jpeg/a1ba074a-c085-4dd1-b4a4-2f247d6f211d.jpg?ts=1711010249",
+															"group_id": 104334,
+															"merchant_type": "express",
+															"brand": "",
+															"product_full_name": "Onion (Pyaz)",
+															"display_name": "Onion (Pyaz)"
+														},
+														"count_type": "default"
+													},
+													"type": "remove_from_cart"
+												}
+											]
+										}
+									},
+									"bottom_strip_data": {
+										"title": {
+											"text": "Add receiver's details",
+											"font": {
+												"size": "200",
+												"weight": "semibold"
+											},
+											"color": {
+												"tint": "700",
+												"type": "teal"
+											}
+										},
+										"right_text": {
+											"text_data": {
+												"text": "<u><medium-100|Add><u>",
+												"color": {
+													"theme_bucket": {
+														"token": "color.button.ghost.label"
+													}
+												},
+												"font": {
+													"size": "100",
+													"weight": "medium"
+												},
+												"is_markdown": 1,
+												"is_clickable": true
+											},
+											"markdown_data": {
+												"dash_config": {
+													"color": {
+														"theme_bucket": {
+															"token": "color.button.ghost.label"
+														}
+													},
+													"length": 4,
+													"width": 4,
+													"gap": 5,
+													"y_offset": 6
+												}
+											}
+										},
+										"bg_config": {
+											"padding": "8,4,8,4",
+											"gradient": {
+												"corner_radius": 12,
+												"colors": [
+													{
+														"theme_bucket": {
+															"token": "color.surface.accent.teal"
+														}
+													},
+													{
+														"theme_bucket": {
+															"token": "color.surface.primary"
+														}
+													}
+												]
+											}
+										},
+										"tracking_map": {
+											"click_map": {
+												"event_name": "Add Details Widget Clicked"
+											}
+										},
+										"padding": "6,6,6,6"
+									},
+									"top_radius": 12,
+									"bottom_radius": 12,
+									"bg_color_hex": "#FFFFFF",
+									"padding": "12,12,12,12",
+									"bg_color": {
+										"theme_bucket": {
+											"token": "color.surface.primary"
+										}
+									}
+								},
+								"widget_type": "receiver_product_card_snippet",
+								"layout_config": {
+									"spacing": "12,0,12,0"
+								}
+							}
+						},
+						"filled": {
+							"data": {
+								"data": {
+									"state": "filled",
+									"title": {
+										"text": "#card_title#",
+										"color": {
+											"theme_bucket": {
+												"token": "color.text.black"
+											}
+										},
+										"font": {
+											"size": "300",
+											"weight": "medium"
+										},
+										"number_of_lines": 1
+									},
+									"layout_type": "grid",
+									"subtitle": {
+										"text": "#card_subtitle#",
+										"color": {
+											"theme_bucket": {
+												"token": "color.text.grey"
+											}
+										},
+										"font": {
+											"size": "100",
+											"weight": "medium"
+										}
+									},
+									"stepper_data_v2": {
+										"size": "small",
+										"max_count": 50,
+										"zero_layout_config": {
+											"style": "outline"
+										},
+										"non_zero_layout_config": {
+											"style": "fill",
+											"theme": "DARK"
+										},
+										"increment_actions": {
+											"default": [
+												{
+													"add_to_cart": {
+														"cart_item": {
+															"product_id": -3333,
+															"merchant_id": 28759,
+															"product_name": "MakeMyTrip E-Cards Hotel Instant Voucher",
+															"quantity": 1,
+															"unavailabel_quantity": 0,
+															"price": 1800,
+															"mrp": 2000,
+															"unit": "2000",
+															"inventory": 50,
+															"image_url": "https://cdn.grofers.com/app/assets/products/sliding_images/jpeg/142f5138-a92b-41d3-b93a-5ec54a0e6974.jpg",
+															"merchant_type": "instant",
+															"brand": "",
+															"product_full_name": "MakeMyTrip E-Cards Hotel Instant Voucher",
+															"display_name": "MakeMyTrip E-Cards Hotel Instant Voucher"
+														}
+													},
+													"type": "add_to_cart"
+												}
+											]
+										},
+										"decrement_actions": {
+											"default": [
+												{
+													"remove_from_cart": {
+														"cart_item": {
+															"product_id": -3333,
+															"merchant_id": 28759,
+															"product_name": "Onion (Pyaz)",
+															"quantity": 1,
+															"unavailabel_quantity": 0,
+															"price": 74,
+															"mrp": 102,
+															"unit": "0.95  - 1.05 kg",
+															"inventory": 50,
+															"image_url": "http://cdn.grofers.com/app/assets/products/sliding_images/jpeg/a1ba074a-c085-4dd1-b4a4-2f247d6f211d.jpg?ts=1711010249",
+															"group_id": 104334,
+															"merchant_type": "express",
+															"brand": "",
+															"product_full_name": "Onion (Pyaz)",
+															"display_name": "Onion (Pyaz)"
+														},
+														"count_type": "default"
+													},
+													"type": "remove_from_cart"
+												}
+											]
+										}
+									},
+									"bottom_strip_data": {
+										"title": {
+											"text": "Send to self (+916369749830)",
+											"font": {
+												"size": "200",
+												"weight": "semibold"
+											},
+											"color": {
+												"tint": "700",
+												"type": "teal"
+											}
+										},
+										"right_text": {
+											"text_data": {
+												"text": "<u><medium-100|Edit><u>",
+												"color": {
+													"theme_bucket": {
+														"token": "color.button.ghost.label"
+													}
+												},
+												"font": {
+													"size": "100",
+													"weight": "medium"
+												},
+												"is_markdown": 1,
+												"is_clickable": true
+											},
+											"markdown_data": {
+												"dash_config": {
+													"color": {
+														"theme_bucket": {
+															"token": "color.button.ghost.label"
+														}
+													},
+													"length": 4,
+													"width": 4,
+													"gap": 5,
+													"y_offset": 6
+												}
+											}
+										},
+										"bg_config": {
+											"padding": "8,4,8,4",
+											"gradient": {
+												"corner_radius": 12,
+												"colors": [
+													{
+														"theme_bucket": {
+															"token": "color.surface.accent.teal"
+														}
+													},
+													{
+														"theme_bucket": {
+															"token": "color.surface.primary"
+														}
+													}
+												]
+											}
+										},
+										"tracking_map": {
+											"click_map": {
+												"event_name": "Add Details Widget Clicked"
+											}
+										},
+										"padding": "6,6,6,6"
+									},
+									"top_radius": 12,
+									"bottom_radius": 12,
+									"bg_color_hex": "#FFFFFF",
+									"padding": "12,12,12,12",
+									"bg_color": {
+										"theme_bucket": {
+											"token": "color.surface.primary"
+										}
+									}
+								},
+								"widget_type": "receiver_product_card_snippet",
+								"layout_config": {
+									"spacing": "12,0,12,0"
+								}
+							}
+						}
+					},
+					"state": "non_filled_expanded",
+					"identity": {
+						"id": "1_receiver_detail_snippet_0"
+					},
+					"click_action": {
+						"type": "update_snippet_list",
+						"update_snippet_list": {
+							"snippet_list_updater_ids": [
+								"expand_attributes",
+								"expand_remove_attributes"
+							]
+						}
+					},
+					"bg_color": {
+						"theme_bucket": {
+							"token": "color.surface.primary"
+						}
+					},
+					"top_radius": 12,
+					"padding": "12,12,12,12",
+					"product_id": "-3333",
+					"cta": {
+						"count_type": "receiver"
+					},
+					"form_id": "-3333_receiver_bottom_sheet"
+				},
+				"tracking": {
+					"impression_map": {
+						"event_name": "Add Details Widget Shown"
+					},
+					"common_attributes": {
+						"product_id": "-3333"
+					}
+				},
+				"widget_type": "receiver_product_card_snippet",
+				"layout_config": {
+					"spacing": "12,12,12,0"
+				}
+			},
+			{
+				"data": {
+					"identity": {
+						"id": "sender_detail_header"
+					},
+					"title": {
+						"text": "Add sender details",
+						"color": {
+							"theme_bucket": {
+								"token": "color.text.black"
+							}
+						},
+						"font": {
+							"size": "500",
+							"weight": "bold"
+						},
+						"number_of_lines": 1
+					},
+					"padding": "12,12,0,12",
+					"top_radius": 8,
+					"card_bg_color": {
+						"theme_bucket": {
+							"token": "color.surface.primary"
+						}
+					}
+				},
+				"widget_type": "image_text_vr_type_header",
+				"layout_config": {
+					"spacing": "12,16,12,0"
+				}
+			},
+			{
+				"data": {
+					"identity": {
+						"id": "sender_detail_name"
+					},
+					"title": {
+						"text": "Sender's Name (Optional)",
+						"color": {
+							"tint": "900",
+							"type": "grey"
+						},
+						"font": {
+							"size": "100",
+							"weight": "medium"
+						}
+					},
+					"bottom_radius": 12,
+					"placeholder": {
+						"text": "Sender's Name (Optional)",
+						"color": {
+							"theme_bucket": {
+								"token": "color.text.grey"
+							}
+						},
+						"font": {
+							"size": "300",
+							"weight": "regular"
+						}
+					},
+					"clear_icon": {
+						"code": "e93d",
+						"color": {
+							"tint": "400",
+							"type": "grey"
+						},
+						"font_size": "700"
+					},
+					"border": {
+						"width": 1,
+						"colors": [
+							{
+								"theme_bucket": {
+									"token": "color.border.grey.mid"
+								}
+							}
+						]
+					},
+					"active_border": {
+						"width": 1,
+						"colors": [
+							{
+								"theme_bucket": {
+									"token": "color.border.grey.mid"
+								}
+							}
+						]
+					},
+					"invalid_input": {
+						"title": {
+							"text": "Sender's Name (Optional)",
+							"color": {
+								"theme_bucket": {
+									"token": "color.text.black"
+								}
+							},
+							"font": {
+								"size": "100",
+								"weight": "medium"
+							}
+						},
+						"border": {
+							"width": 1,
+							"colors": [
+								{
+									"tint": "600",
+									"type": "red"
+								}
+							]
+						},
+						"warning_text": {
+							"text": "Please enter a valid name",
+							"color": {
+								"tint": "600",
+								"type": "red"
+							},
+							"font": {
+								"size": "100",
+								"weight": "medium"
+							}
+						}
+					},
+					"form_id": "-3333_receiver_bottom_sheet",
+					"text": {
+						"color": {
+							"tint": "900",
+							"type": "grey"
+						},
+						"font": {
+							"size": "300",
+							"weight": "semibold"
+						}
+					},
+					"layout_config": {
+						"padding": "12,0,12,12",
+						"stroke_color": {
+							"theme_bucket": {
+								"token": "color.border.grey.mid"
+							}
+						}
+					},
+					"bg_color": {
+						"theme_bucket": {
+							"token": "color.surface.primary"
+						}
+					},
+					"outer_bg_color": "#FFFFFF",
+					"padding": "12,0,12,0"
+				},
+				"tracking": {
+					"click_map": {
+						"event_name": "INPUT_TEXT_SNIPPET_CLICKED"
+					},
+					"entry_source_map": {
+						"entry_source_position": 1
+					},
+					"common_attributes": {
+						"click_source": "receiver_name",
+						"widget_position": 1
+					}
+				},
+				"widget_type": "text_input_layout_snippet",
+				"layout_config": {
+					"spacing": "12,0,12,0"
+				}
+			}
+		],
+		"form_fields_config": {
+			"form_id": "-3333_receiver_bottom_sheet",
+			"fields": {
+				"submit_button": {
+					"ordered_validation_data": [
+						{
+							"rule": {
+								"type": "validity_operation",
+								"data": {
+									"type": "operation_and",
+									"ids": [
+										"-3333_receiver_detail_"
+									]
+								}
+							},
+							"actions": null
+						}
+					],
+					"default_actions": null,
+					"dependencies": null,
+					"prefix_dependencies": [
+						"-3333_receiver_detail_"
+					]
+				}
+			}
+		},
+		"layout_config": {
+			"bg_color": {
+				"theme_bucket": {
+					"token": "color.background.secondary"
+				}
+			},
+			"padding": "0,0,0,12"
+		},
+		"tracking": {
+			"le_meta": {
+				"id": "-3333",
+				"variation_id": "Add_Details_Bottomsheet",
+				"name": "gyftr_bottom_sheet",
+				"custom_data": {
+					"enabled": true,
+					"offer_text": true,
+					"product_count": 3
+				}
+			},
+			"event_name": "BOTTOM_SHEET_VISIT"
+		},
+		"page_level_components": {
+			"sticky": {
+				"footer_snippet_models": [
+					{
+						"snippet": {
+							"data": {
+								"button": {
+									"size": "large",
+									"type": "solid",
+									"text": "Save & Proceed",
+									"color": {
+										"theme_bucket": {
+											"token": "color.button.primary.label"
+										}
+									},
+									"bg_color": {
+										"theme_bucket": {
+											"token": "color.button.primary.background"
+										}
+									},
+									"font": {
+										"size": "400",
+										"weight": "semibold"
+									},
+									"secondary_click_actions": [
+										{
+											"check_validity_for_receiver_details": {
+												"success_actions": [
+													{
+														"modify_cart_from_receiver_form_data": {
+															"form_id": "-3333_receiver_bottom_sheet",
+															"product_id": -3333,
+															"state": "non_filled_expanded",
+															"from_save": true
+														},
+														"type": "modify_cart_from_receiver_form_data"
+													},
+													{
+														"open_bottom_sheet_v2": {
+															"response": {
+																"data": {
+																	"is_success": true,
+																	"response": {
+																		"snippets": [
+																			{
+																				"data": {
+																					"top_image": {
+																						"animation": {
+																							"url": "https://cdn.grofers.com/assets/ui/lottie/tick_track_order.json",
+																							"height": 100,
+																							"width": 100
+																						}
+																					},
+																					"title": {
+																						"text": "Details Saved",
+																						"color": {
+																							"theme_bucket": {
+																								"token": "color.text.black"
+																							}
+																						},
+																						"font": {
+																							"size": "600",
+																							"weight": "extrabold"
+																						},
+																						"number_of_lines": 1
+																					},
+																					"subtitle": {
+																						"text": "This e-gift card will be shared with the recipient after the order is placed.",
+																						"color": {
+																							"type": "grey",
+																							"tint": "600"
+																						},
+																						"font": {
+																							"size": "400",
+																							"weight": "medium"
+																						},
+																						"is_markdown": 1
+																					}
+																				},
+																				"widget_type": "vertical_text_image_snippet",
+																				"layout_config": {
+																					"spacing": "0,18,0,18"
+																				}
+																			}
+																		],
+																		"tracking": {
+																			"le_meta": {
+																				"name": "gyftr_bottom_sheet"
+																			},
+																			"event_name": "BOTTOM_SHEET_VISIT"
+																		},
+																		"page_actions": [
+																			{
+																				"dismiss_bottom_sheet": {
+																					"delay": 3000
+																				},
+																				"type": "dismiss_bottom_sheet"
+																			}
+																		],
+																		"page_level_components": {
+																			"sticky": {}
+																		}
+																	}
+																},
+																"type": "deserialized"
+															},
+															"config": {
+																"outer_icon": {
+																	"code": "e921",
+																	"color": {
+																		"type": "white",
+																		"tint": "900"
+																	},
+																	"font_size": "800",
+																	"bg_color": {
+																		"type": "black",
+																		"tint": "900"
+																	}
+																}
+															}
+														},
+														"type": "open_bottom_sheet_v2"
+													}
+												],
+												"failure_actions": [
+													{
+														"check_form_field_validity": {
+															"form_id": "-3333_receiver_bottom_sheet"
+														},
+														"type": "check_form_field_validity"
+													}
+												],
+												"form_id": "-3333_receiver_bottom_sheet"
+											},
+											"type": "check_validity_for_receiver_details"
+										},
+										{
+											"trigger_observers": {
+												"trigger": "ITEM_COUNT_MODIFY",
+												"is_forced": true
+											},
+											"type": "trigger_observers"
+										}
+									]
+								},
+								"identity": {
+									"id": "submit_button"
+								}
+							},
+							"tracking": {
+								"widget_meta": {
+									"child_widget_id": "GYFTR_SUBMIT_BUTTON_CLICKED"
+								},
+								"impression_map": {
+									"event_name": "Submit Button Shown"
+								},
+								"click_map": {
+									"event_name": "Submit Button Clicked"
+								},
+								"common_attributes": {
+									"product_id": -3333
+								}
+							},
+							"widget_type": "button_with_loader_snippet",
+							"layout_config": {
+								"spacing": "12,12,12,12"
+							}
+						},
+						"layout_config": null
+					}
+				]
+			}
+		},
+		"page_config": {
+			"animation_type": "slide_down_animator",
+			"deprecated_configs": {
+				"should_use_layout_config": true
+			}
+		},
+		"page_actions": [
+			{
+				"reset_form_id_data": {
+					"form_id": "-3333_receiver_bottom_sheet"
+				},
+				"type": "reset_form_id_data"
+			}
+		]
+	}
+}

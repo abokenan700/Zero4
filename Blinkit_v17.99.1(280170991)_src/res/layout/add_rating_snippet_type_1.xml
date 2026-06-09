@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="utf-8"?>
+<merge
+    android:gravity="center"
+    android:orientation="vertical"
+    android:layout_width="fill_parent"
+    android:layout_height="wrap_content"
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+    <FrameLayout
+        android:id="@id/rating_container"
+        android:padding="@dimen/dimen_10"
+        android:clipChildren="false"
+        android:clipToPadding="false"
+        android:layout_width="wrap_content"
+        android:layout_height="@dimen/size_50">
+        <com.zomato.ui.atomiclib.snippets.FeedbackRatingBar
+            android:layout_gravity="center"
+            android:id="@id/rating_bar"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" />
+        <com.zomato.ui.atomiclib.animation.ZLottieAnimationView
+            android:layout_gravity="end|center"
+            android:id="@id/max_rating_lottie"
+            android:visibility="gone"
+            android:layout_width="@dimen/size_40"
+            android:layout_height="@dimen/size_40"
+            android:layout_marginEnd="@dimen/negative_ten" />
+    </FrameLayout>
+    <TextSwitcher
+        android:id="@id/subtitle1"
+        android:paddingLeft="@dimen/sushi_spacing_extra"
+        android:paddingRight="@dimen/sushi_spacing_extra"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:paddingHorizontal="@dimen/sushi_spacing_extra" />
+    <com.zomato.ui.atomiclib.atom.staticviews.StaticTextView
+        android:id="@id/subtitle2"
+        android:paddingLeft="@dimen/sushi_spacing_extra"
+        android:paddingRight="@dimen/sushi_spacing_extra"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/sushi_spacing_nano"
+        android:layout_marginBottom="@dimen/sushi_spacing_extra"
+        android:paddingHorizontal="@dimen/sushi_spacing_extra" />
+</merge>

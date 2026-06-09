@@ -1,0 +1,51 @@
+<?xml version="1.0" encoding="utf-8"?>
+<merge
+    android:layout_width="fill_parent"
+    android:layout_height="wrap_content"
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+    <com.zomato.ui.atomiclib.atom.ZRoundedImageView
+        android:layout_gravity="center_vertical"
+        android:id="@id/image"
+        android:layout_width="@dimen/size_32"
+        android:layout_height="@dimen/size_32"
+        android:scaleType="centerInside" />
+    <LinearLayout
+        android:layout_gravity="center_vertical"
+        android:orientation="vertical"
+        android:layout_width="0.0dip"
+        android:layout_height="wrap_content"
+        android:layout_weight="1.0">
+        <com.zomato.ui.atomiclib.atom.ZTextView
+            android:ellipsize="end"
+            android:id="@id/bannerTitle"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:paddingEnd="@dimen/sushi_spacing_page_side"
+            android:layout_marginStart="@dimen/sushi_spacing_mini"
+            app:textViewType="REGULAR_300" />
+        <com.zomato.ui.atomiclib.atom.ZRoundedImageView
+            android:id="@id/bottom_image"
+            android:layout_width="@dimen/size_85"
+            android:layout_height="@dimen/dimen_16"
+            android:layout_marginTop="@dimen/sushi_spacing_micro"
+            android:scaleType="fitXY"
+            android:layout_marginStart="@dimen/sushi_spacing_mini" />
+        <com.zomato.ui.atomiclib.atom.ZTextView
+            android:ellipsize="end"
+            android:id="@id/subtitle"
+            android:visibility="gone"
+            android:layout_width="fill_parent"
+            android:layout_height="fill_parent"
+            android:layout_marginTop="@dimen/size_4"
+            android:paddingEnd="@dimen/sushi_spacing_page_side"
+            android:layout_marginStart="@dimen/sushi_spacing_mini"
+            app:textViewType="REGULAR_300" />
+    </LinearLayout>
+    <com.zomato.ui.atomiclib.atom.ZIconFontTextView
+        android:textSize="@dimen/dimen_18"
+        android:layout_gravity="end|center"
+        android:id="@id/rightIcon"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content" />
+</merge>

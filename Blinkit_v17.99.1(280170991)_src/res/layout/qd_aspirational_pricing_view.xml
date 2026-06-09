@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="utf-8"?>
+<merge
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+    <com.blinkit.blink.elements.ui.atoms.text.BlinkitTextView
+        android:id="@id/prefix_text"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:translationX="@dimen/qd_margin_2"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toStartOf="@id/price"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.3" />
+    <com.blinkit.blink.elements.ui.atoms.text.BlinkitTextView
+        android:gravity="start|center"
+        android:id="@id/price"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="5.0dip"
+        android:layout_marginEnd="@dimen/dimen_5"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toStartOf="@id/mrp"
+        app:layout_constraintTop_toTopOf="parent" />
+    <com.blinkit.blink.elements.ui.atoms.text.BlinkitTextView
+        android:gravity="center"
+        android:id="@id/mrp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginEnd="@dimen/dimen_2"
+        app:layout_constraintBottom_toBottomOf="@id/price"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toTopOf="@id/price"
+        app:layout_constraintVertical_bias="0.2" />
+    <View
+        android:id="@id/mrp_strikethrough"
+        android:background="@color/b_color_separator"
+        android:layout_width="0.0dip"
+        android:layout_height="1.0dip"
+        android:rotation="-15.0"
+        app:layout_constraintBottom_toBottomOf="@id/mrp"
+        app:layout_constraintEnd_toEndOf="@id/mrp"
+        app:layout_constraintStart_toStartOf="@id/mrp"
+        app:layout_constraintTop_toTopOf="@id/mrp"
+        app:layout_constraintVertical_bias="0.5" />
+</merge>

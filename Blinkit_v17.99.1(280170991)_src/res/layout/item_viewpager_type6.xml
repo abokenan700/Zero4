@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="utf-8"?>
+<merge
+    android:layout_width="fill_parent"
+    android:layout_height="wrap_content"
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+    <LinearLayout
+        android:orientation="vertical"
+        android:paddingTop="@dimen/sushi_spacing_loose"
+        android:paddingBottom="@dimen/sushi_spacing_macro"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content">
+        <com.zomato.ui.atomiclib.atom.ZRoundedImageView
+            android:layout_gravity="center"
+            android:id="@id/image"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:src="@color/sushi_pink_600"
+            android:scaleType="fitXY"
+            app:aspectRatio="1.04" />
+        <com.zomato.ui.atomiclib.atom.ZTextView
+            android:ellipsize="end"
+            android:gravity="center"
+            android:layout_gravity="center"
+            android:id="@id/title"
+            android:paddingTop="@dimen/sushi_spacing_macro"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:lines="2"
+            android:singleLine="false"
+            android:paddingStart="@dimen/sushi_spacing_macro"
+            android:paddingEnd="@dimen/sushi_spacing_macro"
+            app:autoSizeMaxTextSize="@dimen/sushi_textsize_300"
+            app:autoSizeMinTextSize="@dimen/sushi_textsize_100"
+            app:autoSizeTextType="uniform"
+            app:textViewType="MEDIUM_500" />
+    </LinearLayout>
+    <com.zomato.ui.lib.organisms.snippets.tagViews.ZUniversalTagView
+        android:id="@id/tag"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/sushi_spacing_micro_negative"
+        android:layout_marginStart="@dimen/sushi_spacing_nano_negative" />
+</merge>

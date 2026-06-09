@@ -1,0 +1,172 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout
+    android:background="?attr_7f04017d"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+    <ScrollView
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent">
+        <LinearLayout
+            android:orientation="vertical"
+            android:id="@id/renamedll_scroll"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:paddingStart="@dimen/sushi_spacing_base"
+            android:paddingEnd="@dimen/sushi_spacing_base">
+            <com.zomato.ui.atomiclib.atom.ZTextView
+                android:textColor="?attr_7f040475"
+                android:id="@id/page_description"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/renamedpayment_we_accept_cards" />
+            <com.zomato.ui.atomiclib.molecules.ZTextInputField
+                android:id="@id/renamededit_text_name_on_card"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/dimen_15"
+                android:hint="@string/renamedpayments_name_on_card"
+                android:inputType="textPersonName"
+                android:imeOptions="actionNext"
+                style="@style/PaymentTextInputField" />
+            <payments.zomato.paymentkit.ui.atoms.PaymentsTextInputField
+                android:id="@id/renamededit_text_card_number"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/dimen_15"
+                android:hint="@string/renamedpayments_card_number"
+                android:inputType="number"
+                android:imeOptions="actionNext" />
+            <LinearLayout
+                android:orientation="horizontal"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/dimen_15">
+                <com.zomato.ui.atomiclib.molecules.ZTextInputField
+                    android:id="@id/renamededit_text_expiry_date"
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:hint="@string/renamedpayments_expiry_date"
+                    android:layout_weight="1.0"
+                    android:inputType="number"
+                    android:imeOptions="actionNext"
+                    style="@style/PaymentTextInputField" />
+            </LinearLayout>
+            <com.zomato.ui.atomiclib.atom.ZTextView
+                android:textColor="?attr_7f040496"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/dimen_15"
+                android:text="@string/renamedpayments_nickname_for_card" />
+            <LinearLayout
+                android:orientation="horizontal"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/sushi_spacing_macro">
+                <com.zomato.ui.atomiclib.atom.ZButton
+                    android:id="@id/renamedtoggle_button_personal"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/renamedpayments_nickname_personal"
+                    app:buttonColor="?attr_7f04017d"
+                    app:buttonDimension="small"
+                    app:buttonType="outline"
+                    app:strokeColor="?attr_7f04029b" />
+                <com.zomato.ui.atomiclib.atom.ZButton
+                    android:id="@id/renamedtoggle_button_business"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/renamedpayments_nickname_business"
+                    android:layout_marginStart="@dimen/sushi_spacing_extra"
+                    app:buttonColor="?attr_7f04017d"
+                    app:buttonDimension="small"
+                    app:buttonType="outline"
+                    app:strokeColor="?attr_7f04029b" />
+                <com.zomato.ui.atomiclib.atom.ZButton
+                    android:id="@id/renamedtoggle_button_other"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/renamedpayments_nickname_other"
+                    android:layout_marginStart="@dimen/sushi_spacing_extra"
+                    app:buttonColor="?attr_7f04017d"
+                    app:buttonDimension="small"
+                    app:buttonType="outline"
+                    app:strokeColor="?attr_7f04029b" />
+            </LinearLayout>
+            <com.zomato.ui.atomiclib.molecules.ZTextInputField
+                android:id="@id/renamededit_text_other_nickname"
+                android:visibility="gone"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/dimen_15"
+                android:hint="@string/renamedpayments_nickname_hint_text"
+                android:inputType="text"
+                android:imeOptions="actionDone"
+                style="@style/PaymentTextInputField" />
+            <com.zomato.ui.atomiclib.atom.ZCheckBox
+                android:id="@id/renamedcheck_label_save_card"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/dimen_15"
+                android:checked="true"
+                android:text="@string/renamedpayments_save_card_details_securely" />
+            <com.zomato.ui.atomiclib.atom.ZSeparator
+                android:id="@id/renamedseparator"
+                android:layout_width="fill_parent"
+                android:layout_height="@dimen/sushi_spacing_nano"
+                android:layout_marginTop="@dimen/dimen_15"
+                app:zseparator_color="@color/sushi_grey_200" />
+            <com.zomato.ui.atomiclib.atom.ZTextView
+                android:textSize="@dimen/sushi_textsize_200"
+                android:textColor="?attr_7f04048d"
+                android:id="@id/add_card_security_text"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/sushi_spacing_extra" />
+            <com.zomato.ui.atomiclib.atom.ZTextView
+                android:textColor="?themeColor500"
+                android:id="@id/promo_warning_txt"
+                android:visibility="gone"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content" />
+        </LinearLayout>
+    </ScrollView>
+    <LinearLayout
+        android:layout_gravity="bottom"
+        android:orientation="vertical"
+        android:id="@id/ll_bottom_view"
+        android:background="?attr_7f04017d"
+        android:paddingBottom="@dimen/sushi_spacing_base"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content">
+        <View
+            android:background="@color/sushi_grey_200"
+            android:layout_width="fill_parent"
+            android:layout_height="@dimen/sushi_spacing_pico" />
+        <com.zomato.ui.atomiclib.atom.ZButton
+            android:enabled="false"
+            android:id="@id/renamedbutton_pay"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/sushi_spacing_base"
+            android:text="@string/renamedpayments_add_card"
+            android:layout_marginStart="@dimen/sushi_spacing_base"
+            android:layout_marginEnd="@dimen/sushi_spacing_base" />
+        <com.zomato.ui.atomiclib.atom.ZTextView
+            android:textSize="@dimen/sushi_textsize_200"
+            android:textColor="@color/sushi_grey_500"
+            android:layout_gravity="center"
+            android:id="@id/bottom_title"
+            android:visibility="gone"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/sushi_spacing_mini" />
+    </LinearLayout>
+    <payments.zomato.paymentkit.ui.molecules.PaymentsNoContentView
+        android:id="@id/renamedoverlay_viewholder_renamed"
+        android:visibility="gone"
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        app:paymentsNoContentState="loading" />
+</FrameLayout>

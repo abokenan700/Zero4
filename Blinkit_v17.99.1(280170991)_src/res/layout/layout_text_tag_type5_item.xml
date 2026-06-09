@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="utf-8"?>
+<merge
+    android:layout_gravity="center"
+    android:id="@id/root_container"
+    android:paddingLeft="@dimen/sushi_spacing_extra"
+    android:paddingTop="@dimen/sushi_spacing_mini"
+    android:paddingRight="@dimen/sushi_spacing_extra"
+    android:paddingBottom="@dimen/sushi_spacing_mini"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:paddingHorizontal="@dimen/sushi_spacing_extra"
+    android:paddingVertical="@dimen/sushi_spacing_mini"
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+    <View
+        android:id="@id/shadow_view"
+        android:layout_width="0.0dip"
+        android:layout_height="@dimen/sushi_spacing_loose"
+        android:translationY="@dimen/sushi_spacing_nano"
+        app:layout_constraintBottom_toBottomOf="@id/tag"
+        app:layout_constraintEnd_toEndOf="@id/tag"
+        app:layout_constraintStart_toStartOf="@id/tag"
+        app:layout_constraintTop_toTopOf="@id/tag" />
+    <com.zomato.ui.atomiclib.atom.ZTag
+        android:textColor="@color/sushi_red_500"
+        android:layout_gravity="center"
+        android:id="@id/tag"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:tagColor="@color/sushi_white"
+        app:tagSize="small"
+        app:tagType="capsule_outline" />
+</merge>

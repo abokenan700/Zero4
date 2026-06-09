@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.blinkit.commons.ui.ui.snippets.orderrefund.TimelineType2VH
+    android:id="@id/refund_timeline_container"
+    android:background="?attr_7f0403df"
+    android:layout_width="fill_parent"
+    android:layout_height="wrap_content"
+    android:layout_marginLeft="@dimen/sushi_spacing_base"
+    android:layout_marginTop="@dimen/sushi_spacing_mini"
+    android:layout_marginRight="@dimen/sushi_spacing_base"
+    android:layout_marginBottom="@dimen/sushi_spacing_mini"
+    android:animateLayoutChanges="true"
+    android:layout_marginHorizontal="@dimen/sushi_spacing_base"
+    android:layout_marginVertical="@dimen/sushi_spacing_mini"
+    xmlns:android="http://schemas.android.com/apk/res/android" />
