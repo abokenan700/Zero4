@@ -1,0 +1,21 @@
+{
+  "expo": {
+    "name": "Blinkit Clone",
+    "slug": "blinkit-pixel-clone-rn",
+    "version": "1.0.0",
+    "orientation": "portrait",
+    "userInterfaceStyle": "light",
+    "backgroundColor": "#f7cb46",
+    "assetBundlePatterns": ["**/*"],
+    "ios": {
+      "supportsTablet": true,
+      "bundleIdentifier": "com.demo.blinkitclone"
+    },
+    "android": {
+      "package": "com.demo.blinkitclone",
+      "adaptiveIcon": {
+        "backgroundColor": "#f7cb46"
+      }
+    }
+  }
+}
